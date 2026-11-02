@@ -1,0 +1,8 @@
+{
+  "name": "transcription-phonetique-traditionnelle",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {"build":"node tools/build.mjs","test":"node tools/test.mjs","test:browser":"node tests/browser-qa.mjs"},
+  "description":"Transcription française traditionnelle autonome, lexique local et règles contextuelles"
+}

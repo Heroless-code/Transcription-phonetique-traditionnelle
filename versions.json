@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "application": "Transcription phonétique traditionnelle",
+  "timezone": "Europe/Paris",
+  "versions": [
+    {
+      "version": 1,
+      "createdAt": "2026-11-01T17:27:53.699Z",
+      "description": "Version de référence : lecture classique, sonorités, filtres par vers et globaux, sons ×1 masqués par défaut.",
+      "html": {
+        "filename": "Transcription-phonetique-traditionnelle.html",
+        "bytes": 10554535,
+        "sha256": "970a723e90a8100b13e1a60f272f986b5c64b5ade627eac8d4f72293466b19f2"
+      },
+      "archive": {
+        "filename": "Transcription phonétique traditionnelle v1.zip",
+        "bytes": 7735713,
+        "sha256": "ee660d672884263efb361f2a631bc367d3b95ca1db625a847b987d142313e7ea"
+      }
+    },
+    {
+      "version": 2,
+      "createdAt": "2026-11-02T08:37:15.843Z",
+      "description": "Retrait complet du mode Afficher les couleurs ; vue Sonorités compacte avec ligne API masquée, transcription et copie API conservées.",
+      "html": {
+        "filename": "Transcription-phonetique-traditionnelle.html",
+        "bytes": 10538423,
+        "sha256": "f15264feec385e5aaea46a883d19c89a3e5fedcf40ab94376e78ae006eb596b7"
+      },
+      "archive": {
+        "filename": "Transcription phonétique traditionnelle v2.zip",
+        "bytes": 7768039,
+        "sha256": "706317c09d68b7e23d8f9fc26abfd22260b4ea1dd3c3443f6a5d16667a746bd7"
+      }
+    }
+  ]
+}
