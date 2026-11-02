@@ -1,0 +1,44 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {createHash} from 'node:crypto';
+import {archiveHtmlVersion,checkVersionHistory} from './versions.mjs';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+const noteIndex=process.argv.indexOf('--note');
+const description=noteIndex>=0?process.argv[noteIndex+1]:'Modification du fichier HTML.';
+if(!description||description.startsWith('--'))throw new Error('Préciser le résumé après --note.');
+checkVersionHistory(root);
+const modules=new Map();
+function bundle(name){
+  name=path.posix.normalize(name);if(modules.has(name))return;let source=fs.readFileSync(path.join(root,'src',name),'utf8');
+  const dependencies=[];
+  source=source.replace(/import\s+([\s\S]*?)\s+from\s+['"](\.[^'"]+)['"];?/gu,(_,bindings,ref)=>{
+    const dep=path.posix.normalize(path.posix.join(path.posix.dirname(name),ref));dependencies.push(dep);
+    if(bindings.trim().startsWith('{'))return 'const '+bindings.replace(/\bas\b/g,':')+'=__modules['+JSON.stringify(dep)+'];';
+    return 'const '+bindings.trim()+'=__modules['+JSON.stringify(dep)+'].default;';
+  });
+  const exports=[];
+  source=source.replace(/export\s+(async\s+)?(function|class|const|let|var)\s+([\w$]+)/gu,(_,a,kind,id)=>{exports.push(id);return (a||'')+kind+' '+id;});
+  source=source.replace(/export\s*\{([^}]+)\}\s*;?/gu,(_,names)=>{exports.push(...names.split(',').map(s=>s.trim()).filter(Boolean));return '';});
+  if(/\bexport\s/u.test(source))throw new Error('Export non pris en charge : '+name);
+  for(const dep of dependencies)bundle(dep);
+  if(/<\/script/iu.test(source))throw new Error('Balise script dans '+name);
+  modules.set(name,'__modules['+JSON.stringify(name)+']=(()=>{\n'+source+'\nreturn {'+exports.join(',')+'};\n})();');
+}
+bundle('ui.js');
+let html=fs.readFileSync(path.join(root,'src/shell.html'),'utf8');
+const style=fs.readFileSync(path.join(root,'src/style.css'),'utf8');
+const script='const __modules=Object.create(null);\n'+[...modules.values()].join('\n');
+html=html.replace('/*__STYLE__*/',()=>style).replace('/*__SCRIPT__*/',()=>script);
+const notice=fs.readFileSync(path.join(root,'data/references/GLAFF_LISEZMOI.txt'),'utf8').replace(/&/gu,'&amp;').replace(/</gu,'&lt;').replace(/>/gu,'&gt;');
+html=html.replace('/*__GLAFF_NOTICE__*/',()=>notice);
+if(/\/\*__[A-Z]+__\*\//u.test(html))throw new Error('Marqueur non remplacé');
+const out=path.join(root,'dist');fs.mkdirSync(out,{recursive:true});
+fs.writeFileSync(path.join(out,'index.html'),html);
+fs.writeFileSync(path.join(root,'Transcription-phonetique-traditionnelle.html'),html);
+fs.writeFileSync(path.join(root,'..','Application.html'),html);
+const report={name:'Transcription phonétique traditionnelle',format:'HTML autonome',delivery:'Transcription-phonetique-traditionnelle.html',bytes:Buffer.byteLength(html),sha256:createHash('sha256').update(html).digest('hex'),modules:[...modules.keys()],runtimeDependencies:[],network:'CSP connect-src none ; aucune ressource externe'};
+fs.writeFileSync(path.join(out,'build.json'),JSON.stringify(report,null,2)+'\n');
+const version=archiveHtmlVersion(root,{description});
+console.log(JSON.stringify(report,null,2));
+console.log(JSON.stringify({version},null,2));

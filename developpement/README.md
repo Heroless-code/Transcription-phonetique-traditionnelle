@@ -23,7 +23,7 @@ Référentiel demandé : [Wiktionnaire, français moderne traditionnel](https://
 
 La diction conserve les schwas lexicaux pertinents, sans simuler toutes les réductions de la conversation spontanée. L’API constitue une lecture phonémique avec les longueurs lexicales retenues, et non une prédiction acoustique de chaque locuteur. Les frontières syllabiques sont recalculées à l’intérieur des mots ; la jonction effectivement réalisée porte `‿`. Les signes de ponctuation et les retours à la ligne sont préservés.
 
-La v2 retire intégralement le mode Afficher les couleurs, ses options et son moteur de composition par familles. Les seules teintes conservées sont celles de Sonorités, une par phonème exact avec une version plus pâle pour les ×1. Le petit module color-math.js conserve uniquement les calculs de contraste et de mélange utiles à cette palette. Les anciens contrôles des couleurs sont historiques, hors des sources embarquées.
+La version actuelle retire intégralement le mode Afficher les couleurs, ses options et son moteur de composition par familles. Les seules teintes conservées sont celles de Sonorités, une par phonème exact avec une version plus pâle pour les ×1. Le petit module color-math.js conserve uniquement les calculs de contraste et de mélange utiles à cette palette. Les anciens contrôles des couleurs sont historiques, hors des sources embarquées.
 
 Le lexique enrichi contient 1 632 485 graphies, dont 3 609 ajouts sélectionnés dans [GLÀFF 1.2.2](https://redac.univ-tlse2.fr/lexiques/glaff.html). Les 1 628 876 anciennes entrées sont conservées intégralement. Les provenances et [attributions](data/references/GLAFF_ATTRIBUTION.md) sont documentées et la notice originale GLÀFF est incorporée au HTML.
 

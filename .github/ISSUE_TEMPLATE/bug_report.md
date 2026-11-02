@@ -5,7 +5,7 @@ title: "[Bug] "
 labels: bug
 ---
 
-## Texte exact / Exact input
+## Exemple / Example
 
 ```text
 

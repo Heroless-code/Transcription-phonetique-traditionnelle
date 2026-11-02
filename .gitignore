@@ -2,8 +2,8 @@ node_modules/
 *.zip
 .DS_Store
 Thumbs.db
-data/references/*.tar.bz2
-data/references/glaff-candidates.jsonl
-data/references/Lexique4.1/Lexique4.1.tsv
-validation/*-isolated/
-tests/reference-anchor-stage/
+developpement/data/references/*.tar.bz2
+developpement/data/references/glaff-candidates.jsonl
+developpement/data/references/Lexique4.1/Lexique4.1.tsv
+developpement/validation/*-isolated/
+developpement/tests/reference-anchor-stage/

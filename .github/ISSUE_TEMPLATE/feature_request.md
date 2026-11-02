@@ -5,7 +5,7 @@ title: "[Suggestion] "
 labels: enhancement
 ---
 
-## Besoin / Need
+## Amélioration souhaitée / Requested improvement
 
 ## Proposition / Proposed improvement
 
