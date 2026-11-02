@@ -54,6 +54,8 @@ La cible est le [français moderne traditionnel du Wiktionnaire](https://fr.wikt
 
 ### Installation : un fichier à ouvrir
 
+**Téléchargement rapide :** dans **Releases**, télécharger le fichier `Transcription-phonetique-traditionnelle.html` de la version provisoire, puis l’ouvrir dans un navigateur. Pour récupérer aussi les sources, suivre les étapes ci-dessous.
+
 1. Sur la page du dépôt, cliquer sur **Code**, puis **Download ZIP**.
 2. Extraire l'archive dans le dossier de votre choix.
 3. Ouvrir **`Transcription-phonetique-traditionnelle.html`** avec un navigateur récent. Si nécessaire : clic droit, **Ouvrir avec**, puis votre navigateur.
@@ -152,6 +154,8 @@ Its reference is the Wiktionary description of [traditional modern French](https
 | Offline use | No account, server, installation or Internet connection needed after downloading. |
 
 ### Installation: open one file
+
+**Quick download:** open **Releases**, download `Transcription-phonetique-traditionnelle.html` from the preview release, then open it in a browser. To also obtain the sources, follow the steps below.
 
 1. On the repository page, select **Code → Download ZIP**.
 2. Extract the archive to a folder of your choice.

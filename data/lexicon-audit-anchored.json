@@ -1,0 +1,1800 @@
+{
+  "inputRows": 1939788,
+  "inputTranscriptions": 2038058,
+  "rejectedWordForms": 4992,
+  "rejectedCandidates": 58946,
+  "emptyRows": 289778,
+  "mergedCaseRows": 20812,
+  "markedH": 5604,
+  "lexicalEntries": 1628876,
+  "ambiguousEntries": 87547,
+  "blockSize": 128,
+  "blockCount": 12726,
+  "rawCharacters": 32815305,
+  "gzipBytes": 7422320,
+  "sourceSha256": "7ccff799c9b3a9d3a6f2cb06f5d719c42ebb295e669b071fba1935008f603baf",
+  "selection": "Conservative filtering and heuristic ranking of unlabelled source variants; not independently validated lexical truth.",
+  "referenceAnchor": {
+    "source": "Lexique 4.1",
+    "url": "https://www.lexique.org/databases/Lexique410/Lexique4.1.zip",
+    "license": "CC BY-SA 4.0",
+    "rows": 189863,
+    "invalidRows": 437,
+    "forms": 170385,
+    "covered": 170385,
+    "rawExactMatches": 140514,
+    "traditionalQualityPreserved": 22019,
+    "rawTraditionalDistinctionsPreserved": 1430,
+    "nativeCorrections": 7852,
+    "addedForms": 4670,
+    "heterophones": 284,
+    "familyQualityForms": 994,
+    "pretonicFamilyForms": 795,
+    "pluralCitationForms": 208,
+    "tsvSha256": "f112ad487334c8ab702e6b95cf08110b2ac534d1896e1643f9c669f91a139a84"
+  },
+  "rejectedExamples": [
+    {
+      "word": "aaa",
+      "raw": "a a a"
+    },
+    {
+      "word": "aaa",
+      "raw": "tʁi.plə a"
+    },
+    {
+      "word": "ab",
+      "raw": "a.se bjɛ̃"
+    },
+    {
+      "word": "acme",
+      "raw": "a.k.m.e"
+    },
+    {
+      "word": "adc",
+      "raw": "a de se"
+    },
+    {
+      "word": "adm",
+      "raw": "a de ɛm"
+    },
+    {
+      "word": "adnr",
+      "raw": "a de ɛ.n‿ɛʁ"
+    },
+    {
+      "word": "adp",
+      "raw": "a de pe"
+    },
+    {
+      "word": "adsl",
+      "raw": "a.de.ɛs‿ɛl"
+    },
+    {
+      "word": "al",
+      "raw": "a.sid li.nɔ.le.ik"
+    },
+    {
+      "word": "amf",
+      "raw": "a ɛ.m‿ɛf"
+    },
+    {
+      "word": "ap",
+      "raw": "a pe"
+    },
+    {
+      "word": "arn",
+      "raw": "a.ɛ.ʁ‿ɛn"
+    },
+    {
+      "word": "arnase",
+      "raw": "a.ɛ.ʁ‿ɛ.n‿az"
+    },
+    {
+      "word": "arnases",
+      "raw": "a.ɛ.ʁ‿ɛ.n‿az"
+    },
+    {
+      "word": "arnm",
+      "raw": "a.ɛ.ʁ‿ɛ.n‿ɛm"
+    },
+    {
+      "word": "asfi",
+      "raw": "a ɛ.s‿ɛ.f‿i"
+    },
+    {
+      "word": "avf",
+      "raw": "a ve ɛf"
+    },
+    {
+      "word": "azerty",
+      "raw": "a.zɛʁ.t̪i"
+    },
+    {
+      "word": "aaigem",
+      "raw": "aːj.ɣɛm"
+    },
+    {
+      "word": "abaucourt-hautecourt",
+      "raw": "a.bo.ku.ʁ‿ot.kuʁ"
+    },
+    {
+      "word": "abeilhan",
+      "raw": "abeˈjãᵑ"
+    },
+    {
+      "word": "abergement",
+      "raw": "l‿a.bɛʁ.ʒə.mɑ̃"
+    },
+    {
+      "word": "abergement-clémenciat",
+      "raw": "l‿a.bɛʁ.ʒə.mɑ̃.kle.mɑ̃.sja"
+    },
+    {
+      "word": "abergement-sainte-colombe",
+      "raw": "l‿a.bɛʁ.ʒɛ.mɑ̃.sɛ̃t.ko.lɔ̃b"
+    },
+    {
+      "word": "abergement-de-varey",
+      "raw": "l‿a.bɛʁ.ʒə.mɑ̃.də.va.ʁɛ"
+    },
+    {
+      "word": "abidjan",
+      "raw": "a.bi.d͡ʒɑ̃"
+    },
+    {
+      "word": "abidjan",
+      "raw": "abid͡ʒɑ̃"
+    },
+    {
+      "word": "abitibi",
+      "raw": "a.bi.t͡si.bi"
+    },
+    {
+      "word": "abitibi-témiscamien",
+      "raw": "a.bi.ti.bi.te.mis.ka.mj"
+    },
+    {
+      "word": "abitibi-témiscamingue",
+      "raw": "a.bi.t͡si.bi te.mis.ka.mɛ̃g] , [a.bi.t͡si.bi te.mis.ka.mɛŋ"
+    },
+    {
+      "word": "abramoff",
+      "raw": "a.bra.mɔf"
+    },
+    {
+      "word": "abramov",
+      "raw": "a.bra.mɔf"
+    },
+    {
+      "word": "absie",
+      "raw": "l‿ab.si"
+    },
+    {
+      "word": "acadie",
+      "raw": "a.ka.d͡zi"
+    },
+    {
+      "word": "acadie",
+      "raw": "a.ka.d͡ʒi"
+    },
+    {
+      "word": "achenheim",
+      "raw": "a.xən.(h)ajm"
+    },
+    {
+      "word": "achenheimois",
+      "raw": "a.xən.(h)aj.mwa"
+    },
+    {
+      "word": "achenheimoise",
+      "raw": "a.xən.(h)aj.mwaz"
+    },
+    {
+      "word": "achenheimoises",
+      "raw": "a.xən.(h)aj.mwaz"
+    }
+  ],
+  "familyExamples": [
+    {
+      "word": "aberrants",
+      "lemma": "aberrant",
+      "pos": "ADJ",
+      "before": "a.bɛ.ʁɑ̃",
+      "after": "a.be.ʁɑ̃",
+      "rule": "same-native-IPA plural"
+    },
+    {
+      "word": "accablés",
+      "lemma": "accablé",
+      "pos": "ADJ",
+      "before": "a.ka.ble",
+      "after": "a.kɑ.ble",
+      "rule": "same-native-IPA plural"
+    },
+    {
+      "word": "adossai",
+      "lemma": "adosser",
+      "pos": "VER",
+      "before": "a.do.se",
+      "after": "a.dɔ.se",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "adossait",
+      "lemma": "adosser",
+      "pos": "VER",
+      "before": "a.do.sɛ",
+      "after": "a.dɔ.sɛ",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "adossant",
+      "lemma": "adosser",
+      "pos": "VER",
+      "before": "a.do.sɑ̃",
+      "after": "a.dɔ.sɑ̃",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "adosserais",
+      "lemma": "adosser",
+      "pos": "VER",
+      "before": "a.do.sə.ʁɛ",
+      "after": "a.dɔ.sə.ʁɛ",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "adosserait",
+      "lemma": "adosser",
+      "pos": "VER",
+      "before": "a.do.sə.ʁɛ",
+      "after": "a.dɔ.sə.ʁɛ",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "adossez",
+      "lemma": "adosser",
+      "pos": "VER",
+      "before": "a.do.se",
+      "after": "a.dɔ.se",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "adossée",
+      "lemma": "adosser",
+      "pos": "VER",
+      "before": "a.do.se",
+      "after": "a.dɔ.se",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "adossées",
+      "lemma": "adosser",
+      "pos": "VER",
+      "before": "a.do.se",
+      "after": "a.dɔ.se",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "adossés",
+      "lemma": "adosser",
+      "pos": "VER",
+      "before": "a.do.se",
+      "after": "a.dɔ.se",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "aguerris",
+      "lemma": "aguerri",
+      "pos": "ADJ",
+      "before": "a.ɡe.ʁi",
+      "after": "a.ɡɛ.ʁi",
+      "rule": "same-native-IPA plural"
+    },
+    {
+      "word": "aiguillages",
+      "lemma": "aiguillage",
+      "pos": "NOM",
+      "before": "e.ɡɥi.jaʒ",
+      "after": "ɛ.ɡɥi.jaʒ",
+      "rule": "same-native-IPA plural"
+    },
+    {
+      "word": "aiguilleurs",
+      "lemma": "aiguilleur",
+      "pos": "NOM",
+      "before": "e.ɡɥi.jœʁ",
+      "after": "ɛ.ɡɥi.jœʁ",
+      "rule": "same-native-IPA plural"
+    },
+    {
+      "word": "amazones",
+      "lemma": "amazone",
+      "pos": "NOM",
+      "before": "a.ma.zon",
+      "after": "a.ma.zɔn",
+      "rule": "same-native-IPA plural"
+    },
+    {
+      "word": "américano-soviétiques",
+      "lemma": "américano-soviétique",
+      "pos": "ADJ",
+      "before": "ameʁikanosɔvjetik",
+      "after": "ameʁikanɔsɔvjetik",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "ankylosée",
+      "lemma": "ankylosé",
+      "pos": "ADJ",
+      "before": "ɑ̃.ki.lɔ.ze",
+      "after": "ɑ̃.ki.lo.ze",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "ankylosées",
+      "lemma": "ankylosé",
+      "pos": "ADJ",
+      "before": "ɑ̃.ki.lɔ.ze",
+      "after": "ɑ̃.ki.lo.ze",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "ankylosés",
+      "lemma": "ankylosé",
+      "pos": "ADJ",
+      "before": "ɑ̃.ki.lɔ.ze",
+      "after": "ɑ̃.ki.lo.ze",
+      "rule": "same-native-IPA plural"
+    },
+    {
+      "word": "anthropologues",
+      "lemma": "anthropologue",
+      "pos": "NOM",
+      "before": "ɑ̃.tʁo.po.lɔɡ",
+      "after": "ɑ̃.tʁɔ.pɔ.lɔɡ",
+      "rule": "same-native-IPA plural"
+    },
+    {
+      "word": "anti-odeurs",
+      "lemma": "anti-odeur",
+      "pos": "NOM",
+      "before": "ɑ̃.ti.ɔ.dœʁ",
+      "after": "ɑ̃tiodœʁ",
+      "rule": "same-native-IPA plural"
+    },
+    {
+      "word": "apostate",
+      "lemma": "apostat",
+      "pos": "NOM",
+      "before": "a.pɔs.tat",
+      "after": "a.pos.tat",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "apostates",
+      "lemma": "apostat",
+      "pos": "ADJ",
+      "before": "a.pɔs.tat",
+      "after": "a.pos.tat",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "apostats",
+      "lemma": "apostat",
+      "pos": "NOM",
+      "before": "a.pɔs.ta",
+      "after": "a.po.sta",
+      "rule": "same-native-IPA plural"
+    },
+    {
+      "word": "appauvri",
+      "lemma": "appauvrir",
+      "pos": "VER",
+      "before": "a.pɔ.vʁi",
+      "after": "a.po.vʁi",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "appauvrie",
+      "lemma": "appauvrir",
+      "pos": "VER",
+      "before": "a.pɔ.vʁi",
+      "after": "a.po.vʁi",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "appauvries",
+      "lemma": "appauvrir",
+      "pos": "VER",
+      "before": "a.pɔ.vʁi",
+      "after": "a.po.vʁi",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "appauvrira",
+      "lemma": "appauvrir",
+      "pos": "VER",
+      "before": "a.pɔ.vʁi.ʁa",
+      "after": "a.po.vʁi.ʁa",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "appauvriraient",
+      "lemma": "appauvrir",
+      "pos": "VER",
+      "before": "a.pɔ.vʁi.ʁɛ",
+      "after": "a.po.vʁi.ʁɛ",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "appauvriront",
+      "lemma": "appauvrir",
+      "pos": "VER",
+      "before": "a.pɔ.vʁi.ʁɔ̃",
+      "after": "a.po.vʁi.ʁɔ̃",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "appauvris",
+      "lemma": "appauvrir",
+      "pos": "VER",
+      "before": "a.pɔ.vʁi",
+      "after": "a.po.vʁi",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "appauvrissaient",
+      "lemma": "appauvrir",
+      "pos": "VER",
+      "before": "a.pɔ.vʁi.sɛ",
+      "after": "a.po.vʁi.sɛ",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "appauvrissait",
+      "lemma": "appauvrir",
+      "pos": "VER",
+      "before": "a.pɔ.vʁi.sɛ",
+      "after": "a.po.vʁi.sɛ",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "appauvrissant",
+      "lemma": "appauvrir",
+      "pos": "VER",
+      "before": "a.pɔ.vʁi.sɑ̃",
+      "after": "a.po.vʁi.sɑ̃",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "appauvrissent",
+      "lemma": "appauvrir",
+      "pos": "VER",
+      "before": "a.pɔ.vʁis",
+      "after": "a.po.vʁis",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "appauvrissez",
+      "lemma": "appauvrir",
+      "pos": "VER",
+      "before": "a.pɔ.vʁi.se",
+      "after": "a.po.vʁi.se",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "appauvrissons",
+      "lemma": "appauvrir",
+      "pos": "VER",
+      "before": "a.pɔ.vʁi.sɔ̃",
+      "after": "a.po.vʁi.sɔ̃",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "appauvrit",
+      "lemma": "appauvrir",
+      "pos": "VER",
+      "before": "a.pɔ.vʁi",
+      "after": "a.po.vʁi",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "approfondissements",
+      "lemma": "approfondissement",
+      "pos": "NOM",
+      "before": "a.pʁɔ.fɔ̃.dis.mɑ̃",
+      "after": "a.pʁo.fɔ̃.dis.mɑ̃",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "appropriez",
+      "lemma": "approprier",
+      "pos": "VER",
+      "before": "apʁopʁie",
+      "after": "apʁɔpʁie",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "arêtes",
+      "lemma": "arête",
+      "pos": "NOM",
+      "before": "a.ʁɛt",
+      "after": "a.ʁɛːt",
+      "rule": "same-native-IPA plural"
+    },
+    {
+      "word": "aspects",
+      "lemma": "aspect",
+      "pos": "NOM",
+      "before": "as.pɛ",
+      "after": "as.pe",
+      "rule": "same-native-IPA plural"
+    },
+    {
+      "word": "astrophysicienne",
+      "lemma": "astrophysicien",
+      "pos": "NOM",
+      "before": "as.tʁo.fi.zi.sjɛn",
+      "after": "as.tʁɔ.fi.zi.sjɛn",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "astroports",
+      "lemma": "astroport",
+      "pos": "NOM",
+      "before": "astʁɔpɔʁ",
+      "after": "astʁopɔʁ",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "atterrants",
+      "lemma": "atterrant",
+      "pos": "ADJ",
+      "before": "a.tɛ.ʁɑ̃",
+      "after": "a.te.ʁɑ̃",
+      "rule": "same-native-IPA plural"
+    },
+    {
+      "word": "atterrés",
+      "lemma": "atterré",
+      "pos": "ADJ",
+      "before": "a.tɛ.ʁe",
+      "after": "a.te.ʁe",
+      "rule": "same-native-IPA plural"
+    },
+    {
+      "word": "auditionna",
+      "lemma": "auditionner",
+      "pos": "VER",
+      "before": "ɔ.di.sjɔ.na",
+      "after": "o.di.sjɔ.na",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "auditionnaient",
+      "lemma": "auditionner",
+      "pos": "VER",
+      "before": "ɔ.di.sjɔ.nɛ",
+      "after": "o.di.sjɔ.nɛ",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "auditionnait",
+      "lemma": "auditionner",
+      "pos": "VER",
+      "before": "ɔ.di.sjɔ.nɛ",
+      "after": "o.di.sjɔ.nɛ",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "auditionnent",
+      "lemma": "auditionner",
+      "pos": "VER",
+      "before": "ɔ.di.sjɔn",
+      "after": "o.di.sjɔn",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "auditionnera",
+      "lemma": "auditionner",
+      "pos": "VER",
+      "before": "ɔ.di.sjɔ.nə.ʁa",
+      "after": "o.di.sjɔ.nə.ʁa",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "auditionnerai",
+      "lemma": "auditionner",
+      "pos": "VER",
+      "before": "ɔ.di.sjɔ.nə.ʁe",
+      "after": "o.di.sjɔ.nə.ʁe",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "auditionnerait",
+      "lemma": "auditionner",
+      "pos": "VER",
+      "before": "ɔ.di.sjɔ.nə.ʁɛ",
+      "after": "o.di.sjɔ.nə.ʁɛ",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "auditionnerez",
+      "lemma": "auditionner",
+      "pos": "VER",
+      "before": "ɔ.di.sjɔ.nə.ʁe",
+      "after": "o.di.sjɔ.nə.ʁe",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "auditionneriez",
+      "lemma": "auditionner",
+      "pos": "VER",
+      "before": "ɔ.di.sjɔ.nə.ʁje",
+      "after": "o.di.sjɔ.nə.ʁje",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "auditionnerons",
+      "lemma": "auditionner",
+      "pos": "VER",
+      "before": "ɔ.di.sjɔ.nə.ʁɔ̃",
+      "after": "o.di.sjɔ.nə.ʁɔ̃",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "auditionniez",
+      "lemma": "auditionner",
+      "pos": "VER",
+      "before": "ɔ.di.sjɔ.nje",
+      "after": "o.di.sjɔ.nje",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "auditionnions",
+      "lemma": "auditionner",
+      "pos": "VER",
+      "before": "ɔ.di.sjɔ.njɔ̃",
+      "after": "o.di.sjɔ.njɔ̃",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "auréole",
+      "lemma": "auréoler",
+      "pos": "VER",
+      "before": "o.ʁe.ɔl",
+      "after": "ɔ.ʁe.ɔl",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "auréolé",
+      "lemma": "auréoler",
+      "pos": "VER",
+      "before": "o.ʁe.ɔ.le",
+      "after": "ɔ.ʁe.ɔ.le",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "auréolée",
+      "lemma": "auréoler",
+      "pos": "VER",
+      "before": "o.ʁe.ɔ.le",
+      "after": "ɔ.ʁe.ɔ.le",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "auréolée",
+      "lemma": "auréolé",
+      "pos": "ADJ",
+      "before": "ɔ.ʁe.ɔ.le",
+      "after": "o.ʁe.ɔ.le",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "auréolées",
+      "lemma": "auréoler",
+      "pos": "VER",
+      "before": "o.ʁe.ɔ.le",
+      "after": "ɔ.ʁe.ɔ.le",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "auréolés",
+      "lemma": "auréoler",
+      "pos": "VER",
+      "before": "o.ʁe.ɔ.le",
+      "after": "ɔ.ʁe.ɔ.le",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "auréolés",
+      "lemma": "auréolé",
+      "pos": "ADJ",
+      "before": "ɔ.ʁe.ɔ.le",
+      "after": "o.ʁe.ɔ.le",
+      "rule": "same-native-IPA plural"
+    },
+    {
+      "word": "auspices",
+      "lemma": "auspice",
+      "pos": "NOM",
+      "before": "ɔs.pis",
+      "after": "os.pis",
+      "rule": "same-native-IPA plural"
+    },
+    {
+      "word": "auspicieuse",
+      "lemma": "auspicieux",
+      "pos": "ADJ",
+      "before": "ɔs.pi.sjøz",
+      "after": "os.pi.sjøz",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "austérités",
+      "lemma": "austérité",
+      "pos": "NOM",
+      "before": "ɔs.te.ʁi.te",
+      "after": "os.te.ʁi.te",
+      "rule": "same-native-IPA plural"
+    },
+    {
+      "word": "auto-tamponneuses",
+      "lemma": "auto-tamponneuse",
+      "pos": "NOM",
+      "before": "ototɑ̃ponøz",
+      "after": "o.to.tɑ̃.pɔ.nøz",
+      "rule": "same-native-IPA plural"
+    },
+    {
+      "word": "autofinancera",
+      "lemma": "autofinancer",
+      "pos": "VER",
+      "before": "ɔtofinəsəʁa",
+      "after": "otofinəsəʁa",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "autofinancée",
+      "lemma": "autofinancer",
+      "pos": "VER",
+      "before": "ɔ.to.fi.nɑ̃.se",
+      "after": "o.to.fi.nɑ̃.se",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "autofinancés",
+      "lemma": "autofinancer",
+      "pos": "VER",
+      "before": "ɔ.to.fi.nɑ̃.se",
+      "after": "o.to.fi.nɑ̃.se",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "autographiera",
+      "lemma": "autographier",
+      "pos": "VER",
+      "before": "ɔ.tɔ.ɡʁa.fi.ʁa",
+      "after": "o.to.ɡʁa.fi.ʁa",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "autographiée",
+      "lemma": "autographier",
+      "pos": "VER",
+      "before": "ɔ.tɔ.ɡʁa.fje",
+      "after": "o.to.ɡʁa.fje",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "autographiées",
+      "lemma": "autographier",
+      "pos": "VER",
+      "before": "ɔ.tɔ.ɡʁa.fje",
+      "after": "o.to.ɡʁa.fje",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "autographiés",
+      "lemma": "autographier",
+      "pos": "VER",
+      "before": "ɔ.tɔ.ɡʁa.fje",
+      "after": "o.to.ɡʁa.fje",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "automatise",
+      "lemma": "automatiser",
+      "pos": "VER",
+      "before": "ɔ.tɔ.ma.tiz",
+      "after": "o.to.ma.tiz",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "automatisons",
+      "lemma": "automatiser",
+      "pos": "VER",
+      "before": "ɔ.tɔ.ma.ti.zɔ̃",
+      "after": "o.to.ma.ti.zɔ̃",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "automatisé",
+      "lemma": "automatiser",
+      "pos": "VER",
+      "before": "o.tɔ.ma.ti.ze",
+      "after": "o.to.ma.ti.ze",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "automatisée",
+      "lemma": "automatisé",
+      "pos": "ADJ",
+      "before": "ɔ.tɔ.ma.ti.ze",
+      "after": "o.tɔ.ma.ti.ze",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "automatisée",
+      "lemma": "automatiser",
+      "pos": "VER",
+      "before": "o.tɔ.ma.ti.ze",
+      "after": "o.to.ma.ti.ze",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "automatisées",
+      "lemma": "automatisé",
+      "pos": "ADJ",
+      "before": "ɔ.tɔ.ma.ti.ze",
+      "after": "o.tɔ.ma.ti.ze",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "automatisées",
+      "lemma": "automatiser",
+      "pos": "VER",
+      "before": "o.tɔ.ma.ti.ze",
+      "after": "o.to.ma.ti.ze",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "automatisés",
+      "lemma": "automatiser",
+      "pos": "VER",
+      "before": "o.tɔ.ma.ti.ze",
+      "after": "o.to.ma.ti.ze",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "automobiles",
+      "lemma": "automobile",
+      "pos": "ADJ",
+      "before": "o.to.mɔ.bil",
+      "after": "o.to.mo.bil",
+      "rule": "same-native-IPA plural"
+    },
+    {
+      "word": "automoteurs",
+      "lemma": "automoteur",
+      "pos": "NOM",
+      "before": "o.to.mɔ.tœʁ",
+      "after": "o.to.mo.tœʁ",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "automotrice",
+      "lemma": "automoteur",
+      "pos": "ADJ",
+      "before": "o.to.mɔ.tʁis",
+      "after": "o.to.mo.tʁis",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "autoproclamée",
+      "lemma": "autoproclamer",
+      "pos": "VER",
+      "before": "ɔ.to.pʁɔ.kla.me",
+      "after": "o.to.pʁɔ.kla.me",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "autoproclamés",
+      "lemma": "autoproclamer",
+      "pos": "VER",
+      "before": "ɔ.to.pʁɔ.kla.me",
+      "after": "o.to.pʁɔ.kla.me",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "autopropulseurs",
+      "lemma": "autopropulseur",
+      "pos": "NOM",
+      "before": "otɔpʁɔpylsœʁ",
+      "after": "otopʁɔpylsœʁ",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "autorisa",
+      "lemma": "autoriser",
+      "pos": "VER",
+      "before": "ɔ.tɔ.ʁi.za",
+      "after": "o.to.ʁi.za",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "autorisaient",
+      "lemma": "autoriser",
+      "pos": "VER",
+      "before": "ɔ.tɔ.ʁi.zɛ",
+      "after": "o.to.ʁi.zɛ",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "autorisais",
+      "lemma": "autoriser",
+      "pos": "VER",
+      "before": "ɔ.tɔ.ʁi.zɛ",
+      "after": "o.to.ʁi.zɛ",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "autorisait",
+      "lemma": "autoriser",
+      "pos": "VER",
+      "before": "ɔ.tɔ.ʁi.zɛ",
+      "after": "o.to.ʁi.zɛ",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "autorisant",
+      "lemma": "autoriser",
+      "pos": "VER",
+      "before": "ɔ.tɔ.ʁi.zɑ̃",
+      "after": "o.to.ʁi.zɑ̃",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "autorise",
+      "lemma": "autoriser",
+      "pos": "VER",
+      "before": "ɔ.tɔ.ʁiz",
+      "after": "o.to.ʁiz",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "autorisent",
+      "lemma": "autoriser",
+      "pos": "VER",
+      "before": "ɔ.tɔ.ʁiz",
+      "after": "o.to.ʁiz",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "autorisera",
+      "lemma": "autoriser",
+      "pos": "VER",
+      "before": "ɔ.tɔ.ʁi.zə.ʁa",
+      "after": "o.to.ʁi.zə.ʁa",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "autoriserai",
+      "lemma": "autoriser",
+      "pos": "VER",
+      "before": "ɔ.tɔ.ʁi.zə.ʁe",
+      "after": "o.to.ʁi.zə.ʁe",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "autoriseraient",
+      "lemma": "autoriser",
+      "pos": "VER",
+      "before": "ɔ.tɔ.ʁi.zə.ʁɛ",
+      "after": "o.to.ʁi.zə.ʁɛ",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "autoriserais",
+      "lemma": "autoriser",
+      "pos": "VER",
+      "before": "ɔ.tɔ.ʁi.zə.ʁɛ",
+      "after": "o.to.ʁi.zə.ʁɛ",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "autoriserait",
+      "lemma": "autoriser",
+      "pos": "VER",
+      "before": "ɔ.tɔ.ʁi.zə.ʁɛ",
+      "after": "o.to.ʁi.zə.ʁɛ",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "autoriseras",
+      "lemma": "autoriser",
+      "pos": "VER",
+      "before": "ɔ.tɔ.ʁi.zə.ʁa",
+      "after": "o.to.ʁi.zə.ʁa",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "autoriserez",
+      "lemma": "autoriser",
+      "pos": "VER",
+      "before": "ɔ.tɔ.ʁi.zə.ʁe",
+      "after": "o.to.ʁi.zə.ʁe",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "autoriseriez",
+      "lemma": "autoriser",
+      "pos": "VER",
+      "before": "ɔ.tɔ.ʁi.zə.ʁje",
+      "after": "o.to.ʁi.zə.ʁje",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "autoriserions",
+      "lemma": "autoriser",
+      "pos": "VER",
+      "before": "ɔ.tɔ.ʁi.zə.ʁjɔ̃",
+      "after": "o.to.ʁi.zə.ʁjɔ̃",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "autoriserons",
+      "lemma": "autoriser",
+      "pos": "VER",
+      "before": "ɔ.tɔ.ʁi.zə.ʁɔ̃",
+      "after": "o.to.ʁi.zə.ʁɔ̃",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "autoriseront",
+      "lemma": "autoriser",
+      "pos": "VER",
+      "before": "ɔ.tɔ.ʁi.zə.ʁɔ̃",
+      "after": "o.to.ʁi.zə.ʁɔ̃",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "autorises",
+      "lemma": "autoriser",
+      "pos": "VER",
+      "before": "ɔ.tɔ.ʁiz",
+      "after": "o.to.ʁiz",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "autorisez",
+      "lemma": "autoriser",
+      "pos": "VER",
+      "before": "ɔ.tɔ.ʁi.ze",
+      "after": "o.to.ʁi.ze",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "autorisiez",
+      "lemma": "autoriser",
+      "pos": "VER",
+      "before": "ɔ.tɔ.ʁi.zje",
+      "after": "o.to.ʁi.zje",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "autorisions",
+      "lemma": "autoriser",
+      "pos": "VER",
+      "before": "ɔ.tɔ.ʁi.zjɔ̃",
+      "after": "o.to.ʁi.zjɔ̃",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "autorisons",
+      "lemma": "autoriser",
+      "pos": "VER",
+      "before": "ɔ.tɔ.ʁi.zɔ̃",
+      "after": "o.to.ʁi.zɔ̃",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "autorisée",
+      "lemma": "autoriser",
+      "pos": "VER",
+      "before": "ɔ.tɔ.ʁi.ze",
+      "after": "o.to.ʁi.ze",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "autorisées",
+      "lemma": "autoriser",
+      "pos": "VER",
+      "before": "ɔ.tɔ.ʁi.ze",
+      "after": "o.to.ʁi.ze",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "autoritaires",
+      "lemma": "autoritaire",
+      "pos": "ADJ",
+      "before": "o.tɔ.ʁi.tɛʁ",
+      "after": "o.to.ʁi.tɛʁ",
+      "rule": "same-native-IPA plural"
+    },
+    {
+      "word": "autorégulée",
+      "lemma": "autoréguler",
+      "pos": "VER",
+      "before": "ɔ.to.ʁe.ɡy.le",
+      "after": "o.to.ʁe.ɡy.le",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "autorégulées",
+      "lemma": "autoréguler",
+      "pos": "VER",
+      "before": "ɔ.to.ʁe.ɡy.le",
+      "after": "o.to.ʁe.ɡy.le",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "autosatisfaite",
+      "lemma": "autosatisfait",
+      "pos": "ADJ",
+      "before": "ɔ.to.sa.tis.fɛt",
+      "after": "o.to.sa.tis.fɛt",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "aérateurs",
+      "lemma": "aérateur",
+      "pos": "NOM",
+      "before": "a.e.ʁa.tœʁ",
+      "after": "aɛ.ʁa.tœʁ",
+      "rule": "same-native-IPA plural"
+    },
+    {
+      "word": "aéronavales",
+      "lemma": "aéronaval",
+      "pos": "ADJ",
+      "before": "a.e.ʁɔ.na.val",
+      "after": "a.e.ʁo.na.val",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "aéroportuaires",
+      "lemma": "aéroportuaire",
+      "pos": "ADJ",
+      "before": "aeʁɔpɔʁtyɛʁ",
+      "after": "a.e.ʁo.pɔʁ.ty.ɛʁ",
+      "rule": "same-native-IPA plural"
+    },
+    {
+      "word": "baleiniers",
+      "lemma": "baleinier",
+      "pos": "NOM",
+      "before": "ba.lɛ.nje",
+      "after": "ba.le.nje",
+      "rule": "same-native-IPA plural"
+    },
+    {
+      "word": "barbotée",
+      "lemma": "barboter",
+      "pos": "VER",
+      "before": "baʁ.bo.te",
+      "after": "baʁ.bɔ.te",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "barbotés",
+      "lemma": "barboter",
+      "pos": "VER",
+      "before": "baʁ.bo.te",
+      "after": "baʁ.bɔ.te",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "beigeâtres",
+      "lemma": "beigeâtre",
+      "pos": "ADJ",
+      "before": "bɛ.ʒɑtʁ",
+      "after": "bɛ.ʒatʁ",
+      "rule": "same-native-IPA plural"
+    },
+    {
+      "word": "beignets",
+      "lemma": "beignet",
+      "pos": "NOM",
+      "before": "bɛ.ɲɛ",
+      "after": "be.ɲɛ",
+      "rule": "same-native-IPA plural"
+    },
+    {
+      "word": "beurrées",
+      "lemma": "beurrée",
+      "pos": "NOM",
+      "before": "bø.ʁe",
+      "after": "bœ.ʁe",
+      "rule": "same-native-IPA plural"
+    },
+    {
+      "word": "beurrés",
+      "lemma": "beurré",
+      "pos": "ADJ",
+      "before": "bø.ʁe",
+      "after": "bœ.ʁe",
+      "rule": "same-native-IPA plural"
+    },
+    {
+      "word": "binoclarde",
+      "lemma": "binoclard",
+      "pos": "ADJ",
+      "before": "bi.nɔ.klaʁd",
+      "after": "bi.no.klaʁd",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "binoclards",
+      "lemma": "binoclard",
+      "pos": "ADJ",
+      "before": "bi.nɔ.klaʁ",
+      "after": "bi.no.klaʁ",
+      "rule": "same-native-IPA plural"
+    },
+    {
+      "word": "binomiale",
+      "lemma": "binomial",
+      "pos": "ADJ",
+      "before": "bi.no.mjal",
+      "after": "bi.nɔ.mjal",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "binomiales",
+      "lemma": "binomial",
+      "pos": "ADJ",
+      "before": "bi.no.mjal",
+      "after": "bi.nɔ.mjal",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "binomiaux",
+      "lemma": "binomial",
+      "pos": "ADJ",
+      "before": "bi.no.mjo",
+      "after": "bi.nɔ.mjo",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "biologiques",
+      "lemma": "biologique",
+      "pos": "ADJ",
+      "before": "bjɔ.lɔ.ʒik",
+      "after": "bjo.lɔ.ʒik",
+      "rule": "same-native-IPA plural"
+    },
+    {
+      "word": "biseauté",
+      "lemma": "biseauter",
+      "pos": "VER",
+      "before": "bi.zo.te",
+      "after": "bi.zɔ.te",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "biseautée",
+      "lemma": "biseauter",
+      "pos": "VER",
+      "before": "bi.zo.te",
+      "after": "bi.zɔ.te",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "biseautées",
+      "lemma": "biseauter",
+      "pos": "VER",
+      "before": "bi.zo.te",
+      "after": "bi.zɔ.te",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "biseautés",
+      "lemma": "biseauter",
+      "pos": "VER",
+      "before": "bi.zo.te",
+      "after": "bi.zɔ.te",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "blessants",
+      "lemma": "blessant",
+      "pos": "ADJ",
+      "before": "blɛ.sɑ̃",
+      "after": "ble.sɑ̃",
+      "rule": "same-native-IPA plural"
+    },
+    {
+      "word": "bodhisattvas",
+      "lemma": "bodhisattva",
+      "pos": "NOM",
+      "before": "bɔdizattva",
+      "after": "bodizattva",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "boisés",
+      "lemma": "boisé",
+      "pos": "ADJ",
+      "before": "bwɑ.ze",
+      "after": "bwa.ze",
+      "rule": "same-native-IPA plural"
+    },
+    {
+      "word": "boroughs",
+      "lemma": "borough",
+      "pos": "NOM",
+      "before": "bɔʁuɡ",
+      "after": "boʁuɡ",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "breuvages",
+      "lemma": "breuvage",
+      "pos": "NOM",
+      "before": "bʁœ.vaʒ",
+      "after": "bʁø.vaʒ",
+      "rule": "same-native-IPA plural"
+    },
+    {
+      "word": "buccogénitales",
+      "lemma": "buccogénital",
+      "pos": "ADJ",
+      "before": "by.kɔ.ʒe.ni.tal",
+      "after": "by.ko.ʒe.ni.tal",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "bâtards",
+      "lemma": "bâtard",
+      "pos": "NOM",
+      "before": "bɑ.taʁ",
+      "after": "bɑ.tɑːʁ",
+      "rule": "same-native-IPA plural"
+    },
+    {
+      "word": "bêtes",
+      "lemma": "bête",
+      "pos": "NOM",
+      "before": "bɛt",
+      "after": "bɛːt",
+      "rule": "same-native-IPA plural"
+    },
+    {
+      "word": "caillés",
+      "lemma": "caillé",
+      "pos": "ADJ",
+      "before": "kɑ.je",
+      "after": "ka.je",
+      "rule": "same-native-IPA plural"
+    },
+    {
+      "word": "cardio-pulmonaires",
+      "lemma": "cardio-pulmonaire",
+      "pos": "ADJ",
+      "before": "kaʁdjopylmɔnɛʁ",
+      "after": "kaʁdjɔpylmɔnɛʁ",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "catégorisée",
+      "lemma": "catégoriser",
+      "pos": "VER",
+      "before": "ka.te.ɡo.ʁi.ze",
+      "after": "ka.te.ɡɔ.ʁi.ze",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "catégorisées",
+      "lemma": "catégoriser",
+      "pos": "VER",
+      "before": "ka.te.ɡo.ʁi.ze",
+      "after": "ka.te.ɡɔ.ʁi.ze",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "catégorisés",
+      "lemma": "catégoriser",
+      "pos": "VER",
+      "before": "ka.te.ɡo.ʁi.ze",
+      "after": "ka.te.ɡɔ.ʁi.ze",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "cautérisée",
+      "lemma": "cautériser",
+      "pos": "VER",
+      "before": "kɔ.te.ʁi.ze",
+      "after": "ko.te.ʁi.ze",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "cautérisées",
+      "lemma": "cautériser",
+      "pos": "VER",
+      "before": "kɔ.te.ʁi.ze",
+      "after": "ko.te.ʁi.ze",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "cautérisés",
+      "lemma": "cautériser",
+      "pos": "VER",
+      "before": "kɔ.te.ʁi.ze",
+      "after": "ko.te.ʁi.ze",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "cellulosiques",
+      "lemma": "cellulosique",
+      "pos": "ADJ",
+      "before": "se.ly.lo.zik",
+      "after": "sɛlylozik",
+      "rule": "same-native-IPA plural"
+    },
+    {
+      "word": "centauresse",
+      "lemma": "centaure",
+      "pos": "NOM",
+      "before": "sɑ̃.to.ʁɛs",
+      "after": "sɑ̃.tɔ.ʁɛs",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "chapeautera",
+      "lemma": "chapeauter",
+      "pos": "VER",
+      "before": "ʃa.pɔ.tə.ʁa",
+      "after": "ʃa.po.tə.ʁa",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "chapeauterai",
+      "lemma": "chapeauter",
+      "pos": "VER",
+      "before": "ʃa.pɔ.tə.ʁe",
+      "after": "ʃa.po.tə.ʁe",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "chauffants",
+      "lemma": "chauffant",
+      "pos": "ADJ",
+      "before": "ʃɔ.fɑ̃",
+      "after": "ʃo.fɑ̃",
+      "rule": "same-native-IPA plural"
+    },
+    {
+      "word": "chauffée",
+      "lemma": "chauffer",
+      "pos": "VER",
+      "before": "ʃɔ.fe",
+      "after": "ʃo.fe",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "chauffées",
+      "lemma": "chauffer",
+      "pos": "VER",
+      "before": "ʃɔ.fe",
+      "after": "ʃo.fe",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "chevauchante",
+      "lemma": "chevauchant",
+      "pos": "ADJ",
+      "before": "ʃə.vɔ.ʃɑ̃t",
+      "after": "ʃə.vo.ʃɑ̃t",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "chevauchements",
+      "lemma": "chevauchement",
+      "pos": "NOM",
+      "before": "ʃə.vɔʃ.mɑ̃",
+      "after": "ʃə.voʃ.mɑ̃",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "chevauchera",
+      "lemma": "chevaucher",
+      "pos": "VER",
+      "before": "ʃə.vɔ.ʃə.ʁa",
+      "after": "ʃə.vo.ʃə.ʁa",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "chevaucherai",
+      "lemma": "chevaucher",
+      "pos": "VER",
+      "before": "ʃə.vɔ.ʃə.ʁe",
+      "after": "ʃə.vo.ʃə.ʁe",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "chevaucherais",
+      "lemma": "chevaucher",
+      "pos": "VER",
+      "before": "ʃə.vɔ.ʃə.ʁɛ",
+      "after": "ʃə.vo.ʃə.ʁɛ",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "chevaucherait",
+      "lemma": "chevaucher",
+      "pos": "VER",
+      "before": "ʃə.vɔ.ʃə.ʁɛ",
+      "after": "ʃə.vo.ʃə.ʁɛ",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "chevaucherons",
+      "lemma": "chevaucher",
+      "pos": "VER",
+      "before": "ʃə.vɔ.ʃə.ʁɔ̃",
+      "after": "ʃə.vo.ʃə.ʁɔ̃",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "chevaucheront",
+      "lemma": "chevaucher",
+      "pos": "VER",
+      "before": "ʃə.vɔ.ʃə.ʁɔ̃",
+      "after": "ʃə.vo.ʃə.ʁɔ̃",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "choppée",
+      "lemma": "chopper",
+      "pos": "VER",
+      "before": "ʃope",
+      "after": "ʃɔpe",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "chosifie",
+      "lemma": "chosifier",
+      "pos": "VER",
+      "before": "ʃɔ.zi.fi",
+      "after": "ʃo.zi.fi",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "chosifié",
+      "lemma": "chosifier",
+      "pos": "VER",
+      "before": "ʃɔ.zi.fje",
+      "after": "ʃo.zi.fje",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "chows-chows",
+      "lemma": "chow-chow",
+      "pos": "NOM",
+      "before": "ʃɔwʃɔw",
+      "after": "ʃowʃɔw",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "chromes",
+      "lemma": "chrome",
+      "pos": "NOM",
+      "before": "kʁom",
+      "after": "kʁɔm",
+      "rule": "same-native-IPA plural"
+    },
+    {
+      "word": "chronométreurs",
+      "lemma": "chronométreur",
+      "pos": "NOM",
+      "before": "kʁo.no.me.tʁœʁ",
+      "after": "kʁɔ.nɔ.me.tʁœʁ",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "chênes",
+      "lemma": "chêne",
+      "pos": "NOM",
+      "before": "ʃɛn",
+      "after": "ʃɛːn",
+      "rule": "same-native-IPA plural"
+    },
+    {
+      "word": "chômages",
+      "lemma": "chômage",
+      "pos": "NOM",
+      "before": "ʃo.maʒ",
+      "after": "ʃoː.mɑːʒ",
+      "rule": "same-native-IPA plural"
+    },
+    {
+      "word": "clonerai",
+      "lemma": "cloner",
+      "pos": "VER",
+      "before": "klɔnə.ʁe",
+      "after": "klonə.ʁe",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "clonerait",
+      "lemma": "cloner",
+      "pos": "VER",
+      "before": "klɔ.nə.ʁɛ",
+      "after": "klo.nə.ʁɛ",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "clora",
+      "lemma": "clore",
+      "pos": "VER",
+      "before": "klo.ʁa",
+      "after": "klɔ.ʁa",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "clorait",
+      "lemma": "clore",
+      "pos": "VER",
+      "before": "klo.ʁɛ",
+      "after": "klɔ.ʁɛ",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "clorons",
+      "lemma": "clore",
+      "pos": "VER",
+      "before": "klo.ʁɔ̃",
+      "after": "klɔ.ʁɔ̃",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "cloront",
+      "lemma": "clore",
+      "pos": "VER",
+      "before": "klo.ʁɔ̃",
+      "after": "klɔ.ʁɔ̃",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "co-signons",
+      "lemma": "cosigner",
+      "pos": "VER",
+      "before": "ko.si.ɲɔ̃",
+      "after": "kɔ.si.ɲɔ̃",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "coalescentes",
+      "lemma": "coalescent",
+      "pos": "ADJ",
+      "before": "ko.a.lɛ.sɑ̃t",
+      "after": "kɔ.a.lɛ.sɑ̃t",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "coalescents",
+      "lemma": "coalescent",
+      "pos": "ADJ",
+      "before": "ko.a.lɛ.sɑ̃",
+      "after": "kɔ.a.lɛ.sɑ̃",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "cocasseries",
+      "lemma": "cocasserie",
+      "pos": "NOM",
+      "before": "kɔ.kas.ʁi",
+      "after": "ko.kas.ʁi",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "cocos",
+      "lemma": "coco",
+      "pos": "NOM",
+      "before": "ko.ko",
+      "after": "kɔ.ko",
+      "rule": "same-native-IPA plural"
+    },
+    {
+      "word": "cocufiée",
+      "lemma": "cocufier",
+      "pos": "VER",
+      "before": "ko.ky.fje",
+      "after": "kɔ.ky.fje",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "codétenues",
+      "lemma": "codétenu",
+      "pos": "NOM",
+      "before": "kodetny",
+      "after": "kɔdetny",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "codétenus",
+      "lemma": "codétenu",
+      "pos": "NOM",
+      "before": "ko.de.tə.ny",
+      "after": "kɔ.de.tə.ny",
+      "rule": "same-native-IPA plural"
+    },
+    {
+      "word": "colistiers",
+      "lemma": "colistier",
+      "pos": "NOM",
+      "before": "kolistjee",
+      "after": "kɔlistjee",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "colistière",
+      "lemma": "colistier",
+      "pos": "NOM",
+      "before": "kolistjeɛʁ",
+      "after": "kɔlistjeɛʁ",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "commands",
+      "lemma": "command",
+      "pos": "NOM",
+      "before": "kɔ.mɑ̃",
+      "after": "ko.mɑ̃",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "composant",
+      "lemma": "composer",
+      "pos": "VER",
+      "before": "kɔ̃.pɔ.zɑ̃",
+      "after": "kɔ̃.po.zɑ̃",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "composé",
+      "lemma": "composer",
+      "pos": "VER",
+      "before": "kɔ̃.pɔ.ze",
+      "after": "kɔ̃.po.ze",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "composée",
+      "lemma": "composer",
+      "pos": "VER",
+      "before": "kɔ̃.pɔ.ze",
+      "after": "kɔ̃.po.ze",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "composée",
+      "lemma": "composé",
+      "pos": "ADJ",
+      "before": "kɔ̃.po.ze",
+      "after": "kɔ̃.pɔ.ze",
+      "rule": "shared-prefix pretonic o/ɔ"
+    },
+    {
+      "word": "composée",
+      "lemma": "composé",
+      "pos": "NOM",
+      "before": "kɔ̃.po.ze",
+      "after": "kɔ̃.pɔ.ze",
+      "rule": "shared-prefix pretonic o/ɔ"
+    }
+  ]
+}

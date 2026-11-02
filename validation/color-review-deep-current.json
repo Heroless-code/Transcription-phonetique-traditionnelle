@@ -1,0 +1,144 @@
+{
+  "purpose": "Additional independent audit: three-phone compositions, orthogonal option masks, Unicode, full recognized consonant inventory and accents. Taste remains a visual judgement.",
+  "sourceSha256": "724016dbb70e85337cdd50b79b71b3b1f3c80ad001c18fc7a3de7be36e5fb1f6",
+  "passed": 64136,
+  "failed": 0,
+  "failures": [],
+  "metrics": {
+    "minimumTextContrast": 4.801849,
+    "nasalAccent": [
+      {
+        "phone": "ɑ̃",
+        "mask": 4,
+        "accent": "#8d591f",
+        "background": "#fbf1dd",
+        "againstOwn": 5.229,
+        "againstPage": 5.457
+      },
+      {
+        "phone": "ɑ̃",
+        "mask": 5,
+        "accent": "#8d591f",
+        "background": "#e8eae4",
+        "againstOwn": 4.836,
+        "againstPage": 5.457
+      },
+      {
+        "phone": "ɑ̃",
+        "mask": 6,
+        "accent": "#8d591f",
+        "background": "#fbf1dd",
+        "againstOwn": 5.229,
+        "againstPage": 5.457
+      },
+      {
+        "phone": "ɑ̃",
+        "mask": 7,
+        "accent": "#8d591f",
+        "background": "#e8eae4",
+        "againstOwn": 4.836,
+        "againstPage": 5.457
+      },
+      {
+        "phone": "ɛ̃",
+        "mask": 4,
+        "accent": "#8d591f",
+        "background": "#fbf1dd",
+        "againstOwn": 5.229,
+        "againstPage": 5.457
+      },
+      {
+        "phone": "ɛ̃",
+        "mask": 5,
+        "accent": "#efca86",
+        "background": "#596364",
+        "againstOwn": 3.967,
+        "againstPage": 1.452
+      },
+      {
+        "phone": "ɛ̃",
+        "mask": 6,
+        "accent": "#8d591f",
+        "background": "#fbf1dd",
+        "againstOwn": 5.229,
+        "againstPage": 5.457
+      },
+      {
+        "phone": "ɛ̃",
+        "mask": 7,
+        "accent": "#efca86",
+        "background": "#596364",
+        "againstOwn": 3.967,
+        "againstPage": 1.452
+      },
+      {
+        "phone": "ɔ̃",
+        "mask": 4,
+        "accent": "#8d591f",
+        "background": "#fbf1dd",
+        "againstOwn": 5.229,
+        "againstPage": 5.457
+      },
+      {
+        "phone": "ɔ̃",
+        "mask": 5,
+        "accent": "#8d591f",
+        "background": "#eef2fa",
+        "againstOwn": 5.226,
+        "againstPage": 5.457
+      },
+      {
+        "phone": "ɔ̃",
+        "mask": 6,
+        "accent": "#8d591f",
+        "background": "#fbf1dd",
+        "againstOwn": 5.229,
+        "againstPage": 5.457
+      },
+      {
+        "phone": "ɔ̃",
+        "mask": 7,
+        "accent": "#8d591f",
+        "background": "#eef2fa",
+        "againstOwn": 5.226,
+        "againstPage": 5.457
+      },
+      {
+        "phone": "œ̃",
+        "mask": 4,
+        "accent": "#8d591f",
+        "background": "#fbf1dd",
+        "againstOwn": 5.229,
+        "againstPage": 5.457
+      },
+      {
+        "phone": "œ̃",
+        "mask": 5,
+        "accent": "#8d591f",
+        "background": "#f5ebf3",
+        "againstOwn": 5.043,
+        "againstPage": 5.457
+      },
+      {
+        "phone": "œ̃",
+        "mask": 6,
+        "accent": "#8d591f",
+        "background": "#fbf1dd",
+        "againstOwn": 5.229,
+        "againstPage": 5.457
+      },
+      {
+        "phone": "œ̃",
+        "mask": 7,
+        "accent": "#8d591f",
+        "background": "#f5ebf3",
+        "againstOwn": 5.043,
+        "againstPage": 5.457
+      }
+    ]
+  },
+  "advisories": [
+    "The initial fixed amber nasal underline has insufficient contrast against some chip backgrounds; confirm its exact geometry in a browser and either back it or adapt its shade to the substrate.",
+    "Grey bands for deselected components intentionally have lower contrast; they must not contribute chromatic ink or be mistaken for selected sounds."
+  ]
+}

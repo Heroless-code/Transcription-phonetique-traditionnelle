@@ -1,0 +1,213 @@
+{
+  "purpose": "Independent browser checks of mode exclusivity, exact sonority counts, source/IPA exploration and explicit reading policy. Not a stylistic-intention or universal phonetic accuracy score.",
+  "artifact": "C:\\Users\\pseud\\.codex\\.chatgpt-projects\\g-p-6ae0d77370a48191a599683ed2bf77c9\\transcription-traditionnelle\\Transcription-phonetique-traditionnelle.html",
+  "sha256": "dc1942b6df601c2b23f5484a7d49c7b86afca2a73487b9a7defb1bdc1af8b724",
+  "offline": true,
+  "requests": [],
+  "errors": [],
+  "tests": [
+    {
+      "name": "isolated artifact has the manifest hash and starts with both modes off",
+      "passed": true
+    },
+    {
+      "name": "Sonorités deactivates colors while preserving their saved category preferences",
+      "passed": true
+    },
+    {
+      "name": "each verse has distinct alliteration and assonance groups",
+      "passed": true
+    },
+    {
+      "name": "Racine has exactly five /s/ in five words in each verse",
+      "passed": true
+    },
+    {
+      "name": "selecting /s/ marks the c of ces, exact IPA units, and only its own verse",
+      "passed": true
+    },
+    {
+      "name": "same sound second click clears only that verse selection",
+      "passed": true
+    },
+    {
+      "name": "one selected sound per verse and independent selection on another verse",
+      "passed": true
+    },
+    {
+      "name": "activating colors deactivates Sonorités and preserves transcription/preferences",
+      "passed": true
+    },
+    {
+      "name": "both modes can be off without retaining sonority marks",
+      "passed": true
+    },
+    {
+      "name": "strict phoneme distinctions: tache tâche tache tâche",
+      "passed": true
+    },
+    {
+      "name": "strict phoneme distinctions: mettre maître mettre maître",
+      "passed": true
+    },
+    {
+      "name": "strict phoneme distinctions: fée fait fée fait",
+      "passed": true
+    },
+    {
+      "name": "strict phoneme distinctions: brin brun brin brun",
+      "passed": true
+    },
+    {
+      "name": "strict phoneme distinctions: cote côte cote côte",
+      "passed": true
+    },
+    {
+      "name": "strict phoneme distinctions: jeune jeûne jeune jeûne",
+      "passed": true
+    },
+    {
+      "name": "nasality and duration marks never become independent sounds",
+      "passed": true
+    },
+    {
+      "name": "semi-consonant convention: j",
+      "passed": true
+    },
+    {
+      "name": "semi-consonant convention: w",
+      "passed": true
+    },
+    {
+      "name": "semi-consonant convention: ɥ",
+      "passed": true
+    },
+    {
+      "name": "silent letters and doubled spellings do not inflate consonant counts",
+      "passed": true
+    },
+    {
+      "name": "realized liaison is counted once and omitted optional liaison is absent",
+      "passed": true
+    },
+    {
+      "name": "contextual denasalization contributes the oral vowel actually retained",
+      "passed": true
+    },
+    {
+      "name": "repeated identical source words count as separate positions",
+      "passed": true
+    },
+    {
+      "name": "clitic decomposition does not inflate the graphical word count",
+      "passed": true
+    },
+    {
+      "name": "hyphenated compound remains one graphical word",
+      "passed": true
+    },
+    {
+      "name": "nonlexical hyphenated spelling groups the engine internal tokens into one source word",
+      "passed": true
+    },
+    {
+      "name": "numeric expansion preserves one graphical word per number",
+      "passed": true
+    },
+    {
+      "name": "grouped numerals are graphical words rather than space-separated digit blocks",
+      "passed": true
+    },
+    {
+      "name": "separate verses and blank lines cannot create cross-line repetitions",
+      "passed": true
+    },
+    {
+      "name": "each category can independently have no repetition",
+      "passed": true
+    },
+    {
+      "name": "shared grapheme selection marks x completely but only selected /k/ in IPA",
+      "passed": true
+    },
+    {
+      "name": "opaque number alignment retains exact IPA highlighting without inventing source spans",
+      "passed": true
+    },
+    {
+      "name": "unknown pronunciations remain marked as hypotheses in sonority results",
+      "passed": true
+    },
+    {
+      "name": "canonically equivalent accents yield identical counts and preserve source exactly",
+      "passed": true
+    },
+    {
+      "name": "switching view mode never silently changes the explicit reading policy",
+      "passed": true
+    },
+    {
+      "name": "explicit poetic alternatives update actual phones and their repetitions",
+      "passed": false,
+      "error": "locator.selectOption: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.poetry-choice').first()\u001b[22m\n\u001b[2m    - locator resolved to <select data-token-index=\"2\" class=\"poetry-choice\" aria-label=\"Lecture de lion\">…</select>\u001b[22m\n\u001b[2m  - attempting select option action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying select option action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying select option action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    58 × waiting for element to be visible and enabled\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying select option action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n"
+    },
+    {
+      "name": "all eight saved color masks still work independently of Sonorités",
+      "passed": true,
+      "details": {
+        "masks": 8
+      }
+    },
+    {
+      "name": "copy contains the current API only, without sonority statistics",
+      "passed": true
+    },
+    {
+      "name": "sonority buttons support keyboard selection and pressed semantics",
+      "passed": true
+    },
+    {
+      "name": "sonority labels and source input remain text and do not execute markup",
+      "passed": true
+    },
+    {
+      "name": "Sonorités stays contained and usable at width 320",
+      "passed": true
+    },
+    {
+      "name": "Sonorités stays contained and usable at width 390",
+      "passed": true
+    },
+    {
+      "name": "Sonorités stays contained and usable at width 768",
+      "passed": true
+    },
+    {
+      "name": "Sonorités stays contained and usable at width 1280",
+      "passed": true
+    },
+    {
+      "name": "long text analysis and repeated mode changes remain stable",
+      "passed": true
+    },
+    {
+      "name": "no HTTP requests or browser errors during isolated offline use",
+      "passed": true
+    }
+  ],
+  "metrics": {
+    "startupMs": 489,
+    "seventyVersesMs": 164,
+    "modeChangesMs": [
+      110,
+      78,
+      93,
+      84,
+      104,
+      83
+    ]
+  },
+  "browser": "156.0.8078.79",
+  "passed": 45,
+  "failed": 1
+}

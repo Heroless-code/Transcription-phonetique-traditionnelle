@@ -1,0 +1,177 @@
+{
+  "artifact": "C:\\Users\\pseud\\.codex\\.chatgpt-projects\\g-p-6ae0d77370a48191a599683ed2bf77c9\\transcription-traditionnelle\\dist\\index.html",
+  "sha256": "ed2de444d40803a5ea33da58a4ada153a97d2f0ea4c25779d77d541a6f158645",
+  "isolated": "C:\\Users\\pseud\\.codex\\.chatgpt-projects\\g-p-6ae0d77370a48191a599683ed2bf77c9\\transcription-traditionnelle\\validation\\isolated-ui\\transcription.html",
+  "contextOffline": true,
+  "requests": [],
+  "errors": [],
+  "tests": [
+    {
+      "name": "local standalone launch while browser offline",
+      "passed": true
+    },
+    {
+      "name": "coloration disabled by default",
+      "passed": true
+    },
+    {
+      "name": "requested desktop controls and removal of annotated text",
+      "passed": true
+    },
+    {
+      "name": "original line followed immediately by transcription, blank lines preserved",
+      "passed": true
+    },
+    {
+      "name": "transcription smaller and selectable",
+      "passed": true
+    },
+    {
+      "name": "reduced text sizes and dark grey base remain readable",
+      "passed": true,
+      "details": {
+        "sizes": [
+          18,
+          19,
+          16
+        ],
+        "contrast": [
+          9.21,
+          8.57,
+          5.39
+        ]
+      }
+    },
+    {
+      "name": "all phoneme palette colors retain contrast with their own backgrounds",
+      "passed": true,
+      "details": {
+        "phonemes": 39,
+        "minimumContrast": 4.88,
+        "unchangedPalette": true
+      }
+    },
+    {
+      "name": "phoneme colors on original and IPA",
+      "passed": true
+    },
+    {
+      "name": "independent vowel, consonant, nasal categories",
+      "passed": true
+    },
+    {
+      "name": "all eight selections compose vowel, consonant and nasal layers faithfully",
+      "passed": true,
+      "details": {
+        "masks": 8,
+        "unchangedIPA": true,
+        "contrastMinimum": 4.5
+      }
+    },
+    {
+      "name": "silent letters remain uncolored",
+      "passed": true
+    },
+    {
+      "name": "a shared grapheme with several phonemes is explicitly identified",
+      "passed": true
+    },
+    {
+      "name": "realized liaison corresponds to a pronounced source ending",
+      "passed": true
+    },
+    {
+      "name": "color settings do not change the phonetic result",
+      "passed": true
+    },
+    {
+      "name": "unfamiliar words remain usable and visibly qualified",
+      "passed": true
+    },
+    {
+      "name": "input rendered as text and never executed as HTML",
+      "passed": true
+    },
+    {
+      "name": "accents, apostrophes, punctuation and source spacing preserved",
+      "passed": true
+    },
+    {
+      "name": "keyboard shortcut transcribes",
+      "passed": true
+    },
+    {
+      "name": "long paragraph remains fluid and contained",
+      "passed": true
+    },
+    {
+      "name": "mobile layout without horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "colored shared-graph view remains readable and contained",
+      "passed": true
+    },
+    {
+      "name": "offline stress: 120 Unicode lines preserve layout and stay fluid",
+      "passed": true
+    },
+    {
+      "name": "offline stress: hostile Unicode and long tokens remain plain text",
+      "passed": true
+    },
+    {
+      "name": "offline stress: repeated color selections preserve IPA and mute letters",
+      "passed": false,
+      "error": "locator.setChecked: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('#color-vowels')\u001b[22m\n\u001b[2m    - locator resolved to <input checked type=\"checkbox\" id=\"color-vowels\"/>\u001b[22m\n\u001b[2m  - attempting click action\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m    - waiting 20ms\u001b[22m\n\u001b[2m    2 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m      - element is not visible\u001b[22m\n\u001b[2m    - retrying click action\u001b[22m\n\u001b[2m      - waiting 100ms\u001b[22m\n\u001b[2m    58 × waiting for element to be visible, enabled and stable\u001b[22m\n\u001b[2m       - element is not visible\u001b[22m\n\u001b[2m     - retrying click action\u001b[22m\n\u001b[2m       - waiting 500ms\u001b[22m\n"
+    },
+    {
+      "name": "code-review corrections are present in the isolated delivered HTML",
+      "passed": true
+    },
+    {
+      "name": "canonical-equivalent accents keep identical colors: mask 0",
+      "passed": true
+    },
+    {
+      "name": "canonical-equivalent accents keep identical colors: mask 1",
+      "passed": true
+    },
+    {
+      "name": "canonical-equivalent accents keep identical colors: mask 2",
+      "passed": true
+    },
+    {
+      "name": "canonical-equivalent accents keep identical colors: mask 3",
+      "passed": true
+    },
+    {
+      "name": "canonical-equivalent accents keep identical colors: mask 4",
+      "passed": true
+    },
+    {
+      "name": "canonical-equivalent accents keep identical colors: mask 5",
+      "passed": true
+    },
+    {
+      "name": "canonical-equivalent accents keep identical colors: mask 6",
+      "passed": true
+    },
+    {
+      "name": "canonical-equivalent accents keep identical colors: mask 7",
+      "passed": true
+    },
+    {
+      "name": "no HTTP requests and no browser errors",
+      "passed": true
+    }
+  ],
+  "metrics": {
+    "startupMs": 1912,
+    "paragraphMs": 195,
+    "multiline120Ms": 505
+  },
+  "browser": "156.0.8078.79",
+  "passed": 33,
+  "failed": 1
+}

@@ -1,0 +1,1277 @@
+{
+  "stage": "initial",
+  "method": "Attentes ciblées enregistrées avant exécution. Les résultats initiaux restent distincts des régressions après correction. Les formes inventées ont des invariants, pas une prononciation certifiée.",
+  "checks": [
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils appellent ce travail.",
+      "passed": true,
+      "actual": "a.pɛl",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils jettent ce travail.",
+      "passed": true,
+      "actual": "ʒɛt",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils achètent ce travail.",
+      "passed": true,
+      "actual": "a.ʃɛt",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils lèvent ce travail.",
+      "passed": true,
+      "actual": "lɛv",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils mènent ce travail.",
+      "passed": true,
+      "actual": "mɛn",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils pèsent ce travail.",
+      "passed": true,
+      "actual": "pɛz",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils préfèrent ce travail.",
+      "passed": true,
+      "actual": "pʁe.fɛʁ",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils répètent ce travail.",
+      "passed": true,
+      "actual": "ʁe.pɛt",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils possèdent ce travail.",
+      "passed": true,
+      "actual": "pɔ.sɛd",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils cèdent ce travail.",
+      "passed": true,
+      "actual": "sɛd",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils emploient ce travail.",
+      "passed": true,
+      "actual": "ɑ̃.plwa",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils voient ce travail.",
+      "passed": true,
+      "actual": "vwa",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils croient ce travail.",
+      "passed": true,
+      "actual": "kʁwa",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils nettoient ce travail.",
+      "passed": true,
+      "actual": "nɛ.twa",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils envoient ce travail.",
+      "passed": true,
+      "actual": "ɑ̃.vwa",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils essuient ce travail.",
+      "passed": true,
+      "actual": "e.sɥi",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils essaient ce travail.",
+      "passed": true,
+      "actual": "e.sɛ",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils convainquent ce travail.",
+      "passed": true,
+      "actual": "kɔ̃.vɛ̃k",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils vainquent ce travail.",
+      "passed": true,
+      "actual": "vɛ̃k",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils peignent ce travail.",
+      "passed": true,
+      "actual": "pɛɲ",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils craignent ce travail.",
+      "passed": true,
+      "actual": "kʁɛɲ",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils joignent ce travail.",
+      "passed": true,
+      "actual": "ʒwaɲ",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils tiennent ce travail.",
+      "passed": true,
+      "actual": "tjɛn",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils viennent ce travail.",
+      "passed": true,
+      "actual": "vjɛn",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils retiennent ce travail.",
+      "passed": true,
+      "actual": "ʁə.tjɛn",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils fuient ce travail.",
+      "passed": true,
+      "actual": "fɥi",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils rient ce travail.",
+      "passed": true,
+      "actual": "ʁi",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils prient ce travail.",
+      "passed": true,
+      "actual": "pʁi",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils lient ce travail.",
+      "passed": true,
+      "actual": "li",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils relient ce travail.",
+      "passed": true,
+      "actual": "ʁə.li",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils délient ce travail.",
+      "passed": true,
+      "actual": "de.li",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils plient ce travail.",
+      "passed": true,
+      "actual": "pli",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils étudient ce travail.",
+      "passed": true,
+      "actual": "e.ty.di",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils scient ce travail.",
+      "passed": true,
+      "actual": "si",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils concluent ce travail.",
+      "passed": true,
+      "actual": "kɔ̃.kly",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils incluent ce travail.",
+      "passed": true,
+      "actual": "ɛ̃.kly",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils excluent ce travail.",
+      "passed": true,
+      "actual": "ɛks.kly",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils tuent ce travail.",
+      "passed": true,
+      "actual": "ty",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils muent ce travail.",
+      "passed": true,
+      "actual": "my",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils puent ce travail.",
+      "passed": true,
+      "actual": "py",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils situent ce travail.",
+      "passed": true,
+      "actual": "si.ty",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils polluent ce travail.",
+      "passed": true,
+      "actual": "pɔ.ly",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils jouent ce travail.",
+      "passed": true,
+      "actual": "ʒu",
+      "source": "reviewed",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils louent ce travail.",
+      "passed": true,
+      "actual": "lu",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils avouent ce travail.",
+      "passed": true,
+      "actual": "a.vu",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils dénouent ce travail.",
+      "passed": true,
+      "actual": "de.nu",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils renouent ce travail.",
+      "passed": true,
+      "actual": "ʁə.nu",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils paient ce travail.",
+      "passed": true,
+      "actual": "pɛ",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils haïssent ce travail.",
+      "passed": true,
+      "actual": "a.is",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils bruissent ce travail.",
+      "passed": true,
+      "actual": "bʁɥis",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils bénissent ce travail.",
+      "passed": true,
+      "actual": "be.nis",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils fleurissent ce travail.",
+      "passed": true,
+      "actual": "flœ.ʁis",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils acquièrent ce travail.",
+      "passed": true,
+      "actual": "a.kjɛʁ",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils requièrent ce travail.",
+      "passed": true,
+      "actual": "ʁə.kjɛʁ",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils meurent ce travail.",
+      "passed": true,
+      "actual": "mœʁ",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils courent ce travail.",
+      "passed": true,
+      "actual": "kuʁ",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils parcourent ce travail.",
+      "passed": true,
+      "actual": "paʁ.kuʁ",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils rompent ce travail.",
+      "passed": true,
+      "actual": "ʁɔ̃p",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils interrompent ce travail.",
+      "passed": false,
+      "error": "/ɛ̃.te.ʁɔ̃p/ ; attendu ɛ̃tɛʁɔ̃p"
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils battent ce travail.",
+      "passed": true,
+      "actual": "bat",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils combattent ce travail.",
+      "passed": true,
+      "actual": "kɔ̃.bat",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils mettent ce travail.",
+      "passed": true,
+      "actual": "mɛt",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils remettent ce travail.",
+      "passed": true,
+      "actual": "ʁə.mɛt",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils finissent ce travail.",
+      "passed": true,
+      "actual": "fi.nis",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils naissent ce travail.",
+      "passed": true,
+      "actual": "nɛs",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils connaissent ce travail.",
+      "passed": true,
+      "actual": "kɔ.nɛs",
+      "source": "lexicon",
+      "pos": [
+        "NOM",
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils prennent ce travail.",
+      "passed": true,
+      "actual": "pʁɛn",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils apprennent ce travail.",
+      "passed": true,
+      "actual": "a.pʁɛn",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils comprennent ce travail.",
+      "passed": true,
+      "actual": "kɔ̃.pʁɛn",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils rendent ce travail.",
+      "passed": true,
+      "actual": "ʁɑ̃d",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils descendent ce travail.",
+      "passed": true,
+      "actual": "de.sɑ̃d",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils prétendent ce travail.",
+      "passed": true,
+      "actual": "pʁe.tɑ̃d",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils étendent ce travail.",
+      "passed": true,
+      "actual": "e.tɑ̃d",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils surviennent ce travail.",
+      "passed": true,
+      "actual": "syʁ.vjɛn",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "graphie-flexionnelle",
+      "label": "Nous mangeons dehors.",
+      "passed": true,
+      "actual": "mɑ̃.ʒɔ̃",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "graphie-flexionnelle",
+      "label": "Nous mangions dehors.",
+      "passed": true,
+      "actual": "mɑ̃.ʒjɔ̃",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "graphie-flexionnelle",
+      "label": "Nous nageons ensemble.",
+      "passed": true,
+      "actual": "na.ʒɔ̃",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "graphie-flexionnelle",
+      "label": "Nous avançons doucement.",
+      "passed": true,
+      "actual": "a.vɑ̃.sɔ̃",
+      "source": "lexicon",
+      "pos": [
+        "VER"
+      ],
+      "context": "Flexion verbale identifiée par son sujet."
+    },
+    {
+      "group": "finale-nominale",
+      "label": "Le patient attend.",
+      "passed": true,
+      "actual": "pa.sjɑ̃",
+      "source": "lexicon",
+      "pos": [
+        "ADJ",
+        "NOM"
+      ]
+    },
+    {
+      "group": "finale-nominale",
+      "label": "Le quotient est exact.",
+      "passed": true,
+      "actual": "kɔ.sjɑ̃",
+      "source": "lexicon",
+      "pos": [
+        "NOM"
+      ]
+    },
+    {
+      "group": "finale-nominale",
+      "label": "Le coefficient est stable.",
+      "passed": false,
+      "error": "/kɔ.ɛ.fi.sjɑ̃/ ; attendu kɔefisjɑ̃ ou koefisjɑ̃"
+    },
+    {
+      "group": "finale-nominale",
+      "label": "Un ingrédient manque.",
+      "passed": true,
+      "actual": "ɛ̃.ɡʁe.djɑ̃",
+      "source": "lexicon",
+      "pos": [
+        "NOM"
+      ]
+    },
+    {
+      "group": "finale-nominale",
+      "label": "Les instruments sont rangés.",
+      "passed": true,
+      "actual": "ɛ̃s.tʁy.mɑ̃",
+      "source": "lexicon",
+      "pos": [
+        "NOM"
+      ]
+    },
+    {
+      "group": "finale-nominale",
+      "label": "La jument est calme.",
+      "passed": true,
+      "actual": "ʒy.mɑ̃",
+      "source": "lexicon",
+      "pos": [
+        "NOM"
+      ]
+    },
+    {
+      "group": "finale-nominale",
+      "label": "Un ligament solide.",
+      "passed": true,
+      "actual": "li.ɡa.mɑ̃",
+      "source": "lexicon",
+      "pos": [
+        "NOM"
+      ]
+    },
+    {
+      "group": "finale-nominale",
+      "label": "Le ciment sèche.",
+      "passed": true,
+      "actual": "si.mɑ̃",
+      "source": "lexicon",
+      "pos": [
+        "NOM"
+      ]
+    },
+    {
+      "group": "finale-nominale",
+      "label": "Le serment est prononcé.",
+      "passed": true,
+      "actual": "sɛʁ.mɑ̃",
+      "source": "lexicon",
+      "pos": [
+        "NOM"
+      ]
+    },
+    {
+      "group": "finale-nominale",
+      "label": "Un jugement prudent.",
+      "passed": true,
+      "actual": "ʒy.ʒə.mɑ̃",
+      "source": "lexicon",
+      "pos": [
+        "NOM"
+      ]
+    },
+    {
+      "group": "phrase-complete",
+      "label": "Ils arrivent au village.",
+      "passed": true,
+      "actual": "il.z‿a.ʁiv o vi.laʒ."
+    },
+    {
+      "group": "phrase-complete",
+      "label": "Je cherche les œufs.",
+      "passed": true,
+      "actual": "ʒə ʃɛʁʃ le.z‿ø."
+    },
+    {
+      "group": "phrase-complete",
+      "label": "Les enfants et les adultes.",
+      "passed": true,
+      "actual": "le.z‿ɑ̃.fɑ̃ e le.z‿a.dylt."
+    },
+    {
+      "group": "phrase-complete",
+      "label": "Un grand arbre.",
+      "passed": true,
+      "actual": "œ̃ ɡʁɑ̃.t‿aʁbʁ."
+    },
+    {
+      "group": "phrase-complete",
+      "label": "Un bon ami.",
+      "passed": true,
+      "actual": "œ̃ bɔ.n‿a.mi."
+    },
+    {
+      "group": "phrase-complete",
+      "label": "Un petit arbre.",
+      "passed": true,
+      "actual": "œ̃ pə.ti.t‿aʁbʁ."
+    },
+    {
+      "group": "phrase-complete",
+      "label": "Un enfant heureux.",
+      "passed": true,
+      "actual": "œ̃.n‿ɑ̃.fɑ̃ ø.ʁø."
+    },
+    {
+      "group": "phrase-complete",
+      "label": "Un homme et une femme.",
+      "passed": true,
+      "actual": "œ̃.n‿ɔm e yn fam."
+    },
+    {
+      "group": "phrase-complete",
+      "label": "Des héros et des hommes.",
+      "passed": true,
+      "actual": "de e.ʁo e de.z‿ɔm."
+    },
+    {
+      "group": "phrase-complete",
+      "label": "Le vent souffle.",
+      "passed": true,
+      "actual": "lə vɑ̃ sufl."
+    },
+    {
+      "group": "phrase-complete",
+      "label": "Ils soudent le métal.",
+      "passed": true,
+      "actual": "il sud lə me.tal."
+    },
+    {
+      "group": "phrase-complete",
+      "label": "Une âme.",
+      "passed": true,
+      "actual": "yn ɑːm."
+    },
+    {
+      "group": "phrase-complete",
+      "label": "Le maître et la reine.",
+      "passed": true,
+      "actual": "lə mɛːtʁ e la ʁɛːn."
+    },
+    {
+      "group": "phrase-complete",
+      "label": "Sous un arbre.",
+      "passed": true,
+      "actual": "su.z‿œ̃.n‿aʁbʁ."
+    },
+    {
+      "group": "phrase-complete",
+      "label": "Dans une école.",
+      "passed": true,
+      "actual": "dɑ̃.z‿yn e.kɔl."
+    },
+    {
+      "group": "phrase-complete",
+      "label": "Chez un ami.",
+      "passed": true,
+      "actual": "ʃe.z‿œ̃.n‿a.mi."
+    },
+    {
+      "group": "phrase-complete",
+      "label": "Trois oiseaux.",
+      "passed": true,
+      "actual": "tʁwɑ.z‿wa.zo."
+    },
+    {
+      "group": "phrase-complete",
+      "label": "Deux enfants.",
+      "passed": true,
+      "actual": "dø.z‿ɑ̃.fɑ̃."
+    },
+    {
+      "group": "phrase-complete",
+      "label": "Les onze enfants.",
+      "passed": true,
+      "actual": "le ɔ̃z ɑ̃.fɑ̃."
+    },
+    {
+      "group": "phrase-complete",
+      "label": "Les, enfants.",
+      "passed": true,
+      "actual": "le, ɑ̃.fɑ̃."
+    },
+    {
+      "group": "phrase-complete",
+      "label": "Il est arrivé.",
+      "passed": true,
+      "actual": "il ɛ a.ʁi.ve."
+    },
+    {
+      "group": "phrase-complete",
+      "label": "Il n'est plus ici.",
+      "passed": true,
+      "actual": "il nɛ ply i.si."
+    },
+    {
+      "group": "phrase-complete",
+      "label": "Il en veut plus.",
+      "passed": true,
+      "actual": "il ɑ̃ vø plys."
+    },
+    {
+      "group": "phrase-complete",
+      "label": "Ils sont tous ici.",
+      "passed": true,
+      "actual": "il sɔ̃ tus i.si."
+    },
+    {
+      "group": "phrase-complete",
+      "label": "Tous les amis.",
+      "passed": true,
+      "actual": "tu le.z‿a.mi."
+    },
+    {
+      "group": "phrase-complete",
+      "label": "Elle a six ans.",
+      "passed": true,
+      "actual": "ɛl a si.z‿ɑ̃."
+    },
+    {
+      "group": "phrase-complete",
+      "label": "Il a dix ans.",
+      "passed": true,
+      "actual": "il a di.z‿ɑ̃."
+    },
+    {
+      "group": "phrase-complete",
+      "label": "Il a neuf ans.",
+      "passed": true,
+      "actual": "il a nœ.v‿ɑ̃."
+    },
+    {
+      "group": "phrase-complete",
+      "label": "Un accent étrange.",
+      "passed": true,
+      "actual": "œ̃.n‿ak.sɑ̃ e.tʁɑ̃ʒ."
+    },
+    {
+      "group": "isolation-du-cache",
+      "label": "fils",
+      "passed": true,
+      "cycles": 100,
+      "ipa": "fis"
+    },
+    {
+      "group": "isolation-du-cache",
+      "label": "couvent",
+      "passed": true,
+      "cycles": 100,
+      "ipa": "ku.vɑ̃"
+    },
+    {
+      "group": "isolation-du-cache",
+      "label": "plus",
+      "passed": true,
+      "cycles": 100,
+      "ipa": "plys"
+    },
+    {
+      "group": "isolation-du-cache",
+      "label": "est",
+      "passed": true,
+      "cycles": 100,
+      "ipa": "ɛ"
+    },
+    {
+      "group": "isolation-du-cache",
+      "label": "portions",
+      "passed": true,
+      "cycles": 100,
+      "ipa": "pɔʁ.sjɔ̃"
+    },
+    {
+      "group": "inflexion-inconnue",
+      "label": "anuflent",
+      "passed": true,
+      "actual": "il.z‿a.nyfl."
+    },
+    {
+      "group": "inflexion-inconnue",
+      "label": "orfanent",
+      "passed": true,
+      "actual": "il.z‿ɔʁ.fan."
+    },
+    {
+      "group": "inflexion-inconnue",
+      "label": "ilumisent",
+      "passed": true,
+      "actual": "il.z‿i.ly.miz."
+    },
+    {
+      "group": "inflexion-inconnue",
+      "label": "amufient",
+      "passed": true,
+      "actual": "il.z‿a.my.fi."
+    },
+    {
+      "group": "inflexion-inconnue",
+      "label": "olubent",
+      "passed": true,
+      "actual": "il.z‿ɔ.lyb."
+    },
+    {
+      "group": "inflexion-inconnue",
+      "label": "anuglent",
+      "passed": true,
+      "actual": "il.z‿a.nyɡl."
+    },
+    {
+      "group": "inflexion-inconnue",
+      "label": "ébruflent",
+      "passed": true,
+      "actual": "il.z‿e.bʁyfl."
+    },
+    {
+      "group": "inflexion-inconnue",
+      "label": "uluvient",
+      "passed": true,
+      "actual": "il.z‿y.ly.vi."
+    },
+    {
+      "group": "frontiere-de-ligne",
+      "label": "les\namis",
+      "passed": true,
+      "actual": [
+        "le",
+        "a.mi"
+      ]
+    },
+    {
+      "group": "frontiere-de-ligne",
+      "label": "un\nhomme",
+      "passed": true,
+      "actual": [
+        "œ̃",
+        "ɔm"
+      ]
+    },
+    {
+      "group": "frontiere-de-ligne",
+      "label": "deux\nenfants",
+      "passed": true,
+      "actual": [
+        "dø",
+        "ɑ̃.fɑ̃"
+      ]
+    },
+    {
+      "group": "frontiere-de-ligne",
+      "label": "ils\narrivent",
+      "passed": true,
+      "actual": [
+        "il",
+        "a.ʁiv"
+      ]
+    },
+    {
+      "group": "texte-long",
+      "label": "500 lignes indépendantes",
+      "passed": true
+    },
+    {
+      "group": "noyaux",
+      "label": "longueur et nasalité ne doublent pas les noyaux",
+      "passed": true
+    }
+  ],
+  "failures": [
+    {
+      "group": "paradigmes-verbaux",
+      "label": "Ils interrompent ce travail.",
+      "passed": false,
+      "error": "/ɛ̃.te.ʁɔ̃p/ ; attendu ɛ̃tɛʁɔ̃p"
+    },
+    {
+      "group": "finale-nominale",
+      "label": "Le coefficient est stable.",
+      "passed": false,
+      "error": "/kɔ.ɛ.fi.sjɑ̃/ ; attendu kɔefisjɑ̃ ou koefisjɑ̃"
+    }
+  ],
+  "sourceHash": "ad6295a239910091e75c403dfdfc8ef3012e112e306091c9885d80939115aca1",
+  "passed": 134,
+  "failed": 2
+}

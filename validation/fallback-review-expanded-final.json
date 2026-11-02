@@ -1,0 +1,1609 @@
+{
+  "mechanism": "dictionary-forcibly-bypassed",
+  "knownCases": 136,
+  "inventedInvariants": 13,
+  "passed": 148,
+  "failed": 1,
+  "checks": [
+    {
+      "type": "known",
+      "word": "chat",
+      "category": "graphèmes-réguliers",
+      "passed": true,
+      "expected": [
+        "ʃa"
+      ],
+      "actual": "ʃa",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "chou",
+      "category": "graphèmes-réguliers",
+      "passed": true,
+      "expected": [
+        "ʃu"
+      ],
+      "actual": "ʃu",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "chute",
+      "category": "graphèmes-réguliers",
+      "passed": true,
+      "expected": [
+        "ʃyt"
+      ],
+      "actual": "ʃyt",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "poche",
+      "category": "graphèmes-réguliers",
+      "passed": true,
+      "expected": [
+        "pɔʃ"
+      ],
+      "actual": "pɔʃ",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "riche",
+      "category": "graphèmes-réguliers",
+      "passed": true,
+      "expected": [
+        "ʁiʃ"
+      ],
+      "actual": "ʁiʃ",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "cage",
+      "category": "graphèmes-réguliers",
+      "passed": true,
+      "expected": [
+        "kaʒ"
+      ],
+      "actual": "kaʒ",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "cigale",
+      "category": "graphèmes-réguliers",
+      "passed": true,
+      "expected": [
+        "siɡal"
+      ],
+      "actual": "siɡal",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "cigare",
+      "category": "graphèmes-réguliers",
+      "passed": true,
+      "expected": [
+        "siɡaʁ"
+      ],
+      "actual": "siɡaʁ",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "cube",
+      "category": "graphèmes-réguliers",
+      "passed": true,
+      "expected": [
+        "kyb"
+      ],
+      "actual": "kyb",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "cuisine",
+      "category": "graphèmes-réguliers",
+      "passed": true,
+      "expected": [
+        "kɥizin"
+      ],
+      "actual": "kɥizin",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "vague",
+      "category": "graphèmes-réguliers",
+      "passed": true,
+      "expected": [
+        "vaɡ"
+      ],
+      "actual": "vaɡ",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "baguette",
+      "category": "graphèmes-réguliers",
+      "passed": true,
+      "expected": [
+        "baɡɛt"
+      ],
+      "actual": "baɡɛt",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "guider",
+      "category": "graphèmes-réguliers",
+      "passed": true,
+      "expected": [
+        "ɡide"
+      ],
+      "actual": "ɡide",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "gare",
+      "category": "graphèmes-réguliers",
+      "passed": true,
+      "expected": [
+        "ɡaʁ"
+      ],
+      "actual": "ɡaʁ",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "girafe",
+      "category": "graphèmes-réguliers",
+      "passed": true,
+      "expected": [
+        "ʒiʁaf"
+      ],
+      "actual": "ʒiʁaf",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "garçon",
+      "category": "graphèmes-réguliers",
+      "passed": true,
+      "expected": [
+        "ɡaʁsɔ̃"
+      ],
+      "actual": "ɡaʁsɔ̃",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "façade",
+      "category": "graphèmes-réguliers",
+      "passed": true,
+      "expected": [
+        "fasad"
+      ],
+      "actual": "fasad",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "phare",
+      "category": "graphèmes-réguliers",
+      "passed": true,
+      "expected": [
+        "faʁ"
+      ],
+      "actual": "faʁ",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "thèse",
+      "category": "graphèmes-réguliers",
+      "passed": true,
+      "expected": [
+        "tɛz"
+      ],
+      "actual": "tɛz",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "chiffre",
+      "category": "graphèmes-réguliers",
+      "passed": true,
+      "expected": [
+        "ʃifʁ"
+      ],
+      "actual": "ʃifʁ",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "différence",
+      "category": "graphèmes-réguliers",
+      "passed": true,
+      "expected": [
+        "difeʁɑ̃s"
+      ],
+      "actual": "difeʁɑ̃s",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "bouche",
+      "category": "graphèmes-réguliers",
+      "passed": true,
+      "expected": [
+        "buʃ"
+      ],
+      "actual": "buʃ",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "rouge",
+      "category": "graphèmes-réguliers",
+      "passed": true,
+      "expected": [
+        "ʁuʒ"
+      ],
+      "actual": "ʁuʒ",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "couleur",
+      "category": "graphèmes-réguliers",
+      "passed": true,
+      "expected": [
+        "kulœʁ"
+      ],
+      "actual": "kulœʁ",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "fleur",
+      "category": "graphèmes-réguliers",
+      "passed": true,
+      "expected": [
+        "flœʁ"
+      ],
+      "actual": "flœʁ",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "peu",
+      "category": "graphèmes-réguliers",
+      "passed": true,
+      "expected": [
+        "pø"
+      ],
+      "actual": "pø",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "peur",
+      "category": "graphèmes-réguliers",
+      "passed": true,
+      "expected": [
+        "pœʁ"
+      ],
+      "actual": "pœʁ",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "heure",
+      "category": "graphèmes-réguliers",
+      "passed": true,
+      "expected": [
+        "œʁ"
+      ],
+      "actual": "œʁ",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "chanson",
+      "category": "nasalisation-régulière",
+      "passed": true,
+      "expected": [
+        "ʃɑ̃sɔ̃"
+      ],
+      "actual": "ʃɑ̃sɔ̃",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "chant",
+      "category": "nasalisation-régulière",
+      "passed": true,
+      "expected": [
+        "ʃɑ̃"
+      ],
+      "actual": "ʃɑ̃",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "dans",
+      "category": "nasalisation-régulière",
+      "passed": true,
+      "expected": [
+        "dɑ̃"
+      ],
+      "actual": "dɑ̃",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "sans",
+      "category": "nasalisation-régulière",
+      "passed": true,
+      "expected": [
+        "sɑ̃"
+      ],
+      "actual": "sɑ̃",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "vent",
+      "category": "nasalisation-régulière",
+      "passed": true,
+      "expected": [
+        "vɑ̃"
+      ],
+      "actual": "vɑ̃",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "bon",
+      "category": "nasalisation-régulière",
+      "passed": true,
+      "expected": [
+        "bɔ̃"
+      ],
+      "actual": "bɔ̃",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "nom",
+      "category": "nasalisation-régulière",
+      "passed": true,
+      "expected": [
+        "nɔ̃"
+      ],
+      "actual": "nɔ̃",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "vin",
+      "category": "nasalisation-régulière",
+      "passed": true,
+      "expected": [
+        "vɛ̃"
+      ],
+      "actual": "vɛ̃",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "pain",
+      "category": "nasalisation-régulière",
+      "passed": true,
+      "expected": [
+        "pɛ̃"
+      ],
+      "actual": "pɛ̃",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "plein",
+      "category": "nasalisation-régulière",
+      "passed": true,
+      "expected": [
+        "plɛ̃"
+      ],
+      "actual": "plɛ̃",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "brun",
+      "category": "nasalisation-régulière",
+      "passed": true,
+      "expected": [
+        "bʁœ̃"
+      ],
+      "actual": "bʁœ̃",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "parfum",
+      "category": "nasalisation-régulière",
+      "passed": true,
+      "expected": [
+        "paʁfœ̃"
+      ],
+      "actual": "paʁfœ̃",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "lundi",
+      "category": "nasalisation-régulière",
+      "passed": true,
+      "expected": [
+        "lœ̃di"
+      ],
+      "actual": "lœ̃di",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "un",
+      "category": "nasalisation-régulière",
+      "passed": true,
+      "expected": [
+        "œ̃"
+      ],
+      "actual": "œ̃",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "main",
+      "category": "nasalisation-régulière",
+      "passed": true,
+      "expected": [
+        "mɛ̃"
+      ],
+      "actual": "mɛ̃",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "fin",
+      "category": "nasalisation-régulière",
+      "passed": true,
+      "expected": [
+        "fɛ̃"
+      ],
+      "actual": "fɛ̃",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "train",
+      "category": "nasalisation-régulière",
+      "passed": true,
+      "expected": [
+        "tʁɛ̃"
+      ],
+      "actual": "tʁɛ̃",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "chemin",
+      "category": "nasalisation-régulière",
+      "passed": true,
+      "expected": [
+        "ʃəmɛ̃"
+      ],
+      "actual": "ʃəmɛ̃",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "jardin",
+      "category": "nasalisation-régulière",
+      "passed": true,
+      "expected": [
+        "ʒaʁdɛ̃"
+      ],
+      "actual": "ʒaʁdɛ̃",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "bonne",
+      "category": "nasalisation-régulière",
+      "passed": true,
+      "expected": [
+        "bɔn"
+      ],
+      "actual": "bɔn",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "fine",
+      "category": "nasalisation-régulière",
+      "passed": true,
+      "expected": [
+        "fin"
+      ],
+      "actual": "fin",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "marcher",
+      "category": "terminaisons-et-schwa",
+      "passed": true,
+      "expected": [
+        "maʁʃe"
+      ],
+      "actual": "maʁʃe",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "chanter",
+      "category": "terminaisons-et-schwa",
+      "passed": true,
+      "expected": [
+        "ʃɑ̃te"
+      ],
+      "actual": "ʃɑ̃te",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "danser",
+      "category": "terminaisons-et-schwa",
+      "passed": true,
+      "expected": [
+        "dɑ̃se"
+      ],
+      "actual": "dɑ̃se",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "parler",
+      "category": "terminaisons-et-schwa",
+      "passed": true,
+      "expected": [
+        "paʁle"
+      ],
+      "actual": "paʁle",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "finir",
+      "category": "terminaisons-et-schwa",
+      "passed": true,
+      "expected": [
+        "finiʁ"
+      ],
+      "actual": "finiʁ",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "sortir",
+      "category": "terminaisons-et-schwa",
+      "passed": true,
+      "expected": [
+        "sɔʁtiʁ"
+      ],
+      "actual": "sɔʁtiʁ",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "partir",
+      "category": "terminaisons-et-schwa",
+      "passed": true,
+      "expected": [
+        "paʁtiʁ"
+      ],
+      "actual": "paʁtiʁ",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "venir",
+      "category": "terminaisons-et-schwa",
+      "passed": true,
+      "expected": [
+        "vəniʁ"
+      ],
+      "actual": "vəniʁ",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "demander",
+      "category": "terminaisons-et-schwa",
+      "passed": true,
+      "expected": [
+        "dəmɑ̃de"
+      ],
+      "actual": "dəmɑ̃de",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "reprendre",
+      "category": "terminaisons-et-schwa",
+      "passed": true,
+      "expected": [
+        "ʁəpʁɑ̃dʁ"
+      ],
+      "actual": "ʁəpʁɑ̃dʁ",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "recherche",
+      "category": "terminaisons-et-schwa",
+      "passed": true,
+      "expected": [
+        "ʁəʃɛʁʃ"
+      ],
+      "actual": "ʁəʃɛʁʃ",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "secret",
+      "category": "terminaisons-et-schwa",
+      "passed": true,
+      "expected": [
+        "səkʁɛ"
+      ],
+      "actual": "səkʁɛ",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "regret",
+      "category": "terminaisons-et-schwa",
+      "passed": true,
+      "expected": [
+        "ʁəɡʁɛ"
+      ],
+      "actual": "ʁəɡʁɛ",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "petite",
+      "category": "terminaisons-et-schwa",
+      "passed": true,
+      "expected": [
+        "pətit"
+      ],
+      "actual": "pətit",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "leçon",
+      "category": "terminaisons-et-schwa",
+      "passed": true,
+      "expected": [
+        "ləsɔ̃"
+      ],
+      "actual": "ləsɔ̃",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "menu",
+      "category": "terminaisons-et-schwa",
+      "passed": true,
+      "expected": [
+        "məny"
+      ],
+      "actual": "məny",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "tenu",
+      "category": "terminaisons-et-schwa",
+      "passed": true,
+      "expected": [
+        "təny"
+      ],
+      "actual": "təny",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "venu",
+      "category": "terminaisons-et-schwa",
+      "passed": true,
+      "expected": [
+        "vəny"
+      ],
+      "actual": "vəny",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "chantaient",
+      "category": "terminaisons-et-schwa",
+      "passed": true,
+      "expected": [
+        "ʃɑ̃tɛ"
+      ],
+      "actual": "ʃɑ̃tɛ",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "marchaient",
+      "category": "terminaisons-et-schwa",
+      "passed": true,
+      "expected": [
+        "maʁʃɛ"
+      ],
+      "actual": "maʁʃɛ",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "rêvaient",
+      "category": "terminaisons-et-schwa",
+      "passed": true,
+      "expected": [
+        "ʁɛvɛ"
+      ],
+      "actual": "ʁɛvɛ",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "parlons",
+      "category": "terminaisons-et-schwa",
+      "passed": true,
+      "expected": [
+        "paʁlɔ̃"
+      ],
+      "actual": "paʁlɔ̃",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "chantez",
+      "category": "terminaisons-et-schwa",
+      "passed": true,
+      "expected": [
+        "ʃɑ̃te"
+      ],
+      "actual": "ʃɑ̃te",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "ami",
+      "category": "e-final-et-glides",
+      "passed": true,
+      "expected": [
+        "ami"
+      ],
+      "actual": "ami",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "amie",
+      "category": "e-final-et-glides",
+      "passed": true,
+      "expected": [
+        "ami"
+      ],
+      "actual": "ami",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "vie",
+      "category": "e-final-et-glides",
+      "passed": true,
+      "expected": [
+        "vi"
+      ],
+      "actual": "vi",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "rue",
+      "category": "e-final-et-glides",
+      "passed": true,
+      "expected": [
+        "ʁy"
+      ],
+      "actual": "ʁy",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "boue",
+      "category": "e-final-et-glides",
+      "passed": true,
+      "expected": [
+        "bu"
+      ],
+      "actual": "bu",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "tortue",
+      "category": "e-final-et-glides",
+      "passed": true,
+      "expected": [
+        "tɔʁty"
+      ],
+      "actual": "tɔʁty",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "ravie",
+      "category": "e-final-et-glides",
+      "passed": true,
+      "expected": [
+        "ʁavi"
+      ],
+      "actual": "ʁavi",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "lui",
+      "category": "e-final-et-glides",
+      "passed": true,
+      "expected": [
+        "lɥi"
+      ],
+      "actual": "lɥi",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "fuir",
+      "category": "e-final-et-glides",
+      "passed": true,
+      "expected": [
+        "fɥiʁ"
+      ],
+      "actual": "fɥiʁ",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "nuit",
+      "category": "e-final-et-glides",
+      "passed": true,
+      "expected": [
+        "nɥi"
+      ],
+      "actual": "nɥi",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "pluie",
+      "category": "e-final-et-glides",
+      "passed": true,
+      "expected": [
+        "plɥi"
+      ],
+      "actual": "plɥi",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "bruit",
+      "category": "e-final-et-glides",
+      "passed": true,
+      "expected": [
+        "bʁɥi"
+      ],
+      "actual": "bʁɥi",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "fruit",
+      "category": "e-final-et-glides",
+      "passed": true,
+      "expected": [
+        "fʁɥi"
+      ],
+      "actual": "fʁɥi",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "métier",
+      "category": "e-final-et-glides",
+      "passed": true,
+      "expected": [
+        "metje"
+      ],
+      "actual": "metje",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "papier",
+      "category": "e-final-et-glides",
+      "passed": true,
+      "expected": [
+        "papje"
+      ],
+      "actual": "papje",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "atelier",
+      "category": "e-final-et-glides",
+      "passed": true,
+      "expected": [
+        "atəlje"
+      ],
+      "actual": "atəlje",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "travail",
+      "category": "groupes-palatalisés",
+      "passed": true,
+      "expected": [
+        "tʁavaj"
+      ],
+      "actual": "tʁavaj",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "soleil",
+      "category": "groupes-palatalisés",
+      "passed": true,
+      "expected": [
+        "sɔlɛj"
+      ],
+      "actual": "sɔlɛj",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "fauteuil",
+      "category": "groupes-palatalisés",
+      "passed": true,
+      "expected": [
+        "fotœj"
+      ],
+      "actual": "fotœj",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "paille",
+      "category": "groupes-palatalisés",
+      "passed": true,
+      "expected": [
+        "paj"
+      ],
+      "actual": "paj",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "feuille",
+      "category": "groupes-palatalisés",
+      "passed": true,
+      "expected": [
+        "fœj"
+      ],
+      "actual": "fœj",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "abeille",
+      "category": "groupes-palatalisés",
+      "passed": true,
+      "expected": [
+        "abɛj"
+      ],
+      "actual": "abɛj",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "conseiller",
+      "category": "groupes-palatalisés",
+      "passed": true,
+      "expected": [
+        "kɔ̃sɛje"
+      ],
+      "actual": "kɔ̃sɛje",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "nouille",
+      "category": "groupes-palatalisés",
+      "passed": true,
+      "expected": [
+        "nuj"
+      ],
+      "actual": "nuj",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "rouille",
+      "category": "groupes-palatalisés",
+      "passed": true,
+      "expected": [
+        "ʁuj"
+      ],
+      "actual": "ʁuj",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "grenouille",
+      "category": "groupes-palatalisés",
+      "passed": true,
+      "expected": [
+        "ɡʁənuj"
+      ],
+      "actual": "ɡʁənuj",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "fenouil",
+      "category": "groupes-palatalisés",
+      "passed": true,
+      "expected": [
+        "fənuj"
+      ],
+      "actual": "fənuj",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "nettoyer",
+      "category": "groupes-palatalisés",
+      "passed": true,
+      "expected": [
+        "nɛtwaje"
+      ],
+      "actual": "nɛtwaje",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "rayon",
+      "category": "groupes-palatalisés",
+      "passed": true,
+      "expected": [
+        "ʁɛjɔ̃"
+      ],
+      "actual": "ʁɛjɔ̃",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "voyage",
+      "category": "groupes-palatalisés",
+      "passed": true,
+      "expected": [
+        "vwajaʒ"
+      ],
+      "actual": "vwajaʒ",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "voyelle",
+      "category": "groupes-palatalisés",
+      "passed": true,
+      "expected": [
+        "vwajɛl"
+      ],
+      "actual": "vwajɛl",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "tuyau",
+      "category": "groupes-palatalisés",
+      "passed": true,
+      "expected": [
+        "tɥijo"
+      ],
+      "actual": "tɥijo",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "appuyer",
+      "category": "groupes-palatalisés",
+      "passed": true,
+      "expected": [
+        "apɥije"
+      ],
+      "actual": "apɥije",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "camping",
+      "category": "emprunt-intégré-en-ing",
+      "passed": true,
+      "expected": [
+        "kɑ̃piŋ"
+      ],
+      "actual": "kɑ̃piŋ",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "parking",
+      "category": "emprunt-intégré-en-ing",
+      "passed": true,
+      "expected": [
+        "paʁkiŋ"
+      ],
+      "actual": "paʁkiŋ",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "shopping",
+      "category": "emprunt-intégré-en-ing",
+      "passed": true,
+      "expected": [
+        "ʃɔpiŋ"
+      ],
+      "actual": "ʃɔpiŋ",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "chats",
+      "category": "pluriels-réguliers-et-trémas",
+      "passed": true,
+      "expected": [
+        "ʃa"
+      ],
+      "actual": "ʃa",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "grands",
+      "category": "pluriels-réguliers-et-trémas",
+      "passed": true,
+      "expected": [
+        "ɡʁɑ̃"
+      ],
+      "actual": "ɡʁɑ̃",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "petits",
+      "category": "pluriels-réguliers-et-trémas",
+      "passed": true,
+      "expected": [
+        "pəti"
+      ],
+      "actual": "pəti",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "froids",
+      "category": "pluriels-réguliers-et-trémas",
+      "passed": true,
+      "expected": [
+        "fʁwa"
+      ],
+      "actual": "fʁwa",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "nids",
+      "category": "pluriels-réguliers-et-trémas",
+      "passed": true,
+      "expected": [
+        "ni"
+      ],
+      "actual": "ni",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "longs",
+      "category": "pluriels-réguliers-et-trémas",
+      "passed": true,
+      "expected": [
+        "lɔ̃"
+      ],
+      "actual": "lɔ̃",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "billets",
+      "category": "pluriels-réguliers-et-trémas",
+      "passed": true,
+      "expected": [
+        "bijɛ"
+      ],
+      "actual": "bijɛ",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "métiers",
+      "category": "pluriels-réguliers-et-trémas",
+      "passed": true,
+      "expected": [
+        "metje"
+      ],
+      "actual": "metje",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "papiers",
+      "category": "pluriels-réguliers-et-trémas",
+      "passed": true,
+      "expected": [
+        "papje"
+      ],
+      "actual": "papje",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "écoliers",
+      "category": "pluriels-réguliers-et-trémas",
+      "passed": true,
+      "expected": [
+        "ekɔlje"
+      ],
+      "actual": "ekɔlje",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "ambiguë",
+      "category": "pluriels-réguliers-et-trémas",
+      "passed": true,
+      "expected": [
+        "ɑ̃biɡy"
+      ],
+      "actual": "ɑ̃biɡy",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "contiguë",
+      "category": "pluriels-réguliers-et-trémas",
+      "passed": true,
+      "expected": [
+        "kɔ̃tiɡy"
+      ],
+      "actual": "kɔ̃tiɡy",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "ambiguïté",
+      "category": "pluriels-réguliers-et-trémas",
+      "passed": true,
+      "expected": [
+        "ɑ̃biɡɥite"
+      ],
+      "actual": "ɑ̃biɡɥite",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "contiguïté",
+      "category": "pluriels-réguliers-et-trémas",
+      "passed": true,
+      "expected": [
+        "kɔ̃tiɡɥite"
+      ],
+      "actual": "kɔ̃tiɡɥite",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "geôle",
+      "category": "pluriels-réguliers-et-trémas",
+      "passed": true,
+      "expected": [
+        "ʒol"
+      ],
+      "actual": "ʒol",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "geôlier",
+      "category": "pluriels-réguliers-et-trémas",
+      "passed": true,
+      "expected": [
+        "ʒolje"
+      ],
+      "actual": "ʒolje",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "nageoire",
+      "category": "pluriels-réguliers-et-trémas",
+      "passed": true,
+      "expected": [
+        "naʒwaʁ"
+      ],
+      "actual": "naʒwaʁ",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "gageure",
+      "category": "pluriels-réguliers-et-trémas",
+      "passed": true,
+      "expected": [
+        "ɡaʒyʁ"
+      ],
+      "actual": "ɡaʒyʁ",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "examen",
+      "category": "pluriels-réguliers-et-trémas",
+      "passed": false,
+      "expected": [
+        "ɛɡzamɛ̃"
+      ],
+      "actual": "ɛɡzamɑ̃",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "exemple",
+      "category": "pluriels-réguliers-et-trémas",
+      "passed": true,
+      "expected": [
+        "ɛɡzɑ̃pl"
+      ],
+      "actual": "ɛɡzɑ̃pl",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "exilé",
+      "category": "pluriels-réguliers-et-trémas",
+      "passed": true,
+      "expected": [
+        "ɛɡzile"
+      ],
+      "actual": "ɛɡzile",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "soudent",
+      "category": "désinence-verbale-explicite",
+      "passed": true,
+      "expected": [
+        "sud"
+      ],
+      "actual": "sud",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "chantent",
+      "category": "désinence-verbale-explicite",
+      "passed": true,
+      "expected": [
+        "ʃɑ̃t"
+      ],
+      "actual": "ʃɑ̃t",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "parlent",
+      "category": "désinence-verbale-explicite",
+      "passed": true,
+      "expected": [
+        "paʁl"
+      ],
+      "actual": "paʁl",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "marchent",
+      "category": "désinence-verbale-explicite",
+      "passed": true,
+      "expected": [
+        "maʁʃ"
+      ],
+      "actual": "maʁʃ",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "collent",
+      "category": "désinence-verbale-explicite",
+      "passed": true,
+      "expected": [
+        "kɔl"
+      ],
+      "actual": "kɔl",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "prient",
+      "category": "désinence-verbale-explicite",
+      "passed": true,
+      "expected": [
+        "pʁi"
+      ],
+      "actual": "pʁi",
+      "source": "rules"
+    },
+    {
+      "type": "known",
+      "word": "crient",
+      "category": "désinence-verbale-explicite",
+      "passed": true,
+      "expected": [
+        "kʁi"
+      ],
+      "actual": "kʁi",
+      "source": "rules"
+    },
+    {
+      "type": "invented-invariant",
+      "word": "flantruche",
+      "description": "an devant consonne",
+      "passed": true,
+      "actual": "flɑ̃tʁyʃ",
+      "source": "rules"
+    },
+    {
+      "type": "invented-invariant",
+      "word": "plimpaque",
+      "description": "im devant consonne",
+      "passed": true,
+      "actual": "plɛ̃pak",
+      "source": "rules"
+    },
+    {
+      "type": "invented-invariant",
+      "word": "bloncule",
+      "description": "on devant consonne",
+      "passed": true,
+      "actual": "blɔ̃kyl",
+      "source": "rules"
+    },
+    {
+      "type": "invented-invariant",
+      "word": "brundelle",
+      "description": "un devant consonne",
+      "passed": true,
+      "actual": "bʁœ̃dɛl",
+      "source": "rules"
+    },
+    {
+      "type": "invented-invariant",
+      "word": "glaronne",
+      "description": "double n empêchant la nasalisation",
+      "passed": true,
+      "actual": "ɡlaʁɔn",
+      "source": "rules"
+    },
+    {
+      "type": "invented-invariant",
+      "word": "glamelle",
+      "description": "am devant voyelle",
+      "passed": true,
+      "actual": "ɡlamɛl",
+      "source": "rules"
+    },
+    {
+      "type": "invented-invariant",
+      "word": "plinette",
+      "description": "in devant voyelle",
+      "passed": true,
+      "actual": "plinɛt",
+      "source": "rules"
+    },
+    {
+      "type": "invented-invariant",
+      "word": "zoupent",
+      "description": "ent verbal muet",
+      "passed": true,
+      "actual": "zup",
+      "source": "rules"
+    },
+    {
+      "type": "invented-invariant",
+      "word": "lumivent",
+      "description": "ent non verbal non supprimé systématiquement",
+      "passed": true,
+      "actual": "lymivɑ̃",
+      "source": "rules"
+    },
+    {
+      "type": "invented-invariant",
+      "word": "frabie",
+      "description": "i conservé devant e final muet",
+      "passed": true,
+      "actual": "fʁabi",
+      "source": "rules"
+    },
+    {
+      "type": "invented-invariant",
+      "word": "flonue",
+      "description": "u conservé devant e final muet",
+      "passed": true,
+      "actual": "flɔny",
+      "source": "rules"
+    },
+    {
+      "type": "invented-invariant",
+      "word": "glaboue",
+      "description": "ou conservé devant e final muet",
+      "passed": true,
+      "actual": "ɡlabu",
+      "source": "rules"
+    },
+    {
+      "type": "invented-invariant",
+      "word": "zoubing",
+      "description": "emprunt supposé en ing",
+      "passed": true,
+      "actual": "zubiŋ",
+      "source": "rules"
+    }
+  ]
+}

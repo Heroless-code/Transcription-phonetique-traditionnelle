@@ -1,0 +1,1434 @@
+{
+  "artifact": "C:\\Users\\pseud\\.codex\\.chatgpt-projects\\g-p-6ae0d77370a48191a599683ed2bf77c9\\transcription-traditionnelle\\Transcription-phonetique-traditionnelle.html",
+  "sha256": "b91567450bd10a5d2b8d3b8e1fffcf5fc065860d08d25c5f00f4b6d3772b7ba3",
+  "browser": "156.0.8078.79",
+  "offline": true,
+  "phase": "color-adjusted",
+  "tests": [
+    {
+      "name": "master switch off is neutral",
+      "passed": true
+    },
+    {
+      "name": "mode 0: source, API, selected layers, silent and uncertain segments",
+      "passed": true
+    },
+    {
+      "name": "mode 0: nasal accents have an explicit background and internal space",
+      "passed": true
+    },
+    {
+      "name": "mode 0: copy emits exactly the same API",
+      "passed": true
+    },
+    {
+      "name": "mode 0: aspirated orthographic h stays neutral",
+      "passed": true
+    },
+    {
+      "name": "mode 0: width 320 has no clipping or row collisions",
+      "passed": true
+    },
+    {
+      "name": "mode 0: width 320 option menu remains in viewport",
+      "passed": true
+    },
+    {
+      "name": "mode 0: width 390 has no clipping or row collisions",
+      "passed": true
+    },
+    {
+      "name": "mode 0: width 390 option menu remains in viewport",
+      "passed": true
+    },
+    {
+      "name": "mode 0: width 768 has no clipping or row collisions",
+      "passed": true
+    },
+    {
+      "name": "mode 0: width 768 option menu remains in viewport",
+      "passed": true
+    },
+    {
+      "name": "mode 0: width 1280 has no clipping or row collisions",
+      "passed": true
+    },
+    {
+      "name": "mode 0: width 1280 option menu remains in viewport",
+      "passed": true
+    },
+    {
+      "name": "mode 1: source, API, selected layers, silent and uncertain segments",
+      "passed": true
+    },
+    {
+      "name": "mode 1: nasal accents have an explicit background and internal space",
+      "passed": true
+    },
+    {
+      "name": "mode 1: copy emits exactly the same API",
+      "passed": true
+    },
+    {
+      "name": "mode 1: aspirated orthographic h stays neutral",
+      "passed": true
+    },
+    {
+      "name": "mode 1: width 320 has no clipping or row collisions",
+      "passed": true
+    },
+    {
+      "name": "mode 1: width 320 option menu remains in viewport",
+      "passed": true
+    },
+    {
+      "name": "mode 1: width 390 has no clipping or row collisions",
+      "passed": true
+    },
+    {
+      "name": "mode 1: width 390 option menu remains in viewport",
+      "passed": true
+    },
+    {
+      "name": "mode 1: width 768 has no clipping or row collisions",
+      "passed": true
+    },
+    {
+      "name": "mode 1: width 768 option menu remains in viewport",
+      "passed": true
+    },
+    {
+      "name": "mode 1: width 1280 has no clipping or row collisions",
+      "passed": true
+    },
+    {
+      "name": "mode 1: width 1280 option menu remains in viewport",
+      "passed": true
+    },
+    {
+      "name": "mode 2: source, API, selected layers, silent and uncertain segments",
+      "passed": true
+    },
+    {
+      "name": "mode 2: nasal accents have an explicit background and internal space",
+      "passed": true
+    },
+    {
+      "name": "mode 2: copy emits exactly the same API",
+      "passed": true
+    },
+    {
+      "name": "mode 2: aspirated orthographic h stays neutral",
+      "passed": true
+    },
+    {
+      "name": "mode 2: width 320 has no clipping or row collisions",
+      "passed": true
+    },
+    {
+      "name": "mode 2: width 320 option menu remains in viewport",
+      "passed": true
+    },
+    {
+      "name": "mode 2: width 390 has no clipping or row collisions",
+      "passed": true
+    },
+    {
+      "name": "mode 2: width 390 option menu remains in viewport",
+      "passed": true
+    },
+    {
+      "name": "mode 2: width 768 has no clipping or row collisions",
+      "passed": true
+    },
+    {
+      "name": "mode 2: width 768 option menu remains in viewport",
+      "passed": true
+    },
+    {
+      "name": "mode 2: width 1280 has no clipping or row collisions",
+      "passed": true
+    },
+    {
+      "name": "mode 2: width 1280 option menu remains in viewport",
+      "passed": true
+    },
+    {
+      "name": "mode 3: source, API, selected layers, silent and uncertain segments",
+      "passed": true
+    },
+    {
+      "name": "mode 3: nasal accents have an explicit background and internal space",
+      "passed": true
+    },
+    {
+      "name": "mode 3: copy emits exactly the same API",
+      "passed": true
+    },
+    {
+      "name": "mode 3: aspirated orthographic h stays neutral",
+      "passed": true
+    },
+    {
+      "name": "mode 3: width 320 has no clipping or row collisions",
+      "passed": true
+    },
+    {
+      "name": "mode 3: width 320 option menu remains in viewport",
+      "passed": true
+    },
+    {
+      "name": "mode 3: width 390 has no clipping or row collisions",
+      "passed": true
+    },
+    {
+      "name": "mode 3: width 390 option menu remains in viewport",
+      "passed": true
+    },
+    {
+      "name": "mode 3: width 768 has no clipping or row collisions",
+      "passed": true
+    },
+    {
+      "name": "mode 3: width 768 option menu remains in viewport",
+      "passed": true
+    },
+    {
+      "name": "mode 3: width 1280 has no clipping or row collisions",
+      "passed": true
+    },
+    {
+      "name": "mode 3: width 1280 option menu remains in viewport",
+      "passed": true
+    },
+    {
+      "name": "mode 4: source, API, selected layers, silent and uncertain segments",
+      "passed": true
+    },
+    {
+      "name": "mode 4: nasal accents have an explicit background and internal space",
+      "passed": true
+    },
+    {
+      "name": "mode 4: copy emits exactly the same API",
+      "passed": true
+    },
+    {
+      "name": "mode 4: aspirated orthographic h stays neutral",
+      "passed": true
+    },
+    {
+      "name": "mode 4: width 320 has no clipping or row collisions",
+      "passed": true
+    },
+    {
+      "name": "mode 4: width 320 option menu remains in viewport",
+      "passed": true
+    },
+    {
+      "name": "mode 4: width 390 has no clipping or row collisions",
+      "passed": true
+    },
+    {
+      "name": "mode 4: width 390 option menu remains in viewport",
+      "passed": true
+    },
+    {
+      "name": "mode 4: width 768 has no clipping or row collisions",
+      "passed": true
+    },
+    {
+      "name": "mode 4: width 768 option menu remains in viewport",
+      "passed": true
+    },
+    {
+      "name": "mode 4: width 1280 has no clipping or row collisions",
+      "passed": true
+    },
+    {
+      "name": "mode 4: width 1280 option menu remains in viewport",
+      "passed": true
+    },
+    {
+      "name": "mode 5: source, API, selected layers, silent and uncertain segments",
+      "passed": true
+    },
+    {
+      "name": "mode 5: nasal accents have an explicit background and internal space",
+      "passed": true
+    },
+    {
+      "name": "mode 5: copy emits exactly the same API",
+      "passed": true
+    },
+    {
+      "name": "mode 5: aspirated orthographic h stays neutral",
+      "passed": true
+    },
+    {
+      "name": "mode 5: width 320 has no clipping or row collisions",
+      "passed": true
+    },
+    {
+      "name": "mode 5: width 320 option menu remains in viewport",
+      "passed": true
+    },
+    {
+      "name": "mode 5: width 390 has no clipping or row collisions",
+      "passed": true
+    },
+    {
+      "name": "mode 5: width 390 option menu remains in viewport",
+      "passed": true
+    },
+    {
+      "name": "mode 5: width 768 has no clipping or row collisions",
+      "passed": true
+    },
+    {
+      "name": "mode 5: width 768 option menu remains in viewport",
+      "passed": true
+    },
+    {
+      "name": "mode 5: width 1280 has no clipping or row collisions",
+      "passed": true
+    },
+    {
+      "name": "mode 5: width 1280 option menu remains in viewport",
+      "passed": true
+    },
+    {
+      "name": "mode 6: source, API, selected layers, silent and uncertain segments",
+      "passed": true
+    },
+    {
+      "name": "mode 6: nasal accents have an explicit background and internal space",
+      "passed": true
+    },
+    {
+      "name": "mode 6: copy emits exactly the same API",
+      "passed": true
+    },
+    {
+      "name": "mode 6: aspirated orthographic h stays neutral",
+      "passed": true
+    },
+    {
+      "name": "mode 6: width 320 has no clipping or row collisions",
+      "passed": true
+    },
+    {
+      "name": "mode 6: width 320 option menu remains in viewport",
+      "passed": true
+    },
+    {
+      "name": "mode 6: width 390 has no clipping or row collisions",
+      "passed": true
+    },
+    {
+      "name": "mode 6: width 390 option menu remains in viewport",
+      "passed": true
+    },
+    {
+      "name": "mode 6: width 768 has no clipping or row collisions",
+      "passed": true
+    },
+    {
+      "name": "mode 6: width 768 option menu remains in viewport",
+      "passed": true
+    },
+    {
+      "name": "mode 6: width 1280 has no clipping or row collisions",
+      "passed": true
+    },
+    {
+      "name": "mode 6: width 1280 option menu remains in viewport",
+      "passed": true
+    },
+    {
+      "name": "mode 7: source, API, selected layers, silent and uncertain segments",
+      "passed": true
+    },
+    {
+      "name": "mode 7: nasal accents have an explicit background and internal space",
+      "passed": true
+    },
+    {
+      "name": "mode 7: copy emits exactly the same API",
+      "passed": true
+    },
+    {
+      "name": "mode 7: aspirated orthographic h stays neutral",
+      "passed": true
+    },
+    {
+      "name": "mode 7: width 320 has no clipping or row collisions",
+      "passed": true
+    },
+    {
+      "name": "mode 7: width 320 option menu remains in viewport",
+      "passed": true
+    },
+    {
+      "name": "mode 7: width 390 has no clipping or row collisions",
+      "passed": true
+    },
+    {
+      "name": "mode 7: width 390 option menu remains in viewport",
+      "passed": true
+    },
+    {
+      "name": "mode 7: width 768 has no clipping or row collisions",
+      "passed": true
+    },
+    {
+      "name": "mode 7: width 768 option menu remains in viewport",
+      "passed": true
+    },
+    {
+      "name": "mode 7: width 1280 has no clipping or row collisions",
+      "passed": true
+    },
+    {
+      "name": "mode 7: width 1280 option menu remains in viewport",
+      "passed": true
+    },
+    {
+      "name": "long colored text: 200 paragraphs and 12 mask changes stay fluid",
+      "passed": true
+    },
+    {
+      "name": "offline, no HTTP and no errors",
+      "passed": true
+    }
+  ],
+  "metrics": {
+    "startupMs": 599,
+    "coloredParagraphMs": 412,
+    "coloredWords": 2800,
+    "longMaskChangesMs": [
+      791,
+      316,
+      548,
+      376,
+      691,
+      446,
+      493,
+      436,
+      699,
+      297,
+      389,
+      378
+    ]
+  },
+  "errors": [],
+  "requests": [],
+  "modes": [
+    {
+      "mask": 0,
+      "label": "Aucune catégorie",
+      "coloredSpans": 0,
+      "minimumContrast": null,
+      "minimumNasalAccentContrast": null,
+      "shared": []
+    },
+    {
+      "mask": 1,
+      "label": "Voyelles",
+      "coloredSpans": 122,
+      "minimumContrast": 5.984114060027568,
+      "minimumNasalAccentContrast": null,
+      "shared": [
+        {
+          "text": "ien",
+          "phone": "jɛ̃",
+          "layers": [
+            "vowel"
+          ],
+          "contrast": 8.619421449119928,
+          "ink": "rgb(255, 255, 255)",
+          "background": "rgb(65, 78, 82)",
+          "nasal": false,
+          "shared": true,
+          "accent": "",
+          "nasalContrast": null,
+          "backgroundImage": "linear-gradient(to right, rgb(140, 150, 147) 0%, rgb(140, 150, 147) 50%, rgb(255, 255, 255) 50%, rgb(255, 255, 255) 100%), linear-gradient(to right, rgb(241, 243, 239) 0%, rgb(241, 243, 239) 50%, rgb(65, 78, 82) 50%, rgb(65, 78, 82) 100%)",
+          "backgroundPosition": "0% 100%, 0% 100%",
+          "backgroundSize": "100% 2px, 100% 4px",
+          "paddingBottom": 4,
+          "decoration": "none"
+        },
+        {
+          "text": "oin",
+          "phone": "wɛ̃",
+          "layers": [
+            "vowel"
+          ],
+          "contrast": 8.619421449119928,
+          "ink": "rgb(255, 255, 255)",
+          "background": "rgb(65, 78, 82)",
+          "nasal": false,
+          "shared": true,
+          "accent": "",
+          "nasalContrast": null,
+          "backgroundImage": "linear-gradient(to right, rgb(140, 150, 147) 0%, rgb(140, 150, 147) 50%, rgb(255, 255, 255) 50%, rgb(255, 255, 255) 100%), linear-gradient(to right, rgb(241, 243, 239) 0%, rgb(241, 243, 239) 50%, rgb(65, 78, 82) 50%, rgb(65, 78, 82) 100%)",
+          "backgroundPosition": "0% 100%, 0% 100%",
+          "backgroundSize": "100% 2px, 100% 4px",
+          "paddingBottom": 4,
+          "decoration": "none"
+        },
+        {
+          "text": "oi",
+          "phone": "wa",
+          "layers": [
+            "vowel"
+          ],
+          "contrast": 17.11859662951231,
+          "ink": "rgb(0, 0, 0)",
+          "background": "rgb(229, 233, 229)",
+          "nasal": false,
+          "shared": true,
+          "accent": "",
+          "nasalContrast": null,
+          "backgroundImage": "linear-gradient(to right, rgb(140, 150, 147) 0%, rgb(140, 150, 147) 50%, rgb(0, 0, 0) 50%, rgb(0, 0, 0) 100%), linear-gradient(to right, rgb(241, 243, 239) 0%, rgb(241, 243, 239) 50%, rgb(229, 233, 229) 50%, rgb(229, 233, 229) 100%)",
+          "backgroundPosition": "0% 100%, 0% 100%",
+          "backgroundSize": "100% 2px, 100% 4px",
+          "paddingBottom": 4,
+          "decoration": "none"
+        },
+        {
+          "text": "am",
+          "phone": "am",
+          "layers": [
+            "vowel"
+          ],
+          "contrast": 17.11859662951231,
+          "ink": "rgb(0, 0, 0)",
+          "background": "rgb(229, 233, 229)",
+          "nasal": false,
+          "shared": true,
+          "accent": "",
+          "nasalContrast": null,
+          "backgroundImage": "linear-gradient(to right, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 50%, rgb(140, 150, 147) 50%, rgb(140, 150, 147) 100%), linear-gradient(to right, rgb(229, 233, 229) 0%, rgb(229, 233, 229) 50%, rgb(241, 243, 239) 50%, rgb(241, 243, 239) 100%)",
+          "backgroundPosition": "0% 100%, 0% 100%",
+          "backgroundSize": "100% 2px, 100% 4px",
+          "paddingBottom": 4,
+          "decoration": "none"
+        },
+        {
+          "text": "oi",
+          "phone": "wa",
+          "layers": [
+            "vowel"
+          ],
+          "contrast": 17.11859662951231,
+          "ink": "rgb(0, 0, 0)",
+          "background": "rgb(229, 233, 229)",
+          "nasal": false,
+          "shared": true,
+          "accent": "",
+          "nasalContrast": null,
+          "backgroundImage": "linear-gradient(to right, rgb(140, 150, 147) 0%, rgb(140, 150, 147) 50%, rgb(0, 0, 0) 50%, rgb(0, 0, 0) 100%), linear-gradient(to right, rgb(241, 243, 239) 0%, rgb(241, 243, 239) 50%, rgb(229, 233, 229) 50%, rgb(229, 233, 229) 100%)",
+          "backgroundPosition": "0% 100%, 0% 100%",
+          "backgroundSize": "100% 2px, 100% 4px",
+          "paddingBottom": 4,
+          "decoration": "none"
+        },
+        {
+          "text": "un",
+          "phone": "yn",
+          "layers": [
+            "vowel"
+          ],
+          "contrast": 6.3758544750167685,
+          "ink": "rgb(18, 101, 53)",
+          "background": "rgb(234, 245, 233)",
+          "nasal": false,
+          "shared": true,
+          "accent": "",
+          "nasalContrast": null,
+          "backgroundImage": "linear-gradient(to right, rgb(18, 101, 53) 0%, rgb(18, 101, 53) 50%, rgb(140, 150, 147) 50%, rgb(140, 150, 147) 100%), linear-gradient(to right, rgb(234, 245, 233) 0%, rgb(234, 245, 233) 50%, rgb(241, 243, 239) 50%, rgb(241, 243, 239) 100%)",
+          "backgroundPosition": "0% 100%, 0% 100%",
+          "backgroundSize": "100% 2px, 100% 4px",
+          "paddingBottom": 4,
+          "decoration": "none"
+        },
+        {
+          "text": "uï",
+          "phone": "ɥi",
+          "layers": [
+            "vowel"
+          ],
+          "contrast": 5.984114060027568,
+          "ink": "rgb(181, 30, 50)",
+          "background": "rgb(255, 241, 243)",
+          "nasal": false,
+          "shared": true,
+          "accent": "",
+          "nasalContrast": null,
+          "backgroundImage": "linear-gradient(to right, rgb(140, 150, 147) 0%, rgb(140, 150, 147) 50%, rgb(181, 30, 50) 50%, rgb(181, 30, 50) 100%), linear-gradient(to right, rgb(241, 243, 239) 0%, rgb(241, 243, 239) 50%, rgb(255, 241, 243) 50%, rgb(255, 241, 243) 100%)",
+          "backgroundPosition": "0% 100%, 0% 100%",
+          "backgroundSize": "100% 2px, 100% 4px",
+          "paddingBottom": 4,
+          "decoration": "none"
+        }
+      ]
+    },
+    {
+      "mask": 2,
+      "label": "Consonnes",
+      "coloredSpans": 119,
+      "minimumContrast": 4.881524876598971,
+      "minimumNasalAccentContrast": null,
+      "shared": [
+        {
+          "text": "ien",
+          "phone": "jɛ̃",
+          "layers": [
+            "consonant"
+          ],
+          "contrast": 5.658732302143873,
+          "ink": "rgb(160, 53, 117)",
+          "background": "rgb(238, 241, 238)",
+          "nasal": false,
+          "shared": true,
+          "accent": "",
+          "nasalContrast": null,
+          "backgroundImage": "linear-gradient(to right, rgb(160, 53, 117) 0%, rgb(160, 53, 117) 50%, rgb(140, 150, 147) 50%, rgb(140, 150, 147) 100%), linear-gradient(to right, rgb(238, 241, 238) 0%, rgb(238, 241, 238) 50%, rgb(241, 243, 239) 50%, rgb(241, 243, 239) 100%)",
+          "backgroundPosition": "0% 100%, 0% 100%",
+          "backgroundSize": "100% 2px, 100% 4px",
+          "paddingBottom": 4,
+          "decoration": "none"
+        },
+        {
+          "text": "oin",
+          "phone": "wɛ̃",
+          "layers": [
+            "consonant"
+          ],
+          "contrast": 5.658732302143873,
+          "ink": "rgb(160, 53, 117)",
+          "background": "rgb(238, 241, 238)",
+          "nasal": false,
+          "shared": true,
+          "accent": "",
+          "nasalContrast": null,
+          "backgroundImage": "linear-gradient(to right, rgb(160, 53, 117) 0%, rgb(160, 53, 117) 50%, rgb(140, 150, 147) 50%, rgb(140, 150, 147) 100%), linear-gradient(to right, rgb(238, 241, 238) 0%, rgb(238, 241, 238) 50%, rgb(241, 243, 239) 50%, rgb(241, 243, 239) 100%)",
+          "backgroundPosition": "0% 100%, 0% 100%",
+          "backgroundSize": "100% 2px, 100% 4px",
+          "paddingBottom": 4,
+          "decoration": "none"
+        },
+        {
+          "text": "x",
+          "phone": "ks",
+          "layers": [
+            "consonant"
+          ],
+          "contrast": 5.381080967569468,
+          "ink": "rgb(122, 89, 97)",
+          "background": "rgb(238, 241, 238)",
+          "nasal": false,
+          "shared": true,
+          "accent": "",
+          "nasalContrast": null,
+          "backgroundImage": "linear-gradient(to right, rgb(107, 80, 150) 0%, rgb(107, 80, 150) 50%, rgb(140, 91, 8) 50%, rgb(140, 91, 8) 100%), linear-gradient(to right, rgb(238, 241, 238) 0%, rgb(238, 241, 238) 50%, rgb(238, 241, 238) 50%, rgb(238, 241, 238) 100%)",
+          "backgroundPosition": "0% 100%, 0% 100%",
+          "backgroundSize": "100% 2px, 100% 4px",
+          "paddingBottom": 4,
+          "decoration": "none"
+        },
+        {
+          "text": "oi",
+          "phone": "wa",
+          "layers": [
+            "consonant"
+          ],
+          "contrast": 5.658732302143873,
+          "ink": "rgb(160, 53, 117)",
+          "background": "rgb(238, 241, 238)",
+          "nasal": false,
+          "shared": true,
+          "accent": "",
+          "nasalContrast": null,
+          "backgroundImage": "linear-gradient(to right, rgb(160, 53, 117) 0%, rgb(160, 53, 117) 50%, rgb(140, 150, 147) 50%, rgb(140, 150, 147) 100%), linear-gradient(to right, rgb(238, 241, 238) 0%, rgb(238, 241, 238) 50%, rgb(241, 243, 239) 50%, rgb(241, 243, 239) 100%)",
+          "backgroundPosition": "0% 100%, 0% 100%",
+          "backgroundSize": "100% 2px, 100% 4px",
+          "paddingBottom": 4,
+          "decoration": "none"
+        },
+        {
+          "text": "am",
+          "phone": "am",
+          "layers": [
+            "consonant"
+          ],
+          "contrast": 4.881524876598971,
+          "ink": "rgb(8, 117, 110)",
+          "background": "rgb(238, 241, 238)",
+          "nasal": false,
+          "shared": true,
+          "accent": "",
+          "nasalContrast": null,
+          "backgroundImage": "linear-gradient(to right, rgb(140, 150, 147) 0%, rgb(140, 150, 147) 50%, rgb(8, 117, 110) 50%, rgb(8, 117, 110) 100%), linear-gradient(to right, rgb(241, 243, 239) 0%, rgb(241, 243, 239) 50%, rgb(238, 241, 238) 50%, rgb(238, 241, 238) 100%)",
+          "backgroundPosition": "0% 100%, 0% 100%",
+          "backgroundSize": "100% 2px, 100% 4px",
+          "paddingBottom": 4,
+          "decoration": "none"
+        },
+        {
+          "text": "oi",
+          "phone": "wa",
+          "layers": [
+            "consonant"
+          ],
+          "contrast": 5.658732302143873,
+          "ink": "rgb(160, 53, 117)",
+          "background": "rgb(238, 241, 238)",
+          "nasal": false,
+          "shared": true,
+          "accent": "",
+          "nasalContrast": null,
+          "backgroundImage": "linear-gradient(to right, rgb(160, 53, 117) 0%, rgb(160, 53, 117) 50%, rgb(140, 150, 147) 50%, rgb(140, 150, 147) 100%), linear-gradient(to right, rgb(238, 241, 238) 0%, rgb(238, 241, 238) 50%, rgb(241, 243, 239) 50%, rgb(241, 243, 239) 100%)",
+          "backgroundPosition": "0% 100%, 0% 100%",
+          "backgroundSize": "100% 2px, 100% 4px",
+          "paddingBottom": 4,
+          "decoration": "none"
+        },
+        {
+          "text": "un",
+          "phone": "yn",
+          "layers": [
+            "consonant"
+          ],
+          "contrast": 4.881524876598971,
+          "ink": "rgb(8, 117, 110)",
+          "background": "rgb(238, 241, 238)",
+          "nasal": false,
+          "shared": true,
+          "accent": "",
+          "nasalContrast": null,
+          "backgroundImage": "linear-gradient(to right, rgb(140, 150, 147) 0%, rgb(140, 150, 147) 50%, rgb(8, 117, 110) 50%, rgb(8, 117, 110) 100%), linear-gradient(to right, rgb(241, 243, 239) 0%, rgb(241, 243, 239) 50%, rgb(238, 241, 238) 50%, rgb(238, 241, 238) 100%)",
+          "backgroundPosition": "0% 100%, 0% 100%",
+          "backgroundSize": "100% 2px, 100% 4px",
+          "paddingBottom": 4,
+          "decoration": "none"
+        },
+        {
+          "text": "uï",
+          "phone": "ɥi",
+          "layers": [
+            "consonant"
+          ],
+          "contrast": 5.658732302143873,
+          "ink": "rgb(160, 53, 117)",
+          "background": "rgb(238, 241, 238)",
+          "nasal": false,
+          "shared": true,
+          "accent": "",
+          "nasalContrast": null,
+          "backgroundImage": "linear-gradient(to right, rgb(160, 53, 117) 0%, rgb(160, 53, 117) 50%, rgb(140, 150, 147) 50%, rgb(140, 150, 147) 100%), linear-gradient(to right, rgb(238, 241, 238) 0%, rgb(238, 241, 238) 50%, rgb(241, 243, 239) 50%, rgb(241, 243, 239) 100%)",
+          "backgroundPosition": "0% 100%, 0% 100%",
+          "backgroundSize": "100% 2px, 100% 4px",
+          "paddingBottom": 4,
+          "decoration": "none"
+        }
+      ]
+    },
+    {
+      "mask": 3,
+      "label": "Voyelles + consonnes",
+      "coloredSpans": 234,
+      "minimumContrast": 4.881524876598971,
+      "minimumNasalAccentContrast": null,
+      "shared": [
+        {
+          "text": "ien",
+          "phone": "jɛ̃",
+          "layers": [
+            "consonant",
+            "vowel"
+          ],
+          "contrast": 7.4760555974037946,
+          "ink": "rgb(0, 0, 0)",
+          "background": "rgb(147, 156, 156)",
+          "nasal": false,
+          "shared": true,
+          "accent": "",
+          "nasalContrast": null,
+          "backgroundImage": "linear-gradient(to right, rgb(160, 53, 117) 0%, rgb(160, 53, 117) 50%, rgb(255, 255, 255) 50%, rgb(255, 255, 255) 100%), linear-gradient(to right, rgb(238, 241, 238) 0%, rgb(238, 241, 238) 50%, rgb(65, 78, 82) 50%, rgb(65, 78, 82) 100%)",
+          "backgroundPosition": "0% 100%, 0% 100%",
+          "backgroundSize": "100% 2px, 100% 4px",
+          "paddingBottom": 4,
+          "decoration": "none"
+        },
+        {
+          "text": "oin",
+          "phone": "wɛ̃",
+          "layers": [
+            "consonant",
+            "vowel"
+          ],
+          "contrast": 7.4760555974037946,
+          "ink": "rgb(0, 0, 0)",
+          "background": "rgb(147, 156, 156)",
+          "nasal": false,
+          "shared": true,
+          "accent": "",
+          "nasalContrast": null,
+          "backgroundImage": "linear-gradient(to right, rgb(160, 53, 117) 0%, rgb(160, 53, 117) 50%, rgb(255, 255, 255) 50%, rgb(255, 255, 255) 100%), linear-gradient(to right, rgb(238, 241, 238) 0%, rgb(238, 241, 238) 50%, rgb(65, 78, 82) 50%, rgb(65, 78, 82) 100%)",
+          "backgroundPosition": "0% 100%, 0% 100%",
+          "backgroundSize": "100% 2px, 100% 4px",
+          "paddingBottom": 4,
+          "decoration": "none"
+        },
+        {
+          "text": "x",
+          "phone": "ks",
+          "layers": [
+            "consonant"
+          ],
+          "contrast": 5.381080967569468,
+          "ink": "rgb(122, 89, 97)",
+          "background": "rgb(238, 241, 238)",
+          "nasal": false,
+          "shared": true,
+          "accent": "",
+          "nasalContrast": null,
+          "backgroundImage": "linear-gradient(to right, rgb(107, 80, 150) 0%, rgb(107, 80, 150) 50%, rgb(140, 91, 8) 50%, rgb(140, 91, 8) 100%), linear-gradient(to right, rgb(238, 241, 238) 0%, rgb(238, 241, 238) 50%, rgb(238, 241, 238) 50%, rgb(238, 241, 238) 100%)",
+          "backgroundPosition": "0% 100%, 0% 100%",
+          "backgroundSize": "100% 2px, 100% 4px",
+          "paddingBottom": 4,
+          "decoration": "none"
+        },
+        {
+          "text": "oi",
+          "phone": "wa",
+          "layers": [
+            "consonant",
+            "vowel"
+          ],
+          "contrast": 13.862508965914511,
+          "ink": "rgb(59, 14, 41)",
+          "background": "rgb(233, 237, 233)",
+          "nasal": false,
+          "shared": true,
+          "accent": "",
+          "nasalContrast": null,
+          "backgroundImage": "linear-gradient(to right, rgb(160, 53, 117) 0%, rgb(160, 53, 117) 50%, rgb(0, 0, 0) 50%, rgb(0, 0, 0) 100%), linear-gradient(to right, rgb(238, 241, 238) 0%, rgb(238, 241, 238) 50%, rgb(229, 233, 229) 50%, rgb(229, 233, 229) 100%)",
+          "backgroundPosition": "0% 100%, 0% 100%",
+          "backgroundSize": "100% 2px, 100% 4px",
+          "paddingBottom": 4,
+          "decoration": "none"
+        },
+        {
+          "text": "am",
+          "phone": "am",
+          "layers": [
+            "vowel",
+            "consonant"
+          ],
+          "contrast": 13.186518901630244,
+          "ink": "rgb(1, 41, 38)",
+          "background": "rgb(233, 237, 233)",
+          "nasal": false,
+          "shared": true,
+          "accent": "",
+          "nasalContrast": null,
+          "backgroundImage": "linear-gradient(to right, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 50%, rgb(8, 117, 110) 50%, rgb(8, 117, 110) 100%), linear-gradient(to right, rgb(229, 233, 229) 0%, rgb(229, 233, 229) 50%, rgb(238, 241, 238) 50%, rgb(238, 241, 238) 100%)",
+          "backgroundPosition": "0% 100%, 0% 100%",
+          "backgroundSize": "100% 2px, 100% 4px",
+          "paddingBottom": 4,
+          "decoration": "none"
+        },
+        {
+          "text": "oi",
+          "phone": "wa",
+          "layers": [
+            "consonant",
+            "vowel"
+          ],
+          "contrast": 13.862508965914511,
+          "ink": "rgb(59, 14, 41)",
+          "background": "rgb(233, 237, 233)",
+          "nasal": false,
+          "shared": true,
+          "accent": "",
+          "nasalContrast": null,
+          "backgroundImage": "linear-gradient(to right, rgb(160, 53, 117) 0%, rgb(160, 53, 117) 50%, rgb(0, 0, 0) 50%, rgb(0, 0, 0) 100%), linear-gradient(to right, rgb(238, 241, 238) 0%, rgb(238, 241, 238) 50%, rgb(229, 233, 229) 50%, rgb(229, 233, 229) 100%)",
+          "backgroundPosition": "0% 100%, 0% 100%",
+          "backgroundSize": "100% 2px, 100% 4px",
+          "paddingBottom": 4,
+          "decoration": "none"
+        },
+        {
+          "text": "un",
+          "phone": "yn",
+          "layers": [
+            "vowel",
+            "consonant"
+          ],
+          "contrast": 5.591026676583791,
+          "ink": "rgb(13, 109, 82)",
+          "background": "rgb(236, 243, 236)",
+          "nasal": false,
+          "shared": true,
+          "accent": "",
+          "nasalContrast": null,
+          "backgroundImage": "linear-gradient(to right, rgb(18, 101, 53) 0%, rgb(18, 101, 53) 50%, rgb(8, 117, 110) 50%, rgb(8, 117, 110) 100%), linear-gradient(to right, rgb(234, 245, 233) 0%, rgb(234, 245, 233) 50%, rgb(238, 241, 238) 50%, rgb(238, 241, 238) 100%)",
+          "backgroundPosition": "0% 100%, 0% 100%",
+          "backgroundSize": "100% 2px, 100% 4px",
+          "paddingBottom": 4,
+          "decoration": "none"
+        },
+        {
+          "text": "uï",
+          "phone": "ɥi",
+          "layers": [
+            "consonant",
+            "vowel"
+          ],
+          "contrast": 5.833056484311241,
+          "ink": "rgb(170, 45, 87)",
+          "background": "rgb(247, 241, 240)",
+          "nasal": false,
+          "shared": true,
+          "accent": "",
+          "nasalContrast": null,
+          "backgroundImage": "linear-gradient(to right, rgb(160, 53, 117) 0%, rgb(160, 53, 117) 50%, rgb(181, 30, 50) 50%, rgb(181, 30, 50) 100%), linear-gradient(to right, rgb(238, 241, 238) 0%, rgb(238, 241, 238) 50%, rgb(255, 241, 243) 50%, rgb(255, 241, 243) 100%)",
+          "backgroundPosition": "0% 100%, 0% 100%",
+          "backgroundSize": "100% 2px, 100% 4px",
+          "paddingBottom": 4,
+          "decoration": "none"
+        }
+      ]
+    },
+    {
+      "mask": 4,
+      "label": "Nasalisations",
+      "coloredSpans": 40,
+      "minimumContrast": 5.451173216809124,
+      "minimumNasalAccentContrast": 5.229429078132281,
+      "shared": [
+        {
+          "text": "ien",
+          "phone": "jɛ̃",
+          "layers": [
+            "nasal"
+          ],
+          "contrast": 5.451173216809124,
+          "ink": "rgb(136, 87, 36)",
+          "background": "rgb(251, 241, 221)",
+          "nasal": true,
+          "shared": true,
+          "accent": "#8d591f",
+          "nasalContrast": 5.229429078132281,
+          "backgroundImage": "linear-gradient(to right, rgb(140, 150, 147) 0%, rgb(140, 150, 147) 50%, rgb(136, 87, 36) 50%, rgb(136, 87, 36) 100%), linear-gradient(to right, rgb(241, 243, 239) 0%, rgb(241, 243, 239) 50%, rgb(251, 241, 221) 50%, rgb(251, 241, 221) 100%), linear-gradient(rgb(141, 89, 31), rgb(141, 89, 31)), linear-gradient(rgb(141, 89, 31), rgb(141, 89, 31))",
+          "backgroundPosition": "0% calc(100% - 4px), 0% calc(100% - 4px), 0% 100%, 0% calc(100% - 2px)",
+          "backgroundSize": "100% 2px, 100% 4px, 100% 1px, 100% 1px",
+          "paddingBottom": 8,
+          "decoration": "none"
+        },
+        {
+          "text": "oin",
+          "phone": "wɛ̃",
+          "layers": [
+            "nasal"
+          ],
+          "contrast": 5.451173216809124,
+          "ink": "rgb(136, 87, 36)",
+          "background": "rgb(251, 241, 221)",
+          "nasal": true,
+          "shared": true,
+          "accent": "#8d591f",
+          "nasalContrast": 5.229429078132281,
+          "backgroundImage": "linear-gradient(to right, rgb(140, 150, 147) 0%, rgb(140, 150, 147) 50%, rgb(136, 87, 36) 50%, rgb(136, 87, 36) 100%), linear-gradient(to right, rgb(241, 243, 239) 0%, rgb(241, 243, 239) 50%, rgb(251, 241, 221) 50%, rgb(251, 241, 221) 100%), linear-gradient(rgb(141, 89, 31), rgb(141, 89, 31)), linear-gradient(rgb(141, 89, 31), rgb(141, 89, 31))",
+          "backgroundPosition": "0% calc(100% - 4px), 0% calc(100% - 4px), 0% 100%, 0% calc(100% - 2px)",
+          "backgroundSize": "100% 2px, 100% 4px, 100% 1px, 100% 1px",
+          "paddingBottom": 8,
+          "decoration": "none"
+        }
+      ]
+    },
+    {
+      "mask": 5,
+      "label": "Voyelles + nasalisations",
+      "coloredSpans": 122,
+      "minimumContrast": 5.984114060027568,
+      "minimumNasalAccentContrast": 3.9671434743312917,
+      "shared": [
+        {
+          "text": "ien",
+          "phone": "jɛ̃",
+          "layers": [
+            "vowel",
+            "nasal"
+          ],
+          "contrast": 6.188254697012513,
+          "ink": "rgb(255, 255, 255)",
+          "background": "rgb(89, 99, 100)",
+          "nasal": true,
+          "shared": true,
+          "accent": "#efca86",
+          "nasalContrast": 3.9671434743312917,
+          "backgroundImage": "linear-gradient(to right, rgb(140, 150, 147) 0%, rgb(140, 150, 147) 50%, rgb(255, 255, 255) 50%, rgb(255, 255, 255) 100%), linear-gradient(to right, rgb(241, 243, 239) 0%, rgb(241, 243, 239) 50%, rgb(89, 99, 100) 50%, rgb(89, 99, 100) 100%), linear-gradient(rgb(239, 202, 134), rgb(239, 202, 134)), linear-gradient(rgb(239, 202, 134), rgb(239, 202, 134))",
+          "backgroundPosition": "0% calc(100% - 4px), 0% calc(100% - 4px), 0% 100%, 0% calc(100% - 2px)",
+          "backgroundSize": "100% 2px, 100% 4px, 100% 1px, 100% 1px",
+          "paddingBottom": 8,
+          "decoration": "none"
+        },
+        {
+          "text": "oin",
+          "phone": "wɛ̃",
+          "layers": [
+            "vowel",
+            "nasal"
+          ],
+          "contrast": 6.188254697012513,
+          "ink": "rgb(255, 255, 255)",
+          "background": "rgb(89, 99, 100)",
+          "nasal": true,
+          "shared": true,
+          "accent": "#efca86",
+          "nasalContrast": 3.9671434743312917,
+          "backgroundImage": "linear-gradient(to right, rgb(140, 150, 147) 0%, rgb(140, 150, 147) 50%, rgb(255, 255, 255) 50%, rgb(255, 255, 255) 100%), linear-gradient(to right, rgb(241, 243, 239) 0%, rgb(241, 243, 239) 50%, rgb(89, 99, 100) 50%, rgb(89, 99, 100) 100%), linear-gradient(rgb(239, 202, 134), rgb(239, 202, 134)), linear-gradient(rgb(239, 202, 134), rgb(239, 202, 134))",
+          "backgroundPosition": "0% calc(100% - 4px), 0% calc(100% - 4px), 0% 100%, 0% calc(100% - 2px)",
+          "backgroundSize": "100% 2px, 100% 4px, 100% 1px, 100% 1px",
+          "paddingBottom": 8,
+          "decoration": "none"
+        },
+        {
+          "text": "oi",
+          "phone": "wa",
+          "layers": [
+            "vowel"
+          ],
+          "contrast": 17.11859662951231,
+          "ink": "rgb(0, 0, 0)",
+          "background": "rgb(229, 233, 229)",
+          "nasal": false,
+          "shared": true,
+          "accent": "",
+          "nasalContrast": null,
+          "backgroundImage": "linear-gradient(to right, rgb(140, 150, 147) 0%, rgb(140, 150, 147) 50%, rgb(0, 0, 0) 50%, rgb(0, 0, 0) 100%), linear-gradient(to right, rgb(241, 243, 239) 0%, rgb(241, 243, 239) 50%, rgb(229, 233, 229) 50%, rgb(229, 233, 229) 100%)",
+          "backgroundPosition": "0% 100%, 0% 100%",
+          "backgroundSize": "100% 2px, 100% 4px",
+          "paddingBottom": 4,
+          "decoration": "none"
+        },
+        {
+          "text": "am",
+          "phone": "am",
+          "layers": [
+            "vowel"
+          ],
+          "contrast": 17.11859662951231,
+          "ink": "rgb(0, 0, 0)",
+          "background": "rgb(229, 233, 229)",
+          "nasal": false,
+          "shared": true,
+          "accent": "",
+          "nasalContrast": null,
+          "backgroundImage": "linear-gradient(to right, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 50%, rgb(140, 150, 147) 50%, rgb(140, 150, 147) 100%), linear-gradient(to right, rgb(229, 233, 229) 0%, rgb(229, 233, 229) 50%, rgb(241, 243, 239) 50%, rgb(241, 243, 239) 100%)",
+          "backgroundPosition": "0% 100%, 0% 100%",
+          "backgroundSize": "100% 2px, 100% 4px",
+          "paddingBottom": 4,
+          "decoration": "none"
+        },
+        {
+          "text": "oi",
+          "phone": "wa",
+          "layers": [
+            "vowel"
+          ],
+          "contrast": 17.11859662951231,
+          "ink": "rgb(0, 0, 0)",
+          "background": "rgb(229, 233, 229)",
+          "nasal": false,
+          "shared": true,
+          "accent": "",
+          "nasalContrast": null,
+          "backgroundImage": "linear-gradient(to right, rgb(140, 150, 147) 0%, rgb(140, 150, 147) 50%, rgb(0, 0, 0) 50%, rgb(0, 0, 0) 100%), linear-gradient(to right, rgb(241, 243, 239) 0%, rgb(241, 243, 239) 50%, rgb(229, 233, 229) 50%, rgb(229, 233, 229) 100%)",
+          "backgroundPosition": "0% 100%, 0% 100%",
+          "backgroundSize": "100% 2px, 100% 4px",
+          "paddingBottom": 4,
+          "decoration": "none"
+        },
+        {
+          "text": "un",
+          "phone": "yn",
+          "layers": [
+            "vowel"
+          ],
+          "contrast": 6.3758544750167685,
+          "ink": "rgb(18, 101, 53)",
+          "background": "rgb(234, 245, 233)",
+          "nasal": false,
+          "shared": true,
+          "accent": "",
+          "nasalContrast": null,
+          "backgroundImage": "linear-gradient(to right, rgb(18, 101, 53) 0%, rgb(18, 101, 53) 50%, rgb(140, 150, 147) 50%, rgb(140, 150, 147) 100%), linear-gradient(to right, rgb(234, 245, 233) 0%, rgb(234, 245, 233) 50%, rgb(241, 243, 239) 50%, rgb(241, 243, 239) 100%)",
+          "backgroundPosition": "0% 100%, 0% 100%",
+          "backgroundSize": "100% 2px, 100% 4px",
+          "paddingBottom": 4,
+          "decoration": "none"
+        },
+        {
+          "text": "uï",
+          "phone": "ɥi",
+          "layers": [
+            "vowel"
+          ],
+          "contrast": 5.984114060027568,
+          "ink": "rgb(181, 30, 50)",
+          "background": "rgb(255, 241, 243)",
+          "nasal": false,
+          "shared": true,
+          "accent": "",
+          "nasalContrast": null,
+          "backgroundImage": "linear-gradient(to right, rgb(140, 150, 147) 0%, rgb(140, 150, 147) 50%, rgb(181, 30, 50) 50%, rgb(181, 30, 50) 100%), linear-gradient(to right, rgb(241, 243, 239) 0%, rgb(241, 243, 239) 50%, rgb(255, 241, 243) 50%, rgb(255, 241, 243) 100%)",
+          "backgroundPosition": "0% 100%, 0% 100%",
+          "backgroundSize": "100% 2px, 100% 4px",
+          "paddingBottom": 4,
+          "decoration": "none"
+        }
+      ]
+    },
+    {
+      "mask": 6,
+      "label": "Consonnes + nasalisations",
+      "coloredSpans": 157,
+      "minimumContrast": 4.881524876598971,
+      "minimumNasalAccentContrast": 5.195695944494981,
+      "shared": [
+        {
+          "text": "ien",
+          "phone": "jɛ̃",
+          "layers": [
+            "consonant",
+            "nasal"
+          ],
+          "contrast": 5.531947218196267,
+          "ink": "rgb(148, 74, 83)",
+          "background": "rgb(245, 241, 230)",
+          "nasal": true,
+          "shared": true,
+          "accent": "#8d591f",
+          "nasalContrast": 5.195695944494981,
+          "backgroundImage": "linear-gradient(to right, rgb(160, 53, 117) 0%, rgb(160, 53, 117) 50%, rgb(136, 87, 36) 50%, rgb(136, 87, 36) 100%), linear-gradient(to right, rgb(238, 241, 238) 0%, rgb(238, 241, 238) 50%, rgb(251, 241, 221) 50%, rgb(251, 241, 221) 100%), linear-gradient(rgb(141, 89, 31), rgb(141, 89, 31)), linear-gradient(rgb(141, 89, 31), rgb(141, 89, 31))",
+          "backgroundPosition": "0% calc(100% - 4px), 0% calc(100% - 4px), 0% 100%, 0% calc(100% - 2px)",
+          "backgroundSize": "100% 2px, 100% 4px, 100% 1px, 100% 1px",
+          "paddingBottom": 8,
+          "decoration": "none"
+        },
+        {
+          "text": "oin",
+          "phone": "wɛ̃",
+          "layers": [
+            "consonant",
+            "nasal"
+          ],
+          "contrast": 5.531947218196267,
+          "ink": "rgb(148, 74, 83)",
+          "background": "rgb(245, 241, 230)",
+          "nasal": true,
+          "shared": true,
+          "accent": "#8d591f",
+          "nasalContrast": 5.195695944494981,
+          "backgroundImage": "linear-gradient(to right, rgb(160, 53, 117) 0%, rgb(160, 53, 117) 50%, rgb(136, 87, 36) 50%, rgb(136, 87, 36) 100%), linear-gradient(to right, rgb(238, 241, 238) 0%, rgb(238, 241, 238) 50%, rgb(251, 241, 221) 50%, rgb(251, 241, 221) 100%), linear-gradient(rgb(141, 89, 31), rgb(141, 89, 31)), linear-gradient(rgb(141, 89, 31), rgb(141, 89, 31))",
+          "backgroundPosition": "0% calc(100% - 4px), 0% calc(100% - 4px), 0% 100%, 0% calc(100% - 2px)",
+          "backgroundSize": "100% 2px, 100% 4px, 100% 1px, 100% 1px",
+          "paddingBottom": 8,
+          "decoration": "none"
+        },
+        {
+          "text": "x",
+          "phone": "ks",
+          "layers": [
+            "consonant"
+          ],
+          "contrast": 5.381080967569468,
+          "ink": "rgb(122, 89, 97)",
+          "background": "rgb(238, 241, 238)",
+          "nasal": false,
+          "shared": true,
+          "accent": "",
+          "nasalContrast": null,
+          "backgroundImage": "linear-gradient(to right, rgb(107, 80, 150) 0%, rgb(107, 80, 150) 50%, rgb(140, 91, 8) 50%, rgb(140, 91, 8) 100%), linear-gradient(to right, rgb(238, 241, 238) 0%, rgb(238, 241, 238) 50%, rgb(238, 241, 238) 50%, rgb(238, 241, 238) 100%)",
+          "backgroundPosition": "0% 100%, 0% 100%",
+          "backgroundSize": "100% 2px, 100% 4px",
+          "paddingBottom": 4,
+          "decoration": "none"
+        },
+        {
+          "text": "oi",
+          "phone": "wa",
+          "layers": [
+            "consonant"
+          ],
+          "contrast": 5.658732302143873,
+          "ink": "rgb(160, 53, 117)",
+          "background": "rgb(238, 241, 238)",
+          "nasal": false,
+          "shared": true,
+          "accent": "",
+          "nasalContrast": null,
+          "backgroundImage": "linear-gradient(to right, rgb(160, 53, 117) 0%, rgb(160, 53, 117) 50%, rgb(140, 150, 147) 50%, rgb(140, 150, 147) 100%), linear-gradient(to right, rgb(238, 241, 238) 0%, rgb(238, 241, 238) 50%, rgb(241, 243, 239) 50%, rgb(241, 243, 239) 100%)",
+          "backgroundPosition": "0% 100%, 0% 100%",
+          "backgroundSize": "100% 2px, 100% 4px",
+          "paddingBottom": 4,
+          "decoration": "none"
+        },
+        {
+          "text": "am",
+          "phone": "am",
+          "layers": [
+            "consonant"
+          ],
+          "contrast": 4.881524876598971,
+          "ink": "rgb(8, 117, 110)",
+          "background": "rgb(238, 241, 238)",
+          "nasal": false,
+          "shared": true,
+          "accent": "",
+          "nasalContrast": null,
+          "backgroundImage": "linear-gradient(to right, rgb(140, 150, 147) 0%, rgb(140, 150, 147) 50%, rgb(8, 117, 110) 50%, rgb(8, 117, 110) 100%), linear-gradient(to right, rgb(241, 243, 239) 0%, rgb(241, 243, 239) 50%, rgb(238, 241, 238) 50%, rgb(238, 241, 238) 100%)",
+          "backgroundPosition": "0% 100%, 0% 100%",
+          "backgroundSize": "100% 2px, 100% 4px",
+          "paddingBottom": 4,
+          "decoration": "none"
+        },
+        {
+          "text": "oi",
+          "phone": "wa",
+          "layers": [
+            "consonant"
+          ],
+          "contrast": 5.658732302143873,
+          "ink": "rgb(160, 53, 117)",
+          "background": "rgb(238, 241, 238)",
+          "nasal": false,
+          "shared": true,
+          "accent": "",
+          "nasalContrast": null,
+          "backgroundImage": "linear-gradient(to right, rgb(160, 53, 117) 0%, rgb(160, 53, 117) 50%, rgb(140, 150, 147) 50%, rgb(140, 150, 147) 100%), linear-gradient(to right, rgb(238, 241, 238) 0%, rgb(238, 241, 238) 50%, rgb(241, 243, 239) 50%, rgb(241, 243, 239) 100%)",
+          "backgroundPosition": "0% 100%, 0% 100%",
+          "backgroundSize": "100% 2px, 100% 4px",
+          "paddingBottom": 4,
+          "decoration": "none"
+        },
+        {
+          "text": "un",
+          "phone": "yn",
+          "layers": [
+            "consonant"
+          ],
+          "contrast": 4.881524876598971,
+          "ink": "rgb(8, 117, 110)",
+          "background": "rgb(238, 241, 238)",
+          "nasal": false,
+          "shared": true,
+          "accent": "",
+          "nasalContrast": null,
+          "backgroundImage": "linear-gradient(to right, rgb(140, 150, 147) 0%, rgb(140, 150, 147) 50%, rgb(8, 117, 110) 50%, rgb(8, 117, 110) 100%), linear-gradient(to right, rgb(241, 243, 239) 0%, rgb(241, 243, 239) 50%, rgb(238, 241, 238) 50%, rgb(238, 241, 238) 100%)",
+          "backgroundPosition": "0% 100%, 0% 100%",
+          "backgroundSize": "100% 2px, 100% 4px",
+          "paddingBottom": 4,
+          "decoration": "none"
+        },
+        {
+          "text": "uï",
+          "phone": "ɥi",
+          "layers": [
+            "consonant"
+          ],
+          "contrast": 5.658732302143873,
+          "ink": "rgb(160, 53, 117)",
+          "background": "rgb(238, 241, 238)",
+          "nasal": false,
+          "shared": true,
+          "accent": "",
+          "nasalContrast": null,
+          "backgroundImage": "linear-gradient(to right, rgb(160, 53, 117) 0%, rgb(160, 53, 117) 50%, rgb(140, 150, 147) 50%, rgb(140, 150, 147) 100%), linear-gradient(to right, rgb(238, 241, 238) 0%, rgb(238, 241, 238) 50%, rgb(241, 243, 239) 50%, rgb(241, 243, 239) 100%)",
+          "backgroundPosition": "0% 100%, 0% 100%",
+          "backgroundSize": "100% 2px, 100% 4px",
+          "paddingBottom": 4,
+          "decoration": "none"
+        }
+      ]
+    },
+    {
+      "mask": 7,
+      "label": "Les trois catégories",
+      "coloredSpans": 234,
+      "minimumContrast": 4.881524876598971,
+      "minimumNasalAccentContrast": 3.240099865977549,
+      "shared": [
+        {
+          "text": "ien",
+          "phone": "jɛ̃",
+          "layers": [
+            "consonant",
+            "vowel",
+            "nasal"
+          ],
+          "contrast": 4.935703470471315,
+          "ink": "rgb(47, 55, 62)",
+          "background": "rgb(160, 167, 166)",
+          "nasal": true,
+          "shared": true,
+          "accent": "#71481c",
+          "nasalContrast": 3.240099865977549,
+          "backgroundImage": "linear-gradient(to right, rgb(160, 53, 117) 0%, rgb(160, 53, 117) 50%, rgb(255, 255, 255) 50%, rgb(255, 255, 255) 100%), linear-gradient(to right, rgb(238, 241, 238) 0%, rgb(238, 241, 238) 50%, rgb(89, 99, 100) 50%, rgb(89, 99, 100) 100%), linear-gradient(rgb(113, 72, 28), rgb(113, 72, 28)), linear-gradient(rgb(113, 72, 28), rgb(113, 72, 28))",
+          "backgroundPosition": "0% calc(100% - 4px), 0% calc(100% - 4px), 0% 100%, 0% calc(100% - 2px)",
+          "backgroundSize": "100% 2px, 100% 4px, 100% 1px, 100% 1px",
+          "paddingBottom": 8,
+          "decoration": "none"
+        },
+        {
+          "text": "oin",
+          "phone": "wɛ̃",
+          "layers": [
+            "consonant",
+            "vowel",
+            "nasal"
+          ],
+          "contrast": 4.935703470471315,
+          "ink": "rgb(47, 55, 62)",
+          "background": "rgb(160, 167, 166)",
+          "nasal": true,
+          "shared": true,
+          "accent": "#71481c",
+          "nasalContrast": 3.240099865977549,
+          "backgroundImage": "linear-gradient(to right, rgb(160, 53, 117) 0%, rgb(160, 53, 117) 50%, rgb(255, 255, 255) 50%, rgb(255, 255, 255) 100%), linear-gradient(to right, rgb(238, 241, 238) 0%, rgb(238, 241, 238) 50%, rgb(89, 99, 100) 50%, rgb(89, 99, 100) 100%), linear-gradient(rgb(113, 72, 28), rgb(113, 72, 28)), linear-gradient(rgb(113, 72, 28), rgb(113, 72, 28))",
+          "backgroundPosition": "0% calc(100% - 4px), 0% calc(100% - 4px), 0% 100%, 0% calc(100% - 2px)",
+          "backgroundSize": "100% 2px, 100% 4px, 100% 1px, 100% 1px",
+          "paddingBottom": 8,
+          "decoration": "none"
+        },
+        {
+          "text": "x",
+          "phone": "ks",
+          "layers": [
+            "consonant"
+          ],
+          "contrast": 5.381080967569468,
+          "ink": "rgb(122, 89, 97)",
+          "background": "rgb(238, 241, 238)",
+          "nasal": false,
+          "shared": true,
+          "accent": "",
+          "nasalContrast": null,
+          "backgroundImage": "linear-gradient(to right, rgb(107, 80, 150) 0%, rgb(107, 80, 150) 50%, rgb(140, 91, 8) 50%, rgb(140, 91, 8) 100%), linear-gradient(to right, rgb(238, 241, 238) 0%, rgb(238, 241, 238) 50%, rgb(238, 241, 238) 50%, rgb(238, 241, 238) 100%)",
+          "backgroundPosition": "0% 100%, 0% 100%",
+          "backgroundSize": "100% 2px, 100% 4px",
+          "paddingBottom": 4,
+          "decoration": "none"
+        },
+        {
+          "text": "oi",
+          "phone": "wa",
+          "layers": [
+            "consonant",
+            "vowel"
+          ],
+          "contrast": 13.862508965914511,
+          "ink": "rgb(59, 14, 41)",
+          "background": "rgb(233, 237, 233)",
+          "nasal": false,
+          "shared": true,
+          "accent": "",
+          "nasalContrast": null,
+          "backgroundImage": "linear-gradient(to right, rgb(160, 53, 117) 0%, rgb(160, 53, 117) 50%, rgb(0, 0, 0) 50%, rgb(0, 0, 0) 100%), linear-gradient(to right, rgb(238, 241, 238) 0%, rgb(238, 241, 238) 50%, rgb(229, 233, 229) 50%, rgb(229, 233, 229) 100%)",
+          "backgroundPosition": "0% 100%, 0% 100%",
+          "backgroundSize": "100% 2px, 100% 4px",
+          "paddingBottom": 4,
+          "decoration": "none"
+        },
+        {
+          "text": "am",
+          "phone": "am",
+          "layers": [
+            "vowel",
+            "consonant"
+          ],
+          "contrast": 13.186518901630244,
+          "ink": "rgb(1, 41, 38)",
+          "background": "rgb(233, 237, 233)",
+          "nasal": false,
+          "shared": true,
+          "accent": "",
+          "nasalContrast": null,
+          "backgroundImage": "linear-gradient(to right, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 50%, rgb(8, 117, 110) 50%, rgb(8, 117, 110) 100%), linear-gradient(to right, rgb(229, 233, 229) 0%, rgb(229, 233, 229) 50%, rgb(238, 241, 238) 50%, rgb(238, 241, 238) 100%)",
+          "backgroundPosition": "0% 100%, 0% 100%",
+          "backgroundSize": "100% 2px, 100% 4px",
+          "paddingBottom": 4,
+          "decoration": "none"
+        },
+        {
+          "text": "oi",
+          "phone": "wa",
+          "layers": [
+            "consonant",
+            "vowel"
+          ],
+          "contrast": 13.862508965914511,
+          "ink": "rgb(59, 14, 41)",
+          "background": "rgb(233, 237, 233)",
+          "nasal": false,
+          "shared": true,
+          "accent": "",
+          "nasalContrast": null,
+          "backgroundImage": "linear-gradient(to right, rgb(160, 53, 117) 0%, rgb(160, 53, 117) 50%, rgb(0, 0, 0) 50%, rgb(0, 0, 0) 100%), linear-gradient(to right, rgb(238, 241, 238) 0%, rgb(238, 241, 238) 50%, rgb(229, 233, 229) 50%, rgb(229, 233, 229) 100%)",
+          "backgroundPosition": "0% 100%, 0% 100%",
+          "backgroundSize": "100% 2px, 100% 4px",
+          "paddingBottom": 4,
+          "decoration": "none"
+        },
+        {
+          "text": "un",
+          "phone": "yn",
+          "layers": [
+            "vowel",
+            "consonant"
+          ],
+          "contrast": 5.591026676583791,
+          "ink": "rgb(13, 109, 82)",
+          "background": "rgb(236, 243, 236)",
+          "nasal": false,
+          "shared": true,
+          "accent": "",
+          "nasalContrast": null,
+          "backgroundImage": "linear-gradient(to right, rgb(18, 101, 53) 0%, rgb(18, 101, 53) 50%, rgb(8, 117, 110) 50%, rgb(8, 117, 110) 100%), linear-gradient(to right, rgb(234, 245, 233) 0%, rgb(234, 245, 233) 50%, rgb(238, 241, 238) 50%, rgb(238, 241, 238) 100%)",
+          "backgroundPosition": "0% 100%, 0% 100%",
+          "backgroundSize": "100% 2px, 100% 4px",
+          "paddingBottom": 4,
+          "decoration": "none"
+        },
+        {
+          "text": "uï",
+          "phone": "ɥi",
+          "layers": [
+            "consonant",
+            "vowel"
+          ],
+          "contrast": 5.833056484311241,
+          "ink": "rgb(170, 45, 87)",
+          "background": "rgb(247, 241, 240)",
+          "nasal": false,
+          "shared": true,
+          "accent": "",
+          "nasalContrast": null,
+          "backgroundImage": "linear-gradient(to right, rgb(160, 53, 117) 0%, rgb(160, 53, 117) 50%, rgb(181, 30, 50) 50%, rgb(181, 30, 50) 100%), linear-gradient(to right, rgb(238, 241, 238) 0%, rgb(238, 241, 238) 50%, rgb(255, 241, 243) 50%, rgb(255, 241, 243) 100%)",
+          "backgroundPosition": "0% 100%, 0% 100%",
+          "backgroundSize": "100% 2px, 100% 4px",
+          "paddingBottom": 4,
+          "decoration": "none"
+        }
+      ]
+    }
+  ],
+  "sample": "Un lien, loin d’un taxi, les oiseaux et le travail.\nUn brin, un brun, un banc, un bon vin.\nLes beaux enfants ont un grand ami ; les héros arrivent.\nL’élève voit l’eau, la pluie et une ambiguïté.\nAha ! Un bahaï du Bihar et les haricots.",
+  "passed": 99,
+  "failed": 0
+}

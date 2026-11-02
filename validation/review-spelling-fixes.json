@@ -1,0 +1,6 @@
+{
+  "purpose": "Regressions for grouping spaces and canonical-equivalent spellings; not an independent phonetic accuracy estimate.",
+  "passed": 283,
+  "failed": 0,
+  "failures": []
+}

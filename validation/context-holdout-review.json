@@ -1,0 +1,3249 @@
+{
+  "method": "25 new complete natural sentences selected and saved with linguistic expectations before the first execution. This is a targeted contextual review, not a reference corpus with independently established exact full-sentence transcriptions. Full outputs and token provenance are retained for manual review. No application code is changed during initial evaluation.",
+  "status": "initial-review-complete-before-application-fixes",
+  "cases": [
+    {
+      "id": 1,
+      "text": "À l’est du village, le vent soulève les feuilles.",
+      "words": {
+        "est": "ɛst",
+        "vent": "vɑ̃"
+      },
+      "focus": "Point cardinal, voyelle nasale, formes lexicales courantes.",
+      "output": "a lɛst du vi.laʒ, lə vɑ̃ su.lɛv le fœj.",
+      "stats": {
+        "words": 10,
+        "unknown": 0,
+        "ambiguous": 2,
+        "morphological": 0,
+        "unaligned": 0
+      },
+      "tokens": [
+        {
+          "word": "À",
+          "lower": "à",
+          "ipa": "a",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "l’",
+          "lower": "l'",
+          "ipa": "l",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "est",
+          "lower": "est",
+          "ipa": "ɛst",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "contextReason": "Le point cardinal est reconnu.",
+          "notes": []
+        },
+        {
+          "word": "du",
+          "lower": "du",
+          "ipa": "du",
+          "source": "lexicon",
+          "confidence": "ambiguous",
+          "alternatives": [
+            "dy"
+          ],
+          "notes": [
+            "Prononciations lexicales possibles : /du/, /dy/. Les variantes du lexique ne sont pas étiquetées."
+          ]
+        },
+        {
+          "word": "village",
+          "lower": "village",
+          "ipa": "vi.laʒ",
+          "source": "lexicon",
+          "confidence": "ambiguous",
+          "alternatives": [
+            "vi.laːʒ",
+            "vi.lɑːʒ"
+          ],
+          "notes": [
+            "Prononciations lexicales possibles : /vi.laʒ/, /vi.laːʒ/, /vi.lɑːʒ/. Les variantes du lexique ne sont pas étiquetées."
+          ]
+        },
+        {
+          "word": "le",
+          "lower": "le",
+          "ipa": "lə",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "vent",
+          "lower": "vent",
+          "ipa": "vɑ̃",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "soulève",
+          "lower": "soulève",
+          "ipa": "su.lɛv",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "les",
+          "lower": "les",
+          "ipa": "le",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "feuilles",
+          "lower": "feuilles",
+          "ipa": "fœj",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        }
+      ],
+      "probes": [
+        {
+          "type": "word",
+          "word": "est",
+          "expected": "ɛst",
+          "actual": "ɛst",
+          "pass": true
+        },
+        {
+          "type": "word",
+          "word": "vent",
+          "expected": "vɑ̃",
+          "actual": "vɑ̃",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Les religieuses quittent le couvent avant la nuit.",
+      "words": {
+        "couvent": "kuvɑ̃"
+      },
+      "liaison": [
+        [
+          "couvent",
+          "avant",
+          false
+        ]
+      ],
+      "focus": "Couvent nominal : /ɑ̃/ maintenu, pas de liaison du nom singulier.",
+      "output": "le ʁə.li.ʒjøz kit lə ku.vɑ̃ a.vɑ̃ la nɥi.",
+      "stats": {
+        "words": 8,
+        "unknown": 0,
+        "ambiguous": 1,
+        "morphological": 0,
+        "unaligned": 0
+      },
+      "tokens": [
+        {
+          "word": "Les",
+          "lower": "les",
+          "ipa": "le",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "religieuses",
+          "lower": "religieuses",
+          "ipa": "ʁə.li.ʒjøz",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "quittent",
+          "lower": "quittent",
+          "ipa": "kit",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "contextReason": "Flexion verbale identifiée par son sujet.",
+          "notes": []
+        },
+        {
+          "word": "le",
+          "lower": "le",
+          "ipa": "lə",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "couvent",
+          "lower": "couvent",
+          "ipa": "ku.vɑ̃",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "contextReason": "Emploi nominal ou adjectival identifié dans le contexte local.",
+          "liaison": {
+            "phone": "t",
+            "kind": "interdite",
+            "realized": false,
+            "reason": "Aucun lien grammatical sûr n’autorise cette liaison."
+          },
+          "notes": []
+        },
+        {
+          "word": "avant",
+          "lower": "avant",
+          "ipa": "a.vɑ̃",
+          "source": "lexicon",
+          "confidence": "ambiguous",
+          "alternatives": [
+            "a.vɑ"
+          ],
+          "notes": [
+            "Prononciations lexicales possibles : /a.vɑ̃/, /a.vɑ/. Les variantes du lexique ne sont pas étiquetées."
+          ]
+        },
+        {
+          "word": "la",
+          "lower": "la",
+          "ipa": "la",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "nuit",
+          "lower": "nuit",
+          "ipa": "nɥi",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        }
+      ],
+      "probes": [
+        {
+          "type": "word",
+          "word": "couvent",
+          "expected": "kuvɑ̃",
+          "actual": "kuvɑ̃",
+          "pass": true
+        },
+        {
+          "type": "liaison",
+          "left": "couvent",
+          "right": "avant",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Pendant ce temps, les canes couvent leurs œufs.",
+      "words": {
+        "couvent": "kuv",
+        "œufs": "ø"
+      },
+      "focus": "Couvent verbal après sujet nominal pluriel.",
+      "output": "pɑ̃.dɑ̃ sə tɑ̃, le kan kuv lœʁ.z‿ø.",
+      "stats": {
+        "words": 8,
+        "unknown": 0,
+        "ambiguous": 1,
+        "morphological": 0,
+        "unaligned": 1
+      },
+      "tokens": [
+        {
+          "word": "Pendant",
+          "lower": "pendant",
+          "ipa": "pɑ̃.dɑ̃",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "ce",
+          "lower": "ce",
+          "ipa": "sə",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "temps",
+          "lower": "temps",
+          "ipa": "tɑ̃",
+          "source": "lexicon",
+          "confidence": "ambiguous",
+          "alternatives": [
+            "tɛɑ̃"
+          ],
+          "liaison": {
+            "phone": "z",
+            "kind": "interdite",
+            "realized": false,
+            "reason": "La ponctuation ou la frontière écrite bloque la liaison."
+          },
+          "notes": [
+            "Prononciations lexicales possibles : /tɑ̃/, /tɛɑ̃/. Les variantes du lexique ne sont pas étiquetées."
+          ]
+        },
+        {
+          "word": "les",
+          "lower": "les",
+          "ipa": "le",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "canes",
+          "lower": "canes",
+          "ipa": "kan",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "couvent",
+          "lower": "couvent",
+          "ipa": "kuv",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "contextReason": "Flexion verbale de troisième personne du pluriel reconnue par le sujet.",
+          "notes": []
+        },
+        {
+          "word": "leurs",
+          "lower": "leurs",
+          "ipa": "lœʁ.z‿",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "liaison": {
+            "phone": "z",
+            "kind": "obligatoire",
+            "realized": true,
+            "reason": "Déterminant devant son nom ou un adjectif antéposé."
+          },
+          "notes": []
+        },
+        {
+          "word": "œufs",
+          "lower": "œufs",
+          "ipa": "ø",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        }
+      ],
+      "probes": [
+        {
+          "type": "word",
+          "word": "couvent",
+          "expected": "kuv",
+          "actual": "kuv",
+          "pass": true
+        },
+        {
+          "type": "word",
+          "word": "œufs",
+          "expected": "ø",
+          "actual": "ø",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Ses fils réparent la toiture avec leur père.",
+      "words": {
+        "fils": "fis"
+      },
+      "focus": "Fils enfant identifié par le contexte familial.",
+      "output": "se fis ʁe.paʁ la twa.tyʁ a.vɛk lœʁ pɛʁ.",
+      "stats": {
+        "words": 8,
+        "unknown": 0,
+        "ambiguous": 2,
+        "morphological": 0,
+        "unaligned": 0
+      },
+      "tokens": [
+        {
+          "word": "Ses",
+          "lower": "ses",
+          "ipa": "se",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "fils",
+          "lower": "fils",
+          "ipa": "fis",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "contextReason": "Lecture « enfant masculin » retenue.",
+          "notes": []
+        },
+        {
+          "word": "réparent",
+          "lower": "réparent",
+          "ipa": "ʁe.paʁ",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "contextReason": "Flexion verbale identifiée par son sujet.",
+          "notes": []
+        },
+        {
+          "word": "la",
+          "lower": "la",
+          "ipa": "la",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "toiture",
+          "lower": "toiture",
+          "ipa": "twa.tyʁ",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "avec",
+          "lower": "avec",
+          "ipa": "a.vɛk",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "leur",
+          "lower": "leur",
+          "ipa": "lœʁ",
+          "source": "lexicon",
+          "confidence": "ambiguous",
+          "alternatives": [
+            "lœːʁ"
+          ],
+          "notes": [
+            "Prononciations lexicales possibles : /lœʁ/, /lœːʁ/. Les variantes du lexique ne sont pas étiquetées."
+          ]
+        },
+        {
+          "word": "père",
+          "lower": "père",
+          "ipa": "pɛʁ",
+          "source": "lexicon",
+          "confidence": "ambiguous",
+          "alternatives": [
+            "pɛːʁ"
+          ],
+          "notes": [
+            "Prononciations lexicales possibles : /pɛʁ/, /pɛːʁ/. Les variantes du lexique ne sont pas étiquetées."
+          ]
+        }
+      ],
+      "probes": [
+        {
+          "type": "word",
+          "word": "fils",
+          "expected": "fis",
+          "actual": "fis",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Les fils de nylon restent accrochés au mur.",
+      "words": {
+        "fils": "fil"
+      },
+      "focus": "Fils matériels avec une matière non utilisée dans les tests précédents.",
+      "output": "le fis də ni.lɔ̃ ʁɛst a.kʁɔ.ʃe o myʁ.",
+      "stats": {
+        "words": 8,
+        "unknown": 0,
+        "ambiguous": 1,
+        "morphological": 0,
+        "unaligned": 0
+      },
+      "tokens": [
+        {
+          "word": "Les",
+          "lower": "les",
+          "ipa": "le",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "fils",
+          "lower": "fils",
+          "ipa": "fis",
+          "source": "lexicon",
+          "confidence": "ambiguous",
+          "alternatives": [
+            "fil"
+          ],
+          "contextReason": "Lecture « enfant masculin » retenue.",
+          "notes": [
+            "Fils : /fis/ « enfant » ou /fil/ pluriel de fil ; le sens peut rester ambigu."
+          ]
+        },
+        {
+          "word": "de",
+          "lower": "de",
+          "ipa": "də",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "nylon",
+          "lower": "nylon",
+          "ipa": "ni.lɔ̃",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "restent",
+          "lower": "restent",
+          "ipa": "ʁɛst",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "liaison": {
+            "phone": "t",
+            "kind": "facultative",
+            "realized": false,
+            "reason": "Liaison facultative, omise dans la diction naturelle retenue."
+          },
+          "notes": [
+            "Liaison facultative non réalisée : Liaison facultative, omise dans la diction naturelle retenue.."
+          ]
+        },
+        {
+          "word": "accrochés",
+          "lower": "accrochés",
+          "ipa": "a.kʁɔ.ʃe",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "liaison": {
+            "phone": "z",
+            "kind": "interdite",
+            "realized": false,
+            "reason": "Aucun lien grammatical sûr n’autorise cette liaison."
+          },
+          "notes": []
+        },
+        {
+          "word": "au",
+          "lower": "au",
+          "ipa": "o",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "mur",
+          "lower": "mur",
+          "ipa": "myʁ",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        }
+      ],
+      "probes": [
+        {
+          "type": "word",
+          "word": "fils",
+          "expected": "fil",
+          "actual": "fis",
+          "pass": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "text": "L’as de cœur est posé près du verre.",
+      "words": {
+        "as": "ɑs",
+        "cœur": "kœʁ"
+      },
+      "focus": "As nominal avec élision.",
+      "output": "lɑs də kœʁ ɛ po.ze pʁɛ du vɛʁ.",
+      "stats": {
+        "words": 9,
+        "unknown": 0,
+        "ambiguous": 1,
+        "morphological": 0,
+        "unaligned": 1
+      },
+      "tokens": [
+        {
+          "word": "L’",
+          "lower": "l'",
+          "ipa": "l",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "as",
+          "lower": "as",
+          "ipa": "ɑs",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "contextReason": "Nom as.",
+          "notes": []
+        },
+        {
+          "word": "de",
+          "lower": "de",
+          "ipa": "də",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "cœur",
+          "lower": "cœur",
+          "ipa": "kœʁ",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "est",
+          "lower": "est",
+          "ipa": "ɛ",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "contextReason": "Forme du verbe être.",
+          "notes": []
+        },
+        {
+          "word": "posé",
+          "lower": "posé",
+          "ipa": "po.ze",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "près",
+          "lower": "près",
+          "ipa": "pʁɛ",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "du",
+          "lower": "du",
+          "ipa": "du",
+          "source": "lexicon",
+          "confidence": "ambiguous",
+          "alternatives": [
+            "dy"
+          ],
+          "notes": [
+            "Prononciations lexicales possibles : /du/, /dy/. Les variantes du lexique ne sont pas étiquetées."
+          ]
+        },
+        {
+          "word": "verre",
+          "lower": "verre",
+          "ipa": "vɛʁ",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        }
+      ],
+      "probes": [
+        {
+          "type": "word",
+          "word": "as",
+          "expected": "ɑs",
+          "actual": "ɑs",
+          "pass": true
+        },
+        {
+          "type": "word",
+          "word": "cœur",
+          "expected": "kœʁ",
+          "actual": "kœʁ",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Tu as oublié ton carnet dans l’entrée.",
+      "words": {
+        "as": "a"
+      },
+      "focus": "As verbal et élisions écrites.",
+      "output": "ty a u.bli.je tɔ̃ kaʁ.nɛ dɑ̃ lɑ̃.tʁe.",
+      "stats": {
+        "words": 8,
+        "unknown": 0,
+        "ambiguous": 0,
+        "morphological": 0,
+        "unaligned": 1
+      },
+      "tokens": [
+        {
+          "word": "Tu",
+          "lower": "tu",
+          "ipa": "ty",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "as",
+          "lower": "as",
+          "ipa": "a",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "contextReason": "Forme du verbe avoir.",
+          "liaison": {
+            "phone": "z",
+            "kind": "facultative",
+            "realized": false,
+            "reason": "Liaison facultative, omise dans la diction naturelle retenue."
+          },
+          "notes": [
+            "Liaison facultative non réalisée : Liaison facultative, omise dans la diction naturelle retenue.."
+          ]
+        },
+        {
+          "word": "oublié",
+          "lower": "oublié",
+          "ipa": "u.bli.je",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "ton",
+          "lower": "ton",
+          "ipa": "tɔ̃",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "carnet",
+          "lower": "carnet",
+          "ipa": "kaʁ.nɛ",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "dans",
+          "lower": "dans",
+          "ipa": "dɑ̃",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "l’",
+          "lower": "l'",
+          "ipa": "l",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "entrée",
+          "lower": "entrée",
+          "ipa": "ɑ̃.tʁe",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        }
+      ],
+      "probes": [
+        {
+          "type": "word",
+          "word": "as",
+          "expected": "a",
+          "actual": "a",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Tous ces voyageurs attendent encore le dernier autobus.",
+      "words": {
+        "tous": "tu"
+      },
+      "liaison": [
+        [
+          "voyageurs",
+          "attendent",
+          false
+        ],
+        [
+          "dernier",
+          "autobus",
+          true
+        ]
+      ],
+      "focus": "Tous déterminant, sujet nominal pluriel, adjectif antéposé.",
+      "output": "tu se vwa.ja.ʒœʁ a.tɑ̃d ɑ̃.kɔʁ lə dɛʁ.nje.ʁ‿o.to.bys.",
+      "stats": {
+        "words": 8,
+        "unknown": 0,
+        "ambiguous": 2,
+        "morphological": 0,
+        "unaligned": 0
+      },
+      "tokens": [
+        {
+          "word": "Tous",
+          "lower": "tous",
+          "ipa": "tu",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "contextReason": "Tous déterminant.",
+          "notes": []
+        },
+        {
+          "word": "ces",
+          "lower": "ces",
+          "ipa": "se",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "voyageurs",
+          "lower": "voyageurs",
+          "ipa": "vwa.ja.ʒœʁ",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "liaison": {
+            "phone": "z",
+            "kind": "facultative",
+            "realized": false,
+            "reason": "Liaison après un nom pluriel : non imposée."
+          },
+          "notes": [
+            "Liaison facultative non réalisée : Liaison après un nom pluriel : non imposée.."
+          ]
+        },
+        {
+          "word": "attendent",
+          "lower": "attendent",
+          "ipa": "a.tɑ̃d",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "contextReason": "Flexion verbale identifiée par son sujet.",
+          "liaison": {
+            "phone": "t",
+            "kind": "facultative",
+            "realized": false,
+            "reason": "Liaison facultative, omise dans la diction naturelle retenue."
+          },
+          "notes": [
+            "Liaison facultative non réalisée : Liaison facultative, omise dans la diction naturelle retenue.."
+          ]
+        },
+        {
+          "word": "encore",
+          "lower": "encore",
+          "ipa": "ɑ̃.kɔʁ",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "le",
+          "lower": "le",
+          "ipa": "lə",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "dernier",
+          "lower": "dernier",
+          "ipa": "dɛʁ.nje.ʁ‿",
+          "source": "lexicon",
+          "confidence": "ambiguous",
+          "alternatives": [
+            "dɛʁ.njɛʁ"
+          ],
+          "liaison": {
+            "phone": "ʁ",
+            "kind": "obligatoire",
+            "realized": true,
+            "reason": "Adjectif antéposé lié au nom."
+          },
+          "notes": [
+            "Prononciations lexicales possibles : /dɛʁ.nje/, /dɛʁ.njɛʁ/. Les variantes du lexique ne sont pas étiquetées."
+          ]
+        },
+        {
+          "word": "autobus",
+          "lower": "autobus",
+          "ipa": "o.to.bys",
+          "source": "lexicon",
+          "confidence": "ambiguous",
+          "alternatives": [
+            "o.tɔ.bys",
+            "ɔ.tɔ.bys"
+          ],
+          "notes": [
+            "Prononciations lexicales possibles : /o.to.bys/, /o.tɔ.bys/, /ɔ.tɔ.bys/. Les variantes du lexique ne sont pas étiquetées."
+          ]
+        }
+      ],
+      "probes": [
+        {
+          "type": "word",
+          "word": "tous",
+          "expected": "tu",
+          "actual": "tu",
+          "pass": true
+        },
+        {
+          "type": "liaison",
+          "left": "voyageurs",
+          "right": "attendent",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        },
+        {
+          "type": "liaison",
+          "left": "dernier",
+          "right": "autobus",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "text": "Les témoins sont tous arrivés avant midi.",
+      "words": {
+        "tous": "tus"
+      },
+      "liaison": [
+        [
+          "tous",
+          "arrivés",
+          false
+        ]
+      ],
+      "focus": "Tous pronom conserve /s/.",
+      "output": "le te.mwɛ̃ sɔ̃ tus a.ʁi.ve a.vɑ̃ mi.di.",
+      "stats": {
+        "words": 7,
+        "unknown": 0,
+        "ambiguous": 1,
+        "morphological": 0,
+        "unaligned": 0
+      },
+      "tokens": [
+        {
+          "word": "Les",
+          "lower": "les",
+          "ipa": "le",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "témoins",
+          "lower": "témoins",
+          "ipa": "te.mwɛ̃",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "sont",
+          "lower": "sont",
+          "ipa": "sɔ̃",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "tous",
+          "lower": "tous",
+          "ipa": "tus",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "contextReason": "Tous pronom : s final prononcé.",
+          "liaison": {
+            "phone": "z",
+            "kind": "interdite",
+            "realized": false,
+            "reason": "Tous pronom conserve /s/ ; il ne reçoit pas de liaison en /z/."
+          },
+          "notes": []
+        },
+        {
+          "word": "arrivés",
+          "lower": "arrivés",
+          "ipa": "a.ʁi.ve",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "liaison": {
+            "phone": "z",
+            "kind": "interdite",
+            "realized": false,
+            "reason": "Aucun lien grammatical sûr n’autorise cette liaison."
+          },
+          "notes": []
+        },
+        {
+          "word": "avant",
+          "lower": "avant",
+          "ipa": "a.vɑ̃",
+          "source": "lexicon",
+          "confidence": "ambiguous",
+          "alternatives": [
+            "a.vɑ"
+          ],
+          "notes": [
+            "Prononciations lexicales possibles : /a.vɑ̃/, /a.vɑ/. Les variantes du lexique ne sont pas étiquetées."
+          ]
+        },
+        {
+          "word": "midi",
+          "lower": "midi",
+          "ipa": "mi.di",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        }
+      ],
+      "probes": [
+        {
+          "type": "word",
+          "word": "tous",
+          "expected": "tus",
+          "actual": "tus",
+          "pass": true
+        },
+        {
+          "type": "liaison",
+          "left": "tous",
+          "right": "arrivés",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "text": "Elle ne réclame plus aucun remboursement.",
+      "words": {
+        "plus": "ply"
+      },
+      "liaison": [
+        [
+          "plus",
+          "aucun",
+          false
+        ]
+      ],
+      "focus": "Plus négatif, liaison facultative omise.",
+      "output": "ɛl nə ʁe.klam ply o.kœ̃ ʁɑ̃.buʁ.sə.mɑ̃.",
+      "stats": {
+        "words": 6,
+        "unknown": 0,
+        "ambiguous": 0,
+        "morphological": 0,
+        "unaligned": 0
+      },
+      "tokens": [
+        {
+          "word": "Elle",
+          "lower": "elle",
+          "ipa": "ɛl",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "ne",
+          "lower": "ne",
+          "ipa": "nə",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "réclame",
+          "lower": "réclame",
+          "ipa": "ʁe.klam",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "contextReason": "Flexion verbale identifiée par son sujet.",
+          "notes": []
+        },
+        {
+          "word": "plus",
+          "lower": "plus",
+          "ipa": "ply",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "contextReason": "Plus négatif.",
+          "liaison": {
+            "phone": "z",
+            "kind": "facultative",
+            "realized": false,
+            "reason": "Liaison facultative après plus négatif, omise dans la diction retenue."
+          },
+          "notes": [
+            "Liaison facultative non réalisée : Liaison facultative après plus négatif, omise dans la diction retenue.."
+          ]
+        },
+        {
+          "word": "aucun",
+          "lower": "aucun",
+          "ipa": "o.kœ̃",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "remboursement",
+          "lower": "remboursement",
+          "ipa": "ʁɑ̃.buʁ.sə.mɑ̃",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        }
+      ],
+      "probes": [
+        {
+          "type": "word",
+          "word": "plus",
+          "expected": "ply",
+          "actual": "ply",
+          "pass": true
+        },
+        {
+          "type": "liaison",
+          "left": "plus",
+          "right": "aucun",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "text": "Cette solution paraît plus efficace que la précédente.",
+      "words": {
+        "plus": "ply"
+      },
+      "liaison": [
+        [
+          "plus",
+          "efficace",
+          true
+        ]
+      ],
+      "focus": "Plus comparatif devant adjectif vocalique ; cessation sans ne resterait sémantiquement possible.",
+      "output": "sɛt sɔ.ly.sjɔ̃ pa.ʁɛ ply.z‿e.fi.kas kə la pʁe.se.dɑ̃t.",
+      "stats": {
+        "words": 8,
+        "unknown": 0,
+        "ambiguous": 3,
+        "morphological": 0,
+        "unaligned": 0
+      },
+      "tokens": [
+        {
+          "word": "Cette",
+          "lower": "cette",
+          "ipa": "sɛt",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "solution",
+          "lower": "solution",
+          "ipa": "sɔ.ly.sjɔ̃",
+          "source": "lexicon",
+          "confidence": "ambiguous",
+          "alternatives": [
+            "so.ly.sjɔ̃"
+          ],
+          "notes": [
+            "Prononciations lexicales possibles : /sɔ.ly.sjɔ̃/, /so.ly.sjɔ̃/. Les variantes du lexique ne sont pas étiquetées."
+          ]
+        },
+        {
+          "word": "paraît",
+          "lower": "paraît",
+          "ipa": "pa.ʁɛ",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "plus",
+          "lower": "plus",
+          "ipa": "ply.z‿",
+          "source": "reviewed",
+          "confidence": "ambiguous",
+          "alternatives": [],
+          "contextReason": "Plus comparatif devant un adjectif ou adverbe.",
+          "liaison": {
+            "phone": "z",
+            "kind": "obligatoire",
+            "realized": true,
+            "reason": "Plus comparatif se lie à l’adjectif ou à l’adverbe."
+          },
+          "notes": [
+            "Sans négation écrite, plus peut aussi exprimer la cessation ; l’hypothèse comparative est retenue."
+          ]
+        },
+        {
+          "word": "efficace",
+          "lower": "efficace",
+          "ipa": "e.fi.kas",
+          "source": "lexicon",
+          "confidence": "ambiguous",
+          "alternatives": [
+            "ɛ.fi.kas"
+          ],
+          "notes": [
+            "Prononciations lexicales possibles : /e.fi.kas/, /ɛ.fi.kas/. Les variantes du lexique ne sont pas étiquetées."
+          ]
+        },
+        {
+          "word": "que",
+          "lower": "que",
+          "ipa": "kə",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "la",
+          "lower": "la",
+          "ipa": "la",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "précédente",
+          "lower": "précédente",
+          "ipa": "pʁe.se.dɑ̃t",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        }
+      ],
+      "probes": [
+        {
+          "type": "word",
+          "word": "plus",
+          "expected": "ply",
+          "actual": "ply",
+          "pass": true
+        },
+        {
+          "type": "liaison",
+          "left": "plus",
+          "right": "efficace",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "text": "Pour progresser, il faudrait travailler plus.",
+      "words": {
+        "plus": "plys"
+      },
+      "focus": "Plus augmentatif final.",
+      "output": "puʁ pʁɔ.ɡʁe.se, il fo.dʁɛ tʁa.va.je plys.",
+      "stats": {
+        "words": 6,
+        "unknown": 0,
+        "ambiguous": 2,
+        "morphological": 0,
+        "unaligned": 0
+      },
+      "tokens": [
+        {
+          "word": "Pour",
+          "lower": "pour",
+          "ipa": "puʁ",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "progresser",
+          "lower": "progresser",
+          "ipa": "pʁɔ.ɡʁe.se",
+          "source": "lexicon",
+          "confidence": "ambiguous",
+          "alternatives": [
+            "pʁɔ.ɡʁɛ.se"
+          ],
+          "notes": [
+            "Prononciations lexicales possibles : /pʁɔ.ɡʁe.se/, /pʁɔ.ɡʁɛ.se/. Les variantes du lexique ne sont pas étiquetées."
+          ]
+        },
+        {
+          "word": "il",
+          "lower": "il",
+          "ipa": "il",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "faudrait",
+          "lower": "faudrait",
+          "ipa": "fo.dʁɛ",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "travailler",
+          "lower": "travailler",
+          "ipa": "tʁa.va.je",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "plus",
+          "lower": "plus",
+          "ipa": "plys",
+          "source": "reviewed",
+          "confidence": "ambiguous",
+          "alternatives": [
+            "ply"
+          ],
+          "contextReason": "Plus au sens de davantage ou du signe arithmétique.",
+          "notes": [
+            "Plus : /plys/ « davantage » et /ply/ négatif peuvent dépendre du sens."
+          ]
+        }
+      ],
+      "probes": [
+        {
+          "type": "word",
+          "word": "plus",
+          "expected": "plys",
+          "actual": "plys",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "text": "Ces experts président chaque réunion avec soin.",
+      "words": {
+        "président": "pʁezid"
+      },
+      "focus": "Président verbal après sujet nominal pluriel.",
+      "output": "se.z‿ɛks.pɛʁ pʁe.zid ʃak ʁe.y.njɔ̃ a.vɛk swɛ̃.",
+      "stats": {
+        "words": 7,
+        "unknown": 0,
+        "ambiguous": 0,
+        "morphological": 0,
+        "unaligned": 1
+      },
+      "tokens": [
+        {
+          "word": "Ces",
+          "lower": "ces",
+          "ipa": "se.z‿",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "liaison": {
+            "phone": "z",
+            "kind": "obligatoire",
+            "realized": true,
+            "reason": "Déterminant devant son nom ou un adjectif antéposé."
+          },
+          "notes": []
+        },
+        {
+          "word": "experts",
+          "lower": "experts",
+          "ipa": "ɛks.pɛʁ",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "président",
+          "lower": "président",
+          "ipa": "pʁe.zid",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "contextReason": "Flexion verbale de troisième personne du pluriel reconnue par le sujet.",
+          "notes": []
+        },
+        {
+          "word": "chaque",
+          "lower": "chaque",
+          "ipa": "ʃak",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "réunion",
+          "lower": "réunion",
+          "ipa": "ʁe.y.njɔ̃",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "avec",
+          "lower": "avec",
+          "ipa": "a.vɛk",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "soin",
+          "lower": "soin",
+          "ipa": "swɛ̃",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        }
+      ],
+      "probes": [
+        {
+          "type": "word",
+          "word": "président",
+          "expected": "pʁezid",
+          "actual": "pʁezid",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "text": "Le président reçoit un résident étranger.",
+      "words": {
+        "président": "pʁezidɑ̃",
+        "résident": "ʁezidɑ̃"
+      },
+      "liaison": [
+        [
+          "résident",
+          "étranger",
+          false
+        ]
+      ],
+      "focus": "Deux homographes en lecture nominale.",
+      "output": "lə pʁe.zi.dɑ̃ ʁə.swa œ̃ ʁe.zi.dɑ̃ e.tʁɑ̃.ʒe.",
+      "stats": {
+        "words": 6,
+        "unknown": 0,
+        "ambiguous": 0,
+        "morphological": 0,
+        "unaligned": 0
+      },
+      "tokens": [
+        {
+          "word": "Le",
+          "lower": "le",
+          "ipa": "lə",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "président",
+          "lower": "président",
+          "ipa": "pʁe.zi.dɑ̃",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "contextReason": "Emploi nominal ou adjectival identifié dans le contexte local.",
+          "notes": []
+        },
+        {
+          "word": "reçoit",
+          "lower": "reçoit",
+          "ipa": "ʁə.swa",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "liaison": {
+            "phone": "t",
+            "kind": "interdite",
+            "realized": false,
+            "reason": "Aucun lien grammatical sûr n’autorise cette liaison."
+          },
+          "notes": []
+        },
+        {
+          "word": "un",
+          "lower": "un",
+          "ipa": "œ̃",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "résident",
+          "lower": "résident",
+          "ipa": "ʁe.zi.dɑ̃",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "contextReason": "Emploi nominal ou adjectival identifié dans le contexte local.",
+          "liaison": {
+            "phone": "t",
+            "kind": "interdite",
+            "realized": false,
+            "reason": "Aucun lien grammatical sûr n’autorise cette liaison."
+          },
+          "notes": []
+        },
+        {
+          "word": "étranger",
+          "lower": "étranger",
+          "ipa": "e.tʁɑ̃.ʒe",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        }
+      ],
+      "probes": [
+        {
+          "type": "word",
+          "word": "président",
+          "expected": "pʁezidɑ̃",
+          "actual": "pʁezidɑ̃",
+          "pass": true
+        },
+        {
+          "type": "word",
+          "word": "résident",
+          "expected": "ʁezidɑ̃",
+          "actual": "ʁezidɑ̃",
+          "pass": true
+        },
+        {
+          "type": "liaison",
+          "left": "résident",
+          "right": "étranger",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "text": "Les résultats divergent nettement de nos estimations.",
+      "words": {
+        "divergent": "divɛʁʒ"
+      },
+      "liaison": [
+        [
+          "nos",
+          "estimations",
+          true
+        ]
+      ],
+      "focus": "Divergent verbal, terminaison nominale distincte.",
+      "output": "le ʁe.zyl.ta di.vɛʁʒ nɛt.mɑ̃ də no.z‿ɛs.ti.ma.sjɔ̃.",
+      "stats": {
+        "words": 7,
+        "unknown": 0,
+        "ambiguous": 2,
+        "morphological": 0,
+        "unaligned": 2
+      },
+      "tokens": [
+        {
+          "word": "Les",
+          "lower": "les",
+          "ipa": "le",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "résultats",
+          "lower": "résultats",
+          "ipa": "ʁe.zyl.ta",
+          "source": "lexicon",
+          "confidence": "ambiguous",
+          "alternatives": [
+            "ʁe.syl.ta"
+          ],
+          "notes": [
+            "Prononciations lexicales possibles : /ʁe.zyl.ta/, /ʁe.syl.ta/. Les variantes du lexique ne sont pas étiquetées."
+          ]
+        },
+        {
+          "word": "divergent",
+          "lower": "divergent",
+          "ipa": "di.vɛʁʒ",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "contextReason": "Flexion verbale de troisième personne du pluriel reconnue par le sujet.",
+          "notes": []
+        },
+        {
+          "word": "nettement",
+          "lower": "nettement",
+          "ipa": "nɛt.mɑ̃",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "de",
+          "lower": "de",
+          "ipa": "də",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "nos",
+          "lower": "nos",
+          "ipa": "no.z‿",
+          "source": "lexicon",
+          "confidence": "ambiguous",
+          "alternatives": [
+            "nɔ"
+          ],
+          "liaison": {
+            "phone": "z",
+            "kind": "obligatoire",
+            "realized": true,
+            "reason": "Déterminant devant son nom ou un adjectif antéposé."
+          },
+          "notes": [
+            "Prononciations lexicales possibles : /no/, /nɔ/. Les variantes du lexique ne sont pas étiquetées."
+          ]
+        },
+        {
+          "word": "estimations",
+          "lower": "estimations",
+          "ipa": "ɛs.ti.ma.sjɔ̃",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        }
+      ],
+      "probes": [
+        {
+          "type": "word",
+          "word": "divergent",
+          "expected": "divɛʁʒ",
+          "actual": "divɛʁʒ",
+          "pass": true
+        },
+        {
+          "type": "liaison",
+          "left": "nos",
+          "right": "estimations",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "text": "Ce chemin divergent conduit vers une ancienne usine.",
+      "words": {
+        "divergent": "divɛʁʒɑ̃"
+      },
+      "liaison": [
+        [
+          "vers",
+          "une",
+          false
+        ]
+      ],
+      "focus": "Divergent adjectival et préposition qui ne se lie pas.",
+      "output": "sə ʃə.mɛ̃ di.vɛʁ.ʒɑ̃ kɔ̃.dɥi vɛʁ œn ɑ̃.sjɛn y.zin.",
+      "stats": {
+        "words": 8,
+        "unknown": 0,
+        "ambiguous": 3,
+        "morphological": 0,
+        "unaligned": 0
+      },
+      "tokens": [
+        {
+          "word": "Ce",
+          "lower": "ce",
+          "ipa": "sə",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "chemin",
+          "lower": "chemin",
+          "ipa": "ʃə.mɛ̃",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "divergent",
+          "lower": "divergent",
+          "ipa": "di.vɛʁ.ʒɑ̃",
+          "source": "lexicon",
+          "confidence": "ambiguous",
+          "alternatives": [
+            "divɛʁʒ"
+          ],
+          "contextReason": "Lecture nominale ou adjectivale retenue par défaut.",
+          "notes": [
+            "Prononciations lexicales possibles : /di.vɛʁʒɑ̃/, /di.vɛʁʒ/. Les variantes du lexique ne sont pas étiquetées.",
+            "Homographe : la lecture verbale et la lecture nominale/adjectivale exigent une analyse syntaxique ou sémantique."
+          ]
+        },
+        {
+          "word": "conduit",
+          "lower": "conduit",
+          "ipa": "kɔ̃.dɥi",
+          "source": "lexicon",
+          "confidence": "ambiguous",
+          "alternatives": [
+            "kɔ̃.dyi"
+          ],
+          "notes": [
+            "Prononciations lexicales possibles : /kɔ̃.dɥi/, /kɔ̃.dyi/. Les variantes du lexique ne sont pas étiquetées."
+          ]
+        },
+        {
+          "word": "vers",
+          "lower": "vers",
+          "ipa": "vɛʁ",
+          "source": "lexicon",
+          "confidence": "ambiguous",
+          "alternatives": [
+            "vɛːʁ"
+          ],
+          "liaison": {
+            "phone": "z",
+            "kind": "interdite",
+            "realized": false,
+            "reason": "Ce mot n’autorise pas de liaison dans cet emploi."
+          },
+          "notes": [
+            "Prononciations lexicales possibles : /vɛʁ/, /vɛːʁ/. Les variantes du lexique ne sont pas étiquetées."
+          ]
+        },
+        {
+          "word": "une",
+          "lower": "une",
+          "ipa": "œn",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "ancienne",
+          "lower": "ancienne",
+          "ipa": "ɑ̃.sjɛn",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "usine",
+          "lower": "usine",
+          "ipa": "y.zin",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        }
+      ],
+      "probes": [
+        {
+          "type": "word",
+          "word": "divergent",
+          "expected": "divɛʁʒɑ̃",
+          "actual": "divɛʁʒɑ̃",
+          "pass": true
+        },
+        {
+          "type": "liaison",
+          "left": "vers",
+          "right": "une",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "text": "Des documents importants occupent toutes les étagères.",
+      "words": {
+        "occupent": "ɔkyp"
+      },
+      "liaison": [
+        [
+          "documents",
+          "importants",
+          false
+        ],
+        [
+          "importants",
+          "occupent",
+          false
+        ],
+        [
+          "les",
+          "étagères",
+          true
+        ]
+      ],
+      "focus": "Adjectif postposé, frontière de sujet, terminaison verbale en -ent.",
+      "output": "de dɔ.ku.mɑ̃ ɛ̃.pɔʁ.tɑ̃ o.kyp tut le.z‿e.ta.ʒɛʁ.",
+      "stats": {
+        "words": 7,
+        "unknown": 0,
+        "ambiguous": 1,
+        "morphological": 0,
+        "unaligned": 2
+      },
+      "tokens": [
+        {
+          "word": "Des",
+          "lower": "des",
+          "ipa": "de",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "documents",
+          "lower": "documents",
+          "ipa": "dɔ.ku.mɑ̃",
+          "source": "lexicon",
+          "confidence": "ambiguous",
+          "alternatives": [
+            "dɔ.ky.mɑ̃",
+            "do.ky.mɑ̃"
+          ],
+          "liaison": {
+            "phone": "z",
+            "kind": "facultative",
+            "realized": false,
+            "reason": "Liaison après un nom pluriel : non imposée."
+          },
+          "notes": [
+            "Prononciations lexicales possibles : /dɔ.ku.mɑ̃/, /dɔ.ky.mɑ̃/, /do.ky.mɑ̃/. Les variantes du lexique ne sont pas étiquetées.",
+            "Liaison facultative non réalisée : Liaison après un nom pluriel : non imposée.."
+          ]
+        },
+        {
+          "word": "importants",
+          "lower": "importants",
+          "ipa": "ɛ̃.pɔʁ.tɑ̃",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "liaison": {
+            "phone": "z",
+            "kind": "interdite",
+            "realized": false,
+            "reason": "Aucun lien grammatical sûr n’autorise cette liaison."
+          },
+          "notes": []
+        },
+        {
+          "word": "occupent",
+          "lower": "occupent",
+          "ipa": "o.kyp",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "toutes",
+          "lower": "toutes",
+          "ipa": "tut",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "les",
+          "lower": "les",
+          "ipa": "le.z‿",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "liaison": {
+            "phone": "z",
+            "kind": "obligatoire",
+            "realized": true,
+            "reason": "Déterminant devant son nom ou un adjectif antéposé."
+          },
+          "notes": []
+        },
+        {
+          "word": "étagères",
+          "lower": "étagères",
+          "ipa": "e.ta.ʒɛʁ",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        }
+      ],
+      "probes": [
+        {
+          "type": "word",
+          "word": "occupent",
+          "expected": "ɔkyp",
+          "actual": "okyp",
+          "pass": false
+        },
+        {
+          "type": "liaison",
+          "left": "documents",
+          "right": "importants",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        },
+        {
+          "type": "liaison",
+          "left": "importants",
+          "right": "occupent",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        },
+        {
+          "type": "liaison",
+          "left": "les",
+          "right": "étagères",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "text": "Une importante équipe examine le dossier.",
+      "words": {
+        "importante": "ɛ̃pɔʁtɑ̃t"
+      },
+      "focus": "Consonne finale féminine prononcée, sans duplication de liaison.",
+      "output": "œn ɛ̃.pɔʁ.tɑ̃t e.kip ɛɡ.za.min lə dɔ.sje.",
+      "stats": {
+        "words": 6,
+        "unknown": 0,
+        "ambiguous": 1,
+        "morphological": 0,
+        "unaligned": 0
+      },
+      "tokens": [
+        {
+          "word": "Une",
+          "lower": "une",
+          "ipa": "œn",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "importante",
+          "lower": "importante",
+          "ipa": "ɛ̃.pɔʁ.tɑ̃t",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "équipe",
+          "lower": "équipe",
+          "ipa": "e.kip",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "examine",
+          "lower": "examine",
+          "ipa": "ɛɡ.za.min",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "le",
+          "lower": "le",
+          "ipa": "lə",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "dossier",
+          "lower": "dossier",
+          "ipa": "dɔ.sje",
+          "source": "lexicon",
+          "confidence": "ambiguous",
+          "alternatives": [
+            "do.sje"
+          ],
+          "notes": [
+            "Prononciations lexicales possibles : /dɔ.sje/, /do.sje/. Les variantes du lexique ne sont pas étiquetées."
+          ]
+        }
+      ],
+      "probes": [
+        {
+          "type": "word",
+          "word": "importante",
+          "expected": "ɛ̃pɔʁtɑ̃t",
+          "actual": "ɛ̃pɔʁtɑ̃t",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "text": "Nous imaginons une autre manière de procéder.",
+      "liaison": [
+        [
+          "nous",
+          "imaginons",
+          true
+        ]
+      ],
+      "focus": "Sujet pronominal et verbe non limité à la petite liste des auxiliaires.",
+      "output": "nu.z‿i.ma.ʒi.nɔ̃ œn otʁ ma.njɛʁ də pʁɔ.se.de.",
+      "stats": {
+        "words": 7,
+        "unknown": 0,
+        "ambiguous": 2,
+        "morphological": 0,
+        "unaligned": 0
+      },
+      "tokens": [
+        {
+          "word": "Nous",
+          "lower": "nous",
+          "ipa": "nu.z‿",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "liaison": {
+            "phone": "z",
+            "kind": "obligatoire",
+            "realized": true,
+            "reason": "Pronom conjoint devant son verbe ou un autre clitique."
+          },
+          "notes": []
+        },
+        {
+          "word": "imaginons",
+          "lower": "imaginons",
+          "ipa": "i.ma.ʒi.nɔ̃",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "contextReason": "Flexion verbale identifiée par son sujet.",
+          "liaison": {
+            "phone": "z",
+            "kind": "facultative",
+            "realized": false,
+            "reason": "Liaison facultative, omise dans la diction naturelle retenue."
+          },
+          "notes": [
+            "Liaison facultative non réalisée : Liaison facultative, omise dans la diction naturelle retenue.."
+          ]
+        },
+        {
+          "word": "une",
+          "lower": "une",
+          "ipa": "œn",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "autre",
+          "lower": "autre",
+          "ipa": "otʁ",
+          "source": "lexicon",
+          "confidence": "ambiguous",
+          "alternatives": [
+            "oːtʁ",
+            "ɔtʁ"
+          ],
+          "notes": [
+            "Prononciations lexicales possibles : /otʁ/, /oːtʁ/, /ɔtʁ/. Les variantes du lexique ne sont pas étiquetées."
+          ]
+        },
+        {
+          "word": "manière",
+          "lower": "manière",
+          "ipa": "ma.njɛʁ",
+          "source": "lexicon",
+          "confidence": "ambiguous",
+          "alternatives": [
+            "ma.njeːʁ"
+          ],
+          "notes": [
+            "Prononciations lexicales possibles : /ma.njɛʁ/, /ma.njeːʁ/. Les variantes du lexique ne sont pas étiquetées."
+          ]
+        },
+        {
+          "word": "de",
+          "lower": "de",
+          "ipa": "də",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "procéder",
+          "lower": "procéder",
+          "ipa": "pʁɔ.se.de",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        }
+      ],
+      "probes": [
+        {
+          "type": "liaison",
+          "left": "nous",
+          "right": "imaginons",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "text": "Parmi nous, Antoine attend son amie.",
+      "words": {
+        "antoine": "ɑ̃twan"
+      },
+      "liaison": [
+        [
+          "nous",
+          "antoine",
+          false
+        ],
+        [
+          "son",
+          "amie",
+          true
+        ]
+      ],
+      "focus": "Ponctuation, nom propre connu, possessif.",
+      "output": "paʁ.mi nu, ɑ̃.twan a.tɑ̃ sɔ̃.n‿a.mi.",
+      "stats": {
+        "words": 6,
+        "unknown": 0,
+        "ambiguous": 1,
+        "morphological": 0,
+        "unaligned": 1
+      },
+      "tokens": [
+        {
+          "word": "Parmi",
+          "lower": "parmi",
+          "ipa": "paʁ.mi",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "nous",
+          "lower": "nous",
+          "ipa": "nu",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "liaison": {
+            "phone": "z",
+            "kind": "interdite",
+            "realized": false,
+            "reason": "La ponctuation ou la frontière écrite bloque la liaison."
+          },
+          "notes": []
+        },
+        {
+          "word": "Antoine",
+          "lower": "antoine",
+          "ipa": "ɑ̃.twan",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "attend",
+          "lower": "attend",
+          "ipa": "a.tɑ̃",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "son",
+          "lower": "son",
+          "ipa": "sɔ̃.n‿",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "liaison": {
+            "phone": "n",
+            "kind": "obligatoire",
+            "realized": true,
+            "reason": "Déterminant devant son nom ou un adjectif antéposé."
+          },
+          "notes": []
+        },
+        {
+          "word": "amie",
+          "lower": "amie",
+          "ipa": "a.mi",
+          "source": "lexicon",
+          "confidence": "ambiguous",
+          "alternatives": [
+            "a.miː",
+            "ɑ.mi"
+          ],
+          "notes": [
+            "Prononciations lexicales possibles : /a.mi/, /a.miː/, /ɑ.mi/. Les variantes du lexique ne sont pas étiquetées."
+          ]
+        }
+      ],
+      "probes": [
+        {
+          "type": "word",
+          "word": "antoine",
+          "expected": "ɑ̃twan",
+          "actual": "ɑ̃twan",
+          "pass": true
+        },
+        {
+          "type": "liaison",
+          "left": "nous",
+          "right": "antoine",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        },
+        {
+          "type": "liaison",
+          "left": "son",
+          "right": "amie",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "text": "Le grand écrivain a rencontré un jeune historien.",
+      "words": {
+        "écrivain": "ekʁivɛ̃"
+      },
+      "liaison": [
+        [
+          "grand",
+          "écrivain",
+          true
+        ],
+        [
+          "écrivain",
+          "a",
+          false
+        ]
+      ],
+      "focus": "Adjectif antéposé, nom singulier à nasale, h muet.",
+      "output": "lə ɡʁɑ̃.t‿e.kʁi.vɛ̃ a ʁɑ̃.kɔ̃.tʁe œ̃ ʒœn is.tɔ.ʁjɛ̃.",
+      "stats": {
+        "words": 8,
+        "unknown": 0,
+        "ambiguous": 0,
+        "morphological": 0,
+        "unaligned": 0
+      },
+      "tokens": [
+        {
+          "word": "Le",
+          "lower": "le",
+          "ipa": "lə",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "grand",
+          "lower": "grand",
+          "ipa": "ɡʁɑ̃.t‿",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "liaison": {
+            "phone": "t",
+            "kind": "obligatoire",
+            "realized": true,
+            "reason": "Adjectif antéposé lié au nom."
+          },
+          "notes": []
+        },
+        {
+          "word": "écrivain",
+          "lower": "écrivain",
+          "ipa": "e.kʁi.vɛ̃",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "a",
+          "lower": "a",
+          "ipa": "a",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "rencontré",
+          "lower": "rencontré",
+          "ipa": "ʁɑ̃.kɔ̃.tʁe",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "un",
+          "lower": "un",
+          "ipa": "œ̃",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "jeune",
+          "lower": "jeune",
+          "ipa": "ʒœn",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "historien",
+          "lower": "historien",
+          "ipa": "is.tɔ.ʁjɛ̃",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        }
+      ],
+      "probes": [
+        {
+          "type": "word",
+          "word": "écrivain",
+          "expected": "ekʁivɛ̃",
+          "actual": "ekʁivɛ̃",
+          "pass": true
+        },
+        {
+          "type": "liaison",
+          "left": "grand",
+          "right": "écrivain",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "type": "liaison",
+          "left": "écrivain",
+          "right": "a",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "text": "Un savant allemand décrit un appareil étrange.",
+      "words": {
+        "savant": "savɑ̃"
+      },
+      "liaison": [
+        [
+          "savant",
+          "allemand",
+          false
+        ],
+        [
+          "appareil",
+          "étrange",
+          false
+        ]
+      ],
+      "focus": "Lecture nominale de savant retenue avec ambiguïté indiquée ; pas de liaison automatique.",
+      "output": "œ̃ sa.vɑ̃ al.mɑ̃ de.kʁi œ̃.n‿a.pa.ʁɛj e.tʁɑ̃ʒ.",
+      "stats": {
+        "words": 7,
+        "unknown": 0,
+        "ambiguous": 1,
+        "morphological": 0,
+        "unaligned": 1
+      },
+      "tokens": [
+        {
+          "word": "Un",
+          "lower": "un",
+          "ipa": "œ̃",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "savant",
+          "lower": "savant",
+          "ipa": "sa.vɑ̃",
+          "source": "lexicon",
+          "confidence": "ambiguous",
+          "alternatives": [],
+          "liaison": {
+            "phone": "t",
+            "kind": "facultative",
+            "realized": false,
+            "reason": "La lecture adjectivale ou nominale change la possibilité de liaison ; aucune n’est imposée.",
+            "ambiguousGrammar": true
+          },
+          "notes": [
+            "Une lecture adjectivale antéposée autoriserait la liaison ; une lecture nominale peut l’interdire.",
+            "Liaison facultative non réalisée : La lecture adjectivale ou nominale change la possibilité de liaison ; aucune n’est imposée.."
+          ]
+        },
+        {
+          "word": "allemand",
+          "lower": "allemand",
+          "ipa": "al.mɑ̃",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "décrit",
+          "lower": "décrit",
+          "ipa": "de.kʁi",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "liaison": {
+            "phone": "t",
+            "kind": "interdite",
+            "realized": false,
+            "reason": "Aucun lien grammatical sûr n’autorise cette liaison."
+          },
+          "notes": []
+        },
+        {
+          "word": "un",
+          "lower": "un",
+          "ipa": "œ̃.n‿",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "liaison": {
+            "phone": "n",
+            "kind": "obligatoire",
+            "realized": true,
+            "reason": "Déterminant devant son nom ou un adjectif antéposé."
+          },
+          "notes": []
+        },
+        {
+          "word": "appareil",
+          "lower": "appareil",
+          "ipa": "a.pa.ʁɛj",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "étrange",
+          "lower": "étrange",
+          "ipa": "e.tʁɑ̃ʒ",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        }
+      ],
+      "probes": [
+        {
+          "type": "word",
+          "word": "savant",
+          "expected": "savɑ̃",
+          "actual": "savɑ̃",
+          "pass": true
+        },
+        {
+          "type": "liaison",
+          "left": "savant",
+          "right": "allemand",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        },
+        {
+          "type": "liaison",
+          "left": "appareil",
+          "right": "étrange",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "text": "Paris accueille aujourd’hui plusieurs artistes espagnols.",
+      "words": {
+        "paris": "paʁi"
+      },
+      "liaison": [
+        [
+          "paris",
+          "accueille",
+          false
+        ],
+        [
+          "plusieurs",
+          "artistes",
+          true
+        ],
+        [
+          "artistes",
+          "espagnols",
+          false
+        ]
+      ],
+      "focus": "Nom propre, mot à apostrophe lexicale, déterminant pluriel et nom pluriel.",
+      "output": "pa.ʁi a.kœj o.ʒuʁ.dɥi ply.zjœʁ.z‿aʁ.tist ɛs.pa.ɲɔl.",
+      "stats": {
+        "words": 6,
+        "unknown": 0,
+        "ambiguous": 0,
+        "morphological": 0,
+        "unaligned": 1
+      },
+      "tokens": [
+        {
+          "word": "Paris",
+          "lower": "paris",
+          "ipa": "pa.ʁi",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "liaison": {
+            "phone": "z",
+            "kind": "interdite",
+            "realized": false,
+            "reason": "Aucun lien grammatical sûr n’autorise cette liaison."
+          },
+          "notes": []
+        },
+        {
+          "word": "accueille",
+          "lower": "accueille",
+          "ipa": "a.kœj",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "aujourd’hui",
+          "lower": "aujourd'hui",
+          "ipa": "o.ʒuʁ.dɥi",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "plusieurs",
+          "lower": "plusieurs",
+          "ipa": "ply.zjœʁ.z‿",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "liaison": {
+            "phone": "z",
+            "kind": "obligatoire",
+            "realized": true,
+            "reason": "Déterminant devant son nom ou un adjectif antéposé."
+          },
+          "notes": []
+        },
+        {
+          "word": "artistes",
+          "lower": "artistes",
+          "ipa": "aʁ.tist",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "liaison": {
+            "phone": "z",
+            "kind": "facultative",
+            "realized": false,
+            "reason": "Liaison après un nom pluriel : non imposée."
+          },
+          "notes": [
+            "Liaison facultative non réalisée : Liaison après un nom pluriel : non imposée.."
+          ]
+        },
+        {
+          "word": "espagnols",
+          "lower": "espagnols",
+          "ipa": "ɛs.pa.ɲɔl",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        }
+      ],
+      "probes": [
+        {
+          "type": "word",
+          "word": "paris",
+          "expected": "paʁi",
+          "actual": "paʁi",
+          "pass": true
+        },
+        {
+          "type": "liaison",
+          "left": "paris",
+          "right": "accueille",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        },
+        {
+          "type": "liaison",
+          "left": "plusieurs",
+          "right": "artistes",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "type": "liaison",
+          "left": "artistes",
+          "right": "espagnols",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "text": "Je me demande si le petit cheval reviendra demain.",
+      "words": {
+        "je": "ʒə",
+        "me": "mə",
+        "petit": "pəti",
+        "cheval": "ʃəval",
+        "demain": "dəmɛ̃"
+      },
+      "focus": "Lecture soignée avec schwas conservés et mot fléchi courant.",
+      "output": "ʒə mə də.mɑ̃d si lə pə.ti ʃe.val ʁə.vjɛ̃.dʁa də.mɛ̃.",
+      "stats": {
+        "words": 9,
+        "unknown": 0,
+        "ambiguous": 1,
+        "morphological": 0,
+        "unaligned": 0
+      },
+      "tokens": [
+        {
+          "word": "Je",
+          "lower": "je",
+          "ipa": "ʒə",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "me",
+          "lower": "me",
+          "ipa": "mə",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "demande",
+          "lower": "demande",
+          "ipa": "də.mɑ̃d",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "contextReason": "Flexion verbale identifiée par son sujet.",
+          "notes": []
+        },
+        {
+          "word": "si",
+          "lower": "si",
+          "ipa": "si",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "le",
+          "lower": "le",
+          "ipa": "lə",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "petit",
+          "lower": "petit",
+          "ipa": "pə.ti",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "cheval",
+          "lower": "cheval",
+          "ipa": "ʃe.val",
+          "source": "lexicon",
+          "confidence": "ambiguous",
+          "alternatives": [
+            "ʃə.val"
+          ],
+          "notes": [
+            "Prononciations lexicales possibles : /ʃe.val/, /ʃə.val/. Les variantes du lexique ne sont pas étiquetées."
+          ]
+        },
+        {
+          "word": "reviendra",
+          "lower": "reviendra",
+          "ipa": "ʁə.vjɛ̃.dʁa",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "demain",
+          "lower": "demain",
+          "ipa": "də.mɛ̃",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        }
+      ],
+      "probes": [
+        {
+          "type": "word",
+          "word": "je",
+          "expected": "ʒə",
+          "actual": "ʒə",
+          "pass": true
+        },
+        {
+          "type": "word",
+          "word": "me",
+          "expected": "mə",
+          "actual": "mə",
+          "pass": true
+        },
+        {
+          "type": "word",
+          "word": "petit",
+          "expected": "pəti",
+          "actual": "pəti",
+          "pass": true
+        },
+        {
+          "type": "word",
+          "word": "cheval",
+          "expected": "ʃəval",
+          "actual": "ʃeval",
+          "pass": false
+        },
+        {
+          "type": "word",
+          "word": "demain",
+          "expected": "dəmɛ̃",
+          "actual": "dəmɛ̃",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "text": "« Les héros arrivent ! » annonce une voix dans le hall.",
+      "words": {
+        "hall": "ol"
+      },
+      "liaison": [
+        [
+          "les",
+          "héros",
+          false
+        ],
+        [
+          "héros",
+          "arrivent",
+          false
+        ]
+      ],
+      "focus": "h aspirés, ponctuation et transcription de mots courants.",
+      "output": "« le e.ʁo a.ʁiv ! » a.nɔ̃s œn vwa dɑ̃ lə al.",
+      "stats": {
+        "words": 9,
+        "unknown": 0,
+        "ambiguous": 1,
+        "morphological": 0,
+        "unaligned": 0
+      },
+      "tokens": [
+        {
+          "word": "Les",
+          "lower": "les",
+          "ipa": "le",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "liaison": {
+            "phone": "z",
+            "kind": "interdite",
+            "realized": false,
+            "reason": "Le h aspiré interdit la liaison."
+          },
+          "notes": []
+        },
+        {
+          "word": "héros",
+          "lower": "héros",
+          "ipa": "e.ʁo",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "liaison": {
+            "phone": "z",
+            "kind": "facultative",
+            "realized": false,
+            "reason": "Liaison après un nom pluriel : non imposée."
+          },
+          "notes": [
+            "Liaison facultative non réalisée : Liaison après un nom pluriel : non imposée.."
+          ]
+        },
+        {
+          "word": "arrivent",
+          "lower": "arrivent",
+          "ipa": "a.ʁiv",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "contextReason": "Flexion verbale identifiée par son sujet.",
+          "liaison": {
+            "phone": "t",
+            "kind": "interdite",
+            "realized": false,
+            "reason": "La ponctuation ou la frontière écrite bloque la liaison."
+          },
+          "notes": []
+        },
+        {
+          "word": "annonce",
+          "lower": "annonce",
+          "ipa": "a.nɔ̃s",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "une",
+          "lower": "une",
+          "ipa": "œn",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "voix",
+          "lower": "voix",
+          "ipa": "vwa",
+          "source": "lexicon",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "dans",
+          "lower": "dans",
+          "ipa": "dɑ̃",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "le",
+          "lower": "le",
+          "ipa": "lə",
+          "source": "reviewed",
+          "confidence": "lexical",
+          "alternatives": [],
+          "notes": []
+        },
+        {
+          "word": "hall",
+          "lower": "hall",
+          "ipa": "al",
+          "source": "lexicon",
+          "confidence": "ambiguous",
+          "alternatives": [
+            "ɑl"
+          ],
+          "notes": [
+            "Prononciations lexicales possibles : /al/, /ɑl/. Les variantes du lexique ne sont pas étiquetées."
+          ]
+        }
+      ],
+      "probes": [
+        {
+          "type": "word",
+          "word": "hall",
+          "expected": "ol",
+          "actual": "al",
+          "pass": false
+        },
+        {
+          "type": "liaison",
+          "left": "les",
+          "right": "héros",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        },
+        {
+          "type": "liaison",
+          "left": "héros",
+          "right": "arrivent",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "sentences": 25,
+    "probes": 56,
+    "failedProbes": 4,
+    "scope": "Initial targeted probes plus manual full-output review. No universal or external-benchmark accuracy claim.",
+    "passedProbes": 52,
+    "targetedProbeFailures": 4,
+    "minimumAffectedSentences": 9,
+    "clearErrorFamilies": 6,
+    "minimumErrorTokenOccurrences": 10
+  },
+  "references": {
+    "du": "https://fr.wiktionary.org/wiki/du",
+    "une": "https://fr.wiktionary.org/wiki/une",
+    "cheval": "https://fr.wiktionary.org/wiki/cheval",
+    "occupent": "https://en.wiktionary.org/wiki/occupent",
+    "hall": "https://www.dictionnaire-academie.fr/article/A9H0095",
+    "fils": "https://fr.wiktionary.org/wiki/fil"
+  },
+  "expertReview": {
+    "initialOutputsUnchanged": true,
+    "errors": [
+      {
+        "family": "fils-material-context",
+        "cases": [
+          5
+        ],
+        "actual": "fis",
+        "expected": "fil",
+        "source": "contextual-selection",
+        "confidence": "ambiguous",
+        "explanation": "The source includes /fil/ and the ambiguity is visible, but the material nylon is outside the current semantic class. The selected primary reading is wrong in this sentence.",
+        "suggestion": "Extend the explicit material semantic class for the construction fils de + material; retain ambiguity for unclassified complements rather than globally forcing fil after de."
+      },
+      {
+        "family": "occup-family-vowel",
+        "cases": [
+          17
+        ],
+        "actual": "okyp",
+        "expected": "ɔkyp",
+        "source": "lexicon",
+        "confidence": "lexical",
+        "explanation": "The first vowel is wrongly closed in the selected verbal family.",
+        "suggestion": "Review the occup- family including occuper and inflected forms together; preserve the corrected open vowel across morphology."
+      },
+      {
+        "family": "schwa-cheval-family",
+        "cases": [
+          24
+        ],
+        "actual": "ʃeval",
+        "expected": "ʃəval",
+        "source": "lexicon",
+        "confidence": "ambiguous",
+        "explanation": "A schwa-containing candidate is available but loses to an unlabelled /e/ variant.",
+        "suggestion": "Prefer attested schwa in the reviewed cheval/chevaux family and improve lexical ranking where stable consonant correspondence is shared but e-like vowel variants differ."
+      },
+      {
+        "family": "hall-loanword",
+        "cases": [
+          25
+        ],
+        "actual": "al",
+        "expected": "ol",
+        "source": "lexicon",
+        "confidence": "ambiguous",
+        "explanation": "Selected alternatives al/ɑl do not correspond to the requested traditional French hall; the required French reading has been lost from the compact alternatives.",
+        "suggestion": "Review hall/halls as an integrated loanword exception and audit candidate pruning when an independently attested French pronunciation is absent from the shortlist."
+      },
+      {
+        "family": "du-function-word",
+        "cases": [
+          1,
+          6
+        ],
+        "actual": "du",
+        "expected": "dy",
+        "source": "lexicon",
+        "confidence": "ambiguous",
+        "preRegisteredProbe": false,
+        "explanation": "The French contracted article has /dy/. The homograph /du/ exists in other languages and the source does not label languages.",
+        "suggestion": "Review closed-class French words comprehensively; do not allow unlabelled cross-language variants to override their grammatical readings."
+      },
+      {
+        "family": "une-reviewed-entry",
+        "cases": [
+          16,
+          18,
+          19,
+          25
+        ],
+        "actual": "œn",
+        "expected": "yn",
+        "source": "reviewed",
+        "confidence": "lexical",
+        "preRegisteredProbe": false,
+        "explanation": "The reviewed entry itself uses the wrong vowel for feminine une, and presents it without ambiguity.",
+        "suggestion": "Correct the reviewed entry and review gendered article/pronoun paradigms together (un/une/unes, aucun/aucune) instead of extrapolating the masculine nasal vowel."
+      }
+    ],
+    "minimumAffectedSentenceIds": [
+      1,
+      5,
+      6,
+      16,
+      17,
+      18,
+      19,
+      24,
+      25
+    ],
+    "minimumErrorTokenOccurrences": 10,
+    "contextualObservations": "No incorrect realized liaison was found in the reviewed 25 outputs. All 24 pre-registered liaison probes pass, including punctuation, a nominal singular before a vowel, pronoun subject, adjective anteposition, h aspiré and obligatory possessive liaison. This small selection does not establish universal liaison accuracy.",
+    "semanticUncertainty": "The savant nominal/adjectival interpretation and plus comparative/negative meaning remain signaled; those warnings are appropriate. Wrong lexical /du/ and /ʃeval/ remain flagged as alternatives, while /œn/ and /okyp/ were incorrectly presented as lexical certainties.",
+    "limitations": "The expectations cover 56 targeted probes, not every phoneme of every sentence. Full outputs were reviewed manually for clear standard/traditional French errors. No numerical full-sentence accuracy is asserted. Cases selected by an implementer are only a small internal holdout, not a blind external benchmark. Reusing these cases for fixes makes later reruns regression checks, not independent validation."
+  }
+}

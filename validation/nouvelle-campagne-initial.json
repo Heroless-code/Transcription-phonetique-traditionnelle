@@ -1,0 +1,6464 @@
+{
+  "method": "Preregistered targeted linguistic probes before inspecting engine output. Not a random or frequency-weighted benchmark.",
+  "fixtureSha256": "d2291f99d95fe6a2b5ad247096ad3638127ed3a04f4052f161583a46c5f5cafa",
+  "cases": [
+    {
+      "type": "lexical",
+      "text": "chalet",
+      "expected": [
+        "ʃalɛ"
+      ],
+      "actual": "ʃalɛ",
+      "output": "ʃa.lɛ",
+      "passed": true
+    },
+    {
+      "type": "lexical",
+      "text": "chaotique",
+      "expected": [
+        "kaɔtik"
+      ],
+      "actual": "kaɔtik",
+      "output": "ka.ɔ.tik",
+      "passed": true
+    },
+    {
+      "type": "lexical",
+      "text": "choléra",
+      "expected": [
+        "kɔleʁa"
+      ],
+      "actual": "kɔleʁa",
+      "output": "kɔ.le.ʁa",
+      "passed": true
+    },
+    {
+      "type": "lexical",
+      "text": "orchestre",
+      "expected": [
+        "ɔʁkɛstʁ"
+      ],
+      "actual": "ɔʁkɛstʁ",
+      "output": "ɔʁ.kɛstʁ",
+      "passed": true
+    },
+    {
+      "type": "lexical",
+      "text": "bronchite",
+      "expected": [
+        "bʁɔ̃ʃit"
+      ],
+      "actual": "bʁɔ̃ʃit",
+      "output": "bʁɔ̃.ʃit",
+      "passed": true
+    },
+    {
+      "type": "lexical",
+      "text": "psychologue",
+      "expected": [
+        "psikɔlɔɡ"
+      ],
+      "actual": "psikolɔɡ",
+      "output": "psi.ko.lɔɡ",
+      "passed": false
+    },
+    {
+      "type": "lexical",
+      "text": "psychothérapie",
+      "expected": [
+        "psikɔteʁapi"
+      ],
+      "actual": "psikɔteʁapi",
+      "output": "psi.kɔ.te.ʁa.pi",
+      "passed": true
+    },
+    {
+      "type": "lexical",
+      "text": "psychique",
+      "expected": [
+        "psiʃik"
+      ],
+      "actual": "psiʃik",
+      "output": "psi.ʃik",
+      "passed": true
+    },
+    {
+      "type": "lexical",
+      "text": "chlore",
+      "expected": [
+        "klɔʁ"
+      ],
+      "actual": "klɔʁ",
+      "output": "klɔʁ",
+      "passed": true
+    },
+    {
+      "type": "lexical",
+      "text": "abrupt",
+      "expected": [
+        "abʁypt"
+      ],
+      "actual": "abʁypt",
+      "output": "a.bʁypt",
+      "passed": true
+    },
+    {
+      "type": "lexical",
+      "text": "abruptement",
+      "expected": [
+        "abʁyptəmɑ̃",
+        "abʁyptmɑ̃"
+      ],
+      "actual": "abʁyptəmɑ̃",
+      "output": "a.bʁyp.tə.mɑ̃",
+      "passed": true
+    },
+    {
+      "type": "lexical",
+      "text": "exact",
+      "expected": [
+        "ɛɡzakt"
+      ],
+      "actual": "ɛɡzakt",
+      "output": "ɛɡ.zakt",
+      "passed": true
+    },
+    {
+      "type": "lexical",
+      "text": "exactement",
+      "expected": [
+        "ɛɡzaktəmɑ̃",
+        "ɛɡzaktmɑ̃"
+      ],
+      "actual": "ɛɡzaktəmɑ̃",
+      "output": "ɛɡ.zak.tə.mɑ̃",
+      "passed": true
+    },
+    {
+      "type": "lexical",
+      "text": "abject",
+      "expected": [
+        "abʒɛkt"
+      ],
+      "actual": "abʒɛkt",
+      "output": "ab.ʒɛkt",
+      "passed": true
+    },
+    {
+      "type": "lexical",
+      "text": "abjection",
+      "expected": [
+        "abʒɛksjɔ̃"
+      ],
+      "actual": "abʒɛksjɔ̃",
+      "output": "ab.ʒɛk.sjɔ̃",
+      "passed": true
+    },
+    {
+      "type": "lexical",
+      "text": "équanimité",
+      "expected": [
+        "ekanimite"
+      ],
+      "actual": "ekwanimite",
+      "output": "e.kwa.ni.mi.te",
+      "passed": false
+    },
+    {
+      "type": "lexical",
+      "text": "inique",
+      "expected": [
+        "inik"
+      ],
+      "actual": "inik",
+      "output": "i.nik",
+      "passed": true
+    },
+    {
+      "type": "lexical",
+      "text": "inapte",
+      "expected": [
+        "inapt"
+      ],
+      "actual": "inapt",
+      "output": "i.napt",
+      "passed": true
+    },
+    {
+      "type": "lexical",
+      "text": "inepte",
+      "expected": [
+        "inɛpt"
+      ],
+      "actual": "inɛpt",
+      "output": "i.nɛpt",
+      "passed": true
+    },
+    {
+      "type": "lexical",
+      "text": "inodore",
+      "expected": [
+        "inɔdɔʁ"
+      ],
+      "actual": "inɔdɔʁ",
+      "output": "i.nɔ.dɔʁ",
+      "passed": true
+    },
+    {
+      "type": "lexical",
+      "text": "inavouable",
+      "expected": [
+        "inavwabl"
+      ],
+      "actual": "inavwabl",
+      "output": "i.na.vwabl",
+      "passed": true
+    },
+    {
+      "type": "lexical",
+      "text": "inorganique",
+      "expected": [
+        "inɔʁɡanik"
+      ],
+      "actual": "inɔʁɡanik",
+      "output": "i.nɔʁ.ɡa.nik",
+      "passed": true
+    },
+    {
+      "type": "lexical",
+      "text": "inoxydable",
+      "expected": [
+        "inɔksidabl"
+      ],
+      "actual": "inɔksidabl",
+      "output": "i.nɔk.si.dabl",
+      "passed": true
+    },
+    {
+      "type": "lexical",
+      "text": "innocent",
+      "expected": [
+        "inɔsɑ̃"
+      ],
+      "actual": "inɔsɑ̃",
+      "output": "i.nɔ.sɑ̃",
+      "passed": true
+    },
+    {
+      "type": "lexical",
+      "text": "innommable",
+      "expected": [
+        "inɔmabl"
+      ],
+      "actual": "inɔmabl",
+      "output": "i.nɔ.mabl",
+      "passed": true
+    },
+    {
+      "type": "lexical",
+      "text": "immaculé",
+      "expected": [
+        "imakyle"
+      ],
+      "actual": "imakyle",
+      "output": "i.ma.ky.le",
+      "passed": true
+    },
+    {
+      "type": "lexical",
+      "text": "immuable",
+      "expected": [
+        "imɥabl",
+        "imyabl"
+      ],
+      "actual": "imɥabl",
+      "output": "i.mɥabl",
+      "passed": true
+    },
+    {
+      "type": "lexical",
+      "text": "immense",
+      "expected": [
+        "imɑ̃s"
+      ],
+      "actual": "imɑ̃s",
+      "output": "i.mɑ̃s",
+      "passed": true
+    },
+    {
+      "type": "lexical",
+      "text": "immersion",
+      "expected": [
+        "imɛʁsjɔ̃"
+      ],
+      "actual": "imɛʁsjɔ̃",
+      "output": "i.mɛʁ.sjɔ̃",
+      "passed": true
+    },
+    {
+      "type": "lexical",
+      "text": "immédiat",
+      "expected": [
+        "imedja"
+      ],
+      "actual": "imedja",
+      "output": "i.me.dja",
+      "passed": true
+    },
+    {
+      "type": "lexical",
+      "text": "illisible",
+      "expected": [
+        "ilizibl"
+      ],
+      "actual": "ilizibl",
+      "output": "i.li.zibl",
+      "passed": true
+    },
+    {
+      "type": "lexical",
+      "text": "illégal",
+      "expected": [
+        "ileɡal"
+      ],
+      "actual": "ileɡal",
+      "output": "i.le.ɡal",
+      "passed": true
+    },
+    {
+      "type": "lexical",
+      "text": "illogique",
+      "expected": [
+        "ilɔʒik"
+      ],
+      "actual": "ilɔʒik",
+      "output": "i.lɔ.ʒik",
+      "passed": true
+    },
+    {
+      "type": "lexical",
+      "text": "illusion",
+      "expected": [
+        "ilyzjɔ̃"
+      ],
+      "actual": "ilyzjɔ̃",
+      "output": "i.ly.zjɔ̃",
+      "passed": true
+    },
+    {
+      "type": "lexical",
+      "text": "irréel",
+      "expected": [
+        "iʁeɛl"
+      ],
+      "actual": "iʁeɛl",
+      "output": "i.ʁe.ɛl",
+      "passed": true
+    },
+    {
+      "type": "lexical",
+      "text": "irréductible",
+      "expected": [
+        "iʁedyktibl"
+      ],
+      "actual": "iʁedyktibl",
+      "output": "i.ʁe.dyk.tibl",
+      "passed": true
+    },
+    {
+      "type": "lexical",
+      "text": "irrationnel",
+      "expected": [
+        "iʁasjɔnɛl"
+      ],
+      "actual": "iʁasjɔnɛl",
+      "output": "i.ʁa.sjɔ.nɛl",
+      "passed": true
+    },
+    {
+      "type": "lexical",
+      "text": "irascible",
+      "expected": [
+        "iʁasibl"
+      ],
+      "actual": "iʁasibl",
+      "output": "i.ʁa.sibl",
+      "passed": true
+    },
+    {
+      "type": "lexical",
+      "text": "désuet",
+      "expected": [
+        "dezɥɛ",
+        "desɥɛ"
+      ],
+      "actual": "dezɥɛ",
+      "output": "de.zɥɛ",
+      "passed": true
+    },
+    {
+      "type": "lexical",
+      "text": "suave",
+      "expected": [
+        "sɥav",
+        "syav"
+      ],
+      "actual": "sɥav",
+      "output": "sɥav",
+      "passed": true
+    },
+    {
+      "type": "lexical",
+      "text": "nuage",
+      "expected": [
+        "nɥaʒ",
+        "nyaʒ"
+      ],
+      "actual": "nɥaʒ",
+      "output": "nɥaʒ",
+      "passed": true
+    },
+    {
+      "type": "lexical",
+      "text": "nuée",
+      "expected": [
+        "nɥe",
+        "nye"
+      ],
+      "actual": "nɥe",
+      "output": "nɥe",
+      "passed": true
+    },
+    {
+      "type": "lexical",
+      "text": "ruelle",
+      "expected": [
+        "ʁɥɛl",
+        "ʁyɛl"
+      ],
+      "actual": "ʁɥɛl",
+      "output": "ʁɥɛl",
+      "passed": true
+    },
+    {
+      "type": "lexical",
+      "text": "cruel",
+      "expected": [
+        "kʁyɛl"
+      ],
+      "actual": "kʁyɛl",
+      "output": "kʁy.ɛl",
+      "passed": true
+    },
+    {
+      "type": "lexical",
+      "text": "truelle",
+      "expected": [
+        "tʁyɛl"
+      ],
+      "actual": "tʁyɛl",
+      "output": "tʁy.ɛl",
+      "passed": true
+    },
+    {
+      "type": "lexical",
+      "text": "duel",
+      "expected": [
+        "dyɛl"
+      ],
+      "actual": "dɥɛl",
+      "output": "dɥɛl",
+      "passed": false
+    },
+    {
+      "type": "lexical",
+      "text": "dualité",
+      "expected": [
+        "dyalite"
+      ],
+      "actual": "dɥalite",
+      "output": "dɥa.li.te",
+      "passed": false
+    },
+    {
+      "type": "lexical",
+      "text": "fluide",
+      "expected": [
+        "flɥid"
+      ],
+      "actual": "flɥid",
+      "output": "flɥid",
+      "passed": true
+    },
+    {
+      "type": "lexical",
+      "text": "fluor",
+      "expected": [
+        "flyɔʁ"
+      ],
+      "actual": "flyɔʁ",
+      "output": "fly.ɔʁ",
+      "passed": true
+    },
+    {
+      "type": "lexical",
+      "text": "ouïe",
+      "expected": [
+        "wi"
+      ],
+      "actual": "wi",
+      "output": "wi",
+      "passed": true
+    },
+    {
+      "type": "lexical",
+      "text": "ouïr",
+      "expected": [
+        "wiʁ"
+      ],
+      "actual": "wiʁ",
+      "output": "wiʁ",
+      "passed": true
+    },
+    {
+      "type": "lexical",
+      "text": "ouate",
+      "expected": [
+        "wat"
+      ],
+      "actual": "wat",
+      "output": "wat",
+      "passed": true
+    },
+    {
+      "type": "lexical",
+      "text": "ouest",
+      "expected": [
+        "wɛst"
+      ],
+      "actual": "wɛst",
+      "output": "wɛst",
+      "passed": true
+    },
+    {
+      "type": "lexical",
+      "text": "ouistiti",
+      "expected": [
+        "wistiti"
+      ],
+      "actual": "wistiti",
+      "output": "wis.ti.ti",
+      "passed": true
+    },
+    {
+      "type": "context",
+      "text": "Nous mentions rarement à nos amis.",
+      "word": "mentions",
+      "ipa": "mɑ̃tjɔ̃",
+      "actual": "mɑ̃tjɔ̃",
+      "output": "nu mɑ̃.tjɔ̃ ʁa.ʁə.mɑ̃ a no.z‿a.mi.",
+      "token": {
+        "type": "word",
+        "text": "mentions",
+        "lower": "mentions",
+        "ipa": "mɑ̃.tjɔ̃",
+        "h": null,
+        "alternatives": [],
+        "source": "lexicon",
+        "confidence": "lexical",
+        "notes": [],
+        "pos": [
+          "NOM",
+          "VER"
+        ],
+        "grammaticalReadings": [
+          {
+            "ipa": "mɑ̃.sjɔ̃",
+            "pos": "NOM"
+          },
+          {
+            "ipa": "mɑ̃.tjɔ̃",
+            "pos": "VER"
+          }
+        ],
+        "reference": "Lexique 4.1",
+        "verbIpa": "mɑ̃.tjɔ̃",
+        "contextResolved": true,
+        "contextReason": "Lecture grammaticale attestée dans Lexique 4.1, choisie par le contexte local.",
+        "posHint": "verb",
+        "contextGrammar": {
+          "pos": "VER",
+          "reference": "Lexique 4.1",
+          "scope": "local"
+        },
+        "segments": [
+          {
+            "text": "m",
+            "phones": [
+              "m"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "text": "en",
+            "phones": [
+              "ɑ̃"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 1,
+            "end": 3
+          },
+          {
+            "text": "ti",
+            "phones": [
+              "t",
+              "j"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 3,
+            "end": 5
+          },
+          {
+            "text": "on",
+            "phones": [
+              "ɔ̃"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 5,
+            "end": 7
+          },
+          {
+            "text": "s",
+            "phones": [],
+            "silent": true,
+            "uncertain": false,
+            "start": 7,
+            "end": 8
+          }
+        ],
+        "phonemes": [
+          {
+            "text": "m",
+            "phone": "m",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "ɑ̃",
+            "phone": "ɑ̃",
+            "category": "nasal",
+            "family": "A"
+          },
+          {
+            "text": ".",
+            "phone": ".",
+            "category": "mark",
+            "family": null
+          },
+          {
+            "text": "t",
+            "phone": "t",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "j",
+            "phone": "j",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "ɔ̃",
+            "phone": "ɔ̃",
+            "category": "nasal",
+            "family": "O"
+          }
+        ],
+        "alignmentCertain": true,
+        "displayPhonetic": "mɑ̃.tjɔ̃"
+      },
+      "passed": true
+    },
+    {
+      "type": "context",
+      "text": "Les mentions sont obligatoires.",
+      "word": "mentions",
+      "ipa": "mɑ̃sjɔ̃",
+      "actual": "mɑ̃sjɔ̃",
+      "output": "le mɑ̃.sjɔ̃ sɔ̃ ɔ.bli.ɡa.twaʁ.",
+      "token": {
+        "type": "word",
+        "text": "mentions",
+        "lower": "mentions",
+        "ipa": "mɑ̃.sjɔ̃",
+        "h": null,
+        "alternatives": [],
+        "source": "lexicon",
+        "confidence": "lexical",
+        "notes": [],
+        "pos": [
+          "NOM",
+          "VER"
+        ],
+        "grammaticalReadings": [
+          {
+            "ipa": "mɑ̃.sjɔ̃",
+            "pos": "NOM"
+          },
+          {
+            "ipa": "mɑ̃.tjɔ̃",
+            "pos": "VER"
+          }
+        ],
+        "reference": "Lexique 4.1",
+        "verbIpa": "mɑ̃.tjɔ̃",
+        "contextResolved": true,
+        "contextReason": "Lecture grammaticale attestée dans Lexique 4.1, choisie par le contexte local.",
+        "contextGrammar": {
+          "pos": "NOM",
+          "reference": "Lexique 4.1",
+          "scope": "local"
+        },
+        "posHint": "noun",
+        "segments": [
+          {
+            "text": "m",
+            "phones": [
+              "m"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "text": "en",
+            "phones": [
+              "ɑ̃"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 1,
+            "end": 3
+          },
+          {
+            "text": "ti",
+            "phones": [
+              "s",
+              "j"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 3,
+            "end": 5
+          },
+          {
+            "text": "on",
+            "phones": [
+              "ɔ̃"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 5,
+            "end": 7
+          },
+          {
+            "text": "s",
+            "phones": [],
+            "silent": true,
+            "uncertain": false,
+            "start": 7,
+            "end": 8
+          }
+        ],
+        "phonemes": [
+          {
+            "text": "m",
+            "phone": "m",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "ɑ̃",
+            "phone": "ɑ̃",
+            "category": "nasal",
+            "family": "A"
+          },
+          {
+            "text": ".",
+            "phone": ".",
+            "category": "mark",
+            "family": null
+          },
+          {
+            "text": "s",
+            "phone": "s",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "j",
+            "phone": "j",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "ɔ̃",
+            "phone": "ɔ̃",
+            "category": "nasal",
+            "family": "O"
+          }
+        ],
+        "alignmentCertain": true,
+        "displayPhonetic": "mɑ̃.sjɔ̃"
+      },
+      "passed": true
+    },
+    {
+      "type": "context",
+      "text": "Nous éditions ce livre.",
+      "word": "éditions",
+      "ipa": "editjɔ̃",
+      "actual": "editjɔ̃",
+      "output": "nu.z‿e.di.tjɔ̃ sə livʁ.",
+      "token": {
+        "type": "word",
+        "text": "éditions",
+        "lower": "éditions",
+        "ipa": "e.di.tjɔ̃",
+        "h": null,
+        "alternatives": [],
+        "source": "lexicon",
+        "confidence": "lexical",
+        "notes": [],
+        "pos": [
+          "NOM",
+          "VER"
+        ],
+        "grammaticalReadings": [
+          {
+            "ipa": "e.di.sjɔ̃",
+            "pos": "NOM"
+          },
+          {
+            "ipa": "e.di.tjɔ̃",
+            "pos": "VER"
+          }
+        ],
+        "reference": "Lexique 4.1",
+        "verbIpa": "e.di.tjɔ̃",
+        "contextResolved": true,
+        "contextReason": "Lecture grammaticale attestée dans Lexique 4.1, choisie par le contexte local.",
+        "posHint": "verb",
+        "contextGrammar": {
+          "pos": "VER",
+          "reference": "Lexique 4.1",
+          "scope": "local"
+        },
+        "segments": [
+          {
+            "text": "é",
+            "phones": [
+              "e"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "text": "d",
+            "phones": [
+              "d"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 1,
+            "end": 2
+          },
+          {
+            "text": "i",
+            "phones": [
+              "i"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 2,
+            "end": 3
+          },
+          {
+            "text": "ti",
+            "phones": [
+              "t",
+              "j"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 3,
+            "end": 5
+          },
+          {
+            "text": "on",
+            "phones": [
+              "ɔ̃"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 5,
+            "end": 7
+          },
+          {
+            "text": "s",
+            "phones": [],
+            "silent": true,
+            "uncertain": false,
+            "start": 7,
+            "end": 8
+          }
+        ],
+        "phonemes": [
+          {
+            "text": "e",
+            "phone": "e",
+            "category": "vowel",
+            "family": "E"
+          },
+          {
+            "text": ".",
+            "phone": ".",
+            "category": "mark",
+            "family": null
+          },
+          {
+            "text": "d",
+            "phone": "d",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "i",
+            "phone": "i",
+            "category": "vowel",
+            "family": "I"
+          },
+          {
+            "text": ".",
+            "phone": ".",
+            "category": "mark",
+            "family": null
+          },
+          {
+            "text": "t",
+            "phone": "t",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "j",
+            "phone": "j",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "ɔ̃",
+            "phone": "ɔ̃",
+            "category": "nasal",
+            "family": "O"
+          }
+        ],
+        "alignmentCertain": true,
+        "displayPhonetic": "e.di.tjɔ̃"
+      },
+      "passed": true
+    },
+    {
+      "type": "context",
+      "text": "Ces éditions sont anciennes.",
+      "word": "éditions",
+      "ipa": "edisjɔ̃",
+      "actual": "edisjɔ̃",
+      "output": "se.z‿e.di.sjɔ̃ sɔ̃ ɑ̃.sjɛn.",
+      "token": {
+        "type": "word",
+        "text": "éditions",
+        "lower": "éditions",
+        "ipa": "e.di.sjɔ̃",
+        "h": null,
+        "alternatives": [],
+        "source": "lexicon",
+        "confidence": "lexical",
+        "notes": [],
+        "pos": [
+          "NOM",
+          "VER"
+        ],
+        "grammaticalReadings": [
+          {
+            "ipa": "e.di.sjɔ̃",
+            "pos": "NOM"
+          },
+          {
+            "ipa": "e.di.tjɔ̃",
+            "pos": "VER"
+          }
+        ],
+        "reference": "Lexique 4.1",
+        "verbIpa": "e.di.tjɔ̃",
+        "contextResolved": true,
+        "contextReason": "Lecture grammaticale attestée dans Lexique 4.1, choisie par le contexte local.",
+        "contextGrammar": {
+          "pos": "NOM",
+          "reference": "Lexique 4.1",
+          "scope": "local"
+        },
+        "posHint": "noun",
+        "segments": [
+          {
+            "text": "é",
+            "phones": [
+              "e"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "text": "d",
+            "phones": [
+              "d"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 1,
+            "end": 2
+          },
+          {
+            "text": "i",
+            "phones": [
+              "i"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 2,
+            "end": 3
+          },
+          {
+            "text": "ti",
+            "phones": [
+              "s",
+              "j"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 3,
+            "end": 5
+          },
+          {
+            "text": "on",
+            "phones": [
+              "ɔ̃"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 5,
+            "end": 7
+          },
+          {
+            "text": "s",
+            "phones": [],
+            "silent": true,
+            "uncertain": false,
+            "start": 7,
+            "end": 8
+          }
+        ],
+        "phonemes": [
+          {
+            "text": "e",
+            "phone": "e",
+            "category": "vowel",
+            "family": "E"
+          },
+          {
+            "text": ".",
+            "phone": ".",
+            "category": "mark",
+            "family": null
+          },
+          {
+            "text": "d",
+            "phone": "d",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "i",
+            "phone": "i",
+            "category": "vowel",
+            "family": "I"
+          },
+          {
+            "text": ".",
+            "phone": ".",
+            "category": "mark",
+            "family": null
+          },
+          {
+            "text": "s",
+            "phone": "s",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "j",
+            "phone": "j",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "ɔ̃",
+            "phone": "ɔ̃",
+            "category": "nasal",
+            "family": "O"
+          }
+        ],
+        "alignmentCertain": true,
+        "displayPhonetic": "e.di.sjɔ̃"
+      },
+      "passed": true
+    },
+    {
+      "type": "context",
+      "text": "Nous relations cette aventure.",
+      "word": "relations",
+      "ipa": "ʁəlatjɔ̃",
+      "actual": "ʁəlatjɔ̃",
+      "output": "nu ʁə.la.tjɔ̃ sɛt a.vɑ̃.tyʁ.",
+      "token": {
+        "type": "word",
+        "text": "relations",
+        "lower": "relations",
+        "ipa": "ʁə.la.tjɔ̃",
+        "h": null,
+        "alternatives": [],
+        "source": "lexicon",
+        "confidence": "lexical",
+        "notes": [],
+        "pos": [
+          "NOM",
+          "VER"
+        ],
+        "grammaticalReadings": [
+          {
+            "ipa": "ʁə.la.sjɔ̃",
+            "pos": "NOM"
+          },
+          {
+            "ipa": "ʁə.la.tjɔ̃",
+            "pos": "VER"
+          }
+        ],
+        "reference": "Lexique 4.1",
+        "verbIpa": "ʁə.la.tjɔ̃",
+        "contextResolved": true,
+        "contextReason": "Lecture grammaticale attestée dans Lexique 4.1, choisie par le contexte local.",
+        "posHint": "verb",
+        "contextGrammar": {
+          "pos": "VER",
+          "reference": "Lexique 4.1",
+          "scope": "local"
+        },
+        "segments": [
+          {
+            "text": "r",
+            "phones": [
+              "ʁ"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "text": "e",
+            "phones": [
+              "ə"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 1,
+            "end": 2
+          },
+          {
+            "text": "l",
+            "phones": [
+              "l"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 2,
+            "end": 3
+          },
+          {
+            "text": "a",
+            "phones": [
+              "a"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 3,
+            "end": 4
+          },
+          {
+            "text": "ti",
+            "phones": [
+              "t",
+              "j"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 4,
+            "end": 6
+          },
+          {
+            "text": "on",
+            "phones": [
+              "ɔ̃"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 6,
+            "end": 8
+          },
+          {
+            "text": "s",
+            "phones": [],
+            "silent": true,
+            "uncertain": false,
+            "start": 8,
+            "end": 9
+          }
+        ],
+        "phonemes": [
+          {
+            "text": "ʁ",
+            "phone": "ʁ",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "ə",
+            "phone": "ə",
+            "category": "vowel",
+            "family": "E"
+          },
+          {
+            "text": ".",
+            "phone": ".",
+            "category": "mark",
+            "family": null
+          },
+          {
+            "text": "l",
+            "phone": "l",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "a",
+            "phone": "a",
+            "category": "vowel",
+            "family": "A"
+          },
+          {
+            "text": ".",
+            "phone": ".",
+            "category": "mark",
+            "family": null
+          },
+          {
+            "text": "t",
+            "phone": "t",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "j",
+            "phone": "j",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "ɔ̃",
+            "phone": "ɔ̃",
+            "category": "nasal",
+            "family": "O"
+          }
+        ],
+        "alignmentCertain": true,
+        "displayPhonetic": "ʁə.la.tjɔ̃"
+      },
+      "passed": true
+    },
+    {
+      "type": "context",
+      "text": "Ces relations sont anciennes.",
+      "word": "relations",
+      "ipa": "ʁəlasjɔ̃",
+      "actual": "ʁəlasjɔ̃",
+      "output": "se ʁə.la.sjɔ̃ sɔ̃ ɑ̃.sjɛn.",
+      "token": {
+        "type": "word",
+        "text": "relations",
+        "lower": "relations",
+        "ipa": "ʁə.la.sjɔ̃",
+        "h": null,
+        "alternatives": [],
+        "source": "lexicon",
+        "confidence": "lexical",
+        "notes": [],
+        "pos": [
+          "NOM",
+          "VER"
+        ],
+        "grammaticalReadings": [
+          {
+            "ipa": "ʁə.la.sjɔ̃",
+            "pos": "NOM"
+          },
+          {
+            "ipa": "ʁə.la.tjɔ̃",
+            "pos": "VER"
+          }
+        ],
+        "reference": "Lexique 4.1",
+        "verbIpa": "ʁə.la.tjɔ̃",
+        "contextResolved": true,
+        "contextReason": "Lecture grammaticale attestée dans Lexique 4.1, choisie par le contexte local.",
+        "contextGrammar": {
+          "pos": "NOM",
+          "reference": "Lexique 4.1",
+          "scope": "local"
+        },
+        "posHint": "noun",
+        "segments": [
+          {
+            "text": "r",
+            "phones": [
+              "ʁ"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "text": "e",
+            "phones": [
+              "ə"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 1,
+            "end": 2
+          },
+          {
+            "text": "l",
+            "phones": [
+              "l"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 2,
+            "end": 3
+          },
+          {
+            "text": "a",
+            "phones": [
+              "a"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 3,
+            "end": 4
+          },
+          {
+            "text": "ti",
+            "phones": [
+              "s",
+              "j"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 4,
+            "end": 6
+          },
+          {
+            "text": "on",
+            "phones": [
+              "ɔ̃"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 6,
+            "end": 8
+          },
+          {
+            "text": "s",
+            "phones": [],
+            "silent": true,
+            "uncertain": false,
+            "start": 8,
+            "end": 9
+          }
+        ],
+        "phonemes": [
+          {
+            "text": "ʁ",
+            "phone": "ʁ",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "ə",
+            "phone": "ə",
+            "category": "vowel",
+            "family": "E"
+          },
+          {
+            "text": ".",
+            "phone": ".",
+            "category": "mark",
+            "family": null
+          },
+          {
+            "text": "l",
+            "phone": "l",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "a",
+            "phone": "a",
+            "category": "vowel",
+            "family": "A"
+          },
+          {
+            "text": ".",
+            "phone": ".",
+            "category": "mark",
+            "family": null
+          },
+          {
+            "text": "s",
+            "phone": "s",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "j",
+            "phone": "j",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "ɔ̃",
+            "phone": "ɔ̃",
+            "category": "nasal",
+            "family": "O"
+          }
+        ],
+        "alignmentCertain": true,
+        "displayPhonetic": "ʁə.la.sjɔ̃"
+      },
+      "passed": true
+    },
+    {
+      "type": "context",
+      "text": "Nous désertions le village.",
+      "word": "désertions",
+      "ipa": "dezɛʁtjɔ̃",
+      "actual": "dezɛʁsjɔ̃",
+      "output": "nu de.zɛʁ.sjɔ̃ lə vi.laʒ.",
+      "token": {
+        "type": "word",
+        "text": "désertions",
+        "lower": "désertions",
+        "ipa": "de.zɛʁ.sjɔ̃",
+        "h": null,
+        "alternatives": [
+          "de.zɛʁ.tjɔ̃"
+        ],
+        "source": "lexicon",
+        "confidence": "ambiguous",
+        "notes": [
+          "Prononciations lexicales possibles : /de.zɛʁ.sjɔ̃/, /de.zɛʁ.tjɔ̃/. Les variantes du lexique ne sont pas étiquetées."
+        ],
+        "pos": [
+          "NOM"
+        ],
+        "reference": "Lexique 4.1",
+        "verbIpa": "de.zɛʁ.tjɔ̃",
+        "segments": [
+          {
+            "text": "d",
+            "phones": [
+              "d"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "text": "é",
+            "phones": [
+              "e"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 1,
+            "end": 2
+          },
+          {
+            "text": "s",
+            "phones": [
+              "z"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 2,
+            "end": 3
+          },
+          {
+            "text": "er",
+            "phones": [
+              "ɛ",
+              "ʁ"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 3,
+            "end": 5
+          },
+          {
+            "text": "ti",
+            "phones": [
+              "s",
+              "j"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 5,
+            "end": 7
+          },
+          {
+            "text": "on",
+            "phones": [
+              "ɔ̃"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 7,
+            "end": 9
+          },
+          {
+            "text": "s",
+            "phones": [],
+            "silent": true,
+            "uncertain": false,
+            "start": 9,
+            "end": 10
+          }
+        ],
+        "phonemes": [
+          {
+            "text": "d",
+            "phone": "d",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "e",
+            "phone": "e",
+            "category": "vowel",
+            "family": "E"
+          },
+          {
+            "text": ".",
+            "phone": ".",
+            "category": "mark",
+            "family": null
+          },
+          {
+            "text": "z",
+            "phone": "z",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "ɛ",
+            "phone": "ɛ",
+            "category": "vowel",
+            "family": "E"
+          },
+          {
+            "text": "ʁ",
+            "phone": "ʁ",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": ".",
+            "phone": ".",
+            "category": "mark",
+            "family": null
+          },
+          {
+            "text": "s",
+            "phone": "s",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "j",
+            "phone": "j",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "ɔ̃",
+            "phone": "ɔ̃",
+            "category": "nasal",
+            "family": "O"
+          }
+        ],
+        "alignmentCertain": true,
+        "displayPhonetic": "de.zɛʁ.sjɔ̃"
+      },
+      "passed": false
+    },
+    {
+      "type": "context",
+      "text": "Les désertions furent nombreuses.",
+      "word": "désertions",
+      "ipa": "dezɛʁsjɔ̃",
+      "actual": "dezɛʁsjɔ̃",
+      "output": "le de.zɛʁ.sjɔ̃ fyʁ nɔ̃.bʁøz.",
+      "token": {
+        "type": "word",
+        "text": "désertions",
+        "lower": "désertions",
+        "ipa": "de.zɛʁ.sjɔ̃",
+        "h": null,
+        "alternatives": [
+          "de.zɛʁ.tjɔ̃"
+        ],
+        "source": "lexicon",
+        "confidence": "ambiguous",
+        "notes": [
+          "Prononciations lexicales possibles : /de.zɛʁ.sjɔ̃/, /de.zɛʁ.tjɔ̃/. Les variantes du lexique ne sont pas étiquetées."
+        ],
+        "pos": [
+          "NOM"
+        ],
+        "reference": "Lexique 4.1",
+        "verbIpa": "de.zɛʁ.tjɔ̃",
+        "segments": [
+          {
+            "text": "d",
+            "phones": [
+              "d"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "text": "é",
+            "phones": [
+              "e"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 1,
+            "end": 2
+          },
+          {
+            "text": "s",
+            "phones": [
+              "z"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 2,
+            "end": 3
+          },
+          {
+            "text": "er",
+            "phones": [
+              "ɛ",
+              "ʁ"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 3,
+            "end": 5
+          },
+          {
+            "text": "ti",
+            "phones": [
+              "s",
+              "j"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 5,
+            "end": 7
+          },
+          {
+            "text": "on",
+            "phones": [
+              "ɔ̃"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 7,
+            "end": 9
+          },
+          {
+            "text": "s",
+            "phones": [],
+            "silent": true,
+            "uncertain": false,
+            "start": 9,
+            "end": 10
+          }
+        ],
+        "phonemes": [
+          {
+            "text": "d",
+            "phone": "d",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "e",
+            "phone": "e",
+            "category": "vowel",
+            "family": "E"
+          },
+          {
+            "text": ".",
+            "phone": ".",
+            "category": "mark",
+            "family": null
+          },
+          {
+            "text": "z",
+            "phone": "z",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "ɛ",
+            "phone": "ɛ",
+            "category": "vowel",
+            "family": "E"
+          },
+          {
+            "text": "ʁ",
+            "phone": "ʁ",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": ".",
+            "phone": ".",
+            "category": "mark",
+            "family": null
+          },
+          {
+            "text": "s",
+            "phone": "s",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "j",
+            "phone": "j",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "ɔ̃",
+            "phone": "ɔ̃",
+            "category": "nasal",
+            "family": "O"
+          }
+        ],
+        "alignmentCertain": true,
+        "displayPhonetic": "de.zɛʁ.sjɔ̃"
+      },
+      "passed": true
+    },
+    {
+      "type": "context",
+      "text": "Nous adoptions cette méthode.",
+      "word": "adoptions",
+      "ipa": "adɔptjɔ̃",
+      "actual": "adɔptjɔ̃",
+      "output": "nu.z‿a.dɔp.tjɔ̃ sɛt me.tɔd.",
+      "token": {
+        "type": "word",
+        "text": "adoptions",
+        "lower": "adoptions",
+        "ipa": "a.dɔp.tjɔ̃",
+        "h": null,
+        "alternatives": [],
+        "source": "lexicon",
+        "confidence": "lexical",
+        "notes": [],
+        "pos": [
+          "NOM",
+          "VER"
+        ],
+        "grammaticalReadings": [
+          {
+            "ipa": "a.dɔp.sjɔ̃",
+            "pos": "NOM"
+          },
+          {
+            "ipa": "a.dɔp.tjɔ̃",
+            "pos": "VER"
+          }
+        ],
+        "reference": "Lexique 4.1",
+        "verbIpa": "a.dɔp.tjɔ̃",
+        "contextResolved": true,
+        "contextReason": "Lecture grammaticale attestée dans Lexique 4.1, choisie par le contexte local.",
+        "posHint": "verb",
+        "contextGrammar": {
+          "pos": "VER",
+          "reference": "Lexique 4.1",
+          "scope": "local"
+        },
+        "segments": [
+          {
+            "text": "a",
+            "phones": [
+              "a"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "text": "d",
+            "phones": [
+              "d"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 1,
+            "end": 2
+          },
+          {
+            "text": "o",
+            "phones": [
+              "ɔ"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 2,
+            "end": 3
+          },
+          {
+            "text": "p",
+            "phones": [
+              "p"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 3,
+            "end": 4
+          },
+          {
+            "text": "ti",
+            "phones": [
+              "t",
+              "j"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 4,
+            "end": 6
+          },
+          {
+            "text": "on",
+            "phones": [
+              "ɔ̃"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 6,
+            "end": 8
+          },
+          {
+            "text": "s",
+            "phones": [],
+            "silent": true,
+            "uncertain": false,
+            "start": 8,
+            "end": 9
+          }
+        ],
+        "phonemes": [
+          {
+            "text": "a",
+            "phone": "a",
+            "category": "vowel",
+            "family": "A"
+          },
+          {
+            "text": ".",
+            "phone": ".",
+            "category": "mark",
+            "family": null
+          },
+          {
+            "text": "d",
+            "phone": "d",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "ɔ",
+            "phone": "ɔ",
+            "category": "vowel",
+            "family": "O"
+          },
+          {
+            "text": "p",
+            "phone": "p",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": ".",
+            "phone": ".",
+            "category": "mark",
+            "family": null
+          },
+          {
+            "text": "t",
+            "phone": "t",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "j",
+            "phone": "j",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "ɔ̃",
+            "phone": "ɔ̃",
+            "category": "nasal",
+            "family": "O"
+          }
+        ],
+        "alignmentCertain": true,
+        "displayPhonetic": "a.dɔp.tjɔ̃"
+      },
+      "passed": true
+    },
+    {
+      "type": "context",
+      "text": "Les adoptions sont possibles.",
+      "word": "adoptions",
+      "ipa": "adɔpsjɔ̃",
+      "actual": "adɔpsjɔ̃",
+      "output": "le.z‿a.dɔp.sjɔ̃ sɔ̃ pɔ.sibl.",
+      "token": {
+        "type": "word",
+        "text": "adoptions",
+        "lower": "adoptions",
+        "ipa": "a.dɔp.sjɔ̃",
+        "h": null,
+        "alternatives": [],
+        "source": "lexicon",
+        "confidence": "lexical",
+        "notes": [],
+        "pos": [
+          "NOM",
+          "VER"
+        ],
+        "grammaticalReadings": [
+          {
+            "ipa": "a.dɔp.sjɔ̃",
+            "pos": "NOM"
+          },
+          {
+            "ipa": "a.dɔp.tjɔ̃",
+            "pos": "VER"
+          }
+        ],
+        "reference": "Lexique 4.1",
+        "verbIpa": "a.dɔp.tjɔ̃",
+        "contextResolved": true,
+        "contextReason": "Lecture grammaticale attestée dans Lexique 4.1, choisie par le contexte local.",
+        "contextGrammar": {
+          "pos": "NOM",
+          "reference": "Lexique 4.1",
+          "scope": "local"
+        },
+        "posHint": "noun",
+        "segments": [
+          {
+            "text": "a",
+            "phones": [
+              "a"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "text": "d",
+            "phones": [
+              "d"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 1,
+            "end": 2
+          },
+          {
+            "text": "o",
+            "phones": [
+              "ɔ"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 2,
+            "end": 3
+          },
+          {
+            "text": "p",
+            "phones": [
+              "p"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 3,
+            "end": 4
+          },
+          {
+            "text": "ti",
+            "phones": [
+              "s",
+              "j"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 4,
+            "end": 6
+          },
+          {
+            "text": "on",
+            "phones": [
+              "ɔ̃"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 6,
+            "end": 8
+          },
+          {
+            "text": "s",
+            "phones": [],
+            "silent": true,
+            "uncertain": false,
+            "start": 8,
+            "end": 9
+          }
+        ],
+        "phonemes": [
+          {
+            "text": "a",
+            "phone": "a",
+            "category": "vowel",
+            "family": "A"
+          },
+          {
+            "text": ".",
+            "phone": ".",
+            "category": "mark",
+            "family": null
+          },
+          {
+            "text": "d",
+            "phone": "d",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "ɔ",
+            "phone": "ɔ",
+            "category": "vowel",
+            "family": "O"
+          },
+          {
+            "text": "p",
+            "phone": "p",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": ".",
+            "phone": ".",
+            "category": "mark",
+            "family": null
+          },
+          {
+            "text": "s",
+            "phone": "s",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "j",
+            "phone": "j",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "ɔ̃",
+            "phone": "ɔ̃",
+            "category": "nasal",
+            "family": "O"
+          }
+        ],
+        "alignmentCertain": true,
+        "displayPhonetic": "a.dɔp.sjɔ̃"
+      },
+      "passed": true
+    },
+    {
+      "type": "context",
+      "text": "Nous notions les dates.",
+      "word": "notions",
+      "ipa": "nɔtjɔ̃",
+      "actual": "nɔtjɔ̃",
+      "output": "nu nɔ.tjɔ̃ le dat.",
+      "token": {
+        "type": "word",
+        "text": "notions",
+        "lower": "notions",
+        "ipa": "nɔ.tjɔ̃",
+        "h": null,
+        "alternatives": [],
+        "source": "lexicon",
+        "confidence": "lexical",
+        "notes": [],
+        "pos": [
+          "NOM",
+          "VER"
+        ],
+        "grammaticalReadings": [
+          {
+            "ipa": "nɔ.sjɔ̃",
+            "pos": "NOM"
+          },
+          {
+            "ipa": "nɔ.tjɔ̃",
+            "pos": "VER"
+          }
+        ],
+        "reference": "Lexique 4.1",
+        "verbIpa": "nɔ.tjɔ̃",
+        "contextResolved": true,
+        "contextReason": "Lecture grammaticale attestée dans Lexique 4.1, choisie par le contexte local.",
+        "posHint": "verb",
+        "contextGrammar": {
+          "pos": "VER",
+          "reference": "Lexique 4.1",
+          "scope": "local"
+        },
+        "segments": [
+          {
+            "text": "n",
+            "phones": [
+              "n"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "text": "o",
+            "phones": [
+              "ɔ"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 1,
+            "end": 2
+          },
+          {
+            "text": "ti",
+            "phones": [
+              "t",
+              "j"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 2,
+            "end": 4
+          },
+          {
+            "text": "on",
+            "phones": [
+              "ɔ̃"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 4,
+            "end": 6
+          },
+          {
+            "text": "s",
+            "phones": [],
+            "silent": true,
+            "uncertain": false,
+            "start": 6,
+            "end": 7
+          }
+        ],
+        "phonemes": [
+          {
+            "text": "n",
+            "phone": "n",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "ɔ",
+            "phone": "ɔ",
+            "category": "vowel",
+            "family": "O"
+          },
+          {
+            "text": ".",
+            "phone": ".",
+            "category": "mark",
+            "family": null
+          },
+          {
+            "text": "t",
+            "phone": "t",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "j",
+            "phone": "j",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "ɔ̃",
+            "phone": "ɔ̃",
+            "category": "nasal",
+            "family": "O"
+          }
+        ],
+        "alignmentCertain": true,
+        "displayPhonetic": "nɔ.tjɔ̃"
+      },
+      "passed": true
+    },
+    {
+      "type": "context",
+      "text": "Les notions sont simples.",
+      "word": "notions",
+      "ipa": "nɔsjɔ̃",
+      "actual": "nɔsjɔ̃",
+      "output": "le nɔ.sjɔ̃ sɔ̃ sɛ̃pl.",
+      "token": {
+        "type": "word",
+        "text": "notions",
+        "lower": "notions",
+        "ipa": "nɔ.sjɔ̃",
+        "h": null,
+        "alternatives": [],
+        "source": "lexicon",
+        "confidence": "lexical",
+        "notes": [],
+        "pos": [
+          "NOM",
+          "VER"
+        ],
+        "grammaticalReadings": [
+          {
+            "ipa": "nɔ.sjɔ̃",
+            "pos": "NOM"
+          },
+          {
+            "ipa": "nɔ.tjɔ̃",
+            "pos": "VER"
+          }
+        ],
+        "reference": "Lexique 4.1",
+        "verbIpa": "nɔ.tjɔ̃",
+        "contextResolved": true,
+        "contextReason": "Lecture grammaticale attestée dans Lexique 4.1, choisie par le contexte local.",
+        "contextGrammar": {
+          "pos": "NOM",
+          "reference": "Lexique 4.1",
+          "scope": "local"
+        },
+        "posHint": "noun",
+        "segments": [
+          {
+            "text": "n",
+            "phones": [
+              "n"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "text": "o",
+            "phones": [
+              "ɔ"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 1,
+            "end": 2
+          },
+          {
+            "text": "ti",
+            "phones": [
+              "s",
+              "j"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 2,
+            "end": 4
+          },
+          {
+            "text": "on",
+            "phones": [
+              "ɔ̃"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 4,
+            "end": 6
+          },
+          {
+            "text": "s",
+            "phones": [],
+            "silent": true,
+            "uncertain": false,
+            "start": 6,
+            "end": 7
+          }
+        ],
+        "phonemes": [
+          {
+            "text": "n",
+            "phone": "n",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "ɔ",
+            "phone": "ɔ",
+            "category": "vowel",
+            "family": "O"
+          },
+          {
+            "text": ".",
+            "phone": ".",
+            "category": "mark",
+            "family": null
+          },
+          {
+            "text": "s",
+            "phone": "s",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "j",
+            "phone": "j",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "ɔ̃",
+            "phone": "ɔ̃",
+            "category": "nasal",
+            "family": "O"
+          }
+        ],
+        "alignmentCertain": true,
+        "displayPhonetic": "nɔ.sjɔ̃"
+      },
+      "passed": true
+    },
+    {
+      "type": "context",
+      "text": "Nous inspections les lieux.",
+      "word": "inspections",
+      "ipa": "ɛ̃spɛktjɔ̃",
+      "actual": "ɛ̃spɛktjɔ̃",
+      "output": "nu.z‿ɛ̃s.pɛk.tjɔ̃ le ljø.",
+      "token": {
+        "type": "word",
+        "text": "inspections",
+        "lower": "inspections",
+        "ipa": "ɛ̃s.pɛk.tjɔ̃",
+        "h": null,
+        "alternatives": [],
+        "source": "lexicon",
+        "confidence": "lexical",
+        "notes": [],
+        "pos": [
+          "NOM",
+          "VER"
+        ],
+        "grammaticalReadings": [
+          {
+            "ipa": "ɛ̃s.pɛk.sjɔ̃",
+            "pos": "NOM"
+          },
+          {
+            "ipa": "ɛ̃s.pɛk.tjɔ̃",
+            "pos": "VER"
+          }
+        ],
+        "reference": "Lexique 4.1",
+        "verbIpa": "ɛ̃s.pɛk.tjɔ̃",
+        "contextResolved": true,
+        "contextReason": "Lecture grammaticale attestée dans Lexique 4.1, choisie par le contexte local.",
+        "posHint": "verb",
+        "contextGrammar": {
+          "pos": "VER",
+          "reference": "Lexique 4.1",
+          "scope": "local"
+        },
+        "segments": [
+          {
+            "text": "in",
+            "phones": [
+              "ɛ̃"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 0,
+            "end": 2
+          },
+          {
+            "text": "s",
+            "phones": [
+              "s"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 2,
+            "end": 3
+          },
+          {
+            "text": "p",
+            "phones": [
+              "p"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 3,
+            "end": 4
+          },
+          {
+            "text": "e",
+            "phones": [
+              "ɛ"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 4,
+            "end": 5
+          },
+          {
+            "text": "c",
+            "phones": [
+              "k"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 5,
+            "end": 6
+          },
+          {
+            "text": "ti",
+            "phones": [
+              "t",
+              "j"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 6,
+            "end": 8
+          },
+          {
+            "text": "on",
+            "phones": [
+              "ɔ̃"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 8,
+            "end": 10
+          },
+          {
+            "text": "s",
+            "phones": [],
+            "silent": true,
+            "uncertain": false,
+            "start": 10,
+            "end": 11
+          }
+        ],
+        "phonemes": [
+          {
+            "text": "ɛ̃",
+            "phone": "ɛ̃",
+            "category": "nasal",
+            "family": "E"
+          },
+          {
+            "text": "s",
+            "phone": "s",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": ".",
+            "phone": ".",
+            "category": "mark",
+            "family": null
+          },
+          {
+            "text": "p",
+            "phone": "p",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "ɛ",
+            "phone": "ɛ",
+            "category": "vowel",
+            "family": "E"
+          },
+          {
+            "text": "k",
+            "phone": "k",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": ".",
+            "phone": ".",
+            "category": "mark",
+            "family": null
+          },
+          {
+            "text": "t",
+            "phone": "t",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "j",
+            "phone": "j",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "ɔ̃",
+            "phone": "ɔ̃",
+            "category": "nasal",
+            "family": "O"
+          }
+        ],
+        "alignmentCertain": true,
+        "displayPhonetic": "ɛ̃s.pɛk.tjɔ̃"
+      },
+      "passed": true
+    },
+    {
+      "type": "context",
+      "text": "Les inspections commencent.",
+      "word": "inspections",
+      "ipa": "ɛ̃spɛksjɔ̃",
+      "actual": "ɛ̃spɛksjɔ̃",
+      "output": "le.z‿ɛ̃s.pɛk.sjɔ̃ kɔ.mɑ̃s.",
+      "token": {
+        "type": "word",
+        "text": "inspections",
+        "lower": "inspections",
+        "ipa": "ɛ̃s.pɛk.sjɔ̃",
+        "h": null,
+        "alternatives": [],
+        "source": "lexicon",
+        "confidence": "lexical",
+        "notes": [],
+        "pos": [
+          "NOM",
+          "VER"
+        ],
+        "grammaticalReadings": [
+          {
+            "ipa": "ɛ̃s.pɛk.sjɔ̃",
+            "pos": "NOM"
+          },
+          {
+            "ipa": "ɛ̃s.pɛk.tjɔ̃",
+            "pos": "VER"
+          }
+        ],
+        "reference": "Lexique 4.1",
+        "verbIpa": "ɛ̃s.pɛk.tjɔ̃",
+        "contextResolved": true,
+        "contextReason": "Lecture grammaticale attestée dans Lexique 4.1, choisie par le contexte local.",
+        "contextGrammar": {
+          "pos": "NOM",
+          "reference": "Lexique 4.1",
+          "scope": "local"
+        },
+        "posHint": "noun",
+        "segments": [
+          {
+            "text": "in",
+            "phones": [
+              "ɛ̃"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 0,
+            "end": 2
+          },
+          {
+            "text": "s",
+            "phones": [
+              "s"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 2,
+            "end": 3
+          },
+          {
+            "text": "p",
+            "phones": [
+              "p"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 3,
+            "end": 4
+          },
+          {
+            "text": "e",
+            "phones": [
+              "ɛ"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 4,
+            "end": 5
+          },
+          {
+            "text": "c",
+            "phones": [
+              "k"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 5,
+            "end": 6
+          },
+          {
+            "text": "ti",
+            "phones": [
+              "s",
+              "j"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 6,
+            "end": 8
+          },
+          {
+            "text": "on",
+            "phones": [
+              "ɔ̃"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 8,
+            "end": 10
+          },
+          {
+            "text": "s",
+            "phones": [],
+            "silent": true,
+            "uncertain": false,
+            "start": 10,
+            "end": 11
+          }
+        ],
+        "phonemes": [
+          {
+            "text": "ɛ̃",
+            "phone": "ɛ̃",
+            "category": "nasal",
+            "family": "E"
+          },
+          {
+            "text": "s",
+            "phone": "s",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": ".",
+            "phone": ".",
+            "category": "mark",
+            "family": null
+          },
+          {
+            "text": "p",
+            "phone": "p",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "ɛ",
+            "phone": "ɛ",
+            "category": "vowel",
+            "family": "E"
+          },
+          {
+            "text": "k",
+            "phone": "k",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": ".",
+            "phone": ".",
+            "category": "mark",
+            "family": null
+          },
+          {
+            "text": "s",
+            "phone": "s",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "j",
+            "phone": "j",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "ɔ̃",
+            "phone": "ɔ̃",
+            "category": "nasal",
+            "family": "O"
+          }
+        ],
+        "alignmentCertain": true,
+        "displayPhonetic": "ɛ̃s.pɛk.sjɔ̃"
+      },
+      "passed": true
+    },
+    {
+      "type": "context",
+      "text": "Nous affections ce poste à Paul.",
+      "word": "affections",
+      "ipa": "afɛktjɔ̃",
+      "actual": "afɛktjɔ̃",
+      "output": "nu.z‿a.fɛk.tjɔ̃ sə pɔst a pol.",
+      "token": {
+        "type": "word",
+        "text": "affections",
+        "lower": "affections",
+        "ipa": "a.fɛk.tjɔ̃",
+        "h": null,
+        "alternatives": [],
+        "source": "lexicon",
+        "confidence": "lexical",
+        "notes": [],
+        "pos": [
+          "NOM",
+          "VER"
+        ],
+        "grammaticalReadings": [
+          {
+            "ipa": "afɛk.sjɔ̃",
+            "pos": "NOM"
+          },
+          {
+            "ipa": "a.fɛk.tjɔ̃",
+            "pos": "VER"
+          }
+        ],
+        "reference": "Lexique 4.1",
+        "verbIpa": "a.fɛk.tjɔ̃",
+        "contextResolved": true,
+        "contextReason": "Lecture grammaticale attestée dans Lexique 4.1, choisie par le contexte local.",
+        "posHint": "verb",
+        "contextGrammar": {
+          "pos": "VER",
+          "reference": "Lexique 4.1",
+          "scope": "local"
+        },
+        "segments": [
+          {
+            "text": "a",
+            "phones": [
+              "a"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "text": "ff",
+            "phones": [
+              "f"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 1,
+            "end": 3
+          },
+          {
+            "text": "e",
+            "phones": [
+              "ɛ"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 3,
+            "end": 4
+          },
+          {
+            "text": "c",
+            "phones": [
+              "k"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 4,
+            "end": 5
+          },
+          {
+            "text": "ti",
+            "phones": [
+              "t",
+              "j"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 5,
+            "end": 7
+          },
+          {
+            "text": "on",
+            "phones": [
+              "ɔ̃"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 7,
+            "end": 9
+          },
+          {
+            "text": "s",
+            "phones": [],
+            "silent": true,
+            "uncertain": false,
+            "start": 9,
+            "end": 10
+          }
+        ],
+        "phonemes": [
+          {
+            "text": "a",
+            "phone": "a",
+            "category": "vowel",
+            "family": "A"
+          },
+          {
+            "text": ".",
+            "phone": ".",
+            "category": "mark",
+            "family": null
+          },
+          {
+            "text": "f",
+            "phone": "f",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "ɛ",
+            "phone": "ɛ",
+            "category": "vowel",
+            "family": "E"
+          },
+          {
+            "text": "k",
+            "phone": "k",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": ".",
+            "phone": ".",
+            "category": "mark",
+            "family": null
+          },
+          {
+            "text": "t",
+            "phone": "t",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "j",
+            "phone": "j",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "ɔ̃",
+            "phone": "ɔ̃",
+            "category": "nasal",
+            "family": "O"
+          }
+        ],
+        "alignmentCertain": true,
+        "displayPhonetic": "a.fɛk.tjɔ̃"
+      },
+      "passed": true
+    },
+    {
+      "type": "context",
+      "text": "Les affections sont diverses.",
+      "word": "affections",
+      "ipa": "afɛksjɔ̃",
+      "actual": "afɛksjɔ̃",
+      "output": "le.z‿a.fɛk.sjɔ̃ sɔ̃ di.vɛʁs.",
+      "token": {
+        "type": "word",
+        "text": "affections",
+        "lower": "affections",
+        "ipa": "a.fɛk.sjɔ̃",
+        "h": null,
+        "alternatives": [],
+        "source": "lexicon",
+        "confidence": "lexical",
+        "notes": [],
+        "pos": [
+          "NOM",
+          "VER"
+        ],
+        "grammaticalReadings": [
+          {
+            "ipa": "afɛk.sjɔ̃",
+            "pos": "NOM"
+          },
+          {
+            "ipa": "a.fɛk.tjɔ̃",
+            "pos": "VER"
+          }
+        ],
+        "reference": "Lexique 4.1",
+        "verbIpa": "a.fɛk.tjɔ̃",
+        "contextResolved": true,
+        "contextReason": "Lecture grammaticale attestée dans Lexique 4.1, choisie par le contexte local.",
+        "contextGrammar": {
+          "pos": "NOM",
+          "reference": "Lexique 4.1",
+          "scope": "local"
+        },
+        "posHint": "noun",
+        "segments": [
+          {
+            "text": "a",
+            "phones": [
+              "a"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "text": "ff",
+            "phones": [
+              "f"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 1,
+            "end": 3
+          },
+          {
+            "text": "e",
+            "phones": [
+              "ɛ"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 3,
+            "end": 4
+          },
+          {
+            "text": "c",
+            "phones": [
+              "k"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 4,
+            "end": 5
+          },
+          {
+            "text": "ti",
+            "phones": [
+              "s",
+              "j"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 5,
+            "end": 7
+          },
+          {
+            "text": "on",
+            "phones": [
+              "ɔ̃"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 7,
+            "end": 9
+          },
+          {
+            "text": "s",
+            "phones": [],
+            "silent": true,
+            "uncertain": false,
+            "start": 9,
+            "end": 10
+          }
+        ],
+        "phonemes": [
+          {
+            "text": "a",
+            "phone": "a",
+            "category": "vowel",
+            "family": "A"
+          },
+          {
+            "text": ".",
+            "phone": ".",
+            "category": "mark",
+            "family": null
+          },
+          {
+            "text": "f",
+            "phone": "f",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "ɛ",
+            "phone": "ɛ",
+            "category": "vowel",
+            "family": "E"
+          },
+          {
+            "text": "k",
+            "phone": "k",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": ".",
+            "phone": ".",
+            "category": "mark",
+            "family": null
+          },
+          {
+            "text": "s",
+            "phone": "s",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "j",
+            "phone": "j",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "ɔ̃",
+            "phone": "ɔ̃",
+            "category": "nasal",
+            "family": "O"
+          }
+        ],
+        "alignmentCertain": true,
+        "displayPhonetic": "a.fɛk.sjɔ̃"
+      },
+      "passed": true
+    },
+    {
+      "type": "context",
+      "text": "Nous objections à ce projet.",
+      "word": "objections",
+      "ipa": "ɔbʒɛktjɔ̃",
+      "actual": "ɔbʒɛktjɔ̃",
+      "output": "nu.z‿ɔb.ʒɛk.tjɔ̃ a sə pʁɔ.ʒɛ.",
+      "token": {
+        "type": "word",
+        "text": "objections",
+        "lower": "objections",
+        "ipa": "ɔb.ʒɛk.tjɔ̃",
+        "h": null,
+        "alternatives": [],
+        "source": "lexicon",
+        "confidence": "lexical",
+        "notes": [
+          "Liaison facultative non réalisée : Liaison facultative, omise dans la diction naturelle retenue.."
+        ],
+        "pos": [
+          "NOM",
+          "VER"
+        ],
+        "grammaticalReadings": [
+          {
+            "ipa": "ɔb.ʒɛk.sjɔ̃",
+            "pos": "NOM"
+          },
+          {
+            "ipa": "ɔb.ʒɛk.tjɔ̃",
+            "pos": "VER"
+          }
+        ],
+        "reference": "Lexique 4.1",
+        "verbIpa": "ɔb.ʒɛk.tjɔ̃",
+        "contextResolved": true,
+        "contextReason": "Lecture grammaticale attestée dans Lexique 4.1, choisie par le contexte local.",
+        "posHint": "verb",
+        "contextGrammar": {
+          "pos": "VER",
+          "reference": "Lexique 4.1",
+          "scope": "local"
+        },
+        "liaison": {
+          "phone": "z",
+          "kind": "facultative",
+          "realized": false,
+          "reason": "Liaison facultative, omise dans la diction naturelle retenue."
+        },
+        "segments": [
+          {
+            "text": "o",
+            "phones": [
+              "ɔ"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "text": "b",
+            "phones": [
+              "b"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 1,
+            "end": 2
+          },
+          {
+            "text": "j",
+            "phones": [
+              "ʒ"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 2,
+            "end": 3
+          },
+          {
+            "text": "e",
+            "phones": [
+              "ɛ"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 3,
+            "end": 4
+          },
+          {
+            "text": "c",
+            "phones": [
+              "k"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 4,
+            "end": 5
+          },
+          {
+            "text": "ti",
+            "phones": [
+              "t",
+              "j"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 5,
+            "end": 7
+          },
+          {
+            "text": "on",
+            "phones": [
+              "ɔ̃"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 7,
+            "end": 9
+          },
+          {
+            "text": "s",
+            "phones": [],
+            "silent": true,
+            "uncertain": false,
+            "start": 9,
+            "end": 10
+          }
+        ],
+        "phonemes": [
+          {
+            "text": "ɔ",
+            "phone": "ɔ",
+            "category": "vowel",
+            "family": "O"
+          },
+          {
+            "text": "b",
+            "phone": "b",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": ".",
+            "phone": ".",
+            "category": "mark",
+            "family": null
+          },
+          {
+            "text": "ʒ",
+            "phone": "ʒ",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "ɛ",
+            "phone": "ɛ",
+            "category": "vowel",
+            "family": "E"
+          },
+          {
+            "text": "k",
+            "phone": "k",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": ".",
+            "phone": ".",
+            "category": "mark",
+            "family": null
+          },
+          {
+            "text": "t",
+            "phone": "t",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "j",
+            "phone": "j",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "ɔ̃",
+            "phone": "ɔ̃",
+            "category": "nasal",
+            "family": "O"
+          }
+        ],
+        "alignmentCertain": true,
+        "displayPhonetic": "ɔb.ʒɛk.tjɔ̃"
+      },
+      "passed": true
+    },
+    {
+      "type": "context",
+      "text": "Les objections sont nombreuses.",
+      "word": "objections",
+      "ipa": "ɔbʒɛksjɔ̃",
+      "actual": "ɔbʒɛksjɔ̃",
+      "output": "le.z‿ɔb.ʒɛk.sjɔ̃ sɔ̃ nɔ̃.bʁøz.",
+      "token": {
+        "type": "word",
+        "text": "objections",
+        "lower": "objections",
+        "ipa": "ɔb.ʒɛk.sjɔ̃",
+        "h": null,
+        "alternatives": [],
+        "source": "lexicon",
+        "confidence": "lexical",
+        "notes": [],
+        "pos": [
+          "NOM",
+          "VER"
+        ],
+        "grammaticalReadings": [
+          {
+            "ipa": "ɔb.ʒɛk.sjɔ̃",
+            "pos": "NOM"
+          },
+          {
+            "ipa": "ɔb.ʒɛk.tjɔ̃",
+            "pos": "VER"
+          }
+        ],
+        "reference": "Lexique 4.1",
+        "verbIpa": "ɔb.ʒɛk.tjɔ̃",
+        "contextResolved": true,
+        "contextReason": "Lecture grammaticale attestée dans Lexique 4.1, choisie par le contexte local.",
+        "contextGrammar": {
+          "pos": "NOM",
+          "reference": "Lexique 4.1",
+          "scope": "local"
+        },
+        "posHint": "noun",
+        "segments": [
+          {
+            "text": "o",
+            "phones": [
+              "ɔ"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "text": "b",
+            "phones": [
+              "b"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 1,
+            "end": 2
+          },
+          {
+            "text": "j",
+            "phones": [
+              "ʒ"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 2,
+            "end": 3
+          },
+          {
+            "text": "e",
+            "phones": [
+              "ɛ"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 3,
+            "end": 4
+          },
+          {
+            "text": "c",
+            "phones": [
+              "k"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 4,
+            "end": 5
+          },
+          {
+            "text": "ti",
+            "phones": [
+              "s",
+              "j"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 5,
+            "end": 7
+          },
+          {
+            "text": "on",
+            "phones": [
+              "ɔ̃"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 7,
+            "end": 9
+          },
+          {
+            "text": "s",
+            "phones": [],
+            "silent": true,
+            "uncertain": false,
+            "start": 9,
+            "end": 10
+          }
+        ],
+        "phonemes": [
+          {
+            "text": "ɔ",
+            "phone": "ɔ",
+            "category": "vowel",
+            "family": "O"
+          },
+          {
+            "text": "b",
+            "phone": "b",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": ".",
+            "phone": ".",
+            "category": "mark",
+            "family": null
+          },
+          {
+            "text": "ʒ",
+            "phone": "ʒ",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "ɛ",
+            "phone": "ɛ",
+            "category": "vowel",
+            "family": "E"
+          },
+          {
+            "text": "k",
+            "phone": "k",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": ".",
+            "phone": ".",
+            "category": "mark",
+            "family": null
+          },
+          {
+            "text": "s",
+            "phone": "s",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "j",
+            "phone": "j",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "ɔ̃",
+            "phone": "ɔ̃",
+            "category": "nasal",
+            "family": "O"
+          }
+        ],
+        "alignmentCertain": true,
+        "displayPhonetic": "ɔb.ʒɛk.sjɔ̃"
+      },
+      "passed": true
+    },
+    {
+      "type": "context",
+      "text": "Les poules mangent des graines et couvent leurs œufs.",
+      "word": "couvent",
+      "ipa": "kuv",
+      "actual": "kuvɑ̃",
+      "output": "le pul mɑ̃ʒ de ɡʁɛn e ku.vɑ̃ lœʁ.z‿ø.",
+      "token": {
+        "type": "word",
+        "text": "couvent",
+        "lower": "couvent",
+        "ipa": "ku.vɑ̃",
+        "h": null,
+        "alternatives": [
+          "kuv"
+        ],
+        "source": "lexicon",
+        "confidence": "ambiguous",
+        "notes": [
+          "Homographe : la lecture verbale et la lecture nominale/adjectivale exigent une analyse syntaxique ou sémantique.",
+          "Des lectures grammaticales attestées restent possibles ; le contexte local ne les départage pas."
+        ],
+        "pos": [
+          "NOM",
+          "VER"
+        ],
+        "grammaticalReadings": [
+          {
+            "ipa": "ku.vɑ̃",
+            "pos": "NOM"
+          },
+          {
+            "ipa": "kuv",
+            "pos": "VER"
+          }
+        ],
+        "reference": "Lexique 4.1",
+        "verbIpa": "kuv",
+        "contextResolved": true,
+        "contextReason": "Lecture nominale ou adjectivale retenue par défaut.",
+        "segments": [
+          {
+            "text": "c",
+            "phones": [
+              "k"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "text": "ou",
+            "phones": [
+              "u"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 1,
+            "end": 3
+          },
+          {
+            "text": "v",
+            "phones": [
+              "v"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 3,
+            "end": 4
+          },
+          {
+            "text": "en",
+            "phones": [
+              "ɑ̃"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 4,
+            "end": 6
+          },
+          {
+            "text": "t",
+            "phones": [],
+            "silent": true,
+            "uncertain": false,
+            "start": 6,
+            "end": 7
+          }
+        ],
+        "phonemes": [
+          {
+            "text": "k",
+            "phone": "k",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "u",
+            "phone": "u",
+            "category": "vowel",
+            "family": "U"
+          },
+          {
+            "text": ".",
+            "phone": ".",
+            "category": "mark",
+            "family": null
+          },
+          {
+            "text": "v",
+            "phone": "v",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "ɑ̃",
+            "phone": "ɑ̃",
+            "category": "nasal",
+            "family": "A"
+          }
+        ],
+        "alignmentCertain": true,
+        "displayPhonetic": "ku.vɑ̃"
+      },
+      "passed": false
+    },
+    {
+      "type": "context",
+      "text": "Les moines déjeunent au couvent puis président la réunion.",
+      "word": "président",
+      "ipa": "pʁezid",
+      "actual": "pʁezidɑ̃",
+      "output": "le mwan de.ʒœn o ku.vɑ̃ pɥi pʁe.zi.dɑ̃ la ʁe.y.njɔ̃.",
+      "token": {
+        "type": "word",
+        "text": "président",
+        "lower": "président",
+        "ipa": "pʁe.zi.dɑ̃",
+        "h": null,
+        "alternatives": [
+          "pʁezid",
+          "pʁe.zid"
+        ],
+        "source": "lexicon",
+        "confidence": "ambiguous",
+        "notes": [
+          "Homographe : la lecture verbale et la lecture nominale/adjectivale exigent une analyse syntaxique ou sémantique.",
+          "Des lectures grammaticales attestées restent possibles ; le contexte local ne les départage pas."
+        ],
+        "pos": [
+          "NOM",
+          "VER"
+        ],
+        "grammaticalReadings": [
+          {
+            "ipa": "pʁe.zi.dɑ̃",
+            "pos": "NOM"
+          },
+          {
+            "ipa": "pʁe.zid",
+            "pos": "VER"
+          }
+        ],
+        "reference": "Lexique 4.1",
+        "verbIpa": "pʁe.zid",
+        "contextResolved": true,
+        "contextReason": "Lecture nominale ou adjectivale retenue par défaut.",
+        "segments": [
+          {
+            "text": "p",
+            "phones": [
+              "p"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "text": "r",
+            "phones": [
+              "ʁ"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 1,
+            "end": 2
+          },
+          {
+            "text": "é",
+            "phones": [
+              "e"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 2,
+            "end": 3
+          },
+          {
+            "text": "s",
+            "phones": [
+              "z"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 3,
+            "end": 4
+          },
+          {
+            "text": "i",
+            "phones": [
+              "i"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 4,
+            "end": 5
+          },
+          {
+            "text": "d",
+            "phones": [
+              "d"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 5,
+            "end": 6
+          },
+          {
+            "text": "en",
+            "phones": [
+              "ɑ̃"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 6,
+            "end": 8
+          },
+          {
+            "text": "t",
+            "phones": [],
+            "silent": true,
+            "uncertain": false,
+            "start": 8,
+            "end": 9
+          }
+        ],
+        "phonemes": [
+          {
+            "text": "p",
+            "phone": "p",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "ʁ",
+            "phone": "ʁ",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "e",
+            "phone": "e",
+            "category": "vowel",
+            "family": "E"
+          },
+          {
+            "text": ".",
+            "phone": ".",
+            "category": "mark",
+            "family": null
+          },
+          {
+            "text": "z",
+            "phone": "z",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "i",
+            "phone": "i",
+            "category": "vowel",
+            "family": "I"
+          },
+          {
+            "text": ".",
+            "phone": ".",
+            "category": "mark",
+            "family": null
+          },
+          {
+            "text": "d",
+            "phone": "d",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "ɑ̃",
+            "phone": "ɑ̃",
+            "category": "nasal",
+            "family": "A"
+          }
+        ],
+        "alignmentCertain": true,
+        "displayPhonetic": "pʁe.zi.dɑ̃"
+      },
+      "passed": false
+    },
+    {
+      "type": "context",
+      "text": "Ils ferment la porte et content leur aventure.",
+      "word": "content",
+      "ipa": "kɔ̃t",
+      "actual": "kɔ̃tɑ̃",
+      "output": "il fɛʁm la pɔʁt e kɔ̃.tɑ̃ lœʁ a.vɑ̃.tyʁ.",
+      "token": {
+        "type": "word",
+        "text": "content",
+        "lower": "content",
+        "ipa": "kɔ̃.tɑ̃",
+        "h": null,
+        "alternatives": [
+          "kɔ̃t"
+        ],
+        "source": "lexicon",
+        "confidence": "ambiguous",
+        "notes": [
+          "Prononciations lexicales possibles : /kɔ̃.tɑ̃/, /kɔ̃.tɑ̃t/. Les variantes du lexique ne sont pas étiquetées.",
+          "Homographe : la lecture verbale et la lecture nominale/adjectivale exigent une analyse syntaxique ou sémantique.",
+          "Des lectures grammaticales attestées restent possibles ; le contexte local ne les départage pas."
+        ],
+        "pos": [
+          "ADJ",
+          "NOM",
+          "VER"
+        ],
+        "grammaticalReadings": [
+          {
+            "ipa": "kɔ̃.tɑ̃",
+            "pos": "ADJ"
+          },
+          {
+            "ipa": "kɔ̃.tɑ̃",
+            "pos": "NOM"
+          },
+          {
+            "ipa": "kɔ̃t",
+            "pos": "VER"
+          }
+        ],
+        "reference": "Lexique 4.1",
+        "verbIpa": "kɔ̃t",
+        "contextResolved": true,
+        "contextReason": "Lecture nominale ou adjectivale retenue par défaut.",
+        "segments": [
+          {
+            "text": "c",
+            "phones": [
+              "k"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "text": "on",
+            "phones": [
+              "ɔ̃"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 1,
+            "end": 3
+          },
+          {
+            "text": "t",
+            "phones": [
+              "t"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 3,
+            "end": 4
+          },
+          {
+            "text": "en",
+            "phones": [
+              "ɑ̃"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 4,
+            "end": 6
+          },
+          {
+            "text": "t",
+            "phones": [],
+            "silent": true,
+            "uncertain": false,
+            "start": 6,
+            "end": 7
+          }
+        ],
+        "phonemes": [
+          {
+            "text": "k",
+            "phone": "k",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "ɔ̃",
+            "phone": "ɔ̃",
+            "category": "nasal",
+            "family": "O"
+          },
+          {
+            "text": ".",
+            "phone": ".",
+            "category": "mark",
+            "family": null
+          },
+          {
+            "text": "t",
+            "phone": "t",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "ɑ̃",
+            "phone": "ɑ̃",
+            "category": "nasal",
+            "family": "A"
+          }
+        ],
+        "alignmentCertain": true,
+        "displayPhonetic": "kɔ̃.tɑ̃"
+      },
+      "passed": false
+    },
+    {
+      "type": "context",
+      "text": "Les enfants regardent la maison et convient leurs voisins.",
+      "word": "convient",
+      "ipa": "kɔ̃vi",
+      "actual": "kɔ̃vi",
+      "output": "le.z‿ɑ̃.fɑ̃ ʁə.ɡaʁd la mɛ.zɔ̃ e kɔ̃.vi lœʁ vwa.zɛ̃.",
+      "token": {
+        "type": "word",
+        "text": "convient",
+        "lower": "convient",
+        "ipa": "kɔ̃.vi",
+        "h": null,
+        "alternatives": [
+          "kɔ̃.vjɛ̃",
+          "kɔ̃vjɛ̃"
+        ],
+        "source": "lexicon",
+        "confidence": "ambiguous",
+        "notes": [
+          "Prononciations lexicales possibles : /kɔ̃.vi/, /kɔ̃.vjɛ̃/. Les variantes du lexique ne sont pas étiquetées.",
+          "Convient : convenir au singulier /kɔ̃vjɛ̃/ ou convier au pluriel /kɔ̃vi/ ; sujet non déterminé."
+        ],
+        "pos": [
+          "VER"
+        ],
+        "reference": "Lexique 4.1",
+        "verbIpa": "kɔ̃.vi",
+        "posHint": "verb",
+        "segments": [
+          {
+            "text": "c",
+            "phones": [
+              "k"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "text": "on",
+            "phones": [
+              "ɔ̃"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 1,
+            "end": 3
+          },
+          {
+            "text": "v",
+            "phones": [
+              "v"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 3,
+            "end": 4
+          },
+          {
+            "text": "i",
+            "phones": [
+              "i"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 4,
+            "end": 5
+          },
+          {
+            "text": "ent",
+            "phones": [],
+            "silent": true,
+            "uncertain": false,
+            "start": 5,
+            "end": 8
+          }
+        ],
+        "phonemes": [
+          {
+            "text": "k",
+            "phone": "k",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "ɔ̃",
+            "phone": "ɔ̃",
+            "category": "nasal",
+            "family": "O"
+          },
+          {
+            "text": ".",
+            "phone": ".",
+            "category": "mark",
+            "family": null
+          },
+          {
+            "text": "v",
+            "phone": "v",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "i",
+            "phone": "i",
+            "category": "vowel",
+            "family": "I"
+          }
+        ],
+        "alignmentCertain": true,
+        "displayPhonetic": "kɔ̃.vi"
+      },
+      "passed": true
+    },
+    {
+      "type": "context",
+      "text": "Les secrétaires écrivent au président et résident à Lyon.",
+      "word": "résident",
+      "ipa": "ʁezid",
+      "actual": "ʁezidɑ̃",
+      "output": "le sə.kʁe.tɛʁ e.kʁiv o pʁe.zi.dɑ̃ e ʁe.zi.dɑ̃ a li.jɔ̃.",
+      "token": {
+        "type": "word",
+        "text": "résident",
+        "lower": "résident",
+        "ipa": "ʁe.zi.dɑ̃",
+        "h": null,
+        "alternatives": [
+          "ʁezid",
+          "ʁe.zid"
+        ],
+        "source": "lexicon",
+        "confidence": "ambiguous",
+        "notes": [
+          "Homographe : la lecture verbale et la lecture nominale/adjectivale exigent une analyse syntaxique ou sémantique.",
+          "Des lectures grammaticales attestées restent possibles ; le contexte local ne les départage pas."
+        ],
+        "pos": [
+          "ADJ",
+          "NOM",
+          "VER"
+        ],
+        "grammaticalReadings": [
+          {
+            "ipa": "ʁe.zi.dɑ̃",
+            "pos": "NOM"
+          },
+          {
+            "ipa": "ʁe.zi.dɑ̃",
+            "pos": "ADJ"
+          },
+          {
+            "ipa": "ʁe.zid",
+            "pos": "VER"
+          }
+        ],
+        "reference": "Lexique 4.1",
+        "verbIpa": "ʁe.zid",
+        "contextResolved": true,
+        "contextReason": "Lecture nominale ou adjectivale retenue par défaut.",
+        "liaison": {
+          "phone": "t",
+          "kind": "interdite",
+          "realized": false,
+          "reason": "Aucun lien grammatical sûr n’autorise cette liaison."
+        },
+        "segments": [
+          {
+            "text": "r",
+            "phones": [
+              "ʁ"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "text": "é",
+            "phones": [
+              "e"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 1,
+            "end": 2
+          },
+          {
+            "text": "s",
+            "phones": [
+              "z"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 2,
+            "end": 3
+          },
+          {
+            "text": "i",
+            "phones": [
+              "i"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 3,
+            "end": 4
+          },
+          {
+            "text": "d",
+            "phones": [
+              "d"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 4,
+            "end": 5
+          },
+          {
+            "text": "en",
+            "phones": [
+              "ɑ̃"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 5,
+            "end": 7
+          },
+          {
+            "text": "t",
+            "phones": [],
+            "silent": true,
+            "uncertain": false,
+            "start": 7,
+            "end": 8
+          }
+        ],
+        "phonemes": [
+          {
+            "text": "ʁ",
+            "phone": "ʁ",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "e",
+            "phone": "e",
+            "category": "vowel",
+            "family": "E"
+          },
+          {
+            "text": ".",
+            "phone": ".",
+            "category": "mark",
+            "family": null
+          },
+          {
+            "text": "z",
+            "phone": "z",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "i",
+            "phone": "i",
+            "category": "vowel",
+            "family": "I"
+          },
+          {
+            "text": ".",
+            "phone": ".",
+            "category": "mark",
+            "family": null
+          },
+          {
+            "text": "d",
+            "phone": "d",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "ɑ̃",
+            "phone": "ɑ̃",
+            "category": "nasal",
+            "family": "A"
+          }
+        ],
+        "alignmentCertain": true,
+        "displayPhonetic": "ʁe.zi.dɑ̃"
+      },
+      "passed": false
+    },
+    {
+      "type": "context",
+      "text": "Les enfants que nous invitons content une histoire.",
+      "word": "content",
+      "ipa": "kɔ̃t",
+      "actual": "kɔ̃tɑ̃",
+      "output": "le.z‿ɑ̃.fɑ̃ kə nu.z‿ɛ̃.vi.tɔ̃ kɔ̃.tɑ̃ yn is.twaʁ.",
+      "token": {
+        "type": "word",
+        "text": "content",
+        "lower": "content",
+        "ipa": "kɔ̃.tɑ̃",
+        "h": null,
+        "alternatives": [
+          "kɔ̃t"
+        ],
+        "source": "lexicon",
+        "confidence": "ambiguous",
+        "notes": [
+          "Prononciations lexicales possibles : /kɔ̃.tɑ̃/, /kɔ̃.tɑ̃t/. Les variantes du lexique ne sont pas étiquetées.",
+          "Homographe : la lecture verbale et la lecture nominale/adjectivale exigent une analyse syntaxique ou sémantique.",
+          "Des lectures grammaticales attestées restent possibles ; le contexte local ne les départage pas."
+        ],
+        "pos": [
+          "ADJ",
+          "NOM",
+          "VER"
+        ],
+        "grammaticalReadings": [
+          {
+            "ipa": "kɔ̃.tɑ̃",
+            "pos": "ADJ"
+          },
+          {
+            "ipa": "kɔ̃.tɑ̃",
+            "pos": "NOM"
+          },
+          {
+            "ipa": "kɔ̃t",
+            "pos": "VER"
+          }
+        ],
+        "reference": "Lexique 4.1",
+        "verbIpa": "kɔ̃t",
+        "contextResolved": true,
+        "contextReason": "Lecture nominale ou adjectivale retenue par défaut.",
+        "liaison": {
+          "phone": "t",
+          "kind": "interdite",
+          "realized": false,
+          "reason": "Aucun lien grammatical sûr n’autorise cette liaison."
+        },
+        "segments": [
+          {
+            "text": "c",
+            "phones": [
+              "k"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "text": "on",
+            "phones": [
+              "ɔ̃"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 1,
+            "end": 3
+          },
+          {
+            "text": "t",
+            "phones": [
+              "t"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 3,
+            "end": 4
+          },
+          {
+            "text": "en",
+            "phones": [
+              "ɑ̃"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 4,
+            "end": 6
+          },
+          {
+            "text": "t",
+            "phones": [],
+            "silent": true,
+            "uncertain": false,
+            "start": 6,
+            "end": 7
+          }
+        ],
+        "phonemes": [
+          {
+            "text": "k",
+            "phone": "k",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "ɔ̃",
+            "phone": "ɔ̃",
+            "category": "nasal",
+            "family": "O"
+          },
+          {
+            "text": ".",
+            "phone": ".",
+            "category": "mark",
+            "family": null
+          },
+          {
+            "text": "t",
+            "phone": "t",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "ɑ̃",
+            "phone": "ɑ̃",
+            "category": "nasal",
+            "family": "A"
+          }
+        ],
+        "alignmentCertain": true,
+        "displayPhonetic": "kɔ̃.tɑ̃"
+      },
+      "passed": false
+    },
+    {
+      "type": "context",
+      "text": "Les moines qui arrivent couvent ce projet.",
+      "word": "couvent",
+      "ipa": "kuv",
+      "actual": "kuvɑ̃",
+      "output": "le mwan ki a.ʁiv ku.vɑ̃ sə pʁɔ.ʒɛ.",
+      "token": {
+        "type": "word",
+        "text": "couvent",
+        "lower": "couvent",
+        "ipa": "ku.vɑ̃",
+        "h": null,
+        "alternatives": [
+          "kuv"
+        ],
+        "source": "lexicon",
+        "confidence": "ambiguous",
+        "notes": [
+          "Homographe : la lecture verbale et la lecture nominale/adjectivale exigent une analyse syntaxique ou sémantique.",
+          "Des lectures grammaticales attestées restent possibles ; le contexte local ne les départage pas."
+        ],
+        "pos": [
+          "NOM",
+          "VER"
+        ],
+        "grammaticalReadings": [
+          {
+            "ipa": "ku.vɑ̃",
+            "pos": "NOM"
+          },
+          {
+            "ipa": "kuv",
+            "pos": "VER"
+          }
+        ],
+        "reference": "Lexique 4.1",
+        "verbIpa": "kuv",
+        "contextResolved": true,
+        "contextReason": "Lecture nominale ou adjectivale retenue par défaut.",
+        "segments": [
+          {
+            "text": "c",
+            "phones": [
+              "k"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "text": "ou",
+            "phones": [
+              "u"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 1,
+            "end": 3
+          },
+          {
+            "text": "v",
+            "phones": [
+              "v"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 3,
+            "end": 4
+          },
+          {
+            "text": "en",
+            "phones": [
+              "ɑ̃"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 4,
+            "end": 6
+          },
+          {
+            "text": "t",
+            "phones": [],
+            "silent": true,
+            "uncertain": false,
+            "start": 6,
+            "end": 7
+          }
+        ],
+        "phonemes": [
+          {
+            "text": "k",
+            "phone": "k",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "u",
+            "phone": "u",
+            "category": "vowel",
+            "family": "U"
+          },
+          {
+            "text": ".",
+            "phone": ".",
+            "category": "mark",
+            "family": null
+          },
+          {
+            "text": "v",
+            "phone": "v",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "ɑ̃",
+            "phone": "ɑ̃",
+            "category": "nasal",
+            "family": "A"
+          }
+        ],
+        "alignmentCertain": true,
+        "displayPhonetic": "ku.vɑ̃"
+      },
+      "passed": false
+    },
+    {
+      "type": "context",
+      "text": "La chambre des enfants nous convient.",
+      "word": "convient",
+      "ipa": "kɔ̃vjɛ̃",
+      "actual": "kɔ̃vjɛ̃",
+      "output": "la ʃɑ̃bʁ de.z‿ɑ̃.fɑ̃ nu kɔ̃.vjɛ̃.",
+      "token": {
+        "type": "word",
+        "text": "convient",
+        "lower": "convient",
+        "ipa": "kɔ̃.vjɛ̃",
+        "h": null,
+        "alternatives": [],
+        "source": "lexicon",
+        "confidence": "lexical",
+        "notes": [],
+        "pos": [
+          "VER"
+        ],
+        "reference": "Lexique 4.1",
+        "verbIpa": "kɔ̃.vi",
+        "contextResolved": true,
+        "contextReason": "Accord du sujet : convenir au singulier ou convier au pluriel.",
+        "posHint": "verb",
+        "segments": [
+          {
+            "text": "c",
+            "phones": [
+              "k"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "text": "on",
+            "phones": [
+              "ɔ̃"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 1,
+            "end": 3
+          },
+          {
+            "text": "v",
+            "phones": [
+              "v"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 3,
+            "end": 4
+          },
+          {
+            "text": "ien",
+            "phones": [
+              "j",
+              "ɛ̃"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 4,
+            "end": 7
+          },
+          {
+            "text": "t",
+            "phones": [],
+            "silent": true,
+            "uncertain": false,
+            "start": 7,
+            "end": 8
+          }
+        ],
+        "phonemes": [
+          {
+            "text": "k",
+            "phone": "k",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "ɔ̃",
+            "phone": "ɔ̃",
+            "category": "nasal",
+            "family": "O"
+          },
+          {
+            "text": ".",
+            "phone": ".",
+            "category": "mark",
+            "family": null
+          },
+          {
+            "text": "v",
+            "phone": "v",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "j",
+            "phone": "j",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "ɛ̃",
+            "phone": "ɛ̃",
+            "category": "nasal",
+            "family": "E"
+          }
+        ],
+        "alignmentCertain": true,
+        "displayPhonetic": "kɔ̃.vjɛ̃"
+      },
+      "passed": true
+    },
+    {
+      "type": "context",
+      "text": "Les voisins de cet enfant nous convient demain.",
+      "word": "convient",
+      "ipa": "kɔ̃vi",
+      "actual": "kɔ̃vi",
+      "output": "le vwa.zɛ̃ də sɛ.t‿ɑ̃.fɑ̃ nu kɔ̃.vi də.mɛ̃.",
+      "token": {
+        "type": "word",
+        "text": "convient",
+        "lower": "convient",
+        "ipa": "kɔ̃.vi",
+        "h": null,
+        "alternatives": [],
+        "source": "lexicon",
+        "confidence": "lexical",
+        "notes": [],
+        "pos": [
+          "VER"
+        ],
+        "reference": "Lexique 4.1",
+        "verbIpa": "kɔ̃.vi",
+        "contextResolved": true,
+        "contextReason": "Accord du sujet : convenir au singulier ou convier au pluriel.",
+        "posHint": "verb",
+        "segments": [
+          {
+            "text": "c",
+            "phones": [
+              "k"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "text": "on",
+            "phones": [
+              "ɔ̃"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 1,
+            "end": 3
+          },
+          {
+            "text": "v",
+            "phones": [
+              "v"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 3,
+            "end": 4
+          },
+          {
+            "text": "i",
+            "phones": [
+              "i"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 4,
+            "end": 5
+          },
+          {
+            "text": "ent",
+            "phones": [],
+            "silent": true,
+            "uncertain": false,
+            "start": 5,
+            "end": 8
+          }
+        ],
+        "phonemes": [
+          {
+            "text": "k",
+            "phone": "k",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "ɔ̃",
+            "phone": "ɔ̃",
+            "category": "nasal",
+            "family": "O"
+          },
+          {
+            "text": ".",
+            "phone": ".",
+            "category": "mark",
+            "family": null
+          },
+          {
+            "text": "v",
+            "phone": "v",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "i",
+            "phone": "i",
+            "category": "vowel",
+            "family": "I"
+          }
+        ],
+        "alignmentCertain": true,
+        "displayPhonetic": "kɔ̃.vi"
+      },
+      "passed": true
+    },
+    {
+      "type": "context",
+      "text": "Nous jouions dehors.",
+      "word": "jouions",
+      "ipa": "ʒujɔ̃",
+      "actual": "ʒujɔ̃",
+      "output": "nu ʒu.jɔ̃ də.ɔʁ.",
+      "token": {
+        "type": "word",
+        "text": "jouions",
+        "lower": "jouions",
+        "ipa": "ʒu.jɔ̃",
+        "h": null,
+        "alternatives": [],
+        "source": "lexicon",
+        "confidence": "lexical",
+        "notes": [],
+        "pos": [
+          "VER"
+        ],
+        "reference": "Lexique 4.1",
+        "verbIpa": "ʒu.jɔ̃",
+        "contextResolved": true,
+        "contextReason": "Flexion verbale identifiée par son sujet.",
+        "posHint": "verb",
+        "segments": [
+          {
+            "text": "j",
+            "phones": [
+              "ʒ"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "text": "ou",
+            "phones": [
+              "u"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 1,
+            "end": 3
+          },
+          {
+            "text": "i",
+            "phones": [
+              "j"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 3,
+            "end": 4
+          },
+          {
+            "text": "on",
+            "phones": [
+              "ɔ̃"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 4,
+            "end": 6
+          },
+          {
+            "text": "s",
+            "phones": [],
+            "silent": true,
+            "uncertain": false,
+            "start": 6,
+            "end": 7
+          }
+        ],
+        "phonemes": [
+          {
+            "text": "ʒ",
+            "phone": "ʒ",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "u",
+            "phone": "u",
+            "category": "vowel",
+            "family": "U"
+          },
+          {
+            "text": ".",
+            "phone": ".",
+            "category": "mark",
+            "family": null
+          },
+          {
+            "text": "j",
+            "phone": "j",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "ɔ̃",
+            "phone": "ɔ̃",
+            "category": "nasal",
+            "family": "O"
+          }
+        ],
+        "alignmentCertain": true,
+        "displayPhonetic": "ʒu.jɔ̃"
+      },
+      "passed": true
+    },
+    {
+      "type": "context",
+      "text": "Nous louions cette maison.",
+      "word": "louions",
+      "ipa": "lujɔ̃",
+      "actual": "lujɔ̃",
+      "output": "nu lu.jɔ̃ sɛt mɛ.zɔ̃.",
+      "token": {
+        "type": "word",
+        "text": "louions",
+        "lower": "louions",
+        "ipa": "lu.jɔ̃",
+        "h": null,
+        "alternatives": [],
+        "source": "lexicon",
+        "confidence": "lexical",
+        "notes": [],
+        "pos": [
+          "VER"
+        ],
+        "reference": "Lexique 4.1",
+        "verbIpa": "lu.jɔ̃",
+        "contextResolved": true,
+        "contextReason": "Flexion verbale identifiée par son sujet.",
+        "posHint": "verb",
+        "segments": [
+          {
+            "text": "l",
+            "phones": [
+              "l"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "text": "ou",
+            "phones": [
+              "u"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 1,
+            "end": 3
+          },
+          {
+            "text": "i",
+            "phones": [
+              "j"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 3,
+            "end": 4
+          },
+          {
+            "text": "on",
+            "phones": [
+              "ɔ̃"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 4,
+            "end": 6
+          },
+          {
+            "text": "s",
+            "phones": [],
+            "silent": true,
+            "uncertain": false,
+            "start": 6,
+            "end": 7
+          }
+        ],
+        "phonemes": [
+          {
+            "text": "l",
+            "phone": "l",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "u",
+            "phone": "u",
+            "category": "vowel",
+            "family": "U"
+          },
+          {
+            "text": ".",
+            "phone": ".",
+            "category": "mark",
+            "family": null
+          },
+          {
+            "text": "j",
+            "phone": "j",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "ɔ̃",
+            "phone": "ɔ̃",
+            "category": "nasal",
+            "family": "O"
+          }
+        ],
+        "alignmentCertain": true,
+        "displayPhonetic": "lu.jɔ̃"
+      },
+      "passed": true
+    },
+    {
+      "type": "context",
+      "text": "Nous étudiions ce texte.",
+      "word": "étudiions",
+      "ipa": "etydijɔ̃",
+      "actual": "etydijɔ̃",
+      "output": "nu.z‿e.ty.di.jɔ̃ sə tɛkst.",
+      "token": {
+        "type": "word",
+        "text": "étudiions",
+        "lower": "étudiions",
+        "ipa": "e.ty.di.jɔ̃",
+        "h": null,
+        "alternatives": [],
+        "source": "lexicon",
+        "confidence": "lexical",
+        "notes": [],
+        "pos": [
+          "VER"
+        ],
+        "reference": "Lexique 4.1",
+        "verbIpa": "e.ty.di.jɔ̃",
+        "contextResolved": true,
+        "contextReason": "Flexion verbale identifiée par son sujet.",
+        "posHint": "verb",
+        "segments": [
+          {
+            "text": "é",
+            "phones": [
+              "e"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "text": "t",
+            "phones": [
+              "t"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 1,
+            "end": 2
+          },
+          {
+            "text": "u",
+            "phones": [
+              "y"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 2,
+            "end": 3
+          },
+          {
+            "text": "d",
+            "phones": [
+              "d"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 3,
+            "end": 4
+          },
+          {
+            "text": "i",
+            "phones": [
+              "i"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 4,
+            "end": 5
+          },
+          {
+            "text": "i",
+            "phones": [
+              "j"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 5,
+            "end": 6
+          },
+          {
+            "text": "on",
+            "phones": [
+              "ɔ̃"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 6,
+            "end": 8
+          },
+          {
+            "text": "s",
+            "phones": [],
+            "silent": true,
+            "uncertain": false,
+            "start": 8,
+            "end": 9
+          }
+        ],
+        "phonemes": [
+          {
+            "text": "e",
+            "phone": "e",
+            "category": "vowel",
+            "family": "E"
+          },
+          {
+            "text": ".",
+            "phone": ".",
+            "category": "mark",
+            "family": null
+          },
+          {
+            "text": "t",
+            "phone": "t",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "y",
+            "phone": "y",
+            "category": "vowel",
+            "family": "U"
+          },
+          {
+            "text": ".",
+            "phone": ".",
+            "category": "mark",
+            "family": null
+          },
+          {
+            "text": "d",
+            "phone": "d",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "i",
+            "phone": "i",
+            "category": "vowel",
+            "family": "I"
+          },
+          {
+            "text": ".",
+            "phone": ".",
+            "category": "mark",
+            "family": null
+          },
+          {
+            "text": "j",
+            "phone": "j",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "ɔ̃",
+            "phone": "ɔ̃",
+            "category": "nasal",
+            "family": "O"
+          }
+        ],
+        "alignmentCertain": true,
+        "displayPhonetic": "e.ty.di.jɔ̃"
+      },
+      "passed": true
+    },
+    {
+      "type": "context",
+      "text": "Nous criions longtemps.",
+      "word": "criions",
+      "ipa": "kʁijɔ̃",
+      "actual": "kʁijɔ̃",
+      "output": "nu kʁi.jɔ̃ lɔ̃.tɑ̃.",
+      "token": {
+        "type": "word",
+        "text": "criions",
+        "lower": "criions",
+        "ipa": "kʁi.jɔ̃",
+        "h": null,
+        "alternatives": [],
+        "source": "lexicon",
+        "confidence": "lexical",
+        "notes": [],
+        "pos": [
+          "VER"
+        ],
+        "reference": "Lexique 4.1",
+        "verbIpa": "kʁi.jɔ̃",
+        "contextResolved": true,
+        "contextReason": "Flexion verbale identifiée par son sujet.",
+        "posHint": "verb",
+        "segments": [
+          {
+            "text": "c",
+            "phones": [
+              "k"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "text": "r",
+            "phones": [
+              "ʁ"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 1,
+            "end": 2
+          },
+          {
+            "text": "i",
+            "phones": [
+              "i"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 2,
+            "end": 3
+          },
+          {
+            "text": "i",
+            "phones": [
+              "j"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 3,
+            "end": 4
+          },
+          {
+            "text": "on",
+            "phones": [
+              "ɔ̃"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 4,
+            "end": 6
+          },
+          {
+            "text": "s",
+            "phones": [],
+            "silent": true,
+            "uncertain": false,
+            "start": 6,
+            "end": 7
+          }
+        ],
+        "phonemes": [
+          {
+            "text": "k",
+            "phone": "k",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "ʁ",
+            "phone": "ʁ",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "i",
+            "phone": "i",
+            "category": "vowel",
+            "family": "I"
+          },
+          {
+            "text": ".",
+            "phone": ".",
+            "category": "mark",
+            "family": null
+          },
+          {
+            "text": "j",
+            "phone": "j",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "ɔ̃",
+            "phone": "ɔ̃",
+            "category": "nasal",
+            "family": "O"
+          }
+        ],
+        "alignmentCertain": true,
+        "displayPhonetic": "kʁi.jɔ̃"
+      },
+      "passed": true
+    },
+    {
+      "type": "context",
+      "text": "Nous priions ensemble.",
+      "word": "priions",
+      "ipa": "pʁijɔ̃",
+      "actual": "pʁijɔ̃",
+      "output": "nu pʁi.jɔ̃ ɑ̃.sɑ̃bl.",
+      "token": {
+        "type": "word",
+        "text": "priions",
+        "lower": "priions",
+        "ipa": "pʁi.jɔ̃",
+        "h": null,
+        "alternatives": [],
+        "source": "lexicon",
+        "confidence": "lexical",
+        "notes": [
+          "Liaison facultative non réalisée : Liaison facultative, omise dans la diction naturelle retenue.."
+        ],
+        "pos": [
+          "VER"
+        ],
+        "reference": "Lexique 4.1",
+        "verbIpa": "pʁi.jɔ̃",
+        "contextResolved": true,
+        "contextReason": "Flexion verbale identifiée par son sujet.",
+        "posHint": "verb",
+        "liaison": {
+          "phone": "z",
+          "kind": "facultative",
+          "realized": false,
+          "reason": "Liaison facultative, omise dans la diction naturelle retenue."
+        },
+        "segments": [
+          {
+            "text": "p",
+            "phones": [
+              "p"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "text": "r",
+            "phones": [
+              "ʁ"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 1,
+            "end": 2
+          },
+          {
+            "text": "i",
+            "phones": [
+              "i"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 2,
+            "end": 3
+          },
+          {
+            "text": "i",
+            "phones": [
+              "j"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 3,
+            "end": 4
+          },
+          {
+            "text": "on",
+            "phones": [
+              "ɔ̃"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 4,
+            "end": 6
+          },
+          {
+            "text": "s",
+            "phones": [],
+            "silent": true,
+            "uncertain": false,
+            "start": 6,
+            "end": 7
+          }
+        ],
+        "phonemes": [
+          {
+            "text": "p",
+            "phone": "p",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "ʁ",
+            "phone": "ʁ",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "i",
+            "phone": "i",
+            "category": "vowel",
+            "family": "I"
+          },
+          {
+            "text": ".",
+            "phone": ".",
+            "category": "mark",
+            "family": null
+          },
+          {
+            "text": "j",
+            "phone": "j",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "ɔ̃",
+            "phone": "ɔ̃",
+            "category": "nasal",
+            "family": "O"
+          }
+        ],
+        "alignmentCertain": true,
+        "displayPhonetic": "pʁi.jɔ̃"
+      },
+      "passed": true
+    },
+    {
+      "type": "context",
+      "text": "Nous appréciions ce repas.",
+      "word": "appréciions",
+      "ipa": "apʁesijɔ̃",
+      "actual": "apʁesijɔ̃",
+      "output": "nu.z‿a.pʁe.si.jɔ̃ sə ʁə.pa.",
+      "token": {
+        "type": "word",
+        "text": "appréciions",
+        "lower": "appréciions",
+        "ipa": "a.pʁe.si.jɔ̃",
+        "h": null,
+        "alternatives": [],
+        "source": "lexicon",
+        "confidence": "lexical",
+        "notes": [],
+        "pos": [
+          "VER"
+        ],
+        "reference": "Lexique 4.1",
+        "verbIpa": "a.pʁe.si.jɔ̃",
+        "contextResolved": true,
+        "contextReason": "Flexion verbale identifiée par son sujet.",
+        "posHint": "verb",
+        "segments": [
+          {
+            "text": "a",
+            "phones": [
+              "a"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "text": "pp",
+            "phones": [
+              "p"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 1,
+            "end": 3
+          },
+          {
+            "text": "r",
+            "phones": [
+              "ʁ"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 3,
+            "end": 4
+          },
+          {
+            "text": "é",
+            "phones": [
+              "e"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 4,
+            "end": 5
+          },
+          {
+            "text": "c",
+            "phones": [
+              "s"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 5,
+            "end": 6
+          },
+          {
+            "text": "i",
+            "phones": [
+              "i"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 6,
+            "end": 7
+          },
+          {
+            "text": "i",
+            "phones": [
+              "j"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 7,
+            "end": 8
+          },
+          {
+            "text": "on",
+            "phones": [
+              "ɔ̃"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 8,
+            "end": 10
+          },
+          {
+            "text": "s",
+            "phones": [],
+            "silent": true,
+            "uncertain": false,
+            "start": 10,
+            "end": 11
+          }
+        ],
+        "phonemes": [
+          {
+            "text": "a",
+            "phone": "a",
+            "category": "vowel",
+            "family": "A"
+          },
+          {
+            "text": ".",
+            "phone": ".",
+            "category": "mark",
+            "family": null
+          },
+          {
+            "text": "p",
+            "phone": "p",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "ʁ",
+            "phone": "ʁ",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "e",
+            "phone": "e",
+            "category": "vowel",
+            "family": "E"
+          },
+          {
+            "text": ".",
+            "phone": ".",
+            "category": "mark",
+            "family": null
+          },
+          {
+            "text": "s",
+            "phone": "s",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "i",
+            "phone": "i",
+            "category": "vowel",
+            "family": "I"
+          },
+          {
+            "text": ".",
+            "phone": ".",
+            "category": "mark",
+            "family": null
+          },
+          {
+            "text": "j",
+            "phone": "j",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "ɔ̃",
+            "phone": "ɔ̃",
+            "category": "nasal",
+            "family": "O"
+          }
+        ],
+        "alignmentCertain": true,
+        "displayPhonetic": "a.pʁe.si.jɔ̃"
+      },
+      "passed": true
+    },
+    {
+      "type": "context",
+      "text": "Nous riions beaucoup.",
+      "word": "riions",
+      "ipa": "ʁijɔ̃",
+      "actual": "ʁijɔ̃",
+      "output": "nu ʁi.jɔ̃ bo.ku.",
+      "token": {
+        "type": "word",
+        "text": "riions",
+        "lower": "riions",
+        "ipa": "ʁi.jɔ̃",
+        "h": null,
+        "alternatives": [],
+        "source": "lexicon",
+        "confidence": "lexical",
+        "notes": [],
+        "pos": [
+          "VER"
+        ],
+        "reference": "Lexique 4.1",
+        "verbIpa": "ʁi.jɔ̃",
+        "contextResolved": true,
+        "contextReason": "Flexion verbale identifiée par son sujet.",
+        "posHint": "verb",
+        "segments": [
+          {
+            "text": "r",
+            "phones": [
+              "ʁ"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "text": "i",
+            "phones": [
+              "i"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 1,
+            "end": 2
+          },
+          {
+            "text": "i",
+            "phones": [
+              "j"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 2,
+            "end": 3
+          },
+          {
+            "text": "on",
+            "phones": [
+              "ɔ̃"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 3,
+            "end": 5
+          },
+          {
+            "text": "s",
+            "phones": [],
+            "silent": true,
+            "uncertain": false,
+            "start": 5,
+            "end": 6
+          }
+        ],
+        "phonemes": [
+          {
+            "text": "ʁ",
+            "phone": "ʁ",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "i",
+            "phone": "i",
+            "category": "vowel",
+            "family": "I"
+          },
+          {
+            "text": ".",
+            "phone": ".",
+            "category": "mark",
+            "family": null
+          },
+          {
+            "text": "j",
+            "phone": "j",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "ɔ̃",
+            "phone": "ɔ̃",
+            "category": "nasal",
+            "family": "O"
+          }
+        ],
+        "alignmentCertain": true,
+        "displayPhonetic": "ʁi.jɔ̃"
+      },
+      "passed": true
+    },
+    {
+      "type": "context",
+      "text": "Vous étudiiez ce texte.",
+      "word": "étudiiez",
+      "ipa": "etydije",
+      "actual": "etydije",
+      "output": "vu.z‿e.ty.di.je sə tɛkst.",
+      "token": {
+        "type": "word",
+        "text": "étudiiez",
+        "lower": "étudiiez",
+        "ipa": "e.ty.di.je",
+        "h": null,
+        "alternatives": [],
+        "source": "lexicon",
+        "confidence": "lexical",
+        "notes": [],
+        "pos": [
+          "VER"
+        ],
+        "reference": "Lexique 4.1",
+        "verbIpa": "e.ty.di.je",
+        "contextResolved": true,
+        "contextReason": "Flexion verbale identifiée par son sujet.",
+        "posHint": "verb",
+        "segments": [
+          {
+            "text": "é",
+            "phones": [
+              "e"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "text": "t",
+            "phones": [
+              "t"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 1,
+            "end": 2
+          },
+          {
+            "text": "u",
+            "phones": [
+              "y"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 2,
+            "end": 3
+          },
+          {
+            "text": "d",
+            "phones": [
+              "d"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 3,
+            "end": 4
+          },
+          {
+            "text": "i",
+            "phones": [
+              "i"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 4,
+            "end": 5
+          },
+          {
+            "text": "i",
+            "phones": [
+              "j"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 5,
+            "end": 6
+          },
+          {
+            "text": "ez",
+            "phones": [
+              "e"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 6,
+            "end": 8
+          }
+        ],
+        "phonemes": [
+          {
+            "text": "e",
+            "phone": "e",
+            "category": "vowel",
+            "family": "E"
+          },
+          {
+            "text": ".",
+            "phone": ".",
+            "category": "mark",
+            "family": null
+          },
+          {
+            "text": "t",
+            "phone": "t",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "y",
+            "phone": "y",
+            "category": "vowel",
+            "family": "U"
+          },
+          {
+            "text": ".",
+            "phone": ".",
+            "category": "mark",
+            "family": null
+          },
+          {
+            "text": "d",
+            "phone": "d",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "i",
+            "phone": "i",
+            "category": "vowel",
+            "family": "I"
+          },
+          {
+            "text": ".",
+            "phone": ".",
+            "category": "mark",
+            "family": null
+          },
+          {
+            "text": "j",
+            "phone": "j",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "e",
+            "phone": "e",
+            "category": "vowel",
+            "family": "E"
+          }
+        ],
+        "alignmentCertain": true,
+        "displayPhonetic": "e.ty.di.je"
+      },
+      "passed": true
+    },
+    {
+      "type": "context",
+      "text": "Vous riez beaucoup.",
+      "word": "riez",
+      "ipa": "ʁije",
+      "actual": "ʁje",
+      "output": "vu ʁje bo.ku.",
+      "token": {
+        "type": "word",
+        "text": "riez",
+        "lower": "riez",
+        "ipa": "ʁje",
+        "h": null,
+        "alternatives": [],
+        "source": "lexicon",
+        "confidence": "lexical",
+        "notes": [],
+        "pos": [
+          "VER"
+        ],
+        "reference": "Lexique 4.1",
+        "verbIpa": "ʁje",
+        "contextResolved": true,
+        "contextReason": "Flexion verbale identifiée par son sujet.",
+        "posHint": "verb",
+        "segments": [
+          {
+            "text": "r",
+            "phones": [
+              "ʁ"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 0,
+            "end": 1
+          },
+          {
+            "text": "i",
+            "phones": [
+              "j"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 1,
+            "end": 2
+          },
+          {
+            "text": "ez",
+            "phones": [
+              "e"
+            ],
+            "silent": false,
+            "uncertain": false,
+            "start": 2,
+            "end": 4
+          }
+        ],
+        "phonemes": [
+          {
+            "text": "ʁ",
+            "phone": "ʁ",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "j",
+            "phone": "j",
+            "category": "consonant",
+            "family": null
+          },
+          {
+            "text": "e",
+            "phone": "e",
+            "category": "vowel",
+            "family": "E"
+          }
+        ],
+        "alignmentCertain": true,
+        "displayPhonetic": "ʁje"
+      },
+      "passed": false
+    },
+    {
+      "type": "liaison",
+      "text": "Les houx poussent.",
+      "left": "les",
+      "right": "houx",
+      "expected": false,
+      "actual": false,
+      "output": "le u pus.",
+      "decision": {
+        "phone": "z",
+        "kind": "interdite",
+        "realized": false,
+        "reason": "Le h aspiré interdit la liaison."
+      },
+      "passed": true
+    },
+    {
+      "type": "liaison",
+      "text": "Les huîtres sont fraîches.",
+      "left": "les",
+      "right": "huîtres",
+      "expected": true,
+      "actual": true,
+      "output": "le.z‿ɥitʁ sɔ̃ fʁɛʃ.",
+      "decision": {
+        "phone": "z",
+        "kind": "obligatoire",
+        "realized": true,
+        "reason": "Déterminant devant son nom ou un adjectif antéposé."
+      },
+      "passed": true
+    },
+    {
+      "type": "liaison",
+      "text": "Les hurlements cessent.",
+      "left": "les",
+      "right": "hurlements",
+      "expected": false,
+      "actual": false,
+      "output": "le yʁ.lə.mɑ̃ sɛs.",
+      "decision": {
+        "phone": "z",
+        "kind": "interdite",
+        "realized": false,
+        "reason": "Le h aspiré interdit la liaison."
+      },
+      "passed": true
+    },
+    {
+      "type": "liaison",
+      "text": "Les hurluberlus arrivent.",
+      "left": "les",
+      "right": "hurluberlus",
+      "expected": true,
+      "actual": true,
+      "output": "le.z‿yʁ.ly.bɛʁ.ly a.ʁiv.",
+      "decision": {
+        "phone": "z",
+        "kind": "obligatoire",
+        "realized": true,
+        "reason": "Déterminant devant son nom ou un adjectif antéposé."
+      },
+      "passed": true
+    },
+    {
+      "type": "liaison",
+      "text": "Les handballeurs gagnent.",
+      "left": "les",
+      "right": "handballeurs",
+      "expected": false,
+      "actual": false,
+      "output": "le ɑ̃d.ba.lœʁ ɡaɲ.",
+      "decision": {
+        "phone": "z",
+        "kind": "interdite",
+        "realized": false,
+        "reason": "Le h aspiré interdit la liaison."
+      },
+      "passed": true
+    },
+    {
+      "type": "liaison",
+      "text": "Les hamburgers sont prêts.",
+      "left": "les",
+      "right": "hamburgers",
+      "expected": false,
+      "actual": false,
+      "output": "le ɑ̃.buʁ.ɡœʁ sɔ̃ pʁɛ.",
+      "decision": {
+        "phone": "z",
+        "kind": "interdite",
+        "realized": false,
+        "reason": "Le h aspiré interdit la liaison."
+      },
+      "passed": true
+    },
+    {
+      "type": "liaison",
+      "text": "Sous huit jours.",
+      "left": "sous",
+      "right": "huit",
+      "expected": false,
+      "actual": false,
+      "output": "su ɥi ʒuʁ.",
+      "decision": {
+        "phone": "z",
+        "kind": "interdite",
+        "realized": false,
+        "reason": "Le h aspiré interdit la liaison."
+      },
+      "passed": true
+    },
+    {
+      "type": "liaison",
+      "text": "Dans onze jours.",
+      "left": "dans",
+      "right": "onze",
+      "expected": false,
+      "actual": false,
+      "output": "dɑ̃ ɔ̃z ʒuʁ.",
+      "decision": {
+        "phone": "z",
+        "kind": "interdite",
+        "realized": false,
+        "reason": "Initiale disjonctive : la liaison est interdite."
+      },
+      "passed": true
+    },
+    {
+      "type": "liaison",
+      "text": "Les ouïes des poissons.",
+      "left": "les",
+      "right": "ouïes",
+      "expected": true,
+      "actual": true,
+      "output": "le.z‿wi de pwa.sɔ̃.",
+      "decision": {
+        "phone": "z",
+        "kind": "obligatoire",
+        "realized": true,
+        "reason": "Déterminant devant son nom ou un adjectif antéposé."
+      },
+      "passed": true
+    },
+    {
+      "type": "liaison",
+      "text": "Les ouistitis sautent.",
+      "left": "les",
+      "right": "ouistitis",
+      "expected": false,
+      "actual": false,
+      "output": "le wis.ti.ti sot.",
+      "decision": {
+        "phone": "z",
+        "kind": "interdite",
+        "realized": false,
+        "reason": "Initiale disjonctive : la liaison est interdite."
+      },
+      "passed": true
+    },
+    {
+      "type": "liaison",
+      "text": "Des oui et des non.",
+      "left": "des",
+      "right": "oui",
+      "expected": false,
+      "actual": false,
+      "output": "de wi e de nɔ̃.",
+      "decision": {
+        "phone": "z",
+        "kind": "interdite",
+        "realized": false,
+        "reason": "Initiale disjonctive : la liaison est interdite."
+      },
+      "passed": true
+    },
+    {
+      "type": "liaison",
+      "text": "Deux ou trois amis.",
+      "left": "deux",
+      "right": "ou",
+      "expected": false,
+      "actual": false,
+      "output": "dø u tʁwɑ.z‿a.mi.",
+      "decision": {
+        "phone": "z",
+        "kind": "interdite",
+        "realized": false,
+        "reason": "La coordination sépare les groupes ; pas de liaison hors locution figée."
+      },
+      "passed": true
+    },
+    {
+      "type": "liaison",
+      "text": "En haut de la rue.",
+      "left": "en",
+      "right": "haut",
+      "expected": false,
+      "actual": false,
+      "output": "ɑ̃ o də la ʁy.",
+      "decision": {
+        "phone": "n",
+        "kind": "interdite",
+        "realized": false,
+        "reason": "Le h aspiré interdit la liaison."
+      },
+      "passed": true
+    },
+    {
+      "type": "liaison",
+      "text": "En harmonie.",
+      "left": "en",
+      "right": "harmonie",
+      "expected": true,
+      "actual": true,
+      "output": "ɑ̃.n‿aʁ.mɔ.ni.",
+      "decision": {
+        "phone": "n",
+        "kind": "obligatoire",
+        "realized": true,
+        "reason": "Préposition en ou pronom conjoint devant le mot régi."
+      },
+      "passed": true
+    },
+    {
+      "type": "liaison",
+      "text": "Un hôpital moderne.",
+      "left": "un",
+      "right": "hôpital",
+      "expected": true,
+      "actual": true,
+      "output": "œ̃.n‿ɔ.pi.tal mɔ.dɛʁn.",
+      "decision": {
+        "phone": "n",
+        "kind": "obligatoire",
+        "realized": true,
+        "reason": "Un dans un cardinal déterminant devant une voyelle.",
+        "numberContext": true
+      },
+      "passed": true
+    },
+    {
+      "type": "liaison",
+      "text": "Un handicap important.",
+      "left": "un",
+      "right": "handicap",
+      "expected": false,
+      "actual": false,
+      "output": "œ̃ ɑ̃.di.kap ɛ̃.pɔʁ.tɑ̃.",
+      "decision": {
+        "phone": "n",
+        "kind": "interdite",
+        "realized": false,
+        "reason": "Le h aspiré interdit la liaison."
+      },
+      "passed": true
+    },
+    {
+      "type": "liaison",
+      "text": "Des êtres humains.",
+      "left": "êtres",
+      "right": "humains",
+      "expected": false,
+      "actual": false,
+      "output": "de.z‿ɛːtʁ y.mɛ̃.",
+      "decision": {
+        "phone": "z",
+        "kind": "facultative",
+        "realized": false,
+        "reason": "Liaison après un nom pluriel : non imposée."
+      },
+      "passed": true
+    },
+    {
+      "type": "liaison",
+      "text": "Des amis arrivent.",
+      "left": "des",
+      "right": "amis",
+      "expected": true,
+      "actual": true,
+      "output": "de.z‿a.mi a.ʁiv.",
+      "decision": {
+        "phone": "z",
+        "kind": "obligatoire",
+        "realized": true,
+        "reason": "Déterminant devant son nom ou un adjectif antéposé."
+      },
+      "passed": true
+    },
+    {
+      "type": "liaison",
+      "text": "Les — enfants arrivent.",
+      "left": "les",
+      "right": "enfants",
+      "expected": false,
+      "actual": false,
+      "output": "le — ɑ̃.fɑ̃ a.ʁiv.",
+      "decision": {
+        "phone": "z",
+        "kind": "interdite",
+        "realized": false,
+        "reason": "La ponctuation ou la frontière écrite bloque la liaison."
+      },
+      "passed": true
+    },
+    {
+      "type": "liaison",
+      "text": "Les (enfants) arrivent.",
+      "left": "les",
+      "right": "enfants",
+      "expected": false,
+      "actual": false,
+      "output": "le (ɑ̃.fɑ̃) a.ʁiv.",
+      "decision": {
+        "phone": "z",
+        "kind": "interdite",
+        "realized": false,
+        "reason": "La ponctuation ou la frontière écrite bloque la liaison."
+      },
+      "passed": true
+    },
+    {
+      "type": "liaison",
+      "text": "Les amis, heureux, arrivent.",
+      "left": "amis",
+      "right": "heureux",
+      "expected": false,
+      "actual": false,
+      "output": "le.z‿a.mi, ø.ʁø, a.ʁiv.",
+      "decision": {
+        "phone": "z",
+        "kind": "interdite",
+        "realized": false,
+        "reason": "La ponctuation ou la frontière écrite bloque la liaison."
+      },
+      "passed": true
+    },
+    {
+      "type": "liaison",
+      "text": "Un long hiver.",
+      "left": "long",
+      "right": "hiver",
+      "expected": true,
+      "actual": true,
+      "output": "œ̃ lɔ̃.k‿i.vɛʁ.",
+      "decision": {
+        "phone": "k",
+        "kind": "obligatoire",
+        "realized": true,
+        "reason": "Adjectif antéposé lié au nom."
+      },
+      "passed": true
+    },
+    {
+      "type": "liaison",
+      "text": "Un long hurlement.",
+      "left": "long",
+      "right": "hurlement",
+      "expected": false,
+      "actual": false,
+      "output": "œ̃ lɔ̃ yʁ.lə.mɑ̃.",
+      "decision": {
+        "phone": "k",
+        "kind": "interdite",
+        "realized": false,
+        "reason": "Le h aspiré interdit la liaison."
+      },
+      "passed": true
+    },
+    {
+      "type": "numeric",
+      "text": "120 ans",
+      "expected": "sɑ̃vɛ̃tɑ̃",
+      "actual": "sɑ̃vɛ̃tɑ̃",
+      "output": "sɑ̃ vɛ̃.t‿ɑ̃",
+      "passed": true
+    },
+    {
+      "type": "numeric",
+      "text": "201 oiseaux",
+      "expected": "døsɑ̃œ̃nwazo",
+      "actual": "døsɑ̃œ̃nwazo",
+      "output": "dø sɑ̃ œ̃.n‿wa.zo",
+      "passed": true
+    },
+    {
+      "type": "numeric",
+      "text": "102 euros",
+      "expected": "sɑ̃døzøʁo",
+      "actual": "sɑ̃døzøʁo",
+      "output": "sɑ̃ dø.z‿ø.ʁo",
+      "passed": true
+    },
+    {
+      "type": "numeric",
+      "text": "71 arbres",
+      "expected": "swasɑ̃teɔ̃zaʁbʁ",
+      "actual": "swasɑ̃teɔ̃zaʁbʁ",
+      "output": "swa.sɑ̃t e ɔ̃z aʁbʁ",
+      "passed": true
+    },
+    {
+      "type": "numeric",
+      "text": "91 habitants",
+      "expected": "katʁəvɛ̃ɔ̃zabitɑ̃",
+      "actual": "katʁəvɛ̃ɔ̃zabitɑ̃",
+      "output": "ka.tʁə vɛ̃ ɔ̃z a.bi.tɑ̃",
+      "passed": true
+    },
+    {
+      "type": "numeric",
+      "text": "1999",
+      "expected": "milnœfsɑ̃katʁəvɛ̃diznœf",
+      "actual": "milnœfsɑ̃katʁəvɛ̃diznœf",
+      "output": "mil nœf sɑ̃ ka.tʁə vɛ̃ diz nœf",
+      "passed": true
+    },
+    {
+      "type": "numeric",
+      "text": "1 amie",
+      "expected": "ynami",
+      "actual": "œ̃nami",
+      "output": "œ̃.n‿a.mi",
+      "passed": false
+    },
+    {
+      "type": "numeric",
+      "text": "21 amies",
+      "expected": "vɛ̃teynami",
+      "actual": "vɛ̃teœ̃nami",
+      "output": "vɛ̃.t‿e œ̃.n‿a.mi",
+      "passed": false
+    },
+    {
+      "type": "numeric",
+      "text": "81 personnes",
+      "expected": "katʁəvɛ̃ynpɛʁsɔn",
+      "actual": "katʁəvɛ̃œ̃pɛʁsɔn",
+      "output": "ka.tʁə vɛ̃ œ̃ pɛʁ.sɔn",
+      "passed": false
+    },
+    {
+      "type": "numeric",
+      "text": "2001 nuits",
+      "expected": "dømilynnɥi",
+      "actual": "dømilœ̃nɥi",
+      "output": "dø mil œ̃ nɥi",
+      "passed": false
+    },
+    {
+      "type": "numeric",
+      "text": "101 héroïnes",
+      "expected": "sɑ̃yneʁɔin",
+      "actual": "sɑ̃œ̃neʁɔin",
+      "output": "sɑ̃ œ̃.n‿e.ʁɔ.in",
+      "passed": false
+    },
+    {
+      "type": "numeric",
+      "text": "1 ami",
+      "expected": "œ̃nami",
+      "actual": "œ̃nami",
+      "output": "œ̃.n‿a.mi",
+      "passed": true
+    },
+    {
+      "type": "numeric",
+      "text": "21 amis",
+      "expected": "vɛ̃teœ̃nami",
+      "actual": "vɛ̃teœ̃nami",
+      "output": "vɛ̃.t‿e œ̃.n‿a.mi",
+      "passed": true
+    },
+    {
+      "type": "numeric",
+      "text": "81 garçons",
+      "expected": "katʁəvɛ̃œ̃ɡaʁsɔ̃",
+      "actual": "katʁəvɛ̃œ̃ɡaʁsɔ̃",
+      "output": "ka.tʁə vɛ̃ œ̃ ɡaʁ.sɔ̃",
+      "passed": true
+    }
+  ],
+  "summary": {
+    "total": 127,
+    "passed": 110,
+    "failed": 17
+  }
+}

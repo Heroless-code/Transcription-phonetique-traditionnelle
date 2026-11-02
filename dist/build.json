@@ -1,0 +1,26 @@
+{
+  "name": "Transcription phonétique traditionnelle",
+  "format": "HTML autonome",
+  "delivery": "Transcription-phonetique-traditionnelle.html",
+  "bytes": 10538423,
+  "sha256": "f15264feec385e5aaea46a883d19c89a3e5fedcf40ab94376e78ae006eb596b7",
+  "modules": [
+    "lexicon-data.js",
+    "gender-data.js",
+    "lexicon.js",
+    "phonology.js",
+    "rules.js",
+    "context.js",
+    "alignment.js",
+    "numbers.js",
+    "engine.js",
+    "sonorities.js",
+    "poetry.js",
+    "color-math.js",
+    "sonority-colors.js",
+    "sonorities-view.js",
+    "ui.js"
+  ],
+  "runtimeDependencies": [],
+  "network": "CSP connect-src none ; aucune ressource externe"
+}

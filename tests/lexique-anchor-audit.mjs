@@ -1,0 +1,25 @@
+import assert from 'node:assert/strict';
+import fs from 'node:fs';
+import path from 'node:path';
+import {fileURLToPath} from 'node:url';
+import {loadAuditLexicon} from '../tools/load-audit-lexicon.mjs';
+import {wordFixtures} from './phonetic-fixtures.js';
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+const staged=process.argv.includes('--staged');
+const {loadLexicon,lookup,lexiconStats}=await loadAuditLexicon(staged);
+await loadLexicon();
+const examples={du:'dy',cheval:'ʃəval',hall:'ol','tâche':'tɑːʃ',maître:'mɛːtʁ',brun:'bʁœ̃',brin:'bʁɛ̃',jeune:'ʒœn','jeûne':'ʒøːn',appellent:'apɛl',jettent:'ʒɛt','achètent':'aʃɛt'};
+for(const[w,p]of Object.entries(examples))assert.equal(lookup(w)?.ipa.replace(/\./gu,''),p,w);
+for(const[w,p]of [['couvent','VER'],['président','NOM'],['content','ADJ']])assert.ok(lookup(w).pos.includes(p),w);
+const homophone=lookup('couvent');
+assert.ok(homophone.grammaticalReadings.some(r=>r.pos==='VER'&&r.ipa.replace(/\./gu,'')==='kuv'));
+assert.ok(homophone.grammaticalReadings.some(r=>r.pos==='NOM'&&r.ipa.replace(/\./gu,'')==='kuvɑ̃'));
+const canonical=(p,strict)=>p.replace(/[.]/gu,'').replace(strict?/$^/u:/ː/gu,'');
+const results=wordFixtures.map(f=>{
+  const entry=lookup(f.word),expected=f.ipa.map(p=>canonical(p,f.strictLength));
+  const match=p=>expected.includes(canonical(p,f.strictLength));
+  return {word:f.word,category:f.category,expected:f.ipa,primary:entry?.ipa??null,alternatives:entry?.alternatives??[],primaryMatch:!!entry&&match(entry.ipa),candidateMatch:!!entry&&[entry.ipa,...entry.alternatives].some(match)};
+});
+const report={stage:staged?'staged':'promoted',purpose:'Lexique reference-anchor checks and descriptive raw-lexicon regression comparison; not a universal accuracy benchmark.',lexiconStats,anchorReferenceChecks:Object.keys(examples).length,grammarChecks:5,totalFixtureWords:results.length,primaryMatches:results.filter(r=>r.primaryMatch).length,candidateMatches:results.filter(r=>r.candidateMatch).length,primaryDifferences:results.filter(r=>!r.primaryMatch)};
+fs.writeFileSync(path.join(root,staged?'data/reference-anchor-staged-audit.json':'data/reference-anchor-final-audit.json'),JSON.stringify(report,null,2)+'\n');
+console.log(JSON.stringify(report,null,2));

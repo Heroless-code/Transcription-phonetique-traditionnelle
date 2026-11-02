@@ -1,0 +1,27 @@
+{
+  "purpose": "Cross-check the phonological and chromatic inventories, including rare pronounced h and glottal stop; options must not suppress a recognized consonant.",
+  "passed": 61,
+  "failed": 5,
+  "failures": [
+    {
+      "label": "inventory /h/",
+      "error": "pronounced sound omitted from palette"
+    },
+    {
+      "label": "inventory /ʔ/",
+      "error": "pronounced sound omitted from palette"
+    },
+    {
+      "label": "pronounced h in aha",
+      "error": "Expected values to be strictly equal:\n\nfalse !== true\n"
+    },
+    {
+      "label": "pronounced h in bahaï",
+      "error": "Expected values to be strictly equal:\n\nfalse !== true\n"
+    },
+    {
+      "label": "pronounced h in Bihar",
+      "error": "Expected values to be strictly equal:\n\nfalse !== true\n"
+    }
+  ]
+}

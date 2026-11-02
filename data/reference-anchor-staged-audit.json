@@ -1,0 +1,174 @@
+{
+  "stage": "staged",
+  "purpose": "Lexique reference-anchor checks and descriptive raw-lexicon regression comparison; not a universal accuracy benchmark.",
+  "lexiconStats": {
+    "inputRows": 1939788,
+    "inputTranscriptions": 2038058,
+    "rejectedWordForms": 4992,
+    "rejectedCandidates": 58946,
+    "emptyRows": 289778,
+    "mergedCaseRows": 20812,
+    "markedH": 5604,
+    "lexicalEntries": 1628876,
+    "ambiguousEntries": 87547,
+    "blockSize": 128,
+    "blockCount": 12726,
+    "rawCharacters": 32815305,
+    "gzipBytes": 7422320,
+    "sourceSha256": "7ccff799c9b3a9d3a6f2cb06f5d719c42ebb295e669b071fba1935008f603baf",
+    "selection": "Conservative filtering and heuristic ranking of unlabelled source variants; not independently validated lexical truth.",
+    "referenceAnchor": {
+      "source": "Lexique 4.1",
+      "url": "https://www.lexique.org/databases/Lexique410/Lexique4.1.zip",
+      "license": "CC BY-SA 4.0",
+      "rows": 189863,
+      "invalidRows": 437,
+      "forms": 170385,
+      "covered": 170385,
+      "rawExactMatches": 140514,
+      "traditionalQualityPreserved": 22019,
+      "rawTraditionalDistinctionsPreserved": 1430,
+      "nativeCorrections": 7852,
+      "addedForms": 4670,
+      "heterophones": 284,
+      "familyQualityForms": 994,
+      "pretonicFamilyForms": 795,
+      "pluralCitationForms": 208,
+      "tsvSha256": "f112ad487334c8ab702e6b95cf08110b2ac534d1896e1643f9c669f91a139a84"
+    }
+  },
+  "anchorReferenceChecks": 12,
+  "grammarChecks": 5,
+  "totalFixtureWords": 226,
+  "primaryMatches": 216,
+  "candidateMatches": 224,
+  "primaryDifferences": [
+    {
+      "word": "phrase",
+      "category": "courants",
+      "expected": [
+        "fʁɑz"
+      ],
+      "primary": "fʁaz",
+      "alternatives": [
+        "fʁɑz",
+        "fʁɑːz"
+      ],
+      "primaryMatch": false,
+      "candidateMatch": true
+    },
+    {
+      "word": "œufs",
+      "category": "graphemes-et-exceptions",
+      "expected": [
+        "ø"
+      ],
+      "primary": "œf",
+      "alternatives": [
+        "ø"
+      ],
+      "primaryMatch": false,
+      "candidateMatch": true
+    },
+    {
+      "word": "bœufs",
+      "category": "graphemes-et-exceptions",
+      "expected": [
+        "bø"
+      ],
+      "primary": "bœf",
+      "alternatives": [
+        "bø"
+      ],
+      "primaryMatch": false,
+      "candidateMatch": true
+    },
+    {
+      "word": "sens",
+      "category": "nasales-et-contrastes",
+      "expected": [
+        "sɑ̃s"
+      ],
+      "primary": "sɑ̃",
+      "alternatives": [
+        "sɑ̃s"
+      ],
+      "primaryMatch": false,
+      "candidateMatch": true
+    },
+    {
+      "word": "héroïne",
+      "category": "h-et-emprunts",
+      "expected": [
+        "eʁɔin"
+      ],
+      "primary": "e.ʁo.in",
+      "alternatives": [
+        "e.ʁɔ.in"
+      ],
+      "primaryMatch": false,
+      "candidateMatch": true
+    },
+    {
+      "word": "caisse",
+      "category": "longueurs-reference",
+      "expected": [
+        "kɛːs"
+      ],
+      "primary": "kɛs",
+      "alternatives": [],
+      "primaryMatch": false,
+      "candidateMatch": false
+    },
+    {
+      "word": "reine",
+      "category": "longueurs-reference",
+      "expected": [
+        "ʁɛːn"
+      ],
+      "primary": "ʁɛn",
+      "alternatives": [
+        "ʁɛːn"
+      ],
+      "primaryMatch": false,
+      "candidateMatch": true
+    },
+    {
+      "word": "presse",
+      "category": "longueurs-reference",
+      "expected": [
+        "pʁɛːs"
+      ],
+      "primary": "pʁɛs",
+      "alternatives": [
+        "pʁɛːs"
+      ],
+      "primaryMatch": false,
+      "candidateMatch": true
+    },
+    {
+      "word": "scène",
+      "category": "longueurs-reference",
+      "expected": [
+        "sɛːn"
+      ],
+      "primary": "sɛn",
+      "alternatives": [],
+      "primaryMatch": false,
+      "candidateMatch": false
+    },
+    {
+      "word": "gène",
+      "category": "longueurs-reference",
+      "expected": [
+        "ʒɛːn"
+      ],
+      "primary": "ʒɛn",
+      "alternatives": [
+        "ʒɛːn"
+      ],
+      "primaryMatch": false,
+      "candidateMatch": true
+    }
+  ]
+}

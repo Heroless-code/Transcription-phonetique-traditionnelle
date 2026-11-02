@@ -1,0 +1,337 @@
+{
+  "total": 226,
+  "passed": 197,
+  "failures": [
+    {
+      "word": "maison",
+      "expected": [
+        "mɛzɔ̃"
+      ],
+      "actual": "me.zɔ̃",
+      "source": "lexicon",
+      "alternatives": [
+        "mɛ.zɔ̃",
+        "mezɔ̃"
+      ]
+    },
+    {
+      "word": "chaise",
+      "expected": [
+        "ʃɛz"
+      ],
+      "actual": "ʃez",
+      "source": "lexicon",
+      "alternatives": [
+        "ʃɛz",
+        "ʃeːz"
+      ]
+    },
+    {
+      "word": "soleil",
+      "expected": [
+        "sɔlɛj"
+      ],
+      "actual": "so.lɛj",
+      "source": "lexicon",
+      "alternatives": [
+        "sɔ.lɛj"
+      ]
+    },
+    {
+      "word": "bleu",
+      "expected": [
+        "blø"
+      ],
+      "actual": "ɛ̃.blø",
+      "source": "lexicon",
+      "alternatives": [
+        "blø",
+        "blœ"
+      ]
+    },
+    {
+      "word": "noir",
+      "expected": [
+        "nwaʁ"
+      ],
+      "actual": "nwɑʁ",
+      "source": "lexicon",
+      "alternatives": [
+        "nwɑːʁ"
+      ]
+    },
+    {
+      "word": "travail",
+      "expected": [
+        "tʁavaj"
+      ],
+      "actual": "tʁa.vo",
+      "source": "lexicon",
+      "alternatives": [
+        "tʁa.vɔ",
+        "tʁa.vaj"
+      ]
+    },
+    {
+      "word": "crayon",
+      "expected": [
+        "kʁɛjɔ̃"
+      ],
+      "actual": "kʁe.jɔ̃",
+      "source": "lexicon",
+      "alternatives": [
+        "kʁɛ.jɔ̃",
+        "ɛ̃.kʁe.jɔ̃"
+      ]
+    },
+    {
+      "word": "téléphone",
+      "expected": [
+        "telefɔn"
+      ],
+      "actual": "te.le.fon",
+      "source": "lexicon",
+      "alternatives": [
+        "te.le.fɔn"
+      ]
+    },
+    {
+      "word": "français",
+      "expected": [
+        "fʁɑ̃sɛ"
+      ],
+      "actual": "fʁɑ̃.se",
+      "source": "lexicon",
+      "alternatives": [
+        "fʁɑ̃.sɛ"
+      ]
+    },
+    {
+      "word": "phonétique",
+      "expected": [
+        "fɔnetik"
+      ],
+      "actual": "fo.ne.tik",
+      "source": "lexicon",
+      "alternatives": [
+        "fɔ.ne.tik"
+      ]
+    },
+    {
+      "word": "texte",
+      "expected": [
+        "tɛkst"
+      ],
+      "actual": "tekst",
+      "source": "lexicon",
+      "alternatives": [
+        "tɛkst",
+        "tɛkt"
+      ]
+    },
+    {
+      "word": "boire",
+      "expected": [
+        "bwaʁ"
+      ],
+      "actual": "bwɛʁ",
+      "source": "lexicon",
+      "alternatives": [
+        "bwaʁ",
+        "bwaːʁ"
+      ]
+    },
+    {
+      "word": "août",
+      "expected": [
+        "u",
+        "ut"
+      ],
+      "actual": "a.u",
+      "source": "lexicon",
+      "alternatives": [
+        "u",
+        "a.ut"
+      ]
+    },
+    {
+      "word": "fille",
+      "expected": [
+        "fij"
+      ],
+      "actual": "fi",
+      "source": "lexicon",
+      "alternatives": [
+        "fij",
+        "fiː"
+      ]
+    },
+    {
+      "word": "orchestre",
+      "expected": [
+        "ɔʁkɛstʁ"
+      ],
+      "actual": "oʁ.kɛstʁ",
+      "source": "lexicon",
+      "alternatives": [
+        "ɔʁ.kɛstʁ",
+        "dɔʁ.kɛstʁ"
+      ]
+    },
+    {
+      "word": "technique",
+      "expected": [
+        "tɛknik"
+      ],
+      "actual": "tek.nik",
+      "source": "lexicon",
+      "alternatives": [
+        "tɛk.nik"
+      ]
+    },
+    {
+      "word": "démocratie",
+      "expected": [
+        "demɔkʁasi"
+      ],
+      "actual": "de.mo.kʁa.si",
+      "source": "lexicon",
+      "alternatives": [
+        "de.mɔ.kʁa.si"
+      ]
+    },
+    {
+      "word": "examen",
+      "expected": [
+        "ɛɡzamɛ̃"
+      ],
+      "actual": "eɡ.za.mɛ̃",
+      "source": "lexicon",
+      "alternatives": [
+        "ɛɡ.za.mɛ̃"
+      ]
+    },
+    {
+      "word": "taon",
+      "expected": [
+        "tɑ̃"
+      ],
+      "actual": "ta.ɔ̃",
+      "source": "lexicon",
+      "alternatives": [
+        "tɔ̃",
+        "tɑ̃"
+      ]
+    },
+    {
+      "word": "fine",
+      "expected": [
+        "fin"
+      ],
+      "actual": "fi.ne",
+      "source": "lexicon",
+      "alternatives": [
+        "fin"
+      ]
+    },
+    {
+      "word": "billet",
+      "expected": [
+        "bijɛ"
+      ],
+      "actual": "bi.je",
+      "source": "lexicon",
+      "alternatives": [
+        "bi.jɛ"
+      ]
+    },
+    {
+      "word": "Noël",
+      "expected": [
+        "nɔɛl"
+      ],
+      "actual": "no.ɛl",
+      "source": "lexicon",
+      "alternatives": [
+        "nɔ.ɛl",
+        "nɔ.wɛl"
+      ]
+    },
+    {
+      "word": "réel",
+      "expected": [
+        "ʁeɛl"
+      ],
+      "actual": "ʁe.el",
+      "source": "lexicon",
+      "alternatives": [
+        "ʁe.ɛl"
+      ]
+    },
+    {
+      "word": "boa",
+      "expected": [
+        "bɔa"
+      ],
+      "actual": "bo.a",
+      "source": "lexicon",
+      "alternatives": [
+        "bɔ.a"
+      ]
+    },
+    {
+      "word": "histoire",
+      "expected": [
+        "istwaʁ"
+      ],
+      "actual": "i.stwɛʁ",
+      "source": "lexicon",
+      "alternatives": [
+        "i.stwaʁ",
+        "is.twaʁ"
+      ]
+    },
+    {
+      "word": "week-end",
+      "expected": [
+        "wikɛnd"
+      ],
+      "actual": "vi.kɛnd",
+      "source": "reviewed",
+      "alternatives": []
+    },
+    {
+      "word": "Lyon",
+      "expected": [
+        "ljɔ̃"
+      ],
+      "actual": "li.jɔ̃",
+      "source": "reviewed",
+      "alternatives": []
+    },
+    {
+      "word": "peur",
+      "expected": [
+        "pœʁ"
+      ],
+      "actual": "pəʁ",
+      "source": "lexicon",
+      "alternatives": [
+        "pœʁ",
+        "pəːʁ"
+      ]
+    },
+    {
+      "word": "gène",
+      "expected": [
+        "ʒɛːn"
+      ],
+      "actual": "ʒɛn",
+      "source": "lexicon",
+      "alternatives": [
+        "ʒɛːn",
+        "ʒɛ̃ːn"
+      ]
+    }
+  ]
+}

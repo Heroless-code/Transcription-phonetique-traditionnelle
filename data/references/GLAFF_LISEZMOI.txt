@@ -1,0 +1,59 @@
+GLÀFF est un lexique développé à CLLE-ERSS (UMR 5263, http://w3.erss.univ-tlse2.fr/)
+par Franck Sajous, Nabil Hathout et Basilio Calderone.
+
+LICENCE
+
+GLÀFF est construit à partir du Wiktionnaire (http://fr.wiktionary.org) et est distribué sous licence Creative Commons By-SA 3.0 (Attribution - Partage dans les Mêmes Conditions 3.0 non transposé).
+Le résumé de cette licence est disponible à l'adresse :
+http://creativecommons.org/licenses/by-sa/3.0/deed.fr
+Le texte complet est disponible ici :
+http://creativecommons.org/licenses/by-sa/3.0/legalcode
+
+La page du projet GLÀFF est accessible à l'adresse suivante :
+http://redac.univ-tlse2.fr/lexiques/glaff.html
+
+Si vous redistribuez cette ressource, modifiée ou à l'identique, elle doit être accompagnée de ce présent texte.
+
+
+DESCRIPTION
+
+GLÀFF a la structure suivante :
+Chaque ligne du fichier décrit une entrée.
+Une entrée comporte des champs séparés par le caractère | ("pipe", ou "barre verticale")
+1) une forme graphique
+2) une description morphosyntaxique au format GRACE
+3) un lemme
+4) 0, 1 ou plusieurs prononciations (séparées par un point-virgule) en API
+5) les prononciations équivalentes en SAMPA
+
+Ces champs sont complétés par les fréquences absolues et relatives des formes et lemmes en corpus :
+6) fréquence absolue de la forme catégorisée dans le corpus Frantext 20e
+7) fréquence relative (par million de mots) de la forme catégorisée dans le corpus Frantext 20e
+8) fréquence absolue du lemme catégorisé dans le corpus Frantext 20e
+9) fréquence relative (par million de mots) du lemme catégorisé dans le corpus Frantext 20e
+10) fréquence absolue de la forme catégorisée dans le corpus LM10
+11) fréquence relative (par million de mots) de la forme catégorisée dans le corpus LM10
+12) fréquence absolue du lemme catégorisé dans le corpus LM10
+13) fréquence relative (par million de mots) du lemme catégorisé dans le corpus LM10
+14) fréquence absolue de la forme catégorisée dans le corpus FrWaC
+15) fréquence relative (par million de mots) de la forme catégorisée dans le corpus FrWaC
+16) fréquence absolue du lemme catégorisé dans le corpus FrWaC
+17) fréquence relative (par million de mots) du lemme catégorisé dans le corpus FrWaC
+
+Depuis la version 1.2.1, les formes qualifiées de viellies, désuettes,  obsolètes, archaïques, ou correpondant à une orthographe ancienne font l'objet d'un lexique séparé.
+
+
+CITER GLÀFF
+
+Franck Sajous, Nabil Hathout et Basilio Calderone. (2013). GLÀFF, un Gros Lexique À tout Faire du Français. Actes de la conférence Traitement Automatique des Langues Naturelles (TALN 2013).
+@InProceedings{sajous:glaff:taln13,
+  author    = {Sajous, Franck and Hathout, Nabil and Calderone, Basilio},
+  title     = {{GL\'{A}FF}, un {G}ros {L}exique \'{A} tout {F}aire du {F}ran\c{c}ais},
+  booktitle = {Actes de la 20e conf\'{e}rence sur le Traitement Automatique des Langues Naturelles (TALN'2013)},
+  year      = {2013},
+  address   = {Les Sables d'Olonne, France},
+  pages     = {285--298}
+}
+
+L'article est disponible ici :
+http://redac.univ-tlse2.fr/lexiques/glaff/glaff-taln2013.pdf

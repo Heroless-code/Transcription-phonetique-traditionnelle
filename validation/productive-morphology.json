@@ -1,0 +1,82 @@
+{
+  "method": "Invariants de préfixes productifs sur des formes inventées absentes des données ; aucune prononciation intégrale certifiée.",
+  "checks": [
+    {
+      "word": "microflurasse",
+      "ipa": "mi.kʁo.fly.ʁas",
+      "passed": true
+    },
+    {
+      "word": "macroflurasse",
+      "ipa": "ma.kʁo.fly.ʁas",
+      "passed": true
+    },
+    {
+      "word": "néoflurasse",
+      "ipa": "ne.o.fly.ʁas",
+      "passed": true
+    },
+    {
+      "word": "téléflurasse",
+      "ipa": "te.le.fly.ʁas",
+      "passed": true
+    },
+    {
+      "word": "polyflurasse",
+      "ipa": "pɔ.li.fly.ʁas",
+      "passed": true
+    },
+    {
+      "word": "multiflurasse",
+      "ipa": "myl.ti.fly.ʁas",
+      "passed": true
+    },
+    {
+      "word": "protoflurasse",
+      "ipa": "pʁɔ.to.fly.ʁas",
+      "passed": true
+    },
+    {
+      "word": "hypermicroflurasse",
+      "ipa": "i.pɛʁ.mi.kʁo.fly.ʁas",
+      "passed": true
+    },
+    {
+      "word": "microanuflent",
+      "ipa": "mi.kʁo.a.nyfl",
+      "passed": true
+    },
+    {
+      "word": "hypermicroanuflent",
+      "ipa": "i.pɛʁ.mi.kʁo.a.nyfl",
+      "passed": true
+    },
+    {
+      "word": "Paris",
+      "ipa": "pa.ʁi",
+      "passed": true
+    },
+    {
+      "word": "Metz",
+      "ipa": "mɛs",
+      "passed": true
+    },
+    {
+      "word": "Lyon",
+      "ipa": "li.jɔ̃",
+      "passed": true
+    },
+    {
+      "word": "Bruxelles",
+      "ipa": "bʁy.sɛl",
+      "passed": true
+    },
+    {
+      "word": "Reims",
+      "ipa": "ʁɛ̃s",
+      "passed": true
+    }
+  ],
+  "passed": 15,
+  "failed": 0
+}

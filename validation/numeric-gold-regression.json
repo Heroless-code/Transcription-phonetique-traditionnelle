@@ -1,0 +1,316 @@
+{
+  "method": "Post-fix regression. Initial43 and additional scale-composition outputs are preserved separately; these cases no longer constitute an independent evaluation.",
+  "summary": {
+    "probes": 51,
+    "passed": 51,
+    "failed": 0
+  },
+  "cases": [
+    {
+      "text": "vingt et un",
+      "expected": "vɛ̃teœ̃",
+      "output": "vɛ̃.t‿e œ̃",
+      "pass": true
+    },
+    {
+      "text": "vingt-deux",
+      "expected": "vɛ̃tdø",
+      "output": "vɛ̃t dø",
+      "pass": true
+    },
+    {
+      "text": "vingt trois",
+      "expected": "vɛ̃ttʁwɑ",
+      "output": "vɛ̃t tʁwɑ",
+      "pass": true
+    },
+    {
+      "text": "vingt-quatre",
+      "expected": "vɛ̃tkatʁ",
+      "output": "vɛ̃t katʁ",
+      "pass": true
+    },
+    {
+      "text": "vingt cinq",
+      "expected": "vɛ̃tsɛ̃k",
+      "output": "vɛ̃t sɛ̃k",
+      "pass": true
+    },
+    {
+      "text": "vingt-six",
+      "expected": "vɛ̃tsis",
+      "output": "vɛ̃t sis",
+      "pass": true
+    },
+    {
+      "text": "vingt sept",
+      "expected": "vɛ̃tsɛt",
+      "output": "vɛ̃t sɛt",
+      "pass": true
+    },
+    {
+      "text": "vingt-huit",
+      "expected": "vɛ̃tɥit",
+      "output": "vɛ̃.t‿ɥit",
+      "pass": true
+    },
+    {
+      "text": "vingt neuf",
+      "expected": "vɛ̃tnœf",
+      "output": "vɛ̃t nœf",
+      "pass": true
+    },
+    {
+      "text": "quatre-vingt-un",
+      "expected": "katʁəvɛ̃œ̃",
+      "output": "ka.tʁə vɛ̃ œ̃",
+      "pass": true
+    },
+    {
+      "text": "quatre vingt deux",
+      "expected": "katʁəvɛ̃dø",
+      "output": "ka.tʁə vɛ̃ dø",
+      "pass": true
+    },
+    {
+      "text": "quatre-vingt-quatre",
+      "expected": "katʁəvɛ̃katʁ",
+      "output": "ka.tʁə vɛ̃ katʁ",
+      "pass": true
+    },
+    {
+      "text": "quatre vingt huit",
+      "expected": "katʁəvɛ̃ɥit",
+      "output": "ka.tʁə vɛ̃ ɥit",
+      "pass": true
+    },
+    {
+      "text": "quatre-vingt-onze",
+      "expected": "katʁəvɛ̃ɔ̃z",
+      "output": "ka.tʁə vɛ̃ ɔ̃z",
+      "pass": true
+    },
+    {
+      "text": "quatre-vingt-dix-huit",
+      "expected": "katʁəvɛ̃dizɥit",
+      "output": "ka.tʁə vɛ̃ di.z‿ɥit",
+      "pass": true
+    },
+    {
+      "text": "cent un",
+      "expected": "sɑ̃œ̃",
+      "output": "sɑ̃ œ̃",
+      "pass": true
+    },
+    {
+      "text": "cent-onze",
+      "expected": "sɑ̃ɔ̃z",
+      "output": "sɑ̃ ɔ̃z",
+      "pass": true
+    },
+    {
+      "text": "cent huit",
+      "expected": "sɑ̃ɥit",
+      "output": "sɑ̃ ɥit",
+      "pass": true
+    },
+    {
+      "text": "deux-cent-un",
+      "expected": "døsɑ̃œ̃",
+      "output": "dø sɑ̃ œ̃",
+      "pass": true
+    },
+    {
+      "text": "quatre-vingts ans",
+      "expected": "katʁəvɛ̃zɑ̃",
+      "output": "ka.tʁə vɛ̃.z‿ɑ̃",
+      "pass": true
+    },
+    {
+      "text": "deux cents enfants",
+      "expected": "døsɑ̃zɑ̃fɑ̃",
+      "output": "dø sɑ̃.z‿ɑ̃.fɑ̃",
+      "pass": true
+    },
+    {
+      "text": "cent ans",
+      "expected": "sɑ̃tɑ̃",
+      "output": "sɑ̃.t‿ɑ̃",
+      "pass": true
+    },
+    {
+      "text": "vingt ans",
+      "expected": "vɛ̃tɑ̃",
+      "output": "vɛ̃.t‿ɑ̃",
+      "pass": true
+    },
+    {
+      "text": "vingt hiboux",
+      "expected": "vɛ̃ibu",
+      "output": "vɛ̃ i.bu",
+      "pass": true
+    },
+    {
+      "text": "huit garçons",
+      "expected": "ɥiɡaʁsɔ̃",
+      "output": "ɥi ɡaʁ.sɔ̃",
+      "pass": true
+    },
+    {
+      "text": "huit hommes",
+      "expected": "ɥitɔm",
+      "output": "ɥi.t‿ɔm",
+      "pass": true
+    },
+    {
+      "text": "huit heures",
+      "expected": "ɥitœʁ",
+      "output": "ɥi.t‿œʁ",
+      "pass": true
+    },
+    {
+      "text": "six garçons",
+      "expected": "siɡaʁsɔ̃",
+      "output": "si ɡaʁ.sɔ̃",
+      "pass": true
+    },
+    {
+      "text": "six enfants",
+      "expected": "sizɑ̃fɑ̃",
+      "output": "si.z‿ɑ̃.fɑ̃",
+      "pass": true
+    },
+    {
+      "text": "dix garçons",
+      "expected": "diɡaʁsɔ̃",
+      "output": "di ɡaʁ.sɔ̃",
+      "pass": true
+    },
+    {
+      "text": "dix enfants",
+      "expected": "dizɑ̃fɑ̃",
+      "output": "di.z‿ɑ̃.fɑ̃",
+      "pass": true
+    },
+    {
+      "text": "18 hiboux",
+      "expected": "dizɥiibu",
+      "output": "di.z‿ɥi i.bu",
+      "pass": true
+    },
+    {
+      "text": "28 enfants",
+      "expected": "vɛ̃tɥitɑ̃fɑ̃",
+      "output": "vɛ̃.t‿ɥi.t‿ɑ̃.fɑ̃",
+      "pass": true
+    },
+    {
+      "text": "88 enfants",
+      "expected": "katʁəvɛ̃ɥitɑ̃fɑ̃",
+      "output": "ka.tʁə vɛ̃ ɥi.t‿ɑ̃.fɑ̃",
+      "pass": true
+    },
+    {
+      "text": "81 ans",
+      "expected": "katʁəvɛ̃œ̃nɑ̃",
+      "output": "ka.tʁə vɛ̃ œ̃.n‿ɑ̃",
+      "pass": true
+    },
+    {
+      "text": "101 ans",
+      "expected": "sɑ̃œ̃nɑ̃",
+      "output": "sɑ̃ œ̃.n‿ɑ̃",
+      "pass": true
+    },
+    {
+      "text": "200 enfants",
+      "expected": "døsɑ̃zɑ̃fɑ̃",
+      "output": "dø sɑ̃.z‿ɑ̃.fɑ̃",
+      "pass": true
+    },
+    {
+      "text": "80 ans",
+      "expected": "katʁəvɛ̃zɑ̃",
+      "output": "ka.tʁə vɛ̃.z‿ɑ̃",
+      "pass": true
+    },
+    {
+      "text": "quatre-vingt-un ans",
+      "expected": "katʁəvɛ̃œ̃nɑ̃",
+      "output": "ka.tʁə vɛ̃ œ̃.n‿ɑ̃",
+      "pass": true
+    },
+    {
+      "text": "huit",
+      "expected": "ɥit",
+      "output": "ɥit",
+      "pass": true
+    },
+    {
+      "text": "huit arrivent",
+      "expected": "ɥitaʁiv",
+      "output": "ɥit a.ʁiv",
+      "pass": true
+    },
+    {
+      "text": "vingt arrivent",
+      "expected": "vɛ̃aʁiv",
+      "output": "vɛ̃ a.ʁiv",
+      "pass": true
+    },
+    {
+      "text": "vingt et un hommes",
+      "expected": "vɛ̃teœ̃nɔm",
+      "output": "vɛ̃.t‿e œ̃.n‿ɔm",
+      "pass": true
+    },
+    {
+      "text": "dix-sept",
+      "expected": "disɛt",
+      "output": "di sɛt",
+      "pass": true
+    },
+    {
+      "text": "dix-sept enfants",
+      "expected": "disɛtɑ̃fɑ̃",
+      "output": "di sɛt ɑ̃.fɑ̃",
+      "pass": true
+    },
+    {
+      "text": "six cents",
+      "expected": "sisɑ̃",
+      "output": "si sɑ̃",
+      "pass": true
+    },
+    {
+      "text": "six mille",
+      "expected": "simil",
+      "output": "si mil",
+      "pass": true
+    },
+    {
+      "text": "dix mille",
+      "expected": "dimil",
+      "output": "di mil",
+      "pass": true
+    },
+    {
+      "text": "600 enfants",
+      "expected": "sisɑ̃zɑ̃fɑ̃",
+      "output": "si sɑ̃.z‿ɑ̃.fɑ̃",
+      "pass": true
+    },
+    {
+      "text": "17 garçons",
+      "expected": "disɛtɡaʁsɔ̃",
+      "output": "di sɛt ɡaʁ.sɔ̃",
+      "pass": true
+    },
+    {
+      "text": "18000",
+      "expected": "dizɥimil",
+      "output": "di.z‿ɥi mil",
+      "pass": true
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "purpose": "Morphological-family consistency and regression only, not phonetic ground truth for all lemmas.",
+  "stage": "staged",
+  "specificChecks": 14,
+  "citationPluralPairs": 23,
+  "pairs": [
+    {
+      "lemma": "transgression",
+      "word": "transgressions",
+      "ipa": "tʁɑ̃s.ɡʁɛ.sjɔ̃"
+    },
+    {
+      "lemma": "goal",
+      "word": "goals",
+      "ipa": "ɡɔl"
+    },
+    {
+      "lemma": "poney",
+      "word": "poneys",
+      "ipa": "pɔ.ne"
+    },
+    {
+      "lemma": "perruquier",
+      "word": "perruquiers",
+      "ipa": "pe.ʁy.kje"
+    },
+    {
+      "lemma": "staphylocoque",
+      "word": "staphylocoques",
+      "ipa": "sta.fi.lɔ.kɔk"
+    },
+    {
+      "lemma": "taco",
+      "word": "tacos",
+      "ipa": "ta.ko"
+    },
+    {
+      "lemma": "grenaille",
+      "word": "grenailles",
+      "ipa": "ɡʁə.naj"
+    },
+    {
+      "lemma": "gosier",
+      "word": "gosiers",
+      "ipa": "ɡo.zje"
+    },
+    {
+      "lemma": "vaisselle",
+      "word": "vaisselles",
+      "ipa": "ve.sɛl"
+    },
+    {
+      "lemma": "minerai",
+      "word": "minerais",
+      "ipa": "mi.nə.ʁe"
+    },
+    {
+      "lemma": "rainure",
+      "word": "rainures",
+      "ipa": "ʁɛ.nyʁ"
+    },
+    {
+      "lemma": "décompression",
+      "word": "décompressions",
+      "ipa": "de.kɔ̃.pʁɛ.sjɔ̃"
+    },
+    {
+      "lemma": "télémétrie",
+      "word": "télémétries",
+      "ipa": "te.le.me.tʁi"
+    },
+    {
+      "lemma": "positon",
+      "word": "positons",
+      "ipa": "pɔ.zi.tɔ̃"
+    },
+    {
+      "lemma": "guillemet",
+      "word": "guillemets",
+      "ipa": "ɡi.jə.me"
+    },
+    {
+      "lemma": "fleurette",
+      "word": "fleurettes",
+      "ipa": "flø.ʁɛt"
+    },
+    {
+      "lemma": "aphorisme",
+      "word": "aphorismes",
+      "ipa": "afoʁizm"
+    },
+    {
+      "lemma": "coassement",
+      "word": "coassements",
+      "ipa": "koasəmɑ̃"
+    },
+    {
+      "lemma": "grommellement",
+      "word": "grommellements",
+      "ipa": "ɡʁomɛləmɑ̃"
+    },
+    {
+      "lemma": "godelureau",
+      "word": "godelureaux",
+      "ipa": "ɡodəlyʁo"
+    },
+    {
+      "lemma": "trottinement",
+      "word": "trottinements",
+      "ipa": "tʁotinəmɑ̃"
+    },
+    {
+      "lemma": "métabolisme",
+      "word": "métabolismes",
+      "ipa": "metabolizm"
+    },
+    {
+      "lemma": "prolongement",
+      "word": "prolongements",
+      "ipa": "pʁolɔ̃ʒəmɑ̃"
+    }
+  ],
+  "stats": {
+    "source": "Lexique 4.1",
+    "url": "https://www.lexique.org/databases/Lexique410/Lexique4.1.zip",
+    "license": "CC BY-SA 4.0",
+    "rows": 189863,
+    "invalidRows": 437,
+    "forms": 170385,
+    "covered": 170385,
+    "rawExactMatches": 140514,
+    "traditionalQualityPreserved": 22019,
+    "rawTraditionalDistinctionsPreserved": 1430,
+    "nativeCorrections": 7852,
+    "addedForms": 4670,
+    "heterophones": 284,
+    "familyQualityForms": 994,
+    "pretonicFamilyForms": 795,
+    "pluralCitationForms": 208,
+    "tsvSha256": "f112ad487334c8ab702e6b95cf08110b2ac534d1896e1643f9c669f91a139a84"
+  }
+}

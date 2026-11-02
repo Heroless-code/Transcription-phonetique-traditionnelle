@@ -1,0 +1,99 @@
+{
+  "environment": {
+    "node": "v24.22.1",
+    "platform": "win32"
+  },
+  "suites": {
+    "lexical": {
+      "passed": 226,
+      "failed": 0
+    },
+    "unknown": {
+      "passed": 15,
+      "failed": 0
+    },
+    "alignment": {
+      "passed": 13,
+      "failed": 0
+    },
+    "syllabification": {
+      "passed": 19,
+      "failed": 0
+    },
+    "structure": {
+      "passed": 6,
+      "failed": 0
+    },
+    "fallback-without-dictionary": {
+      "passed": 139,
+      "failed": 0
+    },
+    "fallback-local-invariants": {
+      "passed": 13,
+      "failed": 0
+    },
+    "morphological-composition": {
+      "passed": 4,
+      "failed": 0
+    },
+    "fallback-length": {
+      "passed": 8,
+      "failed": 0
+    },
+    "lexical-exception-priority": {
+      "passed": 1,
+      "failed": 0
+    },
+    "liaisons": {
+      "passed": 118,
+      "failed": 0
+    },
+    "context-word": {
+      "passed": 98,
+      "failed": 0
+    },
+    "ambiguity": {
+      "passed": 7,
+      "failed": 0
+    },
+    "generated-invariants": {
+      "passed": 1000,
+      "failed": 0
+    },
+    "contextual-unknown": {
+      "passed": 1,
+      "failed": 0
+    },
+    "numbers": {
+      "passed": 1,
+      "failed": 0
+    },
+    "numeric-composition": {
+      "passed": 51,
+      "failed": 0
+    },
+    "unicode": {
+      "passed": 1,
+      "failed": 0
+    },
+    "large-input": {
+      "passed": 1,
+      "failed": 0
+    },
+    "standalone": {
+      "passed": 1,
+      "failed": 0
+    }
+  },
+  "failures": [],
+  "metrics": {
+    "lexiconLoadMs": 303,
+    "paragraph1100WordsMs": 32
+  },
+  "limits": [
+    "Tests de régression, sans estimation de précision universelle ni corpus de parole indépendant.",
+    "Les exemples inconnus ont des invariants, pas des prononciations certifiées."
+  ],
+  "passed": 1723,
+  "failed": 0
+}

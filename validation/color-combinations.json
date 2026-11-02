@@ -1,0 +1,7 @@
+{
+  "purpose": "All eight option masks, independent layers, perceptual mixes and text contrast. These are representation checks, not linguistic accuracy scores.",
+  "passed": 12484,
+  "failed": 0,
+  "failures": [],
+  "minimumContrast": 4.808
+}

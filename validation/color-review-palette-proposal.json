@@ -1,0 +1,2247 @@
+{
+  "purpose": "Independent calculation for one limited, restrained palette proposal; colour distances are comparative diagnostics, not normative recognition thresholds.",
+  "oldPalette": {
+    "A": [
+      "#000000",
+      "#e5e9e5"
+    ],
+    "E": [
+      "#ffffff",
+      "#414e52"
+    ],
+    "I": [
+      "#b51e32",
+      "#fff1f3"
+    ],
+    "U": [
+      "#126535",
+      "#eaf5e9"
+    ],
+    "O": [
+      "#174bb3",
+      "#ecf2ff"
+    ],
+    "EU": [
+      "#803b91",
+      "#f4eaf7"
+    ],
+    "p/b": [
+      "#995011",
+      "#eef1ee"
+    ],
+    "t/d": [
+      "#386a6b",
+      "#eef1ee"
+    ],
+    "k/ɡ": [
+      "#6b5096",
+      "#eef1ee"
+    ],
+    "f/v": [
+      "#943e60",
+      "#eef1ee"
+    ],
+    "s/z": [
+      "#8c5b08",
+      "#eef1ee"
+    ],
+    "ʃ/ʒ": [
+      "#9c3926",
+      "#eef1ee"
+    ],
+    "m/n/ɲ/ŋ": [
+      "#08756e",
+      "#eef1ee"
+    ],
+    "l": [
+      "#4d6582",
+      "#eef1ee"
+    ],
+    "ʁ": [
+      "#775840",
+      "#eef1ee"
+    ],
+    "j/w/ɥ": [
+      "#a03575",
+      "#eef1ee"
+    ]
+  },
+  "proposedPalette": {
+    "A": [
+      "#000000",
+      "#e5e9e5"
+    ],
+    "E": [
+      "#ffffff",
+      "#414e52"
+    ],
+    "I": [
+      "#b51e32",
+      "#fff1f3"
+    ],
+    "U": [
+      "#126535",
+      "#eaf5e9"
+    ],
+    "O": [
+      "#174bb3",
+      "#ecf2ff"
+    ],
+    "EU": [
+      "#803b91",
+      "#f4eaf7"
+    ],
+    "p/b": [
+      "#995011",
+      "#eef1ee"
+    ],
+    "t/d": [
+      "#24576f",
+      "#eef1ee"
+    ],
+    "k/ɡ": [
+      "#514b92",
+      "#eef1ee"
+    ],
+    "f/v": [
+      "#853f56",
+      "#eef1ee"
+    ],
+    "s/z": [
+      "#776715",
+      "#eef1ee"
+    ],
+    "ʃ/ʒ": [
+      "#9c3926",
+      "#eef1ee"
+    ],
+    "m/n/ɲ/ŋ": [
+      "#08756e",
+      "#eef1ee"
+    ],
+    "l": [
+      "#4d6582",
+      "#eef1ee"
+    ],
+    "ʁ": [
+      "#775840",
+      "#eef1ee"
+    ],
+    "j/w/ɥ": [
+      "#a03575",
+      "#eef1ee"
+    ],
+    "h/ʔ": [
+      "#53515b",
+      "#eef1ee"
+    ]
+  },
+  "changes": [
+    "s/z: muted olive",
+    "t/d: dark slate petrol",
+    "k/ɡ: muted indigo",
+    "f/v: deep dusty rose",
+    "h/ʔ: neutral violet charcoal"
+  ],
+  "old": {
+    "minimumPair": {
+      "groups": [
+        "p/b",
+        "s/z"
+      ],
+      "distance": 0.03664
+    },
+    "nearestPairs": [
+      {
+        "groups": [
+          "p/b",
+          "s/z"
+        ],
+        "distance": 0.03664
+      },
+      {
+        "groups": [
+          "t/d",
+          "m/n/ɲ/ŋ"
+        ],
+        "distance": 0.038841
+      },
+      {
+        "groups": [
+          "f/v",
+          "j/w/ɥ"
+        ],
+        "distance": 0.046113
+      },
+      {
+        "groups": [
+          "t/d",
+          "l"
+        ],
+        "distance": 0.052237
+      },
+      {
+        "groups": [
+          "EU",
+          "k/ɡ"
+        ],
+        "distance": 0.058156
+      },
+      {
+        "groups": [
+          "p/b",
+          "ʃ/ʒ"
+        ],
+        "distance": 0.058472
+      },
+      {
+        "groups": [
+          "I",
+          "ʃ/ʒ"
+        ],
+        "distance": 0.060969
+      },
+      {
+        "groups": [
+          "s/z",
+          "ʁ"
+        ],
+        "distance": 0.061081
+      },
+      {
+        "groups": [
+          "p/b",
+          "ʁ"
+        ],
+        "distance": 0.069372
+      },
+      {
+        "groups": [
+          "EU",
+          "j/w/ɥ"
+        ],
+        "distance": 0.078536
+      },
+      {
+        "groups": [
+          "f/v",
+          "ʃ/ʒ"
+        ],
+        "distance": 0.079202
+      },
+      {
+        "groups": [
+          "m/n/ɲ/ŋ",
+          "l"
+        ],
+        "distance": 0.082043
+      },
+      {
+        "groups": [
+          "k/ɡ",
+          "l"
+        ],
+        "distance": 0.084433
+      },
+      {
+        "groups": [
+          "U",
+          "m/n/ɲ/ŋ"
+        ],
+        "distance": 0.086779
+      },
+      {
+        "groups": [
+          "I",
+          "f/v"
+        ],
+        "distance": 0.087612
+      }
+    ],
+    "minimumTextContrast": 4.881525,
+    "contrastByGroup": {
+      "A": 17.118597,
+      "E": 8.619421,
+      "I": 5.984114,
+      "U": 6.375854,
+      "O": 6.946115,
+      "EU": 6.083013,
+      "p/b": 5.256996,
+      "t/d": 5.360771,
+      "k/ɡ": 5.742922,
+      "f/v": 5.919588,
+      "s/z": 5.104288,
+      "ʃ/ʒ": 6.096213,
+      "m/n/ɲ/ŋ": 4.881525,
+      "l": 5.272995,
+      "ʁ": 5.670067,
+      "j/w/ɥ": 5.658732
+    },
+    "allPairs": [
+      {
+        "groups": [
+          "p/b",
+          "s/z"
+        ],
+        "distance": 0.03664
+      },
+      {
+        "groups": [
+          "t/d",
+          "m/n/ɲ/ŋ"
+        ],
+        "distance": 0.038841
+      },
+      {
+        "groups": [
+          "f/v",
+          "j/w/ɥ"
+        ],
+        "distance": 0.046113
+      },
+      {
+        "groups": [
+          "t/d",
+          "l"
+        ],
+        "distance": 0.052237
+      },
+      {
+        "groups": [
+          "EU",
+          "k/ɡ"
+        ],
+        "distance": 0.058156
+      },
+      {
+        "groups": [
+          "p/b",
+          "ʃ/ʒ"
+        ],
+        "distance": 0.058472
+      },
+      {
+        "groups": [
+          "I",
+          "ʃ/ʒ"
+        ],
+        "distance": 0.060969
+      },
+      {
+        "groups": [
+          "s/z",
+          "ʁ"
+        ],
+        "distance": 0.061081
+      },
+      {
+        "groups": [
+          "p/b",
+          "ʁ"
+        ],
+        "distance": 0.069372
+      },
+      {
+        "groups": [
+          "EU",
+          "j/w/ɥ"
+        ],
+        "distance": 0.078536
+      },
+      {
+        "groups": [
+          "f/v",
+          "ʃ/ʒ"
+        ],
+        "distance": 0.079202
+      },
+      {
+        "groups": [
+          "m/n/ɲ/ŋ",
+          "l"
+        ],
+        "distance": 0.082043
+      },
+      {
+        "groups": [
+          "k/ɡ",
+          "l"
+        ],
+        "distance": 0.084433
+      },
+      {
+        "groups": [
+          "U",
+          "m/n/ɲ/ŋ"
+        ],
+        "distance": 0.086779
+      },
+      {
+        "groups": [
+          "I",
+          "f/v"
+        ],
+        "distance": 0.087612
+      },
+      {
+        "groups": [
+          "ʃ/ʒ",
+          "ʁ"
+        ],
+        "distance": 0.090478
+      },
+      {
+        "groups": [
+          "U",
+          "t/d"
+        ],
+        "distance": 0.090632
+      },
+      {
+        "groups": [
+          "s/z",
+          "ʃ/ʒ"
+        ],
+        "distance": 0.091508
+      },
+      {
+        "groups": [
+          "EU",
+          "f/v"
+        ],
+        "distance": 0.093358
+      },
+      {
+        "groups": [
+          "t/d",
+          "ʁ"
+        ],
+        "distance": 0.101666
+      },
+      {
+        "groups": [
+          "I",
+          "j/w/ɥ"
+        ],
+        "distance": 0.102165
+      },
+      {
+        "groups": [
+          "f/v",
+          "ʁ"
+        ],
+        "distance": 0.106208
+      },
+      {
+        "groups": [
+          "I",
+          "p/b"
+        ],
+        "distance": 0.107162
+      },
+      {
+        "groups": [
+          "l",
+          "ʁ"
+        ],
+        "distance": 0.109273
+      },
+      {
+        "groups": [
+          "k/ɡ",
+          "f/v"
+        ],
+        "distance": 0.112725
+      },
+      {
+        "groups": [
+          "k/ɡ",
+          "j/w/ɥ"
+        ],
+        "distance": 0.115867
+      },
+      {
+        "groups": [
+          "p/b",
+          "f/v"
+        ],
+        "distance": 0.116435
+      },
+      {
+        "groups": [
+          "ʃ/ʒ",
+          "j/w/ɥ"
+        ],
+        "distance": 0.117202
+      },
+      {
+        "groups": [
+          "O",
+          "k/ɡ"
+        ],
+        "distance": 0.118526
+      },
+      {
+        "groups": [
+          "m/n/ɲ/ŋ",
+          "ʁ"
+        ],
+        "distance": 0.129813
+      },
+      {
+        "groups": [
+          "U",
+          "ʁ"
+        ],
+        "distance": 0.13055
+      },
+      {
+        "groups": [
+          "O",
+          "l"
+        ],
+        "distance": 0.131005
+      },
+      {
+        "groups": [
+          "t/d",
+          "k/ɡ"
+        ],
+        "distance": 0.134471
+      },
+      {
+        "groups": [
+          "EU",
+          "l"
+        ],
+        "distance": 0.137484
+      },
+      {
+        "groups": [
+          "f/v",
+          "s/z"
+        ],
+        "distance": 0.14024
+      },
+      {
+        "groups": [
+          "U",
+          "l"
+        ],
+        "distance": 0.140788
+      },
+      {
+        "groups": [
+          "I",
+          "s/z"
+        ],
+        "distance": 0.143374
+      },
+      {
+        "groups": [
+          "I",
+          "ʁ"
+        ],
+        "distance": 0.145215
+      },
+      {
+        "groups": [
+          "f/v",
+          "l"
+        ],
+        "distance": 0.145305
+      },
+      {
+        "groups": [
+          "k/ɡ",
+          "ʁ"
+        ],
+        "distance": 0.146009
+      },
+      {
+        "groups": [
+          "t/d",
+          "s/z"
+        ],
+        "distance": 0.14681
+      },
+      {
+        "groups": [
+          "ʁ",
+          "j/w/ɥ"
+        ],
+        "distance": 0.149756
+      },
+      {
+        "groups": [
+          "U",
+          "s/z"
+        ],
+        "distance": 0.153586
+      },
+      {
+        "groups": [
+          "p/b",
+          "j/w/ɥ"
+        ],
+        "distance": 0.156167
+      },
+      {
+        "groups": [
+          "O",
+          "EU"
+        ],
+        "distance": 0.159368
+      },
+      {
+        "groups": [
+          "s/z",
+          "l"
+        ],
+        "distance": 0.162311
+      },
+      {
+        "groups": [
+          "s/z",
+          "m/n/ɲ/ŋ"
+        ],
+        "distance": 0.164176
+      },
+      {
+        "groups": [
+          "O",
+          "t/d"
+        ],
+        "distance": 0.164585
+      },
+      {
+        "groups": [
+          "k/ɡ",
+          "m/n/ɲ/ŋ"
+        ],
+        "distance": 0.166467
+      },
+      {
+        "groups": [
+          "EU",
+          "ʁ"
+        ],
+        "distance": 0.167029
+      },
+      {
+        "groups": [
+          "p/b",
+          "t/d"
+        ],
+        "distance": 0.167029
+      },
+      {
+        "groups": [
+          "l",
+          "j/w/ɥ"
+        ],
+        "distance": 0.169506
+      },
+      {
+        "groups": [
+          "EU",
+          "ʃ/ʒ"
+        ],
+        "distance": 0.171042
+      },
+      {
+        "groups": [
+          "p/b",
+          "l"
+        ],
+        "distance": 0.172593
+      },
+      {
+        "groups": [
+          "t/d",
+          "f/v"
+        ],
+        "distance": 0.173252
+      },
+      {
+        "groups": [
+          "I",
+          "EU"
+        ],
+        "distance": 0.174777
+      },
+      {
+        "groups": [
+          "k/ɡ",
+          "ʃ/ʒ"
+        ],
+        "distance": 0.18047
+      },
+      {
+        "groups": [
+          "s/z",
+          "j/w/ɥ"
+        ],
+        "distance": 0.181643
+      },
+      {
+        "groups": [
+          "ʃ/ʒ",
+          "l"
+        ],
+        "distance": 0.182239
+      },
+      {
+        "groups": [
+          "O",
+          "m/n/ɲ/ŋ"
+        ],
+        "distance": 0.182951
+      },
+      {
+        "groups": [
+          "U",
+          "p/b"
+        ],
+        "distance": 0.183198
+      },
+      {
+        "groups": [
+          "EU",
+          "t/d"
+        ],
+        "distance": 0.183769
+      },
+      {
+        "groups": [
+          "t/d",
+          "ʃ/ʒ"
+        ],
+        "distance": 0.189053
+      },
+      {
+        "groups": [
+          "p/b",
+          "m/n/ɲ/ŋ"
+        ],
+        "distance": 0.189505
+      },
+      {
+        "groups": [
+          "p/b",
+          "k/ɡ"
+        ],
+        "distance": 0.195319
+      },
+      {
+        "groups": [
+          "I",
+          "k/ɡ"
+        ],
+        "distance": 0.199663
+      },
+      {
+        "groups": [
+          "k/ɡ",
+          "s/z"
+        ],
+        "distance": 0.20082
+      },
+      {
+        "groups": [
+          "EU",
+          "p/b"
+        ],
+        "distance": 0.201723
+      },
+      {
+        "groups": [
+          "t/d",
+          "j/w/ɥ"
+        ],
+        "distance": 0.205891
+      },
+      {
+        "groups": [
+          "f/v",
+          "m/n/ɲ/ŋ"
+        ],
+        "distance": 0.208137
+      },
+      {
+        "groups": [
+          "U",
+          "ʃ/ʒ"
+        ],
+        "distance": 0.214627
+      },
+      {
+        "groups": [
+          "U",
+          "k/ɡ"
+        ],
+        "distance": 0.21605
+      },
+      {
+        "groups": [
+          "EU",
+          "s/z"
+        ],
+        "distance": 0.216933
+      },
+      {
+        "groups": [
+          "EU",
+          "m/n/ɲ/ŋ"
+        ],
+        "distance": 0.218482
+      },
+      {
+        "groups": [
+          "ʃ/ʒ",
+          "m/n/ɲ/ŋ"
+        ],
+        "distance": 0.219292
+      },
+      {
+        "groups": [
+          "I",
+          "l"
+        ],
+        "distance": 0.221411
+      },
+      {
+        "groups": [
+          "O",
+          "f/v"
+        ],
+        "distance": 0.225807
+      },
+      {
+        "groups": [
+          "U",
+          "f/v"
+        ],
+        "distance": 0.228068
+      },
+      {
+        "groups": [
+          "O",
+          "ʁ"
+        ],
+        "distance": 0.228834
+      },
+      {
+        "groups": [
+          "O",
+          "j/w/ɥ"
+        ],
+        "distance": 0.231437
+      },
+      {
+        "groups": [
+          "U",
+          "O"
+        ],
+        "distance": 0.234527
+      },
+      {
+        "groups": [
+          "I",
+          "t/d"
+        ],
+        "distance": 0.237967
+      },
+      {
+        "groups": [
+          "m/n/ɲ/ŋ",
+          "j/w/ɥ"
+        ],
+        "distance": 0.240036
+      },
+      {
+        "groups": [
+          "U",
+          "EU"
+        ],
+        "distance": 0.257812
+      },
+      {
+        "groups": [
+          "I",
+          "m/n/ɲ/ŋ"
+        ],
+        "distance": 0.268807
+      },
+      {
+        "groups": [
+          "U",
+          "j/w/ɥ"
+        ],
+        "distance": 0.269213
+      },
+      {
+        "groups": [
+          "I",
+          "U"
+        ],
+        "distance": 0.273484
+      },
+      {
+        "groups": [
+          "O",
+          "ʃ/ʒ"
+        ],
+        "distance": 0.28476
+      },
+      {
+        "groups": [
+          "O",
+          "s/z"
+        ],
+        "distance": 0.287681
+      },
+      {
+        "groups": [
+          "O",
+          "p/b"
+        ],
+        "distance": 0.292434
+      },
+      {
+        "groups": [
+          "I",
+          "O"
+        ],
+        "distance": 0.313102
+      },
+      {
+        "groups": [
+          "A",
+          "U"
+        ],
+        "distance": 0.460245
+      },
+      {
+        "groups": [
+          "A",
+          "O"
+        ],
+        "distance": 0.480423
+      },
+      {
+        "groups": [
+          "A",
+          "ʁ"
+        ],
+        "distance": 0.489655
+      },
+      {
+        "groups": [
+          "A",
+          "t/d"
+        ],
+        "distance": 0.492846
+      },
+      {
+        "groups": [
+          "E",
+          "s/z"
+        ],
+        "distance": 0.498906
+      },
+      {
+        "groups": [
+          "E",
+          "m/n/ɲ/ŋ"
+        ],
+        "distance": 0.500161
+      },
+      {
+        "groups": [
+          "A",
+          "ʃ/ʒ"
+        ],
+        "distance": 0.500455
+      },
+      {
+        "groups": [
+          "A",
+          "EU"
+        ],
+        "distance": 0.501486
+      },
+      {
+        "groups": [
+          "A",
+          "l"
+        ],
+        "distance": 0.502344
+      },
+      {
+        "groups": [
+          "A",
+          "k/ɡ"
+        ],
+        "distance": 0.503484
+      },
+      {
+        "groups": [
+          "E",
+          "l"
+        ],
+        "distance": 0.503646
+      },
+      {
+        "groups": [
+          "A",
+          "f/v"
+        ],
+        "distance": 0.50371
+      },
+      {
+        "groups": [
+          "E",
+          "p/b"
+        ],
+        "distance": 0.503912
+      },
+      {
+        "groups": [
+          "E",
+          "t/d"
+        ],
+        "distance": 0.512983
+      },
+      {
+        "groups": [
+          "A",
+          "m/n/ɲ/ŋ"
+        ],
+        "distance": 0.514761
+      },
+      {
+        "groups": [
+          "E",
+          "ʁ"
+        ],
+        "distance": 0.516301
+      },
+      {
+        "groups": [
+          "E",
+          "j/w/ɥ"
+        ],
+        "distance": 0.519999
+      },
+      {
+        "groups": [
+          "E",
+          "k/ɡ"
+        ],
+        "distance": 0.521152
+      },
+      {
+        "groups": [
+          "A",
+          "s/z"
+        ],
+        "distance": 0.523736
+      },
+      {
+        "groups": [
+          "A",
+          "p/b"
+        ],
+        "distance": 0.524259
+      },
+      {
+        "groups": [
+          "E",
+          "f/v"
+        ],
+        "distance": 0.525328
+      },
+      {
+        "groups": [
+          "A",
+          "j/w/ɥ"
+        ],
+        "distance": 0.528003
+      },
+      {
+        "groups": [
+          "E",
+          "I"
+        ],
+        "distance": 0.531074
+      },
+      {
+        "groups": [
+          "A",
+          "I"
+        ],
+        "distance": 0.534292
+      },
+      {
+        "groups": [
+          "E",
+          "ʃ/ʒ"
+        ],
+        "distance": 0.536057
+      },
+      {
+        "groups": [
+          "E",
+          "EU"
+        ],
+        "distance": 0.541997
+      },
+      {
+        "groups": [
+          "E",
+          "U"
+        ],
+        "distance": 0.563299
+      },
+      {
+        "groups": [
+          "E",
+          "O"
+        ],
+        "distance": 0.579163
+      },
+      {
+        "groups": [
+          "A",
+          "E"
+        ],
+        "distance": 1
+      }
+    ]
+  },
+  "proposed": {
+    "minimumPair": {
+      "groups": [
+        "p/b",
+        "ʃ/ʒ"
+      ],
+      "distance": 0.058472
+    },
+    "nearestPairs": [
+      {
+        "groups": [
+          "p/b",
+          "ʃ/ʒ"
+        ],
+        "distance": 0.058472
+      },
+      {
+        "groups": [
+          "I",
+          "ʃ/ʒ"
+        ],
+        "distance": 0.060969
+      },
+      {
+        "groups": [
+          "t/d",
+          "h/ʔ"
+        ],
+        "distance": 0.061867
+      },
+      {
+        "groups": [
+          "p/b",
+          "ʁ"
+        ],
+        "distance": 0.069372
+      },
+      {
+        "groups": [
+          "s/z",
+          "ʁ"
+        ],
+        "distance": 0.070715
+      },
+      {
+        "groups": [
+          "t/d",
+          "l"
+        ],
+        "distance": 0.071186
+      },
+      {
+        "groups": [
+          "l",
+          "h/ʔ"
+        ],
+        "distance": 0.073432
+      },
+      {
+        "groups": [
+          "f/v",
+          "ʃ/ʒ"
+        ],
+        "distance": 0.075896
+      },
+      {
+        "groups": [
+          "f/v",
+          "j/w/ɥ"
+        ],
+        "distance": 0.075901
+      },
+      {
+        "groups": [
+          "EU",
+          "j/w/ɥ"
+        ],
+        "distance": 0.078536
+      },
+      {
+        "groups": [
+          "ʁ",
+          "h/ʔ"
+        ],
+        "distance": 0.07988
+      },
+      {
+        "groups": [
+          "p/b",
+          "s/z"
+        ],
+        "distance": 0.082006
+      },
+      {
+        "groups": [
+          "m/n/ɲ/ŋ",
+          "l"
+        ],
+        "distance": 0.082043
+      },
+      {
+        "groups": [
+          "O",
+          "k/ɡ"
+        ],
+        "distance": 0.082819
+      },
+      {
+        "groups": [
+          "k/ɡ",
+          "l"
+        ],
+        "distance": 0.084868
+      }
+    ],
+    "minimumTextContrast": 4.881525,
+    "contrastByGroup": {
+      "A": 17.118597,
+      "E": 8.619421,
+      "I": 5.984114,
+      "U": 6.375854,
+      "O": 6.946115,
+      "EU": 6.083013,
+      "p/b": 5.256996,
+      "t/d": 6.916539,
+      "k/ɡ": 6.658156,
+      "f/v": 6.491092,
+      "s/z": 4.939919,
+      "ʃ/ʒ": 6.096213,
+      "m/n/ɲ/ŋ": 4.881525,
+      "l": 5.272995,
+      "ʁ": 5.670067,
+      "j/w/ɥ": 5.658732,
+      "h/ʔ": 6.844683
+    },
+    "allPairs": [
+      {
+        "groups": [
+          "p/b",
+          "ʃ/ʒ"
+        ],
+        "distance": 0.058472
+      },
+      {
+        "groups": [
+          "I",
+          "ʃ/ʒ"
+        ],
+        "distance": 0.060969
+      },
+      {
+        "groups": [
+          "t/d",
+          "h/ʔ"
+        ],
+        "distance": 0.061867
+      },
+      {
+        "groups": [
+          "p/b",
+          "ʁ"
+        ],
+        "distance": 0.069372
+      },
+      {
+        "groups": [
+          "s/z",
+          "ʁ"
+        ],
+        "distance": 0.070715
+      },
+      {
+        "groups": [
+          "t/d",
+          "l"
+        ],
+        "distance": 0.071186
+      },
+      {
+        "groups": [
+          "l",
+          "h/ʔ"
+        ],
+        "distance": 0.073432
+      },
+      {
+        "groups": [
+          "f/v",
+          "ʃ/ʒ"
+        ],
+        "distance": 0.075896
+      },
+      {
+        "groups": [
+          "f/v",
+          "j/w/ɥ"
+        ],
+        "distance": 0.075901
+      },
+      {
+        "groups": [
+          "EU",
+          "j/w/ɥ"
+        ],
+        "distance": 0.078536
+      },
+      {
+        "groups": [
+          "ʁ",
+          "h/ʔ"
+        ],
+        "distance": 0.07988
+      },
+      {
+        "groups": [
+          "p/b",
+          "s/z"
+        ],
+        "distance": 0.082006
+      },
+      {
+        "groups": [
+          "m/n/ɲ/ŋ",
+          "l"
+        ],
+        "distance": 0.082043
+      },
+      {
+        "groups": [
+          "O",
+          "k/ɡ"
+        ],
+        "distance": 0.082819
+      },
+      {
+        "groups": [
+          "k/ɡ",
+          "l"
+        ],
+        "distance": 0.084868
+      },
+      {
+        "groups": [
+          "U",
+          "m/n/ɲ/ŋ"
+        ],
+        "distance": 0.086779
+      },
+      {
+        "groups": [
+          "f/v",
+          "ʁ"
+        ],
+        "distance": 0.086894
+      },
+      {
+        "groups": [
+          "EU",
+          "k/ɡ"
+        ],
+        "distance": 0.088413
+      },
+      {
+        "groups": [
+          "ʃ/ʒ",
+          "ʁ"
+        ],
+        "distance": 0.090478
+      },
+      {
+        "groups": [
+          "t/d",
+          "k/ɡ"
+        ],
+        "distance": 0.092838
+      },
+      {
+        "groups": [
+          "t/d",
+          "m/n/ɲ/ŋ"
+        ],
+        "distance": 0.095863
+      },
+      {
+        "groups": [
+          "f/v",
+          "h/ʔ"
+        ],
+        "distance": 0.096774
+      },
+      {
+        "groups": [
+          "k/ɡ",
+          "h/ʔ"
+        ],
+        "distance": 0.097782
+      },
+      {
+        "groups": [
+          "EU",
+          "f/v"
+        ],
+        "distance": 0.100634
+      },
+      {
+        "groups": [
+          "I",
+          "j/w/ɥ"
+        ],
+        "distance": 0.102165
+      },
+      {
+        "groups": [
+          "I",
+          "f/v"
+        ],
+        "distance": 0.103727
+      },
+      {
+        "groups": [
+          "I",
+          "p/b"
+        ],
+        "distance": 0.107162
+      },
+      {
+        "groups": [
+          "l",
+          "ʁ"
+        ],
+        "distance": 0.109273
+      },
+      {
+        "groups": [
+          "p/b",
+          "f/v"
+        ],
+        "distance": 0.110331
+      },
+      {
+        "groups": [
+          "m/n/ɲ/ŋ",
+          "h/ʔ"
+        ],
+        "distance": 0.114536
+      },
+      {
+        "groups": [
+          "U",
+          "s/z"
+        ],
+        "distance": 0.11692
+      },
+      {
+        "groups": [
+          "ʃ/ʒ",
+          "j/w/ɥ"
+        ],
+        "distance": 0.117202
+      },
+      {
+        "groups": [
+          "U",
+          "t/d"
+        ],
+        "distance": 0.117388
+      },
+      {
+        "groups": [
+          "U",
+          "h/ʔ"
+        ],
+        "distance": 0.122173
+      },
+      {
+        "groups": [
+          "O",
+          "t/d"
+        ],
+        "distance": 0.122293
+      },
+      {
+        "groups": [
+          "m/n/ɲ/ŋ",
+          "ʁ"
+        ],
+        "distance": 0.129813
+      },
+      {
+        "groups": [
+          "U",
+          "ʁ"
+        ],
+        "distance": 0.13055
+      },
+      {
+        "groups": [
+          "O",
+          "l"
+        ],
+        "distance": 0.131005
+      },
+      {
+        "groups": [
+          "s/z",
+          "m/n/ɲ/ŋ"
+        ],
+        "distance": 0.131213
+      },
+      {
+        "groups": [
+          "f/v",
+          "l"
+        ],
+        "distance": 0.131543
+      },
+      {
+        "groups": [
+          "k/ɡ",
+          "f/v"
+        ],
+        "distance": 0.131556
+      },
+      {
+        "groups": [
+          "t/d",
+          "ʁ"
+        ],
+        "distance": 0.13268
+      },
+      {
+        "groups": [
+          "s/z",
+          "ʃ/ʒ"
+        ],
+        "distance": 0.133266
+      },
+      {
+        "groups": [
+          "s/z",
+          "h/ʔ"
+        ],
+        "distance": 0.135723
+      },
+      {
+        "groups": [
+          "EU",
+          "l"
+        ],
+        "distance": 0.137484
+      },
+      {
+        "groups": [
+          "EU",
+          "h/ʔ"
+        ],
+        "distance": 0.139559
+      },
+      {
+        "groups": [
+          "U",
+          "l"
+        ],
+        "distance": 0.140788
+      },
+      {
+        "groups": [
+          "I",
+          "ʁ"
+        ],
+        "distance": 0.145215
+      },
+      {
+        "groups": [
+          "ʃ/ʒ",
+          "h/ʔ"
+        ],
+        "distance": 0.145402
+      },
+      {
+        "groups": [
+          "p/b",
+          "h/ʔ"
+        ],
+        "distance": 0.146236
+      },
+      {
+        "groups": [
+          "ʁ",
+          "j/w/ɥ"
+        ],
+        "distance": 0.149756
+      },
+      {
+        "groups": [
+          "s/z",
+          "l"
+        ],
+        "distance": 0.15064
+      },
+      {
+        "groups": [
+          "k/ɡ",
+          "j/w/ɥ"
+        ],
+        "distance": 0.153195
+      },
+      {
+        "groups": [
+          "t/d",
+          "f/v"
+        ],
+        "distance": 0.154077
+      },
+      {
+        "groups": [
+          "f/v",
+          "s/z"
+        ],
+        "distance": 0.155378
+      },
+      {
+        "groups": [
+          "p/b",
+          "j/w/ɥ"
+        ],
+        "distance": 0.156167
+      },
+      {
+        "groups": [
+          "k/ɡ",
+          "ʁ"
+        ],
+        "distance": 0.159178
+      },
+      {
+        "groups": [
+          "O",
+          "EU"
+        ],
+        "distance": 0.159368
+      },
+      {
+        "groups": [
+          "k/ɡ",
+          "m/n/ɲ/ŋ"
+        ],
+        "distance": 0.159958
+      },
+      {
+        "groups": [
+          "j/w/ɥ",
+          "h/ʔ"
+        ],
+        "distance": 0.16054
+      },
+      {
+        "groups": [
+          "O",
+          "h/ʔ"
+        ],
+        "distance": 0.16093
+      },
+      {
+        "groups": [
+          "EU",
+          "ʁ"
+        ],
+        "distance": 0.167029
+      },
+      {
+        "groups": [
+          "EU",
+          "t/d"
+        ],
+        "distance": 0.167217
+      },
+      {
+        "groups": [
+          "l",
+          "j/w/ɥ"
+        ],
+        "distance": 0.169506
+      },
+      {
+        "groups": [
+          "EU",
+          "ʃ/ʒ"
+        ],
+        "distance": 0.171042
+      },
+      {
+        "groups": [
+          "p/b",
+          "l"
+        ],
+        "distance": 0.172593
+      },
+      {
+        "groups": [
+          "t/d",
+          "s/z"
+        ],
+        "distance": 0.172899
+      },
+      {
+        "groups": [
+          "I",
+          "EU"
+        ],
+        "distance": 0.174777
+      },
+      {
+        "groups": [
+          "ʃ/ʒ",
+          "l"
+        ],
+        "distance": 0.182239
+      },
+      {
+        "groups": [
+          "O",
+          "m/n/ɲ/ŋ"
+        ],
+        "distance": 0.182951
+      },
+      {
+        "groups": [
+          "U",
+          "p/b"
+        ],
+        "distance": 0.183198
+      },
+      {
+        "groups": [
+          "I",
+          "s/z"
+        ],
+        "distance": 0.187095
+      },
+      {
+        "groups": [
+          "p/b",
+          "m/n/ɲ/ŋ"
+        ],
+        "distance": 0.189505
+      },
+      {
+        "groups": [
+          "f/v",
+          "m/n/ɲ/ŋ"
+        ],
+        "distance": 0.190483
+      },
+      {
+        "groups": [
+          "I",
+          "h/ʔ"
+        ],
+        "distance": 0.193311
+      },
+      {
+        "groups": [
+          "EU",
+          "p/b"
+        ],
+        "distance": 0.201723
+      },
+      {
+        "groups": [
+          "p/b",
+          "t/d"
+        ],
+        "distance": 0.20187
+      },
+      {
+        "groups": [
+          "U",
+          "f/v"
+        ],
+        "distance": 0.202066
+      },
+      {
+        "groups": [
+          "U",
+          "k/ɡ"
+        ],
+        "distance": 0.202834
+      },
+      {
+        "groups": [
+          "k/ɡ",
+          "ʃ/ʒ"
+        ],
+        "distance": 0.203925
+      },
+      {
+        "groups": [
+          "t/d",
+          "ʃ/ʒ"
+        ],
+        "distance": 0.206641
+      },
+      {
+        "groups": [
+          "t/d",
+          "j/w/ɥ"
+        ],
+        "distance": 0.207926
+      },
+      {
+        "groups": [
+          "s/z",
+          "j/w/ɥ"
+        ],
+        "distance": 0.211789
+      },
+      {
+        "groups": [
+          "O",
+          "f/v"
+        ],
+        "distance": 0.213968
+      },
+      {
+        "groups": [
+          "U",
+          "ʃ/ʒ"
+        ],
+        "distance": 0.214627
+      },
+      {
+        "groups": [
+          "p/b",
+          "k/ɡ"
+        ],
+        "distance": 0.217764
+      },
+      {
+        "groups": [
+          "EU",
+          "m/n/ɲ/ŋ"
+        ],
+        "distance": 0.218482
+      },
+      {
+        "groups": [
+          "k/ɡ",
+          "s/z"
+        ],
+        "distance": 0.218962
+      },
+      {
+        "groups": [
+          "ʃ/ʒ",
+          "m/n/ɲ/ŋ"
+        ],
+        "distance": 0.219292
+      },
+      {
+        "groups": [
+          "I",
+          "l"
+        ],
+        "distance": 0.221411
+      },
+      {
+        "groups": [
+          "O",
+          "ʁ"
+        ],
+        "distance": 0.228834
+      },
+      {
+        "groups": [
+          "I",
+          "k/ɡ"
+        ],
+        "distance": 0.23078
+      },
+      {
+        "groups": [
+          "O",
+          "j/w/ɥ"
+        ],
+        "distance": 0.231437
+      },
+      {
+        "groups": [
+          "EU",
+          "s/z"
+        ],
+        "distance": 0.234089
+      },
+      {
+        "groups": [
+          "U",
+          "O"
+        ],
+        "distance": 0.234527
+      },
+      {
+        "groups": [
+          "m/n/ɲ/ŋ",
+          "j/w/ɥ"
+        ],
+        "distance": 0.240036
+      },
+      {
+        "groups": [
+          "I",
+          "t/d"
+        ],
+        "distance": 0.253293
+      },
+      {
+        "groups": [
+          "U",
+          "EU"
+        ],
+        "distance": 0.257812
+      },
+      {
+        "groups": [
+          "I",
+          "m/n/ɲ/ŋ"
+        ],
+        "distance": 0.268807
+      },
+      {
+        "groups": [
+          "U",
+          "j/w/ɥ"
+        ],
+        "distance": 0.269213
+      },
+      {
+        "groups": [
+          "I",
+          "U"
+        ],
+        "distance": 0.273484
+      },
+      {
+        "groups": [
+          "O",
+          "s/z"
+        ],
+        "distance": 0.278298
+      },
+      {
+        "groups": [
+          "O",
+          "ʃ/ʒ"
+        ],
+        "distance": 0.28476
+      },
+      {
+        "groups": [
+          "O",
+          "p/b"
+        ],
+        "distance": 0.292434
+      },
+      {
+        "groups": [
+          "I",
+          "O"
+        ],
+        "distance": 0.313102
+      },
+      {
+        "groups": [
+          "A",
+          "t/d"
+        ],
+        "distance": 0.43827
+      },
+      {
+        "groups": [
+          "A",
+          "h/ʔ"
+        ],
+        "distance": 0.440756
+      },
+      {
+        "groups": [
+          "A",
+          "U"
+        ],
+        "distance": 0.460245
+      },
+      {
+        "groups": [
+          "A",
+          "k/ɡ"
+        ],
+        "distance": 0.468097
+      },
+      {
+        "groups": [
+          "A",
+          "f/v"
+        ],
+        "distance": 0.474971
+      },
+      {
+        "groups": [
+          "A",
+          "O"
+        ],
+        "distance": 0.480423
+      },
+      {
+        "groups": [
+          "A",
+          "ʁ"
+        ],
+        "distance": 0.489655
+      },
+      {
+        "groups": [
+          "E",
+          "s/z"
+        ],
+        "distance": 0.495475
+      },
+      {
+        "groups": [
+          "E",
+          "m/n/ɲ/ŋ"
+        ],
+        "distance": 0.500161
+      },
+      {
+        "groups": [
+          "A",
+          "ʃ/ʒ"
+        ],
+        "distance": 0.500455
+      },
+      {
+        "groups": [
+          "A",
+          "EU"
+        ],
+        "distance": 0.501486
+      },
+      {
+        "groups": [
+          "A",
+          "l"
+        ],
+        "distance": 0.502344
+      },
+      {
+        "groups": [
+          "E",
+          "l"
+        ],
+        "distance": 0.503646
+      },
+      {
+        "groups": [
+          "E",
+          "p/b"
+        ],
+        "distance": 0.503912
+      },
+      {
+        "groups": [
+          "A",
+          "m/n/ɲ/ŋ"
+        ],
+        "distance": 0.514761
+      },
+      {
+        "groups": [
+          "E",
+          "ʁ"
+        ],
+        "distance": 0.516301
+      },
+      {
+        "groups": [
+          "E",
+          "j/w/ɥ"
+        ],
+        "distance": 0.519999
+      },
+      {
+        "groups": [
+          "A",
+          "s/z"
+        ],
+        "distance": 0.52361
+      },
+      {
+        "groups": [
+          "A",
+          "p/b"
+        ],
+        "distance": 0.524259
+      },
+      {
+        "groups": [
+          "A",
+          "j/w/ɥ"
+        ],
+        "distance": 0.528003
+      },
+      {
+        "groups": [
+          "E",
+          "I"
+        ],
+        "distance": 0.531074
+      },
+      {
+        "groups": [
+          "A",
+          "I"
+        ],
+        "distance": 0.534292
+      },
+      {
+        "groups": [
+          "E",
+          "ʃ/ʒ"
+        ],
+        "distance": 0.536057
+      },
+      {
+        "groups": [
+          "E",
+          "EU"
+        ],
+        "distance": 0.541997
+      },
+      {
+        "groups": [
+          "E",
+          "f/v"
+        ],
+        "distance": 0.544614
+      },
+      {
+        "groups": [
+          "E",
+          "k/ɡ"
+        ],
+        "distance": 0.557276
+      },
+      {
+        "groups": [
+          "E",
+          "h/ʔ"
+        ],
+        "distance": 0.559789
+      },
+      {
+        "groups": [
+          "E",
+          "U"
+        ],
+        "distance": 0.563299
+      },
+      {
+        "groups": [
+          "E",
+          "t/d"
+        ],
+        "distance": 0.570835
+      },
+      {
+        "groups": [
+          "E",
+          "O"
+        ],
+        "distance": 0.579163
+      },
+      {
+        "groups": [
+          "A",
+          "E"
+        ],
+        "distance": 1
+      }
+    ]
+  },
+  "targetPairs": [
+    {
+      "groups": [
+        "p/b",
+        "s/z"
+      ],
+      "old": 0.03664,
+      "proposed": 0.082006
+    },
+    {
+      "groups": [
+        "t/d",
+        "m/n/ɲ/ŋ"
+      ],
+      "old": 0.038841,
+      "proposed": 0.095863
+    },
+    {
+      "groups": [
+        "f/v",
+        "j/w/ɥ"
+      ],
+      "old": 0.046113,
+      "proposed": 0.075901
+    },
+    {
+      "groups": [
+        "EU",
+        "k/ɡ"
+      ],
+      "old": 0.058156,
+      "proposed": 0.088413
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "purpose": "Offline v2 integration: removed color mode, compact Sonorités and phonetic invariants. Not a universal accuracy score.",
+  "artifact": "C:\\Users\\pseud\\.codex\\.chatgpt-projects\\g-p-6ae0d77370a48191a599683ed2bf77c9\\transcription-traditionnelle\\Transcription-phonetique-traditionnelle.html",
+  "sha256": "f15264feec385e5aaea46a883d19c89a3e5fedcf40ab94376e78ae006eb596b7",
+  "browser": "156.0.8078.79",
+  "offline": true,
+  "requests": [],
+  "errors": [],
+  "tests": [
+    {
+      "name": "Sonorités hides every API row while analysis and full API copy stay intact",
+      "passed": true
+    },
+    {
+      "name": "five Racine s sounds remain counted and c in ces is selectable",
+      "passed": true
+    },
+    {
+      "name": "second click hides the color, third restores it, without touching counts or other verses",
+      "passed": true
+    },
+    {
+      "name": "the x1 button remains off by default and adds the existing lighter palette only on request",
+      "passed": true
+    },
+    {
+      "name": "traditional phone distinctions: tache tâche tache tâche",
+      "passed": true
+    },
+    {
+      "name": "traditional phone distinctions: mettre maître mettre maître",
+      "passed": true
+    },
+    {
+      "name": "traditional phone distinctions: fée fait fée fait",
+      "passed": true
+    },
+    {
+      "name": "traditional phone distinctions: brin brun brin brun",
+      "passed": true
+    },
+    {
+      "name": "traditional phone distinctions: cote côte cote côte",
+      "passed": true
+    },
+    {
+      "name": "traditional phone distinctions: jeune jeûne jeune jeûne",
+      "passed": true
+    },
+    {
+      "name": "semi-consonant classification: j",
+      "passed": true
+    },
+    {
+      "name": "semi-consonant classification: w",
+      "passed": true
+    },
+    {
+      "name": "semi-consonant classification: ɥ",
+      "passed": true
+    },
+    {
+      "name": "nasalization and length marks are never standalone entries",
+      "passed": true
+    },
+    {
+      "name": "silent and doubled letters never add fake occurrences",
+      "passed": true
+    },
+    {
+      "name": "liaisons and denasalizations still come from the final pronunciation",
+      "passed": true
+    },
+    {
+      "name": "graphic word counts: abracadabra",
+      "passed": true
+    },
+    {
+      "name": "graphic word counts: sac sac",
+      "passed": true
+    },
+    {
+      "name": "graphic word counts: l’élément l’élément",
+      "passed": true
+    },
+    {
+      "name": "graphic word counts: tête-à-tête",
+      "passed": true
+    },
+    {
+      "name": "graphic word counts: 21 21",
+      "passed": true
+    },
+    {
+      "name": "graphic word counts: 1 000 1 000",
+      "passed": true
+    },
+    {
+      "name": "separate verses and blank stanzas never create cross-verse repetitions",
+      "passed": true
+    },
+    {
+      "name": "unknown pronunciations and uncertain orthographic anchors remain qualified despite the hidden API",
+      "passed": true
+    },
+    {
+      "name": "hiding one phone of x keeps its other phone and removing both clears all stale paint",
+      "passed": true
+    },
+    {
+      "name": "all four global filter combinations work without revealing the API",
+      "passed": true
+    },
+    {
+      "name": "verse category titles affect only their own verse and master buttons show mixed states",
+      "passed": true
+    },
+    {
+      "name": "a shared oi graph keeps only the active category tint",
+      "passed": true
+    },
+    {
+      "name": "x1 respects per-verse counts, category filters and focus clearing",
+      "passed": true
+    },
+    {
+      "name": "hidden sounds, filters and visible API restoration survive Sonorités mode changes",
+      "passed": true
+    },
+    {
+      "name": "NFC and NFD spellings keep identical counts and source highlighting",
+      "passed": true
+    },
+    {
+      "name": "keyboard supports the full three-state sound cycle and local category toggle",
+      "passed": true
+    },
+    {
+      "name": "poetic alternatives remain in the compact question panel and update counts without revealing full API",
+      "passed": true
+    },
+    {
+      "name": "eight verses are more compact with no full API row and x1 stays off by default",
+      "passed": true
+    },
+    {
+      "name": "Sonorités, x1 and details remain contained at width 320",
+      "passed": true
+    },
+    {
+      "name": "Sonorités, x1 and details remain contained at width 390",
+      "passed": true
+    },
+    {
+      "name": "Sonorités, x1 and details remain contained at width 768",
+      "passed": true
+    },
+    {
+      "name": "Sonorités, x1 and details remain contained at width 1280",
+      "passed": true
+    },
+    {
+      "name": "long text, repeated toggles and sticky controls remain stable offline",
+      "passed": true
+    },
+    {
+      "name": "no HTTP requests and no browser errors",
+      "passed": true
+    }
+  ],
+  "metrics": {
+    "startupMs": 1060,
+    "compactMeanVerseHeight": 58,
+    "seventyVersesMs": 200
+  },
+  "passed": 40,
+  "failed": 0
+}

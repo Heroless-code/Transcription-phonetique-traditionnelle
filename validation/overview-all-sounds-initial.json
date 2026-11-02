@@ -1,0 +1,282 @@
+{
+  "purpose": "Independent browser checks of mode exclusivity, exact sonority counts, source/IPA exploration and explicit reading policy. Not a stylistic-intention or universal phonetic accuracy score.",
+  "artifact": "C:\\Users\\pseud\\.codex\\.chatgpt-projects\\g-p-6ae0d77370a48191a599683ed2bf77c9\\transcription-traditionnelle\\Transcription-phonetique-traditionnelle.html",
+  "sha256": "e5e10ba841370dbd370f0aca06c7d78b04be515b8e1bb692fd8a8b7a636b9245",
+  "offline": true,
+  "requests": [],
+  "errors": [],
+  "tests": [
+    {
+      "name": "isolated artifact has the manifest hash and starts with both modes off",
+      "passed": true
+    },
+    {
+      "name": "Sonorités deactivates colors while preserving their saved category preferences",
+      "passed": true
+    },
+    {
+      "name": "each verse has distinct alliteration and assonance groups",
+      "passed": true
+    },
+    {
+      "name": "Racine has exactly five /s/ in five words in each verse",
+      "passed": true
+    },
+    {
+      "name": "repetitions are highlighted in the verse and API before any selection",
+      "passed": true
+    },
+    {
+      "name": "the detail occupies the left column aligned with its own verse",
+      "passed": true
+    },
+    {
+      "name": "assonances and alliterations have distinct inline highlight treatments",
+      "passed": true
+    },
+    {
+      "name": "selecting /s/ marks the c of ces, exact IPA units, and only its own verse",
+      "passed": true
+    },
+    {
+      "name": "same sound second click clears only that verse selection",
+      "passed": true
+    },
+    {
+      "name": "one selected sound per verse and independent selection on another verse",
+      "passed": true
+    },
+    {
+      "name": "activating colors deactivates Sonorités and preserves transcription/preferences",
+      "passed": true
+    },
+    {
+      "name": "both modes can be off without retaining sonority marks",
+      "passed": true
+    },
+    {
+      "name": "Options appears only with colors enabled and preserves its saved preferences while hidden",
+      "passed": true
+    },
+    {
+      "name": "strict phoneme distinctions: tache tâche tache tâche",
+      "passed": true
+    },
+    {
+      "name": "strict phoneme distinctions: mettre maître mettre maître",
+      "passed": true
+    },
+    {
+      "name": "strict phoneme distinctions: fée fait fée fait",
+      "passed": true
+    },
+    {
+      "name": "strict phoneme distinctions: brin brun brin brun",
+      "passed": true
+    },
+    {
+      "name": "strict phoneme distinctions: cote côte cote côte",
+      "passed": true
+    },
+    {
+      "name": "strict phoneme distinctions: jeune jeûne jeune jeûne",
+      "passed": true
+    },
+    {
+      "name": "nasality and duration marks never become independent sounds",
+      "passed": true
+    },
+    {
+      "name": "semi-consonant convention: j",
+      "passed": true
+    },
+    {
+      "name": "semi-consonant convention: w",
+      "passed": true
+    },
+    {
+      "name": "semi-consonant convention: ɥ",
+      "passed": true
+    },
+    {
+      "name": "silent letters and doubled spellings do not inflate consonant counts",
+      "passed": true
+    },
+    {
+      "name": "realized liaison is counted once and omitted optional liaison is absent",
+      "passed": true
+    },
+    {
+      "name": "contextual denasalization contributes the oral vowel actually retained",
+      "passed": true
+    },
+    {
+      "name": "repeated identical source words count as separate positions",
+      "passed": true
+    },
+    {
+      "name": "clitic decomposition does not inflate the graphical word count",
+      "passed": true
+    },
+    {
+      "name": "hyphenated compound remains one graphical word",
+      "passed": true
+    },
+    {
+      "name": "nonlexical hyphenated spelling groups the engine internal tokens into one source word",
+      "passed": true
+    },
+    {
+      "name": "numeric expansion preserves one graphical word per number",
+      "passed": true
+    },
+    {
+      "name": "grouped numerals are graphical words rather than space-separated digit blocks",
+      "passed": true
+    },
+    {
+      "name": "separate verses and blank lines cannot create cross-line repetitions",
+      "passed": true
+    },
+    {
+      "name": "each category can independently have no repetition",
+      "passed": true
+    },
+    {
+      "name": "shared grapheme selection marks x completely but only selected /k/ in IPA",
+      "passed": true
+    },
+    {
+      "name": "opaque number alignment retains exact IPA highlighting without inventing source spans",
+      "passed": true
+    },
+    {
+      "name": "unknown pronunciations remain marked as hypotheses in sonority results",
+      "passed": true
+    },
+    {
+      "name": "canonically equivalent accents yield identical counts and preserve source exactly",
+      "passed": true
+    },
+    {
+      "name": "classical reading is the only reading and visual modes preserve its caduc e",
+      "passed": true
+    },
+    {
+      "name": "explicit poetic alternatives update actual phones and their repetitions",
+      "passed": true
+    },
+    {
+      "name": "all eight saved color masks still work independently of Sonorités",
+      "passed": true,
+      "details": {
+        "masks": 8
+      }
+    },
+    {
+      "name": "copy contains the current API only, without sonority statistics",
+      "passed": true
+    },
+    {
+      "name": "sonority buttons support keyboard selection and pressed semantics",
+      "passed": true
+    },
+    {
+      "name": "sonority labels and source input remain text and do not execute markup",
+      "passed": true
+    },
+    {
+      "name": "shared consonant-vowel graph keeps both overview treatments and exact focused IPA",
+      "passed": true
+    },
+    {
+      "name": "each repeated exact phone has its own matching tint in both verses, IPA and detail",
+      "passed": true
+    },
+    {
+      "name": "question-mark details are closed, keep row height stable and close by Escape and outside click",
+      "passed": true
+    },
+    {
+      "name": "all exact sounds are listed and visible without an Other repetitions disclosure",
+      "passed": true
+    },
+    {
+      "name": "isolated sounds have lighter matching tints, exact selection and no false repetition label",
+      "passed": true
+    },
+    {
+      "name": "one phone keeps its hue but changes emphasis between isolated and repeated occurrences",
+      "passed": true
+    },
+    {
+      "name": "category titles independently filter all verses, support both and preserve IPA",
+      "passed": true
+    },
+    {
+      "name": "classical e caduc respects retention, elision and verse endings without a prose selector",
+      "passed": true
+    },
+    {
+      "name": "eight classical verses form a compact overview with details initially out of flow",
+      "passed": false,
+      "error": "The expression evaluated to a falsy value:\n\n  assert.ok(report.metrics.compactMeanVerseHeight<=130)\n"
+    },
+    {
+      "name": "Sonorités stays contained and usable at width 320",
+      "passed": true
+    },
+    {
+      "name": "Sonorités stays contained and usable at width 390",
+      "passed": true
+    },
+    {
+      "name": "Sonorités stays contained and usable at width 768",
+      "passed": true
+    },
+    {
+      "name": "Sonorités stays contained and usable at width 1280",
+      "passed": true
+    },
+    {
+      "name": "mobile detail follows the full-width verse while medium screens keep the left column",
+      "passed": true
+    },
+    {
+      "name": "long text analysis and repeated mode changes remain stable",
+      "passed": true
+    },
+    {
+      "name": "classical reading preserves imperative le and written punctuation in the artifact",
+      "passed": true
+    },
+    {
+      "name": "poetic choice exposes the phoneme incidence and keeps separate source occurrences",
+      "passed": true
+    },
+    {
+      "name": "expanded poetic choices remain contained on mobile",
+      "passed": true
+    },
+    {
+      "name": "no HTTP requests or browser errors during isolated offline use",
+      "passed": true
+    }
+  ],
+  "metrics": {
+    "startupMs": 1026,
+    "compactMeanVerseHeight": 138,
+    "seventyVersesMs": 325,
+    "modeChangesMs": [
+      152,
+      192,
+      102,
+      176,
+      117,
+      198
+    ]
+  },
+  "browser": "156.0.8078.79",
+  "passed": 62,
+  "failed": 1
+}

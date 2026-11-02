@@ -1,0 +1,1024 @@
+{
+  "artifact": "C:\\Users\\pseud\\.codex\\.chatgpt-projects\\g-p-6ae0d77370a48191a599683ed2bf77c9\\transcription-traditionnelle\\Transcription-phonetique-traditionnelle.html",
+  "sha256": "7223ad4e1a66e466fc243ab82c07e93e3f6a0e85511fc8e5f6621a4482280f78",
+  "browser": "156.0.8078.79",
+  "offline": true,
+  "phase": "initial",
+  "tests": [
+    {
+      "name": "master switch off is neutral",
+      "passed": true
+    },
+    {
+      "name": "mode 0: source, API, selected layers, silent and uncertain segments",
+      "passed": true
+    },
+    {
+      "name": "mode 0: copy emits exactly the same API",
+      "passed": true
+    },
+    {
+      "name": "mode 0: width 320 has no clipping or row collisions",
+      "passed": true
+    },
+    {
+      "name": "mode 0: width 320 option menu remains in viewport",
+      "passed": true
+    },
+    {
+      "name": "mode 0: width 390 has no clipping or row collisions",
+      "passed": true
+    },
+    {
+      "name": "mode 0: width 390 option menu remains in viewport",
+      "passed": true
+    },
+    {
+      "name": "mode 0: width 768 has no clipping or row collisions",
+      "passed": true
+    },
+    {
+      "name": "mode 0: width 768 option menu remains in viewport",
+      "passed": true
+    },
+    {
+      "name": "mode 0: width 1280 has no clipping or row collisions",
+      "passed": true
+    },
+    {
+      "name": "mode 0: width 1280 option menu remains in viewport",
+      "passed": true
+    },
+    {
+      "name": "mode 1: source, API, selected layers, silent and uncertain segments",
+      "passed": true
+    },
+    {
+      "name": "mode 1: copy emits exactly the same API",
+      "passed": true
+    },
+    {
+      "name": "mode 1: width 320 has no clipping or row collisions",
+      "passed": true
+    },
+    {
+      "name": "mode 1: width 320 option menu remains in viewport",
+      "passed": true
+    },
+    {
+      "name": "mode 1: width 390 has no clipping or row collisions",
+      "passed": true
+    },
+    {
+      "name": "mode 1: width 390 option menu remains in viewport",
+      "passed": true
+    },
+    {
+      "name": "mode 1: width 768 has no clipping or row collisions",
+      "passed": true
+    },
+    {
+      "name": "mode 1: width 768 option menu remains in viewport",
+      "passed": true
+    },
+    {
+      "name": "mode 1: width 1280 has no clipping or row collisions",
+      "passed": true
+    },
+    {
+      "name": "mode 1: width 1280 option menu remains in viewport",
+      "passed": true
+    },
+    {
+      "name": "mode 2: source, API, selected layers, silent and uncertain segments",
+      "passed": true
+    },
+    {
+      "name": "mode 2: copy emits exactly the same API",
+      "passed": true
+    },
+    {
+      "name": "mode 2: width 320 has no clipping or row collisions",
+      "passed": true
+    },
+    {
+      "name": "mode 2: width 320 option menu remains in viewport",
+      "passed": true
+    },
+    {
+      "name": "mode 2: width 390 has no clipping or row collisions",
+      "passed": true
+    },
+    {
+      "name": "mode 2: width 390 option menu remains in viewport",
+      "passed": true
+    },
+    {
+      "name": "mode 2: width 768 has no clipping or row collisions",
+      "passed": true
+    },
+    {
+      "name": "mode 2: width 768 option menu remains in viewport",
+      "passed": true
+    },
+    {
+      "name": "mode 2: width 1280 has no clipping or row collisions",
+      "passed": true
+    },
+    {
+      "name": "mode 2: width 1280 option menu remains in viewport",
+      "passed": true
+    },
+    {
+      "name": "mode 3: source, API, selected layers, silent and uncertain segments",
+      "passed": true
+    },
+    {
+      "name": "mode 3: copy emits exactly the same API",
+      "passed": true
+    },
+    {
+      "name": "mode 3: width 320 has no clipping or row collisions",
+      "passed": true
+    },
+    {
+      "name": "mode 3: width 320 option menu remains in viewport",
+      "passed": true
+    },
+    {
+      "name": "mode 3: width 390 has no clipping or row collisions",
+      "passed": true
+    },
+    {
+      "name": "mode 3: width 390 option menu remains in viewport",
+      "passed": true
+    },
+    {
+      "name": "mode 3: width 768 has no clipping or row collisions",
+      "passed": true
+    },
+    {
+      "name": "mode 3: width 768 option menu remains in viewport",
+      "passed": true
+    },
+    {
+      "name": "mode 3: width 1280 has no clipping or row collisions",
+      "passed": true
+    },
+    {
+      "name": "mode 3: width 1280 option menu remains in viewport",
+      "passed": true
+    },
+    {
+      "name": "mode 4: source, API, selected layers, silent and uncertain segments",
+      "passed": true
+    },
+    {
+      "name": "mode 4: copy emits exactly the same API",
+      "passed": true
+    },
+    {
+      "name": "mode 4: width 320 has no clipping or row collisions",
+      "passed": true
+    },
+    {
+      "name": "mode 4: width 320 option menu remains in viewport",
+      "passed": true
+    },
+    {
+      "name": "mode 4: width 390 has no clipping or row collisions",
+      "passed": true
+    },
+    {
+      "name": "mode 4: width 390 option menu remains in viewport",
+      "passed": true
+    },
+    {
+      "name": "mode 4: width 768 has no clipping or row collisions",
+      "passed": true
+    },
+    {
+      "name": "mode 4: width 768 option menu remains in viewport",
+      "passed": true
+    },
+    {
+      "name": "mode 4: width 1280 has no clipping or row collisions",
+      "passed": true
+    },
+    {
+      "name": "mode 4: width 1280 option menu remains in viewport",
+      "passed": true
+    },
+    {
+      "name": "mode 5: source, API, selected layers, silent and uncertain segments",
+      "passed": true
+    },
+    {
+      "name": "mode 5: copy emits exactly the same API",
+      "passed": true
+    },
+    {
+      "name": "mode 5: width 320 has no clipping or row collisions",
+      "passed": true
+    },
+    {
+      "name": "mode 5: width 320 option menu remains in viewport",
+      "passed": true
+    },
+    {
+      "name": "mode 5: width 390 has no clipping or row collisions",
+      "passed": true
+    },
+    {
+      "name": "mode 5: width 390 option menu remains in viewport",
+      "passed": true
+    },
+    {
+      "name": "mode 5: width 768 has no clipping or row collisions",
+      "passed": true
+    },
+    {
+      "name": "mode 5: width 768 option menu remains in viewport",
+      "passed": true
+    },
+    {
+      "name": "mode 5: width 1280 has no clipping or row collisions",
+      "passed": true
+    },
+    {
+      "name": "mode 5: width 1280 option menu remains in viewport",
+      "passed": true
+    },
+    {
+      "name": "mode 6: source, API, selected layers, silent and uncertain segments",
+      "passed": true
+    },
+    {
+      "name": "mode 6: copy emits exactly the same API",
+      "passed": true
+    },
+    {
+      "name": "mode 6: width 320 has no clipping or row collisions",
+      "passed": true
+    },
+    {
+      "name": "mode 6: width 320 option menu remains in viewport",
+      "passed": true
+    },
+    {
+      "name": "mode 6: width 390 has no clipping or row collisions",
+      "passed": true
+    },
+    {
+      "name": "mode 6: width 390 option menu remains in viewport",
+      "passed": true
+    },
+    {
+      "name": "mode 6: width 768 has no clipping or row collisions",
+      "passed": true
+    },
+    {
+      "name": "mode 6: width 768 option menu remains in viewport",
+      "passed": true
+    },
+    {
+      "name": "mode 6: width 1280 has no clipping or row collisions",
+      "passed": true
+    },
+    {
+      "name": "mode 6: width 1280 option menu remains in viewport",
+      "passed": true
+    },
+    {
+      "name": "mode 7: source, API, selected layers, silent and uncertain segments",
+      "passed": true
+    },
+    {
+      "name": "mode 7: copy emits exactly the same API",
+      "passed": true
+    },
+    {
+      "name": "mode 7: width 320 has no clipping or row collisions",
+      "passed": true
+    },
+    {
+      "name": "mode 7: width 320 option menu remains in viewport",
+      "passed": true
+    },
+    {
+      "name": "mode 7: width 390 has no clipping or row collisions",
+      "passed": true
+    },
+    {
+      "name": "mode 7: width 390 option menu remains in viewport",
+      "passed": true
+    },
+    {
+      "name": "mode 7: width 768 has no clipping or row collisions",
+      "passed": true
+    },
+    {
+      "name": "mode 7: width 768 option menu remains in viewport",
+      "passed": true
+    },
+    {
+      "name": "mode 7: width 1280 has no clipping or row collisions",
+      "passed": true
+    },
+    {
+      "name": "mode 7: width 1280 option menu remains in viewport",
+      "passed": true
+    },
+    {
+      "name": "long colored text: 200 paragraphs and 12 mask changes stay fluid",
+      "passed": true
+    },
+    {
+      "name": "offline, no HTTP and no errors",
+      "passed": true
+    }
+  ],
+  "metrics": {
+    "startupMs": 476,
+    "colored3400WordsMs": 336,
+    "longMaskChangesMs": [
+      596,
+      241,
+      411,
+      335,
+      572,
+      261,
+      721,
+      445,
+      679,
+      276,
+      551,
+      417
+    ]
+  },
+  "errors": [],
+  "requests": [],
+  "modes": [
+    {
+      "mask": 0,
+      "label": "Aucune catégorie",
+      "coloredSpans": 0,
+      "minimumContrast": null,
+      "shared": []
+    },
+    {
+      "mask": 1,
+      "label": "Voyelles",
+      "coloredSpans": 94,
+      "minimumContrast": 5.984114060027568,
+      "shared": [
+        {
+          "text": "ien",
+          "phone": "jɛ̃",
+          "layers": [
+            "vowel"
+          ],
+          "contrast": 8.619421449119928,
+          "ink": "rgb(255, 255, 255)",
+          "background": "rgb(65, 78, 82)",
+          "nasal": false,
+          "shared": true
+        },
+        {
+          "text": "oin",
+          "phone": "wɛ̃",
+          "layers": [
+            "vowel"
+          ],
+          "contrast": 8.619421449119928,
+          "ink": "rgb(255, 255, 255)",
+          "background": "rgb(65, 78, 82)",
+          "nasal": false,
+          "shared": true
+        },
+        {
+          "text": "oi",
+          "phone": "wa",
+          "layers": [
+            "vowel"
+          ],
+          "contrast": 17.11859662951231,
+          "ink": "rgb(0, 0, 0)",
+          "background": "rgb(229, 233, 229)",
+          "nasal": false,
+          "shared": true
+        },
+        {
+          "text": "am",
+          "phone": "am",
+          "layers": [
+            "vowel"
+          ],
+          "contrast": 17.11859662951231,
+          "ink": "rgb(0, 0, 0)",
+          "background": "rgb(229, 233, 229)",
+          "nasal": false,
+          "shared": true
+        },
+        {
+          "text": "oi",
+          "phone": "wa",
+          "layers": [
+            "vowel"
+          ],
+          "contrast": 17.11859662951231,
+          "ink": "rgb(0, 0, 0)",
+          "background": "rgb(229, 233, 229)",
+          "nasal": false,
+          "shared": true
+        },
+        {
+          "text": "un",
+          "phone": "yn",
+          "layers": [
+            "vowel"
+          ],
+          "contrast": 6.3758544750167685,
+          "ink": "rgb(18, 101, 53)",
+          "background": "rgb(234, 245, 233)",
+          "nasal": false,
+          "shared": true
+        },
+        {
+          "text": "uï",
+          "phone": "ɥi",
+          "layers": [
+            "vowel"
+          ],
+          "contrast": 5.984114060027568,
+          "ink": "rgb(181, 30, 50)",
+          "background": "rgb(255, 241, 243)",
+          "nasal": false,
+          "shared": true
+        }
+      ]
+    },
+    {
+      "mask": 2,
+      "label": "Consonnes",
+      "coloredSpans": 99,
+      "minimumContrast": 4.881524876598971,
+      "shared": [
+        {
+          "text": "ien",
+          "phone": "jɛ̃",
+          "layers": [
+            "consonant"
+          ],
+          "contrast": 5.658732302143873,
+          "ink": "rgb(160, 53, 117)",
+          "background": "rgb(238, 241, 238)",
+          "nasal": false,
+          "shared": true
+        },
+        {
+          "text": "oin",
+          "phone": "wɛ̃",
+          "layers": [
+            "consonant"
+          ],
+          "contrast": 5.658732302143873,
+          "ink": "rgb(160, 53, 117)",
+          "background": "rgb(238, 241, 238)",
+          "nasal": false,
+          "shared": true
+        },
+        {
+          "text": "x",
+          "phone": "ks",
+          "layers": [
+            "consonant"
+          ],
+          "contrast": 5.381080967569468,
+          "ink": "rgb(122, 89, 97)",
+          "background": "rgb(238, 241, 238)",
+          "nasal": false,
+          "shared": true
+        },
+        {
+          "text": "oi",
+          "phone": "wa",
+          "layers": [
+            "consonant"
+          ],
+          "contrast": 5.658732302143873,
+          "ink": "rgb(160, 53, 117)",
+          "background": "rgb(238, 241, 238)",
+          "nasal": false,
+          "shared": true
+        },
+        {
+          "text": "am",
+          "phone": "am",
+          "layers": [
+            "consonant"
+          ],
+          "contrast": 4.881524876598971,
+          "ink": "rgb(8, 117, 110)",
+          "background": "rgb(238, 241, 238)",
+          "nasal": false,
+          "shared": true
+        },
+        {
+          "text": "oi",
+          "phone": "wa",
+          "layers": [
+            "consonant"
+          ],
+          "contrast": 5.658732302143873,
+          "ink": "rgb(160, 53, 117)",
+          "background": "rgb(238, 241, 238)",
+          "nasal": false,
+          "shared": true
+        },
+        {
+          "text": "un",
+          "phone": "yn",
+          "layers": [
+            "consonant"
+          ],
+          "contrast": 4.881524876598971,
+          "ink": "rgb(8, 117, 110)",
+          "background": "rgb(238, 241, 238)",
+          "nasal": false,
+          "shared": true
+        },
+        {
+          "text": "uï",
+          "phone": "ɥi",
+          "layers": [
+            "consonant"
+          ],
+          "contrast": 5.658732302143873,
+          "ink": "rgb(160, 53, 117)",
+          "background": "rgb(238, 241, 238)",
+          "nasal": false,
+          "shared": true
+        }
+      ]
+    },
+    {
+      "mask": 3,
+      "label": "Voyelles + consonnes",
+      "coloredSpans": 186,
+      "minimumContrast": 4.6736663863366985,
+      "shared": [
+        {
+          "text": "ien",
+          "phone": "jɛ̃",
+          "layers": [
+            "consonant",
+            "vowel"
+          ],
+          "contrast": 4.6736663863366985,
+          "ink": "rgb(39, 50, 56)",
+          "background": "rgb(147, 156, 156)",
+          "nasal": false,
+          "shared": true
+        },
+        {
+          "text": "oin",
+          "phone": "wɛ̃",
+          "layers": [
+            "consonant",
+            "vowel"
+          ],
+          "contrast": 4.6736663863366985,
+          "ink": "rgb(39, 50, 56)",
+          "background": "rgb(147, 156, 156)",
+          "nasal": false,
+          "shared": true
+        },
+        {
+          "text": "x",
+          "phone": "ks",
+          "layers": [
+            "consonant"
+          ],
+          "contrast": 5.381080967569468,
+          "ink": "rgb(122, 89, 97)",
+          "background": "rgb(238, 241, 238)",
+          "nasal": false,
+          "shared": true
+        },
+        {
+          "text": "oi",
+          "phone": "wa",
+          "layers": [
+            "consonant",
+            "vowel"
+          ],
+          "contrast": 13.862508965914511,
+          "ink": "rgb(59, 14, 41)",
+          "background": "rgb(233, 237, 233)",
+          "nasal": false,
+          "shared": true
+        },
+        {
+          "text": "am",
+          "phone": "am",
+          "layers": [
+            "vowel",
+            "consonant"
+          ],
+          "contrast": 13.186518901630244,
+          "ink": "rgb(1, 41, 38)",
+          "background": "rgb(233, 237, 233)",
+          "nasal": false,
+          "shared": true
+        },
+        {
+          "text": "oi",
+          "phone": "wa",
+          "layers": [
+            "consonant",
+            "vowel"
+          ],
+          "contrast": 13.862508965914511,
+          "ink": "rgb(59, 14, 41)",
+          "background": "rgb(233, 237, 233)",
+          "nasal": false,
+          "shared": true
+        },
+        {
+          "text": "un",
+          "phone": "yn",
+          "layers": [
+            "vowel",
+            "consonant"
+          ],
+          "contrast": 5.591026676583791,
+          "ink": "rgb(13, 109, 82)",
+          "background": "rgb(236, 243, 236)",
+          "nasal": false,
+          "shared": true
+        },
+        {
+          "text": "uï",
+          "phone": "ɥi",
+          "layers": [
+            "consonant",
+            "vowel"
+          ],
+          "contrast": 5.833056484311241,
+          "ink": "rgb(170, 45, 87)",
+          "background": "rgb(247, 241, 240)",
+          "nasal": false,
+          "shared": true
+        }
+      ]
+    },
+    {
+      "mask": 4,
+      "label": "Nasalisations",
+      "coloredSpans": 38,
+      "minimumContrast": 5.451173216809124,
+      "shared": [
+        {
+          "text": "ien",
+          "phone": "jɛ̃",
+          "layers": [
+            "nasal"
+          ],
+          "contrast": 5.451173216809124,
+          "ink": "rgb(136, 87, 36)",
+          "background": "rgb(251, 241, 221)",
+          "nasal": true,
+          "shared": true
+        },
+        {
+          "text": "oin",
+          "phone": "wɛ̃",
+          "layers": [
+            "nasal"
+          ],
+          "contrast": 5.451173216809124,
+          "ink": "rgb(136, 87, 36)",
+          "background": "rgb(251, 241, 221)",
+          "nasal": true,
+          "shared": true
+        }
+      ]
+    },
+    {
+      "mask": 5,
+      "label": "Voyelles + nasalisations",
+      "coloredSpans": 94,
+      "minimumContrast": 5.984114060027568,
+      "shared": [
+        {
+          "text": "ien",
+          "phone": "jɛ̃",
+          "layers": [
+            "vowel",
+            "nasal"
+          ],
+          "contrast": 6.188254697012513,
+          "ink": "rgb(255, 255, 255)",
+          "background": "rgb(89, 99, 100)",
+          "nasal": true,
+          "shared": true
+        },
+        {
+          "text": "oin",
+          "phone": "wɛ̃",
+          "layers": [
+            "vowel",
+            "nasal"
+          ],
+          "contrast": 6.188254697012513,
+          "ink": "rgb(255, 255, 255)",
+          "background": "rgb(89, 99, 100)",
+          "nasal": true,
+          "shared": true
+        },
+        {
+          "text": "oi",
+          "phone": "wa",
+          "layers": [
+            "vowel"
+          ],
+          "contrast": 17.11859662951231,
+          "ink": "rgb(0, 0, 0)",
+          "background": "rgb(229, 233, 229)",
+          "nasal": false,
+          "shared": true
+        },
+        {
+          "text": "am",
+          "phone": "am",
+          "layers": [
+            "vowel"
+          ],
+          "contrast": 17.11859662951231,
+          "ink": "rgb(0, 0, 0)",
+          "background": "rgb(229, 233, 229)",
+          "nasal": false,
+          "shared": true
+        },
+        {
+          "text": "oi",
+          "phone": "wa",
+          "layers": [
+            "vowel"
+          ],
+          "contrast": 17.11859662951231,
+          "ink": "rgb(0, 0, 0)",
+          "background": "rgb(229, 233, 229)",
+          "nasal": false,
+          "shared": true
+        },
+        {
+          "text": "un",
+          "phone": "yn",
+          "layers": [
+            "vowel"
+          ],
+          "contrast": 6.3758544750167685,
+          "ink": "rgb(18, 101, 53)",
+          "background": "rgb(234, 245, 233)",
+          "nasal": false,
+          "shared": true
+        },
+        {
+          "text": "uï",
+          "phone": "ɥi",
+          "layers": [
+            "vowel"
+          ],
+          "contrast": 5.984114060027568,
+          "ink": "rgb(181, 30, 50)",
+          "background": "rgb(255, 241, 243)",
+          "nasal": false,
+          "shared": true
+        }
+      ]
+    },
+    {
+      "mask": 6,
+      "label": "Consonnes + nasalisations",
+      "coloredSpans": 135,
+      "minimumContrast": 4.881524876598971,
+      "shared": [
+        {
+          "text": "ien",
+          "phone": "jɛ̃",
+          "layers": [
+            "consonant",
+            "nasal"
+          ],
+          "contrast": 5.531947218196267,
+          "ink": "rgb(148, 74, 83)",
+          "background": "rgb(245, 241, 230)",
+          "nasal": true,
+          "shared": true
+        },
+        {
+          "text": "oin",
+          "phone": "wɛ̃",
+          "layers": [
+            "consonant",
+            "nasal"
+          ],
+          "contrast": 5.531947218196267,
+          "ink": "rgb(148, 74, 83)",
+          "background": "rgb(245, 241, 230)",
+          "nasal": true,
+          "shared": true
+        },
+        {
+          "text": "x",
+          "phone": "ks",
+          "layers": [
+            "consonant"
+          ],
+          "contrast": 5.381080967569468,
+          "ink": "rgb(122, 89, 97)",
+          "background": "rgb(238, 241, 238)",
+          "nasal": false,
+          "shared": true
+        },
+        {
+          "text": "oi",
+          "phone": "wa",
+          "layers": [
+            "consonant"
+          ],
+          "contrast": 5.658732302143873,
+          "ink": "rgb(160, 53, 117)",
+          "background": "rgb(238, 241, 238)",
+          "nasal": false,
+          "shared": true
+        },
+        {
+          "text": "am",
+          "phone": "am",
+          "layers": [
+            "consonant"
+          ],
+          "contrast": 4.881524876598971,
+          "ink": "rgb(8, 117, 110)",
+          "background": "rgb(238, 241, 238)",
+          "nasal": false,
+          "shared": true
+        },
+        {
+          "text": "oi",
+          "phone": "wa",
+          "layers": [
+            "consonant"
+          ],
+          "contrast": 5.658732302143873,
+          "ink": "rgb(160, 53, 117)",
+          "background": "rgb(238, 241, 238)",
+          "nasal": false,
+          "shared": true
+        },
+        {
+          "text": "un",
+          "phone": "yn",
+          "layers": [
+            "consonant"
+          ],
+          "contrast": 4.881524876598971,
+          "ink": "rgb(8, 117, 110)",
+          "background": "rgb(238, 241, 238)",
+          "nasal": false,
+          "shared": true
+        },
+        {
+          "text": "uï",
+          "phone": "ɥi",
+          "layers": [
+            "consonant"
+          ],
+          "contrast": 5.658732302143873,
+          "ink": "rgb(160, 53, 117)",
+          "background": "rgb(238, 241, 238)",
+          "nasal": false,
+          "shared": true
+        }
+      ]
+    },
+    {
+      "mask": 7,
+      "label": "Les trois catégories",
+      "coloredSpans": 186,
+      "minimumContrast": 4.530476929400699,
+      "shared": [
+        {
+          "text": "ien",
+          "phone": "jɛ̃",
+          "layers": [
+            "consonant",
+            "vowel",
+            "nasal"
+          ],
+          "contrast": 4.530476929400699,
+          "ink": "rgb(55, 60, 68)",
+          "background": "rgb(160, 167, 166)",
+          "nasal": true,
+          "shared": true
+        },
+        {
+          "text": "oin",
+          "phone": "wɛ̃",
+          "layers": [
+            "consonant",
+            "vowel",
+            "nasal"
+          ],
+          "contrast": 4.530476929400699,
+          "ink": "rgb(55, 60, 68)",
+          "background": "rgb(160, 167, 166)",
+          "nasal": true,
+          "shared": true
+        },
+        {
+          "text": "x",
+          "phone": "ks",
+          "layers": [
+            "consonant"
+          ],
+          "contrast": 5.381080967569468,
+          "ink": "rgb(122, 89, 97)",
+          "background": "rgb(238, 241, 238)",
+          "nasal": false,
+          "shared": true
+        },
+        {
+          "text": "oi",
+          "phone": "wa",
+          "layers": [
+            "consonant",
+            "vowel"
+          ],
+          "contrast": 13.862508965914511,
+          "ink": "rgb(59, 14, 41)",
+          "background": "rgb(233, 237, 233)",
+          "nasal": false,
+          "shared": true
+        },
+        {
+          "text": "am",
+          "phone": "am",
+          "layers": [
+            "vowel",
+            "consonant"
+          ],
+          "contrast": 13.186518901630244,
+          "ink": "rgb(1, 41, 38)",
+          "background": "rgb(233, 237, 233)",
+          "nasal": false,
+          "shared": true
+        },
+        {
+          "text": "oi",
+          "phone": "wa",
+          "layers": [
+            "consonant",
+            "vowel"
+          ],
+          "contrast": 13.862508965914511,
+          "ink": "rgb(59, 14, 41)",
+          "background": "rgb(233, 237, 233)",
+          "nasal": false,
+          "shared": true
+        },
+        {
+          "text": "un",
+          "phone": "yn",
+          "layers": [
+            "vowel",
+            "consonant"
+          ],
+          "contrast": 5.591026676583791,
+          "ink": "rgb(13, 109, 82)",
+          "background": "rgb(236, 243, 236)",
+          "nasal": false,
+          "shared": true
+        },
+        {
+          "text": "uï",
+          "phone": "ɥi",
+          "layers": [
+            "consonant",
+            "vowel"
+          ],
+          "contrast": 5.833056484311241,
+          "ink": "rgb(170, 45, 87)",
+          "background": "rgb(247, 241, 240)",
+          "nasal": false,
+          "shared": true
+        }
+      ]
+    }
+  ],
+  "passed": 83,
+  "failed": 0
+}

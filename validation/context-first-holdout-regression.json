@@ -1,0 +1,662 @@
+{
+  "method": "Post-fix regression of preregistered contextual challenge sentences. Their initial result is preserved and must not be replaced by this fitted rerun.",
+  "initialReport": "context-holdout-review.json",
+  "initialReportSha256": "10a1bf2f7497a3184b14a688cffee714774a5394d6f124cc34e9c982e54c3f21",
+  "cases": [
+    {
+      "id": 1,
+      "text": "À l’est du village, le vent soulève les feuilles.",
+      "initialOutput": "a lɛst du vi.laʒ, lə vɑ̃ su.lɛv le fœj.",
+      "output": "a lɛst dy vi.laʒ, lə vɑ̃ su.lɛv le fœj.",
+      "probes": [
+        {
+          "type": "word",
+          "word": "est",
+          "index": 0,
+          "expected": "ɛst",
+          "actual": "ɛst",
+          "pass": true
+        },
+        {
+          "type": "word",
+          "word": "vent",
+          "index": 0,
+          "expected": "vɑ̃",
+          "actual": "vɑ̃",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Les religieuses quittent le couvent avant la nuit.",
+      "initialOutput": "le ʁə.li.ʒjøz kit lə ku.vɑ̃ a.vɑ̃ la nɥi.",
+      "output": "le ʁə.li.ʒjøz kit lə ku.vɑ̃ a.vɑ̃ la nɥi.",
+      "probes": [
+        {
+          "type": "word",
+          "word": "couvent",
+          "index": 0,
+          "expected": "kuvɑ̃",
+          "actual": "kuvɑ̃",
+          "pass": true
+        },
+        {
+          "type": "liaison",
+          "left": "couvent",
+          "right": "avant",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Pendant ce temps, les canes couvent leurs œufs.",
+      "initialOutput": "pɑ̃.dɑ̃ sə tɑ̃, le kan kuv lœʁ.z‿ø.",
+      "output": "pɑ̃.dɑ̃ sə tɑ̃, le kan kuv lœʁ.z‿ø.",
+      "probes": [
+        {
+          "type": "word",
+          "word": "couvent",
+          "index": 0,
+          "expected": "kuv",
+          "actual": "kuv",
+          "pass": true
+        },
+        {
+          "type": "word",
+          "word": "œufs",
+          "index": 0,
+          "expected": "ø",
+          "actual": "ø",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Ses fils réparent la toiture avec leur père.",
+      "initialOutput": "se fis ʁe.paʁ la twa.tyʁ a.vɛk lœʁ pɛʁ.",
+      "output": "se fis ʁe.paʁ la twa.tyʁ a.vɛk lœʁ pɛʁ.",
+      "probes": [
+        {
+          "type": "word",
+          "word": "fils",
+          "index": 0,
+          "expected": "fis",
+          "actual": "fis",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Les fils de nylon restent accrochés au mur.",
+      "initialOutput": "le fis də ni.lɔ̃ ʁɛst a.kʁɔ.ʃe o myʁ.",
+      "output": "le fil də ni.lɔ̃ ʁɛst a.kʁɔ.ʃe o myʁ.",
+      "probes": [
+        {
+          "type": "word",
+          "word": "fils",
+          "index": 0,
+          "expected": "fil",
+          "actual": "fil",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "text": "L’as de cœur est posé près du verre.",
+      "initialOutput": "lɑs də kœʁ ɛ po.ze pʁɛ du vɛʁ.",
+      "output": "lɑs də kœʁ ɛ po.ze pʁɛ dy vɛʁ.",
+      "probes": [
+        {
+          "type": "word",
+          "word": "as",
+          "index": 0,
+          "expected": "ɑs",
+          "actual": "ɑs",
+          "pass": true
+        },
+        {
+          "type": "word",
+          "word": "cœur",
+          "index": 0,
+          "expected": "kœʁ",
+          "actual": "kœʁ",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Tu as oublié ton carnet dans l’entrée.",
+      "initialOutput": "ty a u.bli.je tɔ̃ kaʁ.nɛ dɑ̃ lɑ̃.tʁe.",
+      "output": "ty a u.bli.je tɔ̃ kaʁ.nɛ dɑ̃ lɑ̃.tʁe.",
+      "probes": [
+        {
+          "type": "word",
+          "word": "as",
+          "index": 0,
+          "expected": "a",
+          "actual": "a",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Tous ces voyageurs attendent encore le dernier autobus.",
+      "initialOutput": "tu se vwa.ja.ʒœʁ a.tɑ̃d ɑ̃.kɔʁ lə dɛʁ.nje.ʁ‿o.to.bys.",
+      "output": "tu se vwa.ja.ʒœʁ a.tɑ̃d ɑ̃.kɔʁ lə dɛʁ.nje.ʁ‿o.to.bys.",
+      "probes": [
+        {
+          "type": "word",
+          "word": "tous",
+          "index": 0,
+          "expected": "tu",
+          "actual": "tu",
+          "pass": true
+        },
+        {
+          "type": "liaison",
+          "left": "voyageurs",
+          "right": "attendent",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        },
+        {
+          "type": "liaison",
+          "left": "dernier",
+          "right": "autobus",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "text": "Les témoins sont tous arrivés avant midi.",
+      "initialOutput": "le te.mwɛ̃ sɔ̃ tus a.ʁi.ve a.vɑ̃ mi.di.",
+      "output": "le te.mwɛ̃ sɔ̃ tus a.ʁi.ve a.vɑ̃ mi.di.",
+      "probes": [
+        {
+          "type": "word",
+          "word": "tous",
+          "index": 0,
+          "expected": "tus",
+          "actual": "tus",
+          "pass": true
+        },
+        {
+          "type": "liaison",
+          "left": "tous",
+          "right": "arrivés",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "text": "Elle ne réclame plus aucun remboursement.",
+      "initialOutput": "ɛl nə ʁe.klam ply o.kœ̃ ʁɑ̃.buʁ.sə.mɑ̃.",
+      "output": "ɛl nə ʁe.klam ply o.kœ̃ ʁɑ̃.buʁ.sə.mɑ̃.",
+      "probes": [
+        {
+          "type": "word",
+          "word": "plus",
+          "index": 0,
+          "expected": "ply",
+          "actual": "ply",
+          "pass": true
+        },
+        {
+          "type": "liaison",
+          "left": "plus",
+          "right": "aucun",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "text": "Cette solution paraît plus efficace que la précédente.",
+      "initialOutput": "sɛt sɔ.ly.sjɔ̃ pa.ʁɛ ply.z‿e.fi.kas kə la pʁe.se.dɑ̃t.",
+      "output": "sɛt sɔ.ly.sjɔ̃ pa.ʁɛ ply.z‿e.fi.kas kə la pʁe.se.dɑ̃t.",
+      "probes": [
+        {
+          "type": "word",
+          "word": "plus",
+          "index": 0,
+          "expected": "ply",
+          "actual": "ply",
+          "pass": true
+        },
+        {
+          "type": "liaison",
+          "left": "plus",
+          "right": "efficace",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "text": "Pour progresser, il faudrait travailler plus.",
+      "initialOutput": "puʁ pʁɔ.ɡʁe.se, il fo.dʁɛ tʁa.va.je plys.",
+      "output": "puʁ pʁɔ.ɡʁe.se, il fo.dʁɛ tʁa.va.je plys.",
+      "probes": [
+        {
+          "type": "word",
+          "word": "plus",
+          "index": 0,
+          "expected": "plys",
+          "actual": "plys",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "text": "Ces experts président chaque réunion avec soin.",
+      "initialOutput": "se.z‿ɛks.pɛʁ pʁe.zid ʃak ʁe.y.njɔ̃ a.vɛk swɛ̃.",
+      "output": "se.z‿ɛks.pɛʁ pʁe.zid ʃak ʁe.y.njɔ̃ a.vɛk swɛ̃.",
+      "probes": [
+        {
+          "type": "word",
+          "word": "président",
+          "index": 0,
+          "expected": "pʁezid",
+          "actual": "pʁezid",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "text": "Le président reçoit un résident étranger.",
+      "initialOutput": "lə pʁe.zi.dɑ̃ ʁə.swa œ̃ ʁe.zi.dɑ̃ e.tʁɑ̃.ʒe.",
+      "output": "lə pʁe.zi.dɑ̃ ʁə.swa œ̃ ʁe.zi.dɑ̃ e.tʁɑ̃.ʒe.",
+      "probes": [
+        {
+          "type": "word",
+          "word": "président",
+          "index": 0,
+          "expected": "pʁezidɑ̃",
+          "actual": "pʁezidɑ̃",
+          "pass": true
+        },
+        {
+          "type": "word",
+          "word": "résident",
+          "index": 0,
+          "expected": "ʁezidɑ̃",
+          "actual": "ʁezidɑ̃",
+          "pass": true
+        },
+        {
+          "type": "liaison",
+          "left": "résident",
+          "right": "étranger",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "text": "Les résultats divergent nettement de nos estimations.",
+      "initialOutput": "le ʁe.zyl.ta di.vɛʁʒ nɛt.mɑ̃ də no.z‿ɛs.ti.ma.sjɔ̃.",
+      "output": "le ʁe.zyl.ta di.vɛʁʒ nɛ.tə.mɑ̃ də no.z‿ɛs.ti.ma.sjɔ̃.",
+      "probes": [
+        {
+          "type": "word",
+          "word": "divergent",
+          "index": 0,
+          "expected": "divɛʁʒ",
+          "actual": "divɛʁʒ",
+          "pass": true
+        },
+        {
+          "type": "liaison",
+          "left": "nos",
+          "right": "estimations",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "text": "Ce chemin divergent conduit vers une ancienne usine.",
+      "initialOutput": "sə ʃə.mɛ̃ di.vɛʁ.ʒɑ̃ kɔ̃.dɥi vɛʁ œn ɑ̃.sjɛn y.zin.",
+      "output": "sə ʃə.mɛ̃ di.vɛʁ.ʒɑ̃ kɔ̃.dɥi vɛʁ yn ɑ̃.sjɛn y.zin.",
+      "probes": [
+        {
+          "type": "word",
+          "word": "divergent",
+          "index": 0,
+          "expected": "divɛʁʒɑ̃",
+          "actual": "divɛʁʒɑ̃",
+          "pass": true
+        },
+        {
+          "type": "liaison",
+          "left": "vers",
+          "right": "une",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "text": "Des documents importants occupent toutes les étagères.",
+      "initialOutput": "de dɔ.ku.mɑ̃ ɛ̃.pɔʁ.tɑ̃ o.kyp tut le.z‿e.ta.ʒɛʁ.",
+      "output": "de dɔ.ky.mɑ̃ ɛ̃.pɔʁ.tɑ̃ ɔ.kyp tut le.z‿e.ta.ʒɛʁ.",
+      "probes": [
+        {
+          "type": "word",
+          "word": "occupent",
+          "index": 0,
+          "expected": "ɔkyp",
+          "actual": "ɔkyp",
+          "pass": true
+        },
+        {
+          "type": "liaison",
+          "left": "documents",
+          "right": "importants",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        },
+        {
+          "type": "liaison",
+          "left": "importants",
+          "right": "occupent",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        },
+        {
+          "type": "liaison",
+          "left": "les",
+          "right": "étagères",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "text": "Une importante équipe examine le dossier.",
+      "initialOutput": "œn ɛ̃.pɔʁ.tɑ̃t e.kip ɛɡ.za.min lə dɔ.sje.",
+      "output": "yn ɛ̃.pɔʁ.tɑ̃t e.kip ɛɡ.za.min lə dɔ.sje.",
+      "probes": [
+        {
+          "type": "word",
+          "word": "importante",
+          "index": 0,
+          "expected": "ɛ̃pɔʁtɑ̃t",
+          "actual": "ɛ̃pɔʁtɑ̃t",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "text": "Nous imaginons une autre manière de procéder.",
+      "initialOutput": "nu.z‿i.ma.ʒi.nɔ̃ œn otʁ ma.njɛʁ də pʁɔ.se.de.",
+      "output": "nu.z‿i.ma.ʒi.nɔ̃ yn otʁ ma.njɛʁ də pʁɔ.se.de.",
+      "probes": [
+        {
+          "type": "liaison",
+          "left": "nous",
+          "right": "imaginons",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "text": "Parmi nous, Antoine attend son amie.",
+      "initialOutput": "paʁ.mi nu, ɑ̃.twan a.tɑ̃ sɔ̃.n‿a.mi.",
+      "output": "paʁ.mi nu, ɑ̃.twan a.tɑ̃ sɔ̃.n‿a.mi.",
+      "probes": [
+        {
+          "type": "word",
+          "word": "antoine",
+          "index": 0,
+          "expected": "ɑ̃twan",
+          "actual": "ɑ̃twan",
+          "pass": true
+        },
+        {
+          "type": "liaison",
+          "left": "nous",
+          "right": "antoine",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        },
+        {
+          "type": "liaison",
+          "left": "son",
+          "right": "amie",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "text": "Le grand écrivain a rencontré un jeune historien.",
+      "initialOutput": "lə ɡʁɑ̃.t‿e.kʁi.vɛ̃ a ʁɑ̃.kɔ̃.tʁe œ̃ ʒœn is.tɔ.ʁjɛ̃.",
+      "output": "lə ɡʁɑ̃.t‿e.kʁi.vɛ̃ a ʁɑ̃.kɔ̃.tʁe œ̃ ʒœn is.tɔ.ʁjɛ̃.",
+      "probes": [
+        {
+          "type": "word",
+          "word": "écrivain",
+          "index": 0,
+          "expected": "ekʁivɛ̃",
+          "actual": "ekʁivɛ̃",
+          "pass": true
+        },
+        {
+          "type": "liaison",
+          "left": "grand",
+          "right": "écrivain",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "type": "liaison",
+          "left": "écrivain",
+          "right": "a",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "text": "Un savant allemand décrit un appareil étrange.",
+      "initialOutput": "œ̃ sa.vɑ̃ al.mɑ̃ de.kʁi œ̃.n‿a.pa.ʁɛj e.tʁɑ̃ʒ.",
+      "output": "œ̃ sa.vɑ̃ a.lə.mɑ̃ de.kʁi œ̃.n‿a.pa.ʁɛj e.tʁɑ̃ʒ.",
+      "probes": [
+        {
+          "type": "word",
+          "word": "savant",
+          "index": 0,
+          "expected": "savɑ̃",
+          "actual": "savɑ̃",
+          "pass": true
+        },
+        {
+          "type": "liaison",
+          "left": "savant",
+          "right": "allemand",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        },
+        {
+          "type": "liaison",
+          "left": "appareil",
+          "right": "étrange",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "text": "Paris accueille aujourd’hui plusieurs artistes espagnols.",
+      "initialOutput": "pa.ʁi a.kœj o.ʒuʁ.dɥi ply.zjœʁ.z‿aʁ.tist ɛs.pa.ɲɔl.",
+      "output": "pa.ʁi a.kœj o.ʒuʁ.dɥi ply.zjœʁ.z‿aʁ.tist ɛs.pa.ɲɔl.",
+      "probes": [
+        {
+          "type": "word",
+          "word": "paris",
+          "index": 0,
+          "expected": "paʁi",
+          "actual": "paʁi",
+          "pass": true
+        },
+        {
+          "type": "liaison",
+          "left": "paris",
+          "right": "accueille",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        },
+        {
+          "type": "liaison",
+          "left": "plusieurs",
+          "right": "artistes",
+          "expected": true,
+          "actual": true,
+          "pass": true
+        },
+        {
+          "type": "liaison",
+          "left": "artistes",
+          "right": "espagnols",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "text": "Je me demande si le petit cheval reviendra demain.",
+      "initialOutput": "ʒə mə də.mɑ̃d si lə pə.ti ʃe.val ʁə.vjɛ̃.dʁa də.mɛ̃.",
+      "output": "ʒə mə də.mɑ̃d si lə pə.ti ʃə.val ʁə.vjɛ̃.dʁa də.mɛ̃.",
+      "probes": [
+        {
+          "type": "word",
+          "word": "je",
+          "index": 0,
+          "expected": "ʒə",
+          "actual": "ʒə",
+          "pass": true
+        },
+        {
+          "type": "word",
+          "word": "me",
+          "index": 0,
+          "expected": "mə",
+          "actual": "mə",
+          "pass": true
+        },
+        {
+          "type": "word",
+          "word": "petit",
+          "index": 0,
+          "expected": "pəti",
+          "actual": "pəti",
+          "pass": true
+        },
+        {
+          "type": "word",
+          "word": "cheval",
+          "index": 0,
+          "expected": "ʃəval",
+          "actual": "ʃəval",
+          "pass": true
+        },
+        {
+          "type": "word",
+          "word": "demain",
+          "index": 0,
+          "expected": "dəmɛ̃",
+          "actual": "dəmɛ̃",
+          "pass": true
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "text": "« Les héros arrivent ! » annonce une voix dans le hall.",
+      "initialOutput": "« le e.ʁo a.ʁiv ! » a.nɔ̃s œn vwa dɑ̃ lə al.",
+      "output": "« le e.ʁo a.ʁiv ! » a.nɔ̃s yn vwa dɑ̃ lə ol.",
+      "probes": [
+        {
+          "type": "word",
+          "word": "hall",
+          "index": 0,
+          "expected": "ol",
+          "actual": "ol",
+          "pass": true
+        },
+        {
+          "type": "liaison",
+          "left": "les",
+          "right": "héros",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        },
+        {
+          "type": "liaison",
+          "left": "héros",
+          "right": "arrivent",
+          "expected": false,
+          "actual": false,
+          "pass": true
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "sentences": 25,
+    "probes": 56,
+    "passed": 56,
+    "failed": 0
+  },
+  "initialReportUnchanged": true
+}

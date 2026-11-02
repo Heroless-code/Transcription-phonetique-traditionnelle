@@ -1,0 +1,1114 @@
+{
+  "words": 1800,
+  "certain": 1735,
+  "uncertain": 65,
+  "sharedSegments": 1262,
+  "silentSegments": 1360,
+  "explicitCases": 73,
+  "explicitFailures": [],
+  "integrityErrors": 0,
+  "graphs": {
+    "eau": {
+      "words": 29,
+      "certain": 25,
+      "uncertain": 4
+    },
+    "au": {
+      "words": 101,
+      "certain": 96,
+      "uncertain": 5
+    },
+    "ou": {
+      "words": 164,
+      "certain": 158,
+      "uncertain": 6
+    },
+    "ge": {
+      "words": 65,
+      "certain": 62,
+      "uncertain": 3
+    },
+    "ai": {
+      "words": 389,
+      "certain": 377,
+      "uncertain": 12
+    },
+    "rr": {
+      "words": 53,
+      "certain": 52,
+      "uncertain": 1
+    },
+    "er": {
+      "words": 474,
+      "certain": 456,
+      "uncertain": 18
+    },
+    "an": {
+      "words": 177,
+      "certain": 173,
+      "uncertain": 4
+    },
+    "ch": {
+      "words": 156,
+      "certain": 149,
+      "uncertain": 7
+    },
+    "x": {
+      "words": 49,
+      "certain": 46,
+      "uncertain": 3
+    },
+    "h": {
+      "words": 356,
+      "certain": 348,
+      "uncertain": 8
+    },
+    "nn": {
+      "words": 116,
+      "certain": 112,
+      "uncertain": 4
+    },
+    "ent": {
+      "words": 259,
+      "certain": 251,
+      "uncertain": 8
+    },
+    "en": {
+      "words": 411,
+      "certain": 397,
+      "uncertain": 14
+    },
+    "ss": {
+      "words": 227,
+      "certain": 217,
+      "uncertain": 10
+    },
+    "ez": {
+      "words": 186,
+      "certain": 182,
+      "uncertain": 4
+    },
+    "um": {
+      "words": 44,
+      "certain": 39,
+      "uncertain": 5
+    },
+    "in": {
+      "words": 158,
+      "certain": 154,
+      "uncertain": 4
+    },
+    "on": {
+      "words": 366,
+      "certain": 357,
+      "uncertain": 9
+    },
+    "un": {
+      "words": 36,
+      "certain": 30,
+      "uncertain": 6
+    },
+    "ill": {
+      "words": 169,
+      "certain": 165,
+      "uncertain": 4
+    },
+    "ien": {
+      "words": 171,
+      "certain": 164,
+      "uncertain": 7
+    },
+    "â": {
+      "words": 117,
+      "certain": 114,
+      "uncertain": 3
+    },
+    "oi": {
+      "words": 50,
+      "certain": 48,
+      "uncertain": 2
+    },
+    "tion": {
+      "words": 51,
+      "certain": 50,
+      "uncertain": 1
+    },
+    "ff": {
+      "words": 45,
+      "certain": 40,
+      "uncertain": 5
+    },
+    "yn": {
+      "words": 25,
+      "certain": 25,
+      "uncertain": 0
+    },
+    "gu": {
+      "words": 109,
+      "certain": 106,
+      "uncertain": 3
+    },
+    "eu": {
+      "words": 95,
+      "certain": 95,
+      "uncertain": 0
+    },
+    "ail": {
+      "words": 42,
+      "certain": 40,
+      "uncertain": 2
+    },
+    "pp": {
+      "words": 42,
+      "certain": 41,
+      "uncertain": 1
+    },
+    "sc": {
+      "words": 66,
+      "certain": 62,
+      "uncertain": 4
+    },
+    "qu": {
+      "words": 79,
+      "certain": 78,
+      "uncertain": 1
+    },
+    "euil": {
+      "words": 27,
+      "certain": 27,
+      "uncertain": 0
+    },
+    "aî": {
+      "words": 27,
+      "certain": 24,
+      "uncertain": 3
+    },
+    "ei": {
+      "words": 61,
+      "certain": 60,
+      "uncertain": 1
+    },
+    "gn": {
+      "words": 37,
+      "certain": 37,
+      "uncertain": 0
+    },
+    "eil": {
+      "words": 32,
+      "certain": 31,
+      "uncertain": 1
+    },
+    "ng": {
+      "words": 62,
+      "certain": 59,
+      "uncertain": 3
+    },
+    "eî": {
+      "words": 2,
+      "certain": 2,
+      "uncertain": 0
+    },
+    "œu": {
+      "words": 29,
+      "certain": 29,
+      "uncertain": 0
+    },
+    "œ": {
+      "words": 48,
+      "certain": 43,
+      "uncertain": 5
+    },
+    "oeu": {
+      "words": 24,
+      "certain": 24,
+      "uncertain": 0
+    },
+    "th": {
+      "words": 48,
+      "certain": 48,
+      "uncertain": 0
+    },
+    "ï": {
+      "words": 54,
+      "certain": 54,
+      "uncertain": 0
+    },
+    "ph": {
+      "words": 56,
+      "certain": 56,
+      "uncertain": 0
+    },
+    "tt": {
+      "words": 53,
+      "certain": 50,
+      "uncertain": 3
+    },
+    "ô": {
+      "words": 28,
+      "certain": 28,
+      "uncertain": 0
+    },
+    "oy": {
+      "words": 30,
+      "certain": 29,
+      "uncertain": 1
+    },
+    "oû": {
+      "words": 25,
+      "certain": 25,
+      "uncertain": 0
+    },
+    "ouill": {
+      "words": 38,
+      "certain": 38,
+      "uncertain": 0
+    },
+    "cc": {
+      "words": 31,
+      "certain": 31,
+      "uncertain": 0
+    },
+    "ê": {
+      "words": 32,
+      "certain": 30,
+      "uncertain": 2
+    },
+    "ay": {
+      "words": 27,
+      "certain": 24,
+      "uncertain": 3
+    },
+    "uy": {
+      "words": 24,
+      "certain": 24,
+      "uncertain": 0
+    },
+    "mm": {
+      "words": 38,
+      "certain": 38,
+      "uncertain": 0
+    },
+    "sh": {
+      "words": 33,
+      "certain": 33,
+      "uncertain": 0
+    },
+    "sch": {
+      "words": 29,
+      "certain": 25,
+      "uncertain": 4
+    },
+    "guë": {
+      "words": 25,
+      "certain": 23,
+      "uncertain": 2
+    },
+    "ë": {
+      "words": 47,
+      "certain": 33,
+      "uncertain": 14
+    },
+    "guï": {
+      "words": 25,
+      "certain": 25,
+      "uncertain": 0
+    },
+    "gü": {
+      "words": 30,
+      "certain": 30,
+      "uncertain": 0
+    },
+    "ü": {
+      "words": 45,
+      "certain": 42,
+      "uncertain": 3
+    },
+    "ym": {
+      "words": 27,
+      "certain": 26,
+      "uncertain": 1
+    },
+    "rh": {
+      "words": 28,
+      "certain": 28,
+      "uncertain": 0
+    },
+    "bb": {
+      "words": 25,
+      "certain": 24,
+      "uncertain": 1
+    },
+    "dd": {
+      "words": 24,
+      "certain": 19,
+      "uncertain": 5
+    },
+    "gg": {
+      "words": 26,
+      "certain": 25,
+      "uncertain": 1
+    },
+    "zz": {
+      "words": 24,
+      "certain": 24,
+      "uncertain": 0
+    },
+    "tien": {
+      "words": 25,
+      "certain": 24,
+      "uncertain": 1
+    }
+  },
+  "uncertainExamples": {
+    "eau": [
+      {
+        "word": "bureaucratisant",
+        "ipa": "by.ʁɔ.kʁa.ti.zɑ̃"
+      },
+      {
+        "word": "chalumeautant",
+        "ipa": "ʃa.ly.mɔ.tɑ̃"
+      },
+      {
+        "word": "repoireauterons",
+        "ipa": "ʁə.pwa.ʁɔ.tə.ʁɔ̃"
+      },
+      {
+        "word": "chalumeautât",
+        "ipa": "ʃa.ly.mɔ.ta"
+      }
+    ],
+    "au": [
+      {
+        "word": "bureaucratisant",
+        "ipa": "by.ʁɔ.kʁa.ti.zɑ̃"
+      },
+      {
+        "word": "chalumeautant",
+        "ipa": "ʃa.ly.mɔ.tɑ̃"
+      },
+      {
+        "word": "repoireauterons",
+        "ipa": "ʁə.pwa.ʁɔ.tə.ʁɔ̃"
+      },
+      {
+        "word": "Finkielkraut",
+        "ipa": "fin.kɛl.kʁot"
+      },
+      {
+        "word": "chalumeautât",
+        "ipa": "ʃa.ly.mɔ.ta"
+      }
+    ],
+    "an": [
+      {
+        "word": "bureaucratisant",
+        "ipa": "by.ʁɔ.kʁa.ti.zɑ̃"
+      },
+      {
+        "word": "chalumeautant",
+        "ipa": "ʃa.ly.mɔ.tɑ̃"
+      },
+      {
+        "word": "œnomancies",
+        "ipa": "ɛ.nɔ.mɑ̃.si"
+      },
+      {
+        "word": "nietzschéanisaient",
+        "ipa": "nit.ʃe.a.ni.zɛ"
+      }
+    ],
+    "ch": [
+      {
+        "word": "chalumeautant",
+        "ipa": "ʃa.ly.mɔ.tɑ̃"
+      },
+      {
+        "word": "nietzschéanisaient",
+        "ipa": "nit.ʃe.a.ni.zɛ"
+      },
+      {
+        "word": "schtroumpferies",
+        "ipa": "ʃtʁum.fə.ʁi"
+      },
+      {
+        "word": "enschtroumpferais",
+        "ipa": "ɑ̃ʃ.tʁum.fə.ʁɛ"
+      },
+      {
+        "word": "schwarzeneggeriserais",
+        "ipa": "ʃvaʁt.sə.ne.ɡɛ.ʁi.zə.ʁɛ"
+      }
+    ],
+    "um": [
+      {
+        "word": "chalumeautant",
+        "ipa": "ʃa.ly.mɔ.tɑ̃"
+      },
+      {
+        "word": "boumoisiennes",
+        "ipa": "buʁ.mwa.zjɛn"
+      },
+      {
+        "word": "schtroumpferies",
+        "ipa": "ʃtʁum.fə.ʁi"
+      },
+      {
+        "word": "enschtroumpferais",
+        "ipa": "ɑ̃ʃ.tʁum.fə.ʁɛ"
+      },
+      {
+        "word": "chalumeautât",
+        "ipa": "ʃa.ly.mɔ.ta"
+      }
+    ],
+    "h": [
+      {
+        "word": "chalumeautant",
+        "ipa": "ʃa.ly.mɔ.tɑ̃"
+      },
+      {
+        "word": "Lahaye",
+        "ipa": "la.ɛ"
+      },
+      {
+        "word": "nietzschéanisaient",
+        "ipa": "nit.ʃe.a.ni.zɛ"
+      },
+      {
+        "word": "schtroumpferies",
+        "ipa": "ʃtʁum.fə.ʁi"
+      },
+      {
+        "word": "enschtroumpferais",
+        "ipa": "ɑ̃ʃ.tʁum.fə.ʁɛ"
+      }
+    ],
+    "oi": [
+      {
+        "word": "repoireauterons",
+        "ipa": "ʁə.pwa.ʁɔ.tə.ʁɔ̃"
+      },
+      {
+        "word": "boumoisiennes",
+        "ipa": "buʁ.mwa.zjɛn"
+      }
+    ],
+    "er": [
+      {
+        "word": "repoireauterons",
+        "ipa": "ʁə.pwa.ʁɔ.tə.ʁɔ̃"
+      },
+      {
+        "word": "ternstrœmiacées",
+        "ipa": "tɛʁns.tʁɛ.mja.se"
+      },
+      {
+        "word": "flirtailleraient",
+        "ipa": "flœʁ.ta.jə.ʁɛ"
+      },
+      {
+        "word": "fingerprintera",
+        "ipa": "fiŋ.ɡœʁ.pʁin.tə.ʁa"
+      },
+      {
+        "word": "schtroumpferies",
+        "ipa": "ʃtʁum.fə.ʁi"
+      }
+    ],
+    "on": [
+      {
+        "word": "repoireauterons",
+        "ipa": "ʁə.pwa.ʁɔ.tə.ʁɔ̃"
+      },
+      {
+        "word": "webmaîtrisions",
+        "ipa": "wɛb.me.tʁi.zjɔ̃"
+      },
+      {
+        "word": "traîtassions",
+        "ipa": "tʁe.ta.sjɔ̃"
+      },
+      {
+        "word": "swinguassions",
+        "ipa": "swiŋ.ɡa.sjɔ̃"
+      },
+      {
+        "word": "Saonnetiens",
+        "ipa": "sɔ.nɛ.tjɛ̃"
+      }
+    ],
+    "aî": [
+      {
+        "word": "webmaîtrisions",
+        "ipa": "wɛb.me.tʁi.zjɔ̃"
+      },
+      {
+        "word": "traînâmes",
+        "ipa": "tʁe.nam"
+      },
+      {
+        "word": "traîtassions",
+        "ipa": "tʁe.ta.sjɔ̃"
+      }
+    ],
+    "â": [
+      {
+        "word": "traînâmes",
+        "ipa": "tʁe.nam"
+      },
+      {
+        "word": "DDoSât",
+        "ipa": "de.de.ɔ.sa"
+      },
+      {
+        "word": "chalumeautât",
+        "ipa": "ʃa.ly.mɔ.ta"
+      }
+    ],
+    "ss": [
+      {
+        "word": "traîtassions",
+        "ipa": "tʁe.ta.sjɔ̃"
+      },
+      {
+        "word": "fuckaillasse",
+        "ipa": "fɔ.kɑ.jas"
+      },
+      {
+        "word": "swinguassions",
+        "ipa": "swiŋ.ɡa.sjɔ̃"
+      },
+      {
+        "word": "bêlassent",
+        "ipa": "be.las"
+      },
+      {
+        "word": "DDoSserez",
+        "ipa": "de.de.ɔ.sə.ʁe"
+      }
+    ],
+    "œ": [
+      {
+        "word": "cœxistent",
+        "ipa": "kɔ.ɛɡ.zist"
+      },
+      {
+        "word": "ternstrœmiacées",
+        "ipa": "tɛʁns.tʁɛ.mja.se"
+      },
+      {
+        "word": "œdématièrent",
+        "ipa": "ɛ.de.ma.sjɛʁ"
+      },
+      {
+        "word": "cœrcifs",
+        "ipa": "kɔ.ɛʁ.sif"
+      },
+      {
+        "word": "œnomancies",
+        "ipa": "ɛ.nɔ.mɑ̃.si"
+      }
+    ],
+    "ent": [
+      {
+        "word": "cœxistent",
+        "ipa": "kɔ.ɛɡ.zist"
+      },
+      {
+        "word": "œdématièrent",
+        "ipa": "ɛ.de.ma.sjɛʁ"
+      },
+      {
+        "word": "flirtailleraient",
+        "ipa": "flœʁ.ta.jə.ʁɛ"
+      },
+      {
+        "word": "nietzschéanisaient",
+        "ipa": "nit.ʃe.a.ni.zɛ"
+      },
+      {
+        "word": "bêlassent",
+        "ipa": "be.las"
+      }
+    ],
+    "en": [
+      {
+        "word": "cœxistent",
+        "ipa": "kɔ.ɛɡ.zist"
+      },
+      {
+        "word": "œdématièrent",
+        "ipa": "ɛ.de.ma.sjɛʁ"
+      },
+      {
+        "word": "boumoisiennes",
+        "ipa": "buʁ.mwa.zjɛn"
+      },
+      {
+        "word": "prunaysienne",
+        "ipa": "pʁy.nɛ.zjɛn"
+      },
+      {
+        "word": "flirtailleraient",
+        "ipa": "flœʁ.ta.jə.ʁɛ"
+      }
+    ],
+    "x": [
+      {
+        "word": "cœxistent",
+        "ipa": "kɔ.ɛɡ.zist"
+      },
+      {
+        "word": "xette",
+        "ipa": "ik.sɛt"
+      },
+      {
+        "word": "xoré",
+        "ipa": "ik.sɔ.ʁe"
+      }
+    ],
+    "ou": [
+      {
+        "word": "carreyrou",
+        "ipa": "ka.ʁe.ʁu"
+      },
+      {
+        "word": "boumoisiennes",
+        "ipa": "buʁ.mwa.zjɛn"
+      },
+      {
+        "word": "schtroumpferies",
+        "ipa": "ʃtʁum.fə.ʁi"
+      },
+      {
+        "word": "enschtroumpferais",
+        "ipa": "ɑ̃ʃ.tʁum.fə.ʁɛ"
+      },
+      {
+        "word": "undergroundisassent",
+        "ipa": "œn.dœʁ.ɡʁawn.di.zas"
+      }
+    ],
+    "rr": [
+      {
+        "word": "carreyrou",
+        "ipa": "ka.ʁe.ʁu"
+      }
+    ],
+    "nn": [
+      {
+        "word": "boumoisiennes",
+        "ipa": "buʁ.mwa.zjɛn"
+      },
+      {
+        "word": "prunaysienne",
+        "ipa": "pʁy.nɛ.zjɛn"
+      },
+      {
+        "word": "Ampilliacienne",
+        "ipa": "ɑ̃.pi.ja.sjɛn"
+      },
+      {
+        "word": "Saonnetiens",
+        "ipa": "sɔ.nɛ.tjɛ̃"
+      }
+    ],
+    "ien": [
+      {
+        "word": "boumoisiennes",
+        "ipa": "buʁ.mwa.zjɛn"
+      },
+      {
+        "word": "prunaysienne",
+        "ipa": "pʁy.nɛ.zjɛn"
+      },
+      {
+        "word": "flirtailleraient",
+        "ipa": "flœʁ.ta.jə.ʁɛ"
+      },
+      {
+        "word": "nietzschéanisaient",
+        "ipa": "nit.ʃe.a.ni.zɛ"
+      },
+      {
+        "word": "Ampilliacienne",
+        "ipa": "ɑ̃.pi.ja.sjɛn"
+      }
+    ],
+    "ay": [
+      {
+        "word": "Lahaye",
+        "ipa": "la.ɛ"
+      },
+      {
+        "word": "prunaysienne",
+        "ipa": "pʁy.nɛ.zjɛn"
+      },
+      {
+        "word": "Raymond",
+        "ipa": "ʁɛ.mɔ̃"
+      }
+    ],
+    "un": [
+      {
+        "word": "prunaysienne",
+        "ipa": "pʁy.nɛ.zjɛn"
+      },
+      {
+        "word": "funkysaient",
+        "ipa": "fœŋ.ki.zɛ"
+      },
+      {
+        "word": "punchez",
+        "ipa": "pɔ̃.ʃe"
+      },
+      {
+        "word": "underclockasse",
+        "ipa": "œn.dœʁ.klɔ.kas"
+      },
+      {
+        "word": "undergroundisassent",
+        "ipa": "œn.dœʁ.ɡʁawn.di.zas"
+      }
+    ],
+    "ei": [
+      {
+        "word": "appareilliez",
+        "ipa": "a.pa.ʁe.je"
+      }
+    ],
+    "ill": [
+      {
+        "word": "appareilliez",
+        "ipa": "a.pa.ʁe.je"
+      },
+      {
+        "word": "fuckaillasse",
+        "ipa": "fɔ.kɑ.jas"
+      },
+      {
+        "word": "flirtailleraient",
+        "ipa": "flœʁ.ta.jə.ʁɛ"
+      },
+      {
+        "word": "Ampilliacienne",
+        "ipa": "ɑ̃.pi.ja.sjɛn"
+      }
+    ],
+    "eil": [
+      {
+        "word": "appareilliez",
+        "ipa": "a.pa.ʁe.je"
+      }
+    ],
+    "pp": [
+      {
+        "word": "appareilliez",
+        "ipa": "a.pa.ʁe.je"
+      }
+    ],
+    "ez": [
+      {
+        "word": "appareilliez",
+        "ipa": "a.pa.ʁe.je"
+      },
+      {
+        "word": "DDoSserez",
+        "ipa": "de.de.ɔ.sə.ʁe"
+      },
+      {
+        "word": "punchez",
+        "ipa": "pɔ̃.ʃe"
+      },
+      {
+        "word": "regêniez",
+        "ipa": "ʁə.ʒe.nje"
+      }
+    ],
+    "ai": [
+      {
+        "word": "fuckaillasse",
+        "ipa": "fɔ.kɑ.jas"
+      },
+      {
+        "word": "flirtailleraient",
+        "ipa": "flœʁ.ta.jə.ʁɛ"
+      },
+      {
+        "word": "nietzschéanisaient",
+        "ipa": "nit.ʃe.a.ni.zɛ"
+      },
+      {
+        "word": "enschtroumpferais",
+        "ipa": "ɑ̃ʃ.tʁum.fə.ʁɛ"
+      },
+      {
+        "word": "schwarzeneggeriserais",
+        "ipa": "ʃvaʁt.sə.ne.ɡɛ.ʁi.zə.ʁɛ"
+      }
+    ],
+    "ail": [
+      {
+        "word": "fuckaillasse",
+        "ipa": "fɔ.kɑ.jas"
+      },
+      {
+        "word": "flirtailleraient",
+        "ipa": "flœʁ.ta.jə.ʁɛ"
+      }
+    ],
+    "ng": [
+      {
+        "word": "fingerprintera",
+        "ipa": "fiŋ.ɡœʁ.pʁin.tə.ʁa"
+      },
+      {
+        "word": "swinguassions",
+        "ipa": "swiŋ.ɡa.sjɔ̃"
+      },
+      {
+        "word": "fingerprinteront",
+        "ipa": "fiŋ.ɡœʁ.pʁin.tə.ʁɔ̃"
+      }
+    ],
+    "ge": [
+      {
+        "word": "fingerprintera",
+        "ipa": "fiŋ.ɡœʁ.pʁin.tə.ʁa"
+      },
+      {
+        "word": "schwarzeneggeriserais",
+        "ipa": "ʃvaʁt.sə.ne.ɡɛ.ʁi.zə.ʁɛ"
+      },
+      {
+        "word": "fingerprinteront",
+        "ipa": "fiŋ.ɡœʁ.pʁin.tə.ʁɔ̃"
+      }
+    ],
+    "in": [
+      {
+        "word": "fingerprintera",
+        "ipa": "fiŋ.ɡœʁ.pʁin.tə.ʁa"
+      },
+      {
+        "word": "swinguassions",
+        "ipa": "swiŋ.ɡa.sjɔ̃"
+      },
+      {
+        "word": "Finkielkraut",
+        "ipa": "fin.kɛl.kʁot"
+      },
+      {
+        "word": "fingerprinteront",
+        "ipa": "fiŋ.ɡœʁ.pʁin.tə.ʁɔ̃"
+      }
+    ],
+    "gu": [
+      {
+        "word": "swinguassions",
+        "ipa": "swiŋ.ɡa.sjɔ̃"
+      },
+      {
+        "word": "arguër",
+        "ipa": "aʁ.ɡɥe"
+      },
+      {
+        "word": "rédarguër",
+        "ipa": "ʁe.daʁ.ɡɥe"
+      }
+    ],
+    "guë": [
+      {
+        "word": "arguër",
+        "ipa": "aʁ.ɡɥe"
+      },
+      {
+        "word": "rédarguër",
+        "ipa": "ʁe.daʁ.ɡɥe"
+      }
+    ],
+    "ë": [
+      {
+        "word": "arguër",
+        "ipa": "aʁ.ɡɥe"
+      },
+      {
+        "word": "rédarguër",
+        "ipa": "ʁe.daʁ.ɡɥe"
+      },
+      {
+        "word": "coëffait",
+        "ipa": "kwɛ.fɛ"
+      },
+      {
+        "word": "nouërais",
+        "ipa": "nu.ʁɛ"
+      },
+      {
+        "word": "boëtterai",
+        "ipa": "bwɛ.tə.ʁe"
+      }
+    ],
+    "sch": [
+      {
+        "word": "nietzschéanisaient",
+        "ipa": "nit.ʃe.a.ni.zɛ"
+      },
+      {
+        "word": "schtroumpferies",
+        "ipa": "ʃtʁum.fə.ʁi"
+      },
+      {
+        "word": "enschtroumpferais",
+        "ipa": "ɑ̃ʃ.tʁum.fə.ʁɛ"
+      },
+      {
+        "word": "schwarzeneggeriserais",
+        "ipa": "ʃvaʁt.sə.ne.ɡɛ.ʁi.zə.ʁɛ"
+      }
+    ],
+    "sc": [
+      {
+        "word": "nietzschéanisaient",
+        "ipa": "nit.ʃe.a.ni.zɛ"
+      },
+      {
+        "word": "schtroumpferies",
+        "ipa": "ʃtʁum.fə.ʁi"
+      },
+      {
+        "word": "enschtroumpferais",
+        "ipa": "ɑ̃ʃ.tʁum.fə.ʁɛ"
+      },
+      {
+        "word": "schwarzeneggeriserais",
+        "ipa": "ʃvaʁt.sə.ne.ɡɛ.ʁi.zə.ʁɛ"
+      }
+    ],
+    "ê": [
+      {
+        "word": "bêlassent",
+        "ipa": "be.las"
+      },
+      {
+        "word": "regêniez",
+        "ipa": "ʁə.ʒe.nje"
+      }
+    ],
+    "bb": [
+      {
+        "word": "BBC",
+        "ipa": "be.be.se"
+      }
+    ],
+    "dd": [
+      {
+        "word": "DDoSserez",
+        "ipa": "de.de.ɔ.sə.ʁe"
+      },
+      {
+        "word": "redditer",
+        "ipa": "ʁɛ.di.tœʁ"
+      },
+      {
+        "word": "DDoSsent",
+        "ipa": "de.de.ɔs"
+      },
+      {
+        "word": "DDoSât",
+        "ipa": "de.de.ɔ.sa"
+      },
+      {
+        "word": "DDoSsa",
+        "ipa": "de.de.ɔ.sa"
+      }
+    ],
+    "ff": [
+      {
+        "word": "bufferisas",
+        "ipa": "bœ.fœ.ʁi.za"
+      },
+      {
+        "word": "coëffait",
+        "ipa": "kwɛ.fɛ"
+      },
+      {
+        "word": "coëffas",
+        "ipa": "kwɛ.fa"
+      },
+      {
+        "word": "décoëfferait",
+        "ipa": "de.kwɛ.fə.ʁɛ"
+      },
+      {
+        "word": "coëffais",
+        "ipa": "kwɛ.fɛ"
+      }
+    ],
+    "gg": [
+      {
+        "word": "schwarzeneggeriserais",
+        "ipa": "ʃvaʁt.sə.ne.ɡɛ.ʁi.zə.ʁɛ"
+      }
+    ],
+    "oy": [
+      {
+        "word": "papertoys",
+        "ipa": "pe.pœʁ.tɔj"
+      }
+    ],
+    "tien": [
+      {
+        "word": "Saonnetiens",
+        "ipa": "sɔ.nɛ.tjɛ̃"
+      }
+    ],
+    "tion": [
+      {
+        "word": "bunkérisation",
+        "ipa": "bœŋ.ke.ʁi.za.sjɔ̃"
+      }
+    ],
+    "ym": [
+      {
+        "word": "Raymond",
+        "ipa": "ʁɛ.mɔ̃"
+      }
+    ],
+    "tt": [
+      {
+        "word": "xette",
+        "ipa": "ik.sɛt"
+      },
+      {
+        "word": "boëtterai",
+        "ipa": "bwɛ.tə.ʁe"
+      },
+      {
+        "word": "déboëttées",
+        "ipa": "de.bwɛ.te"
+      }
+    ],
+    "qu": [
+      {
+        "word": "Quaëdypre",
+        "ipa": "kwa.dipʁ"
+      }
+    ],
+    "ü": [
+      {
+        "word": "Ürümqi",
+        "ipa": "u.ʁumt.ʃi"
+      },
+      {
+        "word": "noüons",
+        "ipa": "nwɔ̃"
+      },
+      {
+        "word": "noüé",
+        "ipa": "nwe"
+      }
+    ]
+  }
+}

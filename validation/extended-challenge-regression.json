@@ -1,0 +1,1529 @@
+{
+  "method": "Targeted lexical and syntactic challenge fixed before inspecting output; not a representative accuracy benchmark.",
+  "cases": [
+    {
+      "type": "word",
+      "text": "vergeure",
+      "output": "vɛʁ.ʒyʁ",
+      "expected": [
+        "vɛʁʒyʁ"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "exsangue",
+      "output": "ɛk.sɑ̃ɡ",
+      "expected": [
+        "ɛksɑ̃ɡ"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "exiguë",
+      "output": "ɛɡ.zi.ɡy",
+      "expected": [
+        "ɛɡziɡy"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "ambiguë",
+      "output": "ɑ̃.bi.ɡy",
+      "expected": [
+        "ɑ̃biɡy"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "ambiguïté",
+      "output": "ɑ̃.bi.ɡɥi.te",
+      "expected": [
+        "ɑ̃biɡɥite"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "aiguë",
+      "output": "ɛ.ɡy",
+      "expected": [
+        "eɡy",
+        "ɛɡy"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "aiguillon",
+      "output": "ɛ.ɡɥi.jɔ̃",
+      "expected": [
+        "eɡɥijɔ̃",
+        "ɛɡɥijɔ̃"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "aiguilleur",
+      "output": "ɛ.ɡɥi.jœʁ",
+      "expected": [
+        "eɡɥijœʁ",
+        "ɛɡɥijœʁ"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "magnat",
+      "output": "maɡ.na",
+      "expected": [
+        "maɲa",
+        "maɡna"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "stagnant",
+      "output": "staɡ.nɑ̃",
+      "expected": [
+        "staɲɑ̃",
+        "staɡnɑ̃"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "ignifuge",
+      "output": "i.ɲi.fyʒ",
+      "expected": [
+        "iɲifyʒ",
+        "iɡnifyʒ"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "synecdoque",
+      "output": "si.nɛk.dɔk",
+      "expected": [
+        "sinɛkdɔk"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "œsophage",
+      "output": "e.zɔ.faʒ",
+      "expected": [
+        "ezɔfaʒ",
+        "øzɔfaʒ"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "œdème",
+      "output": "e.dɛm",
+      "expected": [
+        "edɛm",
+        "ødɛm"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "cœlacanthe",
+      "output": "se.la.kɑ̃t",
+      "expected": [
+        "selakɑ̃t"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "chœur",
+      "output": "kœʁ",
+      "expected": [
+        "kœʁ"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "chorégraphie",
+      "output": "kɔ.ʁe.ɡʁa.fi",
+      "expected": [
+        "kɔʁeɡʁafi"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "chthonien",
+      "output": "ktɔ.njɛ̃",
+      "expected": [
+        "ktɔnjɛ̃"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "échevin",
+      "output": "e.ʃə.vɛ̃",
+      "expected": [
+        "eʃvɛ̃",
+        "eʃəvɛ̃",
+        "ɛʃvɛ̃"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "échiquier",
+      "output": "e.ʃi.kje",
+      "expected": [
+        "eʃikje"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "schisme",
+      "output": "ʃizm",
+      "expected": [
+        "ʃism",
+        "ʃizm"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "schizophrène",
+      "output": "ski.zɔ.fʁɛn",
+      "expected": [
+        "skizɔfʁɛn"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "psychisme",
+      "output": "psi.ʃizm",
+      "expected": [
+        "psiʃism",
+        "psiʃizm"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "omniscient",
+      "output": "ɔm.ni.sjɑ̃",
+      "expected": [
+        "ɔmnisjɑ̃"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "science",
+      "output": "sjɑ̃s",
+      "expected": [
+        "sjɑ̃s"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "patience",
+      "output": "pa.sjɑ̃s",
+      "expected": [
+        "pasjɑ̃s"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "acrobatie",
+      "output": "a.kʁɔ.ba.si",
+      "expected": [
+        "akʁɔbasi"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "minutie",
+      "output": "mi.ny.si",
+      "expected": [
+        "minysi"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "garantie",
+      "output": "ɡa.ʁɑ̃.ti",
+      "expected": [
+        "ɡaʁɑ̃ti"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "sympathie",
+      "output": "sɛ̃.pa.ti",
+      "expected": [
+        "sɛ̃pati"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "amitié",
+      "output": "a.mi.tje",
+      "expected": [
+        "amitje"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "initié",
+      "output": "i.ni.sje",
+      "expected": [
+        "inisje"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "initier",
+      "output": "i.ni.sje",
+      "expected": [
+        "inisje"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "antienne",
+      "output": "ɑ̃.tjɛn",
+      "expected": [
+        "ɑ̃tjɛn"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "équation",
+      "output": "e.kwa.sjɔ̃",
+      "expected": [
+        "ekwasjɔ̃"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "équateur",
+      "output": "e.kwa.tœʁ",
+      "expected": [
+        "ekwatœʁ"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "aquatique",
+      "output": "a.kwa.tik",
+      "expected": [
+        "akwatik"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "quadrilatère",
+      "output": "kwa.dʁi.la.tɛʁ",
+      "expected": [
+        "kwadʁilatɛʁ",
+        "kadʁilatɛʁ"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "quatuor",
+      "output": "kwa.tɥɔʁ",
+      "expected": [
+        "kwatɥɔʁ",
+        "kwatyɔʁ"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "quartz",
+      "output": "kwaʁts",
+      "expected": [
+        "kwaʁts"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "séquoia",
+      "output": "se.kɔ.ja",
+      "expected": [
+        "sekɔja"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "quinoa",
+      "output": "ki.nɔ.a",
+      "expected": [
+        "kinɔa"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "cueillette",
+      "output": "kœ.jɛt",
+      "expected": [
+        "kœjɛt"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "recueil",
+      "output": "ʁə.kœj",
+      "expected": [
+        "ʁəkœj"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "orgueilleux",
+      "output": "ɔʁ.ɡœ.jø",
+      "expected": [
+        "ɔʁɡœjø"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "orgueil",
+      "output": "ɔʁ.ɡœj",
+      "expected": [
+        "ɔʁɡœj"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "tressaillement",
+      "output": "tʁe.saj.mɑ̃",
+      "expected": [
+        "tʁesajmɑ̃",
+        "tʁɛsajmɑ̃"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "effervescence",
+      "output": "e.fɛʁ.ve.sɑ̃s",
+      "expected": [
+        "efɛʁvɛsɑ̃s",
+        "ɛfɛʁvɛsɑ̃s",
+        "efɛʁvesɑ̃s"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "velléité",
+      "output": "ve.le.i.te",
+      "expected": [
+        "veleite",
+        "vɛleite"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "rédhibition",
+      "output": "ʁe.di.bi.sjɔ̃",
+      "expected": [
+        "ʁedibisjɔ̃"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "imbroglio",
+      "output": "ɛ̃.bʁɔ.ɡli.jo",
+      "expected": [
+        "ɛ̃bʁɔljo",
+        "ɛ̃bʁɔɡlijo"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "fuchsia",
+      "output": "fy.ʃja",
+      "expected": [
+        "fyʃja"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "yacht",
+      "output": "jɔt",
+      "expected": [
+        "jɔt"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "whisky",
+      "output": "wis.ki",
+      "expected": [
+        "wiski"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "week-end",
+      "output": "wi.kɛnd",
+      "expected": [
+        "wikɛnd"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "shampooing",
+      "output": "ʃɑ̃.pwɛ̃",
+      "expected": [
+        "ʃɑ̃pwɛ̃"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "shampoing",
+      "output": "ʃɑ̃.pwɛ̃",
+      "expected": [
+        "ʃɑ̃pwɛ̃"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "camping",
+      "output": "kɑ̃.piŋ",
+      "expected": [
+        "kɑ̃piŋ"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "jogging",
+      "output": "dʒɔ.ɡiŋ",
+      "expected": [
+        "dʒɔɡiŋ"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "clown",
+      "output": "klun",
+      "expected": [
+        "klun"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "puzzle",
+      "output": "pœ.zœl",
+      "expected": [
+        "pœzl",
+        "pœzœl"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "ginkgo",
+      "output": "ʒɛ̃.ko",
+      "expected": [
+        "ʒɛ̃ko",
+        "ʒiŋko",
+        "ɡiŋko"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "mnémotechnique",
+      "output": "mne.mɔ.tɛk.nik",
+      "expected": [
+        "mnemɔtɛknik"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "pneumatique",
+      "output": "pnø.ma.tik",
+      "expected": [
+        "pnømatik"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "ptérodactyle",
+      "output": "pte.ʁɔ.dak.til",
+      "expected": [
+        "pteʁodaktil",
+        "pteʁɔdaktil"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "septentrional",
+      "output": "sɛp.tɑ̃.tʁi.jɔ.nal",
+      "expected": [
+        "sɛptɑ̃tʁijɔnal"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "septième",
+      "output": "sɛ.tjɛm",
+      "expected": [
+        "sɛtjɛm"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "second",
+      "output": "sə.ɡɔ̃",
+      "expected": [
+        "səɡɔ̃"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "seconde",
+      "output": "sə.ɡɔ̃d",
+      "expected": [
+        "səɡɔ̃d"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "secondaire",
+      "output": "sə.ɡɔ̃.dɛʁ",
+      "expected": [
+        "səɡɔ̃dɛʁ"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "sculpter",
+      "output": "skyl.te",
+      "expected": [
+        "skylte"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "baptême",
+      "output": "ba.tɛm",
+      "expected": [
+        "batɛm"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "baptismal",
+      "output": "ba.tis.mal",
+      "expected": [
+        "batismal",
+        "batizmal"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "comptabilité",
+      "output": "kɔ̃.ta.bi.li.te",
+      "expected": [
+        "kɔ̃tabilite"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "indomptable",
+      "output": "ɛ̃.dɔ̃.tabl",
+      "expected": [
+        "ɛ̃dɔ̃ptabl",
+        "ɛ̃dɔ̃tabl"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "dompteur",
+      "output": "dɔ̃p.tœʁ",
+      "expected": [
+        "dɔ̃ptœʁ",
+        "dɔ̃tœʁ"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "sixième",
+      "output": "si.zjɛm",
+      "expected": [
+        "sizjɛm"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "dixième",
+      "output": "di.zjɛm",
+      "expected": [
+        "dizjɛm"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "neuvième",
+      "output": "nœ.vjɛm",
+      "expected": [
+        "nœvjɛm"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "quatre-vingtième",
+      "output": "ka.tʁə.vɛ̃.tjɛm",
+      "expected": [
+        "katʁəvɛ̃tjɛm",
+        "katʁvɛ̃tjɛm"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "faon",
+      "output": "fɑ̃",
+      "expected": [
+        "fɑ̃"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "paon",
+      "output": "pɑ̃",
+      "expected": [
+        "pɑ̃"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "taon",
+      "output": "tɑ̃",
+      "expected": [
+        "tɑ̃"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "saoul",
+      "output": "su",
+      "expected": [
+        "su"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "saoule",
+      "output": "sul",
+      "expected": [
+        "sul"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "soûler",
+      "output": "su.le",
+      "expected": [
+        "sule"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "août",
+      "output": "u",
+      "expected": [
+        "ut",
+        "u"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "aoriste",
+      "output": "a.ɔ.ʁist",
+      "expected": [
+        "aɔʁist"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "moelle",
+      "output": "mwal",
+      "expected": [
+        "mwal"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "moelleux",
+      "output": "mwa.lø",
+      "expected": [
+        "mwalø"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "poêle",
+      "output": "pwal",
+      "expected": [
+        "pwal"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "poêlon",
+      "output": "pwa.lɔ̃",
+      "expected": [
+        "pwalɔ̃"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "rehausser",
+      "output": "ʁə.o.se",
+      "expected": [
+        "ʁəose"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "réinitialiser",
+      "output": "ʁe.i.ni.sja.li.ze",
+      "expected": [
+        "ʁeinisjalize"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "extraordinaire",
+      "output": "ɛks.tʁa.ɔʁ.di.nɛʁ",
+      "expected": [
+        "ɛkstʁaɔʁdinɛʁ"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "inhérent",
+      "output": "i.ne.ʁɑ̃",
+      "expected": [
+        "ineʁɑ̃"
+      ],
+      "pass": true
+    },
+    {
+      "type": "word",
+      "text": "inhabituel",
+      "output": "i.na.bi.tɥɛl",
+      "expected": [
+        "inabitɥɛl"
+      ],
+      "pass": true
+    },
+    {
+      "type": "context",
+      "text": "Les ouvriers du bâtiment soudent les pièces.",
+      "word": "soudent",
+      "index": 0,
+      "output": "le.z‿u.vʁi.je dy bɑ.ti.mɑ̃ sud le pjɛs.",
+      "expected": "sud",
+      "actual": "sud",
+      "pass": true
+    },
+    {
+      "type": "context",
+      "text": "Les moines du couvent couvent ce projet.",
+      "word": "couvent",
+      "index": 0,
+      "output": "le mwan dy ku.vɑ̃ kuv sə pʁɔ.ʒɛ.",
+      "expected": "kuvɑ̃",
+      "actual": "kuvɑ̃",
+      "pass": true
+    },
+    {
+      "type": "context",
+      "text": "Les moines du couvent couvent ce projet.",
+      "word": "couvent",
+      "index": 1,
+      "output": "le mwan dy ku.vɑ̃ kuv sə pʁɔ.ʒɛ.",
+      "expected": "kuv",
+      "actual": "kuv",
+      "pass": true
+    },
+    {
+      "type": "context",
+      "text": "Les portes ferment ; les ferments restent actifs.",
+      "word": "ferment",
+      "index": 0,
+      "output": "le pɔʁt fɛʁm ; le fɛʁ.mɑ̃ ʁɛst ak.tif.",
+      "expected": "fɛʁm",
+      "actual": "fɛʁm",
+      "pass": true
+    },
+    {
+      "type": "context",
+      "text": "Les portes ferment ; les ferments restent actifs.",
+      "word": "ferments",
+      "index": 0,
+      "output": "le pɔʁt fɛʁm ; le fɛʁ.mɑ̃ ʁɛst ak.tif.",
+      "expected": "fɛʁmɑ̃",
+      "actual": "fɛʁmɑ̃",
+      "pass": true
+    },
+    {
+      "type": "context",
+      "text": "Ces éléments excellent dans ce domaine.",
+      "word": "excellent",
+      "index": 0,
+      "output": "se.z‿e.le.mɑ̃ ɛk.sɛl dɑ̃ sə dɔ.mɛn.",
+      "expected": "ɛksɛl",
+      "actual": "ɛksɛl",
+      "pass": true
+    },
+    {
+      "type": "context",
+      "text": "Ces hommes violent la loi.",
+      "word": "violent",
+      "index": 0,
+      "output": "se.z‿ɔm vjɔl la lwa.",
+      "expected": "vjɔl",
+      "actual": "vjɔl",
+      "pass": true
+    },
+    {
+      "type": "context",
+      "text": "Un violent orage approche.",
+      "word": "violent",
+      "index": 0,
+      "output": "œ̃ vjɔ.lɑ̃.t‿ɔ.ʁaʒ a.pʁɔʃ.",
+      "expected": "vjɔlɑ̃",
+      "actual": "vjɔlɑ̃",
+      "pass": true
+    },
+    {
+      "type": "liaison",
+      "text": "Un violent orage approche.",
+      "left": "violent",
+      "right": "orage",
+      "output": "œ̃ vjɔ.lɑ̃.t‿ɔ.ʁaʒ a.pʁɔʃ.",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "type": "context",
+      "text": "Les enfants de ma sœur content une histoire.",
+      "word": "content",
+      "index": 0,
+      "output": "le.z‿ɑ̃.fɑ̃ də ma sœʁ kɔ̃t yn is.twaʁ.",
+      "expected": "kɔ̃t",
+      "actual": "kɔ̃t",
+      "pass": true
+    },
+    {
+      "type": "context",
+      "text": "Un enfant content arrive.",
+      "word": "content",
+      "index": 0,
+      "output": "œ̃.n‿ɑ̃.fɑ̃ kɔ̃.tɑ̃ a.ʁiv.",
+      "expected": "kɔ̃tɑ̃",
+      "actual": "kɔ̃tɑ̃",
+      "pass": true
+    },
+    {
+      "type": "liaison",
+      "text": "Un enfant content arrive.",
+      "left": "content",
+      "right": "arrive",
+      "output": "œ̃.n‿ɑ̃.fɑ̃ kɔ̃.tɑ̃ a.ʁiv.",
+      "expected": false,
+      "actual": false,
+      "pass": true
+    },
+    {
+      "type": "context",
+      "text": "Les élèves qui résident ici lisent.",
+      "word": "résident",
+      "index": 0,
+      "output": "le.z‿e.lɛv ki ʁe.zid i.si liz.",
+      "expected": "ʁezid",
+      "actual": "ʁezid",
+      "pass": true
+    },
+    {
+      "type": "context",
+      "text": "Un résident italien arrive.",
+      "word": "résident",
+      "index": 0,
+      "output": "œ̃ ʁe.zi.dɑ̃ i.ta.ljɛ̃ a.ʁiv.",
+      "expected": "ʁezidɑ̃",
+      "actual": "ʁezidɑ̃",
+      "pass": true
+    },
+    {
+      "type": "liaison",
+      "text": "Un résident italien arrive.",
+      "left": "résident",
+      "right": "italien",
+      "output": "œ̃ ʁe.zi.dɑ̃ i.ta.ljɛ̃ a.ʁiv.",
+      "expected": false,
+      "actual": false,
+      "pass": true
+    },
+    {
+      "type": "context",
+      "text": "Ils expédient ces documents.",
+      "word": "expédient",
+      "index": 0,
+      "output": "il.z‿eks.pe.di se dɔ.ky.mɑ̃.",
+      "expected": "ekspedi",
+      "actual": "ekspedi",
+      "pass": true
+    },
+    {
+      "type": "context",
+      "text": "Cet expédient est utile.",
+      "word": "expédient",
+      "index": 0,
+      "output": "sɛ.t‿ɛks.pe.djɑ̃ ɛ y.til.",
+      "expected": "ɛkspedjɑ̃",
+      "actual": "ɛkspedjɑ̃",
+      "pass": true
+    },
+    {
+      "type": "context",
+      "text": "Les élèves du cours négligent leur travail.",
+      "word": "négligent",
+      "index": 0,
+      "output": "le.z‿e.lɛv dy kuʁ ne.ɡliʒ lœʁ tʁa.vaj.",
+      "expected": "neɡliʒ",
+      "actual": "neɡliʒ",
+      "pass": true
+    },
+    {
+      "type": "context",
+      "text": "Un élève négligent arrive.",
+      "word": "négligent",
+      "index": 0,
+      "output": "œ̃.n‿e.lɛv ne.ɡli.ʒɑ̃ a.ʁiv.",
+      "expected": "neɡliʒɑ̃",
+      "actual": "neɡliʒɑ̃",
+      "pass": true
+    },
+    {
+      "type": "liaison",
+      "text": "Un élève négligent arrive.",
+      "left": "négligent",
+      "right": "arrive",
+      "output": "œ̃.n‿e.lɛv ne.ɡli.ʒɑ̃ a.ʁiv.",
+      "expected": false,
+      "actual": false,
+      "pass": true
+    },
+    {
+      "type": "context",
+      "text": "Ces religieuses de la ville influent sur le débat.",
+      "word": "influent",
+      "index": 0,
+      "output": "se ʁə.li.ʒjøz də la vil ɛ̃.fly syʁ lə de.ba.",
+      "expected": "ɛ̃fly",
+      "actual": "ɛ̃fly",
+      "pass": true
+    },
+    {
+      "type": "context",
+      "text": "Un homme influent arrive.",
+      "word": "influent",
+      "index": 0,
+      "output": "œ̃.n‿ɔm ɛ̃.fly.ɑ̃ a.ʁiv.",
+      "expected": "ɛ̃flyɑ̃",
+      "actual": "ɛ̃flyɑ̃",
+      "pass": true
+    },
+    {
+      "type": "liaison",
+      "text": "Un homme influent arrive.",
+      "left": "influent",
+      "right": "arrive",
+      "output": "œ̃.n‿ɔm ɛ̃.fly.ɑ̃ a.ʁiv.",
+      "expected": false,
+      "actual": false,
+      "pass": true
+    },
+    {
+      "type": "context",
+      "text": "Où les musiciens du village jouent-ils ?",
+      "word": "jouent",
+      "index": 0,
+      "output": "u le my.zi.sjɛ̃ dy vi.laʒ ʒu.t‿il ?",
+      "expected": "ʒu",
+      "actual": "ʒu",
+      "pass": true
+    },
+    {
+      "type": "context",
+      "text": "Que les élèves étudient ce chapitre.",
+      "word": "étudient",
+      "index": 0,
+      "output": "kə le.z‿e.lɛv e.ty.di sə ʃa.pitʁ.",
+      "expected": "etydi",
+      "actual": "etydi",
+      "pass": true
+    },
+    {
+      "type": "context",
+      "text": "Les enfants le lui confient.",
+      "word": "confient",
+      "index": 0,
+      "output": "le.z‿ɑ̃.fɑ̃ lə lɥi kɔ̃.fi.",
+      "expected": "kɔ̃fi",
+      "actual": "kɔ̃fi",
+      "pass": true
+    },
+    {
+      "type": "context",
+      "text": "Les enfants ne le lui confient jamais.",
+      "word": "confient",
+      "index": 0,
+      "output": "le.z‿ɑ̃.fɑ̃ nə lə lɥi kɔ̃.fi ʒa.mɛ.",
+      "expected": "kɔ̃fi",
+      "actual": "kɔ̃fi",
+      "pass": true
+    },
+    {
+      "type": "liaison",
+      "text": "Les enfants, étonnés, arrivent.",
+      "left": "enfants",
+      "right": "étonnés",
+      "output": "le.z‿ɑ̃.fɑ̃, e.tɔ.ne, a.ʁiv.",
+      "expected": false,
+      "actual": false,
+      "pass": true
+    },
+    {
+      "type": "liaison",
+      "text": "Les héros et les héroïnes arrivent.",
+      "left": "les",
+      "right": "héros",
+      "output": "le e.ʁo e le.z‿e.ʁɔ.in a.ʁiv.",
+      "expected": false,
+      "actual": false,
+      "pass": true
+    },
+    {
+      "type": "liaison",
+      "text": "Les héros et les héroïnes arrivent.",
+      "left": "les",
+      "right": "héroïnes",
+      "output": "le e.ʁo e le.z‿e.ʁɔ.in a.ʁiv.",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "type": "liaison",
+      "text": "Deux hauts arbres et deux petits arbustes.",
+      "left": "deux",
+      "right": "hauts",
+      "output": "dø o.z‿aʁbʁ e dø pə.ti.z‿aʁ.byst.",
+      "expected": false,
+      "actual": false,
+      "pass": true
+    },
+    {
+      "type": "liaison",
+      "text": "Deux hauts arbres et deux petits arbustes.",
+      "left": "hauts",
+      "right": "arbres",
+      "output": "dø o.z‿aʁbʁ e dø pə.ti.z‿aʁ.byst.",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "type": "liaison",
+      "text": "Deux hauts arbres et deux petits arbustes.",
+      "left": "petits",
+      "right": "arbustes",
+      "output": "dø o.z‿aʁbʁ e dø pə.ti.z‿aʁ.byst.",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "type": "liaison",
+      "text": "Un grand ami et un grand héros.",
+      "left": "grand",
+      "right": "ami",
+      "output": "œ̃ ɡʁɑ̃.t‿a.mi e œ̃ ɡʁɑ̃ e.ʁo.",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "type": "liaison",
+      "text": "Un grand ami et un grand héros.",
+      "left": "grand",
+      "right": "héros",
+      "output": "œ̃ ɡʁɑ̃.t‿a.mi e œ̃ ɡʁɑ̃ e.ʁo.",
+      "expected": false,
+      "actual": false,
+      "pass": true
+    },
+    {
+      "type": "liaison",
+      "text": "Leurs amis et leurs onze enfants.",
+      "left": "leurs",
+      "right": "amis",
+      "output": "lœʁ.z‿a.mi e lœʁ ɔ̃z ɑ̃.fɑ̃.",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "type": "liaison",
+      "text": "Leurs amis et leurs onze enfants.",
+      "left": "leurs",
+      "right": "onze",
+      "output": "lœʁ.z‿a.mi e lœʁ ɔ̃z ɑ̃.fɑ̃.",
+      "expected": false,
+      "actual": false,
+      "pass": true
+    },
+    {
+      "type": "liaison",
+      "text": "Ils en ont un.",
+      "left": "ils",
+      "right": "en",
+      "output": "il.z‿ɑ̃.n‿ɔ̃ œ̃.",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "type": "liaison",
+      "text": "Ils en ont un.",
+      "left": "en",
+      "right": "ont",
+      "output": "il.z‿ɑ̃.n‿ɔ̃ œ̃.",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "type": "liaison",
+      "text": "Nous y allons ensemble.",
+      "left": "nous",
+      "right": "y",
+      "output": "nu.z‿i a.lɔ̃ ɑ̃.sɑ̃bl.",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "type": "liaison",
+      "text": "Comment vont-ils à Paris ?",
+      "left": "ils",
+      "right": "à",
+      "output": "kɔ.mɑ̃ vɔ̃.t‿il a pa.ʁi ?",
+      "expected": false,
+      "actual": false,
+      "pass": true
+    },
+    {
+      "type": "liaison",
+      "text": "Vas-y et prends-en deux.",
+      "left": "vas",
+      "right": "y",
+      "output": "va.z‿i e pʁɑ̃.z‿ɑ̃ dø.",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "type": "liaison",
+      "text": "Vas-y et prends-en deux.",
+      "left": "prends",
+      "right": "en",
+      "output": "va.z‿i e pʁɑ̃.z‿ɑ̃ dø.",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "type": "liaison",
+      "text": "Un euro et un yacht.",
+      "left": "un",
+      "right": "euro",
+      "output": "œ̃.n‿ø.ʁo e œ̃ jɔt.",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "type": "liaison",
+      "text": "Un euro et un yacht.",
+      "left": "un",
+      "right": "yacht",
+      "output": "œ̃.n‿ø.ʁo e œ̃ jɔt.",
+      "expected": false,
+      "actual": false,
+      "pass": true
+    },
+    {
+      "type": "liaison",
+      "text": "Les yaourts et les yeux.",
+      "left": "les",
+      "right": "yaourts",
+      "output": "le ja.uʁt e le.z‿jø.",
+      "expected": false,
+      "actual": false,
+      "pass": true
+    },
+    {
+      "type": "liaison",
+      "text": "Les yaourts et les yeux.",
+      "left": "les",
+      "right": "yeux",
+      "output": "le ja.uʁt e le.z‿jø.",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "type": "liaison",
+      "text": "Un hibou et un hiver froid.",
+      "left": "un",
+      "right": "hibou",
+      "output": "œ̃ i.bu e œ̃.n‿i.vɛʁ fʁwa.",
+      "expected": false,
+      "actual": false,
+      "pass": true
+    },
+    {
+      "type": "liaison",
+      "text": "Un hibou et un hiver froid.",
+      "left": "un",
+      "right": "hiver",
+      "output": "œ̃ i.bu e œ̃.n‿i.vɛʁ fʁwa.",
+      "expected": true,
+      "actual": true,
+      "pass": true
+    },
+    {
+      "type": "context",
+      "text": "Mon fils range les fils de cuivre.",
+      "word": "fils",
+      "index": 0,
+      "output": "mɔ̃ fis ʁɑ̃ʒ le fil də kɥivʁ.",
+      "expected": "fis",
+      "actual": "fis",
+      "pass": true
+    },
+    {
+      "type": "context",
+      "text": "Mon fils range les fils de cuivre.",
+      "word": "fils",
+      "index": 1,
+      "output": "mɔ̃ fis ʁɑ̃ʒ le fil də kɥivʁ.",
+      "expected": "fil",
+      "actual": "fil",
+      "pass": true
+    },
+    {
+      "type": "context",
+      "text": "Les portions que nous portions étaient petites.",
+      "word": "portions",
+      "index": 0,
+      "output": "le pɔʁ.sjɔ̃ kə nu pɔʁ.tjɔ̃ e.tɛ pə.tit.",
+      "expected": "pɔʁsjɔ̃",
+      "actual": "pɔʁsjɔ̃",
+      "pass": true
+    },
+    {
+      "type": "context",
+      "text": "Les portions que nous portions étaient petites.",
+      "word": "portions",
+      "index": 1,
+      "output": "le pɔʁ.sjɔ̃ kə nu pɔʁ.tjɔ̃ e.tɛ pə.tit.",
+      "expected": "pɔʁtjɔ̃",
+      "actual": "pɔʁtjɔ̃",
+      "pass": true
+    },
+    {
+      "type": "context",
+      "text": "Ils président le conseil du président.",
+      "word": "président",
+      "index": 0,
+      "output": "il pʁe.zid lə kɔ̃.sɛj dy pʁe.zi.dɑ̃.",
+      "expected": "pʁezid",
+      "actual": "pʁezid",
+      "pass": true
+    },
+    {
+      "type": "context",
+      "text": "Ils président le conseil du président.",
+      "word": "président",
+      "index": 1,
+      "output": "il pʁe.zid lə kɔ̃.sɛj dy pʁe.zi.dɑ̃.",
+      "expected": "pʁezidɑ̃",
+      "actual": "pʁezidɑ̃",
+      "pass": true
+    },
+    {
+      "type": "context",
+      "text": "Les poules du voisin pondent et couvent.",
+      "word": "pondent",
+      "index": 0,
+      "output": "le pul dy vwa.zɛ̃ pɔ̃d e kuv.",
+      "expected": "pɔ̃d",
+      "actual": "pɔ̃d",
+      "pass": true
+    },
+    {
+      "type": "context",
+      "text": "Les poules du voisin pondent et couvent.",
+      "word": "couvent",
+      "index": 0,
+      "output": "le pul dy vwa.zɛ̃ pɔ̃d e kuv.",
+      "expected": "kuv",
+      "actual": "kuv",
+      "pass": true
+    },
+    {
+      "type": "context",
+      "text": "Les candidats nous convient à dîner.",
+      "word": "convient",
+      "index": 0,
+      "output": "le kɑ̃.di.da nu kɔ̃.vi a di.ne.",
+      "expected": "kɔ̃vi",
+      "actual": "kɔ̃vi",
+      "pass": true
+    },
+    {
+      "type": "context",
+      "text": "Cette solution nous convient.",
+      "word": "convient",
+      "index": 0,
+      "output": "sɛt sɔ.ly.sjɔ̃ nu kɔ̃.vjɛ̃.",
+      "expected": "kɔ̃vjɛ̃",
+      "actual": "kɔ̃vjɛ̃",
+      "pass": true
+    },
+    {
+      "type": "context",
+      "text": "Les ingrédients que les cuisiniers évident sont prêts.",
+      "word": "évident",
+      "index": 0,
+      "output": "le.z‿ɛ̃.ɡʁe.djɑ̃ kə le kɥi.zi.nje e.vid sɔ̃ pʁɛ.",
+      "expected": "evid",
+      "actual": "evid",
+      "pass": true
+    },
+    {
+      "type": "context",
+      "text": "Un résultat évident apparaît.",
+      "word": "évident",
+      "index": 0,
+      "output": "œ̃ ʁe.zyl.ta e.vi.dɑ̃ a.pa.ʁɛ.",
+      "expected": "evidɑ̃",
+      "actual": "evidɑ̃",
+      "pass": true
+    },
+    {
+      "type": "liaison",
+      "text": "Un résultat évident apparaît.",
+      "left": "évident",
+      "right": "apparaît",
+      "output": "œ̃ ʁe.zyl.ta e.vi.dɑ̃ a.pa.ʁɛ.",
+      "expected": false,
+      "actual": false,
+      "pass": true
+    }
+  ],
+  "passed": 159,
+  "failed": 0,
+  "initialSha256": "94d3a36eba5ebe03787c273a4178129648eb8b619a80789134528a51a4ff922b"
+}

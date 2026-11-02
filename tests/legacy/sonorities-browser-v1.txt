@@ -1,0 +1,484 @@
+/** Independent integration checks of the isolated, offline Sonorités artifact. */
+import fs from 'node:fs';
+import path from 'node:path';
+import assert from 'node:assert/strict';
+import {createRequire} from 'node:module';
+import {fileURLToPath,pathToFileURL} from 'node:url';
+import {createHash} from 'node:crypto';
+import {sonorityStyle} from '../src/sonority-colors.js';
+import {phones} from '../src/phonology.js';
+
+const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+const artifact=path.resolve(process.argv.find(a=>a.endsWith('.html'))||path.join(root,'Transcription-phonetique-traditionnelle.html'));
+const out=path.join(root,'validation');
+const isolated=path.join(out,'sonorities-isolated');fs.mkdirSync(isolated,{recursive:true});
+const copy=path.join(isolated,'transcription.html'),bytes=fs.readFileSync(artifact);fs.writeFileSync(copy,bytes);
+let require=createRequire(import.meta.url),chromium;
+try{({chromium}=require('playwright'));}catch{require=createRequire(path.join(path.dirname(process.execPath),'..','package.json'));({chromium}=require('playwright'));}
+const report={purpose:'Independent browser checks of mode exclusivity, exact sonority counts, source/IPA exploration and explicit reading policy. Not a stylistic-intention or universal phonetic accuracy score.',artifact,sha256:createHash('sha256').update(bytes).digest('hex'),offline:true,requests:[],errors:[],tests:[],metrics:{}};
+const executablePath=process.env.TRANSCRIPTION_BROWSER||['C:/Program Files/Google/Chrome/Application/chrome.exe','C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe'].find(p=>fs.existsSync(p));
+const browser=await chromium.launch({headless:true,...(executablePath?{executablePath}:{}),args:['--disable-background-networking','--disable-component-update','--no-first-run']});
+report.browser=browser.version();
+const context=await browser.newContext({offline:true,viewport:{width:1280,height:1000}});
+context.on('request',r=>{if(/^https?:/iu.test(r.url()))report.requests.push(r.url());});
+const page=await context.newPage();page.on('pageerror',e=>report.errors.push(e.message));
+page.on('dialog',dialog=>{report.errors.push('Unexpected dialog: '+dialog.message());dialog.dismiss();});
+await page.addInitScript(()=>{Object.defineProperty(navigator,'clipboard',{configurable:true,value:{writeText:async text=>{window.__copiedAPI=text;}}});});
+async function check(name,fn){try{const details=await fn();report.tests.push({name,passed:true,...(details?{details}:{})});console.log('PASS '+name);}catch(e){report.tests.push({name,passed:false,error:e.message});console.log('FAIL '+name+': '+e.message.split('\n')[0]);}}
+async function submit(text){await page.locator('#input-text').fill(text);await page.locator('#transcribe-button').click();await page.waitForFunction(()=>!document.getElementById('transcribe-button').disabled&&!document.getElementById('result-section').hidden);}
+const rows=()=>page.locator('.line-result:not(.blank-line)');
+const row=n=>rows().nth(n);
+const chip=(line,phone)=>line.locator('.sonority-chip[data-phone="'+phone.normalize('NFD')+'"]');
+const ipa=()=>page.locator('.line-phonetic').allTextContents();
+async function clickPhone(line,phone){await chip(line,phone).click();}
+async function assertCount(line,phone,occurrences,words){const c=chip(line,phone);assert.equal(await c.count(),1,phone+' has one result');assert.equal(Number(await c.getAttribute('data-occurrences')),occurrences,phone+' occurrences');assert.equal(Number(await c.getAttribute('data-words')),words,phone+' source words');}
+async function sonorities(){await page.locator('#sonorities-enabled').check();assert.equal(await page.locator('#color-enabled').isChecked(),false);}
+async function singletons(enabled){const button=page.locator('#sonority-singletons');if(await button.getAttribute('aria-pressed')!==String(enabled))await button.click();}
+async function openHelp(line){await line.locator('.verse-help').evaluate(e=>{e.open=true;});}
+async function colorMask(mask){await page.locator('#color-enabled').check();await page.locator('#color-options').evaluate(e=>{e.open=true;});for(const[id,bit]of [['color-vowels',1],['color-consonants',2],['color-nasals',4]])await page.locator('#'+id).setChecked(Boolean(mask&bit));await page.locator('#color-options').evaluate(e=>{e.open=false;});}
+const racine='Pour qui sont ces serpents qui sifflent sur vos têtes ?';
+try{
+  const started=performance.now();await page.goto(pathToFileURL(copy).href);await page.waitForFunction(()=>!document.getElementById('transcribe-button').disabled,null,{timeout:120000});report.metrics.startupMs=Math.round(performance.now()-started);
+  await check('isolated artifact has the manifest hash and starts with both modes off',async()=>{
+    assert.equal(report.sha256,JSON.parse(fs.readFileSync(path.join(root,'dist/build.json'),'utf8')).sha256);
+    assert.equal(fs.readdirSync(isolated).length,1);assert.equal(await page.locator('#color-enabled').isChecked(),false);assert.equal(await page.locator('#sonorities-enabled').isChecked(),false);
+    assert.equal(await page.locator('#color-options').isVisible(),false);
+    assert.equal(await page.locator('#sonority-singletons').getAttribute('aria-pressed'),'false');
+  });
+  await submit(racine+'\n'+racine);const reference=await ipa();
+  await check('Sonorités deactivates colors while preserving their saved category preferences',async()=>{
+    await colorMask(5);assert.ok(await page.locator('.sound').count()>0);
+    await sonorities();assert.equal(await page.locator('.sound').count(),0);
+    assert.equal(await page.locator('#color-vowels').isChecked(),true);assert.equal(await page.locator('#color-consonants').isChecked(),false);assert.equal(await page.locator('#color-nasals').isChecked(),true);
+    assert.deepEqual(await ipa(),reference);
+  });
+  await check('isolated sounds are hidden by default and the ×1 text toggles their chips and inline colors',async()=>{
+    assert.equal(await page.locator('.sonority-chip.sonority-singleton').count(),0);
+    assert.equal(await page.locator('.line-original .sonority-singleton,.line-phonetic .sonority-singleton').count(),0);
+    assert.ok((await page.locator('.sonority-chip').evaluateAll(es=>es.map(e=>Number(e.dataset.occurrences)))).every(n=>n>=2));
+    const button=page.locator('#sonority-singletons');assert.equal(await button.evaluate(e=>e.tagName),'BUTTON');
+    await button.focus();await button.press('Space');
+    assert.equal(await button.getAttribute('aria-pressed'),'true');
+    assert.ok(await page.locator('.sonority-chip.sonority-singleton').count()>0);
+    assert.ok(await page.locator('.line-phonetic .sonority-singleton').count()>0);
+    assert.deepEqual(await ipa(),reference);
+    await button.press('Enter');
+    assert.equal(await button.getAttribute('aria-pressed'),'false');
+    assert.equal(await page.locator('.sonority-chip.sonority-singleton,.line-phonetic .sonority-singleton').count(),0);
+    assert.deepEqual(await ipa(),reference);
+    await singletons(true); // Existing complete-inventory regressions exercise the opt-in view.
+  });
+  await check('each verse has distinct alliteration and assonance groups',async()=>{
+    assert.equal(await rows().count(),2);
+    for(let i=0;i<2;i++){
+      assert.equal(await row(i).locator('.sonority-group[data-kind="alliterations"]').count(),1);
+      assert.equal(await row(i).locator('.sonority-group[data-kind="assonances"]').count(),1);
+      assert.match(await row(i).locator('.sonority-group[data-kind="alliterations"]').textContent(),/Allitérations/u);
+      assert.match(await row(i).locator('.sonority-group[data-kind="assonances"]').textContent(),/Assonances/u);
+    }
+  });
+  await check('Racine has exactly five /s/ in five words in each verse',async()=>{await assertCount(row(0),'s',5,5);await assertCount(row(1),'s',5,5);});
+  await check('repetitions are highlighted in the verse and API before any selection',async()=>{
+    for(let i=0;i<2;i++){
+      assert.ok(await row(i).locator('.line-original .sonority-alliteration').count()>0);
+      assert.ok(await row(i).locator('.line-original .sonority-assonance').count()>0);
+      assert.equal(await row(i).locator('.sonority-hit').count(),0);
+      const s=await row(i).locator('.line-phonetic .sonority-overview').evaluateAll(es=>es.filter(e=>JSON.parse(e.dataset.sonorityPhones).includes('s')).map(e=>e.textContent));
+      assert.deepEqual(s,['s','s','s','s','s']);
+      assert.equal(await row(i).locator('[data-silent="true"].sonority-overview,[data-uncertain="true"].sonority-overview').count(),0);
+    }
+    assert.deepEqual(await ipa(),reference);
+  });
+  await check('the detail occupies the left column aligned with its own verse',async()=>{
+    const panel=await row(0).locator('.sonorities-panel').boundingBox(),text=await row(0).locator('.sonority-text').boundingBox();
+    assert.ok(panel.x+panel.width<text.x);assert.ok(Math.abs(panel.y-text.y)<5);
+    assert.equal(await row(0).locator('.sonorities-panel').evaluate(e=>e.tagName),'ASIDE');
+    assert.equal(await row(0).locator('.line-original').evaluate(e=>e.nextElementSibling.className),'line-phonetic');
+  });
+  await check('assonances and alliterations have distinct inline highlight treatments',async()=>{
+    const treatment=await row(0).locator('.line-phonetic').evaluate(e=>{
+      const a=getComputedStyle(e.querySelector('.sonority-alliteration')),b=getComputedStyle(e.querySelector('.sonority-assonance'));
+      return {consonant:a.backgroundColor,vowel:b.backgroundColor,consonantMark:a.boxShadow,vowelMark:b.boxShadow};
+    });
+    assert.notEqual(treatment.consonant,treatment.vowel);assert.notEqual(treatment.consonantMark,treatment.vowelMark);
+  });
+  await check('selecting /s/ marks the c of ces, exact IPA units, and only its own verse',async()=>{
+    await clickPhone(row(0),'s');assert.equal(await chip(row(0),'s').getAttribute('aria-pressed'),'true');
+    const source=await row(0).locator('.line-original .sonority-hit').allTextContents(),phonetic=await row(0).locator('.line-phonetic .sonority-hit').allTextContents();
+    assert.equal(source.length,5);assert.ok(source.includes('c'));assert.deepEqual(phonetic,['s','s','s','s','s']);
+    assert.equal(await row(1).locator('.sonority-hit').count(),0);assert.ok(await row(0).locator('.sonority-muted').count()>0);
+    assert.deepEqual(await ipa(),reference);
+  });
+  await check('second click removes the selected sound color while retaining its chip and exact counts',async()=>{
+    await clickPhone(row(0),'s');assert.equal(await chip(row(0),'s').getAttribute('aria-pressed'),'false');assert.equal(await row(0).locator('.sonority-hit').count(),0);
+    assert.ok(await row(0).locator('.sonority-overview').count()>0);assert.equal(await row(0).locator('.sonority-muted').count(),0);
+    assert.equal(await chip(row(0),'s').getAttribute('data-sonority-state'),'hidden');assert.equal(await chip(row(0),'s').isVisible(),true);
+    const paints=await row(0).locator('.sonority-overview').evaluateAll(es=>es.flatMap(e=>JSON.parse(e.dataset.sonorityPhones)));assert.equal(paints.includes('s'),false);
+    assert.equal(await row(1).locator('.line-phonetic .sonority-overview').evaluateAll(es=>es.filter(e=>JSON.parse(e.dataset.sonorityPhones).includes('s')).length),5);
+    await assertCount(row(0),'s',5,5);assert.deepEqual(await ipa(),reference);
+  });
+  await check('third click restores the sound in the overview without changing the transcription',async()=>{
+    await clickPhone(row(0),'s');
+    assert.equal(await chip(row(0),'s').getAttribute('data-sonority-state'),'visible');assert.equal(await chip(row(0),'s').getAttribute('aria-pressed'),'false');
+    assert.equal(await row(0).locator('.line-phonetic .sonority-overview').evaluateAll(es=>es.filter(e=>JSON.parse(e.dataset.sonorityPhones).includes('s')).length),5);
+    assert.equal(await row(0).locator('.sonority-hit,.sonority-muted').count(),0);assert.deepEqual(await ipa(),reference);
+  });
+  await check('one selected sound per verse and independent selection on another verse',async()=>{
+    await clickPhone(row(0),'s');await clickPhone(row(0),'k');await clickPhone(row(1),'s');
+    assert.equal(await chip(row(0),'s').getAttribute('aria-pressed'),'false');assert.equal(await chip(row(0),'k').getAttribute('aria-pressed'),'true');assert.equal(await chip(row(1),'s').getAttribute('aria-pressed'),'true');
+    assert.deepEqual(await row(0).locator('.line-phonetic .sonority-hit').allTextContents(),['k','k']);
+    assert.equal(await row(1).locator('.line-phonetic .sonority-hit').count(),5);
+  });
+  await check('activating colors deactivates Sonorités and preserves transcription/preferences',async()=>{
+    await page.locator('#color-enabled').check();assert.equal(await page.locator('#sonorities-enabled').isChecked(),false);
+    assert.ok(await page.locator('.sound').count()>0);assert.equal(await page.locator('.sonority-hit').count(),0);
+    assert.equal(await page.locator('.sonority-overview').count(),0);
+    assert.equal(await page.locator('#color-vowels').isChecked(),true);assert.equal(await page.locator('#color-consonants').isChecked(),false);assert.equal(await page.locator('#color-nasals').isChecked(),true);assert.deepEqual(await ipa(),reference);
+  });
+  await check('both modes can be off without retaining sonority marks',async()=>{await page.locator('#color-enabled').uncheck();assert.equal(await page.locator('#sonorities-enabled').isChecked(),false);assert.equal(await page.locator('.sound,.sonority-hit').count(),0);assert.deepEqual(await ipa(),reference);});
+  await check('Options appears only with colors enabled and preserves its saved preferences while hidden',async()=>{
+    assert.equal(await page.locator('#color-options').isVisible(),false);
+    await page.locator('#color-enabled').check();
+    assert.equal(await page.locator('#color-options').isVisible(),true);
+    await page.locator('#color-options').evaluate(e=>{e.open=true;});
+    await page.locator('#color-consonants').setChecked(false);
+    await page.locator('#color-enabled').uncheck();
+    assert.equal(await page.locator('#color-options').evaluate(e=>e.open),false);
+    assert.equal(await page.locator('#color-options').isVisible(),false);
+    assert.equal(await page.locator('#color-enabled').isChecked(),false);assert.equal(await page.locator('#sonorities-enabled').isChecked(),false);
+    await page.locator('#color-enabled').check();assert.equal(await page.locator('#color-consonants').isChecked(),false);
+    await page.locator('#color-options').evaluate(e=>{e.open=true;});await page.locator('#color-consonants').setChecked(true);
+  });
+  await sonorities();
+  for(const [text,expected]of [
+    ['tache tâche tache tâche',[['a',2,2],['ɑː',2,2]]],
+    ['mettre maître mettre maître',[['ɛ',2,2],['ɛː',2,2]]],
+    ['fée fait fée fait',[['e',2,2],['ɛ',2,2]]],
+    ['brin brun brin brun',[['ɛ̃',2,2],['œ̃',2,2]]],
+    ['cote côte cote côte',[['ɔ',2,2],['oː',2,2]]],
+    ['jeune jeûne jeune jeûne',[['œ',2,2],['øː',2,2]]]
+  ])await check('strict phoneme distinctions: '+text,async()=>{await submit(text);for(const[phone,count,words]of expected)await assertCount(row(0),phone,count,words);});
+  await check('nasality and duration marks never become independent sounds',async()=>{
+    await submit('an an an maître maître');await assertCount(row(0),'ɑ̃',3,3);await assertCount(row(0),'ɛː',2,2);
+    const values=await page.locator('.sonority-chip').evaluateAll(es=>es.map(e=>e.dataset.phone));assert.equal(values.includes('̃'),false);assert.equal(values.includes('ː'),false);assert.equal(values.includes('.'),false);assert.equal(values.includes('‿'),false);
+  });
+  for(const [text,phone]of [['yeux yeux','j'],['oui oui','w'],['huit huit','ɥ']])await check('semi-consonant convention: '+phone,async()=>{
+    await submit(text);await assertCount(row(0),phone,2,2);assert.equal(await row(0).locator('.sonority-group[data-kind="alliterations"] .sonority-chip[data-phone="'+phone+'"]').count(),1);
+    const c=chip(row(0),phone);assert.match((await c.textContent())+' '+(await c.getAttribute('title')||'')+' '+(await c.getAttribute('aria-label')||''),/semi.consonne/iu);
+  });
+  await check('silent letters and doubled spellings do not inflate consonant counts',async()=>{
+    await submit('sacs sacs belle belle');await assertCount(row(0),'s',2,2);await assertCount(row(0),'l',2,2);assert.equal(await chip(row(0),'z').count(),0);
+  });
+  await check('realized liaison is counted once and omitted optional liaison is absent',async()=>{
+    await submit('Les enfants, les enfants.');await assertCount(row(0),'z',2,2);
+    await submit('Des enfants arrivent, des enfants arrivent.');await assertCount(row(0),'z',2,2);
+  });
+  await check('contextual denasalization contributes the oral vowel actually retained',async()=>{
+    await submit('Un bon ami, un bon ami.');await assertCount(row(0),'ɔ',2,2);assert.equal(await chip(row(0),'ɔ̃').count(),0);
+  });
+  await check('repeated identical source words count as separate positions',async()=>{await submit('sac sac');await assertCount(row(0),'s',2,2);});
+  await check('clitic decomposition does not inflate the graphical word count',async()=>{await submit("l’élément");await assertCount(row(0),'l',2,1);await submit("l’élément l’élément");await assertCount(row(0),'l',4,2);});
+  await check('hyphenated compound remains one graphical word',async()=>{await submit('tête-à-tête');await assertCount(row(0),'t',4,1);});
+  await check('nonlexical hyphenated spelling groups the engine internal tokens into one source word',async()=>{await submit('sac-sac');await assertCount(row(0),'s',2,1);});
+  await check('numeric expansion preserves one graphical word per number',async()=>{await submit('21 21');await assertCount(row(0),'v',2,2);});
+  await check('grouped numerals are graphical words rather than space-separated digit blocks',async()=>{await submit('1 000 1 000');await assertCount(row(0),'m',2,2);});
+  await check('separate verses and blank lines cannot create cross-line repetitions',async()=>{
+    await submit('sac\n\nsac');assert.equal(await page.locator('.line-result').count(),3);assert.equal(await page.locator('.blank-line').count(),1);assert.equal(await page.locator('.sonority-chip').count(),6);
+    assert.equal(await page.locator('.sonority-group[data-kind="alliterations"]').count(),2);assert.equal(await page.locator('.sonority-group[data-kind="assonances"]').count(),2);
+    assert.equal(await page.locator('.sonority-chip:not(.sonority-singleton)').count(),0);
+  });
+  await check('each category can independently have no repetition',async()=>{
+    await submit('chat sac');assert.equal(await row(0).locator('.sonority-group[data-kind="alliterations"] .sonority-chip:not(.sonority-singleton)').count(),0);await assertCount(row(0),'a',2,2);
+    await submit('chat chou');await assertCount(row(0),'ʃ',2,2);assert.equal(await row(0).locator('.sonority-group[data-kind="assonances"] .sonority-chip:not(.sonority-singleton)').count(),0);
+  });
+  await check('shared grapheme selection marks x completely but only selected /k/ in IPA',async()=>{
+    await submit('taxi taxi');await clickPhone(row(0),'k');assert.deepEqual(await row(0).locator('.line-original .sonority-hit').allTextContents(),['x','x']);assert.deepEqual(await row(0).locator('.line-phonetic .sonority-hit').allTextContents(),['k','k']);
+  });
+  await check('opaque number alignment retains exact IPA highlighting without inventing source spans',async()=>{
+    await submit('21 21');await clickPhone(row(0),'v');assert.equal(await row(0).locator('.line-original .sonority-hit').count(),0);assert.deepEqual(await row(0).locator('.line-phonetic .sonority-hit').allTextContents(),['v','v']);assert.match(await row(0).textContent(),/correspondance|alignement/iu);
+  });
+  await check('unknown pronunciations remain marked as hypotheses in sonority results',async()=>{
+    await submit('plourimètre plourimètre');await assertCount(row(0),'p',2,2);assert.match(await row(0).textContent(),/hypoth|déduit|incertain/iu);
+  });
+  await check('canonically equivalent accents yield identical counts and preserve source exactly',async()=>{
+    const text='élève élève',decomposed=text.normalize('NFD');await submit(text+'\n'+decomposed);
+    const groups=await rows().evaluateAll(es=>es.map(row=>[...row.querySelectorAll('.sonority-chip')].map(c=>({phone:c.dataset.phone,occurrences:c.dataset.occurrences,words:c.dataset.words})).sort((a,b)=>a.phone.localeCompare(b.phone))));assert.deepEqual(groups[0],groups[1]);assert.deepEqual(await page.locator('.line-original').allTextContents(),[text,decomposed]);
+    await clickPhone(row(1),'ɛ');assert.equal(await row(1).locator('.line-phonetic .sonority-hit').count(),2);assert.equal(await row(1).locator('.line-original .sonority-hit').count(),2);
+  });
+  await check('classical reading is the only reading and visual modes preserve its caduc e',async()=>{
+    await submit('La lune brille.');const classicalIPA=await ipa();assert.ok(classicalIPA[0].includes('ly.nə'));
+    assert.equal(await page.locator('#reading-policy,#reading-control').count(),0);
+    await page.locator('#color-enabled').check();assert.deepEqual(await ipa(),classicalIPA);
+    await page.locator('#color-enabled').uncheck();assert.deepEqual(await ipa(),classicalIPA);await sonorities();assert.deepEqual(await ipa(),classicalIPA);
+  });
+  await check('explicit poetic alternatives update actual phones and their repetitions',async()=>{
+    await submit('Le lion dort, le lion dort.');
+    assert.equal(await page.locator('.poetry-choice').count(),2);await assertCount(row(0),'j',2,2);assert.equal(await chip(row(0),'i').count(),0);
+    await openHelp(row(0));await page.locator('.poetry-choice').nth(0).selectOption('li.ɔ̃');
+    await openHelp(row(0));await page.locator('.poetry-choice').nth(1).selectOption('li.ɔ̃');
+    await assertCount(row(0),'i',2,2);assert.equal(await chip(row(0),'j').count(),0);assert.ok((await ipa())[0].includes('li.ɔ̃'));
+    const chosen=await ipa();await page.locator('#copy-button').click();assert.equal(await page.evaluate(()=>window.__copiedAPI),chosen.join('\n'));await page.locator('#color-enabled').check();assert.deepEqual(await ipa(),chosen);await sonorities();assert.deepEqual(await ipa(),chosen);
+    await openHelp(row(0));await page.locator('.poetry-choice').nth(0).selectOption('ljɔ̃');
+    // Isolated phones remain visible without being presented as repetitions.
+    await assertCount(row(0),'j',1,1);await assertCount(row(0),'i',1,1);
+    assert.ok(await chip(row(0),'j').evaluate(e=>e.classList.contains('sonority-singleton')));
+    assert.ok((await ipa())[0].includes('ljɔ̃'));assert.ok((await ipa())[0].includes('li.ɔ̃'));
+  });
+  await check('all eight saved color masks still work independently of Sonorités',async()=>{
+    await submit('Un lien, un taxi, une eau bleue.');const stable=await ipa();
+    for(let mask=0;mask<8;mask++){
+      await colorMask(mask);assert.equal(await page.locator('#sonorities-enabled').isChecked(),false);assert.deepEqual(await ipa(),stable);
+      assert.equal((await page.locator('.sound').count())>0,mask!==0);await sonorities();assert.equal(await page.locator('.sound').count(),0);assert.deepEqual(await ipa(),stable);
+      assert.equal(await page.locator('#color-vowels').isChecked(),Boolean(mask&1));assert.equal(await page.locator('#color-consonants').isChecked(),Boolean(mask&2));assert.equal(await page.locator('#color-nasals').isChecked(),Boolean(mask&4));
+    }
+    return {masks:8};
+  });
+  await check('copy contains the current API only, without sonority statistics',async()=>{
+    await submit(racine);await clickPhone(row(0),'s');const stable=await ipa();await page.locator('#copy-button').click();assert.equal(await page.evaluate(()=>window.__copiedAPI),stable.join('\n'));
+  });
+  await check('sonority buttons support keyboard selection and pressed semantics',async()=>{
+    await submit(racine);const target=chip(row(0),'s');assert.equal(await target.evaluate(e=>e.tagName),'BUTTON');await target.focus();await target.press('Enter');assert.equal(await chip(row(0),'s').getAttribute('aria-pressed'),'true');assert.equal(await row(0).locator('.line-phonetic .sonority-hit').count(),5);await chip(row(0),'s').focus();await chip(row(0),'s').press('Space');assert.equal(await chip(row(0),'s').getAttribute('data-sonority-state'),'hidden');await chip(row(0),'s').press('Enter');assert.equal(await chip(row(0),'s').getAttribute('data-sonority-state'),'visible');assert.equal(await chip(row(0),'s').getAttribute('aria-pressed'),'false');
+  });
+  await check('sonority labels and source input remain text and do not execute markup',async()=>{
+    const text='<img src=x onerror=alert(1)> sac sac';await submit(text);assert.equal(await page.locator('.line-original').textContent(),text);assert.equal(await page.locator('#results img,#results script,#results svg').count(),0);
+  });
+  await check('shared consonant-vowel graph keeps both overview treatments and exact focused IPA',async()=>{
+    await submit('moi moi loin loin');
+    const graph=row(0).locator('.line-original .sonority-alliteration.sonority-assonance').filter({hasText:'oi'});
+    assert.ok(await graph.count()>0);
+    assert.match(await graph.first().evaluate(e=>getComputedStyle(e).backgroundImage),/linear-gradient/u);
+    await clickPhone(row(0),'a');assert.deepEqual(await row(0).locator('.line-phonetic .sonority-hit').allTextContents(),['a','a']);
+    assert.equal(await row(0).locator('.line-original .sonority-hit').first().getAttribute('data-sonority-focus'),'assonance');
+    assert.equal(await row(0).locator('.line-original .sonority-hit').first().evaluate(e=>getComputedStyle(e).backgroundImage),'none');
+  });
+  await check('each repeated exact phone has its own matching tint in both verses, IPA and detail',async()=>{
+    await submit(racine+'\n'+racine);
+    const values=await page.locator('.sonority-chip').evaluateAll(es=>es.map(e=>({phone:e.dataset.phone,count:Number(e.dataset.occurrences),bg:e.style.getPropertyValue('--sonority-background').trim(),ink:e.style.getPropertyValue('--sonority-ink').trim()})));
+    const distinct=new Map();for(const entry of values){const style=sonorityStyle(entry.phone,{single:entry.count===1});assert.equal(entry.bg,style.background);assert.equal(entry.ink,style.ink);distinct.set(entry.phone,entry.bg);}
+    assert.equal(new Set(distinct.values()).size,distinct.size);
+    const units=await page.locator('.sonority-overview').evaluateAll(es=>es.map(e=>({phones:JSON.parse(e.dataset.sonorityPhones),singles:JSON.parse(e.dataset.sonoritySinglePhones),bg:e.style.getPropertyValue('--sonority-background').trim()})));
+    for(const unit of units)assert.equal(unit.bg,sonorityStyle(unit.phones[0],{single:unit.singles.includes(unit.phones[0])}).background);
+    await clickPhone(row(0),'s');const bg=await row(0).locator('.line-phonetic .sonority-hit').first().evaluate(e=>e.style.getPropertyValue('--sonority-focus-background').trim());assert.equal(bg,sonorityStyle('s').background);
+  });
+  await check('question-mark details are closed, keep row height stable and close by Escape and outside click',async()=>{
+    await submit('Le lion rêve, le lion rêve.');const help=row(0).locator('.verse-help'),button=help.locator('summary');
+    assert.equal(await help.evaluate(e=>e.open),false);assert.equal(await button.textContent(),'?');assert.equal(await row(0).locator('.poetry-notes').isVisible(),false);
+    const before=await row(0).boundingBox();await button.click();assert.equal(await help.evaluate(e=>e.open),true);assert.equal(await row(0).locator('.poetry-notes').isVisible(),true);
+    const after=await row(0).boundingBox();assert.ok(Math.abs(before.height-after.height)<1);
+    assert.equal(await help.locator('.poetry-choice').count(),2);assert.match(await help.textContent(),/occurrences dans/u);
+    await button.press('Escape');assert.equal(await help.evaluate(e=>e.open),false);
+    await button.click();await page.locator('#input-text').click();assert.equal(await help.evaluate(e=>e.open),false);
+  });
+  await check('all exact sounds are listed and visible without an Other repetitions disclosure',async()=>{
+    await submit(racine);
+    const actualPhones=phones(await row(0).locator('.line-phonetic').textContent()).filter(p=>p!=='.'&&p!=='‿'),counts=new Map();
+    for(const p of actualPhones)counts.set(p,(counts.get(p)||0)+1);
+    assert.equal(await row(0).locator('.sonority-chip').count(),counts.size);
+    assert.equal(await page.locator('.sonority-more').count(),0);
+    for(const [p,count]of counts){await assertCount(row(0),p,count,Number(await chip(row(0),p).getAttribute('data-words')));assert.equal(await chip(row(0),p).isVisible(),true);}
+    assert.equal(await row(0).locator('.line-phonetic .sonority-overview').count(),actualPhones.length);
+  });
+  await check('isolated sounds have lighter matching tints, exact selection and no false repetition label',async()=>{
+    await submit('sac');assert.equal(await row(0).locator('.sonority-chip').count(),3);
+    for(const p of ['s','a','k']){
+      await assertCount(row(0),p,1,1);
+      assert.equal(await chip(row(0),p).evaluate(e=>e.classList.contains('sonority-singleton')),true);
+      assert.match(await chip(row(0),p).getAttribute('aria-label'),/1 occurrence dans 1 mot.*son isolé/u);
+      assert.ok(!(await chip(row(0),p).getAttribute('aria-label')).includes('répétition interne'));
+    }
+    assert.equal(await chip(row(0),'s').evaluate(e=>e.style.getPropertyValue('--sonority-background').trim()),sonorityStyle('s',{single:true}).background);
+    await clickPhone(row(0),'s');assert.deepEqual(await row(0).locator('.line-phonetic .sonority-hit').allTextContents(),['s']);
+    assert.equal(await row(0).locator('.line-original .sonority-hit').textContent(),'s');
+    assert.equal(await row(0).locator('.line-phonetic .sonority-hit').evaluate(e=>e.style.getPropertyValue('--sonority-focus-background').trim()),sonorityStyle('s').background);
+    await clickPhone(row(0),'s');assert.equal(await row(0).locator('.sonority-hit').count(),0);
+    assert.equal(await row(0).locator('.line-phonetic .sonority-singleton').count(),2);
+    assert.equal(await chip(row(0),'s').getAttribute('data-sonority-state'),'hidden');
+    await clickPhone(row(0),'s');assert.equal(await row(0).locator('.line-phonetic .sonority-singleton').count(),3);
+  });
+  await check('one phone keeps its hue but changes emphasis between isolated and repeated occurrences',async()=>{
+    await submit('sac\nsac sac');await assertCount(row(0),'s',1,1);await assertCount(row(1),'s',2,2);
+    for(const [index,single]of [[0,true],[1,false]])assert.equal(await chip(row(index),'s').evaluate(e=>e.style.getPropertyValue('--sonority-background').trim()),sonorityStyle('s',{single}).background);
+    assert.notEqual(sonorityStyle('s',{single:true}).background,sonorityStyle('s').background);
+  });
+  await check('top filters affect the full text while verse titles affect only that verse',async()=>{
+    await submit('moi moi loin\nmoi moi loin');const stable=await ipa();
+    const toggle=async(kind,enabled)=>{const button=page.locator('#sonority-'+kind);if((await button.getAttribute('aria-pressed'))!==String(enabled))await button.click();};
+    for(const mask of [1,2,3,0]){
+      await toggle('alliterations',Boolean(mask&1));await toggle('assonances',Boolean(mask&2));
+      for(let line=0;line<2;line++){
+        assert.equal((await row(line).locator('.line-phonetic .sonority-alliteration').count())>0,Boolean(mask&1));
+        assert.equal((await row(line).locator('.line-phonetic .sonority-assonance').count())>0,Boolean(mask&2));
+        for(const [kind,bit]of [['alliterations',1],['assonances',2]]){
+          assert.equal(await row(line).locator('.sonority-group[data-kind="'+kind+'"] .sonority-category-toggle').getAttribute('aria-pressed'),String(Boolean(mask&bit)));
+          assert.equal(await row(line).locator('.sonority-group[data-kind="'+kind+'"] .sonority-category-body').evaluate(e=>!e.hidden),Boolean(mask&bit));
+        }
+      }
+      assert.deepEqual(await ipa(),stable);
+    }
+    await row(1).locator('.sonority-category-toggle[data-category="alliterations"]').click();
+    assert.equal(await page.locator('#sonority-alliterations').getAttribute('aria-pressed'),'mixed');
+    assert.equal(await row(0).locator('.sonority-category-toggle[data-category="alliterations"]').getAttribute('aria-pressed'),'false');
+    assert.equal(await row(0).locator('.line-phonetic .sonority-alliteration').count(),0);
+    assert.ok(await row(1).locator('.line-phonetic .sonority-alliteration').count()>0);
+    await toggle('alliterations',true);
+    assert.equal(await row(0).locator('.sonority-category-toggle[data-category="alliterations"]').getAttribute('aria-pressed'),'true');
+    await toggle('assonances',true);
+    await row(0).locator('.sonority-category-toggle[data-category="assonances"]').click();
+    assert.equal(await page.locator('#sonority-assonances').getAttribute('aria-pressed'),'mixed');
+    assert.equal(await row(1).locator('.sonority-category-toggle[data-category="assonances"]').getAttribute('aria-pressed'),'true');
+    assert.equal(await row(0).locator('.line-phonetic .sonority-assonance').count(),0);
+    await toggle('assonances',true);
+    const shared=row(0).locator('.line-original .sonority-alliteration.sonority-assonance').first();
+    assert.match(await shared.evaluate(e=>getComputedStyle(e).backgroundImage),/linear-gradient/u);
+    await toggle('alliterations',false);
+    const oneCategory=row(0).locator('.line-original .sonority-assonance').first();
+    assert.equal(await oneCategory.evaluate(e=>getComputedStyle(e).backgroundImage),'none');
+    await toggle('alliterations',true);
+    await clickPhone(row(0),'a');await toggle('assonances',false);
+    assert.equal(await row(0).locator('.sonority-hit,.sonority-muted').count(),0);
+    await toggle('assonances',true);assert.deepEqual(await ipa(),stable);
+  });
+  await check('several hidden sounds stay hidden independently across views and local or global filters',async()=>{
+    await submit('sac sac\nsac sac');const stable=await ipa();
+    for(const p of ['s','k']){await clickPhone(row(0),p);await clickPhone(row(0),p);}
+    for(const p of ['s','k'])assert.equal(await chip(row(0),p).getAttribute('data-sonority-state'),'hidden');
+    assert.equal(await chip(row(1),'s').getAttribute('data-sonority-state'),'visible');
+    await clickPhone(row(0),'a');await clickPhone(row(0),'a'); // All three colors are now masked in this verse.
+    assert.equal(await row(0).locator('.sonority-overview').count(),0);
+    await page.locator('#color-enabled').check();await sonorities();
+    assert.equal(await row(0).locator('.sonority-overview').count(),0);assert.ok(await row(1).locator('.sonority-overview').count()>0);
+    for(let i=0;i<2;i++)await row(0).locator('.sonority-category-toggle[data-category="alliterations"]').click();
+    assert.equal(await chip(row(0),'s').getAttribute('data-sonority-state'),'hidden');
+    for(let i=0;i<2;i++)await page.locator('#sonority-alliterations').click();
+    assert.equal(await chip(row(0),'k').getAttribute('data-sonority-state'),'hidden');
+    await clickPhone(row(0),'s');
+    assert.equal(await chip(row(0),'s').getAttribute('data-sonority-state'),'visible');assert.equal(await chip(row(0),'k').getAttribute('data-sonority-state'),'hidden');
+    await page.locator('#copy-button').click();assert.equal(await page.evaluate(()=>window.__copiedAPI),stable.join('\n'));assert.deepEqual(await ipa(),stable);
+    await page.screenshot({path:path.join(out,'sonorities-hidden-sounds.png'),fullPage:true});
+    await submit('sac sac\nsac sac');assert.equal(await page.locator('.sonority-hidden').count(),0);assert.deepEqual(await ipa(),stable);
+  });
+  await check('hiding part of a shared grapheme removes only its contribution and clears stale paint',async()=>{
+    await submit('taxi taxi');const stable=await ipa(),graphs=row(0).locator('.line-original .sonority-unit').filter({hasText:'x'});
+    await clickPhone(row(0),'k');await clickPhone(row(0),'k');
+    for(const data of await graphs.evaluateAll(es=>es.map(e=>({phones:JSON.parse(e.dataset.sonorityPhones),image:getComputedStyle(e).backgroundImage})))){assert.deepEqual(data.phones,['s']);assert.equal(data.image,'none');}
+    await clickPhone(row(0),'s');await clickPhone(row(0),'s');
+    const plain=await graphs.evaluateAll(es=>es.map(e=>({overview:e.classList.contains('sonority-overview'),image:getComputedStyle(e).backgroundImage,bg:getComputedStyle(e).backgroundColor,metadata:e.dataset.sonorityPhones})));
+    assert.ok(plain.every(s=>!s.overview&&s.image==='none'&&s.bg==='rgba(0, 0, 0, 0)'&&s.metadata===undefined));
+    await clickPhone(row(0),'k');assert.ok((await graphs.evaluateAll(es=>es.map(e=>JSON.parse(e.dataset.sonorityPhones)))).every(ps=>ps.length===1&&ps[0]==='k'));
+    assert.deepEqual(await ipa(),stable);
+  });
+  await check('local filters preserve other verse selections and support independent keyboard activation',async()=>{
+    await submit('sac sac\nsac sac');await clickPhone(row(1),'s');const stable=await ipa();
+    const selector='.sonority-category-toggle[data-category="alliterations"]';
+    await row(0).locator(selector).focus();await row(0).locator(selector).press('Space');
+    assert.equal(await row(0).locator(selector).getAttribute('aria-pressed'),'false');assert.equal(await row(1).locator(selector).getAttribute('aria-pressed'),'true');
+    assert.equal(await chip(row(1),'s').getAttribute('aria-pressed'),'true');
+    await page.keyboard.press('Enter');assert.equal(await row(0).locator(selector).getAttribute('aria-pressed'),'true');
+    assert.equal(await chip(row(1),'s').getAttribute('aria-pressed'),'true');assert.deepEqual(await ipa(),stable);
+  });
+  await check('the ×1 switch uses per-verse counts and respects independent local and global filters',async()=>{
+    await submit('sac\nsac sac');const stable=await ipa();await singletons(false);
+    assert.equal(await row(0).locator('.sonority-chip').count(),0);
+    assert.equal(await row(1).locator('.sonority-chip').count(),3);
+    await singletons(true);await assertCount(row(0),'s',1,1);await assertCount(row(1),'s',2,2);
+    await row(0).locator('.sonority-category-toggle[data-category="alliterations"]').click();
+    await singletons(false);await singletons(true);
+    assert.equal(await row(0).locator('.line-phonetic .sonority-alliteration').count(),0);
+    assert.equal(await row(0).locator('.sonority-chip:visible').count(),1);
+    assert.equal(await row(1).locator('.line-phonetic .sonority-alliteration').count(),4);
+    assert.equal(await page.locator('#sonority-alliterations').getAttribute('aria-pressed'),'mixed');
+    await page.locator('#sonority-alliterations').click();
+    await assertCount(row(0),'s',1,1);assert.equal(await chip(row(0),'s').isVisible(),true);
+    assert.deepEqual(await ipa(),stable);
+  });
+  await check('toggling ×1 clears a singleton focus but preserves hidden sounds, repeated focuses and API copy',async()=>{
+    await submit('sac\nsac sac');await singletons(true);const stable=await ipa();
+    await clickPhone(row(0),'s');await singletons(false);
+    assert.equal(await row(0).locator('.sonority-hit,.sonority-muted').count(),0);
+    await singletons(true);assert.equal(await chip(row(0),'s').getAttribute('data-sonority-state'),'visible');
+    await clickPhone(row(0),'s');await clickPhone(row(0),'s');await clickPhone(row(1),'s');
+    await singletons(false);assert.equal(await chip(row(1),'s').getAttribute('aria-pressed'),'true');
+    await singletons(true);assert.equal(await chip(row(0),'s').getAttribute('data-sonority-state'),'hidden');
+    assert.equal(await chip(row(1),'s').getAttribute('aria-pressed'),'true');
+    await page.locator('#color-enabled').check();await sonorities();
+    assert.equal(await page.locator('#sonority-singletons').getAttribute('aria-pressed'),'true');
+    assert.equal(await chip(row(0),'s').getAttribute('data-sonority-state'),'hidden');
+    await page.locator('#copy-button').click();assert.equal(await page.evaluate(()=>window.__copiedAPI),stable.join('\n'));
+    await singletons(false);assert.deepEqual(await ipa(),stable);
+  });
+  await check('classical e caduc respects retention, elision and verse endings without a prose selector',async()=>{
+    await submit('La lune brille.\nLa lune arrive.\nLa lune');const output=await ipa();
+    assert.ok(output[0].includes('ly.nə'));assert.ok(!output[1].includes('ly.nə'));assert.ok(!output[2].includes('ly.nə'));
+    assert.equal(await page.locator('#reading-policy').count(),0);
+  });
+  await check('eight classical verses form a compact overview with details initially out of flow',async()=>{
+    await page.setViewportSize({width:1280,height:1000});
+    await singletons(false);
+    const stanza=['Comme je descendais des Fleuves impassibles,','Je ne me sentis plus guidé par les haleurs ;','Des Peaux-Rouges criards les avaient pris pour cibles,','Les ayant cloués nus aux poteaux de couleurs.','J’étais insoucieux de tous les équipages,','Porteur de blés flamands ou de cotons anglais.','Quand avec mes haleurs ont fini ces tapages,','Les Fleuves m’ont laissé descendre où je voulais.'];
+    await submit(stanza.join('\n'));
+    const geometry=await rows().evaluateAll(es=>es.map(e=>({height:e.getBoundingClientRect().height,open:Boolean(e.querySelector('.verse-help[open]'))})));
+    report.metrics.compactMeanVerseHeight=Math.round(geometry.reduce((s,r)=>s+r.height,0)/geometry.length);
+    assert.ok(geometry.every(r=>r.height<=145&&!r.open));assert.ok(report.metrics.compactMeanVerseHeight<=130);
+    await page.evaluate(()=>scrollTo(0,document.getElementById('results').getBoundingClientRect().top+scrollY-20));
+    const visible=await rows().evaluateAll(es=>es.filter(e=>{const r=e.getBoundingClientRect();return r.top>=0&&r.bottom<=innerHeight;}).length);assert.ok(visible>=6);
+    // This short default view may end before the page can scroll the toolbar
+    // to the top. Verify the pinned position separately on the 70-verse text.
+    const sticky=await page.locator('.sonority-toolbar').boundingBox();assert.ok(sticky.y>=0&&sticky.y<1000);
+    assert.equal(await page.locator('.sonority-toolbar').evaluate(e=>getComputedStyle(e).position),'sticky');
+    await page.locator('#result-section').screenshot({path:path.join(out,'sonorities-compact-desktop.png')});
+    await page.setViewportSize({width:390,height:1000});await page.locator('#result-section').screenshot({path:path.join(out,'sonorities-compact-mobile.png')});
+    assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),false);
+    await page.setViewportSize({width:1280,height:1000});
+  });
+  await submit(racine+'\nL’eau roule au bord des roseaux.');await sonorities();
+  await page.screenshot({path:path.join(out,'sonorities-overview-desktop.png'),fullPage:true});
+  await clickPhone(row(0),'s');
+  await page.screenshot({path:path.join(out,'sonorities-desktop.png'),fullPage:true});
+  for(const width of [320,390,768,1280])await check('Sonorités stays contained and usable at width '+width,async()=>{
+    await page.setViewportSize({width,height:1000});const geometry=await page.evaluate(()=>({overflow:document.documentElement.scrollWidth>innerWidth,rows:[...document.querySelectorAll('.line-result')].map(e=>({overflow:e.scrollWidth>e.clientWidth+1,buttons:[...e.querySelectorAll('.sonority-chip')].map(b=>{const r=b.getBoundingClientRect();return{x:r.x,right:r.right,width:r.width};})}))}));assert.equal(geometry.overflow,false);assert.ok(geometry.rows.every(r=>!r.overflow&&r.buttons.every(b=>b.x>=0&&b.right<=width+1&&b.width>0)));
+  });
+  await check('mobile detail follows the full-width verse while medium screens keep the left column',async()=>{
+    for(const width of [320,390,768,1280]){
+      await page.setViewportSize({width,height:1000});
+      const panel=await row(0).locator('.sonorities-panel').boundingBox(),text=await row(0).locator('.sonority-text').boundingBox();
+      if(width<=650){assert.ok(panel.y>=text.y+text.height);assert.ok(Math.abs(panel.x-text.x)<2);}
+      else assert.ok(panel.x+panel.width<text.x);
+    }
+  });
+  await page.setViewportSize({width:390,height:1000});await page.screenshot({path:path.join(out,'sonorities-mobile.png'),fullPage:true});await page.setViewportSize({width:1280,height:1000});
+  await check('long text analysis and repeated mode changes remain stable',async()=>{
+    const long=Array(70).fill(racine).join('\n'),started=performance.now();await submit(long);report.metrics.seventyVersesMs=Math.round(performance.now()-started);assert.equal(await rows().count(),70);const stable=await ipa();
+    await page.evaluate(()=>scrollTo(0,document.getElementById('results').getBoundingClientRect().top+scrollY+100));
+    const pinned=await page.locator('.sonority-toolbar').boundingBox();assert.ok(pinned.y>=0&&pinned.y<=2);
+    const changes=[];for(let i=0;i<6;i++){const start=performance.now();if(i%2)await sonorities();else await page.locator('#color-enabled').check();changes.push(Math.round(performance.now()-start));assert.deepEqual(await ipa(),stable);}
+    report.metrics.modeChangesMs=changes;assert.ok(report.metrics.seventyVersesMs<10000);assert.ok(changes.every(ms=>ms<5000));
+  });
+  await check('classical reading preserves imperative le and written punctuation in the artifact',async()=>{
+    await sonorities();
+    const text='Dis-le.\nDis-le encore.\nLes femmes, arrivent.';await submit(text);
+    const output=await ipa();assert.ok(output[0].includes('lə'));assert.ok(output[1].includes('lə'));
+    assert.ok(output[2].includes(', '));assert.deepEqual(await page.locator('.line-original').allTextContents(),text.split('\n'));
+  });
+  await check('poetic choice exposes the phoneme incidence and keeps separate source occurrences',async()=>{
+    await submit('Le lion rêve, le lion rêve.');
+    for(let index=0;index<2;index++){
+      await openHelp(row(0));
+      await page.locator('.poetry-choice').nth(index).selectOption('li.ɔ̃');
+    }
+    await openHelp(row(0));
+    const incidence=await page.locator('.poetry-incidence').allTextContents();
+    assert.equal(incidence.length,2);assert.ok(incidence.every(t=>t.includes('/i/ +1')&&t.includes('/j/ -1')));
+    await assertCount(row(0),'i',2,2);await clickPhone(row(0),'i');
+    await page.screenshot({path:path.join(out,'sonorities-poetry-desktop.png'),fullPage:true});
+  });
+  await check('expanded poetic choices remain contained on mobile',async()=>{
+    await page.setViewportSize({width:390,height:1000});
+    await openHelp(row(0));
+    const geometry=await page.evaluate(()=>({overflow:document.documentElement.scrollWidth>innerWidth,selects:[...document.querySelectorAll('.poetry-choice')].map(s=>{const r=s.getBoundingClientRect();return {x:r.x,right:r.right,width:r.width};})}));
+    assert.equal(geometry.overflow,false);assert.equal(geometry.selects.length,2);assert.ok(geometry.selects.every(s=>s.x>=0&&s.right<=391&&s.width>0));
+    await page.screenshot({path:path.join(out,'sonorities-poetry-mobile.png'),fullPage:true});
+  });
+  await check('no HTTP requests or browser errors during isolated offline use',async()=>{assert.deepEqual(report.requests,[]);assert.deepEqual(report.errors,[]);});
+}catch(error){report.tests.push({name:'browser setup or fixture sequencing',passed:false,error:error.stack||error.message});}
+finally{await browser.close();report.passed=report.tests.filter(t=>t.passed).length;report.failed=report.tests.length-report.passed;fs.writeFileSync(path.join(out,'sonorities-browser.json'),JSON.stringify(report,null,2)+'\n');}
+console.log(JSON.stringify({passed:report.passed,failed:report.failed,metrics:report.metrics},null,2));if(report.failed)process.exitCode=1;

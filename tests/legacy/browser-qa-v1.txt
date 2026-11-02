@@ -1,0 +1,351 @@
+/** Offline integration QA of the final, isolated HTML artifact. */
+import fs from 'node:fs';
+import path from 'node:path';
+import assert from 'node:assert/strict';
+import { createRequire } from 'node:module';
+import { fileURLToPath, pathToFileURL } from 'node:url';
+import { createHash } from 'node:crypto';
+import vm from 'node:vm';
+import {styleForPhone} from '../src/color-model.js';
+
+const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+const artifact = path.resolve(process.argv[2] || path.join(root, 'dist/index.html'));
+const out = path.join(root, 'validation');
+const isolated = path.join(out, 'isolated-ui');
+fs.mkdirSync(isolated, { recursive: true });
+const copy = path.join(isolated, 'transcription.html');
+fs.copyFileSync(artifact, copy);
+let require = createRequire(import.meta.url);
+let chromium;
+try { ({ chromium } = require('playwright')); }
+catch { require = createRequire(path.join(path.dirname(process.execPath), '..', 'package.json')); ({ chromium } = require('playwright')); }
+
+const report = {
+  artifact, sha256: createHash('sha256').update(fs.readFileSync(artifact)).digest('hex'),
+  isolated: copy, contextOffline: true, requests: [], errors: [], tests: [], metrics: {}
+};
+const executablePath = process.env.TRANSCRIPTION_BROWSER || [
+  'C:/Program Files/Google/Chrome/Application/chrome.exe',
+  'C:/Program Files (x86)/Microsoft/Edge/Application/msedge.exe'
+].find(candidate => fs.existsSync(candidate));
+const browser = await chromium.launch({ headless: true, ...(executablePath ? { executablePath } : {}),
+  args: ['--disable-background-networking', '--disable-component-update', '--no-first-run'] });
+report.browser = browser.version();
+const context = await browser.newContext({ offline: true, viewport: { width: 1280, height: 1000 } });
+context.on('request', request => { if (/^https?:/i.test(request.url())) report.requests.push(request.url()); });
+const page = await context.newPage();
+page.on('pageerror', error => report.errors.push(error.message));
+page.on('dialog', dialog => { report.errors.push('Unexpected dialog: ' + dialog.message()); dialog.dismiss(); });
+
+async function check(name, fn) {
+  try { const details = await fn(); report.tests.push({ name, passed: true, ...(details ? { details } : {}) }); console.log('PASS ' + name); }
+  catch (error) { report.tests.push({ name, passed: false, error: error.message }); console.log('FAIL ' + name + ': ' + error.message.split('\n')[0]); }
+}
+
+async function submit(text, shortcut = false) {
+  await page.locator('#input-text').fill(text);
+  if (shortcut) await page.locator('#input-text').press('Control+Enter');
+  else await page.locator('#transcribe-button').click();
+  await page.waitForFunction(() => !document.getElementById('transcribe-button').disabled && !document.getElementById('result-section').hidden);
+}
+
+async function actionGeometry() {
+  return page.evaluate(() => {
+    const box = selector => {
+      const { x, y, width, height, right, bottom } = document.querySelector(selector).getBoundingClientRect();
+      return { x, y, width, height, right, bottom };
+    };
+    return { button: box('#transcribe-button'), hint: box('.keyboard-hint'), colors: box('.color-control'), field: box('#input-text') };
+  });
+}
+
+function assertActionGeometry({ button, hint, colors, field }) {
+  assert.ok(hint.x >= button.right, 'Le raccourci est à droite du bouton.');
+  assert.ok(Math.abs((hint.y + hint.height / 2) - (button.y + button.height / 2)) < 2, 'Bouton et raccourci sur la même ligne.');
+  assert.ok(Math.abs(button.x - field.x) < 2, 'Le bouton de transcription est aligné à gauche.');
+  assert.ok(colors.y > button.bottom, 'Les couleurs sont sur la ligne suivante.');
+  assert.ok(Math.abs(colors.x - field.x) < 2, 'Les couleurs sont alignées à gauche.');
+}
+
+function luminance(color) {
+  const channels = color.startsWith('#')
+    ? color.slice(1).match(/../g).map(v => parseInt(v, 16))
+    : color.match(/[\d.]+/g).slice(0, 3).map(Number);
+  return channels.map(c => c / 255).map(c => c <= .04045 ? c / 12.92 : ((c + .055) / 1.055) ** 2.4)
+    .reduce((sum, c, i) => sum + c * [.2126, .7152, .0722][i], 0);
+}
+function contrast(a, b) {
+  const first = luminance(a), second = luminance(b);
+  return (Math.max(first, second) + .05) / (Math.min(first, second) + .05);
+}
+
+try {
+  const start = performance.now();
+  await page.goto(pathToFileURL(copy).href);
+  await page.waitForFunction(() => !document.getElementById('transcribe-button').disabled, null, { timeout: 120000 });
+  report.metrics.startupMs = Math.round(performance.now() - start);
+  await check('local standalone launch while browser offline', async () => {
+    assert.equal(await page.title(), 'Transcription phonétique traditionnelle');
+    assert.equal(fs.readdirSync(isolated).length, 1);
+    assert.equal(await page.locator('link[src],script[src],iframe').count(), 0);
+  });
+  await check('coloration disabled by default', async () => { assert.equal(await page.locator('#color-enabled').isChecked(), false); });
+  await check('requested desktop controls and removal of annotated text', async () => {
+    assert.equal(await page.locator('.eyebrow,#input-hint,.input-meta').count(), 0);
+    const content = await page.locator('body').textContent();
+    assert.ok(!content.includes('LE FRANÇAIS, À L’OREILLE'));
+    assert.ok(!content.includes('Un retour à la ligne reste un retour à la ligne.'));
+    assert.ok((await page.locator('.color-control').textContent()).includes('Afficher les couleurs'));
+    assertActionGeometry(await actionGeometry());
+  });
+  await check('original line followed immediately by transcription, blank lines preserved', async () => {
+    await submit('Les enfants jouent dans le jardin.\n\nLe vent souffle.');
+    assert.equal(await page.locator('.line-result').count(), 3);
+    assert.deepEqual(await page.locator('.line-original').allTextContents(), ['Les enfants jouent dans le jardin.', 'Le vent souffle.']);
+    assert.equal(await page.locator('.line-result.blank-line').count(), 1);
+    assert.equal(await page.evaluate(() => [...document.querySelectorAll('.line-original')].every(el => el.nextElementSibling.className === 'line-phonetic')), true);
+    assert.ok((await page.locator('.line-phonetic').first().textContent()).includes('‿'));
+  });
+  await check('transcription smaller and selectable', async () => {
+    const data = await page.evaluate(() => {
+      const a = document.querySelector('.line-original'), b = document.querySelector('.line-phonetic');
+      const selection = getSelection(), range = document.createRange(); range.selectNodeContents(b); selection.removeAllRanges(); selection.addRange(range);
+      return { original: parseFloat(getComputedStyle(a).fontSize), ipa: parseFloat(getComputedStyle(b).fontSize), selected: selection.toString(), full: b.textContent };
+    });
+    assert.ok(data.ipa < data.original); assert.equal(data.selected, data.full);
+  });
+  await check('reduced text sizes and dark grey base remain readable', async () => {
+    const styles = await page.evaluate(() => {
+      const read = selector => { const s = getComputedStyle(document.querySelector(selector)); return { color: s.color, background: s.backgroundColor, size: parseFloat(s.fontSize) }; };
+      return { field: read('#input-text'), original: read('.line-original'), ipa: read('.line-phonetic'), root: read(':root') };
+    });
+    assert.equal(styles.field.size, 16); assert.equal(styles.original.size, 16); assert.equal(styles.ipa.size, 14);
+    assert.equal(styles.field.color, 'rgb(65, 73, 75)');
+    assert.equal(styles.original.color, styles.field.color);
+    const ratios = [contrast(styles.field.color, styles.field.background), contrast(styles.original.color, styles.root.background), contrast(styles.ipa.color, styles.root.background)];
+    assert.ok(ratios.every(ratio => ratio >= 4.5));
+    return { sizes: [styles.field.size, styles.original.size, styles.ipa.size], contrast: ratios.map(v => +v.toFixed(2)) };
+  });
+  await check('all phoneme palette colors retain contrast with their own backgrounds', async () => {
+    const inventory = ['a','ɑ','e','ɛ','ə','i','y','u','o','ɔ','ø','œ','ɑ̃','ɔ̃','ɛ̃','œ̃','ɑː','ɛː','p','b','t','d','k','ɡ','f','v','s','z','ʃ','ʒ','m','n','ɲ','ŋ','l','ʁ','j','w','ɥ'];
+    let minimum = Infinity;
+    for (const phone of inventory) {
+      const { color, background } = styleForPhone(phone);
+      const ratio = contrast(color, background); minimum = Math.min(minimum, ratio);
+      assert.ok(ratio >= 4.5, `/${phone}/ : contraste ${ratio}`);
+    }
+    return { phonemes: inventory.length, minimumContrast: +minimum.toFixed(2), unchangedPalette: true };
+  });
+  await check('phoneme colors on original and IPA', async () => {
+    await submit('eau tache été lit lu');
+    await page.locator('#color-enabled').check();
+    assert.ok(await page.locator('.line-original .sound').count() > 0);
+    assert.ok(await page.locator('.line-phonetic .sound').count() > 0);
+    const pairs = await page.locator('.line-original .sound').evaluateAll(spans => spans.map(s => ({ text: s.textContent, phone: s.dataset.phoneme, color: s.style.color })));
+    assert.ok(pairs.some(s => s.text === 'eau' && s.phone === 'o' && s.color === 'rgb(23, 75, 179)'));
+    assert.ok(pairs.some(s => s.phone === 'a' && s.color === 'rgb(0, 0, 0)'));
+    assert.ok(pairs.some(s => s.phone === 'e' && s.color === 'rgb(255, 255, 255)'));
+  });
+  await check('independent vowel, consonant, nasal categories', async () => {
+    await submit('Le vent souffle.');
+    await page.locator('#color-options').evaluate(el => { el.open = true; });
+    await page.locator('#color-vowels').uncheck();
+    await page.locator('#color-consonants').uncheck();
+    assert.ok(await page.locator('.sound-nasal').count() > 0);
+    await page.locator('#color-nasals').uncheck();
+    assert.equal(await page.locator('.sound').count(), 0);
+    await page.locator('#color-vowels').check();
+    assert.ok(await page.locator('.sound').count() > 0);
+    assert.equal(await page.locator('.sound-nasal').count(), 0);
+    await page.locator('#color-consonants').check();
+    await page.locator('#color-nasals').check();
+    await page.locator('#color-options').evaluate(el => { el.open = false; });
+  });
+  await check('all eight selections compose vowel, consonant and nasal layers faithfully', async () => {
+    await submit('Un lien, un taxi, une eau bleue. Les enfants jouent.');
+    const reference = await page.locator('.line-phonetic').textContent();
+    await page.locator('#color-enabled').check();
+    await page.locator('#color-options').evaluate(el => { el.open = true; });
+    const views = [];
+    for (let mask = 0; mask < 8; mask++) {
+      await page.locator('#color-vowels').setChecked(Boolean(mask & 1));
+      await page.locator('#color-consonants').setChecked(Boolean(mask & 2));
+      await page.locator('#color-nasals').setChecked(Boolean(mask & 4));
+      assert.equal(await page.locator('.line-phonetic').textContent(), reference);
+      assert.equal((await page.locator('.sound-nasal').count()) > 0, Boolean(mask & 4));
+      const nodes = await page.locator('.sound').evaluateAll(spans => spans.map(span => ({
+        layers: span.dataset.layers.split(' '), ink: getComputedStyle(span).color, background: getComputedStyle(span).backgroundColor
+      })));
+      for (const node of nodes) {
+        assert.ok(contrast(node.ink, node.background) >= 4.5);
+        for (const layer of node.layers) assert.ok(mask & ({ vowel: 1, consonant: 2, nasal: 4 }[layer]));
+      }
+      const shared = await page.locator('.line-original [data-phoneme="jɛ̃"]').evaluateAll(spans => spans.map(s => ({ ink: s.style.color, background: s.style.backgroundColor, layers: s.dataset.layers })));
+      views.push({ mask, shared });
+    }
+    assert.notDeepEqual(views[7].shared, views[3].shared, 'La nasalisation modifie le composé voyelle + consonne.');
+    assert.ok(views[7].shared.some(s => s.layers.includes('vowel') && s.layers.includes('consonant') && s.layers.includes('nasal')));
+    await page.locator('#color-options').evaluate(el => { el.open = false; });
+    return { masks: 8, unchangedIPA: true, contrastMinimum: 4.5 };
+  });
+  await check('silent letters remain uncolored', async () => {
+    await submit('saut');
+    const t = await page.locator('.line-original').evaluate(el => {
+      const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT); let node;
+      while ((node = walker.nextNode())) if (node.textContent === 't') return Boolean(node.parentElement.closest('.sound'));
+      return null;
+    });
+    assert.equal(t, false);
+    await submit('beaux enfants temps longs soudent');
+    assert.equal(await page.locator('.line-original [data-silent="true"].sound,.line-original [data-silent="true"].sound-shared').count(), 0);
+    assert.equal(await page.locator('.line-original [data-uncertain="true"].sound,.line-original [data-uncertain="true"].sound-shared').count(), 0);
+  });
+  await check('a shared grapheme with several phonemes is explicitly identified', async () => {
+    await submit('taxi');
+    const shared = await page.locator('.line-original [data-phoneme]').evaluateAll(spans => spans.map(s => ({ text: s.textContent, phone: s.dataset.phoneme, title: s.title, bands: s.style.backgroundImage })));
+    assert.ok(shared.some(s => s.text.includes('x') && s.phone === 'ks' && s.title === '/ks/' && s.bands.includes('linear-gradient')));
+  });
+  await check('realized liaison corresponds to a pronounced source ending', async () => {
+    await submit('les enfants');
+    assert.ok((await page.locator('.line-phonetic').textContent()).includes('z‿'));
+    const sourcePhones = await page.locator('.line-original [data-phoneme]').evaluateAll(spans => spans.map(s => ({ text: s.textContent, phone: s.dataset.phoneme })));
+    assert.ok(sourcePhones.some(s => /s/.test(s.text) && /z/.test(s.phone)));
+  });
+  await check('color settings do not change the phonetic result', async () => {
+    const before = await page.locator('.line-phonetic').textContent();
+    await page.locator('#color-enabled').uncheck();
+    assert.equal(await page.locator('.line-phonetic').textContent(), before);
+    assert.equal(await page.locator('.sound').count(), 0);
+  });
+  await check('unfamiliar words remain usable and visibly qualified', async () => {
+    await submit('lumivelle ploruchon');
+    assert.ok((await page.locator('.line-phonetic').textContent()).length > 4);
+    assert.ok(await page.locator('.word-uncertain').count() > 0);
+  });
+  await check('input rendered as text and never executed as HTML', async () => {
+    const text = '<img src=x onerror="alert(1)"><script>alert(2)</script>';
+    await submit(text);
+    assert.equal(await page.locator('.line-original').textContent(), text);
+    assert.equal(await page.locator('#results img,#results script').count(), 0);
+  });
+  await check('accents, apostrophes, punctuation and source spacing preserved', async () => {
+    const text = '  L’homme a écrit re\u0301el, « oui » ; peut-être.  ';
+    await submit(text);
+    assert.equal(await page.locator('.line-original').textContent(), text);
+  });
+  await check('keyboard shortcut transcribes', async () => {
+    await submit('Bonjour.', true);
+    assert.equal(await page.locator('.line-original').textContent(), 'Bonjour.');
+  });
+  await check('long paragraph remains fluid and contained', async () => {
+    const text = 'Les enfants jouent dans le jardin et regardent les oiseaux. '.repeat(100);
+    const start = performance.now(); await submit(text);
+    report.metrics.paragraphMs = Math.round(performance.now() - start);
+    assert.equal(await page.locator('.line-original').textContent(), text);
+    assert.ok(report.metrics.paragraphMs < 10000);
+    assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
+  });
+  await submit('Les enfants jouent dans le jardin.\nLe vent souffle.\nUne lumière, un parfum.');
+  await page.screenshot({ path: path.join(out, 'interface-desktop.png'), fullPage: true });
+  await check('mobile layout without horizontal overflow', async () => {
+    await page.setViewportSize({ width: 390, height: 844 });
+    assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
+    assertActionGeometry(await actionGeometry());
+    assert.equal(await page.locator('.keyboard-hint').isVisible(), true);
+    const sizes = await page.evaluate(() => ['#input-text','.line-original','.line-phonetic'].map(selector => parseFloat(getComputedStyle(document.querySelector(selector)).fontSize)));
+    assert.deepEqual(sizes, [16, 16, 14]);
+    await page.screenshot({ path: path.join(out, 'interface-mobile.png'), fullPage: true });
+  });
+  await check('colored shared-graph view remains readable and contained', async () => {
+    await page.setViewportSize({ width: 1280, height: 1000 });
+    await submit('Une eau bleue, un taxi, la pluie et le soleil.\nLes enfants jouent dans le jardin.');
+    await page.locator('#color-enabled').check();
+    assert.ok(await page.locator('.sound-shared').count() > 0);
+    assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
+    await page.screenshot({ path: path.join(out, 'interface-coloree.png'), fullPage: true });
+    await page.setViewportSize({ width: 390, height: 844 });
+    assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
+    await page.screenshot({ path: path.join(out, 'interface-mobile-coloree.png'), fullPage: true });
+    await page.setViewportSize({ width: 1280, height: 1000 });
+  });
+  await check('offline stress: 120 Unicode lines preserve layout and stay fluid', async () => {
+    const lines = Array.from({ length: 120 }, (_, i) => i % 11 === 0 ? '' : `Ligne ${i} : l’e\u0301le\u0300ve et les enfants regardent le jardin.`);
+    const start = performance.now(); await submit(lines.join('\n'));
+    report.metrics.multiline120Ms = Math.round(performance.now() - start);
+    assert.equal(await page.locator('.line-result').count(), lines.length);
+    assert.deepEqual(await page.locator('.line-original').allTextContents(), lines.filter(Boolean));
+    assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
+    assert.ok(report.metrics.multiline120Ms < 10000);
+  });
+  await check('offline stress: hostile Unicode and long tokens remain plain text', async () => {
+    const text = '<svg/onload=alert(1)> <script>alert(2)</script> & « e\u0301cole » 👩🏽‍🔬 \u202eRTL\u202c\n' + 'plour'.repeat(160);
+    await submit(text);
+    assert.equal(await page.locator('.line-original').first().textContent(), text.split('\n')[0]);
+    assert.equal(await page.locator('.line-original').nth(1).textContent(), 'plour'.repeat(160));
+    assert.equal(await page.locator('#results svg,#results script,#results img').count(), 0);
+    assert.ok((await page.locator('.line-phonetic').nth(1).textContent()).length > 10);
+    assert.equal(await page.locator('.line-original [data-uncertain="true"].sound,.line-original [data-uncertain="true"].sound-shared').count(), 0);
+  });
+  await check('offline stress: repeated color selections preserve IPA and mute letters', async () => {
+    await submit('Les beaux enfants jouent ; un taxi, un lien, une ambiguïté et une croûte.');
+    const reference = await page.locator('.line-phonetic').textContent();
+    for (let i = 0; i < 12; i++) {
+      await page.locator('#color-enabled').check();
+      await page.locator('#color-options').evaluate(el => { el.open = true; });
+      await page.locator('#color-vowels').setChecked(i % 3 === 0);
+      await page.locator('#color-consonants').setChecked(i % 3 === 1);
+      await page.locator('#color-nasals').setChecked(i % 3 === 2);
+      if(i%2)await page.locator('#color-enabled').uncheck();
+      assert.equal(await page.locator('.line-phonetic').textContent(), reference);
+      assert.equal(await page.locator('.line-original [data-silent="true"].sound,.line-original [data-silent="true"].sound-shared').count(), 0);
+      assert.equal(await page.locator('.line-original [data-uncertain="true"].sound,.line-original [data-uncertain="true"].sound-shared').count(), 0);
+    }
+    const selected = await page.locator('.line-phonetic').evaluate(el => {
+      const range = document.createRange(); range.selectNodeContents(el);
+      const selection = getSelection(); selection.removeAllRanges(); selection.addRange(range); return selection.toString();
+    });
+    assert.equal(selected, reference);
+    await page.locator('#color-options').evaluate(el => { el.open = false; });
+  });
+  await check('code-review corrections are present in the isolated delivered HTML', async () => {
+    const cases=[
+      ['Le mot à traduire.','/lə mo a tʁa.dɥiʁ./'],
+      ['La nuit et la pluie.','/la nɥi e la plɥi./'],
+      ['Les petits os.','/le pə.ti.z‿o./'],
+      ['1\u202f000 euros','/mil ø.ʁo/'],
+      // The exclusive classical reading retains the two internal caduc e's.
+      ['Je donne à cette classe 21 tulipes.','/ʒə dɔn a sɛ.tə kla.sə vɛ̃.t‿e yn ty.lip./'],
+      ['sous-évaluer','/su.ze.va.lɥe/']
+    ];
+    await submit(cases.map(c=>c[0]).join('\n'));
+    assert.deepEqual(await page.locator('.line-original').allTextContents(),cases.map(c=>c[0]));
+    assert.deepEqual(await page.locator('.line-phonetic').allTextContents(),cases.map(c=>c[1]));
+  });
+  const accentSample='L’élève voit l’école, une pâte et un maître.';
+  await submit(accentSample+'\n'+accentSample.normalize('NFD'));
+  await page.locator('#color-enabled').check();
+  await page.locator('#color-options').evaluate(el=>{el.open=true;});
+  for(let mask=0;mask<8;mask++)await check('canonical-equivalent accents keep identical colors: mask '+mask,async()=>{
+    await page.locator('#color-vowels').setChecked(Boolean(mask&1));
+    await page.locator('#color-consonants').setChecked(Boolean(mask&2));
+    await page.locator('#color-nasals').setChecked(Boolean(mask&4));
+    const state=await page.evaluate(()=>{
+      const lines=[...document.querySelectorAll('.line-result')];
+      const sig=selector=>lines.map(line=>[...line.querySelectorAll(selector+' .sound')].map(s=>({text:s.textContent.normalize('NFC'),phone:s.dataset.phoneme,layers:s.dataset.layers,ink:getComputedStyle(s).color,background:getComputedStyle(s).backgroundColor,accent:getComputedStyle(s).getPropertyValue('--nasal-accent')})));
+      return {original:sig('.line-original'),ipa:sig('.line-phonetic'),texts:lines.map(l=>l.querySelector('.line-original').textContent),transcriptions:lines.map(l=>l.querySelector('.line-phonetic').textContent),uncertain:document.querySelectorAll('.line-original [data-uncertain="true"]').length};
+    });
+    assert.deepEqual(state.texts,[accentSample,accentSample.normalize('NFD')]);
+    assert.equal(state.transcriptions[0],state.transcriptions[1]);assert.equal(state.uncertain,0);
+    assert.deepEqual(state.original[0],state.original[1]);assert.deepEqual(state.ipa[0],state.ipa[1]);
+    if(mask)assert.ok(state.original[1].length>0);
+  });
+  await page.locator('#color-options').evaluate(el=>{el.open=false;});
+  await check('no HTTP requests and no browser errors', async () => { assert.deepEqual(report.requests, []); assert.deepEqual(report.errors, []); });
+} finally {
+  await browser.close();
+  report.passed = report.tests.filter(t => t.passed).length;
+  report.failed = report.tests.filter(t => !t.passed).length;
+  fs.writeFileSync(path.join(out, 'browser-report.json'), JSON.stringify(report, null, 2));
+}
+console.log(JSON.stringify({ passed: report.passed, failed: report.failed, metrics: report.metrics }));
+if (report.failed) process.exitCode = 1;

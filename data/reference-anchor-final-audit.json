@@ -1,0 +1,707 @@
+{
+  "stage": "promoted",
+  "purpose": "Lexique reference-anchor checks and descriptive raw-lexicon regression comparison; not a universal accuracy benchmark.",
+  "lexiconStats": {
+    "inputRows": 1939788,
+    "inputTranscriptions": 2038058,
+    "rejectedWordForms": 4992,
+    "rejectedCandidates": 58946,
+    "emptyRows": 289778,
+    "mergedCaseRows": 20812,
+    "markedH": 5604,
+    "lexicalEntries": 1632485,
+    "ambiguousEntries": 87916,
+    "blockSize": 128,
+    "blockCount": 12754,
+    "rawCharacters": 32914715,
+    "gzipBytes": 7445060,
+    "sourceSha256": "7ccff799c9b3a9d3a6f2cb06f5d719c42ebb295e669b071fba1935008f603baf",
+    "selection": "Conservative filtering and heuristic ranking of unlabelled source variants; not independently validated lexical truth.",
+    "referenceAnchor": {
+      "source": "Lexique 4.1",
+      "url": "https://www.lexique.org/databases/Lexique410/Lexique4.1.zip",
+      "license": "CC BY-SA 4.0",
+      "rows": 189863,
+      "invalidRows": 437,
+      "forms": 170385,
+      "covered": 170385,
+      "rawExactMatches": 140514,
+      "traditionalQualityPreserved": 22019,
+      "rawTraditionalDistinctionsPreserved": 1430,
+      "nativeCorrections": 7852,
+      "addedForms": 4670,
+      "heterophones": 284,
+      "familyQualityForms": 994,
+      "pretonicFamilyForms": 795,
+      "pluralCitationForms": 208,
+      "tsvSha256": "f112ad487334c8ab702e6b95cf08110b2ac534d1896e1643f9c669f91a139a84"
+    },
+    "extension": {
+      "source": "GLÀFF 1.2.2",
+      "url": "https://redac.univ-tlse2.fr/lexiques/glaff.html",
+      "license": "CC BY-SA 3.0",
+      "baselineEntries": 1628876,
+      "sourceRows": 1248638,
+      "existingRows": 1242823,
+      "rejectedOpaque": 1209,
+      "addedEntries": 3609,
+      "readings": 3984,
+      "rejectedPhonotactics": 260,
+      "rejectedTraditional": 293,
+      "rejectedParadigm": 356,
+      "projectedPlurals": 1,
+      "examples": [
+        {
+          "word": "ablatie",
+          "readings": [
+            {
+              "word": "ablatie",
+              "pos": "VER",
+              "lemma": "ablatir",
+              "ipa": "a.bla.ti",
+              "tag": "Vmps-sf"
+            }
+          ]
+        },
+        {
+          "word": "accapeyerons",
+          "readings": [
+            {
+              "word": "accapeyerons",
+              "pos": "VER",
+              "lemma": "accapeyer",
+              "ipa": "a.ka.pɛ.jə.ʁɔ̃",
+              "tag": "Vmif1p-"
+            }
+          ]
+        },
+        {
+          "word": "affautrissaient",
+          "readings": [
+            {
+              "word": "affautrissaient",
+              "pos": "VER",
+              "lemma": "affautrir",
+              "ipa": "a.fo.tʁi.sɛ",
+              "tag": "Vmii3p-"
+            }
+          ]
+        },
+        {
+          "word": "allarguai",
+          "readings": [
+            {
+              "word": "allarguai",
+              "pos": "VER",
+              "lemma": "allarguer",
+              "ipa": "a.laʁ.ɡɥe",
+              "tag": "Vmis1s-"
+            }
+          ]
+        },
+        {
+          "word": "anvalassions",
+          "readings": [
+            {
+              "word": "anvalassions",
+              "pos": "VER",
+              "lemma": "anvaler",
+              "ipa": "ɑ̃.va.la.sjɔ̃",
+              "tag": "Vmsi1p-"
+            }
+          ]
+        },
+        {
+          "word": "assenerais",
+          "readings": [
+            {
+              "word": "assenerais",
+              "pos": "VER",
+              "lemma": "assener",
+              "ipa": "a.se.nə.ʁɛ",
+              "tag": "Vmcp1s-"
+            }
+          ]
+        },
+        {
+          "word": "bochetant",
+          "readings": [
+            {
+              "word": "bochetant",
+              "pos": "VER",
+              "lemma": "bocheter",
+              "ipa": "bɔʃ.tɑ̃",
+              "tag": "Vmpp---"
+            }
+          ]
+        },
+        {
+          "word": "caplinotes",
+          "readings": [
+            {
+              "word": "caplinotes",
+              "pos": "NOM",
+              "lemma": "Caplinote",
+              "ipa": "ka.pli.nɔt",
+              "tag": "Ncfp"
+            }
+          ]
+        },
+        {
+          "word": "clunchassions",
+          "readings": [
+            {
+              "word": "clunchassions",
+              "pos": "VER",
+              "lemma": "cluncher",
+              "ipa": "klœn.ʃa.sjɔ̃",
+              "tag": "Vmsi1p-"
+            }
+          ]
+        },
+        {
+          "word": "coupèteront",
+          "readings": [
+            {
+              "word": "coupèteront",
+              "pos": "VER",
+              "lemma": "coupeter",
+              "ipa": "ku.pɛ.tʁɔ̃",
+              "tag": "Vmif3p-"
+            },
+            {
+              "word": "coupèteront",
+              "pos": "VER",
+              "lemma": "coupeter",
+              "ipa": "ku.pɛ.tə.ʁɔ̃",
+              "tag": "Vmif3p-"
+            }
+          ]
+        },
+        {
+          "word": "débéquèterait",
+          "readings": [
+            {
+              "word": "débéquèterait",
+              "pos": "VER",
+              "lemma": "débéqueter",
+              "ipa": "de.bekɛ.tə.ʁɛ",
+              "tag": "Vmcp3s-"
+            }
+          ]
+        },
+        {
+          "word": "désillèrent",
+          "readings": [
+            {
+              "word": "désillèrent",
+              "pos": "VER",
+              "lemma": "désiller",
+              "ipa": "de.si.jɛʁ",
+              "tag": "Vmis3p-"
+            }
+          ]
+        },
+        {
+          "word": "embrenerait",
+          "readings": [
+            {
+              "word": "embrenerait",
+              "pos": "VER",
+              "lemma": "embrener",
+              "ipa": "ɑ̃.bʁə.nə.ʁɛ",
+              "tag": "Vmcp3s-"
+            }
+          ]
+        },
+        {
+          "word": "emparaîtrai",
+          "readings": [
+            {
+              "word": "emparaîtrai",
+              "pos": "VER",
+              "lemma": "emparaître",
+              "ipa": "ɑ̃.pa.ʁɛ.tʁe",
+              "tag": "Vmif1s-"
+            }
+          ]
+        },
+        {
+          "word": "encastillions",
+          "readings": [
+            {
+              "word": "encastillions",
+              "pos": "VER",
+              "lemma": "encastiller",
+              "ipa": "ɑ̃.kas.tij.jɔ̃",
+              "tag": "Vmii1p-"
+            }
+          ]
+        },
+        {
+          "word": "endèche",
+          "readings": [
+            {
+              "word": "endèche",
+              "pos": "VER",
+              "lemma": "endécher",
+              "ipa": "ɑ̃.dɛʃ",
+              "tag": "Vmip1s-"
+            }
+          ]
+        },
+        {
+          "word": "enoiselerai",
+          "readings": [
+            {
+              "word": "enoiselerai",
+              "pos": "VER",
+              "lemma": "enoiseler",
+              "ipa": "ɑ̃.nwa.zə.lə.ʁe",
+              "tag": "Vmif1s-"
+            }
+          ]
+        },
+        {
+          "word": "ernâpée",
+          "readings": [
+            {
+              "word": "ernâpée",
+              "pos": "NOM",
+              "lemma": "ernâpée",
+              "ipa": "ɛʁ.nɑ.pe",
+              "tag": "Ncfs"
+            }
+          ]
+        },
+        {
+          "word": "euskarisaient",
+          "readings": [
+            {
+              "word": "euskarisaient",
+              "pos": "VER",
+              "lemma": "euskariser",
+              "ipa": "øs.ka.ʁi.zɛ",
+              "tag": "Vmii3p-"
+            }
+          ]
+        },
+        {
+          "word": "fortrais",
+          "readings": [
+            {
+              "word": "fortrais",
+              "pos": "VER",
+              "lemma": "fortraire",
+              "ipa": "fɔʁ.tʁɛ",
+              "tag": "Vmip1s-"
+            }
+          ]
+        },
+        {
+          "word": "frontoyasse",
+          "readings": [
+            {
+              "word": "frontoyasse",
+              "pos": "VER",
+              "lemma": "frontoyer",
+              "ipa": "fʁɔ̃.twa.jas",
+              "tag": "Vmsi1s-"
+            }
+          ]
+        },
+        {
+          "word": "harerions",
+          "readings": [
+            {
+              "word": "harerions",
+              "pos": "VER",
+              "lemma": "harer",
+              "ipa": "a.ʁə.ʁjɔ̃",
+              "tag": "Vmcp1p-"
+            }
+          ]
+        },
+        {
+          "word": "journale",
+          "readings": [
+            {
+              "word": "journale",
+              "pos": "ADJ",
+              "lemma": "journal",
+              "ipa": "ʒuʁ.nal",
+              "tag": "Afpfs"
+            }
+          ]
+        },
+        {
+          "word": "meitnérate",
+          "readings": [
+            {
+              "word": "meitnérate",
+              "pos": "NOM",
+              "lemma": "meitnérate",
+              "ipa": "mɛt.ne.ʁat",
+              "tag": "Ncms"
+            }
+          ]
+        },
+        {
+          "word": "mésaveniez",
+          "readings": [
+            {
+              "word": "mésaveniez",
+              "pos": "VER",
+              "lemma": "mésavenir",
+              "ipa": "me.za.və.nje",
+              "tag": "Vmii2p-"
+            }
+          ]
+        },
+        {
+          "word": "odoriférassiez",
+          "readings": [
+            {
+              "word": "odoriférassiez",
+              "pos": "VER",
+              "lemma": "odoriférer",
+              "ipa": "ɔ.dɔ.ʁi.fe.ʁa.sje",
+              "tag": "Vmsi2p-"
+            }
+          ]
+        },
+        {
+          "word": "phigérophobie",
+          "readings": [
+            {
+              "word": "phigérophobie",
+              "pos": "NOM",
+              "lemma": "phigérophobie",
+              "ipa": "fi.ʒe.ʁo.fɔ.bi",
+              "tag": "Ncfs"
+            }
+          ]
+        },
+        {
+          "word": "poignasserons",
+          "readings": [
+            {
+              "word": "poignasserons",
+              "pos": "VER",
+              "lemma": "poignasser",
+              "ipa": "pwɑ.ɲa.sə.ʁɔ̃",
+              "tag": "Vmif1p-"
+            }
+          ]
+        },
+        {
+          "word": "preindront",
+          "readings": [
+            {
+              "word": "preindront",
+              "pos": "VER",
+              "lemma": "preindre",
+              "ipa": "pʁɛ̃.dʁɔ̃",
+              "tag": "Vmif3p-"
+            }
+          ]
+        },
+        {
+          "word": "ramenteveraient",
+          "readings": [
+            {
+              "word": "ramenteveraient",
+              "pos": "VER",
+              "lemma": "ramentever",
+              "ipa": "ʁa.mɑ̃.tə.və.ʁɛ",
+              "tag": "Vmcp3p-"
+            }
+          ]
+        },
+        {
+          "word": "ratatouillerais",
+          "readings": [
+            {
+              "word": "ratatouillerais",
+              "pos": "VER",
+              "lemma": "ratatouiller",
+              "ipa": "ʁa.ta.tujə.ʁɛ",
+              "tag": "Vmcp1s-"
+            }
+          ]
+        },
+        {
+          "word": "rectorierions",
+          "readings": [
+            {
+              "word": "rectorierions",
+              "pos": "VER",
+              "lemma": "rectorier",
+              "ipa": "ʁɛk.tɔ.ʁi.ʁjɔ̃",
+              "tag": "Vmcp1p-"
+            }
+          ]
+        },
+        {
+          "word": "remixeuses",
+          "readings": [
+            {
+              "word": "remixeuses",
+              "pos": "NOM",
+              "lemma": "remixeuse",
+              "ipa": "ʁə.mik.søz",
+              "tag": "Ncfp"
+            }
+          ]
+        },
+        {
+          "word": "resèquerez",
+          "readings": [
+            {
+              "word": "resèquerez",
+              "pos": "VER",
+              "lemma": "reséquer",
+              "ipa": "ʁə.sɛ.kə.ʁe",
+              "tag": "Vmif2p-"
+            }
+          ]
+        },
+        {
+          "word": "rémoulu",
+          "readings": [
+            {
+              "word": "rémoulu",
+              "pos": "VER",
+              "lemma": "rémoudre",
+              "ipa": "ʁe.mu.ly",
+              "tag": "Vmps-sm"
+            }
+          ]
+        },
+        {
+          "word": "shuélassiez",
+          "readings": [
+            {
+              "word": "shuélassiez",
+              "pos": "VER",
+              "lemma": "shuéler",
+              "ipa": "ʃɥe.la.sje",
+              "tag": "Vmsi2p-"
+            }
+          ]
+        },
+        {
+          "word": "téléphèrerez",
+          "readings": [
+            {
+              "word": "téléphèrerez",
+              "pos": "VER",
+              "lemma": "téléphérer",
+              "ipa": "te.le.fɛ.ʁə.ʁe",
+              "tag": "Vmif2p-"
+            }
+          ]
+        },
+        {
+          "word": "wahabitismes",
+          "readings": [
+            {
+              "word": "wahabitismes",
+              "pos": "NOM",
+              "lemma": "wahabitisme",
+              "ipa": "wa.a.bi.tism",
+              "tag": "Ncmp"
+            },
+            {
+              "word": "wahabitismes",
+              "pos": "NOM",
+              "lemma": "wahabitisme",
+              "ipa": "wa.ha.bi.tism",
+              "tag": "Ncmp"
+            },
+            {
+              "word": "wahabitismes",
+              "pos": "NOM",
+              "lemma": "wahabitisme",
+              "ipa": "va.a.bi.tism",
+              "tag": "Ncmp"
+            },
+            {
+              "word": "wahabitismes",
+              "pos": "NOM",
+              "lemma": "wahabitisme",
+              "ipa": "va.ha.bi.tism",
+              "tag": "Ncmp"
+            }
+          ]
+        },
+        {
+          "word": "écuissetait",
+          "readings": [
+            {
+              "word": "écuissetait",
+              "pos": "VER",
+              "lemma": "écuisseter",
+              "ipa": "e.kɥi.stɛ",
+              "tag": "Vmii3s-"
+            }
+          ]
+        },
+        {
+          "word": "émorcèlerait",
+          "readings": [
+            {
+              "word": "émorcèlerait",
+              "pos": "VER",
+              "lemma": "émorceler",
+              "ipa": "e.mɔʁ.sɛ.lʁɛ",
+              "tag": "Vmcp3s-"
+            },
+            {
+              "word": "émorcèlerait",
+              "pos": "VER",
+              "lemma": "émorceler",
+              "ipa": "e.mɔʁ.sɛ.lə.ʁɛ",
+              "tag": "Vmcp3s-"
+            }
+          ]
+        }
+      ],
+      "additionsSha256": "a80134a5d2f18103ba972c4d98bdc6c8fe0a364985c4308efcc54111b5fc2858"
+    }
+  },
+  "anchorReferenceChecks": 12,
+  "grammarChecks": 5,
+  "totalFixtureWords": 226,
+  "primaryMatches": 216,
+  "candidateMatches": 224,
+  "primaryDifferences": [
+    {
+      "word": "phrase",
+      "category": "courants",
+      "expected": [
+        "fʁɑz"
+      ],
+      "primary": "fʁaz",
+      "alternatives": [
+        "fʁɑz",
+        "fʁɑːz"
+      ],
+      "primaryMatch": false,
+      "candidateMatch": true
+    },
+    {
+      "word": "œufs",
+      "category": "graphemes-et-exceptions",
+      "expected": [
+        "ø"
+      ],
+      "primary": "œf",
+      "alternatives": [
+        "ø"
+      ],
+      "primaryMatch": false,
+      "candidateMatch": true
+    },
+    {
+      "word": "bœufs",
+      "category": "graphemes-et-exceptions",
+      "expected": [
+        "bø"
+      ],
+      "primary": "bœf",
+      "alternatives": [
+        "bø"
+      ],
+      "primaryMatch": false,
+      "candidateMatch": true
+    },
+    {
+      "word": "sens",
+      "category": "nasales-et-contrastes",
+      "expected": [
+        "sɑ̃s"
+      ],
+      "primary": "sɑ̃",
+      "alternatives": [
+        "sɑ̃s"
+      ],
+      "primaryMatch": false,
+      "candidateMatch": true
+    },
+    {
+      "word": "héroïne",
+      "category": "h-et-emprunts",
+      "expected": [
+        "eʁɔin"
+      ],
+      "primary": "e.ʁo.in",
+      "alternatives": [
+        "e.ʁɔ.in"
+      ],
+      "primaryMatch": false,
+      "candidateMatch": true
+    },
+    {
+      "word": "caisse",
+      "category": "longueurs-reference",
+      "expected": [
+        "kɛːs"
+      ],
+      "primary": "kɛs",
+      "alternatives": [],
+      "primaryMatch": false,
+      "candidateMatch": false
+    },
+    {
+      "word": "reine",
+      "category": "longueurs-reference",
+      "expected": [
+        "ʁɛːn"
+      ],
+      "primary": "ʁɛn",
+      "alternatives": [
+        "ʁɛːn"
+      ],
+      "primaryMatch": false,
+      "candidateMatch": true
+    },
+    {
+      "word": "presse",
+      "category": "longueurs-reference",
+      "expected": [
+        "pʁɛːs"
+      ],
+      "primary": "pʁɛs",
+      "alternatives": [
+        "pʁɛːs"
+      ],
+      "primaryMatch": false,
+      "candidateMatch": true
+    },
+    {
+      "word": "scène",
+      "category": "longueurs-reference",
+      "expected": [
+        "sɛːn"
+      ],
+      "primary": "sɛn",
+      "alternatives": [],
+      "primaryMatch": false,
+      "candidateMatch": false
+    },
+    {
+      "word": "gène",
+      "category": "longueurs-reference",
+      "expected": [
+        "ʒɛːn"
+      ],
+      "primary": "ʒɛn",
+      "alternatives": [
+        "ʒɛːn"
+      ],
+      "primaryMatch": false,
+      "candidateMatch": true
+    }
+  ]
+}

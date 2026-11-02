@@ -1,0 +1,179 @@
+{
+  "inputRows": 1939788,
+  "inputTranscriptions": 2038058,
+  "rejectedWordForms": 4992,
+  "rejectedCandidates": 58946,
+  "emptyRows": 289778,
+  "mergedCaseRows": 20812,
+  "markedH": 5604,
+  "lexicalEntries": 1624206,
+  "ambiguousEntries": 70840,
+  "blockSize": 128,
+  "blockCount": 12690,
+  "rawCharacters": 32186484,
+  "gzipBytes": 7126723,
+  "sourceSha256": "7ccff799c9b3a9d3a6f2cb06f5d719c42ebb295e669b071fba1935008f603baf",
+  "selection": "Conservative filtering and heuristic ranking of unlabelled source variants; not independently validated lexical truth.",
+  "rejectedExamples": [
+    {
+      "word": "aaa",
+      "raw": "a a a"
+    },
+    {
+      "word": "aaa",
+      "raw": "tʁi.plə a"
+    },
+    {
+      "word": "ab",
+      "raw": "a.se bjɛ̃"
+    },
+    {
+      "word": "acme",
+      "raw": "a.k.m.e"
+    },
+    {
+      "word": "adc",
+      "raw": "a de se"
+    },
+    {
+      "word": "adm",
+      "raw": "a de ɛm"
+    },
+    {
+      "word": "adnr",
+      "raw": "a de ɛ.n‿ɛʁ"
+    },
+    {
+      "word": "adp",
+      "raw": "a de pe"
+    },
+    {
+      "word": "adsl",
+      "raw": "a.de.ɛs‿ɛl"
+    },
+    {
+      "word": "al",
+      "raw": "a.sid li.nɔ.le.ik"
+    },
+    {
+      "word": "amf",
+      "raw": "a ɛ.m‿ɛf"
+    },
+    {
+      "word": "ap",
+      "raw": "a pe"
+    },
+    {
+      "word": "arn",
+      "raw": "a.ɛ.ʁ‿ɛn"
+    },
+    {
+      "word": "arnase",
+      "raw": "a.ɛ.ʁ‿ɛ.n‿az"
+    },
+    {
+      "word": "arnases",
+      "raw": "a.ɛ.ʁ‿ɛ.n‿az"
+    },
+    {
+      "word": "arnm",
+      "raw": "a.ɛ.ʁ‿ɛ.n‿ɛm"
+    },
+    {
+      "word": "asfi",
+      "raw": "a ɛ.s‿ɛ.f‿i"
+    },
+    {
+      "word": "avf",
+      "raw": "a ve ɛf"
+    },
+    {
+      "word": "azerty",
+      "raw": "a.zɛʁ.t̪i"
+    },
+    {
+      "word": "aaigem",
+      "raw": "aːj.ɣɛm"
+    },
+    {
+      "word": "abaucourt-hautecourt",
+      "raw": "a.bo.ku.ʁ‿ot.kuʁ"
+    },
+    {
+      "word": "abeilhan",
+      "raw": "abeˈjãᵑ"
+    },
+    {
+      "word": "abergement",
+      "raw": "l‿a.bɛʁ.ʒə.mɑ̃"
+    },
+    {
+      "word": "abergement-clémenciat",
+      "raw": "l‿a.bɛʁ.ʒə.mɑ̃.kle.mɑ̃.sja"
+    },
+    {
+      "word": "abergement-sainte-colombe",
+      "raw": "l‿a.bɛʁ.ʒɛ.mɑ̃.sɛ̃t.ko.lɔ̃b"
+    },
+    {
+      "word": "abergement-de-varey",
+      "raw": "l‿a.bɛʁ.ʒə.mɑ̃.də.va.ʁɛ"
+    },
+    {
+      "word": "abidjan",
+      "raw": "a.bi.d͡ʒɑ̃"
+    },
+    {
+      "word": "abidjan",
+      "raw": "abid͡ʒɑ̃"
+    },
+    {
+      "word": "abitibi",
+      "raw": "a.bi.t͡si.bi"
+    },
+    {
+      "word": "abitibi-témiscamien",
+      "raw": "a.bi.ti.bi.te.mis.ka.mj"
+    },
+    {
+      "word": "abitibi-témiscamingue",
+      "raw": "a.bi.t͡si.bi te.mis.ka.mɛ̃g] , [a.bi.t͡si.bi te.mis.ka.mɛŋ"
+    },
+    {
+      "word": "abramoff",
+      "raw": "a.bra.mɔf"
+    },
+    {
+      "word": "abramov",
+      "raw": "a.bra.mɔf"
+    },
+    {
+      "word": "absie",
+      "raw": "l‿ab.si"
+    },
+    {
+      "word": "acadie",
+      "raw": "a.ka.d͡zi"
+    },
+    {
+      "word": "acadie",
+      "raw": "a.ka.d͡ʒi"
+    },
+    {
+      "word": "achenheim",
+      "raw": "a.xən.(h)ajm"
+    },
+    {
+      "word": "achenheimois",
+      "raw": "a.xən.(h)aj.mwa"
+    },
+    {
+      "word": "achenheimoise",
+      "raw": "a.xən.(h)aj.mwaz"
+    },
+    {
+      "word": "achenheimoises",
+      "raw": "a.xən.(h)aj.mwaz"
+    }
+  ]
+}

@@ -1,0 +1,981 @@
+{
+  "method": "Numeric gold probes registered before implementing the number-context helper. Initial output preserved before fixes.",
+  "cases": [
+    {
+      "text": "vingt et un",
+      "expected": "vɛ̃teœ̃",
+      "output": "vɛ̃.t‿e œ̃",
+      "actual": "vɛ̃teœ̃",
+      "pass": true,
+      "tokens": [
+        {
+          "text": "vingt",
+          "lower": "vingt",
+          "ipa": "vɛ̃.t‿",
+          "liaison": {
+            "phone": "t",
+            "kind": "obligatoire",
+            "realized": true,
+            "reason": "Liaison d’une locution ou d’un composé lexicalisé.",
+            "join": false
+          }
+        },
+        {
+          "text": "et",
+          "lower": "et",
+          "ipa": "e",
+          "liaison": {
+            "phone": "t",
+            "kind": "interdite",
+            "realized": false,
+            "reason": "Ce mot n’autorise pas de liaison dans cet emploi."
+          }
+        },
+        {
+          "text": "un",
+          "lower": "un",
+          "ipa": "œ̃"
+        }
+      ]
+    },
+    {
+      "text": "vingt-deux",
+      "expected": "vɛ̃tdø",
+      "output": "vɛ̃t.dø",
+      "actual": "vɛ̃tdø",
+      "pass": true,
+      "tokens": [
+        {
+          "text": "vingt-deux",
+          "lower": "vingt-deux",
+          "ipa": "vɛ̃t.dø"
+        }
+      ]
+    },
+    {
+      "text": "vingt trois",
+      "expected": "vɛ̃ttʁwɑ",
+      "output": "vɛ̃ tʁwɑ",
+      "actual": "vɛ̃tʁwɑ",
+      "pass": false,
+      "tokens": [
+        {
+          "text": "vingt",
+          "lower": "vingt",
+          "ipa": "vɛ̃"
+        },
+        {
+          "text": "trois",
+          "lower": "trois",
+          "ipa": "tʁwɑ"
+        }
+      ]
+    },
+    {
+      "text": "vingt-quatre",
+      "expected": "vɛ̃tkatʁ",
+      "output": "vɛ̃t.katʁ",
+      "actual": "vɛ̃tkatʁ",
+      "pass": true,
+      "tokens": [
+        {
+          "text": "vingt-quatre",
+          "lower": "vingt-quatre",
+          "ipa": "vɛ̃t.katʁ"
+        }
+      ]
+    },
+    {
+      "text": "vingt cinq",
+      "expected": "vɛ̃tsɛ̃k",
+      "output": "vɛ̃ sɛ̃k",
+      "actual": "vɛ̃sɛ̃k",
+      "pass": false,
+      "tokens": [
+        {
+          "text": "vingt",
+          "lower": "vingt",
+          "ipa": "vɛ̃"
+        },
+        {
+          "text": "cinq",
+          "lower": "cinq",
+          "ipa": "sɛ̃k"
+        }
+      ]
+    },
+    {
+      "text": "vingt-six",
+      "expected": "vɛ̃tsis",
+      "output": "vɛ̃t.sis",
+      "actual": "vɛ̃tsis",
+      "pass": true,
+      "tokens": [
+        {
+          "text": "vingt-six",
+          "lower": "vingt-six",
+          "ipa": "vɛ̃t.sis"
+        }
+      ]
+    },
+    {
+      "text": "vingt sept",
+      "expected": "vɛ̃tsɛt",
+      "output": "vɛ̃ sɛt",
+      "actual": "vɛ̃sɛt",
+      "pass": false,
+      "tokens": [
+        {
+          "text": "vingt",
+          "lower": "vingt",
+          "ipa": "vɛ̃"
+        },
+        {
+          "text": "sept",
+          "lower": "sept",
+          "ipa": "sɛt"
+        }
+      ]
+    },
+    {
+      "text": "vingt-huit",
+      "expected": "vɛ̃tɥit",
+      "output": "vɛ̃.tɥit",
+      "actual": "vɛ̃tɥit",
+      "pass": true,
+      "tokens": [
+        {
+          "text": "vingt-huit",
+          "lower": "vingt-huit",
+          "ipa": "vɛ̃.tɥit"
+        }
+      ]
+    },
+    {
+      "text": "vingt neuf",
+      "expected": "vɛ̃tnœf",
+      "output": "vɛ̃ nœf",
+      "actual": "vɛ̃nœf",
+      "pass": false,
+      "tokens": [
+        {
+          "text": "vingt",
+          "lower": "vingt",
+          "ipa": "vɛ̃"
+        },
+        {
+          "text": "neuf",
+          "lower": "neuf",
+          "ipa": "nœf"
+        }
+      ]
+    },
+    {
+      "text": "quatre-vingt-un",
+      "expected": "katʁəvɛ̃œ̃",
+      "output": "ka.tʁə.vɛ̃.œ̃",
+      "actual": "katʁəvɛ̃œ̃",
+      "pass": true,
+      "tokens": [
+        {
+          "text": "quatre-vingt-un",
+          "lower": "quatre-vingt-un",
+          "ipa": "ka.tʁə.vɛ̃.œ̃"
+        }
+      ]
+    },
+    {
+      "text": "quatre vingt deux",
+      "expected": "katʁəvɛ̃dø",
+      "output": "katʁ vɛ̃ dø",
+      "actual": "katʁvɛ̃dø",
+      "pass": false,
+      "tokens": [
+        {
+          "text": "quatre",
+          "lower": "quatre",
+          "ipa": "katʁ"
+        },
+        {
+          "text": "vingt",
+          "lower": "vingt",
+          "ipa": "vɛ̃"
+        },
+        {
+          "text": "deux",
+          "lower": "deux",
+          "ipa": "dø"
+        }
+      ]
+    },
+    {
+      "text": "quatre-vingt-quatre",
+      "expected": "katʁəvɛ̃katʁ",
+      "output": "ka.tʁə.vɛ̃.katʁ",
+      "actual": "katʁəvɛ̃katʁ",
+      "pass": true,
+      "tokens": [
+        {
+          "text": "quatre-vingt-quatre",
+          "lower": "quatre-vingt-quatre",
+          "ipa": "ka.tʁə.vɛ̃.katʁ"
+        }
+      ]
+    },
+    {
+      "text": "quatre vingt huit",
+      "expected": "katʁəvɛ̃ɥit",
+      "output": "katʁ vɛ̃ ɥit",
+      "actual": "katʁvɛ̃ɥit",
+      "pass": false,
+      "tokens": [
+        {
+          "text": "quatre",
+          "lower": "quatre",
+          "ipa": "katʁ"
+        },
+        {
+          "text": "vingt",
+          "lower": "vingt",
+          "ipa": "vɛ̃",
+          "liaison": {
+            "phone": "t",
+            "kind": "interdite",
+            "realized": false,
+            "reason": "Le h aspiré interdit la liaison."
+          }
+        },
+        {
+          "text": "huit",
+          "lower": "huit",
+          "ipa": "ɥit"
+        }
+      ]
+    },
+    {
+      "text": "quatre-vingt-onze",
+      "expected": "katʁəvɛ̃ɔ̃z",
+      "output": "ka.tʁə.vɛ̃.ɔ̃z",
+      "actual": "katʁəvɛ̃ɔ̃z",
+      "pass": true,
+      "tokens": [
+        {
+          "text": "quatre-vingt-onze",
+          "lower": "quatre-vingt-onze",
+          "ipa": "ka.tʁə.vɛ̃.ɔ̃z"
+        }
+      ]
+    },
+    {
+      "text": "quatre-vingt-dix-huit",
+      "expected": "katʁəvɛ̃dizɥit",
+      "output": "ka.tʁə.vɛ̃.di.zɥit",
+      "actual": "katʁəvɛ̃dizɥit",
+      "pass": true,
+      "tokens": [
+        {
+          "text": "quatre-vingt-dix-huit",
+          "lower": "quatre-vingt-dix-huit",
+          "ipa": "ka.tʁə.vɛ̃.di.zɥit"
+        }
+      ]
+    },
+    {
+      "text": "cent un",
+      "expected": "sɑ̃œ̃",
+      "output": "sɑ̃.t‿ɛ̃",
+      "actual": "sɑ̃tɛ̃",
+      "pass": false,
+      "tokens": [
+        {
+          "text": "cent",
+          "lower": "cent",
+          "ipa": "sɑ̃.t‿",
+          "liaison": {
+            "phone": "t",
+            "kind": "obligatoire",
+            "realized": true,
+            "reason": "Déterminant devant son nom ou un adjectif antéposé."
+          }
+        },
+        {
+          "text": "un",
+          "lower": "un",
+          "ipa": "ɛ̃"
+        }
+      ]
+    },
+    {
+      "text": "cent-onze",
+      "expected": "sɑ̃ɔ̃z",
+      "output": "sɑ̃-ɔ̃z",
+      "actual": "sɑ̃ɔ̃z",
+      "pass": true,
+      "tokens": [
+        {
+          "text": "cent",
+          "lower": "cent",
+          "ipa": "sɑ̃",
+          "liaison": {
+            "phone": "t",
+            "kind": "interdite",
+            "realized": false,
+            "reason": "La ponctuation ou la frontière écrite bloque la liaison."
+          }
+        },
+        {
+          "text": "onze",
+          "lower": "onze",
+          "ipa": "ɔ̃z"
+        }
+      ]
+    },
+    {
+      "text": "cent huit",
+      "expected": "sɑ̃ɥit",
+      "output": "sɑ̃ ɥit",
+      "actual": "sɑ̃ɥit",
+      "pass": true,
+      "tokens": [
+        {
+          "text": "cent",
+          "lower": "cent",
+          "ipa": "sɑ̃",
+          "liaison": {
+            "phone": "t",
+            "kind": "interdite",
+            "realized": false,
+            "reason": "Le h aspiré interdit la liaison."
+          }
+        },
+        {
+          "text": "huit",
+          "lower": "huit",
+          "ipa": "ɥit"
+        }
+      ]
+    },
+    {
+      "text": "deux-cent-un",
+      "expected": "døsɑ̃œ̃",
+      "output": "dø-sɑ̃-œ̃",
+      "actual": "døsɑ̃œ̃",
+      "pass": true,
+      "tokens": [
+        {
+          "text": "deux",
+          "lower": "deux",
+          "ipa": "dø",
+          "liaison": {
+            "phone": "z",
+            "kind": "interdite",
+            "realized": false,
+            "reason": "La ponctuation ou la frontière écrite bloque la liaison."
+          }
+        },
+        {
+          "text": "cent",
+          "lower": "cent",
+          "ipa": "sɑ̃",
+          "liaison": {
+            "phone": "t",
+            "kind": "interdite",
+            "realized": false,
+            "reason": "La ponctuation ou la frontière écrite bloque la liaison."
+          }
+        },
+        {
+          "text": "un",
+          "lower": "un",
+          "ipa": "œ̃"
+        }
+      ]
+    },
+    {
+      "text": "quatre-vingts ans",
+      "expected": "katʁəvɛ̃zɑ̃",
+      "output": "ka.tʁə.vɛ̃ ɑ̃",
+      "actual": "katʁəvɛ̃ɑ̃",
+      "pass": false,
+      "tokens": [
+        {
+          "text": "quatre-vingts",
+          "lower": "quatre-vingts",
+          "ipa": "ka.tʁə.vɛ̃",
+          "liaison": {
+            "phone": "z",
+            "kind": "interdite",
+            "realized": false,
+            "reason": "Aucun lien grammatical sûr n’autorise cette liaison."
+          }
+        },
+        {
+          "text": "ans",
+          "lower": "ans",
+          "ipa": "ɑ̃"
+        }
+      ]
+    },
+    {
+      "text": "deux cents enfants",
+      "expected": "døsɑ̃zɑ̃fɑ̃",
+      "output": "dø sɑ̃.z‿ɑ̃.fɑ̃",
+      "actual": "døsɑ̃zɑ̃fɑ̃",
+      "pass": true,
+      "tokens": [
+        {
+          "text": "deux",
+          "lower": "deux",
+          "ipa": "dø"
+        },
+        {
+          "text": "cents",
+          "lower": "cents",
+          "ipa": "sɑ̃.z‿",
+          "liaison": {
+            "phone": "z",
+            "kind": "obligatoire",
+            "realized": true,
+            "reason": "Adjectif antéposé lié au nom."
+          }
+        },
+        {
+          "text": "enfants",
+          "lower": "enfants",
+          "ipa": "ɑ̃.fɑ̃"
+        }
+      ]
+    },
+    {
+      "text": "cent ans",
+      "expected": "sɑ̃tɑ̃",
+      "output": "sɑ̃.t‿ɑ̃",
+      "actual": "sɑ̃tɑ̃",
+      "pass": true,
+      "tokens": [
+        {
+          "text": "cent",
+          "lower": "cent",
+          "ipa": "sɑ̃.t‿",
+          "liaison": {
+            "phone": "t",
+            "kind": "obligatoire",
+            "realized": true,
+            "reason": "Déterminant devant son nom ou un adjectif antéposé."
+          }
+        },
+        {
+          "text": "ans",
+          "lower": "ans",
+          "ipa": "ɑ̃"
+        }
+      ]
+    },
+    {
+      "text": "vingt ans",
+      "expected": "vɛ̃tɑ̃",
+      "output": "vɛ̃.t‿ɑ̃",
+      "actual": "vɛ̃tɑ̃",
+      "pass": true,
+      "tokens": [
+        {
+          "text": "vingt",
+          "lower": "vingt",
+          "ipa": "vɛ̃.t‿",
+          "liaison": {
+            "phone": "t",
+            "kind": "obligatoire",
+            "realized": true,
+            "reason": "Déterminant devant son nom ou un adjectif antéposé."
+          }
+        },
+        {
+          "text": "ans",
+          "lower": "ans",
+          "ipa": "ɑ̃"
+        }
+      ]
+    },
+    {
+      "text": "vingt hiboux",
+      "expected": "vɛ̃ibu",
+      "output": "vɛ̃ i.bu",
+      "actual": "vɛ̃ibu",
+      "pass": true,
+      "tokens": [
+        {
+          "text": "vingt",
+          "lower": "vingt",
+          "ipa": "vɛ̃",
+          "liaison": {
+            "phone": "t",
+            "kind": "interdite",
+            "realized": false,
+            "reason": "Le h aspiré interdit la liaison."
+          }
+        },
+        {
+          "text": "hiboux",
+          "lower": "hiboux",
+          "ipa": "i.bu"
+        }
+      ]
+    },
+    {
+      "text": "huit garçons",
+      "expected": "ɥiɡaʁsɔ̃",
+      "output": "ɥit ɡaʁ.sɔ̃",
+      "actual": "ɥitɡaʁsɔ̃",
+      "pass": false,
+      "tokens": [
+        {
+          "text": "huit",
+          "lower": "huit",
+          "ipa": "ɥit"
+        },
+        {
+          "text": "garçons",
+          "lower": "garçons",
+          "ipa": "ɡaʁ.sɔ̃"
+        }
+      ]
+    },
+    {
+      "text": "huit hommes",
+      "expected": "ɥitɔm",
+      "output": "ɥit ɔm",
+      "actual": "ɥitɔm",
+      "pass": true,
+      "tokens": [
+        {
+          "text": "huit",
+          "lower": "huit",
+          "ipa": "ɥit",
+          "liaison": {
+            "phone": "t",
+            "kind": "interdite",
+            "realized": false,
+            "reason": "Aucun lien grammatical sûr n’autorise cette liaison."
+          }
+        },
+        {
+          "text": "hommes",
+          "lower": "hommes",
+          "ipa": "ɔm"
+        }
+      ]
+    },
+    {
+      "text": "huit heures",
+      "expected": "ɥitœʁ",
+      "output": "ɥit œʁ",
+      "actual": "ɥitœʁ",
+      "pass": true,
+      "tokens": [
+        {
+          "text": "huit",
+          "lower": "huit",
+          "ipa": "ɥit",
+          "liaison": {
+            "phone": "t",
+            "kind": "interdite",
+            "realized": false,
+            "reason": "Aucun lien grammatical sûr n’autorise cette liaison."
+          }
+        },
+        {
+          "text": "heures",
+          "lower": "heures",
+          "ipa": "œʁ"
+        }
+      ]
+    },
+    {
+      "text": "six garçons",
+      "expected": "siɡaʁsɔ̃",
+      "output": "si ɡaʁ.sɔ̃",
+      "actual": "siɡaʁsɔ̃",
+      "pass": true,
+      "tokens": [
+        {
+          "text": "six",
+          "lower": "six",
+          "ipa": "si"
+        },
+        {
+          "text": "garçons",
+          "lower": "garçons",
+          "ipa": "ɡaʁ.sɔ̃"
+        }
+      ]
+    },
+    {
+      "text": "six enfants",
+      "expected": "sizɑ̃fɑ̃",
+      "output": "si.z‿ɑ̃.fɑ̃",
+      "actual": "sizɑ̃fɑ̃",
+      "pass": true,
+      "tokens": [
+        {
+          "text": "six",
+          "lower": "six",
+          "ipa": "si.z‿",
+          "liaison": {
+            "phone": "z",
+            "kind": "obligatoire",
+            "realized": true,
+            "reason": "Déterminant devant son nom ou un adjectif antéposé."
+          }
+        },
+        {
+          "text": "enfants",
+          "lower": "enfants",
+          "ipa": "ɑ̃.fɑ̃"
+        }
+      ]
+    },
+    {
+      "text": "dix garçons",
+      "expected": "diɡaʁsɔ̃",
+      "output": "di ɡaʁ.sɔ̃",
+      "actual": "diɡaʁsɔ̃",
+      "pass": true,
+      "tokens": [
+        {
+          "text": "dix",
+          "lower": "dix",
+          "ipa": "di"
+        },
+        {
+          "text": "garçons",
+          "lower": "garçons",
+          "ipa": "ɡaʁ.sɔ̃"
+        }
+      ]
+    },
+    {
+      "text": "dix enfants",
+      "expected": "dizɑ̃fɑ̃",
+      "output": "di.z‿ɑ̃.fɑ̃",
+      "actual": "dizɑ̃fɑ̃",
+      "pass": true,
+      "tokens": [
+        {
+          "text": "dix",
+          "lower": "dix",
+          "ipa": "di.z‿",
+          "liaison": {
+            "phone": "z",
+            "kind": "obligatoire",
+            "realized": true,
+            "reason": "Déterminant devant son nom ou un adjectif antéposé."
+          }
+        },
+        {
+          "text": "enfants",
+          "lower": "enfants",
+          "ipa": "ɑ̃.fɑ̃"
+        }
+      ]
+    },
+    {
+      "text": "18 hiboux",
+      "expected": "dizɥiibu",
+      "output": "dis ɥit i.bu",
+      "actual": "disɥitibu",
+      "pass": false,
+      "tokens": [
+        {
+          "text": "18",
+          "lower": "dix huit",
+          "ipa": "dis ɥit",
+          "liaison": {
+            "phone": "t",
+            "kind": "interdite",
+            "realized": false,
+            "reason": "Le h aspiré interdit la liaison."
+          }
+        },
+        {
+          "text": "hiboux",
+          "lower": "hiboux",
+          "ipa": "i.bu"
+        }
+      ]
+    },
+    {
+      "text": "28 enfants",
+      "expected": "vɛ̃tɥitɑ̃fɑ̃",
+      "output": "vɛ̃ ɥit ɑ̃.fɑ̃",
+      "actual": "vɛ̃ɥitɑ̃fɑ̃",
+      "pass": false,
+      "tokens": [
+        {
+          "text": "28",
+          "lower": "vingt huit",
+          "ipa": "vɛ̃ ɥit",
+          "liaison": {
+            "phone": "t",
+            "kind": "interdite",
+            "realized": false,
+            "reason": "Aucun lien grammatical sûr n’autorise cette liaison."
+          }
+        },
+        {
+          "text": "enfants",
+          "lower": "enfants",
+          "ipa": "ɑ̃.fɑ̃"
+        }
+      ]
+    },
+    {
+      "text": "88 enfants",
+      "expected": "katʁəvɛ̃ɥitɑ̃fɑ̃",
+      "output": "katʁ vɛ̃ ɥit ɑ̃.fɑ̃",
+      "actual": "katʁvɛ̃ɥitɑ̃fɑ̃",
+      "pass": false,
+      "tokens": [
+        {
+          "text": "88",
+          "lower": "quatre vingt huit",
+          "ipa": "katʁ vɛ̃ ɥit",
+          "liaison": {
+            "phone": "t",
+            "kind": "interdite",
+            "realized": false,
+            "reason": "Aucun lien grammatical sûr n’autorise cette liaison."
+          }
+        },
+        {
+          "text": "enfants",
+          "lower": "enfants",
+          "ipa": "ɑ̃.fɑ̃"
+        }
+      ]
+    },
+    {
+      "text": "81 ans",
+      "expected": "katʁəvɛ̃œ̃nɑ̃",
+      "output": "katʁ vɛ̃.t‿ɛ̃ ɑ̃",
+      "actual": "katʁvɛ̃tɛ̃ɑ̃",
+      "pass": false,
+      "tokens": [
+        {
+          "text": "81",
+          "lower": "quatre vingt un",
+          "ipa": "katʁ vɛ̃.t‿ɛ̃"
+        },
+        {
+          "text": "ans",
+          "lower": "ans",
+          "ipa": "ɑ̃"
+        }
+      ]
+    },
+    {
+      "text": "101 ans",
+      "expected": "sɑ̃œ̃nɑ̃",
+      "output": "sɑ̃.t‿ɛ̃ ɑ̃",
+      "actual": "sɑ̃tɛ̃ɑ̃",
+      "pass": false,
+      "tokens": [
+        {
+          "text": "101",
+          "lower": "cent un",
+          "ipa": "sɑ̃.t‿ɛ̃"
+        },
+        {
+          "text": "ans",
+          "lower": "ans",
+          "ipa": "ɑ̃"
+        }
+      ]
+    },
+    {
+      "text": "200 enfants",
+      "expected": "døsɑ̃zɑ̃fɑ̃",
+      "output": "dø sɑ̃ ɑ̃.fɑ̃",
+      "actual": "døsɑ̃ɑ̃fɑ̃",
+      "pass": false,
+      "tokens": [
+        {
+          "text": "200",
+          "lower": "deux cents",
+          "ipa": "dø sɑ̃",
+          "liaison": {
+            "phone": "z",
+            "kind": "interdite",
+            "realized": false,
+            "reason": "Aucun lien grammatical sûr n’autorise cette liaison."
+          }
+        },
+        {
+          "text": "enfants",
+          "lower": "enfants",
+          "ipa": "ɑ̃.fɑ̃"
+        }
+      ]
+    },
+    {
+      "text": "80 ans",
+      "expected": "katʁəvɛ̃zɑ̃",
+      "output": "katʁ vɛ̃ ɑ̃",
+      "actual": "katʁvɛ̃ɑ̃",
+      "pass": false,
+      "tokens": [
+        {
+          "text": "80",
+          "lower": "quatre vingts",
+          "ipa": "katʁ vɛ̃",
+          "liaison": {
+            "phone": "z",
+            "kind": "interdite",
+            "realized": false,
+            "reason": "Aucun lien grammatical sûr n’autorise cette liaison."
+          }
+        },
+        {
+          "text": "ans",
+          "lower": "ans",
+          "ipa": "ɑ̃"
+        }
+      ]
+    },
+    {
+      "text": "quatre-vingt-un ans",
+      "expected": "katʁəvɛ̃œ̃nɑ̃",
+      "output": "ka.tʁə.vɛ̃.œ̃ ɑ̃",
+      "actual": "katʁəvɛ̃œ̃ɑ̃",
+      "pass": false,
+      "tokens": [
+        {
+          "text": "quatre-vingt-un",
+          "lower": "quatre-vingt-un",
+          "ipa": "ka.tʁə.vɛ̃.œ̃"
+        },
+        {
+          "text": "ans",
+          "lower": "ans",
+          "ipa": "ɑ̃"
+        }
+      ]
+    },
+    {
+      "text": "huit",
+      "expected": "ɥit",
+      "output": "ɥit",
+      "actual": "ɥit",
+      "pass": true,
+      "tokens": [
+        {
+          "text": "huit",
+          "lower": "huit",
+          "ipa": "ɥit"
+        }
+      ]
+    },
+    {
+      "text": "huit arrivent",
+      "expected": "ɥitaʁiv",
+      "output": "ɥit a.ʁiv",
+      "actual": "ɥitaʁiv",
+      "pass": true,
+      "tokens": [
+        {
+          "text": "huit",
+          "lower": "huit",
+          "ipa": "ɥit",
+          "liaison": {
+            "phone": "t",
+            "kind": "interdite",
+            "realized": false,
+            "reason": "Aucun lien grammatical sûr n’autorise cette liaison."
+          }
+        },
+        {
+          "text": "arrivent",
+          "lower": "arrivent",
+          "ipa": "a.ʁiv"
+        }
+      ]
+    },
+    {
+      "text": "vingt arrivent",
+      "expected": "vɛ̃aʁiv",
+      "output": "vɛ̃.t‿a.ʁiv",
+      "actual": "vɛ̃taʁiv",
+      "pass": false,
+      "tokens": [
+        {
+          "text": "vingt",
+          "lower": "vingt",
+          "ipa": "vɛ̃.t‿",
+          "liaison": {
+            "phone": "t",
+            "kind": "obligatoire",
+            "realized": true,
+            "reason": "Déterminant devant son nom ou un adjectif antéposé."
+          }
+        },
+        {
+          "text": "arrivent",
+          "lower": "arrivent",
+          "ipa": "a.ʁiv"
+        }
+      ]
+    },
+    {
+      "text": "vingt et un hommes",
+      "expected": "vɛ̃teœ̃nɔm",
+      "output": "vɛ̃.t‿e œ̃.n‿ɔm",
+      "actual": "vɛ̃teœ̃nɔm",
+      "pass": true,
+      "tokens": [
+        {
+          "text": "vingt",
+          "lower": "vingt",
+          "ipa": "vɛ̃.t‿",
+          "liaison": {
+            "phone": "t",
+            "kind": "obligatoire",
+            "realized": true,
+            "reason": "Liaison d’une locution ou d’un composé lexicalisé.",
+            "join": false
+          }
+        },
+        {
+          "text": "et",
+          "lower": "et",
+          "ipa": "e",
+          "liaison": {
+            "phone": "t",
+            "kind": "interdite",
+            "realized": false,
+            "reason": "Ce mot n’autorise pas de liaison dans cet emploi."
+          }
+        },
+        {
+          "text": "un",
+          "lower": "un",
+          "ipa": "œ̃.n‿",
+          "liaison": {
+            "phone": "n",
+            "kind": "obligatoire",
+            "realized": true,
+            "reason": "Déterminant devant son nom ou un adjectif antéposé."
+          }
+        },
+        {
+          "text": "hommes",
+          "lower": "hommes",
+          "ipa": "ɔm"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "probes": 43,
+    "passed": 25,
+    "failed": 18
+  }
+}

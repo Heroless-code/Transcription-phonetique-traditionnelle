@@ -1,0 +1,53 @@
+{
+  "method": "Additional preregistered composition regressions before correcting six/dix inside numeric compounds.",
+  "cases": [
+    {
+      "text": "dix-sept",
+      "expected": "disɛt",
+      "output": "dis sɛt",
+      "pass": false
+    },
+    {
+      "text": "dix-sept enfants",
+      "expected": "disɛtɑ̃fɑ̃",
+      "output": "dis sɛt ɑ̃.fɑ̃",
+      "pass": false
+    },
+    {
+      "text": "six cents",
+      "expected": "sisɑ̃",
+      "output": "sis sɑ̃",
+      "pass": false
+    },
+    {
+      "text": "six mille",
+      "expected": "simil",
+      "output": "sis mil",
+      "pass": false
+    },
+    {
+      "text": "dix mille",
+      "expected": "dimil",
+      "output": "dis mil",
+      "pass": false
+    },
+    {
+      "text": "600 enfants",
+      "expected": "sisɑ̃zɑ̃fɑ̃",
+      "output": "sis sɑ̃.z‿ɑ̃.fɑ̃",
+      "pass": false
+    },
+    {
+      "text": "17 garçons",
+      "expected": "disɛtɡaʁsɔ̃",
+      "output": "dis sɛt ɡaʁ.sɔ̃",
+      "pass": false
+    },
+    {
+      "text": "18000",
+      "expected": "dizɥimil",
+      "output": "di.z‿ɥi mil",
+      "pass": true
+    }
+  ]
+}

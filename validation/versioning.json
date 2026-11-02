@@ -1,0 +1,43 @@
+{
+  "purpose": "ZIP integrity, non-overwrite, numbering and respect for user deletions. Tests use isolated temporary HTML fixtures, never real user archives.",
+  "passed": 9,
+  "failed": 0,
+  "tests": [
+    {
+      "name": "a new HTML creates the first ZIP and verifies its actual extracted hash",
+      "passed": true
+    },
+    {
+      "name": "an identical build creates no duplicate and never overwrites v1",
+      "passed": true
+    },
+    {
+      "name": "a deleted current ZIP is not recreated for unchanged HTML",
+      "passed": true
+    },
+    {
+      "name": "the next modification advances to v2 despite a deleted v1",
+      "passed": true
+    },
+    {
+      "name": "old ZIP bytes remain unchanged after a further revision",
+      "passed": true
+    },
+    {
+      "name": "deleting multiple ZIPs preserves their history and reserved numbers",
+      "passed": true
+    },
+    {
+      "name": "an unregistered ZIP filename is never overwritten or reused",
+      "passed": true
+    },
+    {
+      "name": "all deleted archive records retain their original hashes and descriptions",
+      "passed": true
+    },
+    {
+      "name": "missing history blocks automatic recreation or numbering from scratch",
+      "passed": true
+    }
+  ]
+}

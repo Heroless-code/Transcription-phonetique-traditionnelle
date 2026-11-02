@@ -1,0 +1,439 @@
+{
+  "method": "Post-review correction regression with lexical family, context, suffix and negative guards. No universal accuracy estimate.",
+  "sources": [
+    "https://www.cnrtl.fr/definition/sous-%C3%A9valuer",
+    "https://fr.wiktionary.org/wiki/sous-%C3%A9valuer",
+    "https://www.cnrtl.fr/definition/chr%C3%A9tiens",
+    "https://fr.wiktionary.org/wiki/martien",
+    "https://fr.wiktionary.org/wiki/tahitien"
+  ],
+  "cases": [
+    {
+      "category": "reviewed-family",
+      "label": "sous-évaluer",
+      "passed": true
+    },
+    {
+      "category": "reviewed-family",
+      "label": "sousévaluer",
+      "passed": true
+    },
+    {
+      "category": "reviewed-family",
+      "label": "sous-évaluation",
+      "passed": true
+    },
+    {
+      "category": "reviewed-family",
+      "label": "sous-évaluations",
+      "passed": true
+    },
+    {
+      "category": "reviewed-family",
+      "label": "sous-évalue",
+      "passed": true
+    },
+    {
+      "category": "reviewed-family",
+      "label": "sous-évalues",
+      "passed": true
+    },
+    {
+      "category": "reviewed-family",
+      "label": "sous-évaluent",
+      "passed": true
+    },
+    {
+      "category": "reviewed-family",
+      "label": "sous-évaluons",
+      "passed": true
+    },
+    {
+      "category": "reviewed-family",
+      "label": "sous-évaluez",
+      "passed": true
+    },
+    {
+      "category": "reviewed-family",
+      "label": "sous-évaluais",
+      "passed": true
+    },
+    {
+      "category": "reviewed-family",
+      "label": "sous-évaluait",
+      "passed": true
+    },
+    {
+      "category": "reviewed-family",
+      "label": "sous-évaluaient",
+      "passed": true
+    },
+    {
+      "category": "reviewed-family",
+      "label": "sous-évaluions",
+      "passed": true
+    },
+    {
+      "category": "reviewed-family",
+      "label": "sous-évaluiez",
+      "passed": true
+    },
+    {
+      "category": "reviewed-family",
+      "label": "sous-évaluant",
+      "passed": true
+    },
+    {
+      "category": "reviewed-family",
+      "label": "sous-évalué",
+      "passed": true
+    },
+    {
+      "category": "reviewed-family",
+      "label": "sous-évaluée",
+      "passed": true
+    },
+    {
+      "category": "reviewed-family",
+      "label": "sous-évalués",
+      "passed": true
+    },
+    {
+      "category": "reviewed-family",
+      "label": "sous-évaluées",
+      "passed": true
+    },
+    {
+      "category": "reviewed-family",
+      "label": "sous-évaluerai",
+      "passed": true
+    },
+    {
+      "category": "reviewed-family",
+      "label": "sous-évaluerions",
+      "passed": true
+    },
+    {
+      "category": "reviewed-family",
+      "label": "sous-évalueriez",
+      "passed": true
+    },
+    {
+      "category": "reviewed-family",
+      "label": "sous-évaluèrent",
+      "passed": true
+    },
+    {
+      "category": "reviewed-family",
+      "label": "sous-évaluassions",
+      "passed": true
+    },
+    {
+      "category": "family-in-context",
+      "label": "Nous sous-évaluons le prix.",
+      "passed": true
+    },
+    {
+      "category": "family-in-context",
+      "label": "Vous sous-évaluez le prix.",
+      "passed": true
+    },
+    {
+      "category": "family-in-context",
+      "label": "Ils sous-évaluent le prix.",
+      "passed": true
+    },
+    {
+      "category": "family-in-context",
+      "label": "Je sous-évaluais le prix.",
+      "passed": true
+    },
+    {
+      "category": "family-in-context",
+      "label": "Nous sous-évaluions le prix.",
+      "passed": true
+    },
+    {
+      "category": "family-in-context",
+      "label": "Vous sous-évaluiez le prix.",
+      "passed": true
+    },
+    {
+      "category": "family-in-context",
+      "label": "Nous sous-évaluerions le prix.",
+      "passed": true
+    },
+    {
+      "category": "family-in-context",
+      "label": "Vous sous-évalueriez le prix.",
+      "passed": true
+    },
+    {
+      "category": "family-in-context",
+      "label": "Ils sous-évaluèrent le prix.",
+      "passed": true
+    },
+    {
+      "category": "family-in-context",
+      "label": "Nous sous-évaluassions le prix.",
+      "passed": true
+    },
+    {
+      "category": "family-in-context",
+      "label": "Elle est sous-évaluée.",
+      "passed": true
+    },
+    {
+      "category": "family-in-context",
+      "label": "Les sous-évaluations sont nombreuses.",
+      "passed": true
+    },
+    {
+      "category": "family-scope",
+      "label": "évaluer",
+      "passed": true
+    },
+    {
+      "category": "family-scope",
+      "label": "évaluons",
+      "passed": true
+    },
+    {
+      "category": "family-scope",
+      "label": "sous-entendre",
+      "passed": true
+    },
+    {
+      "category": "family-scope",
+      "label": "sous-marin",
+      "passed": true
+    },
+    {
+      "category": "family-scope",
+      "label": "sous-évaluotron",
+      "passed": true
+    },
+    {
+      "category": "source-record-unchanged",
+      "label": "raw record remains distinct from reviewed correction",
+      "passed": true
+    },
+    {
+      "category": "palatal-suffix",
+      "label": "martien",
+      "passed": true
+    },
+    {
+      "category": "palatal-suffix",
+      "label": "martiens",
+      "passed": true
+    },
+    {
+      "category": "palatal-suffix",
+      "label": "martienne",
+      "passed": true
+    },
+    {
+      "category": "palatal-suffix",
+      "label": "martiennes",
+      "passed": true
+    },
+    {
+      "category": "palatal-suffix",
+      "label": "tahitien",
+      "passed": true
+    },
+    {
+      "category": "palatal-suffix",
+      "label": "tahitiens",
+      "passed": true
+    },
+    {
+      "category": "palatal-suffix",
+      "label": "tahitienne",
+      "passed": true
+    },
+    {
+      "category": "palatal-suffix",
+      "label": "tahitiennes",
+      "passed": true
+    },
+    {
+      "category": "palatal-suffix",
+      "label": "haïtien",
+      "passed": true
+    },
+    {
+      "category": "palatal-suffix",
+      "label": "égyptien",
+      "passed": true
+    },
+    {
+      "category": "hard-t-guards",
+      "label": "tien",
+      "passed": true
+    },
+    {
+      "category": "hard-t-guards",
+      "label": "tiens",
+      "passed": true
+    },
+    {
+      "category": "hard-t-guards",
+      "label": "tienne",
+      "passed": true
+    },
+    {
+      "category": "hard-t-guards",
+      "label": "soutien",
+      "passed": true
+    },
+    {
+      "category": "hard-t-guards",
+      "label": "soutiens",
+      "passed": true
+    },
+    {
+      "category": "hard-t-guards",
+      "label": "soutienne",
+      "passed": true
+    },
+    {
+      "category": "hard-t-guards",
+      "label": "maintien",
+      "passed": true
+    },
+    {
+      "category": "hard-t-guards",
+      "label": "maintienne",
+      "passed": true
+    },
+    {
+      "category": "hard-t-guards",
+      "label": "entretien",
+      "passed": true
+    },
+    {
+      "category": "hard-t-guards",
+      "label": "entretienne",
+      "passed": true
+    },
+    {
+      "category": "hard-t-guards",
+      "label": "retienne",
+      "passed": true
+    },
+    {
+      "category": "hard-t-guards",
+      "label": "contienne",
+      "passed": true
+    },
+    {
+      "category": "hard-t-guards",
+      "label": "appartienne",
+      "passed": true
+    },
+    {
+      "category": "hard-t-guards",
+      "label": "chrétien",
+      "passed": true
+    },
+    {
+      "category": "hard-t-guards",
+      "label": "chrétienne",
+      "passed": true
+    },
+    {
+      "category": "hard-t-guards",
+      "label": "kantien",
+      "passed": true
+    },
+    {
+      "category": "hard-t-guards",
+      "label": "contient",
+      "passed": true
+    },
+    {
+      "category": "hard-t-guards",
+      "label": "bastien",
+      "passed": true
+    },
+    {
+      "category": "hard-t-guards",
+      "label": "sébastien",
+      "passed": true
+    },
+    {
+      "category": "hard-t-guards",
+      "label": "prefixed chrétien keeps its final /tj/, without certifying unrelated ch fallback",
+      "passed": true
+    },
+    {
+      "category": "verbal-t-guards",
+      "label": "contiennent",
+      "passed": true
+    },
+    {
+      "category": "verbal-t-guards",
+      "label": "soutiennent",
+      "passed": true
+    },
+    {
+      "category": "verbal-t-guards",
+      "label": "retiennent",
+      "passed": true
+    },
+    {
+      "category": "verbal-t-guards",
+      "label": "appartiennent",
+      "passed": true
+    },
+    {
+      "category": "unknown-hypothesis",
+      "label": "new suffix remains an explicit hypothesis",
+      "passed": true
+    },
+    {
+      "category": "cache-and-case",
+      "label": "family cache 0",
+      "passed": true
+    },
+    {
+      "category": "cache-and-case",
+      "label": "family cache 1",
+      "passed": true
+    },
+    {
+      "category": "cache-and-case",
+      "label": "family cache 2",
+      "passed": true
+    },
+    {
+      "category": "cache-and-case",
+      "label": "family cache 3",
+      "passed": true
+    },
+    {
+      "category": "cache-and-case",
+      "label": "family cache 4",
+      "passed": true
+    },
+    {
+      "category": "cache-and-case",
+      "label": "family cache 5",
+      "passed": true
+    },
+    {
+      "category": "cache-and-case",
+      "label": "family cache 6",
+      "passed": true
+    },
+    {
+      "category": "cache-and-case",
+      "label": "family cache 7",
+      "passed": true
+    }
+  ],
+  "passed": 85,
+  "failed": 0
+}

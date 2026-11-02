@@ -1,0 +1,81 @@
+{
+  "purpose": "Offline v2 integration: removed color mode, compact Sonorités and phonetic invariants. Not a universal accuracy score.",
+  "artifact": "C:\\Users\\pseud\\.codex\\.chatgpt-projects\\g-p-6ae0d77370a48191a599683ed2bf77c9\\transcription-traditionnelle\\Transcription-phonetique-traditionnelle.html",
+  "sha256": "f15264feec385e5aaea46a883d19c89a3e5fedcf40ab94376e78ae006eb596b7",
+  "browser": "156.0.8078.79",
+  "offline": true,
+  "requests": [],
+  "errors": [],
+  "tests": [
+    {
+      "name": "standalone HTML starts offline without the removed controls or color module",
+      "passed": true
+    },
+    {
+      "name": "button and shortcut stay at the left above the single Sonorités control",
+      "passed": true
+    },
+    {
+      "name": "original lines, blank stanzas and visible plain API are preserved by default",
+      "passed": true
+    },
+    {
+      "name": "base fonts and dark grey remain legible, and API is selectable",
+      "passed": true
+    },
+    {
+      "name": "Sonorités hides the API rows and disabling it restores the identical transcription",
+      "passed": true
+    },
+    {
+      "name": "unknown words keep a usable conjecture and pronunciation details",
+      "passed": true
+    },
+    {
+      "name": "text remains text, including hostile markup and exact Unicode source",
+      "passed": true
+    },
+    {
+      "name": "keyboard shortcut transcribes",
+      "passed": true
+    },
+    {
+      "name": "code-review pronunciation corrections survive the removal of visual metadata",
+      "passed": true
+    },
+    {
+      "name": "canonical Unicode spellings retain identical API without color-mode metadata",
+      "passed": true
+    },
+    {
+      "name": "long multiline text stays contained and mode changes preserve the hidden API",
+      "passed": true
+    },
+    {
+      "name": "plain and Sonorités layouts fit width 320",
+      "passed": true
+    },
+    {
+      "name": "plain and Sonorités layouts fit width 390",
+      "passed": true
+    },
+    {
+      "name": "plain and Sonorités layouts fit width 768",
+      "passed": true
+    },
+    {
+      "name": "plain and Sonorités layouts fit width 1280",
+      "passed": true
+    },
+    {
+      "name": "no HTTP requests and no browser errors",
+      "passed": true
+    }
+  ],
+  "metrics": {
+    "startupMs": 1034,
+    "multiline120Ms": 146
+  },
+  "passed": 16,
+  "failed": 0
+}

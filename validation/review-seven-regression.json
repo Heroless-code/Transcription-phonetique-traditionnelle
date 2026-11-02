@@ -1,0 +1,520 @@
+{
+  "scope": "Post-fix regression of the original code-review probes, not a new independent accuracy estimate.",
+  "initialReviewSha256": "03b69cdfdf8729fd061ed9c69853a27d8ea49cf9622f6f5c8ce957b445a9212e",
+  "deliverySha256": "f15264feec385e5aaea46a883d19c89a3e5fedcf40ab94376e78ae006eb596b7",
+  "cases": [
+    {
+      "family": "liaisons",
+      "text": "Le mot à traduire est rare.",
+      "actual": false,
+      "expected": false,
+      "passed": true,
+      "ipa": "lə mo a tʁa.dɥiʁ ɛ ʁaʁ.",
+      "decision": {
+        "phone": "t",
+        "kind": "interdite",
+        "realized": false,
+        "reason": "Aucun lien grammatical sûr n’autorise cette liaison."
+      }
+    },
+    {
+      "family": "liaisons",
+      "text": "Le petit à lunettes arrive.",
+      "actual": false,
+      "expected": false,
+      "passed": true,
+      "ipa": "lə pə.ti a ly.nɛt a.ʁiv.",
+      "decision": {
+        "phone": "t",
+        "kind": "interdite",
+        "realized": false,
+        "reason": "L’adjectif n’est pas antéposé à un nom dans cette lecture."
+      }
+    },
+    {
+      "family": "liaisons",
+      "text": "La nuit et la pluie arrivent.",
+      "actual": false,
+      "expected": false,
+      "passed": true,
+      "ipa": "la nɥi e la plɥi a.ʁiv.",
+      "decision": {
+        "phone": "t",
+        "kind": "interdite",
+        "realized": false,
+        "reason": "La coordination sépare les groupes ; pas de liaison hors locution figée."
+      }
+    },
+    {
+      "family": "liaisons",
+      "text": "Je pose mon pied à la fenêtre.",
+      "actual": false,
+      "expected": false,
+      "passed": true,
+      "ipa": "ʒə poz mɔ̃ pje a la fə.nɛːtʁ.",
+      "decision": {
+        "phone": "t",
+        "kind": "interdite",
+        "realized": false,
+        "reason": "Aucun lien grammatical sûr n’autorise cette liaison."
+      }
+    },
+    {
+      "family": "liaisons",
+      "text": "Mot à mot.",
+      "actual": true,
+      "expected": true,
+      "passed": true,
+      "ipa": "mo.t‿a mo.",
+      "decision": {
+        "phone": "t",
+        "kind": "obligatoire",
+        "realized": true,
+        "reason": "Liaison d’une locution ou d’un composé lexicalisé.",
+        "join": false
+      }
+    },
+    {
+      "family": "liaisons",
+      "text": "Petit à petit.",
+      "actual": true,
+      "expected": true,
+      "passed": true,
+      "ipa": "pə.ti.t‿a pə.ti.",
+      "decision": {
+        "phone": "t",
+        "kind": "obligatoire",
+        "realized": true,
+        "reason": "Liaison d’une locution ou d’un composé lexicalisé.",
+        "join": false
+      }
+    },
+    {
+      "family": "liaisons",
+      "text": "Les enfants arrivent.",
+      "actual": true,
+      "expected": true,
+      "passed": true,
+      "ipa": "le.z‿ɑ̃.fɑ̃ a.ʁiv.",
+      "decision": {
+        "phone": "z",
+        "kind": "obligatoire",
+        "realized": true,
+        "reason": "Déterminant devant son nom ou un adjectif antéposé."
+      }
+    },
+    {
+      "family": "liaisons",
+      "text": "Les héros arrivent.",
+      "actual": false,
+      "expected": false,
+      "passed": true,
+      "ipa": "le e.ʁo a.ʁiv.",
+      "decision": {
+        "phone": "z",
+        "kind": "interdite",
+        "realized": false,
+        "reason": "Le h aspiré interdit la liaison."
+      }
+    },
+    {
+      "family": "nombre-grammatical",
+      "text": "Les petits os sont solides.",
+      "actual": "o",
+      "expected": "o",
+      "passed": true,
+      "confidence": "lexical",
+      "reason": "Pluriel de os identifié dans son groupe nominal."
+    },
+    {
+      "family": "nombre-grammatical",
+      "text": "Deux gros os sont là.",
+      "actual": "o",
+      "expected": "o",
+      "passed": true,
+      "confidence": "lexical",
+      "reason": "Pluriel de os identifié dans son groupe nominal."
+    },
+    {
+      "family": "nombre-grammatical",
+      "text": "Les vieux os sont fragiles.",
+      "actual": "o",
+      "expected": "o",
+      "passed": true,
+      "confidence": "lexical",
+      "reason": "Pluriel de os identifié dans son groupe nominal."
+    },
+    {
+      "family": "nombre-grammatical",
+      "text": "Les os sont solides.",
+      "actual": "o",
+      "expected": "o",
+      "passed": true,
+      "confidence": "lexical",
+      "reason": "Pluriel de os identifié dans son groupe nominal."
+    },
+    {
+      "family": "nombre-grammatical",
+      "text": "Un petit os.",
+      "actual": "ɔs",
+      "expected": "ɔs",
+      "passed": true,
+      "confidence": "lexical",
+      "reason": "Os au singulier identifié dans son groupe nominal."
+    },
+    {
+      "family": "groupes-de-chiffres",
+      "text": "1 000 euros",
+      "actual": "miløʁo",
+      "expected": "miløʁo",
+      "passed": true,
+      "ipa": "mil ø.ʁo"
+    },
+    {
+      "family": "groupes-de-chiffres",
+      "text": "1 000 euros",
+      "actual": "miløʁo",
+      "expected": "miløʁo",
+      "passed": true,
+      "ipa": "mil ø.ʁo"
+    },
+    {
+      "family": "groupes-de-chiffres",
+      "text": "1 000 euros",
+      "actual": "miløʁo",
+      "expected": "miløʁo",
+      "passed": true,
+      "ipa": "mil ø.ʁo"
+    },
+    {
+      "family": "groupes-de-chiffres",
+      "text": "1000 euros",
+      "actual": "miløʁo",
+      "expected": "miløʁo",
+      "passed": true,
+      "ipa": "mil ø.ʁo"
+    },
+    {
+      "family": "accord-du-cardinal",
+      "text": "Je donne à cette classe 21 tulipes.",
+      "actual": "vɛ̃teyn",
+      "expected": "vɛ̃teyn",
+      "passed": true,
+      "expanded": "vingt et une",
+      "confidence": "hypothesis"
+    },
+    {
+      "family": "accord-du-cardinal",
+      "text": "Je donne à sa sœur 21 fleurs.",
+      "actual": "vɛ̃teyn",
+      "expected": "vɛ̃teyn",
+      "passed": true,
+      "expanded": "vingt et une",
+      "confidence": "hypothesis"
+    },
+    {
+      "family": "accord-du-cardinal",
+      "text": "page 21 blanche",
+      "actual": "vɛ̃teœ̃",
+      "expected": "vɛ̃teœ̃",
+      "passed": true,
+      "expanded": "vingt et un",
+      "confidence": "hypothesis"
+    },
+    {
+      "family": "alignement-unicode",
+      "text": "élève",
+      "actual": true,
+      "expected": true,
+      "passed": true,
+      "form": "NFC",
+      "ipa": "e.lɛv",
+      "segments": [
+        {
+          "text": "é",
+          "phones": [
+            "e"
+          ],
+          "silent": false,
+          "uncertain": false,
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "l",
+          "phones": [
+            "l"
+          ],
+          "silent": false,
+          "uncertain": false,
+          "start": 1,
+          "end": 2
+        },
+        {
+          "text": "è",
+          "phones": [
+            "ɛ"
+          ],
+          "silent": false,
+          "uncertain": false,
+          "start": 2,
+          "end": 3
+        },
+        {
+          "text": "v",
+          "phones": [
+            "v"
+          ],
+          "silent": false,
+          "uncertain": false,
+          "start": 3,
+          "end": 4
+        },
+        {
+          "text": "e",
+          "phones": [],
+          "silent": true,
+          "uncertain": false,
+          "start": 4,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "family": "alignement-unicode",
+      "text": "élève",
+      "actual": true,
+      "expected": true,
+      "passed": true,
+      "form": "NFD",
+      "ipa": "e.lɛv",
+      "segments": [
+        {
+          "text": "é",
+          "phones": [
+            "e"
+          ],
+          "silent": false,
+          "uncertain": false,
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "l",
+          "phones": [
+            "l"
+          ],
+          "silent": false,
+          "uncertain": false,
+          "start": 2,
+          "end": 3
+        },
+        {
+          "text": "è",
+          "phones": [
+            "ɛ"
+          ],
+          "silent": false,
+          "uncertain": false,
+          "start": 3,
+          "end": 5
+        },
+        {
+          "text": "v",
+          "phones": [
+            "v"
+          ],
+          "silent": false,
+          "uncertain": false,
+          "start": 5,
+          "end": 6
+        },
+        {
+          "text": "e",
+          "phones": [],
+          "silent": true,
+          "uncertain": false,
+          "start": 6,
+          "end": 7
+        }
+      ]
+    },
+    {
+      "family": "alignement-unicode",
+      "text": "école",
+      "actual": true,
+      "expected": true,
+      "passed": true,
+      "form": "NFC",
+      "ipa": "e.kɔl",
+      "segments": [
+        {
+          "text": "é",
+          "phones": [
+            "e"
+          ],
+          "silent": false,
+          "uncertain": false,
+          "start": 0,
+          "end": 1
+        },
+        {
+          "text": "c",
+          "phones": [
+            "k"
+          ],
+          "silent": false,
+          "uncertain": false,
+          "start": 1,
+          "end": 2
+        },
+        {
+          "text": "o",
+          "phones": [
+            "ɔ"
+          ],
+          "silent": false,
+          "uncertain": false,
+          "start": 2,
+          "end": 3
+        },
+        {
+          "text": "l",
+          "phones": [
+            "l"
+          ],
+          "silent": false,
+          "uncertain": false,
+          "start": 3,
+          "end": 4
+        },
+        {
+          "text": "e",
+          "phones": [],
+          "silent": true,
+          "uncertain": false,
+          "start": 4,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "family": "alignement-unicode",
+      "text": "école",
+      "actual": true,
+      "expected": true,
+      "passed": true,
+      "form": "NFD",
+      "ipa": "e.kɔl",
+      "segments": [
+        {
+          "text": "é",
+          "phones": [
+            "e"
+          ],
+          "silent": false,
+          "uncertain": false,
+          "start": 0,
+          "end": 2
+        },
+        {
+          "text": "c",
+          "phones": [
+            "k"
+          ],
+          "silent": false,
+          "uncertain": false,
+          "start": 2,
+          "end": 3
+        },
+        {
+          "text": "o",
+          "phones": [
+            "ɔ"
+          ],
+          "silent": false,
+          "uncertain": false,
+          "start": 3,
+          "end": 4
+        },
+        {
+          "text": "l",
+          "phones": [
+            "l"
+          ],
+          "silent": false,
+          "uncertain": false,
+          "start": 4,
+          "end": 5
+        },
+        {
+          "text": "e",
+          "phones": [],
+          "silent": true,
+          "uncertain": false,
+          "start": 5,
+          "end": 6
+        }
+      ]
+    },
+    {
+      "family": "famille-sous-évaluer",
+      "text": "sous-évaluer",
+      "actual": "suzevalɥe",
+      "expected": "suzevalɥe",
+      "passed": true,
+      "confidence": "ambiguous",
+      "source": "reviewed",
+      "alternatives": []
+    },
+    {
+      "family": "famille-sous-évaluer",
+      "text": "sous-évaluation",
+      "actual": "suzevalɥasjɔ̃",
+      "expected": "suzevalɥasjɔ̃",
+      "passed": true,
+      "confidence": "ambiguous",
+      "source": "reviewed",
+      "alternatives": []
+    },
+    {
+      "family": "famille-sous-évaluer",
+      "text": "sous-évaluons",
+      "actual": "suzevalɥɔ̃",
+      "expected": "suzevalɥɔ̃",
+      "passed": true,
+      "confidence": "ambiguous",
+      "source": "reviewed",
+      "alternatives": []
+    },
+    {
+      "family": "famille-sous-évaluer",
+      "text": "sous-évalué",
+      "actual": "suzevalɥe",
+      "expected": "suzevalɥe",
+      "passed": true,
+      "confidence": "ambiguous",
+      "source": "reviewed",
+      "alternatives": []
+    },
+    {
+      "family": "repli-tien",
+      "text": "martien avec règles forcées",
+      "actual": "maʁsjɛ̃",
+      "expected": "maʁsjɛ̃",
+      "passed": true
+    },
+    {
+      "family": "repli-tien",
+      "text": "martien avec lexique",
+      "actual": "maʁsjɛ̃",
+      "expected": "maʁsjɛ̃",
+      "passed": true
+    }
+  ],
+  "summary": {
+    "total": 30,
+    "passed": 30,
+    "failed": 0
+  }
+}

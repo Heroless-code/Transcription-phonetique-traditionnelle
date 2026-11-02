@@ -1,0 +1,6 @@
+{
+  "purpose": "Cross-check the phonological and chromatic inventories, including rare pronounced h and glottal stop; options must not suppress a recognized consonant.",
+  "passed": 66,
+  "failed": 0,
+  "failures": []
+}

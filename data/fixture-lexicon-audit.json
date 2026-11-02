@@ -1,0 +1,3004 @@
+{
+  "purpose": "Descriptive comparison of raw lexicon alone with the independently authored regression fixture list. Reviewed overrides and context are deliberately excluded. This is not a representative accuracy benchmark.",
+  "total": 226,
+  "retained": 226,
+  "primaryMatches": 216,
+  "candidateMatches": 224,
+  "primaryDifferences": [
+    {
+      "word": "phrase",
+      "category": "courants",
+      "expected": [
+        "fʁɑz"
+      ],
+      "retained": true,
+      "primary": "fʁaz",
+      "alternatives": [
+        "fʁɑz",
+        "fʁɑːz"
+      ],
+      "primaryMatch": false,
+      "candidateMatch": true
+    },
+    {
+      "word": "œufs",
+      "category": "graphemes-et-exceptions",
+      "expected": [
+        "ø"
+      ],
+      "retained": true,
+      "primary": "œf",
+      "alternatives": [
+        "ø"
+      ],
+      "primaryMatch": false,
+      "candidateMatch": true
+    },
+    {
+      "word": "bœufs",
+      "category": "graphemes-et-exceptions",
+      "expected": [
+        "bø"
+      ],
+      "retained": true,
+      "primary": "bœf",
+      "alternatives": [
+        "bø"
+      ],
+      "primaryMatch": false,
+      "candidateMatch": true
+    },
+    {
+      "word": "sens",
+      "category": "nasales-et-contrastes",
+      "expected": [
+        "sɑ̃s"
+      ],
+      "retained": true,
+      "primary": "sɑ̃",
+      "alternatives": [
+        "sɑ̃s"
+      ],
+      "primaryMatch": false,
+      "candidateMatch": true
+    },
+    {
+      "word": "héroïne",
+      "category": "h-et-emprunts",
+      "expected": [
+        "eʁɔin"
+      ],
+      "retained": true,
+      "primary": "e.ʁo.in",
+      "alternatives": [
+        "e.ʁɔ.in"
+      ],
+      "primaryMatch": false,
+      "candidateMatch": true
+    },
+    {
+      "word": "caisse",
+      "category": "longueurs-reference",
+      "expected": [
+        "kɛːs"
+      ],
+      "retained": true,
+      "primary": "kɛs",
+      "alternatives": [],
+      "primaryMatch": false,
+      "candidateMatch": false
+    },
+    {
+      "word": "reine",
+      "category": "longueurs-reference",
+      "expected": [
+        "ʁɛːn"
+      ],
+      "retained": true,
+      "primary": "ʁɛn",
+      "alternatives": [
+        "ʁɛːn"
+      ],
+      "primaryMatch": false,
+      "candidateMatch": true
+    },
+    {
+      "word": "presse",
+      "category": "longueurs-reference",
+      "expected": [
+        "pʁɛːs"
+      ],
+      "retained": true,
+      "primary": "pʁɛs",
+      "alternatives": [
+        "pʁɛːs"
+      ],
+      "primaryMatch": false,
+      "candidateMatch": true
+    },
+    {
+      "word": "scène",
+      "category": "longueurs-reference",
+      "expected": [
+        "sɛːn"
+      ],
+      "retained": true,
+      "primary": "sɛn",
+      "alternatives": [],
+      "primaryMatch": false,
+      "candidateMatch": false
+    },
+    {
+      "word": "gène",
+      "category": "longueurs-reference",
+      "expected": [
+        "ʒɛːn"
+      ],
+      "retained": true,
+      "primary": "ʒɛn",
+      "alternatives": [
+        "ʒɛːn"
+      ],
+      "primaryMatch": false,
+      "candidateMatch": true
+    }
+  ],
+  "results": [
+    {
+      "word": "bonjour",
+      "category": "courants",
+      "expected": [
+        "bɔ̃ʒuʁ"
+      ],
+      "retained": true,
+      "primary": "bɔ̃.ʒuʁ",
+      "alternatives": [
+        "bɔ̃.ʒuːʁ"
+      ],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "salut",
+      "category": "courants",
+      "expected": [
+        "saly"
+      ],
+      "retained": true,
+      "primary": "sa.ly",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "merci",
+      "category": "courants",
+      "expected": [
+        "mɛʁsi"
+      ],
+      "retained": true,
+      "primary": "mɛʁ.si",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "maison",
+      "category": "courants",
+      "expected": [
+        "mɛzɔ̃"
+      ],
+      "retained": true,
+      "primary": "mɛ.zɔ̃",
+      "alternatives": [
+        "me.zɔ̃"
+      ],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "jardin",
+      "category": "courants",
+      "expected": [
+        "ʒaʁdɛ̃"
+      ],
+      "retained": true,
+      "primary": "ʒaʁ.dɛ̃",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "enfant",
+      "category": "courants",
+      "expected": [
+        "ɑ̃fɑ̃"
+      ],
+      "retained": true,
+      "primary": "ɑ̃.fɑ̃",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "table",
+      "category": "courants",
+      "expected": [
+        "tabl"
+      ],
+      "retained": true,
+      "primary": "tabl",
+      "alternatives": [
+        "tɑbl"
+      ],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "chaise",
+      "category": "courants",
+      "expected": [
+        "ʃɛz"
+      ],
+      "retained": true,
+      "primary": "ʃɛz",
+      "alternatives": [
+        "ʃɛːz"
+      ],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "livre",
+      "category": "courants",
+      "expected": [
+        "livʁ"
+      ],
+      "retained": true,
+      "primary": "livʁ",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "école",
+      "category": "courants",
+      "expected": [
+        "ekɔl"
+      ],
+      "retained": true,
+      "primary": "e.kɔl",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "livraison",
+      "category": "courants",
+      "expected": [
+        "livʁɛzɔ̃"
+      ],
+      "retained": true,
+      "primary": "li.vʁɛ.zɔ̃",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "soleil",
+      "category": "courants",
+      "expected": [
+        "sɔlɛj"
+      ],
+      "retained": true,
+      "primary": "sɔ.lɛj",
+      "alternatives": [
+        "so.lɛj"
+      ],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "lune",
+      "category": "courants",
+      "expected": [
+        "lyn"
+      ],
+      "retained": true,
+      "primary": "lyn",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "ville",
+      "category": "courants",
+      "expected": [
+        "vil"
+      ],
+      "retained": true,
+      "primary": "vil",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "village",
+      "category": "courants",
+      "expected": [
+        "vilaʒ"
+      ],
+      "retained": true,
+      "primary": "vi.laʒ",
+      "alternatives": [
+        "vi.laːʒ",
+        "vi.lɑːʒ"
+      ],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "rouge",
+      "category": "courants",
+      "expected": [
+        "ʁuʒ"
+      ],
+      "retained": true,
+      "primary": "ʁuʒ",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "vert",
+      "category": "courants",
+      "expected": [
+        "vɛʁ"
+      ],
+      "retained": true,
+      "primary": "vɛʁ",
+      "alternatives": [
+        "vɛːʁ"
+      ],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "bleu",
+      "category": "courants",
+      "expected": [
+        "blø"
+      ],
+      "retained": true,
+      "primary": "blø",
+      "alternatives": [
+        "blœ"
+      ],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "noir",
+      "category": "courants",
+      "expected": [
+        "nwaʁ"
+      ],
+      "retained": true,
+      "primary": "nwaʁ",
+      "alternatives": [
+        "nwɑʁ",
+        "nwɑːʁ"
+      ],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "blanc",
+      "category": "courants",
+      "expected": [
+        "blɑ̃"
+      ],
+      "retained": true,
+      "primary": "blɑ̃",
+      "alternatives": [
+        "blɑ̃ʃ"
+      ],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "petit",
+      "category": "courants",
+      "expected": [
+        "pəti"
+      ],
+      "retained": true,
+      "primary": "pə.ti",
+      "alternatives": [
+        "pti"
+      ],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "grande",
+      "category": "courants",
+      "expected": [
+        "ɡʁɑ̃d"
+      ],
+      "retained": true,
+      "primary": "ɡʁɑ̃d",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "porte",
+      "category": "courants",
+      "expected": [
+        "pɔʁt"
+      ],
+      "retained": true,
+      "primary": "pɔʁt",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "fenêtre",
+      "category": "courants",
+      "expected": [
+        "fənɛtʁ"
+      ],
+      "retained": true,
+      "primary": "fə.nɛːtʁ",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "chambre",
+      "category": "courants",
+      "expected": [
+        "ʃɑ̃bʁ"
+      ],
+      "retained": true,
+      "primary": "ʃɑ̃bʁ",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "musique",
+      "category": "courants",
+      "expected": [
+        "myzik"
+      ],
+      "retained": true,
+      "primary": "my.zik",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "poésie",
+      "category": "courants",
+      "expected": [
+        "poezi",
+        "pɔezi"
+      ],
+      "retained": true,
+      "primary": "pɔ.e.zi",
+      "alternatives": [
+        "po.e.zi"
+      ],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "lecture",
+      "category": "courants",
+      "expected": [
+        "lɛktyʁ"
+      ],
+      "retained": true,
+      "primary": "lɛk.tyʁ",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "écriture",
+      "category": "courants",
+      "expected": [
+        "ekʁityʁ"
+      ],
+      "retained": true,
+      "primary": "e.kʁi.tyʁ",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "travail",
+      "category": "courants",
+      "expected": [
+        "tʁavaj"
+      ],
+      "retained": true,
+      "primary": "tʁa.vaj",
+      "alternatives": [
+        "tʁɑ.vaj"
+      ],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "bureau",
+      "category": "courants",
+      "expected": [
+        "byʁo"
+      ],
+      "retained": true,
+      "primary": "by.ʁo",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "papier",
+      "category": "courants",
+      "expected": [
+        "papje"
+      ],
+      "retained": true,
+      "primary": "pa.pje",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "crayon",
+      "category": "courants",
+      "expected": [
+        "kʁɛjɔ̃"
+      ],
+      "retained": true,
+      "primary": "kʁɛ.jɔ̃",
+      "alternatives": [
+        "kʁe.jɔ̃"
+      ],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "stylo",
+      "category": "courants",
+      "expected": [
+        "stilo"
+      ],
+      "retained": true,
+      "primary": "sti.lo",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "ordinateur",
+      "category": "courants",
+      "expected": [
+        "ɔʁdinatœʁ"
+      ],
+      "retained": true,
+      "primary": "ɔʁ.di.na.tœʁ",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "téléphone",
+      "category": "courants",
+      "expected": [
+        "telefɔn"
+      ],
+      "retained": true,
+      "primary": "te.le.fɔn",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "langue",
+      "category": "courants",
+      "expected": [
+        "lɑ̃ɡ"
+      ],
+      "retained": true,
+      "primary": "lɑ̃ɡ",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "français",
+      "category": "courants",
+      "expected": [
+        "fʁɑ̃sɛ"
+      ],
+      "retained": true,
+      "primary": "fʁɑ̃.sɛ",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "phonétique",
+      "category": "courants",
+      "expected": [
+        "fɔnetik"
+      ],
+      "retained": true,
+      "primary": "fɔ.ne.tik",
+      "alternatives": [
+        "fo.ne.tik"
+      ],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "syllabe",
+      "category": "courants",
+      "expected": [
+        "silab"
+      ],
+      "retained": true,
+      "primary": "si.lab",
+      "alternatives": [
+        "sil.lab"
+      ],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "mot",
+      "category": "courants",
+      "expected": [
+        "mo"
+      ],
+      "retained": true,
+      "primary": "mo",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "texte",
+      "category": "courants",
+      "expected": [
+        "tɛkst"
+      ],
+      "retained": true,
+      "primary": "tɛkst",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "phrase",
+      "category": "courants",
+      "expected": [
+        "fʁɑz"
+      ],
+      "retained": true,
+      "primary": "fʁaz",
+      "alternatives": [
+        "fʁɑz",
+        "fʁɑːz"
+      ],
+      "primaryMatch": false,
+      "candidateMatch": true
+    },
+    {
+      "word": "son",
+      "category": "courants",
+      "expected": [
+        "sɔ̃"
+      ],
+      "retained": true,
+      "primary": "sɔ̃",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "écouter",
+      "category": "courants",
+      "expected": [
+        "ekute"
+      ],
+      "retained": true,
+      "primary": "e.ku.te",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "regarder",
+      "category": "courants",
+      "expected": [
+        "ʁəɡaʁde"
+      ],
+      "retained": true,
+      "primary": "ʁə.ɡaʁ.de",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "écrire",
+      "category": "courants",
+      "expected": [
+        "ekʁiʁ"
+      ],
+      "retained": true,
+      "primary": "e.kʁiʁ",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "parler",
+      "category": "courants",
+      "expected": [
+        "paʁle"
+      ],
+      "retained": true,
+      "primary": "paʁ.le",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "dormir",
+      "category": "courants",
+      "expected": [
+        "dɔʁmiʁ"
+      ],
+      "retained": true,
+      "primary": "dɔʁ.miʁ",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "vivre",
+      "category": "courants",
+      "expected": [
+        "vivʁ"
+      ],
+      "retained": true,
+      "primary": "vivʁ",
+      "alternatives": [
+        "viːvʁ"
+      ],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "boire",
+      "category": "courants",
+      "expected": [
+        "bwaʁ"
+      ],
+      "retained": true,
+      "primary": "bwaʁ",
+      "alternatives": [
+        "bwaːʁ"
+      ],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "lire",
+      "category": "courants",
+      "expected": [
+        "liʁ"
+      ],
+      "retained": true,
+      "primary": "liʁ",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "faire",
+      "category": "courants",
+      "expected": [
+        "fɛʁ"
+      ],
+      "retained": true,
+      "primary": "fɛʁ",
+      "alternatives": [
+        "fɛːʁ"
+      ],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "aller",
+      "category": "courants",
+      "expected": [
+        "ale"
+      ],
+      "retained": true,
+      "primary": "a.le",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "venir",
+      "category": "courants",
+      "expected": [
+        "vəniʁ"
+      ],
+      "retained": true,
+      "primary": "və.niʁ",
+      "alternatives": [
+        "vniʁ"
+      ],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "partir",
+      "category": "courants",
+      "expected": [
+        "paʁtiʁ"
+      ],
+      "retained": true,
+      "primary": "paʁ.tiʁ",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "finir",
+      "category": "courants",
+      "expected": [
+        "finiʁ"
+      ],
+      "retained": true,
+      "primary": "fi.niʁ",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "choisir",
+      "category": "courants",
+      "expected": [
+        "ʃwaziʁ"
+      ],
+      "retained": true,
+      "primary": "ʃwa.ziʁ",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "trouver",
+      "category": "courants",
+      "expected": [
+        "tʁuve"
+      ],
+      "retained": true,
+      "primary": "tʁu.ve",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "aimer",
+      "category": "courants",
+      "expected": [
+        "eme",
+        "ɛme"
+      ],
+      "retained": true,
+      "primary": "ɛ.me",
+      "alternatives": [
+        "e.me"
+      ],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "femme",
+      "category": "graphemes-et-exceptions",
+      "expected": [
+        "fam"
+      ],
+      "retained": true,
+      "primary": "fam",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "monsieur",
+      "category": "graphemes-et-exceptions",
+      "expected": [
+        "məsjø"
+      ],
+      "retained": true,
+      "primary": "mə.sjø",
+      "alternatives": [
+        "mɔ̃.sjø"
+      ],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "seconde",
+      "category": "graphemes-et-exceptions",
+      "expected": [
+        "səɡɔ̃d"
+      ],
+      "retained": true,
+      "primary": "sə.ɡɔ̃d",
+      "alternatives": [
+        "se.ɡɔ̃d"
+      ],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "oignon",
+      "category": "graphemes-et-exceptions",
+      "expected": [
+        "ɔɲɔ̃"
+      ],
+      "retained": true,
+      "primary": "ɔ.ɲɔ̃",
+      "alternatives": [
+        "wa.ɲɔ̃"
+      ],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "automne",
+      "category": "graphemes-et-exceptions",
+      "expected": [
+        "otɔn"
+      ],
+      "retained": true,
+      "primary": "o.tɔn",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "août",
+      "category": "graphemes-et-exceptions",
+      "expected": [
+        "u",
+        "ut"
+      ],
+      "retained": true,
+      "primary": "ut",
+      "alternatives": [
+        "a.u",
+        "u"
+      ],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "sept",
+      "category": "graphemes-et-exceptions",
+      "expected": [
+        "sɛt"
+      ],
+      "retained": true,
+      "primary": "sɛt",
+      "alternatives": [
+        "sɛpt"
+      ],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "huit",
+      "category": "graphemes-et-exceptions",
+      "expected": [
+        "ɥit"
+      ],
+      "retained": true,
+      "primary": "ɥit",
+      "alternatives": [
+        "ɥi"
+      ],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "vingt",
+      "category": "graphemes-et-exceptions",
+      "expected": [
+        "vɛ̃"
+      ],
+      "retained": true,
+      "primary": "vɛ̃",
+      "alternatives": [
+        "vɛ̃t"
+      ],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "cent",
+      "category": "graphemes-et-exceptions",
+      "expected": [
+        "sɑ̃"
+      ],
+      "retained": true,
+      "primary": "sɑ̃",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "mille",
+      "category": "graphemes-et-exceptions",
+      "expected": [
+        "mil"
+      ],
+      "retained": true,
+      "primary": "mil",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "million",
+      "category": "graphemes-et-exceptions",
+      "expected": [
+        "miljɔ̃"
+      ],
+      "retained": true,
+      "primary": "mi.ljɔ̃",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "fille",
+      "category": "graphemes-et-exceptions",
+      "expected": [
+        "fij"
+      ],
+      "retained": true,
+      "primary": "fij",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "ville",
+      "category": "graphemes-et-exceptions",
+      "expected": [
+        "vil"
+      ],
+      "retained": true,
+      "primary": "vil",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "tranquille",
+      "category": "graphemes-et-exceptions",
+      "expected": [
+        "tʁɑ̃kil"
+      ],
+      "retained": true,
+      "primary": "tʁɑ̃.kil",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "aiguille",
+      "category": "graphemes-et-exceptions",
+      "expected": [
+        "eɡɥij",
+        "ɛɡɥij"
+      ],
+      "retained": true,
+      "primary": "ɛ.ɡɥij",
+      "alternatives": [
+        "e.ɡɥij"
+      ],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "accueil",
+      "category": "graphemes-et-exceptions",
+      "expected": [
+        "akœj"
+      ],
+      "retained": true,
+      "primary": "a.kœj",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "orgueil",
+      "category": "graphemes-et-exceptions",
+      "expected": [
+        "ɔʁɡœj"
+      ],
+      "retained": true,
+      "primary": "ɔʁ.ɡœj",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "cueillir",
+      "category": "graphemes-et-exceptions",
+      "expected": [
+        "kœjiʁ"
+      ],
+      "retained": true,
+      "primary": "kœ.jiʁ",
+      "alternatives": [
+        "kœ.jiːʁ"
+      ],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "œil",
+      "category": "graphemes-et-exceptions",
+      "expected": [
+        "œj"
+      ],
+      "retained": true,
+      "primary": "œj",
+      "alternatives": [
+        "øj",
+        "lœj"
+      ],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "œuf",
+      "category": "graphemes-et-exceptions",
+      "expected": [
+        "œf"
+      ],
+      "retained": true,
+      "primary": "œf",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "œufs",
+      "category": "graphemes-et-exceptions",
+      "expected": [
+        "ø"
+      ],
+      "retained": true,
+      "primary": "œf",
+      "alternatives": [
+        "ø"
+      ],
+      "primaryMatch": false,
+      "candidateMatch": true
+    },
+    {
+      "word": "bœuf",
+      "category": "graphemes-et-exceptions",
+      "expected": [
+        "bœf"
+      ],
+      "retained": true,
+      "primary": "bœf",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "bœufs",
+      "category": "graphemes-et-exceptions",
+      "expected": [
+        "bø"
+      ],
+      "retained": true,
+      "primary": "bœf",
+      "alternatives": [
+        "bø"
+      ],
+      "primaryMatch": false,
+      "candidateMatch": true
+    },
+    {
+      "word": "clef",
+      "category": "graphemes-et-exceptions",
+      "expected": [
+        "kle"
+      ],
+      "retained": true,
+      "primary": "kle",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "clé",
+      "category": "graphemes-et-exceptions",
+      "expected": [
+        "kle"
+      ],
+      "retained": true,
+      "primary": "kle",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "tabac",
+      "category": "graphemes-et-exceptions",
+      "expected": [
+        "taba"
+      ],
+      "retained": true,
+      "primary": "ta.ba",
+      "alternatives": [
+        "ta.bɑ"
+      ],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "estomac",
+      "category": "graphemes-et-exceptions",
+      "expected": [
+        "ɛstɔma"
+      ],
+      "retained": true,
+      "primary": "ɛs.tɔ.ma",
+      "alternatives": [
+        "ɛs.tɔ.mɑ"
+      ],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "chou",
+      "category": "graphemes-et-exceptions",
+      "expected": [
+        "ʃu"
+      ],
+      "retained": true,
+      "primary": "ʃu",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "chronomètre",
+      "category": "graphemes-et-exceptions",
+      "expected": [
+        "kʁɔnɔmɛtʁ"
+      ],
+      "retained": true,
+      "primary": "kʁɔ.nɔ.mɛtʁ",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "chorale",
+      "category": "graphemes-et-exceptions",
+      "expected": [
+        "kɔʁal"
+      ],
+      "retained": true,
+      "primary": "kɔ.ʁal",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "orchestre",
+      "category": "graphemes-et-exceptions",
+      "expected": [
+        "ɔʁkɛstʁ"
+      ],
+      "retained": true,
+      "primary": "ɔʁ.kɛstʁ",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "technique",
+      "category": "graphemes-et-exceptions",
+      "expected": [
+        "tɛknik"
+      ],
+      "retained": true,
+      "primary": "tɛk.nik",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "pharmacie",
+      "category": "graphemes-et-exceptions",
+      "expected": [
+        "faʁmasi"
+      ],
+      "retained": true,
+      "primary": "faʁ.ma.si",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "théâtre",
+      "category": "graphemes-et-exceptions",
+      "expected": [
+        "teɑtʁ",
+        "teatʁ"
+      ],
+      "retained": true,
+      "primary": "te.ɑːtʁ",
+      "alternatives": [
+        "tɛ.ɑːtʁ"
+      ],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "démocratie",
+      "category": "graphemes-et-exceptions",
+      "expected": [
+        "demɔkʁasi"
+      ],
+      "retained": true,
+      "primary": "de.mɔ.kʁa.si",
+      "alternatives": [
+        "de.mo.kʁa.si"
+      ],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "attention",
+      "category": "graphemes-et-exceptions",
+      "expected": [
+        "atɑ̃sjɔ̃"
+      ],
+      "retained": true,
+      "primary": "a.tɑ̃.sjɔ̃",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "question",
+      "category": "graphemes-et-exceptions",
+      "expected": [
+        "kɛstjɔ̃"
+      ],
+      "retained": true,
+      "primary": "kɛs.tjɔ̃",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "équation",
+      "category": "graphemes-et-exceptions",
+      "expected": [
+        "ekwasjɔ̃"
+      ],
+      "retained": true,
+      "primary": "e.kwa.sjɔ̃",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "examen",
+      "category": "graphemes-et-exceptions",
+      "expected": [
+        "ɛɡzamɛ̃"
+      ],
+      "retained": true,
+      "primary": "ɛɡ.za.mɛ̃",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "existence",
+      "category": "graphemes-et-exceptions",
+      "expected": [
+        "ɛɡzistɑ̃s"
+      ],
+      "retained": true,
+      "primary": "ɛɡ.zis.tɑ̃s",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "taxi",
+      "category": "graphemes-et-exceptions",
+      "expected": [
+        "taksi"
+      ],
+      "retained": true,
+      "primary": "tak.si",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "sixième",
+      "category": "graphemes-et-exceptions",
+      "expected": [
+        "sizjɛm"
+      ],
+      "retained": true,
+      "primary": "si.zjɛm",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "dixième",
+      "category": "graphemes-et-exceptions",
+      "expected": [
+        "dizjɛm"
+      ],
+      "retained": true,
+      "primary": "di.zjɛm",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "psychologie",
+      "category": "graphemes-et-exceptions",
+      "expected": [
+        "psikɔlɔʒi"
+      ],
+      "retained": true,
+      "primary": "psi.kɔ.lɔ.ʒi",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "sculpture",
+      "category": "graphemes-et-exceptions",
+      "expected": [
+        "skyltyʁ"
+      ],
+      "retained": true,
+      "primary": "skyl.tyʁ",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "scène",
+      "category": "graphemes-et-exceptions",
+      "expected": [
+        "sɛn"
+      ],
+      "retained": true,
+      "primary": "sɛn",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "science",
+      "category": "graphemes-et-exceptions",
+      "expected": [
+        "sjɑ̃s"
+      ],
+      "retained": true,
+      "primary": "sjɑ̃s",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "faon",
+      "category": "graphemes-et-exceptions",
+      "expected": [
+        "fɑ̃"
+      ],
+      "retained": true,
+      "primary": "fɑ̃",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "paon",
+      "category": "graphemes-et-exceptions",
+      "expected": [
+        "pɑ̃"
+      ],
+      "retained": true,
+      "primary": "pɑ̃",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "taon",
+      "category": "graphemes-et-exceptions",
+      "expected": [
+        "tɑ̃"
+      ],
+      "retained": true,
+      "primary": "tɑ̃",
+      "alternatives": [
+        "ta.ɔ̃"
+      ],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "vent",
+      "category": "nasales-et-contrastes",
+      "expected": [
+        "vɑ̃"
+      ],
+      "retained": true,
+      "primary": "vɑ̃",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "vin",
+      "category": "nasales-et-contrastes",
+      "expected": [
+        "vɛ̃"
+      ],
+      "retained": true,
+      "primary": "vɛ̃",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "brin",
+      "category": "nasales-et-contrastes",
+      "expected": [
+        "bʁɛ̃"
+      ],
+      "retained": true,
+      "primary": "bʁɛ̃",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "brun",
+      "category": "nasales-et-contrastes",
+      "expected": [
+        "bʁœ̃"
+      ],
+      "retained": true,
+      "primary": "bʁœ̃",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "un",
+      "category": "nasales-et-contrastes",
+      "expected": [
+        "œ̃"
+      ],
+      "retained": true,
+      "primary": "œ̃",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "lundi",
+      "category": "nasales-et-contrastes",
+      "expected": [
+        "lœ̃di"
+      ],
+      "retained": true,
+      "primary": "lœ̃.di",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "parfum",
+      "category": "nasales-et-contrastes",
+      "expected": [
+        "paʁfœ̃"
+      ],
+      "retained": true,
+      "primary": "paʁ.fœ̃",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "commun",
+      "category": "nasales-et-contrastes",
+      "expected": [
+        "kɔmœ̃"
+      ],
+      "retained": true,
+      "primary": "kɔ.mœ̃",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "on",
+      "category": "nasales-et-contrastes",
+      "expected": [
+        "ɔ̃"
+      ],
+      "retained": true,
+      "primary": "ɔ̃",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "ombre",
+      "category": "nasales-et-contrastes",
+      "expected": [
+        "ɔ̃bʁ"
+      ],
+      "retained": true,
+      "primary": "ɔ̃bʁ",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "ombrelle",
+      "category": "nasales-et-contrastes",
+      "expected": [
+        "ɔ̃bʁɛl"
+      ],
+      "retained": true,
+      "primary": "ɔ̃.bʁɛl",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "pain",
+      "category": "nasales-et-contrastes",
+      "expected": [
+        "pɛ̃"
+      ],
+      "retained": true,
+      "primary": "pɛ̃",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "main",
+      "category": "nasales-et-contrastes",
+      "expected": [
+        "mɛ̃"
+      ],
+      "retained": true,
+      "primary": "mɛ̃",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "faim",
+      "category": "nasales-et-contrastes",
+      "expected": [
+        "fɛ̃"
+      ],
+      "retained": true,
+      "primary": "fɛ̃",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "daim",
+      "category": "nasales-et-contrastes",
+      "expected": [
+        "dɛ̃"
+      ],
+      "retained": true,
+      "primary": "dɛ̃",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "sans",
+      "category": "nasales-et-contrastes",
+      "expected": [
+        "sɑ̃"
+      ],
+      "retained": true,
+      "primary": "sɑ̃",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "sens",
+      "category": "nasales-et-contrastes",
+      "expected": [
+        "sɑ̃s"
+      ],
+      "retained": true,
+      "primary": "sɑ̃",
+      "alternatives": [
+        "sɑ̃s"
+      ],
+      "primaryMatch": false,
+      "candidateMatch": true
+    },
+    {
+      "word": "empire",
+      "category": "nasales-et-contrastes",
+      "expected": [
+        "ɑ̃piʁ"
+      ],
+      "retained": true,
+      "primary": "ɑ̃.piʁ",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "ampère",
+      "category": "nasales-et-contrastes",
+      "expected": [
+        "ɑ̃pɛʁ"
+      ],
+      "retained": true,
+      "primary": "ɑ̃.pɛʁ",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "année",
+      "category": "nasales-et-contrastes",
+      "expected": [
+        "ane"
+      ],
+      "retained": true,
+      "primary": "a.ne",
+      "alternatives": [
+        "ɑ̃.ne"
+      ],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "bonne",
+      "category": "nasales-et-contrastes",
+      "expected": [
+        "bɔn"
+      ],
+      "retained": true,
+      "primary": "bɔn",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "bon",
+      "category": "nasales-et-contrastes",
+      "expected": [
+        "bɔ̃"
+      ],
+      "retained": true,
+      "primary": "bɔ̃",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "fine",
+      "category": "nasales-et-contrastes",
+      "expected": [
+        "fin"
+      ],
+      "retained": true,
+      "primary": "fin",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "fin",
+      "category": "nasales-et-contrastes",
+      "expected": [
+        "fɛ̃"
+      ],
+      "retained": true,
+      "primary": "fɛ̃",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "pleine",
+      "category": "nasales-et-contrastes",
+      "expected": [
+        "plɛn"
+      ],
+      "retained": true,
+      "primary": "plɛn",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "plein",
+      "category": "nasales-et-contrastes",
+      "expected": [
+        "plɛ̃"
+      ],
+      "retained": true,
+      "primary": "plɛ̃",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "sonne",
+      "category": "nasales-et-contrastes",
+      "expected": [
+        "sɔn"
+      ],
+      "retained": true,
+      "primary": "sɔn",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "son",
+      "category": "nasales-et-contrastes",
+      "expected": [
+        "sɔ̃"
+      ],
+      "retained": true,
+      "primary": "sɔ̃",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "soudent",
+      "category": "terminaisons-verbales",
+      "expected": [
+        "sud"
+      ],
+      "retained": true,
+      "primary": "sud",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "jouent",
+      "category": "terminaisons-verbales",
+      "expected": [
+        "ʒu"
+      ],
+      "retained": true,
+      "primary": "ʒu",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "parlent",
+      "category": "terminaisons-verbales",
+      "expected": [
+        "paʁl"
+      ],
+      "retained": true,
+      "primary": "paʁl",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "aiment",
+      "category": "terminaisons-verbales",
+      "expected": [
+        "ɛm"
+      ],
+      "retained": true,
+      "primary": "ɛm",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "marchent",
+      "category": "terminaisons-verbales",
+      "expected": [
+        "maʁʃ"
+      ],
+      "retained": true,
+      "primary": "maʁʃ",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "chantent",
+      "category": "terminaisons-verbales",
+      "expected": [
+        "ʃɑ̃t"
+      ],
+      "retained": true,
+      "primary": "ʃɑ̃t",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "mangent",
+      "category": "terminaisons-verbales",
+      "expected": [
+        "mɑ̃ʒ"
+      ],
+      "retained": true,
+      "primary": "mɑ̃ʒ",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "finissent",
+      "category": "terminaisons-verbales",
+      "expected": [
+        "finis"
+      ],
+      "retained": true,
+      "primary": "fi.nis",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "choisissent",
+      "category": "terminaisons-verbales",
+      "expected": [
+        "ʃwazis"
+      ],
+      "retained": true,
+      "primary": "ʃwa.zis",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "prennent",
+      "category": "terminaisons-verbales",
+      "expected": [
+        "pʁɛn"
+      ],
+      "retained": true,
+      "primary": "pʁɛn",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "viennent",
+      "category": "terminaisons-verbales",
+      "expected": [
+        "vjɛn"
+      ],
+      "retained": true,
+      "primary": "vjɛn",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "peuvent",
+      "category": "terminaisons-verbales",
+      "expected": [
+        "pœv"
+      ],
+      "retained": true,
+      "primary": "pœv",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "doivent",
+      "category": "terminaisons-verbales",
+      "expected": [
+        "dwav"
+      ],
+      "retained": true,
+      "primary": "dwav",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "savent",
+      "category": "terminaisons-verbales",
+      "expected": [
+        "sav"
+      ],
+      "retained": true,
+      "primary": "sav",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "vivent",
+      "category": "terminaisons-verbales",
+      "expected": [
+        "viv"
+      ],
+      "retained": true,
+      "primary": "viv",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "lisent",
+      "category": "terminaisons-verbales",
+      "expected": [
+        "liz"
+      ],
+      "retained": true,
+      "primary": "liz",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "écrivent",
+      "category": "terminaisons-verbales",
+      "expected": [
+        "ekʁiv"
+      ],
+      "retained": true,
+      "primary": "e.kʁiv",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "courent",
+      "category": "terminaisons-verbales",
+      "expected": [
+        "kuʁ"
+      ],
+      "retained": true,
+      "primary": "kuʁ",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "voudraient",
+      "category": "terminaisons-verbales",
+      "expected": [
+        "vudʁɛ"
+      ],
+      "retained": true,
+      "primary": "vu.dʁɛ",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "parlaient",
+      "category": "terminaisons-verbales",
+      "expected": [
+        "paʁlɛ"
+      ],
+      "retained": true,
+      "primary": "paʁ.lɛ",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "chantaient",
+      "category": "terminaisons-verbales",
+      "expected": [
+        "ʃɑ̃tɛ"
+      ],
+      "retained": true,
+      "primary": "ʃɑ̃.tɛ",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "parlerai",
+      "category": "terminaisons-verbales",
+      "expected": [
+        "paʁləʁe"
+      ],
+      "retained": true,
+      "primary": "paʁ.lə.ʁe",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "parlerais",
+      "category": "terminaisons-verbales",
+      "expected": [
+        "paʁləʁɛ"
+      ],
+      "retained": true,
+      "primary": "paʁ.lə.ʁɛ",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "parlez",
+      "category": "terminaisons-verbales",
+      "expected": [
+        "paʁle"
+      ],
+      "retained": true,
+      "primary": "paʁ.le",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "nuit",
+      "category": "semi-voyelles-et-hiatus",
+      "expected": [
+        "nɥi"
+      ],
+      "retained": true,
+      "primary": "nɥi",
+      "alternatives": [
+        "nyi"
+      ],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "lui",
+      "category": "semi-voyelles-et-hiatus",
+      "expected": [
+        "lɥi"
+      ],
+      "retained": true,
+      "primary": "lɥi",
+      "alternatives": [
+        "lu.i",
+        "lwi"
+      ],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "huile",
+      "category": "semi-voyelles-et-hiatus",
+      "expected": [
+        "ɥil"
+      ],
+      "retained": true,
+      "primary": "ɥil",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "oui",
+      "category": "semi-voyelles-et-hiatus",
+      "expected": [
+        "wi"
+      ],
+      "retained": true,
+      "primary": "wi",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "ouest",
+      "category": "semi-voyelles-et-hiatus",
+      "expected": [
+        "wɛst"
+      ],
+      "retained": true,
+      "primary": "wɛst",
+      "alternatives": [
+        "u.ɛst"
+      ],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "yeux",
+      "category": "semi-voyelles-et-hiatus",
+      "expected": [
+        "jø"
+      ],
+      "retained": true,
+      "primary": "jø",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "pied",
+      "category": "semi-voyelles-et-hiatus",
+      "expected": [
+        "pje"
+      ],
+      "retained": true,
+      "primary": "pje",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "pitié",
+      "category": "semi-voyelles-et-hiatus",
+      "expected": [
+        "pitje"
+      ],
+      "retained": true,
+      "primary": "pi.tje",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "billet",
+      "category": "semi-voyelles-et-hiatus",
+      "expected": [
+        "bijɛ"
+      ],
+      "retained": true,
+      "primary": "bi.jɛ",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "écureuil",
+      "category": "semi-voyelles-et-hiatus",
+      "expected": [
+        "ekyʁœj"
+      ],
+      "retained": true,
+      "primary": "e.ky.ʁœj",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "lion",
+      "category": "semi-voyelles-et-hiatus",
+      "expected": [
+        "ljɔ̃",
+        "lijɔ̃"
+      ],
+      "retained": true,
+      "primary": "ljɔ̃",
+      "alternatives": [
+        "li.jɔ̃"
+      ],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "duel",
+      "category": "semi-voyelles-et-hiatus",
+      "expected": [
+        "dɥɛl",
+        "dyɛl"
+      ],
+      "retained": true,
+      "primary": "dɥɛl",
+      "alternatives": [
+        "dy.ɛl"
+      ],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "jouer",
+      "category": "semi-voyelles-et-hiatus",
+      "expected": [
+        "ʒwe",
+        "ʒue"
+      ],
+      "retained": true,
+      "primary": "ʒwe",
+      "alternatives": [
+        "ʒu.e"
+      ],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "pays",
+      "category": "semi-voyelles-et-hiatus",
+      "expected": [
+        "pei",
+        "pɛi"
+      ],
+      "retained": true,
+      "primary": "pɛ.i",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "haïr",
+      "category": "semi-voyelles-et-hiatus",
+      "expected": [
+        "aiʁ"
+      ],
+      "retained": true,
+      "primary": "a.iʁ",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "Noël",
+      "category": "semi-voyelles-et-hiatus",
+      "expected": [
+        "nɔɛl"
+      ],
+      "retained": true,
+      "primary": "nɔ.ɛl",
+      "alternatives": [
+        "no.ɛl"
+      ],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "poème",
+      "category": "semi-voyelles-et-hiatus",
+      "expected": [
+        "pɔɛm"
+      ],
+      "retained": true,
+      "primary": "pɔ.ɛm",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "création",
+      "category": "semi-voyelles-et-hiatus",
+      "expected": [
+        "kʁeasjɔ̃"
+      ],
+      "retained": true,
+      "primary": "kʁe.a.sjɔ̃",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "réel",
+      "category": "semi-voyelles-et-hiatus",
+      "expected": [
+        "ʁeɛl"
+      ],
+      "retained": true,
+      "primary": "ʁe.ɛl",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "boa",
+      "category": "semi-voyelles-et-hiatus",
+      "expected": [
+        "bɔa"
+      ],
+      "retained": true,
+      "primary": "bɔ.a",
+      "alternatives": [
+        "bo.a"
+      ],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "haricot",
+      "category": "h-et-emprunts",
+      "expected": [
+        "aʁiko"
+      ],
+      "retained": true,
+      "primary": "a.ʁi.ko",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "homme",
+      "category": "h-et-emprunts",
+      "expected": [
+        "ɔm"
+      ],
+      "retained": true,
+      "primary": "ɔm",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "honte",
+      "category": "h-et-emprunts",
+      "expected": [
+        "ɔ̃t"
+      ],
+      "retained": true,
+      "primary": "ɔ̃t",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "héros",
+      "category": "h-et-emprunts",
+      "expected": [
+        "eʁo"
+      ],
+      "retained": true,
+      "primary": "e.ʁo",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "héroïne",
+      "category": "h-et-emprunts",
+      "expected": [
+        "eʁɔin"
+      ],
+      "retained": true,
+      "primary": "e.ʁo.in",
+      "alternatives": [
+        "e.ʁɔ.in"
+      ],
+      "primaryMatch": false,
+      "candidateMatch": true
+    },
+    {
+      "word": "hibou",
+      "category": "h-et-emprunts",
+      "expected": [
+        "ibu"
+      ],
+      "retained": true,
+      "primary": "i.bu",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "haine",
+      "category": "h-et-emprunts",
+      "expected": [
+        "ɛn"
+      ],
+      "retained": true,
+      "primary": "ɛn",
+      "alternatives": [
+        "ɛːn"
+      ],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "heure",
+      "category": "h-et-emprunts",
+      "expected": [
+        "œʁ"
+      ],
+      "retained": true,
+      "primary": "œʁ",
+      "alternatives": [
+        "øʁ",
+        "œːʁ"
+      ],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "histoire",
+      "category": "h-et-emprunts",
+      "expected": [
+        "istwaʁ"
+      ],
+      "retained": true,
+      "primary": "i.stwaʁ",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "hôtel",
+      "category": "h-et-emprunts",
+      "expected": [
+        "otɛl"
+      ],
+      "retained": true,
+      "primary": "o.tɛl",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "wagon",
+      "category": "h-et-emprunts",
+      "expected": [
+        "vaɡɔ̃"
+      ],
+      "retained": true,
+      "primary": "va.ɡɔ̃",
+      "alternatives": [
+        "wa.ɡɔ̃"
+      ],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "parking",
+      "category": "h-et-emprunts",
+      "expected": [
+        "paʁkiŋ"
+      ],
+      "retained": true,
+      "primary": "paʁ.kiŋ",
+      "alternatives": [
+        "pɑʁ.kiŋ"
+      ],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "week-end",
+      "category": "h-et-emprunts",
+      "expected": [
+        "wikɛnd"
+      ],
+      "retained": true,
+      "primary": "wi.kɛnd",
+      "alternatives": [
+        "ve.kɑ̃d"
+      ],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "football",
+      "category": "h-et-emprunts",
+      "expected": [
+        "futbol"
+      ],
+      "retained": true,
+      "primary": "fut.bol",
+      "alternatives": [
+        "fut.bal"
+      ],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "tennis",
+      "category": "h-et-emprunts",
+      "expected": [
+        "tenis"
+      ],
+      "retained": true,
+      "primary": "te.nis",
+      "alternatives": [
+        "tɛ.nis"
+      ],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "Paris",
+      "category": "h-et-emprunts",
+      "expected": [
+        "paʁi"
+      ],
+      "retained": true,
+      "primary": "pa.ʁi",
+      "alternatives": [
+        "pɑ.ʁi"
+      ],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "Lyon",
+      "category": "h-et-emprunts",
+      "expected": [
+        "ljɔ̃",
+        "lijɔ̃"
+      ],
+      "retained": true,
+      "primary": "li.jɔ̃",
+      "alternatives": [
+        "ljɔ̃"
+      ],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "Hugo",
+      "category": "h-et-emprunts",
+      "expected": [
+        "yɡo"
+      ],
+      "retained": true,
+      "primary": "y.ɡo",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "tache",
+      "category": "oppositions-traditionnelles",
+      "expected": [
+        "taʃ"
+      ],
+      "retained": true,
+      "primary": "taʃ",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "tâche",
+      "category": "oppositions-traditionnelles",
+      "expected": [
+        "tɑːʃ"
+      ],
+      "retained": true,
+      "primary": "tɑːʃ",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "patte",
+      "category": "oppositions-traditionnelles",
+      "expected": [
+        "pat"
+      ],
+      "retained": true,
+      "primary": "pat",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "pâte",
+      "category": "oppositions-traditionnelles",
+      "expected": [
+        "pɑːt"
+      ],
+      "retained": true,
+      "primary": "pɑːt",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "mettre",
+      "category": "oppositions-traditionnelles",
+      "expected": [
+        "mɛtʁ"
+      ],
+      "retained": true,
+      "primary": "mɛtʁ",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "maître",
+      "category": "oppositions-traditionnelles",
+      "expected": [
+        "mɛːtʁ"
+      ],
+      "retained": true,
+      "primary": "mɛːtʁ",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "prêt",
+      "category": "oppositions-traditionnelles",
+      "expected": [
+        "pʁɛ"
+      ],
+      "retained": true,
+      "primary": "pʁɛ",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "blé",
+      "category": "oppositions-traditionnelles",
+      "expected": [
+        "ble"
+      ],
+      "retained": true,
+      "primary": "ble",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "jeune",
+      "category": "oppositions-traditionnelles",
+      "expected": [
+        "ʒœn"
+      ],
+      "retained": true,
+      "primary": "ʒœn",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "jeûne",
+      "category": "oppositions-traditionnelles",
+      "expected": [
+        "ʒøn"
+      ],
+      "retained": true,
+      "primary": "ʒøːn",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "cote",
+      "category": "oppositions-traditionnelles",
+      "expected": [
+        "kɔt"
+      ],
+      "retained": true,
+      "primary": "kɔt",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "côte",
+      "category": "oppositions-traditionnelles",
+      "expected": [
+        "kot"
+      ],
+      "retained": true,
+      "primary": "kot",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "peu",
+      "category": "oppositions-traditionnelles",
+      "expected": [
+        "pø"
+      ],
+      "retained": true,
+      "primary": "pø",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "peur",
+      "category": "oppositions-traditionnelles",
+      "expected": [
+        "pœʁ"
+      ],
+      "retained": true,
+      "primary": "pœʁ",
+      "alternatives": [
+        "pøːʁ",
+        "pœːʁ"
+      ],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "mou",
+      "category": "oppositions-traditionnelles",
+      "expected": [
+        "mu"
+      ],
+      "retained": true,
+      "primary": "mu",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "lu",
+      "category": "oppositions-traditionnelles",
+      "expected": [
+        "ly"
+      ],
+      "retained": true,
+      "primary": "ly",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "tâche",
+      "category": "longueurs-reference",
+      "expected": [
+        "tɑːʃ"
+      ],
+      "retained": true,
+      "primary": "tɑːʃ",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "maître",
+      "category": "longueurs-reference",
+      "expected": [
+        "mɛːtʁ"
+      ],
+      "retained": true,
+      "primary": "mɛːtʁ",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "tête",
+      "category": "longueurs-reference",
+      "expected": [
+        "tɛːt"
+      ],
+      "retained": true,
+      "primary": "tɛːt",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    },
+    {
+      "word": "caisse",
+      "category": "longueurs-reference",
+      "expected": [
+        "kɛːs"
+      ],
+      "retained": true,
+      "primary": "kɛs",
+      "alternatives": [],
+      "primaryMatch": false,
+      "candidateMatch": false
+    },
+    {
+      "word": "reine",
+      "category": "longueurs-reference",
+      "expected": [
+        "ʁɛːn"
+      ],
+      "retained": true,
+      "primary": "ʁɛn",
+      "alternatives": [
+        "ʁɛːn"
+      ],
+      "primaryMatch": false,
+      "candidateMatch": true
+    },
+    {
+      "word": "presse",
+      "category": "longueurs-reference",
+      "expected": [
+        "pʁɛːs"
+      ],
+      "retained": true,
+      "primary": "pʁɛs",
+      "alternatives": [
+        "pʁɛːs"
+      ],
+      "primaryMatch": false,
+      "candidateMatch": true
+    },
+    {
+      "word": "scène",
+      "category": "longueurs-reference",
+      "expected": [
+        "sɛːn"
+      ],
+      "retained": true,
+      "primary": "sɛn",
+      "alternatives": [],
+      "primaryMatch": false,
+      "candidateMatch": false
+    },
+    {
+      "word": "gène",
+      "category": "longueurs-reference",
+      "expected": [
+        "ʒɛːn"
+      ],
+      "retained": true,
+      "primary": "ʒɛn",
+      "alternatives": [
+        "ʒɛːn"
+      ],
+      "primaryMatch": false,
+      "candidateMatch": true
+    },
+    {
+      "word": "hôte",
+      "category": "longueurs-reference",
+      "expected": [
+        "oːt"
+      ],
+      "retained": true,
+      "primary": "oːt",
+      "alternatives": [],
+      "primaryMatch": true,
+      "candidateMatch": true
+    }
+  ]
+}

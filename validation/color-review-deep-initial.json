@@ -1,0 +1,153 @@
+{
+  "purpose": "Additional independent audit: three-phone compositions, orthogonal option masks, Unicode, full recognized consonant inventory and accents. Taste remains a visual judgement.",
+  "sourceSha256": "69091f67599123992dc3db4881531a64ade0126274b8099e2498c8be98bb025c",
+  "passed": 64134,
+  "failed": 2,
+  "failures": [
+    {
+      "label": "complete recognized inventory /h/",
+      "error": "Expected values to be strictly equal:\n+ actual - expected\n\n+ 'mark'\n- 'consonant'\n"
+    },
+    {
+      "label": "complete recognized inventory /ʔ/",
+      "error": "Expected values to be strictly equal:\n+ actual - expected\n\n+ 'mark'\n- 'consonant'\n"
+    }
+  ],
+  "metrics": {
+    "minimumTextContrast": 4.501122,
+    "nasalAccent": [
+      {
+        "phone": "ɑ̃",
+        "mask": 4,
+        "accent": "#c07a28",
+        "background": "#fbf1dd",
+        "againstOwn": 3.093,
+        "againstPage": 3.227
+      },
+      {
+        "phone": "ɑ̃",
+        "mask": 5,
+        "accent": "#c07a28",
+        "background": "#e8eae4",
+        "againstOwn": 2.86,
+        "againstPage": 3.227
+      },
+      {
+        "phone": "ɑ̃",
+        "mask": 6,
+        "accent": "#c07a28",
+        "background": "#fbf1dd",
+        "againstOwn": 3.093,
+        "againstPage": 3.227
+      },
+      {
+        "phone": "ɑ̃",
+        "mask": 7,
+        "accent": "#c07a28",
+        "background": "#e8eae4",
+        "againstOwn": 2.86,
+        "againstPage": 3.227
+      },
+      {
+        "phone": "ɛ̃",
+        "mask": 4,
+        "accent": "#c07a28",
+        "background": "#fbf1dd",
+        "againstOwn": 3.093,
+        "againstPage": 3.227
+      },
+      {
+        "phone": "ɛ̃",
+        "mask": 5,
+        "accent": "#c07a28",
+        "background": "#596364",
+        "againstOwn": 1.785,
+        "againstPage": 3.227
+      },
+      {
+        "phone": "ɛ̃",
+        "mask": 6,
+        "accent": "#c07a28",
+        "background": "#fbf1dd",
+        "againstOwn": 3.093,
+        "againstPage": 3.227
+      },
+      {
+        "phone": "ɛ̃",
+        "mask": 7,
+        "accent": "#c07a28",
+        "background": "#596364",
+        "againstOwn": 1.785,
+        "againstPage": 3.227
+      },
+      {
+        "phone": "ɔ̃",
+        "mask": 4,
+        "accent": "#c07a28",
+        "background": "#fbf1dd",
+        "againstOwn": 3.093,
+        "againstPage": 3.227
+      },
+      {
+        "phone": "ɔ̃",
+        "mask": 5,
+        "accent": "#c07a28",
+        "background": "#eef2fa",
+        "againstOwn": 3.091,
+        "againstPage": 3.227
+      },
+      {
+        "phone": "ɔ̃",
+        "mask": 6,
+        "accent": "#c07a28",
+        "background": "#fbf1dd",
+        "againstOwn": 3.093,
+        "againstPage": 3.227
+      },
+      {
+        "phone": "ɔ̃",
+        "mask": 7,
+        "accent": "#c07a28",
+        "background": "#eef2fa",
+        "againstOwn": 3.091,
+        "againstPage": 3.227
+      },
+      {
+        "phone": "œ̃",
+        "mask": 4,
+        "accent": "#c07a28",
+        "background": "#fbf1dd",
+        "againstOwn": 3.093,
+        "againstPage": 3.227
+      },
+      {
+        "phone": "œ̃",
+        "mask": 5,
+        "accent": "#c07a28",
+        "background": "#f5ebf3",
+        "againstOwn": 2.982,
+        "againstPage": 3.227
+      },
+      {
+        "phone": "œ̃",
+        "mask": 6,
+        "accent": "#c07a28",
+        "background": "#fbf1dd",
+        "againstOwn": 3.093,
+        "againstPage": 3.227
+      },
+      {
+        "phone": "œ̃",
+        "mask": 7,
+        "accent": "#c07a28",
+        "background": "#f5ebf3",
+        "againstOwn": 2.982,
+        "againstPage": 3.227
+      }
+    ]
+  },
+  "advisories": [
+    "The initial fixed amber nasal underline has insufficient contrast against some chip backgrounds; confirm its exact geometry in a browser and either back it or adapt its shade to the substrate.",
+    "Grey bands for deselected components intentionally have lower contrast; they must not contribute chromatic ink or be mistaken for selected sounds."
+  ]
+}

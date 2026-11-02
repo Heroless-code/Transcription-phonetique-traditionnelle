@@ -1,0 +1,177 @@
+{
+  "artifact": "C:\\Users\\pseud\\.codex\\.chatgpt-projects\\g-p-6ae0d77370a48191a599683ed2bf77c9\\transcription-traditionnelle\\dist\\index.html",
+  "sha256": "60c40b64a3b76bd961b5016c363c0654644453d0a585fc70d285a0440f200468",
+  "isolated": "C:\\Users\\pseud\\.codex\\.chatgpt-projects\\g-p-6ae0d77370a48191a599683ed2bf77c9\\transcription-traditionnelle\\validation\\isolated-ui\\transcription.html",
+  "contextOffline": true,
+  "requests": [],
+  "errors": [],
+  "tests": [
+    {
+      "name": "local standalone launch while browser offline",
+      "passed": true
+    },
+    {
+      "name": "coloration disabled by default",
+      "passed": true
+    },
+    {
+      "name": "requested desktop controls and removal of annotated text",
+      "passed": true
+    },
+    {
+      "name": "original line followed immediately by transcription, blank lines preserved",
+      "passed": true
+    },
+    {
+      "name": "transcription smaller and selectable",
+      "passed": true
+    },
+    {
+      "name": "reduced text sizes and dark grey base remain readable",
+      "passed": true,
+      "details": {
+        "sizes": [
+          18,
+          19,
+          16
+        ],
+        "contrast": [
+          9.21,
+          8.57,
+          5.39
+        ]
+      }
+    },
+    {
+      "name": "all phoneme palette colors retain contrast with their own backgrounds",
+      "passed": true,
+      "details": {
+        "phonemes": 39,
+        "minimumContrast": 4.88,
+        "unchangedPalette": true
+      }
+    },
+    {
+      "name": "phoneme colors on original and IPA",
+      "passed": true
+    },
+    {
+      "name": "independent vowel, consonant, nasal categories",
+      "passed": true
+    },
+    {
+      "name": "all eight selections compose vowel, consonant and nasal layers faithfully",
+      "passed": true,
+      "details": {
+        "masks": 8,
+        "unchangedIPA": true,
+        "contrastMinimum": 4.5
+      }
+    },
+    {
+      "name": "silent letters remain uncolored",
+      "passed": true
+    },
+    {
+      "name": "a shared grapheme with several phonemes is explicitly identified",
+      "passed": true
+    },
+    {
+      "name": "realized liaison corresponds to a pronounced source ending",
+      "passed": true
+    },
+    {
+      "name": "color settings do not change the phonetic result",
+      "passed": true
+    },
+    {
+      "name": "unfamiliar words remain usable and visibly qualified",
+      "passed": true
+    },
+    {
+      "name": "input rendered as text and never executed as HTML",
+      "passed": true
+    },
+    {
+      "name": "accents, apostrophes, punctuation and source spacing preserved",
+      "passed": true
+    },
+    {
+      "name": "keyboard shortcut transcribes",
+      "passed": true
+    },
+    {
+      "name": "long paragraph remains fluid and contained",
+      "passed": true
+    },
+    {
+      "name": "mobile layout without horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "colored shared-graph view remains readable and contained",
+      "passed": true
+    },
+    {
+      "name": "offline stress: 120 Unicode lines preserve layout and stay fluid",
+      "passed": true
+    },
+    {
+      "name": "offline stress: hostile Unicode and long tokens remain plain text",
+      "passed": true
+    },
+    {
+      "name": "offline stress: repeated color selections preserve IPA and mute letters",
+      "passed": true
+    },
+    {
+      "name": "code-review corrections are present in the isolated delivered HTML",
+      "passed": false,
+      "error": "Expected values to be strictly deep-equal:\n+ actual - expected\n\n  [\n    '/lə mo a tʁa.dɥiʁ./',\n    '/la nɥi e la plɥi./',\n    '/le pə.ti.z‿o./',\n    '/mil ø.ʁo/',\n+   '/ʒə dɔn a sɛ.tə kla.sə vɛ̃.t‿e yn ty.lip./',\n-   '/ʒə dɔn a sɛt klas vɛ̃.t‿e yn ty.lip./',\n    '/su.ze.va.lɥe/'\n  ]\n"
+    },
+    {
+      "name": "canonical-equivalent accents keep identical colors: mask 0",
+      "passed": true
+    },
+    {
+      "name": "canonical-equivalent accents keep identical colors: mask 1",
+      "passed": true
+    },
+    {
+      "name": "canonical-equivalent accents keep identical colors: mask 2",
+      "passed": true
+    },
+    {
+      "name": "canonical-equivalent accents keep identical colors: mask 3",
+      "passed": true
+    },
+    {
+      "name": "canonical-equivalent accents keep identical colors: mask 4",
+      "passed": true
+    },
+    {
+      "name": "canonical-equivalent accents keep identical colors: mask 5",
+      "passed": true
+    },
+    {
+      "name": "canonical-equivalent accents keep identical colors: mask 6",
+      "passed": true
+    },
+    {
+      "name": "canonical-equivalent accents keep identical colors: mask 7",
+      "passed": true
+    },
+    {
+      "name": "no HTTP requests and no browser errors",
+      "passed": true
+    }
+  ],
+  "metrics": {
+    "startupMs": 968,
+    "paragraphMs": 225,
+    "multiline120Ms": 388
+  },
+  "browser": "156.0.8078.79",
+  "passed": 33,
+  "failed": 1
+}

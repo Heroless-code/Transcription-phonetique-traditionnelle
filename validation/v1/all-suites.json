@@ -1,0 +1,150 @@
+{
+  "checks": [
+    {
+      "command": "node tests/run.mjs",
+      "passed": true,
+      "elapsedMs": 1844
+    },
+    {
+      "command": "node tests/deep-campaign.mjs",
+      "passed": true,
+      "elapsedMs": 1793
+    },
+    {
+      "command": "node tests/run-context-deep.mjs",
+      "passed": true,
+      "elapsedMs": 956
+    },
+    {
+      "command": "node tests/run-context-deep.mjs --first",
+      "passed": true,
+      "elapsedMs": 808
+    },
+    {
+      "command": "node tests/source-morphology-audit.mjs",
+      "passed": true,
+      "elapsedMs": 6713
+    },
+    {
+      "command": "node tests/productive-morphology.mjs",
+      "passed": true,
+      "elapsedMs": 446
+    },
+    {
+      "command": "node tests/lexicon-audit.mjs",
+      "passed": true,
+      "elapsedMs": 2784
+    },
+    {
+      "command": "node tests/lexique-anchor-audit.mjs",
+      "passed": true,
+      "elapsedMs": 404
+    },
+    {
+      "command": "node tests/alignment-audit.mjs",
+      "passed": true,
+      "elapsedMs": 1011
+    },
+    {
+      "command": "node tests/extended-challenge.mjs",
+      "passed": true,
+      "elapsedMs": 490
+    },
+    {
+      "command": "node tests/color-combinations.mjs",
+      "passed": true,
+      "elapsedMs": 465
+    },
+    {
+      "command": "node tests/lexicon-extension.mjs",
+      "passed": true,
+      "elapsedMs": 2098
+    },
+    {
+      "command": "node tests/context-refinement-regression.mjs",
+      "passed": true,
+      "elapsedMs": 435
+    },
+    {
+      "command": "node tests/nouvelle-campagne-run.mjs",
+      "passed": true,
+      "elapsedMs": 493
+    },
+    {
+      "command": "node tests/nouvelle-campagne-guards.mjs",
+      "passed": true,
+      "elapsedMs": 463
+    },
+    {
+      "command": "node tests/inventory-colors.mjs",
+      "passed": true,
+      "elapsedMs": 391
+    },
+    {
+      "command": "node tests/nasal-mark-contrast.mjs",
+      "passed": true,
+      "elapsedMs": 161
+    },
+    {
+      "command": "node tests/color-review-deep.mjs",
+      "passed": true,
+      "elapsedMs": 2946
+    },
+    {
+      "command": "node tests/review-seven-fixes.mjs",
+      "passed": true,
+      "elapsedMs": 587
+    },
+    {
+      "command": "node tests/review-context-fixes.mjs",
+      "passed": true,
+      "elapsedMs": 567
+    },
+    {
+      "command": "node tests/review-number-fixes.mjs",
+      "passed": true,
+      "elapsedMs": 446
+    },
+    {
+      "command": "node tests/review-rules-fixes.mjs",
+      "passed": true,
+      "elapsedMs": 492
+    },
+    {
+      "command": "node tests/review-spelling-fixes.mjs",
+      "passed": true,
+      "elapsedMs": 513
+    },
+    {
+      "command": "node tests/sonorities.mjs",
+      "passed": true,
+      "elapsedMs": 485
+    },
+    {
+      "command": "node tests/poetry.mjs",
+      "passed": true,
+      "elapsedMs": 545
+    },
+    {
+      "command": "node tests/sonorities-final-guards.mjs",
+      "passed": true,
+      "elapsedMs": 466
+    },
+    {
+      "command": "node tests/poetry-final-guards.mjs",
+      "passed": true,
+      "elapsedMs": 444
+    },
+    {
+      "command": "node tests/sonority-palette.mjs",
+      "passed": true,
+      "elapsedMs": 75
+    },
+    {
+      "command": "node tests/all-sounds.mjs",
+      "passed": true,
+      "elapsedMs": 449
+    }
+  ],
+  "failed": 0
+}
