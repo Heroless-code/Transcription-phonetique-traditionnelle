@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data:; connect-src 'none'; object-src 'none'; base-uri 'none'">
+  <title>Transcription phonétique traditionnelle</title>
+  <style>/*__STYLE__*/</style>
+</head>
+<body>
+  <main class="workspace">
+    <header class="masthead">
+      <h1>Transcription phonétique<br class="title-break"> traditionnelle</h1>
+    <p class="intro">Du texte aux sons du français moderne traditionnel.</p>
+    </header>
+
+    <form id="transcription-form">
+      <label class="field-label" for="input-text">Votre texte</label>
+      <textarea id="input-text" name="text" rows="7" spellcheck="false" placeholder="Écrivez ou collez un mot, une phrase, quelques lignes…"></textarea>
+      <div class="actions">
+        <div class="submit-control">
+          <button id="transcribe-button" type="submit" disabled>Chargement…</button>
+          <span class="keyboard-hint">Ctrl + Entrée</span>
+        </div>
+        <div class="mode-controls">
+          <label class="checkbox-label sonorities-control"><input id="sonorities-enabled" type="checkbox"> Sonorités</label>
+        </div>
+      </div>
+    </form>
+
+    <section id="result-section" class="result-section" aria-labelledby="result-title" hidden>
+      <div class="result-header"><h2 id="result-title">Transcription</h2><button id="copy-button" type="button" class="text-button">Copier l’API</button></div>
+      <div id="sonorities-description" class="sonorities-description sonority-toolbar" hidden>
+        <div class="sonority-filters" role="group" aria-label="Sonorités visibles dans tout le texte">
+          <button type="button" id="sonority-alliterations" class="sonority-category-toggle" aria-pressed="true">Allitérations</button>
+          <button type="button" id="sonority-assonances" class="sonority-category-toggle" aria-pressed="true">Assonances</button>
+        </div>
+        <button type="button" id="sonority-singletons" class="sonority-category-toggle sonority-singletons-toggle" aria-pressed="false" aria-controls="results" title="Afficher ou masquer les sons présents une seule fois dans chaque vers">×1 : son isolé, teinte discrète</button>
+        <span>Détails dans « ? ».</span>
+      </div>
+      <div id="results" class="results"></div>
+      <p id="result-note" class="result-note"></p>
+    </section>
+    <p id="status" class="status" role="status" aria-live="polite">Préparation du lexique local…</p>
+    <footer>API · Français moderne traditionnel <span aria-hidden="true">/</span> Fonctionne entièrement hors ligne</footer>
+    <details class="credits"><summary>Sources linguistiques</summary><p>Référentiel : Wiktionnaire, « Français moderne traditionnel ». Lexique local adapté du JSONL fourni et de <a href="https://www.lexique.org/" target="_blank" rel="noopener noreferrer">Lexique 4.1</a>, Boris New, Christophe Pallier et collaborateurs ; données Lexique adaptées sous <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.fr" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>. Complément sélectionné dans <a href="https://redac.univ-tlse2.fr/lexiques/glaff.html" target="_blank" rel="noopener noreferrer">GLÀFF 1.2.2</a>, Franck Sajous, Nabil Hathout et Basilio Calderone, sous <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.fr" target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a>. Ces liens sont informatifs ; la transcription utilise uniquement les données intégrées.</p><p>Sonorités : exemple de Racine dans le <a href="https://www.dictionnaire-academie.fr/article/A9A1240" target="_blank" rel="noopener noreferrer">Dictionnaire de l’Académie française</a>. Lecture classique assistée : Gérald Purnelle, <a href="https://orbi.uliege.be/bitstream/2268/33658/1/Purnelle29.pdf" target="_blank" rel="noopener noreferrer">La langue des vers</a>, Université de Liège, JADT 2006 ; <a href="https://www.larousse.fr/dictionnaires/francais/di%C3%A9r%C3%A8se/25391" target="_blank" rel="noopener noreferrer">Larousse, diérèse</a>. Les variantes sont proposées explicitement ; aucun mètre n’est imposé.</p><details><summary>Notice GLÀFF</summary><pre class="source-notice">/*__GLAFF_NOTICE__*/</pre></details></details>
+  </main>
+  <script type="module">/*__SCRIPT__*/</script>
+</body>
+</html>
