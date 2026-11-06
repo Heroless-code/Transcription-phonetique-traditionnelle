@@ -1,8 +1,7 @@
 import { initialize, transcribe } from './engine.js';
-import {analyzeSonorities} from './sonorities.js';
+import {analyzeSonorities,isAssonance} from './sonorities.js';
 import {applyPoeticReading} from './poetry.js';
 import {renderSonorityPanel,focusSonority,renderPoeticOptions} from './sonorities-view.js';
-import {isVowel} from './phonology.js';
 
 const $ = id => document.getElementById(id);
 let currentResult = null;
@@ -184,7 +183,7 @@ function toggleSonorityCategory(kind,lineIndex){
     if(!line.original?.trim()||!global&&i!==lineIndex)continue;
     const categories=sonorityVerseCategories.get(i)||{...sonorityCategories};categories[kind]=enabled;sonorityVerseCategories.set(i,categories);
     const phone=sonoritySelections.get(i);
-    if(!enabled&&phone&&(isVowel(phone)?'assonances':'alliterations')===kind)sonoritySelections.delete(i);
+    if(!enabled&&phone&&(isAssonance(phone)?'assonances':'alliterations')===kind)sonoritySelections.delete(i);
   }
   if(currentResult)render(currentResult);
   if(!global)document.querySelector('.line-result[data-line-index="'+lineIndex+'"] .sonority-category-toggle[data-category="'+kind+'"]')?.focus({preventScroll:true});

@@ -86,6 +86,32 @@ try{
     await submit('moi moi loin loin');const shared=row(0).locator('.sonority-alliteration.sonority-assonance').first();assert.match(await shared.evaluate(e=>getComputedStyle(e).backgroundImage),/linear-gradient/u);
     await global('alliterations',false);assert.equal(await row(0).locator('.sonority-assonance').first().evaluate(e=>getComputedStyle(e).backgroundImage),'none');await global('alliterations',true);
   });
+  await check('the reported four lines show exactly three /e/ highlights in the first verse',async()=>{
+    await submit('Pour faire défiler les ptits culs\nAu milieu des comètes\nParfois au milieu de la nuit j’envoie je fuis\nEnvoyer crucifié');
+    await counts(0,'e',3,2);await counts(3,'e',2,2);
+    await press(0,'e');
+    assert.deepEqual(await row(0).locator('.sonority-hit').allTextContents(),['é','er','e']);
+    assert.match((await ipa())[0],/\ble pti ky\//u);
+    assert.equal(await copyAPI(),(await ipa()).join('\n'));
+  });
+  await check('oi and ui can be isolated as assonances while each glide keeps its category',async()=>{
+    await submit('Parfois au milieu de la nuit j’envoie je fuis');
+    await counts(0,'wa',2,2);await counts(0,'ɥi',2,2);await counts(0,'a',2,2);
+    assert.equal(await chip(0,'i').count(),0);
+    await press(0,'wa');
+    assert.deepEqual(await row(0).locator('.sonority-hit').allTextContents(),['oi','oi']);
+    await press(0,'ɥi');
+    assert.deepEqual((await row(0).locator('.sonority-hit').allTextContents()).join(''),'uiui');
+    assert.equal(await chip(0,'ɥi').getAttribute('data-kind'),'assonance');
+    assert.equal(await chip(0,'ɥi').evaluate(e=>e.style.getPropertyValue('--sonority-background')),sonorityStyle('ɥi').background);
+    await local(0,'alliterations');
+    assert.equal(await chip(0,'ɥi').getAttribute('data-sonority-state'),'focused');
+    await local(0,'assonances');
+    assert.equal(await row(0).locator('.sonority-hit').count(),0);
+    await local(0,'assonances');
+    assert.equal(await chip(0,'ɥi').getAttribute('data-sonority-state'),'visible');
+    await local(0,'alliterations');
+  });
   await check('x1 respects per-verse counts, category filters and focus clearing',async()=>{
     await submit('sac\nsac sac');await singletons(false);assert.equal(await row(0).locator('.sonority-chip').count(),0);assert.equal(await row(1).locator('.sonority-chip').count(),3);
     await singletons(true);await counts(0,'s',1,1);await press(0,'s');await singletons(false);assert.equal(await row(0).locator('.sonority-hit,.sonority-muted').count(),0);

@@ -8,6 +8,7 @@ Cet historique conserve la trace des versions ; un ZIP absent ne peut pas être 
 | --- | --- | --- | --- |
 | v1 | 01/11/2026 18:27 | Version de référence : lecture classique, sonorités, filtres par vers et globaux, sons ×1 masqués par défaut. | ZIP absent |
 | v2 | 02/11/2026 09:37 | Retrait complet du mode Afficher les couleurs ; vue Sonorités compacte avec ligne API masquée, transcription et copie API conservées. | ZIP absent |
+| v3 | 06/11/2026 18:40 | Correction de la lecture de ptits et de ses variantes. Repérage de /wa/, /wɑ/ et /ɥi/ dans les assonances, avec surbrillance du groupe complet. | ZIP absent |
 
 ### v1
 
@@ -22,3 +23,10 @@ Cet historique conserve la trace des versions ; un ZIP absent ne peut pas être 
 - SHA-256 HTML : f15264feec385e5aaea46a883d19c89a3e5fedcf40ab94376e78ae006eb596b7.
 - Archive : Transcription phonétique traditionnelle v2.zip ; 7768039 octets.
 - SHA-256 ZIP : 706317c09d68b7e23d8f9fc26abfd22260b4ea1dd3c3443f6a5d16667a746bd7.
+
+### v3
+
+- HTML : Transcription-phonetique-traditionnelle.html ; 10539860 octets.
+- SHA-256 HTML : d787c9941d8dc540e0bb658d915f60dc2284d9700320bd88c66a949dd727b927.
+- Archive : Transcription phonétique traditionnelle v3.zip ; 7768498 octets.
+- SHA-256 ZIP : 5f4f0903a92c1d069632a4697e6a4963d75f0ea4db167981424e750b974d3d95.

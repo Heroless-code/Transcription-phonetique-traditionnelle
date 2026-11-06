@@ -1,7 +1,7 @@
 {
   "scope": "Post-fix regression of the original code-review probes, not a new independent accuracy estimate.",
   "initialReviewSha256": "03b69cdfdf8729fd061ed9c69853a27d8ea49cf9622f6f5c8ce957b445a9212e",
-  "deliverySha256": "f15264feec385e5aaea46a883d19c89a3e5fedcf40ab94376e78ae006eb596b7",
+  "deliverySha256": "d787c9941d8dc540e0bb658d915f60dc2284d9700320bd88c66a949dd727b927",
   "cases": [
     {
       "family": "liaisons",

@@ -1,10 +1,10 @@
 # Dépôt GitHub — version actuelle
 
-Le programme et son lexique embarqué sont identiques à la version actuelle. Ouvrir index.html dans un navigateur : il fonctionne seul et hors ligne. Les copies Transcription-phonetique-traditionnelle.html et dist/index.html sont identiques.
+Ouvrir [Application.html](../Application.html) dans un navigateur. Le fichier contient l’application et son lexique pour un usage hors ligne. Les copies Transcription-phonetique-traditionnelle.html et dist/index.html dans ce dossier sont identiques.
 
 ## Déposer le projet
 
-Décompresser cette archive puis déposer son contenu dans le dépôt, avec index.html à la racine. Déposer uniquement le ZIP ne publie pas l'application comme site. Le dossier racine est prêt pour un hébergement statique.
+Le fichier Application.html se trouve à la racine du dépôt. Le dossier developpement contient les sources et les tests.
 
 ## Développement
 
@@ -14,7 +14,7 @@ Les sources, outils, tests, rapports et notices sont inclus. Node.js récent suf
 node tools/build.mjs --note "Description de la modification"
 ```
 
-L'outil garde l'historique et n'invente pas de version si le HTML ne change pas. Après génération, recopier dist/index.html vers index.html pour actualiser la page d'accueil du dépôt. La création des ZIP numérotés utilise PowerShell uniquement en développement.
+L'outil garde l'historique et n'invente pas de version si le HTML ne change pas. La génération actualise aussi le fichier Application.html à la racine du dépôt. La création des ZIP numérotés utilise PowerShell uniquement en développement.
 
 Contrôles autonomes :
 
@@ -35,4 +35,4 @@ L'audit externe tests/source-morphology-audit.mjs, appelé par npm test, exige d
 
 Les attributions et conditions connues figurent dans data/references et dans le HTML. Aucune origine ni licence supplémentaire n'est inventée pour le JSONL initial. L'historique des versions est conservé ; les anciennes archives ne sont pas incluses ni recréées.
 
-SHA-256 du HTML : f15264feec385e5aaea46a883d19c89a3e5fedcf40ab94376e78ae006eb596b7.
+SHA-256 du HTML : d787c9941d8dc540e0bb658d915f60dc2284d9700320bd88c66a949dd727b927.

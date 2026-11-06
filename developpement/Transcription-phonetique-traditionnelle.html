@@ -299,6 +299,9 @@ add('ɥil','huile|huiles',{h:'muet'}); add('wi','oui'); add('wɛst','ouest');
 add('o','eau|eaux|au|aux|haut|hauts'); add('o','haut|hauts',{h:'aspire'});
 add('ʃo','chaud|chauds'); add('fo','faux|faut'); add('so','sot|sots|saut|sauts|seau|seaux');
 add('mwa','moi|mois'); add('tʁwɑ','trois'); add('fwa','fois|foi|foie'); add('ʁwa','roi|rois');
+// Familiar spellings mark the loss of the schwa in petit and its inflections.
+add('pti',"ptit|ptits|p'tit|p'tits");
+add('ptit',"ptite|ptites|p'tite|p'tites");
 add('ʁwa.jom','royaume|royaumes'); add('va.ɡɔ̃','wagon|wagons');
 add('paʁ.kiŋ','parking|parkings'); add('dʒɛz','jazz'); add('klœb','club|clubs');
 add('ʃɔʁt','short|shorts'); add('fut.bol','football'); add('wi.kɛnd','week-end|weekend');
@@ -1669,10 +1672,17 @@ const sonoritiesPolicy=Object.freeze({
   prominentWordCount:3,
   lengths:'distinct',
   glides:'alliteration-semi-consonant',
+  assonanceSequences:'wa, wɑ and ɥi within a syllable; vowel counted in the sequence only',
   liaison:'count-final-IPA-once',
   wordCounting:'original-graphic-occurrences; elisions and hyphenated parts reunited; expanded numeric token counts as one',
   ranking:'4×words + 2×log2(occurrences) + 2×word coverage + 2×phone density + proximity + spread; multiplied by 0.7 for schwa or 0.85 for r. Heuristic index, not probability.'
 });
+const ASSONANCE_SEQUENCES=Object.freeze(['wa','wɑ','ɥi','waː','wɑː','ɥiː']);
+
+function isAssonance(phone){
+  return isVowel(phone)||ASSONANCE_SEQUENCES.includes(phone);
+}
+
 const CONSONANTS=new Set(['b','d','f','ɡ','k','l','m','n','ɲ','ŋ','p','ʁ','s','ʃ','t','v','z','ʒ','j','w','ɥ','h','ʔ']);
 const MARKS=new Set(['.','‿']);
 const HYPOTHETICAL=new Set(['hypothesis','ambiguous','fallback']);
@@ -1731,9 +1741,27 @@ function graphAnchors(token,tokenIndex,tokenOffset,expected,exactSource){
   }
   return anchors;
 }
+
+function assonanceOccurrence(vowel,previous){
+  if(vowel.kind!=='assonance'||previous?.tokenIndex!==vowel.tokenIndex||previous.phonemeIndex+1!==vowel.phonemeIndex)return vowel;
+  const sequence=previous.phone+vowel.phone;
+  if(!ASSONANCE_SEQUENCES.includes(sequence))return vowel;
+
+  // « oi » can share one span; « ui » can occupy two adjacent spans.
+  const graphSpans=[];
+  if(previous.alignmentCertain&&vowel.alignmentCertain){
+    for(const span of [...previous.graphSpans,...vowel.graphSpans]){
+      if(graphSpans.at(-1)?.segmentIndex!==span.segmentIndex)graphSpans.push(span);
+    }
+  }
+  return {...vowel,phone:sequence,phoneIndex:previous.phoneIndex,phonemeIndex:previous.phonemeIndex,graphSpans,
+    sourceStart:graphSpans[0]?.start??null,sourceEnd:graphSpans.at(-1)?.end??null,alignmentCertain:graphSpans.length>0};
+}
+
 function groupOccurrences(occurrences,words,totalPhones){
   const grouped=new Map();
-  for(const occurrence of occurrences){
+  for(const [index,unit] of occurrences.entries()){
+    const occurrence=assonanceOccurrence(unit,occurrences[index-1]);
     if(!grouped.has(occurrence.phone))grouped.set(occurrence.phone,[]);
     grouped.get(occurrence.phone).push(occurrence);
   }
@@ -1794,7 +1822,7 @@ function analyzeSonorities(result){
   return {lines,stats:{verses:lines.filter(l=>l.original.trim()).length,phones:lines.reduce((n,l)=>n+l.stats.phones,0),alliterations:lines.reduce((n,l)=>n+l.groups.alliterations.length,0),assonances:lines.reduce((n,l)=>n+l.groups.assonances.length,0)}};
 }
 
-return {sonoritiesPolicy,phoneticUnits,analyzeLine,analyzeSonorities};
+return {sonoritiesPolicy,ASSONANCE_SEQUENCES,isAssonance,phoneticUnits,analyzeLine,analyzeSonorities};
 })();
 __modules["poetry.js"]=(()=>{
 const {phones,isVowel,GLIDES,syllabify}=__modules["phonology.js"];
@@ -2006,6 +2034,7 @@ return {mixColors,contrastRatio};
 })();
 __modules["sonority-colors.js"]=(()=>{
 const {VOWELS}=__modules["phonology.js"];
+const {ASSONANCE_SEQUENCES}=__modules["sonorities.js"];
 const {contrastRatio,mixColors}=__modules["color-math.js"];
 
 // Frequent sounds are interleaved so neighbouring entries have distant hues.
@@ -2014,7 +2043,8 @@ const SONORITY_PHONES=Object.freeze([
   's','ə','ʁ','a','l','e','t','ɛ','n','i','d','ɑ̃','k','ɔ̃','m','ɔ',
   'p','u','f','y','v','o','ʃ','ɛ̃','z','œ','b','ø','ʒ','ɑ','ɡ','œ̃',
   'j','w','ɥ','ɲ','ŋ','h','ʔ',
-  ...[...VOWELS].map(p=>p+'ː')
+  ...[...VOWELS].map(p=>p+'ː'),
+  ...ASSONANCE_SEQUENCES
 ]);
 function hexHsl(h,s,l){
   s/=100;l/=100;
@@ -2235,10 +2265,9 @@ return {focusSonority,renderSonorityPanel,renderPoeticOptions};
 })();
 __modules["ui.js"]=(()=>{
 const { initialize, transcribe }=__modules["engine.js"];
-const {analyzeSonorities}=__modules["sonorities.js"];
+const {analyzeSonorities,isAssonance}=__modules["sonorities.js"];
 const {applyPoeticReading}=__modules["poetry.js"];
 const {renderSonorityPanel,focusSonority,renderPoeticOptions}=__modules["sonorities-view.js"];
-const {isVowel}=__modules["phonology.js"];
 
 const $ = id => document.getElementById(id);
 let currentResult = null;
@@ -2420,7 +2449,7 @@ function toggleSonorityCategory(kind,lineIndex){
     if(!line.original?.trim()||!global&&i!==lineIndex)continue;
     const categories=sonorityVerseCategories.get(i)||{...sonorityCategories};categories[kind]=enabled;sonorityVerseCategories.set(i,categories);
     const phone=sonoritySelections.get(i);
-    if(!enabled&&phone&&(isVowel(phone)?'assonances':'alliterations')===kind)sonoritySelections.delete(i);
+    if(!enabled&&phone&&(isAssonance(phone)?'assonances':'alliterations')===kind)sonoritySelections.delete(i);
   }
   if(currentResult)render(currentResult);
   if(!global)document.querySelector('.line-result[data-line-index="'+lineIndex+'"] .sonority-category-toggle[data-category="'+kind+'"]')?.focus({preventScroll:true});

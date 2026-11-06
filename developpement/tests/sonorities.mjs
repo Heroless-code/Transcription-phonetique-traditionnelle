@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import {initialize,transcribe} from '../src/engine.js';
 import {phones} from '../src/phonology.js';
 import {align} from '../src/alignment.js';
+import {applyPoeticReading} from '../src/poetry.js';
 import {analyzeLine,analyzeSonorities,sonoritiesPolicy} from '../src/sonorities.js';
 await initialize();
 const report={method:'Phonetic repetition invariants and preregistered exact counts. The ranking is a documented heuristic, not a literary-intent probability.',passed:0,failed:0,failures:[]};
@@ -117,6 +118,59 @@ check('poetic hypothesis flag is propagated independently',()=>{
 check('a shared x grapheme anchors each real phoneme without copying counts',()=>{
   const a=line('taxi taxi');assert.equal(group(a,'k').count,2);assert.equal(group(a,'s').count,2);
   for(const p of ['k','s'])assert.ok(group(a,p).occurrences.every(o=>o.graphSpans.length===1&&o.graphSpans[0].text==='x'));
+});
+check('the reported verse has exactly three anchored /e/ sounds',()=>{
+  const verse=applyPoeticReading(transcribe('Pour faire défiler les ptits culs')).lines[0];
+  assert.equal(verse.tokens.find(t=>t.lower==='ptits').ipa,'pti');
+  const e=group(analyzeLine(verse),'e');
+  assert.equal(e.count,3);
+  assert.equal(e.wordCount,2);
+  assert.equal(e.unalignedCount,0);
+  assert.deepEqual(e.occurrences.map(o=>o.graphSpans.map(s=>s.text).join('')),['é','er','e']);
+});
+check('familiar inflections and apostrophes preserve the reduced stem',()=>{
+  const words=transcribe("Ptits p’tit p'tite pʼtites").lines[0].tokens.filter(t=>t.type==='word');
+  assert.deepEqual(words.map(t=>t.ipa),['pti','pti','ptit','ptit']);
+});
+check('the reported oi/ui verse groups both sounds and covers both letters',()=>{
+  const verse=applyPoeticReading(transcribe('Parfois au milieu de la nuit j’envoie je fuis')).lines[0];
+  const a=analyzeLine(verse);
+  for(const [sequence,spelling,words] of [['wa','oi',['Parfois','j’envoie']],['ɥi','ui',['nuit','fuis']]]){
+    const sound=group(a,sequence);
+    assert.equal(sound.kind,'assonance');
+    assert.equal(sound.count,2);
+    assert.equal(sound.wordCount,2);
+    assert.deepEqual(sound.occurrences.map(o=>o.wordText),words);
+    assert.deepEqual(sound.occurrences.map(o=>o.graphSpans.map(s=>s.text).join('')),[spelling,spelling]);
+  }
+  assert.equal(group(a,'a').count,2);
+  assert.equal(a.soundGroups.assonances.find(g=>g.phone==='i').count,1);
+  assert.equal(group(a,'w').kind,'alliteration');
+  assert.equal(group(a,'ɥ').kind,'alliteration');
+  assert.equal(a.occurrences.filter(o=>o.phone==='a').length,4);
+  assert.equal(a.occurrences.filter(o=>o.phone==='i').length,3);
+});
+check('oi keeps traditional timbres, oy can match by sound and oui stays /wi/',()=>{
+  const a=line('moi envoyer trois trois oui oui pluie pluie');
+  for(const p of ['wa','wɑ','ɥi','i'])assert.equal(group(a,p).count,2);
+  assert.deepEqual(group(a,'wa').occurrences.map(o=>o.graphSpans.map(s=>s.text).join('')),['oi','oy']);
+  assert.deepEqual(group(a,'i').words.map(w=>w.text),['oui','oui']);
+  assert.equal(a.soundGroups.assonances.some(g=>g.phone==='a'||g.phone==='ɑ'),false);
+});
+check('assonance sequences preserve duration and do not cross boundaries',()=>{
+  const a=analyzeLine(artificial([['oi','wa'],['oi','waː'],['oi','w.a'],['ui','ɥ‿i'],['w','w'],['a','a']]));
+  const counts=Object.fromEntries(a.soundGroups.assonances.map(g=>[g.phone,g.count]));
+  assert.deepEqual(counts,{wa:1,'waː':1,a:2,i:1});
+});
+check('a composite occurrence with a partially opaque alignment stays unpainted',()=>{
+  const verse=artificial([['nuit','nɥi']]);
+  const [token]=verse.tokens;
+  token.segments=[{text:'n',phones:['n']},{text:'u',phones:['ɥ'],uncertain:true},{text:'i',phones:['i']},{text:'t',phones:[],silent:true}];
+  const [ui]=analyzeLine(verse).soundGroups.assonances;
+  assert.equal(ui.phone,'ɥi');
+  assert.equal(ui.count,1);
+  assert.equal(ui.unalignedCount,1);
+  assert.deepEqual(ui.occurrences[0].graphSpans,[]);
 });
 check('uncertain alignment leaves API events but never invents a source anchor',()=>{
   const a=analyzeLine(artificial([['nuit','ʒuʁ'],['nuit','ʒuʁ']]));

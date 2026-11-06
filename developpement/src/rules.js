@@ -58,6 +58,9 @@ add('ɥil','huile|huiles',{h:'muet'}); add('wi','oui'); add('wɛst','ouest');
 add('o','eau|eaux|au|aux|haut|hauts'); add('o','haut|hauts',{h:'aspire'});
 add('ʃo','chaud|chauds'); add('fo','faux|faut'); add('so','sot|sots|saut|sauts|seau|seaux');
 add('mwa','moi|mois'); add('tʁwɑ','trois'); add('fwa','fois|foi|foie'); add('ʁwa','roi|rois');
+// Familiar spellings mark the loss of the schwa in petit and its inflections.
+add('pti',"ptit|ptits|p'tit|p'tits");
+add('ptit',"ptite|ptites|p'tite|p'tites");
 add('ʁwa.jom','royaume|royaumes'); add('va.ɡɔ̃','wagon|wagons');
 add('paʁ.kiŋ','parking|parkings'); add('dʒɛz','jazz'); add('klœb','club|clubs');
 add('ʃɔʁt','short|shorts'); add('fut.bol','football'); add('wi.kɛnd','week-end|weekend');

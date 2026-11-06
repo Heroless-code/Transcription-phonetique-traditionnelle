@@ -7,7 +7,7 @@ await initialize();
 const report={purpose:'Complete per-verse inventory includes isolated phones while repetition detection retains its two-occurrence threshold.',passed:0,failed:0,failures:[]};
 const check=(name,fn)=>{try{fn();report.passed++;}catch(error){report.failed++;report.failures.push({name,error:error.message});}};
 const groups=a=>[...a.soundGroups.alliterations,...a.soundGroups.assonances];
-for(const text of ['sac','eau','sac sac','abracadabra','l’élément','21 21','Un brin brun.','Pour qui sont ces serpents qui sifflent sur vos têtes ?','La lune brille.','plourimètre','élève élève'.normalize('NFD'),'moi moi loin'])check('complete exact inventory: '+text,()=>{
+for(const text of ['sac','eau','sac sac','abracadabra','l’élément','21 21','Un brin brun.','Pour qui sont ces serpents qui sifflent sur vos têtes ?','La lune brille.','plourimètre','élève élève'.normalize('NFD'),'oui oui loin'])check('complete exact inventory: '+text,()=>{
   const line=applyPoeticReading(transcribe(text)).lines[0],before=JSON.stringify(line),a=analyzeLine(line),all=groups(a);
   assert.equal(JSON.stringify(line),before);assert.equal(all.reduce((n,g)=>n+g.count,0),a.occurrences.length);
   assert.equal(all.length,new Set(a.occurrences.map(o=>o.phone)).size);

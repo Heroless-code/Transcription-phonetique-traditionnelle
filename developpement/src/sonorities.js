@@ -11,10 +11,17 @@ export const sonoritiesPolicy=Object.freeze({
   prominentWordCount:3,
   lengths:'distinct',
   glides:'alliteration-semi-consonant',
+  assonanceSequences:'wa, wɑ and ɥi within a syllable; vowel counted in the sequence only',
   liaison:'count-final-IPA-once',
   wordCounting:'original-graphic-occurrences; elisions and hyphenated parts reunited; expanded numeric token counts as one',
   ranking:'4×words + 2×log2(occurrences) + 2×word coverage + 2×phone density + proximity + spread; multiplied by 0.7 for schwa or 0.85 for r. Heuristic index, not probability.'
 });
+export const ASSONANCE_SEQUENCES=Object.freeze(['wa','wɑ','ɥi','waː','wɑː','ɥiː']);
+
+export function isAssonance(phone){
+  return isVowel(phone)||ASSONANCE_SEQUENCES.includes(phone);
+}
+
 const CONSONANTS=new Set(['b','d','f','ɡ','k','l','m','n','ɲ','ŋ','p','ʁ','s','ʃ','t','v','z','ʒ','j','w','ɥ','h','ʔ']);
 const MARKS=new Set(['.','‿']);
 const HYPOTHETICAL=new Set(['hypothesis','ambiguous','fallback']);
@@ -73,9 +80,27 @@ function graphAnchors(token,tokenIndex,tokenOffset,expected,exactSource){
   }
   return anchors;
 }
+
+function assonanceOccurrence(vowel,previous){
+  if(vowel.kind!=='assonance'||previous?.tokenIndex!==vowel.tokenIndex||previous.phonemeIndex+1!==vowel.phonemeIndex)return vowel;
+  const sequence=previous.phone+vowel.phone;
+  if(!ASSONANCE_SEQUENCES.includes(sequence))return vowel;
+
+  // « oi » can share one span; « ui » can occupy two adjacent spans.
+  const graphSpans=[];
+  if(previous.alignmentCertain&&vowel.alignmentCertain){
+    for(const span of [...previous.graphSpans,...vowel.graphSpans]){
+      if(graphSpans.at(-1)?.segmentIndex!==span.segmentIndex)graphSpans.push(span);
+    }
+  }
+  return {...vowel,phone:sequence,phoneIndex:previous.phoneIndex,phonemeIndex:previous.phonemeIndex,graphSpans,
+    sourceStart:graphSpans[0]?.start??null,sourceEnd:graphSpans.at(-1)?.end??null,alignmentCertain:graphSpans.length>0};
+}
+
 function groupOccurrences(occurrences,words,totalPhones){
   const grouped=new Map();
-  for(const occurrence of occurrences){
+  for(const [index,unit] of occurrences.entries()){
+    const occurrence=assonanceOccurrence(unit,occurrences[index-1]);
     if(!grouped.has(occurrence.phone))grouped.set(occurrence.phone,[]);
     grouped.get(occurrence.phone).push(occurrence);
   }

@@ -1,4 +1,5 @@
 import {VOWELS} from './phonology.js';
+import {ASSONANCE_SEQUENCES} from './sonorities.js';
 import {contrastRatio,mixColors} from './color-math.js';
 
 // Frequent sounds are interleaved so neighbouring entries have distant hues.
@@ -7,7 +8,8 @@ export const SONORITY_PHONES=Object.freeze([
   's','ə','ʁ','a','l','e','t','ɛ','n','i','d','ɑ̃','k','ɔ̃','m','ɔ',
   'p','u','f','y','v','o','ʃ','ɛ̃','z','œ','b','ø','ʒ','ɑ','ɡ','œ̃',
   'j','w','ɥ','ɲ','ŋ','h','ʔ',
-  ...[...VOWELS].map(p=>p+'ː')
+  ...[...VOWELS].map(p=>p+'ː'),
+  ...ASSONANCE_SEQUENCES
 ]);
 function hexHsl(h,s,l){
   s/=100;l/=100;

@@ -87,8 +87,8 @@
   },
   "failures": [],
   "metrics": {
-    "lexiconLoadMs": 281,
-    "paragraph1100WordsMs": 37
+    "lexiconLoadMs": 307,
+    "paragraph1100WordsMs": 50
   },
   "limits": [
     "Tests de régression, sans estimation de précision universelle ni corpus de parole indépendant.",

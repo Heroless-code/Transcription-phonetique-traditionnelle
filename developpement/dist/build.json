@@ -2,8 +2,8 @@
   "name": "Transcription phonétique traditionnelle",
   "format": "HTML autonome",
   "delivery": "Transcription-phonetique-traditionnelle.html",
-  "bytes": 10538423,
-  "sha256": "f15264feec385e5aaea46a883d19c89a3e5fedcf40ab94376e78ae006eb596b7",
+  "bytes": 10539860,
+  "sha256": "d787c9941d8dc540e0bb658d915f60dc2284d9700320bd88c66a949dd727b927",
   "modules": [
     "lexicon-data.js",
     "gender-data.js",

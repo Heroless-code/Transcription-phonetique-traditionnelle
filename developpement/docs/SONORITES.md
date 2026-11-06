@@ -4,7 +4,7 @@ Le mode **Sonorités** ajoute un inventaire complet des sons et un relevé de r�
 
 Pour l'utiliser, transcrire le texte puis cocher **Sonorités**. La ligne API disparaît : seuls le vers, ses surbrillances et son détail sont affichés. Le calcul phonétique reste complet en arrière-plan et Copier l'API conserve son résultat. Désactiver Sonorités réaffiche la même transcription. Les sons isolés ×1 sont masqués par défaut ; leur bouton les ajoute aux pastilles et aux surbrillances du vers avec une teinte plus pâle. Chaque pastille conserve le cycle mettre en évidence, masquer sa couleur, rétablir sa couleur. Les masques individuels et les filtres locaux restent mémorisés entre les deux vues ; Transcrire réinitialise les masques du texte.
 
-Le mode Afficher les couleurs a été retiré dans la version actuelle avec ses contrôles, sa palette de familles, ses compositions et ses styles dédiés. Seule la palette propre aux sonorités subsiste, sans changement de timbre ni de décompte. Le programme n'utilise plus d'unités visuelles API colorées : les surbrillances sont appliquées aux segments orthographiques certains. Les contrastes et les bandes des graphèmes partagés restent contrôlés.
+Le mode Afficher les couleurs a été retiré dans la v2 avec ses contrôles, sa palette de familles, ses compositions et ses styles dédiés. Seule la palette propre aux sonorités subsiste, sans changement de timbre ni de décompte. Le programme n'utilise plus d'unités visuelles API colorées : les surbrillances sont appliquées aux segments orthographiques certains. Les contrastes et les bandes des graphèmes partagés restent contrôlés.
 
 Les précisions sont réunies derrière le « ? » à droite de chaque vers. Le panneau contient les variantes de lecture, leur incidence phonétique, les décomptes complets et les notes de prononciation. Son ouverture ne modifie pas la hauteur du vers. Il peut défiler indépendamment et se ferme avec Échap ou un clic extérieur. Le bouton reçoit une teinte ambrée lorsqu'une ambiguïté de lecture ou une prononciation hypothétique est signalée.
 
@@ -12,7 +12,7 @@ Les précisions sont réunies derrière le « ? » à droite de chaque vers. Le 
 
 L'analyse s'appuie sur l'API finale de chaque mot, après les décisions grammaticales, les nombres et les liaisons. Elle compte donc les consonnes de liaison réalisées une seule fois, ignore les liaisons omises et suit les dénasalisations. Les lettres muettes, les espaces, la ponctuation, les frontières syllabiques et le symbole de liaison ne constituent pas des occurrences sonores.
 
-- Assonances : voyelles orales et nasales.
+- Assonances : voyelles orales et nasales, avec trois séquences traitées comme des unités dans ce relevé. Le son « oi » donne /wa/ ou /wɑ/ selon la prononciation, et le son « ui » donne /ɥi/. Les variantes longues restent distinctes.
 - Allitérations : consonnes ; les semi-voyelles `/j w ɥ/` y sont rattachées avec la mention « semi-consonne ».
 - Les timbres traditionnels restent séparés, notamment `/a–ɑ/`, `/e–ɛ/`, `/o–ɔ/`, `/ø–œ/` et `/ɛ̃–œ̃/`.
 - Une voyelle longue demeure distincte de sa correspondante brève : `/ɛː/` ne fusionne pas avec `/ɛ/`.
@@ -52,7 +52,9 @@ Cet indice est une décision de présentation, sans pourcentage de certitude lit
 
 **Sélection et incertitudes.**
 
-Les groupes de lettres sont repérés à partir des occurrences phonétiques finales. Pour un graphème partagé comme oi → /wa/, une sélection porte sur son groupe orthographique complet ; les comptes continuent à distinguer /w/ et /a/. Un graphème portant plusieurs sons affichés garde leurs bandes respectives. Masquer un son retire seulement sa contribution. Les correspondances incertaines restent neutres : aucune lettre voisine n'est inventée pour porter le son.
+Les groupes de lettres sont repérés à partir de la prononciation finale. Le moteur compte /wa/, /wɑ/ et /ɥi/ quand les deux sons se suivent dans la même syllabe. La voyelle de la séquence entre uniquement dans le compte de cette assonance. Les semi-consonnes /w/ et /ɥ/ restent dans le relevé des allitérations. Ainsi, /wa/ peut relier « moi » à « envoyer », et « oui » /wi/ reste distinct de « nuit » /nɥi/.
+
+Sélectionner une séquence surligne les lettres qui portent ses deux sons, par exemple « oi » dans « parfois » ou « ui » dans « nuit ». Un graphème portant plusieurs sons affichés garde leurs bandes respectives. Masquer un son retire sa contribution. Les correspondances incertaines restent neutres.
 
 Les associations graphiques opaques ne sont pas inventées. Un son peut être correctement compté sans être localisable avec certitude dans les lettres ; une note dans les précisions explique cette limite. L'API complète reste accessible par copie ou en désactivant Sonorités. Une incertitude d'alignement reste distincte d'une prononciation hypothétique.
 

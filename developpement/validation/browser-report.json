@@ -1,8 +1,8 @@
 {
   "purpose": "Offline v2 integration: removed color mode, compact Sonorités and phonetic invariants. Not a universal accuracy score.",
-  "artifact": "C:\\Users\\pseud\\.codex\\.chatgpt-projects\\g-p-6ae0d77370a48191a599683ed2bf77c9\\transcription-traditionnelle\\Transcription-phonetique-traditionnelle.html",
-  "sha256": "f15264feec385e5aaea46a883d19c89a3e5fedcf40ab94376e78ae006eb596b7",
-  "browser": "156.0.8078.79",
+  "artifact": "Transcription-phonetique-traditionnelle.html",
+  "sha256": "d787c9941d8dc540e0bb658d915f60dc2284d9700320bd88c66a949dd727b927",
+  "browser": "156.0.8078.80",
   "offline": true,
   "requests": [],
   "errors": [],
@@ -73,8 +73,8 @@
     }
   ],
   "metrics": {
-    "startupMs": 1034,
-    "multiline120Ms": 146
+    "startupMs": 821,
+    "multiline120Ms": 180
   },
   "passed": 16,
   "failed": 0

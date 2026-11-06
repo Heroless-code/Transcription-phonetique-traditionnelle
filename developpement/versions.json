@@ -32,6 +32,21 @@
         "bytes": 7768039,
         "sha256": "706317c09d68b7e23d8f9fc26abfd22260b4ea1dd3c3443f6a5d16667a746bd7"
       }
+    },
+    {
+      "version": 3,
+      "createdAt": "2026-11-06T17:40:33.757Z",
+      "description": "Correction de la lecture de ptits et de ses variantes. Repérage de /wa/, /wɑ/ et /ɥi/ dans les assonances, avec surbrillance du groupe complet.",
+      "html": {
+        "filename": "Transcription-phonetique-traditionnelle.html",
+        "bytes": 10539860,
+        "sha256": "d787c9941d8dc540e0bb658d915f60dc2284d9700320bd88c66a949dd727b927"
+      },
+      "archive": {
+        "filename": "Transcription phonétique traditionnelle v3.zip",
+        "bytes": 7768498,
+        "sha256": "5f4f0903a92c1d069632a4697e6a4963d75f0ea4db167981424e750b974d3d95"
+      }
     }
   ]
 }
