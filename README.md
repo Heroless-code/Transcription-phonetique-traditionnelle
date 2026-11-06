@@ -3,6 +3,8 @@
 **Du texte aux sons du français moderne traditionnel.**  
 **From French text to traditional modern French sounds.**
 
+[**Ouvrir l’application en ligne / Open the app**](https://heroless-code.github.io/Transcription-phonetique-traditionnelle/)
+
 [Français](#français) · [English](#english) · [Télécharger / Download](https://github.com/Heroless-code/Transcription-phonetique-traditionnelle/releases) · [Contribuer / Contributing](CONTRIBUTING.md)
 
 ## Français
